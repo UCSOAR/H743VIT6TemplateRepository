@@ -1,0 +1,8 @@
+C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Task.hpp:27:12:Queue* Task::GetEventQueue() const	1
+../SoarOS/CubeTask.hpp:32:22:static CubeTask& CubeTask::Inst()	3
+../SoarOS/CubeTask.hpp:47:5:CubeTask::CubeTask()	1
+../SoarOS/CubeDefines.cpp:26:6:)	3
+../SoarOS/CubeDefines.cpp:69:6:)	8
+../SoarOS/CubeDefines.cpp:126:1:void __static_initialization_and_destruction_0(int, int)	5
+../SoarOS/CubeDefines.cpp:126:1:cpp)	1
+../SoarOS/CubeDefines.cpp:126:1:cpp)	1

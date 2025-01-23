@@ -1,0 +1,7 @@
+C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp:47:2:UARTDriver::UARTDriver(USART_TypeDef*)	1
+C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/CubeTask.hpp:32:22:static CubeTask& CubeTask::Inst()	3
+C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/CubeTask.hpp:47:5:CubeTask::CubeTask()	1
+C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/SOARDebug/DebugTask.hpp:26:21:static DebugTask& DebugTask::Inst()	3
+../Components/main_system.cpp:25:6:void run_main()	1
+../Components/main_system.cpp:50:1:void __static_initialization_and_destruction_0(int, int)	3
+../Components/main_system.cpp:50:1:cpp)	1

@@ -1,0 +1,12 @@
+C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp:48:21:GLOBAL_COMMANDS Command::GetCommand() const	1
+C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp:49:14:uint16_t Command::GetTaskCommand() const	1
+C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/SOARDebug/DebugTask.hpp:26:21:static DebugTask& DebugTask::Inst()	3
+C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/SOARDebug/DebugTask.hpp:37:15:static void DebugTask::RunTask(void*)	1
+C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp:32:7:constexpr UARTReceiverBase::UARTReceiverBase()	1
+../Components/DebugTask.cpp:34:1:DebugTask::DebugTask()	1
+../Components/DebugTask.cpp:44:6:virtual void DebugTask::InitTask()	3
+../Components/DebugTask.cpp:62:6:void DebugTask::Run(void*)	4
+../Components/DebugTask.cpp:86:6:void DebugTask::HandleDebugMessage(const char*)	3
+../Components/DebugTask.cpp:116:6:bool DebugTask::ReceiveData()	1
+../Components/DebugTask.cpp:122:6:virtual void DebugTask::InterruptRxData(uint8_t)	5
+../Components/DebugTask.cpp:161:9:static int32_t DebugTask::ExtractIntParameter(const char*, uint16_t)	3

@@ -1,0 +1,9 @@
+C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp:47:14:uint8_t* Command::GetDataPointer() const	1
+C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp:48:21:GLOBAL_COMMANDS Command::GetCommand() const	1
+C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp:49:14:uint16_t Command::GetTaskCommand() const	1
+../SoarOS/CubeTask.hpp:32:22:static CubeTask& CubeTask::Inst()	3
+../SoarOS/CubeTask.hpp:40:17:static void CubeTask::RunTask(void*)	1
+../SoarOS/CubeTask.hpp:47:5:CubeTask::CubeTask()	1
+../SoarOS/CubeTask.cpp:14:6:virtual void CubeTask::InitTask()	3
+../SoarOS/CubeTask.cpp:36:6:void CubeTask::Run(void*)	1
+../SoarOS/CubeTask.cpp:55:6:void CubeTask::HandleCommand(Command&)	3
