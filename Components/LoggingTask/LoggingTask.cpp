@@ -77,8 +77,9 @@ void LoggingTask::Run(void * pvParams){
 	DataBroker::Subscribe<IMUData>(this);
 	DataBroker::Subscribe<GPSData>(this);
 	DataBroker::Subscribe<BaroData>(this);
-	DataBroker::Subscribe<MagData>(this);
+	DataBroker::Subscribe<MagData1>(this);
 	DataBroker::Subscribe<FilterData>(this);
+	DataBroker::Subscribe<MagData2>(this);
 
     while (1) {
         /* Process commands in blocking mode */
@@ -112,7 +113,7 @@ void LoggingTask::HandleCommand(Command& cm){
 	{
 		GPSData data = DataBroker::ExtractData<GPSData>(cm);
 		uint8_t buf[128];
-		buf[0] = static_cast<uint8_t>(LoggingData::IMU);
+		buf[0] = static_cast<uint8_t>(LoggingData::GPS);
 		memcpy(buf, &data, sizeof(GPSData));
 		LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::GPS, buf, sizeof(GPSData));
 		err = log.LogData();
@@ -124,7 +125,7 @@ void LoggingTask::HandleCommand(Command& cm){
 	{
 		BaroData data = DataBroker::ExtractData<BaroData>(cm);
 		uint8_t buf[128];
-		buf[0] = static_cast<uint8_t>(LoggingData::IMU);
+		buf[0] = static_cast<uint8_t>(LoggingData::BARO);
 		memcpy(buf, &data, sizeof(BaroData));
 		LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::BARO, buf, sizeof(BaroData));
 		err = log.LogData();
@@ -133,11 +134,11 @@ void LoggingTask::HandleCommand(Command& cm){
 	}
 	case DataBrokerMessageTypes:: MAG_DATA:
 	{
-		MagData data = DataBroker::ExtractData<MagData>(cm);
+		MagData1 data = DataBroker::ExtractData<MagData1>(cm);
 		uint8_t buf[128];
-		buf[0] = static_cast<uint8_t>(LoggingData::IMU);
-		memcpy(buf, &data, sizeof(MagData));
-		LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::MAG, buf, sizeof(MagData));
+		buf[0] = static_cast<uint8_t>(LoggingData::MAG);
+		memcpy(buf, &data, sizeof(MagData1));
+		LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::MAG, buf, sizeof(MagData1));
 		err = log.LogData();
 
 		break;
@@ -146,13 +147,24 @@ void LoggingTask::HandleCommand(Command& cm){
 	{
 		FilterData data = DataBroker::ExtractData<FilterData>(cm);
 		uint8_t buf[128];
-		buf[0] = static_cast<uint8_t>(LoggingData::IMU);
+		buf[0] = static_cast<uint8_t>(LoggingData::FILTER);
 		memcpy(buf, &data, sizeof(FilterData));
 		LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::FILTER, buf, sizeof(FilterData));
 		err = log.LogData();
 
 		break;
 	}
+	case DataBrokerMessageTypes:: MAG_DATA2:
+		{
+			FilterData data = DataBroker::ExtractData<MagData2>(cm);
+			uint8_t buf[128];
+			buf[0] = static_cast<uint8_t>(LoggingData::MAG);
+			memcpy(buf, &data, sizeof(MagData2));
+			LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::FILTER, buf, sizeof(MagData2));
+			err = log.LogData();
+
+			break;
+		}
 	case DataBrokerMessageTypes :: INVALID:
 	{
 		err = LoggingStatus::LOGGING_ERR;
