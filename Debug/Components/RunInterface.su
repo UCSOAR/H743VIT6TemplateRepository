@@ -1,0 +1,2 @@
+../Components/RunInterface.cpp:12:10:void run_interface()	8	static
+../Components/RunInterface.cpp:17:10:void cpp_SUART3_IRQHandler()	8	static

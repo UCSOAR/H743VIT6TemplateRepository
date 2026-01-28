@@ -30,9 +30,11 @@ enum class LoggingDest
 
 enum class LoggingData
 {
-	IMU,
+	IMU32G,
+	IMU16G,
 	MAG,
-	BARO,
+	BARO07,
+	BARO11,
 	GPS,
 	FILTER
 
