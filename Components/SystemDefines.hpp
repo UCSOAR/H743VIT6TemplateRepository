@@ -57,6 +57,11 @@ constexpr uint8_t TASK_DEBUG_PRIORITY = 2;            // Priority of the debug t
 constexpr uint8_t TASK_DEBUG_QUEUE_DEPTH_OBJS = 10;        // Size of the debug task queue
 constexpr uint16_t TASK_DEBUG_STACK_DEPTH_WORDS = 512;        // Size of the debug task stack
 
+// PROFILING TASK
+constexpr uint8_t TASK_PROFILER_PRIORITY = 2;            // Priority of the profiling task
+constexpr uint8_t TASK_PROFILER_QUEUE_DEPTH_OBJS = 10;        // Size of the profiling task queue
+constexpr uint16_t TASK_PROFILER_STACK_DEPTH_WORDS = 512;        // Size of the profiling task stack
+
 constexpr uint8_t TASK_LOGGING_PRIORITY = 3;
 constexpr uint8_t TASK_LOGGING_QUEUE_DEPTH_OBJS = 10;
 constexpr uint16_t TASK_LOGGING_QUEUE_DEPTH_WORDS = 512;
