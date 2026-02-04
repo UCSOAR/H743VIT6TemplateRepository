@@ -92,6 +92,7 @@ void LoggingTask::Run(void * pvParams){
 
 void LoggingTask::HandleCommand(Command& cm){
 
+	SOAR_PRINT("Data In Logging Task\n");
 	LoggingStatus err;
 	DataBrokerMessageTypes messageType = DataBroker::getMessageType(cm);
 	switch(messageType){
@@ -99,6 +100,15 @@ void LoggingTask::HandleCommand(Command& cm){
 	case DataBrokerMessageTypes::IMU_DATA:
 	{
 		IMUData data = DataBroker::ExtractData<IMUData>(cm);
+		SOAR_PRINT("IMU accelX: %d\n", data.accel.x);
+		SOAR_PRINT("IMU accelY: %d\n", data.accel.y);
+		SOAR_PRINT("IMU accelY: %d\n", data.accel.x);
+
+		SOAR_PRINT("IMU accelY: %d\n", data.gyro.x);
+		SOAR_PRINT("IMU accelY: %d\n", data.gyro.y);
+		SOAR_PRINT("IMU accelY: %d\n", data.gyro.z);
+
+		SOAR_PRINT("IMU temperature: %d\n", data.temp);
 
 		if(data.id ==0){
 			uint8_t buf[128];
@@ -132,6 +142,13 @@ void LoggingTask::HandleCommand(Command& cm){
 	case DataBrokerMessageTypes:: MAG_DATA:
 	{
 		MagData data = DataBroker::ExtractData<MagData>(cm);
+		SOAR_PRINT("Mag rawX: %d\n", data.rawX);
+		SOAR_PRINT("Mag rawY: %d\n", data.rawY);
+		SOAR_PRINT("Mag rawZ: %d\n", data.rawZ);
+
+		SOAR_PRINT("Mag scaledX: %f\n", data.scaledX);
+		SOAR_PRINT("Mag scaledY: %f\n", data.scaledY);
+		SOAR_PRINT("Mag scaledZ: %f\n", data.scaledZ);
 		uint8_t buf[128];
 		buf[0] = static_cast<uint8_t>(LoggingData::MAG);
 		memcpy(buf, &data, sizeof(MagData));
@@ -154,6 +171,8 @@ void LoggingTask::HandleCommand(Command& cm){
 	case DataBrokerMessageTypes:: BARO_DATA:
 	{
 		BaroData data = DataBroker::ExtractData<BaroData>(cm);
+		SOAR_PRINT("Baro temperature: %d\n", data.temp);
+		SOAR_PRINT("Baro pressure: %d\n", data.pressure);
 
 		if(data.id == 0){
 			uint8_t buf[128];
@@ -168,6 +187,7 @@ void LoggingTask::HandleCommand(Command& cm){
 			memcpy(buf, &data, sizeof(BaroData));
 			LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::BARO11, buf, sizeof(BaroData));
 			err = log.LogData();
+
 		}
 
 
