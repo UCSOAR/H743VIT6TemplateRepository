@@ -25,11 +25,8 @@
 
 #include "DataBroker.hpp"
 #include "Task.hpp"
-/*
-#include "WriteBufferFixedSize.h"
-#include "ReadBufferFixedSize.h"
-#include "cobs.h"
-*/
+
+
 /************************************
  * PRIVATE MACROS AND DEFINES
  ************************************/
@@ -70,15 +67,16 @@ void LoggingTask::InitTask()
             (TaskHandle_t*)&rtTaskHandle);
 
                 SOAR_ASSERT(rtValue == pdPASS, "LoggingTask::InitTask() - xTaskCreate() failed");
-}
-
-void LoggingTask::Run(void * pvParams){
 
 	DataBroker::Subscribe<IMUData>(this);
 	DataBroker::Subscribe<GPSData>(this);
 	DataBroker::Subscribe<BaroData>(this);
 	DataBroker::Subscribe<MagData>(this);
 	DataBroker::Subscribe<FilterData>(this);
+}
+
+void LoggingTask::Run(void * pvParams){
+
 
 
     while (1) {

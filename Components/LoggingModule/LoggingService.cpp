@@ -79,14 +79,14 @@ LoggingStatus LoggingService::LogToMX66(){
 	//erase sector when starting fresh
 	if(offset == 0){
 
-		MX66_Erase_Sector((uint16_t)sector);
+		//MX66_Erase_Sector((uint16_t)sector);
 	}
 
-	MX66_Write_Block(sector, offset, (uint32_t)loggingData.dataSize, (const uint8_t*)loggingData.data);
+	//MX66_Write_Block(sector, offset, (uint32_t)loggingData.dataSize, (const uint8_t*)loggingData.data);
 
 	uint8_t verifyBuf[256];
 
-	MX66_Read(sector, offset, (uint32_t)loggingData.dataSize, verifyBuf);
+	//MX66_Read(sector, offset, (uint32_t)loggingData.dataSize, verifyBuf);
 
 	if (!BytesEqual(loggingData.data, verifyBuf, loggingData.dataSize)){
 		return LoggingStatus::LOGGING_ERR;

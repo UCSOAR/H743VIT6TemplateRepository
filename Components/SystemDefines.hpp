@@ -25,6 +25,13 @@
 /* Cube++ Required Configuration ------------------------------------------------------------------*/
 #include "CubeDefines.hpp"
 constexpr UARTDriver* const DEFAULT_DEBUG_UART_DRIVER = UART::Debug;    // UART Handle that ASSERT messages are sent over
+
+//Barometer constants
+constexpr int TEMP_LOW = 2000;
+constexpr int TEMP_VERY_LOW = -1500;
+constexpr int CMD_SIZE = 1;
+constexpr int CMD_TIMEOUT = 150;
+
 enum GLOBAL_COMMANDS : uint8_t
 {
     COMMAND_NONE = 0,        // No command, packet can probably be ignored
