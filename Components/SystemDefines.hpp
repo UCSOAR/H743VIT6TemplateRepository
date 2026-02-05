@@ -24,7 +24,7 @@
 
 /* Cube++ Required Configuration ------------------------------------------------------------------*/
 #include "CubeDefines.hpp"
-constexpr UARTDriver* const DEFAULT_DEBUG_UART_DRIVER = UART::Debug;    // UART Handle that ASSERT messages are sent over
+constexpr UARTDriver* const DEFAULT_DEBUG_UART_DRIVER = UART::GPS;    // UART Handle that ASSERT messages are sent over
 
 //Barometer constants
 constexpr int TEMP_LOW = 2000;
