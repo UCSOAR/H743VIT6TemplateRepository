@@ -33,15 +33,19 @@ namespace Driver {
 void run_main() {
     // Init Tasks
 	UARTTask::Inst().InitTask();
-    CubeTask::Inst().InitTask();
-    DebugTask::Inst().InitTask();
-    IMUTask::Inst().InitTask();
-//    LSM6DSOTask::Inst().InitTask();
+	CubeTask::Inst().InitTask();
+	DebugTask::Inst().InitTask();
+//	IMUTask::Inst().InitTask();
+
+	LSM6DSOTask::Inst().InitTask();
 //    MMC5983MATask::Inst().InitTask();
 //    BaroTask07::Inst().InitTask();
 //    BaroTask11::Inst().InitTask();
 //    LoggingTask::Inst().InitTask();
 
+	SOAR_PRINT("Debug Imu 16G read");
+	Command cmd(DATA_COMMAND, LSM6DSOTask::IMU_SAMPLE_AND_LOG);
+	LSM6DSOTask::Inst().GetEventQueue()->Send(cmd);
 
     // Print System Boot Info : Warning, don't queue more than 10 prints before scheduler starts
     SOAR_PRINT("\n-- CUBE SYSTEM --\n");
@@ -57,6 +61,7 @@ void run_main() {
 
     // Should never reach here
     SOAR_ASSERT(false, "osKernelStart() failed");
+
 
     while (1)
     {
