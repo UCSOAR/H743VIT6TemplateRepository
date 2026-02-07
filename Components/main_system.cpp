@@ -20,6 +20,7 @@
 #include "BaroTask11.hpp"
 #include "LoggingTask.hpp"
 #include "FlashTask.hpp"
+#include "ProfilerTask.hpp"
 
 /* Drivers ------------------------------------------------------------------*/
 namespace Driver {
@@ -46,6 +47,11 @@ void run_main() {
     BaroTask11::Inst().InitTask();
     LoggingTask::Inst().InitTask();
 
+
+    // start profiling task if run_time_stats enabled
+    #if (configGENERATE_RUN_TIME_STATS == 1)
+    ProfilerTask::Inst().InitTask();
+    #endif
 
     // Print System Boot Info : Warning, don't queue more than 10 prints before scheduler starts
     SOAR_PRINT("\n-- CUBE SYSTEM --\n");

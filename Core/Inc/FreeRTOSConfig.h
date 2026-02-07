@@ -162,6 +162,7 @@ uint32_t GetStatsTimerCount(void);
 
 #define INCLUDE_xTaskGetHandle  1
 #endif
+
 /* USER CODE END Defines */
 
 #endif /* FREERTOS_CONFIG_H */
