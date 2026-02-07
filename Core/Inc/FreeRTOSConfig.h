@@ -145,10 +145,12 @@ standard names. */
 /* Section where parameter definitions can be added (for instance, to override default ones in FreeRTOS.h) */
 
 // enable definitions for profiler
+#define configGENERATE_RUN_TIME_STATS 1 // 1 = enable profiling, 0 = disable profiling
+
+#if (configGENERATE_RUN_TIME_STATS == 1)
 #define configUSE_TRACE_FACILITY  1
 #define configUSE_STATS_FORMATTING_FUNCTIONS  1
 
-#define configGENERATE_RUN_TIME_STATS 1
 #define configUSE_STATS_FORMATTING_FUNCTIONS  1
 #define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS()  StartStatsTimer()
 #define portGET_RUN_TIME_COUNTER_VALUE()  GetStatsTimerCount()
@@ -156,6 +158,8 @@ standard names. */
 #define INCLUDE_uxTaskGetStackHighWaterMark 1
 
 #define INCLUDE_xTaskGetHandle  1
+#endif
+
 /* USER CODE END Defines */
 
 #endif /* FREERTOS_CONFIG_H */

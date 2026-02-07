@@ -10,7 +10,7 @@
 #include "Command.hpp"
 #include "CubeUtils.hpp"
 #include <cstring>
-#include "Profiler.hpp"
+#include "ProfilerTask.hpp"
 
 #include "stm32h7xx_hal.h"
 
@@ -97,9 +97,15 @@ void DebugTask::HandleDebugMessage(const char* msg) {
                xPortGetMinimumEverFreeHeapSize());
     SOAR_PRINT("Debug Task Runtime  \t: %d ms\n\n",
                TICKS_TO_MS(xTaskGetTickCount()));
-  } else if (strcmp(msg, "top") == 0) {
-    ProfileSystem();
-  }
+  } 
+  #if (configGENERATE_RUN_TIME_STATS == 1)  // enable profiling commands if profiling enabled
+  else if (strcmp(msg, "top") == 0) {
+    profileSystem = true;
+  } else if (strcmp(msg, "stoptop") == 0) {
+    profileSystem = false;
+  } 
+  #endif
+
     else {
     // Single character command, or unknown command
     switch (msg[0]) {

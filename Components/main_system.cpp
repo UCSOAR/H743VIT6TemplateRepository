@@ -12,6 +12,7 @@
 // Tasks
 #include "CubeTask.hpp"
 #include "DebugTask.hpp"
+#include "ProfilerTask.hpp"
 
 /* Drivers ------------------------------------------------------------------*/
 namespace Driver {
@@ -26,6 +27,11 @@ void run_main() {
     // Init Tasks
     CubeTask::Inst().InitTask();
     DebugTask::Inst().InitTask();
+
+    // start profiling task if run_time_stats enabled
+    #if (configGENERATE_RUN_TIME_STATS == 1)
+    ProfilerTask::Inst().InitTask();
+    #endif
 
     // Print System Boot Info : Warning, don't queue more than 10 prints before scheduler starts
     SOAR_PRINT("\n-- CUBE SYSTEM --\n");

@@ -48,5 +48,9 @@ constexpr uint8_t TASK_DEBUG_PRIORITY = 2;            // Priority of the debug t
 constexpr uint8_t TASK_DEBUG_QUEUE_DEPTH_OBJS = 10;        // Size of the debug task queue
 constexpr uint16_t TASK_DEBUG_STACK_DEPTH_WORDS = 512;        // Size of the debug task stack
 
+// Profiler task
+constexpr uint8_t TASK_PROFILER_PRIORITY = 3;  // Priority of the profiler task
+constexpr uint8_t TASK_PROFILER_QUEUE_DEPTH_OBJS =10;  // Size of the profiler task queue
+constexpr uint16_t TASK_PROFILER_STACK_DEPTH_WORDS =512;  // Size of the profiler task stack
 
 #endif // CUBE_MAIN_SYSTEM_DEFINES_H
