@@ -35,17 +35,17 @@ void run_main() {
 	UARTTask::Inst().InitTask();
 	CubeTask::Inst().InitTask();
 	DebugTask::Inst().InitTask();
-//	IMUTask::Inst().InitTask();
+	IMUTask::Inst().InitTask();
 
-//	LSM6DSOTask::Inst().InitTask();
+//	  LSM6DSOTask::Inst().InitTask();
 //    MMC5983MATask::Inst().InitTask();
-    BaroTask07::Inst().InitTask();
+//    BaroTask07::Inst().InitTask();
 //    BaroTask11::Inst().InitTask();
-    LoggingTask::Inst().InitTask();
+//    LoggingTask::Inst().InitTask();
 
-    SOAR_PRINT("Debug Baro07 read");
-   	Command cmd(DATA_COMMAND, BARO07_SAMPLE_AND_LOG);
-   	BaroTask07::Inst().GetEventQueue()->Send(cmd);
+	 SOAR_PRINT("Debug Imu 32G read");
+	 Command cmd(DATA_COMMAND, IMUTask::IMU_SAMPLE_AND_LOG);
+	 IMUTask::Inst().GetEventQueue()->Send(cmd);
 
     // Print System Boot Info : Warning, don't queue more than 10 prints before scheduler starts
     SOAR_PRINT("\n-- CUBE SYSTEM --\n");
