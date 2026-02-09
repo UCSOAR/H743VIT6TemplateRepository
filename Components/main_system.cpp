@@ -20,6 +20,7 @@
 #include "BaroTask11.hpp"
 #include "LoggingTask.hpp"
 
+
 /* Drivers ------------------------------------------------------------------*/
 namespace Driver {
     UARTDriver usart8(UART8);
@@ -35,24 +36,21 @@ void run_main() {
 	UARTTask::Inst().InitTask();
 	CubeTask::Inst().InitTask();
 	DebugTask::Inst().InitTask();
-	IMUTask::Inst().InitTask();
+//	IMUTask::Inst().InitTask();
 
-//	  LSM6DSOTask::Inst().InitTask();
+
+
+//	LSM6DSOTask::Inst().InitTask();
 //    MMC5983MATask::Inst().InitTask();
 //    BaroTask07::Inst().InitTask();
 //    BaroTask11::Inst().InitTask();
 //    LoggingTask::Inst().InitTask();
-
-	 SOAR_PRINT("Debug Imu 32G read");
-	 Command cmd(DATA_COMMAND, IMUTask::IMU_SAMPLE_AND_LOG);
-	 IMUTask::Inst().GetEventQueue()->Send(cmd);
 
     // Print System Boot Info : Warning, don't queue more than 10 prints before scheduler starts
     SOAR_PRINT("\n-- CUBE SYSTEM --\n");
     SOAR_PRINT("System Reset Reason: [TODO]\n"); //TODO: System reset reason can be implemented via. Flash storage
     SOAR_PRINT("Current System Free Heap: %d Bytes\n", xPortGetFreeHeapSize());
     SOAR_PRINT("Lowest Ever Free Heap: %d Bytes\n\n", xPortGetMinimumEverFreeHeapSize());
-
     // Start the Scheduler
     // Guidelines:
     // - Be CAREFUL with race conditions after osKernelStart
