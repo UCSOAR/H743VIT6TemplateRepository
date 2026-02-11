@@ -40,9 +40,9 @@ void run_main() {
 
 
 
-//	LSM6DSOTask::Inst().InitTask();
+//	  LSM6DSOTask::Inst().InitTask();
 //    MMC5983MATask::Inst().InitTask();
-//    BaroTask07::Inst().InitTask();
+    BaroTask07::Inst().InitTask();
 //    BaroTask11::Inst().InitTask();
 //    LoggingTask::Inst().InitTask();
 
@@ -55,6 +55,12 @@ void run_main() {
     // Guidelines:
     // - Be CAREFUL with race conditions after osKernelStart
     // - All uses of new and delete should be closely monitored after this point
+    SOAR_PRINT("Debug Baro07 read");
+	Command cmd(DATA_COMMAND, BARO07_SAMPLE_AND_LOG);
+	BaroTask07::Inst().GetEventQueue()->Send(cmd);
+
+
+
     osKernelStart();
 
     // Should never reach here
