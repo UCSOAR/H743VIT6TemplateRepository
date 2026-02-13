@@ -52,21 +52,21 @@ void run_main() {
     // Guidelines:
     // - Be CAREFUL with race conditions after osKernelStart
     // - All uses of new and delete should be closely monitored after this point
-    SOAR_PRINT("Debug Imu 32G read");
-   	Command cmd(DATA_COMMAND, IMUTask::IMU_SAMPLE_AND_LOG);
-   	IMUTask::Inst().GetEventQueue()->Send(cmd);
-
-   	SOAR_PRINT("Debug Imu 16G read");
-	Command cmd1(DATA_COMMAND, LSM6DSOTask::IMU_SAMPLE_AND_LOG);
-	LSM6DSOTask::Inst().GetEventQueue()->Send(cmd1);
-
-	SOAR_PRINT("Debug Baro07 read");
-	Command cmd2(DATA_COMMAND, BARO07_SAMPLE_AND_LOG);
-	BaroTask07::Inst().GetEventQueue()->Send(cmd2);
-
-	 SOAR_PRINT("Debug Baro11 read");
-	Command cmd3(DATA_COMMAND, BARO11_SAMPLE_AND_LOG);
-	BaroTask11::Inst().GetEventQueue()->Send(cmd3);
+//    SOAR_PRINT("Debug Imu 32G read");
+//   	Command cmd(DATA_COMMAND, IMUTask::IMU_SAMPLE_AND_LOG);
+//   	IMUTask::Inst().GetEventQueue()->Send(cmd);
+//
+//   	SOAR_PRINT("Debug Imu 16G read");
+//	Command cmd1(DATA_COMMAND, LSM6DSOTask::IMU_SAMPLE_AND_LOG);
+//	LSM6DSOTask::Inst().GetEventQueue()->Send(cmd1);
+//
+//	SOAR_PRINT("Debug Baro07 read");
+//	Command cmd2(DATA_COMMAND, BARO07_SAMPLE_AND_LOG);
+//	BaroTask07::Inst().GetEventQueue()->Send(cmd2);
+//
+//	 SOAR_PRINT("Debug Baro11 read");
+//	Command cmd3(DATA_COMMAND, BARO11_SAMPLE_AND_LOG);
+//	BaroTask11::Inst().GetEventQueue()->Send(cmd3);
 
 
 
