@@ -52,19 +52,19 @@ LoggingStatus LoggingService::LogData(){
 
 	case LoggingDest::FILE_SYSTEM:
 		//TODO FS write api
-		SOAR_PRINT("Log to file system");
+		SOAR_PRINT("Log to file system\n");
 		err = LoggingStatus::LOGGING_ERR;
 		break;
 
 	case LoggingDest::DMA:
 
 		//TODO DMA write api
-		SOAR_PRINT("Transfer to DMA");
+		SOAR_PRINT("Transfer to DMA\n");
 		err = LoggingStatus::LOGGING_ERR;
 		break;
 	}
 	if(err == LoggingStatus::LOGGING_SUCCESS){
-		SOAR_PRINT("Data logged successfully");
+		SOAR_PRINT("Data logged successfully\n");
 	}
 
 	return err;
@@ -72,32 +72,35 @@ LoggingStatus LoggingService::LogData(){
 
 
 LoggingStatus LoggingService::LogToMX66(){
-	static uint32_t sector = 0;
-	static uint16_t offset = 0;
-
-	if(offset + loggingData.dataSize > 512){
-		sector++;
-		offset = 0;
-	}
-
-	//erase sector when starting fresh
-	if(offset == 0){
-
-		//MX66_Erase_Sector((uint16_t)sector);
-	}
-
-	//MX66_Write_Block(sector, offset, (uint32_t)loggingData.dataSize, (const uint8_t*)loggingData.data);
-
-	uint8_t verifyBuf[256];
-
-	//MX66_Read(sector, offset, (uint32_t)loggingData.dataSize, verifyBuf);
-
-	if (!BytesEqual(loggingData.data, verifyBuf, loggingData.dataSize)){
-		return LoggingStatus::LOGGING_ERR;
-	}
-
-    offset = (uint16_t)(offset + (uint16_t)loggingData.dataSize);
+//	static uint32_t sector = 0;
+//	static uint16_t offset = 0;
+//
+//	if(offset + loggingData.dataSize > 512){
+//		sector++;
+//		offset = 0;
+//	}
+//
+//	//erase sector when starting fresh
+//	if(offset == 0){
+//
+//		//MX66_Erase_Sector((uint16_t)sector);
+//	}
+//
+//	//MX66_Write_Block(sector, offset, (uint32_t)loggingData.dataSize, (const uint8_t*)loggingData.data);
+//
+//	uint8_t verifyBuf[256];
+//
+//	//MX66_Read(sector, offset, (uint32_t)loggingData.dataSize, verifyBuf);
+//
+//	if (!BytesEqual(loggingData.data, verifyBuf, loggingData.dataSize)){
+//		return LoggingStatus::LOGGING_ERR;
+//	}
+//
+//    offset = (uint16_t)(offset + (uint16_t)loggingData.dataSize);
+	SOAR_PRINT("%d\n", loggingData.data[0]);
 	return LoggingStatus::LOGGING_SUCCESS;
+
+
 
 }
 
