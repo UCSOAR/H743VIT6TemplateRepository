@@ -22,7 +22,7 @@
 #define __STM32H7xx_IT_H
 
 #ifdef __cplusplus
- extern "C" {
+extern "C" {
 #endif
 
 /* Private includes ----------------------------------------------------------*/
@@ -53,7 +53,8 @@ void BusFault_Handler(void);
 void UsageFault_Handler(void);
 void DebugMon_Handler(void);
 void TIM2_IRQHandler(void);
-void USART3_IRQHandler(void);
+void UART7_IRQHandler(void);
+void UART8_IRQHandler(void);
 /* USER CODE BEGIN EFP */
 
 /* USER CODE END EFP */

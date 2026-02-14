@@ -96,7 +96,39 @@ void DebugTask::HandleDebugMessage(const char* msg) {
                xPortGetMinimumEverFreeHeapSize());
     SOAR_PRINT("Debug Task Runtime  \t: %d ms\n\n",
                TICKS_TO_MS(xTaskGetTickCount()));
-  } else {
+  }
+  else if(strcmp(msg, "imu1")){
+
+	  SOAR_PRINT("Debug Imu 32G read");
+	  Command cmd(DATA_COMMAND, IMUTask::IMU_SAMPLE_AND_LOG);
+	  IMUTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if(strcmp(msg, "imu2")){
+
+	  SOAR_PRINT("Debug Imu 16G read");
+	  Command cmd(DATA_COMMAND, LSM6DSOTask::IMU_SAMPLE_AND_LOG);
+	  LSM6DSOTask::Inst().GetEventQueue()->Send(cmd);
+  }
+
+  else if(strcmp(msg, "baro1")){
+	  SOAR_PRINT("Debug Baro07 read");
+	  Command cmd(DATA_COMMAND, BARO07_SAMPLE_AND_LOG);
+	  BaroTask07::Inst().GetEventQueue()->Send(cmd);
+
+  }
+  else if(strcmp(msg, "baro2")){
+  	  SOAR_PRINT("Debug Baro11 read");
+  	  Command cmd(DATA_COMMAND, BARO11_SAMPLE_AND_LOG);
+  	  BaroTask11::Inst().GetEventQueue()->Send(cmd);
+
+    }
+  else if(strcmp(msg, "mag")){
+	  SOAR_PRINT("Debug mag read");
+	  Command cmd(DATA_COMMAND, MMC5983MATask::MMC_CMD_ENABLE_LOG);
+	  MMC5983MATask::Inst().GetEventQueue()->Send(cmd);
+
+  }
+  else {
     // Single character command, or unknown command
     switch (msg[0]) {
       default:

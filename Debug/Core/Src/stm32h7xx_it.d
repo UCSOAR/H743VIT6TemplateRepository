@@ -29,6 +29,10 @@ Core/Src/stm32h7xx_it.o: ../Core/Src/stm32h7xx_it.c ../Core/Inc/main.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_qspi.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usart.h \
@@ -44,7 +48,8 @@ Core/Src/stm32h7xx_it.o: ../Core/Src/stm32h7xx_it.c ../Core/Inc/main.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_exti.h \
- ../Core/Inc/stm32h7xx_it.h
+ ../Core/Inc/stm32h7xx_it.h \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/RunInterface.hpp
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
@@ -76,6 +81,10 @@ Core/Src/stm32h7xx_it.o: ../Core/Src/stm32h7xx_it.c ../Core/Inc/main.h \
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_qspi.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usart.h:
@@ -92,3 +101,4 @@ Core/Src/stm32h7xx_it.o: ../Core/Src/stm32h7xx_it.c ../Core/Inc/main.h \
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_exti.h:
 ../Core/Inc/stm32h7xx_it.h:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/RunInterface.hpp:

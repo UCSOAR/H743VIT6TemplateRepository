@@ -30,6 +30,10 @@ Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.o: \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_qspi.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
@@ -62,5 +66,9 @@ Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.o: \
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_qspi.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:

@@ -1,8 +1,8 @@
 SoarOS/Drivers/UARTDriver.o: ../SoarOS/Drivers/UARTDriver.cpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/SystemDefines.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/main_system.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/SystemDefines.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/main_system.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp \
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../Core/Inc/FreeRTOSConfig.h \
@@ -50,17 +50,21 @@ SoarOS/Drivers/UARTDriver.o: ../SoarOS/Drivers/UARTDriver.cpp \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_qspi.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usart.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/SystemDefines.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/main_system.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp:
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/SystemDefines.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/main_system.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:
@@ -108,10 +112,14 @@ C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hp
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_qspi.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usart.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp:

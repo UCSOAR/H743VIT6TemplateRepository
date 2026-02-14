@@ -1,5 +1,5 @@
 SoarOS/Core/Mutex.o: ../SoarOS/Core/Mutex.cpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp \
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../Core/Inc/FreeRTOSConfig.h \
@@ -17,9 +17,10 @@ SoarOS/Core/Mutex.o: ../SoarOS/Core/Mutex.cpp \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/SystemDefines.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/main_system.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/SystemDefines.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/main_system.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
@@ -50,14 +51,18 @@ SoarOS/Core/Mutex.o: ../SoarOS/Core/Mutex.cpp \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_qspi.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usart.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp:
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:
@@ -75,9 +80,10 @@ C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hp
 ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/SystemDefines.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/main_system.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/SystemDefines.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/main_system.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:
@@ -108,10 +114,14 @@ C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/main_system.h
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_qspi.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usart.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp:

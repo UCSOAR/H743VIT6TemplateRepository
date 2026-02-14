@@ -1,6 +1,6 @@
 Components/DebugTask.o: ../Components/DebugTask.cpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/SOARDebug/DebugTask.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Task.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/SOARDebug/DebugTask.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Task.hpp \
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../Core/Inc/FreeRTOSConfig.h \
@@ -18,11 +18,11 @@ Components/DebugTask.o: ../Components/DebugTask.cpp \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Queue.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/SystemDefines.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/main_system.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Queue.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/SystemDefines.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/main_system.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
@@ -53,18 +53,50 @@ Components/DebugTask.o: ../Components/DebugTask.cpp \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_qspi.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usart.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/SOARDebug/DebugTask.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Task.hpp:
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Components/DataBroker/Inc/DataBroker.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Components/DataBroker/Inc/Publisher.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Components/SystemTypes/DataBrokerMessageTypes.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Components/DataBroker/Inc/Subscriber.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Components/SystemTypes/SensorDataTypes.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/Components/IMUTask.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/Components/LSM6DO32Driver.h \
+ ../Core/Inc/main.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_rcc.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_bus.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_cortex.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_system.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_utils.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_system.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_bus.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_pwr.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_gpio.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_exti.h \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/LSM6DSODriver/LSM6DSOTask.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/LSM6DSODriver/lsm6dso.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983Task.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma_regs.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/MMC5983MA_SPI/spi_wrapper.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/MS5607Driver/Inc/BaroTask07.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/MS5607Driver/Inc/MS5607Driver.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/MS5611Driver/Inc/BaroTask11.hpp \
+ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/MS5611Driver/Inc/MS5611Driver.hpp
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/SOARDebug/DebugTask.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Task.hpp:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:
@@ -82,11 +114,11 @@ C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Task.hpp
 ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Queue.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/SystemDefines.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/main_system.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Queue.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/SystemDefines.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/main_system.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:
@@ -117,13 +149,45 @@ C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hp
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_qspi.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usart.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Components/DataBroker/Inc/DataBroker.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Components/DataBroker/Inc/Publisher.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Components/SystemTypes/DataBrokerMessageTypes.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Components/DataBroker/Inc/Subscriber.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Components/SystemTypes/SensorDataTypes.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/Components/IMUTask.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/Components/LSM6DO32Driver.h:
+../Core/Inc/main.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_rcc.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_bus.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_cortex.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_system.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_utils.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_system.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_bus.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_pwr.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_gpio.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_exti.h:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/LSM6DSODriver/LSM6DSOTask.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/LSM6DSODriver/lsm6dso.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983Task.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma_regs.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/MMC5983MA_SPI/spi_wrapper.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/MS5607Driver/Inc/BaroTask07.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/MS5607Driver/Inc/MS5607Driver.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/MS5611Driver/Inc/BaroTask11.hpp:
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/PeripheralDriversSubmodule/MS5611Driver/Inc/MS5611Driver.hpp:

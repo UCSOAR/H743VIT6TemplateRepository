@@ -1,23 +1,28 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (11.3.rel1)
+# Toolchain: GNU Tools for STM32 (12.3.rel1)
 ################################################################################
 
+C++M_SRCS := 
+CPP_SRCS := 
+S_UPPER_SRCS := 
+O_SRCS := 
 ELF_SRCS := 
 C_UPPER_SRCS := 
 CXX_SRCS := 
+CCM_SRCS := 
 C++_SRCS := 
 OBJ_SRCS := 
 S_SRCS := 
 CC_SRCS := 
 C_SRCS := 
-CPP_SRCS := 
-S_UPPER_SRCS := 
-O_SRCS := 
+CXXM_SRCS := 
 CYCLO_FILES := 
 OBJDUMP_LIST := 
+CCM_DEPS := 
 C_UPPER_DEPS := 
 S_DEPS := 
+CXXM_DEPS := 
 C_DEPS := 
 CC_DEPS := 
 SIZE_OUTPUT := 
@@ -28,11 +33,16 @@ OBJS :=
 CXX_DEPS := 
 MAP_FILES := 
 S_UPPER_DEPS := 
+C++M_DEPS := 
 CPP_DEPS := 
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+AltitudePredictionFilter \
+Components/AltitudeTask \
 Components \
+Components/LoggingModule \
+Components/LoggingTask \
 Core/Src \
 Core/Startup \
 Drivers/STM32H7xx_HAL_Driver/Src \
@@ -40,6 +50,15 @@ Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS \
 Middlewares/Third_Party/FreeRTOS/Source \
 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F \
 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang \
+PeripheralDriversSubmodule/.metadata/.plugins/org.eclipse.cdt.make.core \
+PeripheralDriversSubmodule/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core \
+PeripheralDriversSubmodule/Components \
+PeripheralDriversSubmodule/LSM6DSODriver \
+PeripheralDriversSubmodule/MMC5983MA_SPI \
+PeripheralDriversSubmodule/MS5607Driver \
+PeripheralDriversSubmodule/MS5611Driver \
+PeripheralDriversSubmodule/NAU7802 \
+PeripheralDriversSubmodule/TMUX1104\ Driver \
 SoarOS/Core \
 SoarOS \
 SoarOS/Drivers \
