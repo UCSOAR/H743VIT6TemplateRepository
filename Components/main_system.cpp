@@ -44,10 +44,13 @@ void run_main() {
     LoggingTask::Inst().InitTask();
 
     // Print System Boot Info : Warning, don't queue more than 10 prints before scheduler starts
-    SOAR_PRINT("\n-- CUBE SYSTEM --\n");
-    SOAR_PRINT("System Reset Reason: [TODO]\n"); //TODO: System reset reason can be implemented via. Flash storage
-    SOAR_PRINT("Current System Free Heap: %d Bytes\n", xPortGetFreeHeapSize());
-    SOAR_PRINT("Lowest Ever Free Heap: %d Bytes\n\n", xPortGetMinimumEverFreeHeapSize());
+    while(1){
+    	osDelay(100);
+		SOAR_PRINT("\n-- CUBE SYSTEM --\n");
+		SOAR_PRINT("System Reset Reason: [TODO]\n"); //TODO: System reset reason can be implemented via. Flash storage
+		SOAR_PRINT("Current System Free Heap: %d Bytes\n", xPortGetFreeHeapSize());
+		SOAR_PRINT("Lowest Ever Free Heap: %d Bytes\n\n", xPortGetMinimumEverFreeHeapSize());
+    }
     // Start the Scheduler
     // Guidelines:
     // - Be CAREFUL with race conditions after osKernelStart
