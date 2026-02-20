@@ -3,6 +3,6 @@ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Task.hpp
 ../SoarOS/CubeTask.hpp:47:5:CubeTask::CubeTask()	16	static
 ../SoarOS/CubeDefines.cpp:26:6:)	224	static
 ../SoarOS/CubeDefines.cpp:69:6:)	364	static
-../SoarOS/CubeDefines.cpp:126:1:void __static_initialization_and_destruction_0(int, int)	16	static
-../SoarOS/CubeDefines.cpp:126:1:cpp)	8	static
-../SoarOS/CubeDefines.cpp:126:1:cpp)	8	static
+../SoarOS/CubeDefines.cpp:127:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../SoarOS/CubeDefines.cpp:127:1:cpp)	8	static
+../SoarOS/CubeDefines.cpp:127:1:cpp)	8	static

@@ -12,6 +12,7 @@
 #include "DataBroker.hpp"
 #include "DataBrokerMessageTypes.hpp"
 #include "Publisher.hpp"
+#include "LoggingTask.hpp"
 
 // External Tasks (to send debug commands to)
 
@@ -48,6 +49,10 @@ void AltitudeTask::InitTask() {
 	SOAR_ASSERT(rtValue == pdPASS,
 			"AltitudeTask::InitTask - xTaskCreate() failed");
 
+	DataBroker::Subscribe<IMUData>(this);
+	DataBroker::Subscribe<GPSData>(this);
+	DataBroker::Subscribe<BaroData>(this);
+	DataBroker::Subscribe<MagData>(this);
 }
 
 // TODO: Only run thread when appropriate GPIO pin pulled HIGH (or by define)
@@ -55,17 +60,6 @@ void AltitudeTask::InitTask() {
  *    @brief Runcode for the AltitudeTask
  */
 void AltitudeTask::Run(void *pvParams) {
-
-	// Task subscribes to Data using DataBroker.
-	// Should we subscribe to each sensor individually?
-
-
-	// Note, if Subscribe is called and the publisher is a nullptr, SOAR_ASSERT will be called, which in debug mode will actually restart the program!
-	DataBroker::Subscribe<IMUData>(this);
-	DataBroker::Subscribe<GPSData>(this);
-	DataBroker::Subscribe<MagData>(this);
-	DataBroker::Subscribe<BaroData>(this);
-
 
 	FilterData haloOutput;
 	DataBroker::Publish(&haloOutput);
@@ -75,33 +69,45 @@ void AltitudeTask::Run(void *pvParams) {
 		// Time in seconds given by ticks since program execution, divided by 1000.0f for seconds.
 		currentTime = TICKS_TO_MS(xTaskGetTickCount()) / 1000.0f;
 
-		DataBroker::Subscribe<IMUData>(this);
-		DataBroker::Subscribe<GPSData>(this);
-		DataBroker::Subscribe<MagData>(this);
-		DataBroker::Subscribe<BaroData>(this);
 
-		/*  Should be Receive. ReceiveWait is blocking! */
-		uint32_t timeout = 10; // t0 ms wait
 
 		Command cm;
-		bool res = qEvtQueue->Receive(cm, timeout);
+		bool res = qEvtQueue->Receive(cm, 0);
 		if (res) {
 			HandleCommand(cm);
 		}
 
 		// main wrapper for all the Prediction filter tasks. We might want to ensure data is within the same time window.
 		std::vector<float> haloData = everest.QueueEverest(currentTime);
-		if (haloData.size() > 0) {
-			SOAR_PRINT("HALO: \n");
-			SOAR_PRINT("ALT: %d\n", haloData.at(0));
-			SOAR_PRINT("VELO: %d\n", haloData.at(1));
-			SOAR_PRINT("ACCEL: %d\n", haloData.at(2));
 
-			haloOutput = { haloData.at(0), haloData.at(1), haloData.at(2) };
+		static float lastReportTime = 0;
+		static int loopCounter = 0;
+
+		loopCounter++; // Increment every loop iteration
+
+		float elapsed = currentTime - lastReportTime;
+
+		if (elapsed >= 1.0f) { // Every 1 second
+			float realHz = (float)loopCounter / elapsed;
+			SOAR_PRINT("ALT_TASK REAL-TIME ODR: %f Hz\n", realHz);
+
+			loopCounter = 0;
+			lastReportTime = currentTime;
 		}
 
-		// we dont have a publisher for this type yet!
-		// DataBroker::Publish<FilterData>(&haloOutput);
+		if (haloData.size() > 0) {
+
+			SOAR_PRINT("HALO: \n");
+			SOAR_PRINT("ALT: %f\n", haloData.at(0));
+			SOAR_PRINT("VELO: %f\n", haloData.at(1));
+			SOAR_PRINT("ACCEL: %f\n", haloData.at(2));
+
+
+
+			haloOutput = { haloData.at(0), haloData.at(1), haloData.at(2) };
+			//DataBroker::Publish(&haloOutput);
+
+		}
 	}
 }
 
@@ -116,7 +122,7 @@ void AltitudeTask::HandleCommand(Command &cm) {
 		break;
 
 	default:
-		SOAR_PRINT("PubSubReceive - Received Unsupported Command {%d}\n",
+		SOAR_PRINT("Altitude Task - Received Unsupported Command {%f}\n",
 				cm.GetCommand());
 		break;
 	}
@@ -138,31 +144,60 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 	case DataBrokerMessageTypes::IMU_DATA: {
 		IMUData imu_data = DataBroker::ExtractData<IMUData>(cm);
 
-		// How will we identify each IMU?
+		/*
 		SOAR_PRINT("\n IMU DATA : \n");
-		SOAR_PRINT("  X -> %d \n", imu_data.accel.x);
-		SOAR_PRINT("  Y -> %d \n", imu_data.accel.y);
-		SOAR_PRINT("  Z -> %d \n", imu_data.accel.z);
+		SOAR_PRINT("IMU id=%f\n", imu_data.id);
+		SOAR_PRINT("  gyroX -> %f \n", imu_data.gyro.x);
+		SOAR_PRINT("  gyroY -> %f \n", imu_data.gyro.y);
+		SOAR_PRINT("  gyroZ -> %f \n", imu_data.gyro.z);
+		SOAR_PRINT("  accelX -> %f \n", imu_data.accel.x);
+		SOAR_PRINT("  accelY -> %f \n", imu_data.accel.y);
+		SOAR_PRINT("  accelZ -> %f \n", imu_data.accel.z);
 		SOAR_PRINT("--DATA_END--\n\n");
+		*/
+
+		if (std::isnan(imu_data.accel.x) || std::isnan(imu_data.accel.y) || std::isnan(imu_data.accel.z) ||
+		        std::isnan(imu_data.gyro.x)  || std::isnan(imu_data.gyro.y)  || std::isnan(imu_data.gyro.z))
+		{
+			return;
+		}
+
+		if (imu_data.accel.x == 0.0f || imu_data.accel.y == 0.0f || imu_data.accel.z == 0.0f) {
+			return;
+		}
 
 		// note that imu_data will not contain magnetometer data. Everest still takes mag as part of IMUData_Everest, so we will add it when MAG_DATA is received.
 		// will currentTime be subject to async problems? currentTime might not be updated by the time this is called.
-		IMUData1 = IMUData_Everest(currentTime, imu_data.gyro.x, imu_data.gyro.y,
-				imu_data.gyro.z, imu_data.accel.x, imu_data.accel.y,
-				imu_data.accel.z, IMUData1.magX, IMUData1.magY, IMUData1.magZ);
-		everest.IMU1_Measurements(IMUData1);
 
-		// imudata2 is reduplicated for now...
-		IMUData2 = IMUData_Everest(currentTime, imu_data.gyro.x, imu_data.gyro.y,
+		if (imu_data.id == 0) {
+
+			IMUData1 = IMUData_Everest(currentTime, imu_data.gyro.x, imu_data.gyro.y,
+					imu_data.gyro.z, imu_data.accel.x, imu_data.accel.y,
+					imu_data.accel.z, IMUData1.magX, IMUData1.magY, IMUData1.magZ);
+			everest.IMU1_Measurements(IMUData1);
+		} else {
+			IMUData2 = IMUData_Everest(currentTime, imu_data.gyro.x, imu_data.gyro.y,
 				imu_data.gyro.z, imu_data.accel.x, imu_data.accel.y,
 				imu_data.accel.z, IMUData1.magX, IMUData1.magY, IMUData1.magZ);
-		everest.IMU2_Measurements(IMUData2);
+			everest.IMU2_Measurements(IMUData2);
+		}
+
 
 		break;
 	}
 
 	case DataBrokerMessageTypes::GPS_DATA: {
 		GPSData gps_data = DataBroker::ExtractData<GPSData>(cm);
+
+		/*
+		SOAR_PRINT("\n GPS DATA : \n");
+		SOAR_PRINT("  Alt -> %f \n", gps_data.gps);
+		SOAR_PRINT("--DATA_END--\n\n");
+		*/
+
+		if (gps_data.gps == 0.0f) {
+			return;
+		}
 
 		gps = gps_data.gps;
 		everest.GPS_Measurements(gps);
@@ -172,6 +207,18 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 
 	case DataBrokerMessageTypes::MAG_DATA:{
 		MagData mag_data = DataBroker::ExtractData<MagData>(cm);
+
+		/*
+		SOAR_PRINT("\n MAG DATA : \n");
+		SOAR_PRINT("  X -> %f \n", mag_data.rawX);
+		SOAR_PRINT("  Y -> %f \n", mag_data.rawY);
+		SOAR_PRINT("  Z -> %f \n", mag_data.rawZ);
+		SOAR_PRINT("--DATA_END--\n\n");
+		*/
+
+		if (mag_data.rawX == 0  && mag_data.rawY == 0 && mag_data.rawZ) {
+			return;
+		}
 
 		//update IMU data with new mag measurements
 		IMUData1 = IMUData_Everest(currentTime, IMUData1.gyroX, IMUData1.gyroY,
@@ -192,11 +239,26 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 	case DataBrokerMessageTypes::BARO_DATA: {
 		BaroData baro_data = DataBroker::ExtractData<BaroData>(cm);
 
-	    baro1 = {currentTime, baro_data.pressure, 0, 0};
-	    everest.Baro1_Measurements(baro1);
 
-	    baro2 = {currentTime, baro_data.pressure, 0, 0};
-	    everest.Baro2_Measurements(baro2);
+		/*
+		SOAR_PRINT("\n BARO DATA : \n");
+		SOAR_PRINT("  Baro -> %f \n", baro_data.pressure);
+		SOAR_PRINT("--DATA_END--\n\n");
+		*/
+
+		if (baro_data.pressure == 0.0f) {
+			return;
+		}
+
+		// BaroTask07
+		if (baro_data.id == 0) {
+			baro1 = {currentTime, baro_data.pressure, 0, 0};
+			everest.Baro1_Measurements(baro1);
+		} else {
+			// BaroTask11
+			baro2 = {currentTime, baro_data.pressure, 0, 0};
+			everest.Baro2_Measurements(baro2);
+		}
 
 		break;
 	}

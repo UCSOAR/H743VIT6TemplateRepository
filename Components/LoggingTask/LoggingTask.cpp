@@ -93,6 +93,7 @@ void LoggingTask::Run(void * pvParams){
 
 void LoggingTask::HandleCommand(Command& cm){
 
+
 	SOAR_PRINT("Data In Logging Task\n");
 	LoggingStatus err;
 	DataBrokerMessageTypes messageType = DataBroker::getMessageType(cm);
