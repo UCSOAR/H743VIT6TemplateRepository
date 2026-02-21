@@ -189,13 +189,14 @@ void LoggingTask::HandleCommand(Command& cm){
 
 	if(err == LoggingStatus::LOGGING_ERR){
 		SOAR_PRINT("Log was unsuccessful\n");
+		cm.Reset();
 		return;
 	}
 
 	SOAR_PRINT("Log was successful\n");
+	cm.Reset();
 	return;
 
-	cm.Reset();
 
 
 }

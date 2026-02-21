@@ -204,7 +204,7 @@
 							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.1744470744" name="MCU GCC Linker" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker"/>
 							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.1414423539" name="MCU G++ Linker" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker">
 								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.script.1527273382" name="Linker Script (-T)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.script" value="${workspace_loc:/${ProjName}/STM32H743VITX_FLASH.ld}" valueType="string"/>
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.otherflags.1960013916" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.otherflags" valueType="stringList">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.otherflags.1960013916" name="Other flags" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.otherflags" valueType="stringList">
 									<listOptionValue builtIn="false" value="-u _printf_float"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.input.1870638286" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.input">
@@ -230,7 +230,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Middlewares"/>
-						<entry excluding="NAU7802/main_read_test.cpp|MMC5983MA_SPI/main_read_test.cpp|Components/LIS3MDLTRDriver.h|Components/LIS3MDLTRDriver.cpp|Components/FDCan.h|Components/FDCan.cpp|MX66L1G45GMI" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="PeripheralDriversSubmodule"/>
+						<entry excluding="Components/LIS3MDLTRDriver.h|Components/LIS3MDLTRDriver.cpp|Components/FDCan.h|Components/FDCan.cpp|NAU7802/main_read_test.cpp|MMC5983MA_SPI/main_read_test.cpp|MX66L1G45GMI" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="PeripheralDriversSubmodule"/>
 						<entry excluding="Profiler" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SoarOS"/>
 					</sourceEntries>
 				</configuration>

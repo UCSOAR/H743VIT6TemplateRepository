@@ -63,12 +63,18 @@ void AltitudeTask::Run(void *pvParams) {
 
 	FilterData haloOutput;
 	DataBroker::Publish(&haloOutput);
+	currentTime = TICKS_TO_MS(xTaskGetTickCount()) / 1000.0f;
+
+	// launch will be in 10 mins from startup.
+	float launchTime = currentTime + 10 * 60.0f;
+
+	// skip the first iteration. The first deltatime will be enormous.
+	bool firstIteration = true;
 
 
 	while (1) {
 		// Time in seconds given by ticks since program execution, divided by 1000.0f for seconds.
 		currentTime = TICKS_TO_MS(xTaskGetTickCount()) / 1000.0f;
-
 
 
 		Command cm;
@@ -78,36 +84,52 @@ void AltitudeTask::Run(void *pvParams) {
 		}
 
 		// main wrapper for all the Prediction filter tasks. We might want to ensure data is within the same time window.
-		std::vector<float> haloData = everest.QueueEverest(currentTime);
 
-		static float lastReportTime = 0;
-		static int loopCounter = 0;
-
-		loopCounter++; // Increment every loop iteration
-
-		float elapsed = currentTime - lastReportTime;
-
-		if (elapsed >= 1.0f) { // Every 1 second
-			float realHz = (float)loopCounter / elapsed;
-			SOAR_PRINT("ALT_TASK REAL-TIME ODR: %f Hz\n", realHz);
-
-			loopCounter = 0;
-			lastReportTime = currentTime;
+		if (everest.everestInitialized == 0) {
+		    everest.initEverest();
 		}
 
-		if (haloData.size() > 0) {
+		// keep the time zeroed after tareing until ready to launch and start the filter properly.
+		if (currentTime < launchTime) {
+			everest.updateDeltaTime(0);
+		} else if (currentTime >= launchTime) {
+			if (firstIteration) {
+				SOAR_PRINT("FILTER STARTING");
+				everest.updateDeltaTime(currentTime);
+				firstIteration = false;
+			} else {
 
-			SOAR_PRINT("HALO: \n");
-			SOAR_PRINT("ALT: %f\n", haloData.at(0));
-			SOAR_PRINT("VELO: %f\n", haloData.at(1));
-			SOAR_PRINT("ACCEL: %f\n", haloData.at(2));
+				std::vector<float> haloData = everest.QueueEverest(currentTime);
 
+				static float lastReportTime = 0;
+				static int loopCounter = 0;
 
+				loopCounter++; // Increment every loop iteration
 
-			haloOutput = { haloData.at(0), haloData.at(1), haloData.at(2) };
-			//DataBroker::Publish(&haloOutput);
+				float elapsed = currentTime - lastReportTime;
 
+				if (elapsed >= 1.0f) { // Every 1 second
+					float realHz = (float)loopCounter / elapsed;
+					// SOAR_PRINT("ALT_TASK REAL-TIME ODR: %d Hz\n", realHz);
+
+					loopCounter = 0;
+					lastReportTime = currentTime;
+				}
+
+				if (haloData.size() > 0) {
+
+					SOAR_PRINT("HALO: \n");
+					SOAR_PRINT("ALT: %f\n", haloData.at(0));
+					SOAR_PRINT("VELO: %f\n", haloData.at(1));
+					SOAR_PRINT("ACCEL: %f\n", haloData.at(2));
+
+					haloOutput = { haloData.at(0), haloData.at(1), haloData.at(2) };
+					//DataBroker::Publish(&haloOutput);
+				}
+
+			}
 		}
+
 	}
 }
 
@@ -122,7 +144,7 @@ void AltitudeTask::HandleCommand(Command &cm) {
 		break;
 
 	default:
-		SOAR_PRINT("Altitude Task - Received Unsupported Command {%f}\n",
+		SOAR_PRINT("Altitude Task - Received Unsupported Command {%d}\n",
 				cm.GetCommand());
 		break;
 	}
@@ -144,17 +166,17 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 	case DataBrokerMessageTypes::IMU_DATA: {
 		IMUData imu_data = DataBroker::ExtractData<IMUData>(cm);
 
-		/*
+/*
 		SOAR_PRINT("\n IMU DATA : \n");
-		SOAR_PRINT("IMU id=%f\n", imu_data.id);
-		SOAR_PRINT("  gyroX -> %f \n", imu_data.gyro.x);
-		SOAR_PRINT("  gyroY -> %f \n", imu_data.gyro.y);
-		SOAR_PRINT("  gyroZ -> %f \n", imu_data.gyro.z);
-		SOAR_PRINT("  accelX -> %f \n", imu_data.accel.x);
-		SOAR_PRINT("  accelY -> %f \n", imu_data.accel.y);
-		SOAR_PRINT("  accelZ -> %f \n", imu_data.accel.z);
+		SOAR_PRINT("IMU id=%d\n", imu_data.id);
+		SOAR_PRINT("  gyroX -> %d \n", imu_data.gyro.x);
+		SOAR_PRINT("  gyroY -> %d \n", imu_data.gyro.y);
+		SOAR_PRINT("  gyroZ -> %d \n", imu_data.gyro.z);
+		SOAR_PRINT("  accelX -> %d \n", imu_data.accel.x);
+		SOAR_PRINT("  accelY -> %d \n", imu_data.accel.y);
+		SOAR_PRINT("  accelZ -> %d \n", imu_data.accel.z);
 		SOAR_PRINT("--DATA_END--\n\n");
-		*/
+*/
 
 		if (std::isnan(imu_data.accel.x) || std::isnan(imu_data.accel.y) || std::isnan(imu_data.accel.z) ||
 		        std::isnan(imu_data.gyro.x)  || std::isnan(imu_data.gyro.y)  || std::isnan(imu_data.gyro.z))
@@ -191,7 +213,7 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 
 		/*
 		SOAR_PRINT("\n GPS DATA : \n");
-		SOAR_PRINT("  Alt -> %f \n", gps_data.gps);
+		SOAR_PRINT("  Alt -> %d \n", gps_data.gps);
 		SOAR_PRINT("--DATA_END--\n\n");
 		*/
 
@@ -210,9 +232,9 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 
 		/*
 		SOAR_PRINT("\n MAG DATA : \n");
-		SOAR_PRINT("  X -> %f \n", mag_data.rawX);
-		SOAR_PRINT("  Y -> %f \n", mag_data.rawY);
-		SOAR_PRINT("  Z -> %f \n", mag_data.rawZ);
+		SOAR_PRINT("  X -> %d \n", mag_data.rawX);
+		SOAR_PRINT("  Y -> %d \n", mag_data.rawY);
+		SOAR_PRINT("  Z -> %d \n", mag_data.rawZ);
 		SOAR_PRINT("--DATA_END--\n\n");
 		*/
 
@@ -242,7 +264,7 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 
 		/*
 		SOAR_PRINT("\n BARO DATA : \n");
-		SOAR_PRINT("  Baro -> %f \n", baro_data.pressure);
+		SOAR_PRINT("  Baro -> %d \n", baro_data.pressure);
 		SOAR_PRINT("--DATA_END--\n\n");
 		*/
 
