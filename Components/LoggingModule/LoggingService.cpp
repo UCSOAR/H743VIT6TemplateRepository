@@ -9,12 +9,13 @@
 uint8_t  LoggingService::ramLog[RAM_LOG_SIZE] = {0};
 uint32_t LoggingService::ramHead = 0;
 
-LoggingService::LoggingService(LoggingDest dest, LoggingData dataType, uint8_t* data, uint32_t dataSize)
+LoggingService::LoggingService(LoggingDest dest, LoggingData dataType, uint8_t* data, uint32_t dataSize, LoggingPriority priority)
 {
 	loggingData.dest = dest;
 	loggingData.dataType = dataType;
 	loggingData.data = data;
 	loggingData.dataSize = dataSize;
+	loggingData.priority = priority;
 
 
 }
@@ -25,14 +26,10 @@ LoggingStatus LoggingService::LogData(){
 	LoggingStatus err;
 
 	switch(loggingData.dest){
-	case LoggingDest::FLASH_INTERN:
+	case LoggingDest::RAM:
 		//internal flash api
-		if(LogToInternalMemory() == LoggingStatus::LOGGING_SUCCESS){
-			err = LoggingStatus::LOGGING_SUCCESS;
-		}
-		else{
-			err = LoggingStatus::LOGGING_ERR;
-		}
+		err = LogToInternalMemory();
+
 		break;
 
 	case LoggingDest::FLASH_EXTERN:
@@ -62,9 +59,6 @@ LoggingStatus LoggingService::LogData(){
 		SOAR_PRINT("Transfer to DMA\n");
 		err = LoggingStatus::LOGGING_ERR;
 		break;
-	}
-	if(err == LoggingStatus::LOGGING_SUCCESS){
-		SOAR_PRINT("Data logged successfully\n");
 	}
 
 	return err;
@@ -110,9 +104,7 @@ LoggingStatus LoggingService::LogToInternalMemory(){
 		return LoggingStatus::LOGGING_ERR;
 	}
 
-	MemAppend(loggingData.data, loggingData.dataSize);
-
-	return LoggingStatus::LOGGING_SUCCESS;
+	return MemAppend(&loggingData);
 
 }
 
@@ -125,14 +117,41 @@ bool LoggingService::BytesEqual(const uint8_t* a, const uint8_t* b, uint32_t n){
 	return true;
 }
 
-void LoggingService::MemAppend(const uint8_t *data, uint32_t size){
+LoggingStatus LoggingService::MemAppend(const LoggingPacket *data){
 
-	if(ramHead + size > RAM_LOG_SIZE){
+	if(!data){return LoggingStatus::LOGGING_ERR;}
+
+	uint32_t size = data->dataSize;
+
+	if (size > MAX_LOG_SIZE){
+		size = MAX_LOG_SIZE;
+	}
+
+	if(ramHead + MAX_LOG_SIZE + 1 > RAM_LOG_SIZE){ //check if word will fit in buffer
 		ramHead = 0;
 	}
 
-	for(uint32_t i = 0; i < size; i++){
-		ramLog[ramHead] = data[i];
-		ramHead++;
+	if(static_cast<uint8_t>(data->priority) < ramLog[ramHead]){
+		ramHead += MAX_LOG_SIZE + 1;
+		if (ramHead >= RAM_LOG_SIZE){
+			ramHead = 0;
+			return LoggingStatus::LOG_LOWER_PRIORITY;
+		}
+		return LoggingStatus::LOG_LOWER_PRIORITY;
 	}
+
+
+	ramLog[ramHead++] = static_cast<uint8_t>(data->priority);
+
+	for(uint32_t i = 0; i < size; i++){
+
+		ramLog[ramHead++] = data->data[i];
+	}
+
+	for(uint32_t i = size; i < MAX_LOG_SIZE; i++){
+		ramLog[ramHead++] = 0;
+	}
+
+	return LoggingStatus::LOG_HIGHER_PRIORITY;
+
 }
