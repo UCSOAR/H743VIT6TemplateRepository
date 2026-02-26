@@ -35,11 +35,11 @@ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/AltitudePredictionFilter
 C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/AltitudePredictionFilter/Eigen\src/Core/Matrix.h:178:7:Eigen::Matrix<float, -1, 1>::~Matrix()	1
 C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/AltitudePredictionFilter/Eigen\src/Core/PlainObjectBase.h:98:7:Eigen::PlainObjectBase<Eigen::Matrix<float, -1, -1> >::~PlainObjectBase()	1
 C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/AltitudePredictionFilter/Eigen\src/Core/Matrix.h:178:7:Eigen::Matrix<float, -1, -1>::~Matrix()	1
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/AltitudePredictionFilter/HALO.hpp:209:7:HALO::~HALO()	1
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/AltitudePredictionFilter/HALO.hpp:211:7:HALO::~HALO()	1
 C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/AltitudePredictionFilter/everestTaskHPP.hpp:125:7:EverestTask::~EverestTask()	1
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/AltitudeTask/AltitudeTask.hpp:14:7:AltitudeTask::~AltitudeTask()	1
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/AltitudeTask/AltitudeTask.hpp:17:23:void __tcf_2()	1
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/AltitudeTask/AltitudeTask.hpp:16:23:static AltitudeTask& AltitudeTask::Inst()	3
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/AltitudeTask/AltitudeTask.hpp:15:7:AltitudeTask::~AltitudeTask()	1
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/AltitudeTask/AltitudeTask.hpp:18:23:void __tcf_2()	1
+C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/AltitudeTask/AltitudeTask.hpp:17:23:static AltitudeTask& AltitudeTask::Inst()	3
 ../Components/main_system.cpp:34:6:void run_main()	1
 C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Components/DataBroker/Inc/Publisher.hpp:38:3:Publisher<T, MaxSubscribers>::Publisher(DataBrokerMessageTypes) [with T = IMUData; unsigned char MaxSubscribers = 5]	1
 C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Components/DataBroker/Inc/Publisher.hpp:38:3:Publisher<T, MaxSubscribers>::Publisher(DataBrokerMessageTypes) [with T = MagData; unsigned char MaxSubscribers = 5]	1

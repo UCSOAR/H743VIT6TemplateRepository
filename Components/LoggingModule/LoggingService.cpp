@@ -64,7 +64,7 @@ LoggingStatus LoggingService::LogData(){
 		break;
 	}
 	if(err == LoggingStatus::LOGGING_SUCCESS){
-		SOAR_PRINT("Data logged successfully\n");
+		//SOAR_PRINT("Data logged successfully\n");
 	}
 
 	return err;

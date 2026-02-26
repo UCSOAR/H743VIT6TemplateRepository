@@ -61,15 +61,16 @@ void AltitudeTask::InitTask() {
  */
 void AltitudeTask::Run(void *pvParams) {
 
-	FilterData haloOutput;
-	DataBroker::Publish(&haloOutput);
+	DataBroker::Publish(&filterData);
 	currentTime = TICKS_TO_MS(xTaskGetTickCount()) / 1000.0f;
 
 	// launch will be in 10 mins from startup.
-	float launchTime = currentTime + 10 * 60.0f;
+	float launchTime = currentTime + 0 * 60.0f;
 
 	// skip the first iteration. The first deltatime will be enormous.
 	bool firstIteration = true;
+
+	int lastTriggerTime = -1;
 
 
 	while (1) {
@@ -86,12 +87,13 @@ void AltitudeTask::Run(void *pvParams) {
 		// main wrapper for all the Prediction filter tasks. We might want to ensure data is within the same time window.
 
 		if (everest.everestInitialized == 0) {
+			everest.updateDeltaTime(currentTime);
 		    everest.initEverest();
 		}
 
 		// keep the time zeroed after tareing until ready to launch and start the filter properly.
-		if (currentTime < launchTime) {
-			everest.updateDeltaTime(0);
+		else if (currentTime < launchTime) {
+			everest.updateDeltaTime(currentTime);
 		} else if (currentTime >= launchTime) {
 			if (firstIteration) {
 				SOAR_PRINT("FILTER STARTING");
@@ -103,6 +105,24 @@ void AltitudeTask::Run(void *pvParams) {
 
 				static float lastReportTime = 0;
 				static int loopCounter = 0;
+
+			    // predict 100 slices every 5 time slices.
+			    int t = (int)floor(currentTime);
+
+			    if (t % 5 == 0 && t != lastTriggerTime) {
+			    	VectorXf prediction = everest.halo.predictNStates(100);
+					lastTriggerTime = t;
+					filterData.altPredicted = prediction(0);
+					filterData.veloPredicted = prediction(1);
+					filterData.accelPredicted = prediction(2);
+					filterData.timePredicted = currentTime + 100 * everest.deltaTime;
+					SOAR_PRINT("HALO PREDICTION: %f\n", haloData.at(0));
+					SOAR_PRINT("Time: %f\n", currentTime + 100 * everest.deltaTime);
+					SOAR_PRINT("ALT: %f\n",  prediction(0));
+					SOAR_PRINT("VELO: %f\n", prediction(1));
+					SOAR_PRINT("ACCEL: %f\n", prediction(2));
+
+			    }
 
 				loopCounter++; // Increment every loop iteration
 
@@ -123,8 +143,11 @@ void AltitudeTask::Run(void *pvParams) {
 					SOAR_PRINT("VELO: %f\n", haloData.at(1));
 					SOAR_PRINT("ACCEL: %f\n", haloData.at(2));
 
-					haloOutput = { haloData.at(0), haloData.at(1), haloData.at(2) };
-					//DataBroker::Publish(&haloOutput);
+					filterData.alt = haloData.at(0);
+					filterData.velo = haloData.at(1);
+					filterData.accel = haloData.at(2);
+
+					DataBroker::Publish(&filterData);
 				}
 
 			}
@@ -166,7 +189,7 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 	case DataBrokerMessageTypes::IMU_DATA: {
 		IMUData imu_data = DataBroker::ExtractData<IMUData>(cm);
 
-/*
+
 		SOAR_PRINT("\n IMU DATA : \n");
 		SOAR_PRINT("IMU id=%d\n", imu_data.id);
 		SOAR_PRINT("  gyroX -> %d \n", imu_data.gyro.x);
@@ -175,18 +198,11 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 		SOAR_PRINT("  accelX -> %d \n", imu_data.accel.x);
 		SOAR_PRINT("  accelY -> %d \n", imu_data.accel.y);
 		SOAR_PRINT("  accelZ -> %d \n", imu_data.accel.z);
-		SOAR_PRINT("--DATA_END--\n\n");
-*/
 
-		if (std::isnan(imu_data.accel.x) || std::isnan(imu_data.accel.y) || std::isnan(imu_data.accel.z) ||
-		        std::isnan(imu_data.gyro.x)  || std::isnan(imu_data.gyro.y)  || std::isnan(imu_data.gyro.z))
-		{
-			return;
-		}
 
-		if (imu_data.accel.x == 0.0f || imu_data.accel.y == 0.0f || imu_data.accel.z == 0.0f) {
-			return;
-		}
+
+
+
 
 		// note that imu_data will not contain magnetometer data. Everest still takes mag as part of IMUData_Everest, so we will add it when MAG_DATA is received.
 		// will currentTime be subject to async problems? currentTime might not be updated by the time this is called.
@@ -195,16 +211,24 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 
 			IMUData1 = IMUData_Everest(currentTime, imu_data.gyro.x, imu_data.gyro.y,
 					imu_data.gyro.z, imu_data.accel.x, imu_data.accel.y,
-					imu_data.accel.z, IMUData1.magX, IMUData1.magY, IMUData1.magZ);
+					imu_data.accel.z, IMUData1.magX, IMUData1.magY, IMUData1.magZ, 0);
 			everest.IMU1_Measurements(IMUData1);
+
+			SOAR_PRINT("  magX -> %f \n", IMUData1.magX);
+			SOAR_PRINT("  magY -> %f \n", IMUData1.magY);
+			SOAR_PRINT("  magZ -> %f \n", IMUData1.magZ);
 		} else {
 			IMUData2 = IMUData_Everest(currentTime, imu_data.gyro.x, imu_data.gyro.y,
 				imu_data.gyro.z, imu_data.accel.x, imu_data.accel.y,
-				imu_data.accel.z, IMUData1.magX, IMUData1.magY, IMUData1.magZ);
+				imu_data.accel.z, IMUData1.magX, IMUData1.magY, IMUData1.magZ, 0);
 			everest.IMU2_Measurements(IMUData2);
+
+			SOAR_PRINT("  magX -> %f \n", IMUData2.magX);
+			SOAR_PRINT("  magY -> %f \n", IMUData2.magY);
+			SOAR_PRINT("  magZ -> %f \n", IMUData2.magZ);
 		}
 
-
+		SOAR_PRINT("--DATA_END--\n\n");
 		break;
 	}
 
@@ -230,13 +254,13 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 	case DataBrokerMessageTypes::MAG_DATA:{
 		MagData mag_data = DataBroker::ExtractData<MagData>(cm);
 
-		/*
+
 		SOAR_PRINT("\n MAG DATA : \n");
 		SOAR_PRINT("  X -> %d \n", mag_data.rawX);
 		SOAR_PRINT("  Y -> %d \n", mag_data.rawY);
 		SOAR_PRINT("  Z -> %d \n", mag_data.rawZ);
 		SOAR_PRINT("--DATA_END--\n\n");
-		*/
+
 
 		if (mag_data.rawX == 0  && mag_data.rawY == 0 && mag_data.rawZ) {
 			return;
@@ -245,13 +269,13 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 		//update IMU data with new mag measurements
 		IMUData1 = IMUData_Everest(currentTime, IMUData1.gyroX, IMUData1.gyroY,
 				IMUData1.gyroZ, IMUData1.accelX, IMUData1.accelY,
-				IMUData1.accelZ, mag_data.rawX, mag_data.rawY, mag_data.rawZ);
+				IMUData1.accelZ, mag_data.rawX, mag_data.rawY, mag_data.rawZ, 0);
 		everest.IMU1_Measurements(IMUData1);
 
 		// imudata2 is reduplicated for now...
 		IMUData2 = IMUData_Everest(currentTime, IMUData2.gyroX, IMUData2.gyroY,
 				IMUData2.gyroZ, IMUData2.accelX, IMUData2.accelY,
-				IMUData2.accelZ, mag_data.rawX, mag_data.rawY, mag_data.rawZ);
+				IMUData2.accelZ, mag_data.rawX, mag_data.rawY, mag_data.rawZ, 0);
 		everest.IMU2_Measurements(IMUData2);
 
 

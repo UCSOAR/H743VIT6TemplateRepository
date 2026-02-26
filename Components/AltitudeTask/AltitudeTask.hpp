@@ -10,6 +10,7 @@
 #include "Task.hpp"
 #include "SystemDefines.hpp"
 #include "everestTaskHPP.hpp"
+#include "SensorDataTypes.hpp"
 
 class AltitudeTask: public Task {
 public:
@@ -34,11 +35,13 @@ protected:
 	EverestTask everest;
 
 	// structs to hold subscribed data.
-	IMUData_Everest IMUData1;
-	IMUData_Everest IMUData2;
+	IMUData_Everest IMUData1{};
+	IMUData_Everest IMUData2{};
 
-	BarosData baro1;
-	BarosData baro2;
+	BarosData baro1{};
+	BarosData baro2{};
+
+	FilterData filterData{};
 
 	// GPS merely returns altitude.
 	float gps;
