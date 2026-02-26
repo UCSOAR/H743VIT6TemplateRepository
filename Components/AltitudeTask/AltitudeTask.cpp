@@ -109,6 +109,7 @@ void AltitudeTask::Run(void *pvParams) {
 			    // predict 100 slices every 5 time slices.
 			    int t = (int)floor(currentTime);
 
+			    /*
 			    if (t % 5 == 0 && t != lastTriggerTime) {
 			    	VectorXf prediction = everest.halo.predictNStates(100);
 					lastTriggerTime = t;
@@ -122,7 +123,7 @@ void AltitudeTask::Run(void *pvParams) {
 					SOAR_PRINT("VELO: %f\n", prediction(1));
 					SOAR_PRINT("ACCEL: %f\n", prediction(2));
 
-			    }
+			    }*/
 
 				loopCounter++; // Increment every loop iteration
 
