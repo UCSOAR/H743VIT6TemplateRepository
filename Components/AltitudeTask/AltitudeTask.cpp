@@ -148,6 +148,9 @@ void AltitudeTask::Run(void *pvParams) {
 					filterData.accel = haloData.at(2);
 
 					DataBroker::Publish(&filterData);
+
+					Command filterCommand(DATA_BROKER_COMMAND, static_cast<uint16_t>(DataBrokerMessageTypes::FILTER_DATA));
+					LoggingTask::Inst().GetEventQueue()->Send(filterCommand);
 				}
 
 			}
