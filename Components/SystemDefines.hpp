@@ -37,7 +37,8 @@ enum GLOBAL_COMMANDS : uint8_t
     COMMAND_NONE = 0,        // No command, packet can probably be ignored
     TASK_SPECIFIC_COMMAND,    // Runs a task specific command when given this object
     DATA_COMMAND,// Data command, used to send data to a task. Target is stored in taskCommand
-	DATA_BROKER_COMMAND
+	DATA_BROKER_COMMAND,
+	GPS_COMMAND,
 };
 
 /* Cube++ Optional Code Configuration ------------------------------------------------------------------*/
@@ -59,5 +60,9 @@ constexpr uint16_t TASK_DEBUG_STACK_DEPTH_WORDS = 512;        // Size of the deb
 constexpr uint8_t TASK_LOGGING_PRIORITY = 3;
 constexpr uint8_t TASK_LOGGING_QUEUE_DEPTH_OBJS = 10;
 constexpr uint16_t TASK_LOGGING_QUEUE_DEPTH_WORDS = 512;
+
+constexpr uint8_t TASK_GPS_PRIORITY = 2;            // Priority of the barometer task
+constexpr uint8_t TASK_GPS_QUEUE_DEPTH_OBJS = 10;        // Size of the barometer task queue
+constexpr uint16_t TASK_GPS_STACK_DEPTH_WORDS = 896;        // Size of the barometer task stack
 
 #endif // CUBE_MAIN_SYSTEM_DEFINES_H

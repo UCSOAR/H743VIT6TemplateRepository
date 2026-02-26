@@ -51,6 +51,9 @@ SPI_HandleTypeDef hspi2;
 SPI_HandleTypeDef hspi3;
 SPI_HandleTypeDef hspi4;
 
+UART_HandleTypeDef huart7;
+DMA_HandleTypeDef hdma_uart7_tx;
+
 osThreadId defaultTaskHandle;
 /* USER CODE BEGIN PV */
 
@@ -60,6 +63,7 @@ osThreadId defaultTaskHandle;
 void SystemClock_Config(void);
 void PeriphCommonClock_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_DMA_Init(void);
 static void MX_CRC_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_SPI2_Init(void);
@@ -72,6 +76,7 @@ static void MX_UART7_Init(void);
 void StartDefaultTask(void const * argument);
 
 /* USER CODE BEGIN PFP */
+
 
 /* USER CODE END PFP */
 
@@ -112,6 +117,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_CRC_Init();
   MX_SPI1_Init();
   MX_SPI2_Init();
@@ -507,66 +513,35 @@ static void MX_UART7_Init(void)
 
   /* USER CODE END UART7_Init 0 */
 
-  LL_USART_InitTypeDef UART_InitStruct = {0};
-
-  LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
-  RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
-
-  /** Initializes the peripherals clock
-  */
-  PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_UART7;
-  PeriphClkInitStruct.Usart234578ClockSelection = RCC_USART234578CLKSOURCE_D2PCLK1;
-  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  /* Peripheral clock enable */
-  LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_UART7);
-
-  LL_AHB4_GRP1_EnableClock(LL_AHB4_GRP1_PERIPH_GPIOE);
-  /**UART7 GPIO Configuration
-  PE7   ------> UART7_RX
-  PE8   ------> UART7_TX
-  */
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_7|LL_GPIO_PIN_8;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
-  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  GPIO_InitStruct.Alternate = LL_GPIO_AF_7;
-  LL_GPIO_Init(GPIOE, &GPIO_InitStruct);
-
-  /* UART7 interrupt Init */
-  NVIC_SetPriority(UART7_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),5, 0));
-  NVIC_EnableIRQ(UART7_IRQn);
-
   /* USER CODE BEGIN UART7_Init 1 */
 
   /* USER CODE END UART7_Init 1 */
-  UART_InitStruct.PrescalerValue = LL_USART_PRESCALER_DIV1;
-  UART_InitStruct.BaudRate = 115200;
-  UART_InitStruct.DataWidth = LL_USART_DATAWIDTH_8B;
-  UART_InitStruct.StopBits = LL_USART_STOPBITS_1;
-  UART_InitStruct.Parity = LL_USART_PARITY_NONE;
-  UART_InitStruct.TransferDirection = LL_USART_DIRECTION_TX_RX;
-  UART_InitStruct.HardwareFlowControl = LL_USART_HWCONTROL_NONE;
-  UART_InitStruct.OverSampling = LL_USART_OVERSAMPLING_16;
-  LL_USART_Init(UART7, &UART_InitStruct);
-  LL_USART_DisableFIFO(UART7);
-  LL_USART_SetTXFIFOThreshold(UART7, LL_USART_FIFOTHRESHOLD_1_8);
-  LL_USART_SetRXFIFOThreshold(UART7, LL_USART_FIFOTHRESHOLD_1_8);
-  LL_USART_ConfigAsyncMode(UART7);
-
-  /* USER CODE BEGIN WKUPType UART7 */
-
-  /* USER CODE END WKUPType UART7 */
-
-  LL_USART_Enable(UART7);
-
-  /* Polling UART7 initialisation */
-  while((!(LL_USART_IsActiveFlag_TEACK(UART7))) || (!(LL_USART_IsActiveFlag_REACK(UART7))))
+  huart7.Instance = UART7;
+  huart7.Init.BaudRate = 115200;
+  huart7.Init.WordLength = UART_WORDLENGTH_8B;
+  huart7.Init.StopBits = UART_STOPBITS_1;
+  huart7.Init.Parity = UART_PARITY_NONE;
+  huart7.Init.Mode = UART_MODE_TX_RX;
+  huart7.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart7.Init.OverSampling = UART_OVERSAMPLING_16;
+  huart7.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+  huart7.Init.ClockPrescaler = UART_PRESCALER_DIV1;
+  huart7.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+  if (HAL_UART_Init(&huart7) != HAL_OK)
   {
+    Error_Handler();
+  }
+  if (HAL_UARTEx_SetTxFifoThreshold(&huart7, UART_TXFIFO_THRESHOLD_1_8) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_UARTEx_SetRxFifoThreshold(&huart7, UART_RXFIFO_THRESHOLD_1_8) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_UARTEx_DisableFifoMode(&huart7) != HAL_OK)
+  {
+    Error_Handler();
   }
   /* USER CODE BEGIN UART7_Init 2 */
 
@@ -671,6 +646,22 @@ static void MX_USB_OTG_FS_USB_Init(void)
   /* USER CODE BEGIN USB_OTG_FS_Init 2 */
 
   /* USER CODE END USB_OTG_FS_Init 2 */
+
+}
+
+/**
+  * Enable DMA controller clock
+  */
+static void MX_DMA_Init(void)
+{
+
+  /* DMA controller clock enable */
+  __HAL_RCC_DMA1_CLK_ENABLE();
+
+  /* DMA interrupt init */
+  /* DMA1_Stream0_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Stream0_IRQn, 5, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Stream0_IRQn);
 
 }
 
