@@ -88,6 +88,7 @@ void LoggingTask::Run(void * pvParams){
         	HandleCommand(cm);
         }
     }
+
 }
 
 void LoggingTask::HandleCommand(Command& cm){
@@ -100,28 +101,19 @@ void LoggingTask::HandleCommand(Command& cm){
 	case DataBrokerMessageTypes::IMU_DATA:
 	{
 		IMUData data = DataBroker::ExtractData<IMUData>(cm);
-		SOAR_PRINT("IMU accelX: %d\n", data.accel.x);
-		SOAR_PRINT("IMU accelY: %d\n", data.accel.y);
-		SOAR_PRINT("IMU accelY: %d\n", data.accel.x);
-
-		SOAR_PRINT("IMU accelY: %d\n", data.gyro.x);
-		SOAR_PRINT("IMU accelY: %d\n", data.gyro.y);
-		SOAR_PRINT("IMU accelY: %d\n", data.gyro.z);
-
-		SOAR_PRINT("IMU temperature: %d\n", data.temp);
 
 		if(data.id ==0){
 			uint8_t buf[128];
 			buf[0] = static_cast<uint8_t>(LoggingData::IMU16G);
 			memcpy(buf + 1, &data, sizeof(IMUData));
-			LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::IMU16G, buf, sizeof(IMUData));
+			LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::IMU16G, buf, sizeof(IMUData), LoggingPriority::SECOND);
 			err = log.LogData();
 		}
 		else{
 			uint8_t buf[128];
 			buf[0] = static_cast<uint8_t>(LoggingData::IMU32G);
 			memcpy(buf + 1, &data, sizeof(IMUData));
-			LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::IMU32G, buf, sizeof(IMUData));
+			LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::IMU32G, buf, sizeof(IMUData), LoggingPriority::SECOND);
 			err = log.LogData();
 		}
 
@@ -132,8 +124,8 @@ void LoggingTask::HandleCommand(Command& cm){
 		GPSData data = DataBroker::ExtractData<GPSData>(cm);
 		uint8_t buf[128];
 		buf[0] = static_cast<uint8_t>(LoggingData::GPS);
-		memcpy(buf, &data, sizeof(GPSData));
-		LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::GPS, buf, sizeof(GPSData));
+		memcpy(buf + 1, &data, sizeof(GPSData));
+		LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::GPS, buf, sizeof(GPSData), LoggingPriority::SECOND);
 		err = log.LogData();
 
 		break;
@@ -142,17 +134,11 @@ void LoggingTask::HandleCommand(Command& cm){
 	case DataBrokerMessageTypes:: MAG_DATA:
 	{
 		MagData data = DataBroker::ExtractData<MagData>(cm);
-		SOAR_PRINT("Mag rawX: %d\n", data.rawX);
-		SOAR_PRINT("Mag rawY: %d\n", data.rawY);
-		SOAR_PRINT("Mag rawZ: %d\n", data.rawZ);
 
-		SOAR_PRINT("Mag scaledX: %f\n", data.scaledX);
-		SOAR_PRINT("Mag scaledY: %f\n", data.scaledY);
-		SOAR_PRINT("Mag scaledZ: %f\n", data.scaledZ);
 		uint8_t buf[128];
 		buf[0] = static_cast<uint8_t>(LoggingData::MAG);
-		memcpy(buf, &data, sizeof(MagData));
-		LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::MAG, buf, sizeof(MagData));
+		memcpy(buf + 1, &data, sizeof(MagData));
+		LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::MAG, buf, sizeof(MagData), LoggingPriority::SECOND);
 		err = log.LogData();
 
 		break;
@@ -162,30 +148,38 @@ void LoggingTask::HandleCommand(Command& cm){
 		FilterData data = DataBroker::ExtractData<FilterData>(cm);
 		uint8_t buf[128];
 		buf[0] = static_cast<uint8_t>(LoggingData::FILTER);
-		memcpy(buf, &data, sizeof(FilterData));
-		LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::FILTER, buf, sizeof(FilterData));
+		memcpy(buf + 1, &data, sizeof(FilterData));
+		LoggingService log = LoggingService(LoggingDest::RAM, LoggingData::FILTER, buf, sizeof(FilterData), LoggingPriority::FIRST);
 		err = log.LogData();
+
+		if(err == LoggingStatus::LOG_HIGHER_PRIORITY){
+			SOAR_PRINT("Logged higher priority data");
+		}
+		else if(err == LoggingStatus::LOG_LOWER_PRIORITY){
+			SOAR_PRINT("Lower pirority data was not logged");
+		}
+		else{
+			SOAR_PRINT("Logging Failed");
+		}
 
 		break;
 	}
 	case DataBrokerMessageTypes:: BARO_DATA:
 	{
 		BaroData data = DataBroker::ExtractData<BaroData>(cm);
-		SOAR_PRINT("Baro temperature: %d\n", data.temp);
-		SOAR_PRINT("Baro pressure: %d\n", data.pressure);
 
 		if(data.id == 0){
 			uint8_t buf[128];
 			buf[0] = static_cast<uint8_t>(LoggingData::BARO07);
-			memcpy(buf, &data, sizeof(BaroData));
-			LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::BARO07, buf, sizeof(BaroData));
+			memcpy(buf + 1, &data, sizeof(BaroData));
+			LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::BARO07, buf, sizeof(BaroData), LoggingPriority::SECOND);
 			err = log.LogData();
 		}
 		else{
 			uint8_t buf[128];
 			buf[0] = static_cast<uint8_t>(LoggingData::BARO11);
-			memcpy(buf, &data, sizeof(BaroData));
-			LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::BARO11, buf, sizeof(BaroData));
+			memcpy(buf + 1, &data, sizeof(BaroData));
+			LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::BARO11, buf, sizeof(BaroData), LoggingPriority::SECOND);
 			err = log.LogData();
 
 		}
@@ -196,20 +190,21 @@ void LoggingTask::HandleCommand(Command& cm){
 	case DataBrokerMessageTypes :: INVALID:
 	{
 		err = LoggingStatus::LOGGING_ERR;
-		SOAR_PRINT("Non-existant DataBrokerMessageType");
+		SOAR_PRINT("Non-existant DataBrokerMessageType\n");
 		break;
 	}
 
 	}
 
 	if(err == LoggingStatus::LOGGING_ERR){
-		SOAR_PRINT("Log was unsuccessful");
+		SOAR_PRINT("Log was unsuccessful\n");
 		return;
 	}
 
-	SOAR_PRINT("Log was successful");
+	SOAR_PRINT("Log was successful\n");
 	return;
 
+	cm.Reset();
 
 
 }
