@@ -24,7 +24,7 @@
 
 /* Cube++ Required Configuration ------------------------------------------------------------------*/
 #include "CubeDefines.hpp"
-constexpr UARTDriver* const DEFAULT_DEBUG_UART_DRIVER = UART::GPS;    // UART Handle that ASSERT messages are sent over
+constexpr UARTDriver* const DEFAULT_DEBUG_UART_DRIVER = UART::Debug;    // UART Handle that ASSERT messages are sent over
 
 //Barometer constants
 constexpr int TEMP_LOW = 2000;
@@ -59,5 +59,10 @@ constexpr uint16_t TASK_DEBUG_STACK_DEPTH_WORDS = 512;        // Size of the deb
 constexpr uint8_t TASK_LOGGING_PRIORITY = 3;
 constexpr uint8_t TASK_LOGGING_QUEUE_DEPTH_OBJS = 10;
 constexpr uint16_t TASK_LOGGING_QUEUE_DEPTH_WORDS = 512;
+
+// FLASH TASK
+constexpr uint8_t TASK_FLASH_TASK_PRIORITY = 3;         // Priority of the flash task
+constexpr uint8_t TASK_FLASH_QUEUE_DEPTH_OBJS = 8;      // Size of the flash task queue
+constexpr uint16_t TASK_FLASH_STACK_DEPTH_WORDS = 1024; // Size of the flash task stack
 
 #endif // CUBE_MAIN_SYSTEM_DEFINES_H

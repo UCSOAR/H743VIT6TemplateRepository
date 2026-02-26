@@ -88,7 +88,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+	SCB-> VTOR = FLASH_BASE;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -122,6 +122,8 @@ int main(void)
   MX_USB_OTG_FS_USB_Init();
   MX_UART7_Init();
   /* USER CODE BEGIN 2 */
+  __enable_irq();
+
   run_interface();
   #if 0
   /* USER CODE END 2 */
@@ -569,6 +571,7 @@ static void MX_UART7_Init(void)
   {
   }
   /* USER CODE BEGIN UART7_Init 2 */
+  LL_USART_EnableIT_RXNE(UART7);
 
   /* USER CODE END UART7_Init 2 */
 
@@ -635,6 +638,7 @@ static void MX_UART8_Init(void)
   LL_USART_DisableFIFO(UART8);
   LL_USART_SetTXFIFOThreshold(UART8, LL_USART_FIFOTHRESHOLD_1_8);
   LL_USART_SetRXFIFOThreshold(UART8, LL_USART_FIFOTHRESHOLD_1_8);
+  LL_USART_SetTXRXSwap(UART8, LL_USART_TXRX_SWAPPED);
   LL_USART_ConfigAsyncMode(UART8);
 
   /* USER CODE BEGIN WKUPType UART8 */
@@ -648,6 +652,7 @@ static void MX_UART8_Init(void)
   {
   }
   /* USER CODE BEGIN UART8_Init 2 */
+  LL_USART_EnableIT_RXNE(UART8);
 
   /* USER CODE END UART8_Init 2 */
 

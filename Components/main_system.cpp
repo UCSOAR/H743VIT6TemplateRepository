@@ -19,6 +19,7 @@
 #include "BaroTask07.hpp"
 #include "BaroTask11.hpp"
 #include "LoggingTask.hpp"
+#include "FlashTask.hpp"
 
 /* Drivers ------------------------------------------------------------------*/
 namespace Driver {
@@ -35,13 +36,15 @@ void run_main() {
 	UARTTask::Inst().InitTask();
 	CubeTask::Inst().InitTask();
 	DebugTask::Inst().InitTask();
+	FlashTask::Inst().InitTask();
+
 //	IMUTask::Inst().InitTask();
 
 //	LSM6DSOTask::Inst().InitTask();
 //    MMC5983MATask::Inst().InitTask();
     BaroTask07::Inst().InitTask();
 //    BaroTask11::Inst().InitTask();
-    LoggingTask::Inst().InitTask();
+   LoggingTask::Inst().InitTask();
 
     SOAR_PRINT("Debug Baro07 read");
    	Command cmd(DATA_COMMAND, BARO07_SAMPLE_AND_LOG);

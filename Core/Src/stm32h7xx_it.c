@@ -193,7 +193,7 @@ void UART7_IRQHandler(void)
 void UART8_IRQHandler(void)
 {
   /* USER CODE BEGIN UART8_IRQn 0 */
-	cpp_USART3_IRQHandler();
+	cpp_UART8_IRQHandler();
   /* USER CODE END UART8_IRQn 0 */
   /* USER CODE BEGIN UART8_IRQn 1 */
 
