@@ -8,12 +8,13 @@
 
 uint8_t  LoggingService::ramLog[RAM_LOG_SIZE] = {0};
 uint32_t LoggingService::ramHead = 0;
+uint16_t LoggingService::sectorAddress = 0;
 
-LoggingService::LoggingService(LoggingDest dest, LoggingData dataType, uint8_t* data, uint32_t dataSize, LoggingPriority priority)
+LoggingService::LoggingService(LoggingDest dest, LoggingData dataType, uint8_t* ldata, uint32_t dataSize, LoggingPriority priority)
 {
 	loggingData.dest = dest;
 	loggingData.dataType = dataType;
-	loggingData.data = data;
+	loggingData.data = ldata;
 	loggingData.dataSize = dataSize;
 	loggingData.priority = priority;
 
@@ -35,10 +36,6 @@ LoggingStatus LoggingService::LogData(){
 	case LoggingDest::FLASH_EXTERN:
 
 		if(LogToMX66() == LoggingStatus::LOGGING_SUCCESS){
-
-			err = LoggingStatus::LOGGING_SUCCESS;
-		}
-		else if(LogToInternalMemory() == LoggingStatus::LOGGING_SUCCESS){
 
 			err = LoggingStatus::LOGGING_SUCCESS;
 		}
@@ -66,37 +63,32 @@ LoggingStatus LoggingService::LogData(){
 
 
 LoggingStatus LoggingService::LogToMX66(){
-//	static uint32_t sector = 0;
-//	static uint16_t offset = 0;
-//
-//	if(offset + loggingData.dataSize > 512){
-//		sector++;
-//		offset = 0;
-//	}
-//
-//	//erase sector when starting fresh
-//	if(offset == 0){
-//
-//		//MX66_Erase_Sector((uint16_t)sector);
-//	}
-//
-//	//MX66_Write_Block(sector, offset, (uint32_t)loggingData.dataSize, (const uint8_t*)loggingData.data);
-//
-//	uint8_t verifyBuf[256];
-//
-//	//MX66_Read(sector, offset, (uint32_t)loggingData.dataSize, verifyBuf);
-//
-//	if (!BytesEqual(loggingData.data, verifyBuf, loggingData.dataSize)){
-//		return LoggingStatus::LOGGING_ERR;
-//	}
-//
-//    offset = (uint16_t)(offset + (uint16_t)loggingData.dataSize);
-	SOAR_PRINT("%d\n", loggingData.data[0]);
-	return LoggingStatus::LOGGING_SUCCESS;
+
+	if(MemAppend(&loggingData) == LoggingStatus::LOG_FLASH_READY){
+
+		uint8_t txBuf[RAM_LOG_SIZE];
+		memcpy(txBuf, ramLog, RAM_LOG_SIZE);
+		MX66xxQSPI_WriteSector(txBuf, sectorAddress, 0,  RAM_LOG_SIZE);
 
 
+		uint8_t rxBuf[RAM_LOG_SIZE];
+		MX66xxQSPI_ReadSector(rxBuf, sectorAddress, 0,  RAM_LOG_SIZE);
+
+		if(BytesEqual(rxBuf, txBuf, RAM_LOG_SIZE)){
+			sectorAddress++;
+			SOAR_PRINT("FLASHED DATA");
+			return LoggingStatus::LOGGING_SUCCESS;
+		}
+
+		SOAR_PRINT("Bytes did not equal");
+		return LoggingStatus::LOGGING_ERR;
+
+	}
+	return LoggingStatus::LOG_FLASH_NOT_READY;
 
 }
+
+
 
 LoggingStatus LoggingService::LogToInternalMemory(){
 
@@ -109,9 +101,14 @@ LoggingStatus LoggingService::LogToInternalMemory(){
 }
 
 bool LoggingService::BytesEqual(const uint8_t* a, const uint8_t* b, uint32_t n){
-	for(uint32_t i = 0; i < n; i++){
+	int count = 0;
+	for(uint32_t i = 21; i < n; i++){
 
-		if(a[i] != b[i]) return false;
+		if(a[i] != b[i]){
+			SOAR_PRINT("COUNT : %d", count);
+			return false;
+		}
+		count++;
 	}
 
 	return true;
@@ -127,21 +124,12 @@ LoggingStatus LoggingService::MemAppend(const LoggingPacket *data){
 		size = MAX_LOG_SIZE;
 	}
 
-	if(ramHead + MAX_LOG_SIZE + 1 > RAM_LOG_SIZE){ //check if word will fit in buffer
+	if(ramHead + MAX_LOG_SIZE > RAM_LOG_SIZE){ //check if word will fit in buffer
 		ramHead = 0;
+		SOAR_PRINT("LOGGING READY");
+		return LoggingStatus::LOG_FLASH_READY;
 	}
 
-	if(static_cast<uint8_t>(data->priority) < ramLog[ramHead]){
-		ramHead += MAX_LOG_SIZE + 1;
-		if (ramHead >= RAM_LOG_SIZE){
-			ramHead = 0;
-			return LoggingStatus::LOG_LOWER_PRIORITY;
-		}
-		return LoggingStatus::LOG_LOWER_PRIORITY;
-	}
-
-
-	ramLog[ramHead++] = static_cast<uint8_t>(data->priority);
 
 	for(uint32_t i = 0; i < size; i++){
 
@@ -151,7 +139,9 @@ LoggingStatus LoggingService::MemAppend(const LoggingPacket *data){
 	for(uint32_t i = size; i < MAX_LOG_SIZE; i++){
 		ramLog[ramHead++] = 0;
 	}
+	SOAR_PRINT("%d", ramHead);
+	return LoggingStatus::LOGGING_SUCCESS;
 
-	return LoggingStatus::LOG_HIGHER_PRIORITY;
+
 
 }

@@ -13,10 +13,11 @@
 #include "Log.hpp"
 #include "DataBroker.hpp"
 #include "Command.hpp"
+#include "mx66xx_qspi.hpp"
 //#include "MX66L1G45GMI.hpp"
 
-#define MAX_LOG_SIZE 19 //bytes, minus one byte for priority
-#define RAM_LOG_SIZE 4100 //bytes
+#define MAX_LOG_SIZE 20 //bytes, minus one byte for priority
+#define RAM_LOG_SIZE 512 //bytes
 
 class LoggingService{
 	public:
@@ -35,6 +36,7 @@ class LoggingService{
 
 		static uint8_t  ramLog[RAM_LOG_SIZE];
 		static uint32_t ramHead;
+		static uint16_t sectorAddress;
 
 
 
