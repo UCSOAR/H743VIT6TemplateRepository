@@ -38,11 +38,14 @@
 #define MX66XX_CMD_WRSR 0x01
 #define MX66XX_CMD_CE 0xC7
 #define MX66XX_CMD_SE 0x20
+#define MX66XX_CMD_SE4B 0x21
 #define MX66XX_CMD_BE 0xD8
 #define MX66XX_CMD_READ 0x03
 #define MX66XX_CMD_QREAD 0x6B
 #define MX66XX_CMD_4READ 0xEB
 #define MX66XX_CMD_4READ4B 0xEC
+#define MX66XX_CMD_PP 0x02
+#define MX66XX_CMD_PP4B 0x12
 #define MX66XX_CMD_PP_QUAD 0x38
 
 mx66xx_t mx66xx_qspi;
@@ -100,9 +103,43 @@ static bool MX66xxQSPI_CommandAddressOnly(uint8_t instruction,
                                           uint32_t address,
                                           uint32_t addressMode)
 {
+    if (_MX66XX_SPI.State == HAL_QSPI_STATE_ERROR)
+    {
+        if (__HAL_QSPI_GET_FLAG(&_MX66XX_SPI, QSPI_FLAG_BUSY) != RESET)
+        {
+            _MX66XX_SPI.State = HAL_QSPI_STATE_BUSY;
+            (void)HAL_QSPI_Abort(&_MX66XX_SPI);
+        }
+        __HAL_QSPI_CLEAR_FLAG(&_MX66XX_SPI, QSPI_FLAG_TC | QSPI_FLAG_TE | QSPI_FLAG_SM | QSPI_FLAG_TO);
+        CLEAR_BIT(_MX66XX_SPI.Instance->CCR, QUADSPI_CCR_FMODE);
+        _MX66XX_SPI.ErrorCode = HAL_QSPI_ERROR_NONE;
+        _MX66XX_SPI.State = HAL_QSPI_STATE_READY;
+    }
+
     QSPI_CommandTypeDef cmd = {};
     MX66xxQSPI_BuildCommand(&cmd, instruction, QSPI_INSTRUCTION_4_LINES, address, addressMode, QSPI_DATA_NONE, 0, 0);
-    return (HAL_QSPI_Command(&_MX66XX_SPI, &cmd, 1000) == HAL_OK);
+    const HAL_StatusTypeDef status = HAL_QSPI_Command(&_MX66XX_SPI, &cmd, 1000);
+    if (status != HAL_OK)
+    {
+        SOAR_PRINT("MX66xxQSPI_CommandAddressOnly() failed: st=%d qspiState=%d qspiErr=0x%08lX sr=0x%08lX ccr=0x%08lX inst=0x%02X addr=0x%08lX addrMode=%lu addr4=%u\n",
+                   (int)status,
+                   (int)_MX66XX_SPI.State,
+                   (unsigned long)_MX66XX_SPI.ErrorCode,
+                   (unsigned long)_MX66XX_SPI.Instance->SR,
+                   (unsigned long)_MX66XX_SPI.Instance->CCR,
+                   (unsigned int)instruction,
+                   (unsigned long)address,
+                   (unsigned long)addressMode,
+                   (unsigned int)mx66xx_qspi.Addr4Byte);
+
+        if ((_MX66XX_SPI.State != HAL_QSPI_STATE_READY) || (status == HAL_BUSY))
+        {
+            (void)HAL_QSPI_Abort(&_MX66XX_SPI);
+        }
+        return false;
+    }
+
+    return true;
 }
 
 static bool MX66xxQSPI_CommandReceive(uint8_t instruction,
@@ -120,9 +157,36 @@ static bool MX66xxQSPI_CommandReceive(uint8_t instruction,
     MX66xxQSPI_BuildCommand(&cmd, instruction, QSPI_INSTRUCTION_4_LINES, address, addressMode, dataMode, length, dummyCycles);
 
     if (HAL_QSPI_Command(&_MX66XX_SPI, &cmd, 1000) != HAL_OK)
+    {
+        SOAR_PRINT("MX66xxQSPI_CommandReceive() command failed: qspiState=%d qspiErr=0x%08lX inst=0x%02X addr=0x%08lX len=%lu\n",
+                   (int)_MX66XX_SPI.State,
+                   (unsigned long)_MX66XX_SPI.ErrorCode,
+                   (unsigned int)instruction,
+                   (unsigned long)address,
+                   (unsigned long)length);
+        if (_MX66XX_SPI.State != HAL_QSPI_STATE_READY)
+        {
+            (void)HAL_QSPI_Abort(&_MX66XX_SPI);
+        }
         return false;
+    }
 
-    return (HAL_QSPI_Receive(&_MX66XX_SPI, rxBuf, 1000) == HAL_OK);
+    if (HAL_QSPI_Receive(&_MX66XX_SPI, rxBuf, 1000) != HAL_OK)
+    {
+        SOAR_PRINT("MX66xxQSPI_CommandReceive() data failed: qspiState=%d qspiErr=0x%08lX inst=0x%02X addr=0x%08lX len=%lu\n",
+                   (int)_MX66XX_SPI.State,
+                   (unsigned long)_MX66XX_SPI.ErrorCode,
+                   (unsigned int)instruction,
+                   (unsigned long)address,
+                   (unsigned long)length);
+        if (_MX66XX_SPI.State != HAL_QSPI_STATE_READY)
+        {
+            (void)HAL_QSPI_Abort(&_MX66XX_SPI);
+        }
+        return false;
+    }
+
+    return true;
 }
 
 static bool MX66xxQSPI_CommandTransmit(uint8_t instruction,
@@ -140,14 +204,62 @@ static bool MX66xxQSPI_CommandTransmit(uint8_t instruction,
     MX66xxQSPI_BuildCommand(&cmd, instruction, QSPI_INSTRUCTION_4_LINES, address, addressMode, dataMode, length, dummyCycles);
 
     if (HAL_QSPI_Command(&_MX66XX_SPI, &cmd, 1000) != HAL_OK)
+    {
+        SOAR_PRINT("MX66xxQSPI_CommandTransmit() command failed: qspiState=%d qspiErr=0x%08lX inst=0x%02X addr=0x%08lX len=%lu\n",
+                   (int)_MX66XX_SPI.State,
+                   (unsigned long)_MX66XX_SPI.ErrorCode,
+                   (unsigned int)instruction,
+                   (unsigned long)address,
+                   (unsigned long)length);
+        if (_MX66XX_SPI.State != HAL_QSPI_STATE_READY)
+        {
+            (void)HAL_QSPI_Abort(&_MX66XX_SPI);
+        }
         return false;
+    }
 
-    return (HAL_QSPI_Transmit(&_MX66XX_SPI, txBuf, 1000) == HAL_OK);
+    if (HAL_QSPI_Transmit(&_MX66XX_SPI, txBuf, 1000) != HAL_OK)
+    {
+        SOAR_PRINT("MX66xxQSPI_CommandTransmit() data failed: qspiState=%d qspiErr=0x%08lX inst=0x%02X addr=0x%08lX len=%lu\n",
+                   (int)_MX66XX_SPI.State,
+                   (unsigned long)_MX66XX_SPI.ErrorCode,
+                   (unsigned int)instruction,
+                   (unsigned long)address,
+                   (unsigned long)length);
+        if (_MX66XX_SPI.State != HAL_QSPI_STATE_READY)
+        {
+            (void)HAL_QSPI_Abort(&_MX66XX_SPI);
+        }
+        return false;
+    }
+
+    return true;
 }
 
 static bool MX66xxQSPI_IsWriteEnabled(void)
 {
     return (MX66xxQSPI_ReadStatusRegister() & MX66XX_QSPI_SR1_WEL_BIT) != 0;
+}
+
+static bool MX66xxQSPI_VerifyProgramSample(uint32_t address, const uint8_t *data, uint32_t length)
+{
+    if ((data == nullptr) || (length == 0U))
+        return false;
+
+    uint8_t first = 0xFF;
+    MX66xxQSPI_4ReadBytes(&first, address, 1);
+    if (first != data[0])
+        return false;
+
+    if (length > 1U)
+    {
+        uint8_t last = 0xFF;
+        MX66xxQSPI_4ReadBytes(&last, address + length - 1U, 1);
+        if (last != data[length - 1U])
+            return false;
+    }
+
+    return true;
 }
 
 static bool MX66xxQSPI_PrepareWrite(void)
@@ -201,7 +313,8 @@ void MX66xxQSPI_EQIO_1LINE(void)
 }
 void MX66xxQSPI_EN4B(void)
 {
-    if (MX66xxQSPI_CommandOnly(MX66XX_CMD_EN4B))
+    if (MX66xxQSPI_CommandOnly(MX66XX_CMD_EN4B) ||
+        MX66xxQSPI_CommandOnlyInstructionType(MX66XX_CMD_EN4B, QSPI_INSTRUCTION_1_LINE))
     {
         MX66xxQSPI_Delay(1);
         mx66xx_qspi.Addr4Byte = 1;
@@ -210,7 +323,8 @@ void MX66xxQSPI_EN4B(void)
 
 void MX66xxQSPI_EX4B(void)
 {
-    if (MX66xxQSPI_CommandOnly(MX66XX_CMD_EX4B))
+    if (MX66xxQSPI_CommandOnly(MX66XX_CMD_EX4B) ||
+        MX66xxQSPI_CommandOnlyInstructionType(MX66XX_CMD_EX4B, QSPI_INSTRUCTION_1_LINE))
     {
         MX66xxQSPI_Delay(1);
         mx66xx_qspi.Addr4Byte = 0;
@@ -249,15 +363,19 @@ void MX66xxQSPI_WriteDisable(void)
 
 uint8_t MX66xxQSPI_ReadStatusRegister(void)
 {
-    uint8_t status = 0;
-
-    (void)MX66xxQSPI_CommandReceive(MX66XX_CMD_RDSR,
-                                    0,
-                                    QSPI_ADDRESS_NONE,
-                                    QSPI_DATA_4_LINES,
-                                    &status,
-                                    1,
-                                    0);
+    uint8_t status = mx66xx_qspi.StatusRegister1;
+    if (!MX66xxQSPI_CommandReceive(MX66XX_CMD_RDSR,
+                                   0,
+                                   QSPI_ADDRESS_NONE,
+                                   QSPI_DATA_4_LINES,
+                                   &status,
+                                   1,
+                                   0))
+    {
+        SOAR_PRINT("MX66xxQSPI_ReadStatusRegister() failed: qspiState=%d qspiErr=0x%08lX\n",
+                   (int)_MX66XX_SPI.State,
+                   (unsigned long)_MX66XX_SPI.ErrorCode);
+    }
 
     mx66xx_qspi.StatusRegister1 = status;
 
@@ -285,24 +403,27 @@ void MX66xxQSPI_WriteStatusRegister(uint8_t Data)
 
 void MX66xxQSPI_WaitForWriteEnd(void)
 {
-    QSPI_CommandTypeDef cmd = {};
-   uint8_t  s = MX66xxQSPI_ReadStatusRegister();
-    MX66xxQSPI_BuildCommand(&cmd, MX66XX_CMD_RDSR, QSPI_INSTRUCTION_4_LINES, 0, QSPI_ADDRESS_NONE, QSPI_DATA_4_LINES, 1, 0);
+    const uint32_t start = HAL_GetTick();
+    uint8_t status = MX66xxQSPI_ReadStatusRegister();
 
-    QSPI_AutoPollingTypeDef cfg = {};
-    cfg.Match = 0;
-    cfg.Mask = MX66XX_QSPI_SR1_WIP_BIT;
-    cfg.MatchMode = QSPI_MATCH_MODE_AND;
-    cfg.StatusBytesSize = 1;
-    cfg.Interval = 0x10;
-    cfg.AutomaticStop = QSPI_AUTOMATIC_STOP_ENABLE;
-
-    if (HAL_QSPI_Command(&_MX66XX_SPI, &cmd, 1000) != HAL_OK)
-        return;
-
-    (void)HAL_QSPI_AutoPolling(&_MX66XX_SPI, &cmd, &cfg, MX66XX_QSPI_WRITE_POLL_TIMEOUT_MS);
-    s = MX66xxQSPI_ReadStatusRegister();
-    MX66xxQSPI_Delay(1);
+    while ((status & MX66XX_QSPI_SR1_WIP_BIT) != 0U)
+    {
+        if ((HAL_GetTick() - start) > MX66XX_QSPI_WRITE_POLL_TIMEOUT_MS)
+        {
+            SOAR_PRINT("MX66xxQSPI_WaitForWriteEnd() timeout: qspiState=%d qspiErr=0x%08lX sr1=0x%02X\n",
+                       (int)_MX66XX_SPI.State,
+                       (unsigned long)_MX66XX_SPI.ErrorCode,
+                       (unsigned int)status);
+            if (__HAL_QSPI_GET_FLAG(&_MX66XX_SPI, QSPI_FLAG_BUSY) != RESET)
+            {
+                _MX66XX_SPI.State = HAL_QSPI_STATE_BUSY;
+                (void)HAL_QSPI_Abort(&_MX66XX_SPI);
+            }
+            break;
+        }
+        MX66xxQSPI_Delay(1);
+        status = MX66xxQSPI_ReadStatusRegister();
+    }
 }
 
 bool MX66xxQSPI_Init(void)
@@ -374,9 +495,15 @@ void MX66xxQSPI_EraseSector(uint32_t SectorIndex)
     }
 
     uint32_t sectorAddr = SectorIndex * mx66xx_qspi.SectorSize;
-    (void)MX66xxQSPI_CommandAddressOnly(0x21,
-                                        sectorAddr,
-                                        QSPI_ADDRESS_4_LINES);
+    const uint8_t sectorEraseCmd = (mx66xx_qspi.Addr4Byte == 1U) ? MX66XX_CMD_SE4B : MX66XX_CMD_SE;
+    if (!MX66xxQSPI_CommandAddressOnly(sectorEraseCmd,
+                                       sectorAddr,
+                                       QSPI_ADDRESS_4_LINES))
+    {
+        MX66xxQSPI_WriteDisable();
+        mx66xx_qspi.Lock = 0;
+        return;
+    }
     MX66xxQSPI_WaitForWriteEnd();
     MX66xxQSPI_WriteDisable();
 
@@ -568,18 +695,46 @@ void MX66xxQSPI_WritePage(uint8_t *pBuffer, uint32_t Page_Address, uint32_t Offs
 
     if (MX66xxQSPI_PrepareWrite())
     {
-    	uint8_t s = MX66xxQSPI_ReadStatusRegister();
-        (void)MX66xxQSPI_CommandTransmit(0x12,
-                                         addr,
-                                         QSPI_ADDRESS_4_LINES,
-                                         QSPI_DATA_4_LINES,
-                                         pBuffer,
-                                         NumByteToWrite_up_to_PageSize,
-                                         0);
+        const uint8_t programCmdList[] = {MX66XX_CMD_PP, MX66XX_CMD_PP4B, MX66XX_CMD_PP_QUAD};
+        bool programmed = false;
 
-        MX66xxQSPI_WaitForWriteEnd();
-        MX66xxQSPI_WriteDisable();
+        for (uint32_t cmdIdx = 0U; cmdIdx < (uint32_t)(sizeof(programCmdList) / sizeof(programCmdList[0])); ++cmdIdx)
+        {
+            const uint8_t programCmd = programCmdList[cmdIdx];
 
+            if ((cmdIdx > 0U) && !MX66xxQSPI_PrepareWrite())
+                break;
+
+            if (!MX66xxQSPI_CommandTransmit(programCmd,
+                                            addr,
+                                            QSPI_ADDRESS_4_LINES,
+                                            QSPI_DATA_4_LINES,
+                                            pBuffer,
+                                            NumByteToWrite_up_to_PageSize,
+                                            0))
+            {
+                MX66xxQSPI_WriteDisable();
+                continue;
+            }
+
+            MX66xxQSPI_WaitForWriteEnd();
+            MX66xxQSPI_WriteDisable();
+
+            if (MX66xxQSPI_VerifyProgramSample(addr, pBuffer, NumByteToWrite_up_to_PageSize))
+            {
+                programmed = true;
+                break;
+            }
+        }
+
+        if (!programmed)
+        {
+            SOAR_PRINT("MX66xxQSPI_WritePage() failed: page=%lu addr=0x%08lX len=%lu sr1=0x%02X\n",
+                       (unsigned long)Page_Address,
+                       (unsigned long)addr,
+                       (unsigned long)NumByteToWrite_up_to_PageSize,
+                       (unsigned int)MX66xxQSPI_ReadStatusRegister());
+        }
     }
 
     mx66xx_qspi.Lock = 0;

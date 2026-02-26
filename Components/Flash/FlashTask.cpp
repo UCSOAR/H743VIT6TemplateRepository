@@ -17,7 +17,6 @@
 constexpr uint16_t FLASH_TEST_SECTOR = 32;          // TODO: Move to a reserved sector if needed
 constexpr uint32_t FLASH_TEST_SIZE_BYTES = 512;    // Two pages
 constexpr uint32_t FLASH_ERASE_VERIFY_BYTES = 256; // One page
-constexpr uint8_t MX66_QE_BIT = 0x40;              // Status Register Quad Enable bit (bit 6)
 
 /* Helpers -------------------------------------------------------------------*/
 static void FillPattern(uint8_t *buf, uint32_t size, uint8_t seed)
@@ -153,14 +152,9 @@ void FlashTask::InitializeFlash()
     MX66xxQSPI_ReleaseFromDeepPowerDown();
     MX66xxQSPI_RSTEN();
     MX66xxQSPI_RST();
-    MX66xxQSPI_EN4B();
     MX66xxQSPI_EQIO_1LINE();
+    MX66xxQSPI_EN4B();
 
-    uint8_t status = MX66xxQSPI_ReadStatusRegister();
-    if ((status & MX66_QE_BIT) == 0)
-    {
-        MX66xxQSPI_WriteStatusRegister((uint8_t)(status | MX66_QE_BIT));
-    }
 
     if (!MX66xxQSPI_Init())
     {
@@ -168,7 +162,7 @@ void FlashTask::InitializeFlash()
         return;
     }
 
-    status = MX66xxQSPI_ReadStatusRegister();
+    uint8_t status = MX66xxQSPI_ReadStatusRegister();
     SOAR_PRINT("FlashTask::InitializeFlash() - Status1: 0x%02x\n", status);
 
     uint32_t id = MX66xxQSPI_QPIReadID();

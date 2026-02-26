@@ -12,6 +12,7 @@
 #include <cstring>
 
 #include "stm32h7xx_hal.h"
+#include "FlashTask.hpp"
 
 // External Tasks (to send debug commands to)
 
@@ -127,8 +128,13 @@ void DebugTask::HandleDebugMessage(const char* msg) {
 	  SOAR_PRINT("Debug mag read");
 	  Command cmd(DATA_COMMAND, MMC5983MATask::MMC_CMD_ENABLE_LOG);
 	  MMC5983MATask::Inst().GetEventQueue()->Send(cmd);
-
   }
+   else if (strcmp(msg, "flash_test") == 0)
+	  {
+	    SOAR_PRINT("Debug: Triggering flash tests\n");
+	    FlashTask::Inst().TriggerTest();
+	  }
+
   else {
     // Single character command, or unknown command
     switch (msg[0]) {
