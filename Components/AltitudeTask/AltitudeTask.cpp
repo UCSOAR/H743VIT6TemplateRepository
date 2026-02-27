@@ -241,16 +241,12 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 
 
 		SOAR_PRINT("\n GPS DATA : \n");
-		SOAR_PRINT("  Alt -> %d \n", gps_data.gps);
+
 		SOAR_PRINT("--DATA_END--\n\n");
 
 
-		if (gps_data.gps == 0.0f) {
-			return;
-		}
 
-		gps = gps_data.gps;
-		everest.GPS_Measurements(gps);
+
 
 		break;
 	}

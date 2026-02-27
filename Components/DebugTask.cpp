@@ -13,6 +13,7 @@
 
 #include "stm32h7xx_hal.h"
 #include "FlashTask.hpp"
+#include "GPSTask.hpp"
 
 // External Tasks (to send debug commands to)
 
@@ -136,6 +137,13 @@ void DebugTask::HandleDebugMessage(const char* msg) {
 	    SOAR_PRINT("Debug: Triggering flash tests\n");
 	    FlashTask::Inst().TriggerTest();
 	  }
+   else if(strcmp(msg, "gps_test") == 0){
+
+	  SOAR_PRINT("Debug GPS");
+	  Command cmd(DATA_COMMAND, GPS_REQUEST_DEBUG);
+	  GPSTask::Inst().GetEventQueue()->Send(cmd);
+
+   }
 
   else {
     // Single character command, or unknown command

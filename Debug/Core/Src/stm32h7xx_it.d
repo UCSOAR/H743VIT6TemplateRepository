@@ -51,7 +51,7 @@ Core/Src/stm32h7xx_it.o: ../Core/Src/stm32h7xx_it.c ../Core/Inc/main.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_exti.h \
  ../Core/Inc/stm32h7xx_it.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/RunInterface.hpp
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/Components/RunInterface.hpp
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
@@ -105,4 +105,4 @@ Core/Src/stm32h7xx_it.o: ../Core/Src/stm32h7xx_it.c ../Core/Inc/main.h \
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_exti.h:
 ../Core/Inc/stm32h7xx_it.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/RunInterface.hpp:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/Components/RunInterface.hpp:

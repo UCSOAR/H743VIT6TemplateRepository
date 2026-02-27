@@ -16,52 +16,52 @@ SoarOS/Core/CubeUtils.o: ../SoarOS/Core/CubeUtils.cpp \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/crc16_xmodem.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/platform.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/file_error_numbers.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl_profile.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_compiler_version.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_compiler.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_compiler_language_support.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_development_os.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_builtin_support.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/choose_namespace.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/crc_implementation.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../platform.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../frame_check_sequence.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../platform.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../static_assert.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../type_traits.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../nullptr.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../binary.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../integral_limits.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../private/minmax_push.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../private/minmax_pop.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../limits.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/char_traits.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/algorithm.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/functional.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/type_traits.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/iterator.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/utility.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/minmax_push.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/minmax_pop.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../log.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../power.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../smallest.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../exception.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../error_handler.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../function.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../iterator.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../static_assert.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../binary.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../type_traits.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/crc_parameters.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../integral_limits.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/SystemDefines.hpp \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/main_system.hpp \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/crc16_xmodem.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/platform.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/file_error_numbers.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl_profile.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_compiler_version.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_compiler.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_compiler_language_support.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_development_os.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_builtin_support.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/choose_namespace.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/crc_implementation.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../platform.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../frame_check_sequence.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../platform.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../static_assert.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../type_traits.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../nullptr.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../binary.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../integral_limits.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../private/minmax_push.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../private/minmax_pop.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../limits.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/char_traits.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/algorithm.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/functional.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/type_traits.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/iterator.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/utility.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/minmax_push.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/minmax_pop.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../log.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../power.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../smallest.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../exception.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../error_handler.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../function.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../iterator.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../static_assert.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../binary.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../type_traits.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/crc_parameters.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../integral_limits.h \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/Components/SystemDefines.hpp \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/Components/main_system.hpp \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
@@ -103,8 +103,8 @@ SoarOS/Core/CubeUtils.o: ../SoarOS/Core/CubeUtils.cpp \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usart.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:
@@ -122,52 +122,52 @@ SoarOS/Core/CubeUtils.o: ../SoarOS/Core/CubeUtils.cpp \
 ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/crc16_xmodem.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/platform.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/file_error_numbers.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl_profile.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_compiler_version.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_compiler.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_compiler_language_support.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_development_os.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_builtin_support.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/choose_namespace.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/crc_implementation.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../platform.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../frame_check_sequence.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../platform.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../static_assert.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../type_traits.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../nullptr.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../binary.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../integral_limits.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../private/minmax_push.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../private/minmax_pop.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../limits.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/char_traits.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/algorithm.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/functional.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/type_traits.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/iterator.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/utility.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/minmax_push.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/minmax_pop.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../log.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../power.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../smallest.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../exception.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../error_handler.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../function.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../iterator.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../static_assert.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../binary.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../type_traits.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/crc_parameters.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../integral_limits.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/SystemDefines.hpp:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/main_system.hpp:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/crc16_xmodem.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/platform.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/file_error_numbers.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl_profile.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_compiler_version.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_compiler.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_compiler_language_support.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_development_os.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/profiles/determine_builtin_support.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/choose_namespace.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/crc_implementation.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../platform.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../frame_check_sequence.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../platform.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../static_assert.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../type_traits.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../nullptr.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../binary.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../integral_limits.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../private/minmax_push.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../private/minmax_pop.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../limits.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/char_traits.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/algorithm.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/functional.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/type_traits.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/iterator.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/utility.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/minmax_push.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/minmax_pop.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../log.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../power.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../smallest.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../exception.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../error_handler.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../function.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../iterator.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../static_assert.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../binary.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../type_traits.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/crc_parameters.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Libraries/embedded-template-library/include/etl/private/../integral_limits.h:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/Components/SystemDefines.hpp:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/Components/main_system.hpp:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:
@@ -209,5 +209,5 @@ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hp
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usart.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp:

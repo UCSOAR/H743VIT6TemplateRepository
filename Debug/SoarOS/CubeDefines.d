@@ -18,9 +18,9 @@ SoarOS/CubeDefines.o: ../SoarOS/CubeDefines.cpp \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
  ../SoarOS/Core/Inc/Command.hpp \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/SystemDefines.hpp \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/main_system.hpp \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/Components/SystemDefines.hpp \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/Components/main_system.hpp \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
@@ -62,15 +62,15 @@ SoarOS/CubeDefines.o: ../SoarOS/CubeDefines.cpp \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usart.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp \
  ../SoarOS/Drivers/Inc/UARTDriver.hpp ../SoarOS/CubeDefines.hpp \
  ../SoarOS/CubeTask.hpp \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Task.hpp \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Queue.hpp \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp \
- C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Core/Inc/Task.hpp \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Core/Inc/Queue.hpp \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp \
+ /Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp
 ../SoarOS/Core/Inc/Mutex.hpp:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
@@ -90,9 +90,9 @@ SoarOS/CubeDefines.o: ../SoarOS/CubeDefines.cpp \
 ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
 ../SoarOS/Core/Inc/Command.hpp:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/SystemDefines.hpp:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/Components/main_system.hpp:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/Components/SystemDefines.hpp:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/Components/main_system.hpp:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:
@@ -134,13 +134,13 @@ C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hp
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usart.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp:
 ../SoarOS/Drivers/Inc/UARTDriver.hpp:
 ../SoarOS/CubeDefines.hpp:
 ../SoarOS/CubeTask.hpp:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Task.hpp:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Queue.hpp:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp:
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Core/Inc/Task.hpp:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Core/Inc/Queue.hpp:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp:
+/Users/jaddina/Documents/SOAR\ stuff/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp:
