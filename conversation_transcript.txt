@@ -1,0 +1,251 @@
+[User]
+# AGENTS.md instructions for c:\cygwin64\home\spiro\SOAR\H743VIT6TemplateRepository
+
+<INSTRUCTIONS>
+## Skills
+A skill is a set of local instructions to follow that is stored in a `SKILL.md` file. Below is the list of skills that can be used. Each entry includes a name, description, and file path so you can open the source for full instructions when using a specific skill.
+### Available skills
+- skill-creator: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations. (file: C:/Users/spiro/.codex/skills/.system/skill-creator/SKILL.md)
+- skill-installer: Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos). (file: C:/Users/spiro/.codex/skills/.system/skill-installer/SKILL.md)
+### How to use skills
+- Discovery: The list above is the skills available in this session (name + description + file path). Skill bodies live on disk at the listed paths.
+- Trigger rules: If the user names a skill (with `$SkillName` or plain text) OR the task clearly matches a skill's description shown above, you must use that skill for that turn. Multiple mentions mean use them all. Do not carry skills across turns unless re-mentioned.
+- Missing/blocked: If a named skill isn't in the list or the path can't be read, say so briefly and continue with the best fallback.
+- How to use a skill (progressive disclosure):
+  1) After deciding to use a skill, open its `SKILL.md`. Read only enough to follow the workflow.
+  2) When `SKILL.md` references relative paths (e.g., `scripts/foo.py`), resolve them relative to the skill directory listed above first, and only consider other paths if needed.
+  3) If `SKILL.md` points to extra folders such as `references/`, load only the specific files needed for the request; don't bulk-load everything.
+  4) If `scripts/` exist, prefer running or patching them instead of retyping large code blocks.
+  5) If `assets/` or templates exist, reuse them instead of recreating from scratch.
+- Coordination and sequencing:
+  - If multiple skills apply, choose the minimal set that covers the request and state the order you'll use them.
+  - Announce which skill(s) you're using and why (one short line). If you skip an obvious skill, say why.
+- Context hygiene:
+  - Keep context small: summarize long sections instead of pasting them; only load extra files when needed.
+  - Avoid deep reference-chasing: prefer opening only files directly linked from `SKILL.md` unless you're blocked.
+  - When variants exist (frameworks, providers, domains), pick only the relevant reference file(s) and note that choice.
+- Safety and fallback: If a skill can't be applied cleanly (missing files, unclear instructions), state the issue, pick the next-best approach, and continue.
+</INSTRUCTIONS>
+
+-----
+[User]
+<environment_context>
+  <cwd>c:\cygwin64\home\spiro\SOAR\H743VIT6TemplateRepository</cwd>
+  <shell>powershell</shell>
+</environment_context>
+
+-----
+[User]
+ok so. for flash. uart good. now falsh. reading status register and id works, but as soon as we call line 377 in mx66xx_qspi.cpp, the status register permanently goes to 0 and stops working. the write verify fails.
+
+-----
+[Assistant]
+I’ll inspect `mx66xx_qspi.cpp` around line 377 and trace the command sequence before/after it to find why the flash status register gets stuck at `0x00`. Then I’ll give you a concrete fix path.
+
+-----
+[Assistant]
+I found the driver file; next I’m pulling the exact code around line 377 and nearby status/write functions to pinpoint the failing command sequence.
+
+-----
+[Assistant]
+I see line 377 uses opcode `0x21` with `QSPI_ADDRESS_4_LINES`; I’m now checking helper functions and opcode/mode expectations, since that mismatch is a common cause of “status becomes 0 forever.”
+
+-----
+[Assistant]
+I confirmed the non-QPI driver uses `0x20` sector erase on 1-line and likely works. I’ll now inspect the QPI write/read opcodes and address modes for similar mismatches that can brick command framing after an erase attempt.
+
+-----
+[Assistant]
+I found multiple protocol inconsistencies in this QSPI driver; now I’m checking how `MX66xxQSPI_Init()` is called (and whether QPI/4-byte modes are actually entered) because that determines whether opcode `0x21` is legal there.
+
+-----
+[Assistant]
+Root cause is very likely a command/mode mismatch, not the flash “status register actually becoming 0”.
+
+The failing call at `mx66xx_qspi.cpp:377` sends `0x21` (4-byte sector erase opcode) using QPI framing, but your 4-byte mode setup is not reliable:
+
+- You call `EN4B` before entering QPI in `FlashTask.cpp:156-157`.
+- `MX66xxQSPI_EN4B()` itself always sends instruction on 4 lines (`mx66xx_qspi.cpp:85-90`, `202-209`), so that command can be ignored if flash is still in SPI mode.
+- Then erase/program uses 4-byte opcodes (`0x21`, `0x12`) and 32-bit addressing assumptions; one bad framed command can make later HAL receives fail, and your status read returns `0` on failure (`mx66xx_qspi.cpp:250-265`).
+
+Also: page program currently uses `0x12` at `mx66xx_qspi.cpp:572`, but you already defined the QPI program opcode `0x38` and should use that in QPI.
+
+Immediate fix to test:
+1. Enter QPI first (`EQIO_1LINE`), then issue `EN4B`.
+2. For now, force 3-byte erase/program path:
+- sector erase opcode `0x20` (not `0x21`)
+- page program opcode `0x38` (not `0x12`)
+- 24-bit addressing until 4-byte mode is explicitly verified.
+3. Make `ReadStatusRegister()` check HAL return and log errors instead of silently returning 0.
+
+If you want, I can patch these exact spots next.
+
+-----
+[User]
+MX66xxQSPI_CommandAddressOnly is failing in that line, returning false.
+
+-----
+[Assistant]
+That narrows it well: if `MX66xxQSPI_CommandAddressOnly()` itself returns `false`, we should fix command framing first (opcode + mode), and also expose the exact HAL error code so we can confirm whether this is `HAL_BUSY`, `HAL_TIMEOUT`, or `HAL_ERROR`. I’m going to patch the driver accordingly now.
+
+-----
+[Assistant]
+I just found your local file has already diverged from the earlier snapshot: line 377 is now calling `MX66xxQSPI_CommandAddressOnly(0x20, ...)` with a `bool r` capture. I’ll re-read the current file and patch against this exact state.
+
+-----
+[Assistant]
+I’m applying a targeted fix now: add HAL-state/error logging and recovery in the QSPI helpers, make `WaitForWriteEnd()` abort on autopoll failure so QSPI state doesn’t stay busy forever, and fail fast in sector erase when the command call fails.
+
+-----
+[Assistant]
+I’ve patched `mx66xx_qspi.cpp` with diagnostics and recovery. I’ll do one more small robustness edit so `EN4B`/`EX4B` can still work if the device is not yet in QPI framing, which is a common source of this exact failure chain.
+
+-----
+[Assistant]
+I also switched page-program from hardcoded `0x12` to your defined QPI quad program opcode, since that can directly cause write-verify failure even when erase path works. I’m doing a quick sanity scan for remaining problematic hardcoded opcodes.
+
+-----
+[Assistant]
+`MX66xxQSPI_CommandAddressOnly()` failing there is consistent with QSPI HAL getting stuck in non-ready state (often after autopoll timeout). I patched the driver to both recover and expose the exact cause.
+
+Changes made in `mx66xx_qspi.cpp`:
+- Added error logging + abort recovery in `MX66xxQSPI_CommandAddressOnly`.
+- `ReadStatusRegister()` now logs failures instead of silently collapsing to `0x00`.
+- `WaitForWriteEnd()` now handles autopoll failure and calls `HAL_QSPI_Abort()` to restore state.
+- Sector erase now fails fast if command send fails, instead of continuing as if successful.
+- Page program switched from hardcoded `0x12` to `MX66XX_CMD_PP_QUAD`.
+- `EN4B/EX4B` now also try 1-line instruction fallback.
+
+I didn’t run a build/test here.
+Next run, check the new `SOAR_PRINT` lines; the `st=... qspiState=... qspiErr=...` values will tell us exactly whether this was `HAL_BUSY` lockup or transfer timeout.
+
+-----
+[User]
+this is what we GOT!!!!: \FlashTask::RunFlashTests() - Erasing sector 32
+MX66xxQSPI_CommandAddressOnly() failed: st=1 qspiState=4 qspiErr=0x00000001 inst=0x20 addr=0x00020000 addrMode=3072 addr4=1
+VerifyErased() - sector=32 offset=0 value=0x00 (expected 0xFF)
+FlashTask::RunFlashTests() - Erase verify FAILED
+
+-----
+[Assistant]
+That log is very useful. I’m going to decode those numeric HAL values against your exact HAL headers and then patch the command framing so erase uses the same bus line mode that your working status/write-enable path uses.
+
+-----
+[Assistant]
+Your log decodes to a hard HAL peripheral fault during that command (`HAL_ERROR` + `HAL_QSPI_STATE_ERROR` + timeout). I’m going to align erase opcode with 4-byte mode (`0x21` when `Addr4Byte=1`) and force recovery before issuing the erase command so we stop hitting stale QSPI error state.
+
+-----
+[Assistant]
+One more bug is visible in your init path: `MX66_QE_BIT` (`0x40`) is being written into SR1, but QE is not an SR1 bit on this part. That can set protection bits and make behavior inconsistent. I’m removing that SR1 write so init no longer corrupts status bits.
+
+-----
+[Assistant]
+That failure pattern is consistent with a broken QUADSPI peripheral config, and I found one critical issue:
+
+- In `main.c`, `hqspi.Init.FlashSize` was `1` (effectively tiny address space).
+- Erasing sector 32 uses address `0x00020000`, so the controller can hit transfer/timeout error and stick in `HAL_QSPI_STATE_ERROR`.
+
+I patched this:
+- `ClockPrescaler = 3`
+- `SampleShifting = QSPI_SAMPLE_SHIFTING_HALFCYCLE`
+- `FlashSize = 26` (for 128MB / 1Gbit)
+- `ChipSelectHighTime = QSPI_CS_HIGH_TIME_2_CYCLE`
+
+Also kept/added driver hardening:
+- Error-state recovery + richer logging in `mx66xx_qspi.cpp`
+- Sector erase opcode selected by addr mode (`0x21` in 4-byte mode)
+- Removed incorrect QE write to SR1 in init in `FlashTask.cpp`
+
+Rebuild/flash and run again. If it still fails, send the new `MX66xxQSPI_CommandAddressOnly()` line (it now includes `sr=` and `ccr=`), and we can pinpoint the exact peripheral flag state.
+
+-----
+[User]
+FlashTask::RunFlashTests() - Erasing sector 32
+MX66xxQSPI_CommandAddressOnly() failed: st=1 qspiState=4 qspiErr=0x00000001 inst=0x21 addr=0x00020000 addrMode=3072 addr4=1
+VerifyErased() - sector=32 offset=0 value=0x00 (expected 0xFF)
+FlashTask::RunFlashTests() - Erase verify FAILED
+
+-----
+[Assistant]
+The new log confirms the QSPI peripheral itself is timing out (`HAL_ERROR` + `STATE_ERROR` + timeout), so I’m going to inspect your QUADSPI init/config next (flash size, prescaler, sample-shift, CS high time), because a bad peripheral config can cause this exact stuck-BUSY timeout pattern on indirect commands.
+
+-----
+[Assistant]
+I found a likely hard root cause: your Cube-generated QUADSPI init in `Core/Src/main.c` sets `FlashSize = 1` (effectively 4-byte address space), which can break addressed commands like sector erase at `0x00020000`. I’m patching the QUADSPI init constants now.
+
+-----
+[Assistant]
+I patched QUADSPI init with sane values (your previous `FlashSize=1` was a major red flag). I’ll add register-level debug fields (`SR/CCR`) to the existing failure log so if anything still fails, the next log will be decisive.
+
+-----
+[Assistant]
+That failure pattern is consistent with a broken QUADSPI peripheral config, and I found one critical issue:
+
+- In `main.c`, `hqspi.Init.FlashSize` was `1` (effectively tiny address space).
+- Erasing sector 32 uses address `0x00020000`, so the controller can hit transfer/timeout error and stick in `HAL_QSPI_STATE_ERROR`.
+
+I patched this:
+- `ClockPrescaler = 3`
+- `SampleShifting = QSPI_SAMPLE_SHIFTING_HALFCYCLE`
+- `FlashSize = 26` (for 128MB / 1Gbit)
+- `ChipSelectHighTime = QSPI_CS_HIGH_TIME_2_CYCLE`
+
+Also kept/added driver hardening:
+- Error-state recovery + richer logging in `mx66xx_qspi.cpp`
+- Sector erase opcode selected by addr mode (`0x21` in 4-byte mode)
+- Removed incorrect QE-bit write to SR1 in init in `FlashTask.cpp`
+
+Rebuild/flash and run again. If it still fails, send the new `MX66xxQSPI_CommandAddressOnly()` line (it now includes `sr=` and `ccr=`), and we can pinpoint the exact peripheral flag state.
+
+-----
+[User]
+Great now sector erase works, now fix write block:
+
+FlashTask::RunFlashTests() - Erasing sector 32
+FlashTask::RunFlashTests() - Erase verify OK
+FlashTask::RunFlashTests() - Writing 512 bytes using MX66xxQSPI_WriteSector
+FlashTask::RunFlashTests() - Write_Block verify FAILED at 0 (0xA5 != 0xFF)
+
+-----
+[Assistant]
+Sector erase is now fixed, so next I’ll focus only on page program path (`WriteSector -> WritePage`) and patch opcode/address mode to the device’s working format. I’m checking the local MX66 datasheet and current write sequence now.
+
+-----
+[Assistant]
+I’m patching `WritePage` to use a safer program-command fallback sequence with immediate sample verification, and adding better command-failure logging for transmit/receive so we can see exactly why a program command is ignored.
+
+-----
+[Assistant]
+I’ve added a write-command fallback (`0x02`, `0x12`, `0x38`) with per-attempt sample verification, so the driver can automatically use whichever opcode your flash mode actually accepts instead of assuming one. I’m now sanity-checking the patch for compile-level issues.
+
+-----
+[Assistant]
+Patch is in place for write-block path. I couldn’t run your firmware here, so the next run on hardware will confirm it. Please rerun the same flash test and share the new logs; the added prints will now show exactly which program opcode path succeeds/fails.
+
+-----
+[Assistant]
+I implemented a write-path fix focused on your `WriteSector -> WritePage` failure.
+
+What I changed:
+- In `mx66xx_qspi.cpp`, `MX66xxQSPI_WritePage()` now tries page-program commands in fallback order:
+  - `0x02` (`MX66XX_CMD_PP`)
+  - `0x12` (`MX66XX_CMD_PP4B`)
+  - `0x38` (`MX66XX_CMD_PP_QUAD`)
+- After each attempt, it waits for write end, disables write, and verifies a sample (first/last byte) from flash before declaring success.
+- Added explicit command/data failure logging + recovery in:
+  - `MX66xxQSPI_CommandTransmit()`
+  - `MX66xxQSPI_CommandReceive()`
+
+Why this should fix your case:
+- Erase now works, so bus/timing are mostly valid.
+- Write failing with all `0xFF` strongly indicates the page program opcode/path was not accepted in the current mode.
+- The fallback logic handles that directly.
+
+Next step:
+- Run the same test again and send the new logs, especially lines containing:
+  - `MX66xxQSPI_CommandTransmit() ... failed`
+  - `MX66xxQSPI_WritePage() failed: ...`
+
+-----
+[User]
+can you export literally the entire transcript of this conversation into a new text file in the root directory of this project

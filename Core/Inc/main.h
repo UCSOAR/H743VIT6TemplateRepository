@@ -81,6 +81,8 @@ void Error_Handler(void);
 #define IMU32_INT_GPIO_Port GPIOA
 #define IMU32_CS_Pin GPIO_PIN_5
 #define IMU32_CS_GPIO_Port GPIOC
+#define SPI_FLASH_CS_Pin GPIO_PIN_2
+#define SPI_FLASH_CS_GPIO_Port GPIOB
 #define IMU16_INT_Pin GPIO_PIN_15
 #define IMU16_INT_GPIO_Port GPIOA
 #define IMU16_CS_Pin GPIO_PIN_0

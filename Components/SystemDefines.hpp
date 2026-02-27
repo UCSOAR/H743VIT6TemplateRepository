@@ -24,7 +24,7 @@
 
 /* Cube++ Required Configuration ------------------------------------------------------------------*/
 #include "CubeDefines.hpp"
-constexpr UARTDriver* const DEFAULT_DEBUG_UART_DRIVER = UART::GPS;    // UART Handle that ASSERT messages are sent over
+constexpr UARTDriver* const DEFAULT_DEBUG_UART_DRIVER = UART::Debug;    // UART Handle that ASSERT messages are sent over
 
 //Barometer constants
 constexpr int TEMP_LOW = 2000;
@@ -37,7 +37,8 @@ enum GLOBAL_COMMANDS : uint8_t
     COMMAND_NONE = 0,        // No command, packet can probably be ignored
     TASK_SPECIFIC_COMMAND,    // Runs a task specific command when given this object
     DATA_COMMAND,// Data command, used to send data to a task. Target is stored in taskCommand
-	DATA_BROKER_COMMAND
+	DATA_BROKER_COMMAND,
+	GPS_COMMAND,
 };
 
 /* Cube++ Optional Code Configuration ------------------------------------------------------------------*/
@@ -65,4 +66,14 @@ constexpr uint8_t TASK_ALTITUDE_PRIORITY = 2;            // Priority of the alti
 constexpr uint8_t TASK_ALTITUDE_QUEUE_DEPTH_OBJS = 10;        // Size of the altitude task queue
 constexpr uint16_t TASK_ALTITUDE_STACK_DEPTH_WORDS = 2048;        // Size of the altitude task stack
 
+// FLASH TASK
+constexpr uint8_t TASK_FLASH_TASK_PRIORITY = 3;         // Priority of the flash task
+constexpr uint8_t TASK_FLASH_QUEUE_DEPTH_OBJS = 8;      // Size of the flash task queue
+constexpr uint16_t TASK_FLASH_STACK_DEPTH_WORDS = 1024; // Size of the flash task stack
+
+constexpr uint8_t TASK_GPS_PRIORITY = 2;            // Priority of the barometer task
+constexpr uint8_t TASK_GPS_QUEUE_DEPTH_OBJS = 10;        // Size of the barometer task queue
+constexpr uint16_t TASK_GPS_STACK_DEPTH_WORDS = 896;        // Size of the barometer task stack
+
 #endif // CUBE_MAIN_SYSTEM_DEFINES_H
+

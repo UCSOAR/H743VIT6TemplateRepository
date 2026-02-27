@@ -12,6 +12,7 @@
 #include <cstring>
 
 #include "stm32h7xx_hal.h"
+#include "FlashTask.hpp"
 
 // External Tasks (to send debug commands to)
 
@@ -32,7 +33,7 @@ extern I2C_HandleTypeDef hi2c2;
  * @brief Constructor, sets all member variables
  */
 DebugTask::DebugTask()
-    : Task(TASK_DEBUG_QUEUE_DEPTH_OBJS), kUart_(UART::Debug) {
+    : Task(TASK_DEBUG_QUEUE_DEPTH_OBJS), kUart_(DEFAULT_DEBUG_UART_DRIVER) {
   memset(debugBuffer, 0, sizeof(debugBuffer));
   debugMsgIdx = 0;
   isDebugMsgReady = false;
@@ -61,7 +62,7 @@ void DebugTask::InitTask() {
  */
 void DebugTask::Run(void* pvParams) {
   // Arm the interrupt
-  ReceiveData();
+	 ReceiveData();
 
   while (1) {
     Command cm;
@@ -88,7 +89,8 @@ void DebugTask::HandleDebugMessage(const char* msg) {
   if (strcmp(msg, "sysreset") == 0) {
     // Reset the system
 	SOAR_ASSERT(false, "System reset requested");
-  } else if (strcmp(msg, "sysinfo") == 0) {
+  }
+  else if (strcmp(msg, "sysinfo") == 0) {
     // Print message
     SOAR_PRINT("\n\n-- CUBE SYSTEM --\n");
     SOAR_PRINT("Current System Free Heap: %d Bytes\n", xPortGetFreeHeapSize());
@@ -96,38 +98,45 @@ void DebugTask::HandleDebugMessage(const char* msg) {
                xPortGetMinimumEverFreeHeapSize());
     SOAR_PRINT("Debug Task Runtime  \t: %d ms\n\n",
                TICKS_TO_MS(xTaskGetTickCount()));
+
   }
-  else if(strcmp(msg, "imu1")){
+  else if(strcmp(msg, "imu1") == 0){
 
 	  SOAR_PRINT("Debug Imu 32G read");
 	  Command cmd(DATA_COMMAND, IMUTask::IMU_SAMPLE_AND_LOG);
 	  IMUTask::Inst().GetEventQueue()->Send(cmd);
+
   }
-  else if(strcmp(msg, "imu2")){
+  else if(strcmp(msg, "imu2")== 0){
 
 	  SOAR_PRINT("Debug Imu 16G read");
 	  Command cmd(DATA_COMMAND, LSM6DSOTask::IMU_SAMPLE_AND_LOG);
 	  LSM6DSOTask::Inst().GetEventQueue()->Send(cmd);
   }
 
-  else if(strcmp(msg, "baro1")){
+  else if(strcmp(msg, "baro1")== 0){
 	  SOAR_PRINT("Debug Baro07 read");
 	  Command cmd(DATA_COMMAND, BARO07_SAMPLE_AND_LOG);
 	  BaroTask07::Inst().GetEventQueue()->Send(cmd);
 
   }
-  else if(strcmp(msg, "baro2")){
+  else if(strcmp(msg, "baro2")== 0){
   	  SOAR_PRINT("Debug Baro11 read");
   	  Command cmd(DATA_COMMAND, BARO11_SAMPLE_AND_LOG);
   	  BaroTask11::Inst().GetEventQueue()->Send(cmd);
 
     }
-  else if(strcmp(msg, "mag")){
+  else if(strcmp(msg, "mag")== 0){
 	  SOAR_PRINT("Debug mag read");
 	  Command cmd(DATA_COMMAND, MMC5983MATask::MMC_CMD_ENABLE_LOG);
 	  MMC5983MATask::Inst().GetEventQueue()->Send(cmd);
-
   }
+   else if (strcmp(msg, "flash_test") == 0)
+	  {
+	    SOAR_PRINT("Debug: Triggering flash tests\n");
+	    FlashTask::Inst().TriggerTest();
+	  }
+
   else {
     // Single character command, or unknown command
     switch (msg[0]) {

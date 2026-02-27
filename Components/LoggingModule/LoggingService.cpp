@@ -8,13 +8,16 @@
 
 uint8_t  LoggingService::ramLog[RAM_LOG_SIZE] = {0};
 uint32_t LoggingService::ramHead = 0;
+uint16_t LoggingService::sectorAddress = 0;
+uint8_t LoggingService::bufferPerSector = 0;
 
-LoggingService::LoggingService(LoggingDest dest, LoggingData dataType, uint8_t* data, uint32_t dataSize)
+LoggingService::LoggingService(LoggingDest dest, LoggingData dataType, uint8_t* ldata, uint32_t dataSize, LoggingPriority priority)
 {
 	loggingData.dest = dest;
 	loggingData.dataType = dataType;
-	loggingData.data = data;
+	loggingData.data = ldata;
 	loggingData.dataSize = dataSize;
+	loggingData.priority = priority;
 
 
 }
@@ -25,29 +28,14 @@ LoggingStatus LoggingService::LogData(){
 	LoggingStatus err;
 
 	switch(loggingData.dest){
-	case LoggingDest::FLASH_INTERN:
+	case LoggingDest::RAM:
 		//internal flash api
-		if(LogToInternalMemory() == LoggingStatus::LOGGING_SUCCESS){
-			err = LoggingStatus::LOGGING_SUCCESS;
-		}
-		else{
-			err = LoggingStatus::LOGGING_ERR;
-		}
+		err = LogToInternalMemory();
+
 		break;
 
 	case LoggingDest::FLASH_EXTERN:
-
-		if(LogToMX66() == LoggingStatus::LOGGING_SUCCESS){
-
-			err = LoggingStatus::LOGGING_SUCCESS;
-		}
-		else if(LogToInternalMemory() == LoggingStatus::LOGGING_SUCCESS){
-
-			err = LoggingStatus::LOGGING_SUCCESS;
-		}
-		else{
-			err = LoggingStatus::LOGGING_ERR;
-		}
+		err = LogToMX66();
 		break;
 
 	case LoggingDest::FILE_SYSTEM:
@@ -63,46 +51,50 @@ LoggingStatus LoggingService::LogData(){
 		err = LoggingStatus::LOGGING_ERR;
 		break;
 	}
-	if(err == LoggingStatus::LOGGING_SUCCESS){
-		//SOAR_PRINT("Data logged successfully\n");
-	}
 
 	return err;
 }
 
 
 LoggingStatus LoggingService::LogToMX66(){
-//	static uint32_t sector = 0;
-//	static uint16_t offset = 0;
-//
-//	if(offset + loggingData.dataSize > 512){
-//		sector++;
-//		offset = 0;
-//	}
-//
-//	//erase sector when starting fresh
-//	if(offset == 0){
-//
-//		//MX66_Erase_Sector((uint16_t)sector);
-//	}
-//
-//	//MX66_Write_Block(sector, offset, (uint32_t)loggingData.dataSize, (const uint8_t*)loggingData.data);
-//
-//	uint8_t verifyBuf[256];
-//
-//	//MX66_Read(sector, offset, (uint32_t)loggingData.dataSize, verifyBuf);
-//
-//	if (!BytesEqual(loggingData.data, verifyBuf, loggingData.dataSize)){
-//		return LoggingStatus::LOGGING_ERR;
-//	}
-//
-//    offset = (uint16_t)(offset + (uint16_t)loggingData.dataSize);
-	SOAR_PRINT("%d\n", loggingData.data[0]);
-	return LoggingStatus::LOGGING_SUCCESS;
+
+	LoggingStatus status = MemAppend(&loggingData);
+	if(status == LoggingStatus::LOG_FLASH_READY){
+		if(bufferPerSector == 0){
+			MX66xxQSPI_EraseSector(sectorAddress);
+		}
+		uint8_t txBuf[RAM_LOG_SIZE];
+		memcpy(txBuf, ramLog, RAM_LOG_SIZE);
 
 
+		MX66xxQSPI_WriteSector(txBuf, sectorAddress, (bufferPerSector * 500),  RAM_LOG_SIZE);
+
+
+		uint8_t rxBuf[RAM_LOG_SIZE];
+		MX66xxQSPI_ReadSector(rxBuf, sectorAddress,(bufferPerSector * 500),  RAM_LOG_SIZE);
+
+		if(BytesEqual(rxBuf, txBuf, RAM_LOG_SIZE)){
+
+			bufferPerSector++;
+			if(bufferPerSector == 8){
+				SOAR_PRINT("-------------------------------Next Sector---------------------------------");
+				sectorAddress++;
+				bufferPerSector = 0;
+			}
+
+			SOAR_PRINT("FLASHED DATA");
+			return LoggingStatus::LOGGING_SUCCESS;
+		}
+
+		SOAR_PRINT("Bytes did not equal");
+		return status;
+
+	}
+	return LoggingStatus::LOG_FLASH_NOT_READY;
 
 }
+
+
 
 LoggingStatus LoggingService::LogToInternalMemory(){
 
@@ -110,29 +102,52 @@ LoggingStatus LoggingService::LogToInternalMemory(){
 		return LoggingStatus::LOGGING_ERR;
 	}
 
-	MemAppend(loggingData.data, loggingData.dataSize);
-
-	return LoggingStatus::LOGGING_SUCCESS;
+	return MemAppend(&loggingData);
 
 }
 
 bool LoggingService::BytesEqual(const uint8_t* a, const uint8_t* b, uint32_t n){
+
 	for(uint32_t i = 0; i < n; i++){
 
-		if(a[i] != b[i]) return false;
+		if(a[i] != b[i]){
+			return false;
+		}
+
 	}
 
 	return true;
 }
 
-void LoggingService::MemAppend(const uint8_t *data, uint32_t size){
+LoggingStatus LoggingService::MemAppend(const LoggingPacket *data){
 
-	if(ramHead + size > RAM_LOG_SIZE){
-		ramHead = 0;
+	if(!data){return LoggingStatus::LOGGING_ERR;}
+
+	uint32_t size = data->dataSize;
+
+	if (size > MAX_LOG_SIZE){
+		size = MAX_LOG_SIZE;
 	}
+
+	if(ramHead + MAX_LOG_SIZE > RAM_LOG_SIZE){ //check if word will fit in buffer
+		ramHead = 0;
+		SOAR_PRINT("LOGGING READY");
+		return LoggingStatus::LOG_FLASH_READY;
+	}
+
 
 	for(uint32_t i = 0; i < size; i++){
-		ramLog[ramHead] = data[i];
-		ramHead++;
+
+		ramLog[ramHead++] = data->data[i];
 	}
+
+	for(uint32_t i = size; i < MAX_LOG_SIZE; i++){
+		ramLog[ramHead++] = 0;
+	}
+
+
+	return LoggingStatus::LOG_FLASH_NOT_READY;
+
+
+
 }

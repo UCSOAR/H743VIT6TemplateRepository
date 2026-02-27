@@ -16,13 +16,17 @@
 enum class LoggingStatus
 {
 	LOGGING_SUCCESS,
+	LOG_HIGHER_PRIORITY,
+	LOG_LOWER_PRIORITY,
 	LOGGING_ERR,
+	LOG_FLASH_READY,
+	LOG_FLASH_NOT_READY,
 
 };
 
 enum class LoggingDest
 {
-	FLASH_INTERN,
+	RAM,
 	FLASH_EXTERN,
 	FILE_SYSTEM,
 	DMA,
@@ -40,12 +44,22 @@ enum class LoggingData
 
 };
 
+enum class LoggingPriority
+{
+	FIFTH = 0,
+	FOURTH = 1,
+	THIRD = 2,
+	SECOND = 3,
+	FIRST = 4,
+};
+
 struct LoggingPacket{
 
 	LoggingDest dest;
 	LoggingData dataType;
 	const uint8_t* data;
 	uint32_t dataSize;
+	LoggingPriority priority;
 
 };
 

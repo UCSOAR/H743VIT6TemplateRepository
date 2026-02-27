@@ -1,3 +1,0 @@
-../Components/RunInterface.cpp:12:10:void run_interface()	1
-../Components/RunInterface.cpp:17:10:void cpp_USART8_IRQHandler()	1
-../Components/RunInterface.cpp:21:10:void cpp_UART7_IRQHandler()	1
