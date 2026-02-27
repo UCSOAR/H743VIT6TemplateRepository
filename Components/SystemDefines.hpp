@@ -61,6 +61,11 @@ constexpr uint8_t TASK_LOGGING_PRIORITY = 3;
 constexpr uint8_t TASK_LOGGING_QUEUE_DEPTH_OBJS = 10;
 constexpr uint16_t TASK_LOGGING_QUEUE_DEPTH_WORDS = 512;
 
+// ALTITUDE FILTER TASK
+constexpr uint8_t TASK_ALTITUDE_PRIORITY = 2;            // Priority of the altitude task
+constexpr uint8_t TASK_ALTITUDE_QUEUE_DEPTH_OBJS = 10;        // Size of the altitude task queue
+constexpr uint16_t TASK_ALTITUDE_STACK_DEPTH_WORDS = 2048;        // Size of the altitude task stack
+
 // FLASH TASK
 constexpr uint8_t TASK_FLASH_TASK_PRIORITY = 3;         // Priority of the flash task
 constexpr uint8_t TASK_FLASH_QUEUE_DEPTH_OBJS = 8;      // Size of the flash task queue
