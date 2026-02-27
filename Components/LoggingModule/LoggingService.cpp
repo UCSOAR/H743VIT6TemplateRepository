@@ -40,7 +40,7 @@ LoggingStatus LoggingService::LogData(){
 
 	case LoggingDest::FILE_SYSTEM:
 		//TODO FS write api
-		SOAR_PRINT("Log to file system\n");
+		//SOAR_PRINT("Log to file system\n");
 		err = LoggingStatus::LOGGING_ERR;
 		break;
 
@@ -82,7 +82,7 @@ LoggingStatus LoggingService::LogToMX66(){
 				bufferPerSector = 0;
 			}
 
-			SOAR_PRINT("FLASHED DATA");
+			//SOAR_PRINT("FLASHED DATA");
 			return LoggingStatus::LOGGING_SUCCESS;
 		}
 
@@ -131,7 +131,7 @@ LoggingStatus LoggingService::MemAppend(const LoggingPacket *data){
 
 	if(ramHead + MAX_LOG_SIZE > RAM_LOG_SIZE){ //check if word will fit in buffer
 		ramHead = 0;
-		SOAR_PRINT("LOGGING READY");
+		//SOAR_PRINT("LOGGING READY");
 		return LoggingStatus::LOG_FLASH_READY;
 	}
 

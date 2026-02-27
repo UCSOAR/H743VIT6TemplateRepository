@@ -94,7 +94,7 @@ void LoggingTask::Run(void * pvParams){
 
 void LoggingTask::HandleCommand(Command& cm){
 
-	SOAR_PRINT("Data In Logging Task\n");
+	//SOAR_PRINT("Data In Logging Task\n");
 	LoggingStatus err;
 	DataBrokerMessageTypes messageType = DataBroker::getMessageType(cm);
 	switch(messageType){
@@ -206,7 +206,7 @@ void LoggingTask::HandleCommand(Command& cm){
 		return;
 	}
 
-	SOAR_PRINT("Log was successful\n");
+	//SOAR_PRINT("Log was successful\n");
 	return;
 
 	cm.Reset();
