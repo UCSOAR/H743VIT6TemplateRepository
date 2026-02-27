@@ -202,6 +202,9 @@ void LoggingTask::HandleCommand(Command& cm){
 		SOAR_PRINT("Log was unsuccessful\n");
 		return;
 	}
+	else if(err == LoggingStatus::LOG_FLASH_NOT_READY || err == LoggingStatus::LOG_FLASH_READY){
+		return;
+	}
 
 	SOAR_PRINT("Log was successful\n");
 	return;

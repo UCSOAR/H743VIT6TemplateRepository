@@ -17,7 +17,7 @@
 //#include "MX66L1G45GMI.hpp"
 
 #define MAX_LOG_SIZE 20 //bytes, minus one byte for priority
-#define RAM_LOG_SIZE 512 //bytes
+#define RAM_LOG_SIZE 500 //bytes
 
 class LoggingService{
 	public:
@@ -37,6 +37,7 @@ class LoggingService{
 		static uint8_t  ramLog[RAM_LOG_SIZE];
 		static uint32_t ramHead;
 		static uint16_t sectorAddress;
+		static uint8_t bufferPerSector;
 
 
 
