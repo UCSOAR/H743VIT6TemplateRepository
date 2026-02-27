@@ -21,6 +21,7 @@ enum class LoggingStatus
 	LOGGING_ERR,
 	LOG_FLASH_READY,
 	LOG_FLASH_NOT_READY,
+	FLASH_FULL
 
 };
 

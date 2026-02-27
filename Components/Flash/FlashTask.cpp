@@ -152,6 +152,7 @@ void FlashTask::InitializeFlash()
     MX66xxQSPI_ReleaseFromDeepPowerDown();
     MX66xxQSPI_RSTEN();
     MX66xxQSPI_RST();
+    MX66xxQSPI_EraseChip();
     MX66xxQSPI_EQIO_1LINE();
     MX66xxQSPI_EN4B();
 

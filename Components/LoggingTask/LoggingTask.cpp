@@ -94,7 +94,7 @@ void LoggingTask::Run(void * pvParams){
 
 void LoggingTask::HandleCommand(Command& cm){
 
-	SOAR_PRINT("Data In Logging Task\n");
+
 	LoggingStatus err;
 	DataBrokerMessageTypes messageType = DataBroker::getMessageType(cm);
 	switch(messageType){
@@ -202,7 +202,7 @@ void LoggingTask::HandleCommand(Command& cm){
 		SOAR_PRINT("Log was unsuccessful\n");
 		return;
 	}
-	else if(err == LoggingStatus::LOG_FLASH_NOT_READY || err == LoggingStatus::LOG_FLASH_READY){
+	else if(err == LoggingStatus::LOG_FLASH_NOT_READY || err == LoggingStatus::LOG_FLASH_READY || err == LoggingStatus::FLASH_FULL){
 		return;
 	}
 

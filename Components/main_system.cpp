@@ -35,20 +35,19 @@ namespace Driver {
 */
 void run_main() {
     // Init Tasks
-	UARTTask::Inst().InitTask();
+//	UARTTask::Inst().InitTask();
 	CubeTask::Inst().InitTask();
 	DebugTask::Inst().InitTask();
 	FlashTask::Inst().InitTask();
 
-//	IMUTask::Inst().InitTask();
-
-//	LSM6DSOTask::Inst().InitTask();
+	IMUTask::Inst().InitTask();
+	LSM6DSOTask::Inst().InitTask();
 //    MMC5983MATask::Inst().InitTask();
-//    BaroTask07::Inst().InitTask();
-//    BaroTask11::Inst().InitTask();
+    BaroTask07::Inst().InitTask();
+    BaroTask11::Inst().InitTask();
     LoggingTask::Inst().InitTask();
     //AltitudeTask::Inst().InitTask();
-    GPSTask::Inst().InitTask();
+   // GPSTask::Inst().InitTask();
 
 
     // Print System Boot Info : Warning, don't queue more than 10 prints before scheduler starts

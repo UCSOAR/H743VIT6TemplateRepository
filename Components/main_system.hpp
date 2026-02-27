@@ -17,7 +17,7 @@
 #include "stm32h7xx_ll_dma.h"
 
 
-
+extern UART_HandleTypeDef huart7;
 /* Interface Functions ------------------------------------------------------------------*/
 /* These functions act as our program's 'main' and any functions inside CubeIDE's main --*/
 void run_main();
@@ -47,6 +47,7 @@ extern CRC_HandleTypeDef hcrc;       // CRC - Hardware CRC System Handle
 
 namespace SystemHandles {
     constexpr CRC_HandleTypeDef* CRC_Handle = &hcrc;
+    constexpr UART_HandleTypeDef* UART_GPS = &huart7;
 }
 
 

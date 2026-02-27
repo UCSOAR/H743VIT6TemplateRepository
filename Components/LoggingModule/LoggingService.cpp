@@ -10,6 +10,7 @@ uint8_t  LoggingService::ramLog[RAM_LOG_SIZE] = {0};
 uint32_t LoggingService::ramHead = 0;
 uint16_t LoggingService::sectorAddress = 0;
 uint8_t LoggingService::bufferPerSector = 0;
+bool LoggingService::full = false;
 
 LoggingService::LoggingService(LoggingDest dest, LoggingData dataType, uint8_t* ldata, uint32_t dataSize, LoggingPriority priority)
 {
@@ -57,41 +58,47 @@ LoggingStatus LoggingService::LogData(){
 
 
 LoggingStatus LoggingService::LogToMX66(){
-
-	LoggingStatus status = MemAppend(&loggingData);
-	if(status == LoggingStatus::LOG_FLASH_READY){
-		if(bufferPerSector == 0){
-			MX66xxQSPI_EraseSector(sectorAddress);
-		}
-		uint8_t txBuf[RAM_LOG_SIZE];
-		memcpy(txBuf, ramLog, RAM_LOG_SIZE);
-
-
-		MX66xxQSPI_WriteSector(txBuf, sectorAddress, (bufferPerSector * 500),  RAM_LOG_SIZE);
+	if(!full){
+		LoggingStatus status = MemAppend(&loggingData);
+		if(status == LoggingStatus::LOG_FLASH_READY){
+			if(bufferPerSector == 0){
+				MX66xxQSPI_EraseSector(sectorAddress);
+			}
+			uint8_t txBuf[RAM_LOG_SIZE];
+			memcpy(txBuf, ramLog, RAM_LOG_SIZE);
 
 
-		uint8_t rxBuf[RAM_LOG_SIZE];
-		MX66xxQSPI_ReadSector(rxBuf, sectorAddress,(bufferPerSector * 500),  RAM_LOG_SIZE);
+			MX66xxQSPI_WriteSector(txBuf, sectorAddress, (bufferPerSector * 500),  RAM_LOG_SIZE);
 
-		if(BytesEqual(rxBuf, txBuf, RAM_LOG_SIZE)){
 
-			bufferPerSector++;
-			if(bufferPerSector == 8){
-				SOAR_PRINT("-------------------------------Next Sector---------------------------------");
-				sectorAddress++;
-				bufferPerSector = 0;
+			uint8_t rxBuf[RAM_LOG_SIZE];
+			MX66xxQSPI_ReadSector(rxBuf, sectorAddress,(bufferPerSector * 500),  RAM_LOG_SIZE);
+
+			if(BytesEqual(rxBuf, txBuf, RAM_LOG_SIZE)){
+				SOAR_PRINT("SECTOR ADDRESS:%d ", sectorAddress);
+				bufferPerSector++;
+				if(bufferPerSector == 8){
+					SOAR_PRINT("-------------------------------Next Sector---------------------------------");
+					sectorAddress++;
+					bufferPerSector = 0;
+					if(sectorAddress > NUM_SECTOR){
+						full = true;
+						SOAR_PRINT("FLASH FULL");
+					}
+				}
+
+				SOAR_PRINT("FLASHED DATA");
+
+				return LoggingStatus::LOGGING_SUCCESS;
 			}
 
-			SOAR_PRINT("FLASHED DATA");
-			return LoggingStatus::LOGGING_SUCCESS;
+			SOAR_PRINT("Bytes did not equal");
+			return status;
+
 		}
-
-		SOAR_PRINT("Bytes did not equal");
-		return status;
-
+		return LoggingStatus::LOG_FLASH_NOT_READY;
 	}
-	return LoggingStatus::LOG_FLASH_NOT_READY;
-
+	return LoggingStatus::FLASH_FULL;
 }
 
 
@@ -131,7 +138,7 @@ LoggingStatus LoggingService::MemAppend(const LoggingPacket *data){
 
 	if(ramHead + MAX_LOG_SIZE > RAM_LOG_SIZE){ //check if word will fit in buffer
 		ramHead = 0;
-		SOAR_PRINT("LOGGING READY");
+
 		return LoggingStatus::LOG_FLASH_READY;
 	}
 

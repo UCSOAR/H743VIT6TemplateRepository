@@ -28,7 +28,11 @@ extern I2C_HandleTypeDef hi2c2;
 /* Variables -----------------------------------------------------------------*/
 
 /* Prototypes ----------------------------------------------------------------*/
-
+//void HAL_UART_RxCpltCallback(UART_HandleTypeDef* huart)
+//{
+//    if (huart->Instance == SystemHandles::UART_GPS->Instance)
+//        GPSTask::Inst().HandleGPSRxComplete();
+//}
 /* Functions -----------------------------------------------------------------*/
 /**
  * @brief Constructor, sets all member variables
