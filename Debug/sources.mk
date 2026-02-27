@@ -41,6 +41,8 @@ SUBDIRS := \
 AltitudePredictionFilter \
 Components/AltitudeTask \
 Components \
+Components/Flash/Driver \
+Components/Flash \
 Components/LoggingModule \
 Components/LoggingTask \
 Core/Src \
@@ -53,6 +55,7 @@ Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang \
 PeripheralDriversSubmodule/.metadata/.plugins/org.eclipse.cdt.make.core \
 PeripheralDriversSubmodule/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core \
 PeripheralDriversSubmodule/Components \
+PeripheralDriversSubmodule/GPS \
 PeripheralDriversSubmodule/LSM6DSODriver \
 PeripheralDriversSubmodule/MMC5983MA_SPI \
 PeripheralDriversSubmodule/MS5607Driver \

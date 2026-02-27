@@ -18,6 +18,7 @@ RM := rm -rf
 -include PeripheralDriversSubmodule/MS5607Driver/subdir.mk
 -include PeripheralDriversSubmodule/MMC5983MA_SPI/subdir.mk
 -include PeripheralDriversSubmodule/LSM6DSODriver/subdir.mk
+-include PeripheralDriversSubmodule/GPS/subdir.mk
 -include PeripheralDriversSubmodule/Components/subdir.mk
 -include PeripheralDriversSubmodule/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/subdir.mk
 -include PeripheralDriversSubmodule/.metadata/.plugins/org.eclipse.cdt.make.core/subdir.mk
@@ -30,6 +31,8 @@ RM := rm -rf
 -include Core/Src/subdir.mk
 -include Components/LoggingTask/subdir.mk
 -include Components/LoggingModule/subdir.mk
+-include Components/Flash/Driver/subdir.mk
+-include Components/Flash/subdir.mk
 -include Components/AltitudeTask/subdir.mk
 -include Components/subdir.mk
 -include AltitudePredictionFilter/subdir.mk

@@ -239,11 +239,11 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 	case DataBrokerMessageTypes::GPS_DATA: {
 		GPSData gps_data = DataBroker::ExtractData<GPSData>(cm);
 
-		/*
+
 		SOAR_PRINT("\n GPS DATA : \n");
 		SOAR_PRINT("  Alt -> %d \n", gps_data.gps);
 		SOAR_PRINT("--DATA_END--\n\n");
-		*/
+
 
 		if (gps_data.gps == 0.0f) {
 			return;
@@ -290,11 +290,11 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 		BaroData baro_data = DataBroker::ExtractData<BaroData>(cm);
 
 
-		/*
+
 		SOAR_PRINT("\n BARO DATA : \n");
 		SOAR_PRINT("  Baro -> %d \n", baro_data.pressure);
 		SOAR_PRINT("--DATA_END--\n\n");
-		*/
+
 
 		if (baro_data.pressure == 0.0f) {
 			return;
