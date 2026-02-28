@@ -77,7 +77,7 @@ LoggingStatus LoggingService::LogToMX66(){
 
 			bufferPerSector++;
 			if(bufferPerSector == 8){
-				SOAR_PRINT("-------------------------------Next Sector---------------------------------");
+//				SOAR_PRINT("-------------------------------Next Sector---------------------------------");
 				sectorAddress++;
 				bufferPerSector = 0;
 			}

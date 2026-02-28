@@ -13,6 +13,7 @@
 
 #include "stm32h7xx_hal.h"
 #include "FlashTask.hpp"
+#include "MX66XX_QSPI.hpp"
 
 // External Tasks (to send debug commands to)
 
@@ -107,6 +108,14 @@ void DebugTask::HandleDebugMessage(const char* msg) {
 	  IMUTask::Inst().GetEventQueue()->Send(cmd);
 
   }
+  else if(strcmp(msg,"print_sensors") == 0){
+	  Command logCommand(DATA_BROKER_COMMAND, static_cast<uint16_t>(DataBrokerMessageTypes::IMU_DATA)); //change if separate publisher
+
+	  IMUData data = DataBroker::ExtractData<IMUData>(logCommand);
+
+	  SOAR_PRINT("id:%u,accel_x:%u,accel_y:%u,accel_z:%u,gyro_x:%u,gyro_y:%u,gyro_z:%u", data.id, data.accel.x, data.accel.y, data.accel.z, data.gyro.x,data.gyro.y,data.gyro.z);
+
+  }
   else if(strcmp(msg, "imu2")== 0){
 
 	  SOAR_PRINT("Debug Imu 16G read");
@@ -135,6 +144,36 @@ void DebugTask::HandleDebugMessage(const char* msg) {
 	  {
 	    SOAR_PRINT("Debug: Triggering flash tests\n");
 	    FlashTask::Inst().TriggerTest();
+	  }
+
+   else if (strcmp(msg, "flash_dump") == 0)
+	  {
+	   uint32_t sectorCount = 0;
+	   static uint8_t sectorBuf[FS_SECTOR_SIZE];
+
+	   while (sectorCount < 32000) {
+
+	       MX66xxQSPI_ReadSector(sectorBuf, sectorCount, 0, FS_SECTOR_SIZE);
+
+	       SOAR_PRINT("Sector %lu:\n", sectorCount);
+
+	       for (uint32_t i = 0; i < FS_SECTOR_SIZE; i++) {
+	           SOAR_PRINT("%02X ", sectorBuf[i]);
+
+	           // Optional: new line every 90 bytes
+	           if ((i + 1) % 30 == 0) {
+	               SOAR_PRINT("\n");
+	           }
+	       }
+
+	       osDelay(100);
+
+	       SOAR_PRINT("\n-------------------------\n");
+
+	       sectorCount++;
+	   }
+
+	   SOAR_PRINT("Debug: flash dump end\n");
 	  }
 
   else {
