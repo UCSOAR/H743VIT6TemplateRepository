@@ -23,6 +23,7 @@ class LoggingService{
 	public:
 		LoggingService(LoggingDest dest, LoggingData dataType, uint8_t* data, uint32_t dataSize, LoggingPriority priority);
 		LoggingStatus LogData();
+		static void ProcessFlashDump();
 	private:
 		LoggingStatus LogToMX66();
 		LoggingStatus LogToInternalMemory();
@@ -38,9 +39,8 @@ class LoggingService{
 		static uint32_t ramHead;
 		static uint16_t sectorAddress;
 		static uint8_t bufferPerSector;
-
-
-
+		static uint8_t sectorCount;
+		static uint8_t done;
 
 
 };

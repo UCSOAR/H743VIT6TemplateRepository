@@ -40,6 +40,9 @@ class DebugTask : public Task, public UARTReceiverBase {
   // Interrupt receive callback
   void InterruptRxData(uint8_t errors);
 
+//  bool debugEnabled = false;
+  static bool debugEnabled;
+
  protected:
   static void RunTask(void* pvParams) {
     DebugTask::Inst().Run(pvParams);

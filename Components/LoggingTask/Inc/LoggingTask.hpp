@@ -49,7 +49,10 @@ class LoggingTask: public Task
 		LoggingTask();        // Private constructor
 		LoggingTask(const LoggingTask&);                        // Prevent copy-construction
 		LoggingTask& operator=(const LoggingTask&);														// Prevent assignment
-		static uint8_t buf[30];
+		static uint8_t buf[20];
+		static bool highAltitude;
+		static bool lowAltitude;
+		static bool logEnabled_log;
 };
 
 

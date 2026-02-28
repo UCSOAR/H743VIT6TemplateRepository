@@ -25,7 +25,7 @@
 
 #include "DataBroker.hpp"
 #include "Task.hpp"
-
+#include "DebugTask.hpp"
 
 /************************************
  * PRIVATE MACROS AND DEFINES
@@ -40,7 +40,10 @@
  ************************************/
 
 
-uint8_t LoggingTask::buf[30] = {0};
+uint8_t LoggingTask::buf[20] = {0};
+bool LoggingTask::highAltitude = false;
+bool LoggingTask::lowAltitude = false;
+bool LoggingTask::logEnabled_log = false;
 /************************************
  * FUNCTION DEFINITIONS
  ************************************/
@@ -88,37 +91,67 @@ void LoggingTask::Run(void * pvParams){
         	HandleCommand(cm);
         }
         cm.Reset();
+
+        if(logEnabled_log){
+        	SOAR_PRINT("heere\n");
+			LoggingService::ProcessFlashDump();
+
+			vTaskDelay(pdMS_TO_TICKS(1));
+        }
     }
 
 }
 
 void LoggingTask::HandleCommand(Command& cm){
 
-	SOAR_PRINT("Data In Logging Task\n");
+	// SOAR_PRINT("Data In Logging Task\n");
 	LoggingStatus err;
 	DataBrokerMessageTypes messageType = DataBroker::getMessageType(cm);
+
 	switch(messageType){
 
 	case DataBrokerMessageTypes::IMU_DATA:
 	{
 		IMUData data = DataBroker::ExtractData<IMUData>(cm);
+		uint32_t timestamp = xTaskGetTickCount() * portTICK_PERIOD_MS;
 
-		if(data.id ==0){
-
-			buf[0] = static_cast<uint8_t>(LoggingData::IMU16G);
-			memcpy(buf + 1, &data, sizeof(IMUData));
-			LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::IMU16G, buf, sizeof(IMUData) + 1, LoggingPriority::SECOND);
-			err = log.LogData();
-		}
-		else{
-
-			buf[0] = static_cast<uint8_t>(LoggingData::IMU32G);
-			memcpy(buf + 1, &data, sizeof(IMUData));
-			LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::IMU32G, buf, sizeof(IMUData) + 1, LoggingPriority::SECOND);
-			err = log.LogData();
-
+		// Only log IDs 0 or 1
+		if (data.id != 0 && data.id != 1) {
+		    // Skip this sample
+		    break;
 		}
 
+//		 SOAR_PRINT: timestamp + accel + gyro + temp
+//		if(DebugTask::debugEnabled == true){
+//			SOAR_PRINT(
+//				"IMU ID: %d | Timestamp: %lu ms | Accel: X=%d Y=%d Z=%d | Gyro: X=%d Y=%d Z=%d | Temp=%d C\n",
+//				data.id,
+//				timestamp,
+//				data.accel.x, data.accel.y, data.accel.z,
+//				data.gyro.x, data.gyro.y, data.gyro.z,
+//				data.temp
+//			);
+//		}
+
+		// Prepare buffer for flash logging
+		buf[0] = static_cast<uint8_t>(data.id == 0 ? LoggingData::IMU16G : LoggingData::IMU32G);
+
+		// Manual serialization to avoid padding issues
+		memcpy(buf + 1, &timestamp, sizeof(timestamp));        // 4 bytes timestamp
+		memcpy(buf + 5, &data.accel, sizeof(data.accel));     // 6 bytes accel
+		memcpy(buf + 11, &data.gyro, sizeof(data.gyro));      // 6 bytes gyro
+		memcpy(buf + 17, &data.temp, sizeof(data.temp));      // 2 bytes temp
+		buf[19] = data.id;                                     // 1 byte id
+
+		// Log to flash
+		LoggingService log(
+		    LoggingDest::FLASH_EXTERN,
+		    data.id == 0 ? LoggingData::IMU16G : LoggingData::IMU32G,
+		    buf,
+		    20,  // total bytes: 1(type) + 4(timestamp) + 6+6+2+1 = 20
+		    LoggingPriority::SECOND
+		);
+		err = log.LogData();
 		break;
 	}
 	case DataBrokerMessageTypes::GPS_DATA:
@@ -170,22 +203,61 @@ void LoggingTask::HandleCommand(Command& cm){
 	{
 		BaroData data = DataBroker::ExtractData<BaroData>(cm);
 
-		if(data.id == 0){
+		// Get timestamp in ms
+		uint32_t timestamp = xTaskGetTickCount() * portTICK_PERIOD_MS;
 
-			buf[0] = static_cast<uint8_t>(LoggingData::BARO07);
-			memcpy(buf + 1, &data, sizeof(BaroData));
-			LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::BARO07, buf, sizeof(BaroData), LoggingPriority::SECOND);
-			err = log.LogData();
-		}
-		else{
+		// Convert pressure to altitude in centimeters (integer)
+		// Compute altitude in meters, rounded to integer
+		uint32_t altitude_m = static_cast<uint32_t>(
+		    44330.0f * (1.0f - powf(static_cast<float>(data.pressure) / 101325.0f, 1.0f / 5.255f))
+		);
 
-			buf[0] = static_cast<uint8_t>(LoggingData::BARO11);
-			memcpy(buf + 1, &data, sizeof(BaroData));
-			LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::BARO11, buf, sizeof(BaroData), LoggingPriority::SECOND);
-			err = log.LogData();
-
+		if(altitude_m > 1000){
+			highAltitude = true;
 		}
 
+		if(highAltitude){
+			if(altitude_m < 1300){
+				logEnabled_log = true;
+			}
+		}
+
+		// Print all raw values + timestamp + altitude as integer meters
+		if(DebugTask::debugEnabled){
+			SOAR_PRINT("Baro ID: %d | Timestamp: %lu ms | Temp: %d C | Pressure: %lu Pa | Altitude: %lu m\n",
+					   data.id,
+					   timestamp,
+					   data.temp / 100,   // if your temp is in milli-degrees, convert to degC
+					   data.pressure,
+					   altitude_m);
+		}
+		// Prepare buffer for flash logging
+		// Determine BARO type
+		buf[0] = static_cast<uint8_t>(data.id == 0 ? LoggingData::BARO07 : LoggingData::BARO11);
+
+		// Copy timestamp (4 bytes)
+		memcpy(buf + 1, &timestamp, sizeof(timestamp));
+
+		// Copy pressure (4 bytes) and temperature (2 bytes)
+		memcpy(buf + 5, &data.pressure, sizeof(data.pressure));
+		memcpy(buf + 9, &data.temp, sizeof(data.temp));
+
+		// Pad remaining bytes with zeros so the total slot is 20 bytes
+		memset(buf + 11, 0, 20 - 1 - 10); // 1 byte type + 10 bytes data already, last byte is ID
+
+		// Set ID as the last byte of the 20-byte slot
+		buf[19] = data.id;
+
+		// Log the full 20-byte sample
+		LoggingService log(
+		    LoggingDest::FLASH_EXTERN,
+		    data.id == 0 ? LoggingData::BARO07 : LoggingData::BARO11,
+		    buf,
+		    20,                  // full 20-byte slot
+		    LoggingPriority::SECOND
+		);
+
+		err = log.LogData();
 
 		break;
 	}
@@ -206,7 +278,7 @@ void LoggingTask::HandleCommand(Command& cm){
 		return;
 	}
 
-	SOAR_PRINT("Log was successful\n");
+	// SOAR_PRINT("Log was successful\n");
 	return;
 
 	cm.Reset();
