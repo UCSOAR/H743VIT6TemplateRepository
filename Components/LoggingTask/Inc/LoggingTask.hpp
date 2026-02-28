@@ -53,6 +53,8 @@ class LoggingTask: public Task
 		static bool highAltitude;
 		static bool lowAltitude;
 		static bool logEnabled_log;
+		static bool firstAltFlag;
+//		static uint8_t firstAlt;
 };
 
 

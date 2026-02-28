@@ -44,6 +44,12 @@ uint8_t LoggingTask::buf[20] = {0};
 bool LoggingTask::highAltitude = false;
 bool LoggingTask::lowAltitude = false;
 bool LoggingTask::logEnabled_log = false;
+//bool LoggingTask::firstAlt = false;
+
+float firstAlt = 0.0f;
+bool firstAltCaptured = false;
+bool launched = false;
+bool landed = false;
 /************************************
  * FUNCTION DEFINITIONS
  ************************************/
@@ -93,7 +99,7 @@ void LoggingTask::Run(void * pvParams){
         cm.Reset();
 
         if(logEnabled_log){
-        	SOAR_PRINT("heere\n");
+//        	SOAR_PRINT("heere\n");
 			LoggingService::ProcessFlashDump();
 
 			vTaskDelay(pdMS_TO_TICKS(1));
@@ -212,25 +218,43 @@ void LoggingTask::HandleCommand(Command& cm){
 		    44330.0f * (1.0f - powf(static_cast<float>(data.pressure) / 101325.0f, 1.0f / 5.255f))
 		);
 
-		if(altitude_m > 1000){
-			highAltitude = true;
+		// Capture initial altitude once
+		if (!firstAltCaptured)
+		{
+			firstAlt = altitude_m;
+			firstAltCaptured = true;
+			SOAR_PRINT("firstcapture\n");
 		}
 
-		if(highAltitude){
-			if(altitude_m < 1300){
+		// Launch detection: climbed more than 300m from initial altitude
+		if (!launched && (altitude_m - firstAlt > 100.5f))
+		{
+			launched = true;
+//			SOAR_PRINT("000\n");
+		}
+
+		// Landing detection:
+		// Only check after launch
+		// Landed when we are back within 300m of initial altitude
+		if (launched && !landed)
+		{
+			if (fabsf(altitude_m - firstAlt) <= 100.9f)
+			{
+				landed = true;
 				logEnabled_log = true;
+//				SOAR_PRINT("23434\n");
 			}
 		}
 
 		// Print all raw values + timestamp + altitude as integer meters
-		if(DebugTask::debugEnabled){
-			SOAR_PRINT("Baro ID: %d | Timestamp: %lu ms | Temp: %d C | Pressure: %lu Pa | Altitude: %lu m\n",
-					   data.id,
-					   timestamp,
-					   data.temp / 100,   // if your temp is in milli-degrees, convert to degC
-					   data.pressure,
-					   altitude_m);
-		}
+//		if(DebugTask::debugEnabled){
+//			SOAR_PRINT("Baro ID: %d | Timestamp: %lu ms | Temp: %d C | Pressure: %lu Pa | Altitude: %lu m\n",
+//					   data.id,
+//					   timestamp,
+//					   data.temp / 100,   // if your temp is in milli-degrees, convert to degC
+//					   data.pressure,
+//					   altitude_m);
+//		}
 		// Prepare buffer for flash logging
 		// Determine BARO type
 		buf[0] = static_cast<uint8_t>(data.id == 0 ? LoggingData::BARO07 : LoggingData::BARO11);
