@@ -20,6 +20,7 @@
 #include "BaroTask11.hpp"
 #include "LoggingTask.hpp"
 #include "FlashTask.hpp"
+#include "FlightControlTask.hpp"
 
 /* Drivers ------------------------------------------------------------------*/
 namespace Driver {
@@ -45,7 +46,7 @@ void run_main() {
     BaroTask07::Inst().InitTask();
     BaroTask11::Inst().InitTask();
     LoggingTask::Inst().InitTask();
-
+    FlightControlTask::Inst().InitTask();
 
     // Print System Boot Info : Warning, don't queue more than 10 prints before scheduler starts
     SOAR_PRINT("\n-- CUBE SYSTEM --\n");
