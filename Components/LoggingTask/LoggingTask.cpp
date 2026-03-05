@@ -43,13 +43,16 @@
 uint8_t LoggingTask::buf[20] = {0};
 bool LoggingTask::highAltitude = false;
 bool LoggingTask::lowAltitude = false;
-bool LoggingTask::logEnabled_log = false;
+
 //bool LoggingTask::firstAlt = false;
 
 float firstAlt = 0.0f;
 bool firstAltCaptured = false;
 bool launched = false;
 bool landed = false;
+
+
+
 /************************************
  * FUNCTION DEFINITIONS
  ************************************/
@@ -57,6 +60,8 @@ LoggingTask::LoggingTask():Task(TASK_LOGGING_QUEUE_DEPTH_OBJS)
 {
 
 }
+
+
 
 /**
  * @brief Initialize the LoggingTask
@@ -98,12 +103,7 @@ void LoggingTask::Run(void * pvParams){
         }
         cm.Reset();
 
-        if(logEnabled_log){
-//        	SOAR_PRINT("heere\n");
-			LoggingService::ProcessFlashDump();
 
-			vTaskDelay(pdMS_TO_TICKS(1));
-        }
     }
 
 }
@@ -223,27 +223,29 @@ void LoggingTask::HandleCommand(Command& cm){
 		{
 			firstAlt = altitude_m;
 			firstAltCaptured = true;
-			SOAR_PRINT("firstcapture\n");
+			SOAR_PRINT("firstcapture: %u\n", altitude_m);
 		}
 
 		// Launch detection: climbed more than 300m from initial altitude
-		if (!launched && (altitude_m - firstAlt > 100.5f))
+		if (!launched && (altitude_m - firstAlt > 0.5f))
 		{
 			launched = true;
 //			SOAR_PRINT("000\n");
 		}
 
+
 		// Landing detection:
-		// Only check after launch
-		// Landed when we are back within 300m of initial altitude
 		if (launched && !landed)
 		{
-			if (fabsf(altitude_m - firstAlt) <= 100.9f)
-			{
-				landed = true;
-				logEnabled_log = true;
-//				SOAR_PRINT("23434\n");
-			}
+		    if (fabsf(altitude_m - firstAlt) <= 0.9f)
+		    {
+		        landed = true;
+		        SOAR_PRINT("Landed - starting flash dump\n");
+
+		        // Send sysinfo command to DebugTask to trigger the flash dump
+		        Command dumpCmd(DATA_COMMAND, EVENT_DEBUG_RX_COMPLETE);
+		        DebugTask::Inst().GetEventQueue()->Send(dumpCmd);
+		    }
 		}
 
 		// Print all raw values + timestamp + altitude as integer meters

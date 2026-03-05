@@ -24,6 +24,8 @@ enum DEBUG_TASK_COMMANDS {
   EVENT_DEBUG_RX_COMPLETE
 };
 
+
+
 /* Macros ------------------------------------------------------------------*/
 constexpr uint16_t DEBUG_RX_BUFFER_SZ_BYTES = 16;
 
@@ -73,5 +75,15 @@ class DebugTask : public Task, public UARTReceiverBase {
   DebugTask(const DebugTask&);             // Prevent copy-construction
   DebugTask& operator=(const DebugTask&);  // Prevent assignment
 };
+
+// In DebugTask.hpp - add this static method
+static void StartFlashDump() {
+    Inst().dumpActive = true;
+    Inst().dumpSector = 0;
+    Inst().dumpIndex = 0;
+    Inst().sectorLoaded = false;
+    logEnabled_log = true;
+    SOAR_PRINT("Flash dump started (landing detected)\n");
+}
 
 #endif  // CUBE_SYSTEM_DEBUG_TASK_HPP_
