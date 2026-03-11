@@ -77,13 +77,6 @@ class DebugTask : public Task, public UARTReceiverBase {
 };
 
 // In DebugTask.hpp - add this static method
-static void StartFlashDump() {
-    Inst().dumpActive = true;
-    Inst().dumpSector = 0;
-    Inst().dumpIndex = 0;
-    Inst().sectorLoaded = false;
-    logEnabled_log = true;
-    SOAR_PRINT("Flash dump started (landing detected)\n");
-}
+
 
 #endif  // CUBE_SYSTEM_DEBUG_TASK_HPP_

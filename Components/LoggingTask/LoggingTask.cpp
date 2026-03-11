@@ -218,35 +218,35 @@ void LoggingTask::HandleCommand(Command& cm){
 		    44330.0f * (1.0f - powf(static_cast<float>(data.pressure) / 101325.0f, 1.0f / 5.255f))
 		);
 
-		// Capture initial altitude once
-		if (!firstAltCaptured)
-		{
-			firstAlt = altitude_m;
-			firstAltCaptured = true;
-			SOAR_PRINT("firstcapture: %u\n", altitude_m);
-		}
-
-		// Launch detection: climbed more than 300m from initial altitude
-		if (!launched && (altitude_m - firstAlt > 0.5f))
-		{
-			launched = true;
-//			SOAR_PRINT("000\n");
-		}
-
-
-		// Landing detection:
-		if (launched && !landed)
-		{
-		    if (fabsf(altitude_m - firstAlt) <= 0.9f)
-		    {
-		        landed = true;
-		        SOAR_PRINT("Landed - starting flash dump\n");
-
-		        // Send sysinfo command to DebugTask to trigger the flash dump
-		        Command dumpCmd(DATA_COMMAND, EVENT_DEBUG_RX_COMPLETE);
-		        DebugTask::Inst().GetEventQueue()->Send(dumpCmd);
-		    }
-		}
+//		// Capture initial altitude once
+//		if (!firstAltCaptured)
+//		{
+//			firstAlt = altitude_m;
+//			firstAltCaptured = true;
+//			SOAR_PRINT("firstcapture: %u\n", altitude_m);
+//		}
+//
+//		// Launch detection: climbed more than 300m from initial altitude
+//		if (!launched && (altitude_m - firstAlt > 0.5f))
+//		{
+//			launched = true;
+////			SOAR_PRINT("000\n");
+//		}
+//
+//
+//		// Landing detection:
+//		if (launched && !landed)
+//		{
+//		    if (fabsf(altitude_m - firstAlt) <= 0.9f)
+//		    {
+//		        landed = true;
+//		        SOAR_PRINT("Landed - starting flash dump\n");
+//
+//		        // Send sysinfo command to DebugTask to trigger the flash dump
+//		        Command dumpCmd(DATA_COMMAND, EVENT_DEBUG_RX_COMPLETE);
+//		        DebugTask::Inst().GetEventQueue()->Send(dumpCmd);
+//		    }
+//		}
 
 		// Print all raw values + timestamp + altitude as integer meters
 //		if(DebugTask::debugEnabled){

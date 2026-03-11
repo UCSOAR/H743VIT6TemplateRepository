@@ -85,7 +85,7 @@ LoggingStatus LoggingService::LogToMX66(){
 			bufferPerSector++;
 			if(bufferPerSector == 8){
 
-//			    SOAR_PRINT("---- Sector Complete ----\n");
+			    SOAR_PRINT("---- Sector Complete ----\n");
 
 			    MX66xxQSPI_ReadSector(sectorBuf, sectorAddress, 0, FS_SECTOR_SIZE);
 
