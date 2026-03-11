@@ -18,6 +18,7 @@
 
 #define MAX_LOG_SIZE 20 //bytes, minus one byte for priority
 #define RAM_LOG_SIZE 500 //bytes
+#define NUM_SECTORS 4096
 
 class LoggingService{
 	public:

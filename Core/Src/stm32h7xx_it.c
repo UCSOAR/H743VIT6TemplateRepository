@@ -42,6 +42,11 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
+volatile uint32_t g_hardfault_cfsr = 0;
+volatile uint32_t g_hardfault_hfsr = 0;
+volatile uint32_t g_hardfault_bfar = 0;
+volatile uint32_t g_hardfault_mmfar = 0;
+volatile uint32_t g_hardfault_shcsr = 0;
 
 /* USER CODE END PV */
 

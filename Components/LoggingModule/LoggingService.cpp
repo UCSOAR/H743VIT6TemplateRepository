@@ -5,6 +5,7 @@
  *      Author: jaddina
  */
 #include "LoggingService.hpp"
+#include "stm32h7xx_hal.h"
 
 uint8_t  LoggingService::ramLog[RAM_LOG_SIZE] = {0};
 uint32_t LoggingService::ramHead = 0;
@@ -17,6 +18,9 @@ static bool dumpActive = false;
 static uint32_t dumpIndex = 0;
 static uint8_t sectorBuf[FS_SECTOR_SIZE];
 static uint32_t dumpSector = 0;
+static uint32_t sectorStartTickMs = 0;
+static uint8_t txBuf[RAM_LOG_SIZE];
+static uint8_t rxBuf[RAM_LOG_SIZE];
 
 LoggingService::LoggingService(LoggingDest dest, LoggingData dataType, uint8_t* ldata, uint32_t dataSize, LoggingPriority priority)
 {
@@ -66,47 +70,62 @@ LoggingStatus LoggingService::LogData(){
 LoggingStatus LoggingService::LogToMX66(){
 
 	LoggingStatus status = MemAppend(&loggingData);
-	if(status == LoggingStatus::LOG_FLASH_READY){
-		if(bufferPerSector == 0){
-			MX66xxQSPI_EraseSector(sectorAddress);
-		}
-		uint8_t txBuf[RAM_LOG_SIZE];
-		memcpy(txBuf, ramLog, RAM_LOG_SIZE);
+	if(!done){
+		if(status == LoggingStatus::LOG_FLASH_READY){
+			if(bufferPerSector == 0){
+				sectorStartTickMs = HAL_GetTick();
+				SOAR_PRINT("Starting flash sector %u\n", (unsigned int)sectorAddress);
+				MX66xxQSPI_EraseSector(sectorAddress);
+			}
+			memcpy(txBuf, ramLog, RAM_LOG_SIZE);
 
 
-		MX66xxQSPI_WriteSector(txBuf, sectorAddress, (bufferPerSector * 500),  RAM_LOG_SIZE);
+			MX66xxQSPI_WriteSector(txBuf, sectorAddress, (bufferPerSector * 500),  RAM_LOG_SIZE);
 
 
-		uint8_t rxBuf[RAM_LOG_SIZE];
-		MX66xxQSPI_ReadSector(rxBuf, sectorAddress,(bufferPerSector * 500),  RAM_LOG_SIZE);
+			MX66xxQSPI_ReadSector(rxBuf, sectorAddress,(bufferPerSector * 500),  RAM_LOG_SIZE);
 
-		if(BytesEqual(rxBuf, txBuf, RAM_LOG_SIZE)){
+			if(BytesEqual(rxBuf, txBuf, RAM_LOG_SIZE)){
 
-			bufferPerSector++;
-			if(bufferPerSector == 8){
+				bufferPerSector++;
+				if(bufferPerSector == 8){
 
-			    SOAR_PRINT("---- Sector Complete ----\n");
+					SOAR_PRINT("---- Sector Complete ----\n");
 
-			    MX66xxQSPI_ReadSector(sectorBuf, sectorAddress, 0, FS_SECTOR_SIZE);
+					MX66xxQSPI_ReadSector(sectorBuf, sectorAddress, 0, FS_SECTOR_SIZE);
+					const uint32_t sectorElapsedMs = HAL_GetTick() - sectorStartTickMs;
+					SOAR_PRINT("Flash sector %u write time: %u ms (%u bytes)\n",
+							   (unsigned int)sectorAddress,
+							   (unsigned int)sectorElapsedMs,
+							   (unsigned int)(RAM_LOG_SIZE * 8));
 
-			    dumpActive = true;
-			    dumpIndex = 0;
-			    dumpSector = sectorAddress;
+					dumpActive = true;
+					dumpIndex = 0;
+					dumpSector = sectorAddress;
 
-			    sectorAddress++;
-			    bufferPerSector = 0;
+					sectorAddress++;
+					bufferPerSector = 0;
+					if(sectorAddress > NUM_SECTORS){
+						done = true;
+					}
+				}
+
+
+				// SOAR_PRINT("FLASHED DATA");
+				return LoggingStatus::LOGGING_SUCCESS;
 			}
 
+			SOAR_PRINT("Flash verify failed: sector=%u chunk=%u offset=%u\n",
+					   (unsigned int)sectorAddress,
+					   (unsigned int)bufferPerSector,
+					   (unsigned int)(bufferPerSector * RAM_LOG_SIZE));
+			return status;
 
-			// SOAR_PRINT("FLASHED DATA");
-			return LoggingStatus::LOGGING_SUCCESS;
 		}
-
-		SOAR_PRINT("Bytes did not equal");
-		return status;
-
+		return LoggingStatus::LOG_FLASH_NOT_READY;
 	}
-	return LoggingStatus::LOG_FLASH_NOT_READY;
+	return LoggingStatus::FLASH_FULL;
+
 
 }
 

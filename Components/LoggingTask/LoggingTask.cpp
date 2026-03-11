@@ -111,7 +111,11 @@ void LoggingTask::Run(void * pvParams){
 void LoggingTask::HandleCommand(Command& cm){
 
 	// SOAR_PRINT("Data In Logging Task\n");
-	LoggingStatus err;
+	if(cm.GetCommand() != DATA_BROKER_COMMAND){
+		return;
+	}
+
+	LoggingStatus err = LoggingStatus::LOGGING_SUCCESS;
 	DataBrokerMessageTypes messageType = DataBroker::getMessageType(cm);
 
 	switch(messageType){
@@ -123,8 +127,7 @@ void LoggingTask::HandleCommand(Command& cm){
 
 		// Only log IDs 0 or 1
 		if (data.id != 0 && data.id != 1) {
-		    // Skip this sample
-		    break;
+		    return;
 		}
 
 //		 SOAR_PRINT: timestamp + accel + gyro + temp
@@ -289,9 +292,7 @@ void LoggingTask::HandleCommand(Command& cm){
 	}
 	case DataBrokerMessageTypes :: INVALID:
 	{
-		err = LoggingStatus::LOGGING_ERR;
-		SOAR_PRINT("Non-existant DataBrokerMessageType\n");
-		break;
+		return;
 	}
 
 	}
@@ -311,6 +312,5 @@ void LoggingTask::HandleCommand(Command& cm){
 
 
 }
-
 
 
