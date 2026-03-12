@@ -18,14 +18,17 @@
 
 #define MAX_LOG_SIZE 20 //bytes, minus one byte for priority
 #define RAM_LOG_SIZE 500 //bytes
+#define SECTOR_READ 4000
 #define NUM_SECTORS 4096
+#define TOTAL_LOGBUF_SLOTS (NUM_SECTORS * 8)
 
 class LoggingService{
 	public:
 		LoggingService(LoggingDest dest, LoggingData dataType, uint8_t* data, uint32_t dataSize, LoggingPriority priority);
 		LoggingStatus LogData();
 		static void ProcessFlashDump();
-		static void StartDump();
+
+		static void StopDump();
 	private:
 		LoggingStatus LogToMX66();
 		LoggingStatus LogToInternalMemory();
@@ -43,6 +46,7 @@ class LoggingService{
 		static uint8_t bufferPerSector;
 		static uint8_t sectorCount;
 		static uint8_t done;
+		static uint8_t doneDump;
 
 
 };

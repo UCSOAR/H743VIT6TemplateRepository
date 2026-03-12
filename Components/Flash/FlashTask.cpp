@@ -12,6 +12,7 @@
 #include "SPIFlash.hpp"
 #include <cstring>
 #include "stm32h7xx_hal.h"
+#include "LoggingService.hpp"
 
 /* Constants ------------------------------------------------------------------*/
 constexpr uint16_t FLASH_TEST_SECTOR = 32;          // TODO: Move to a reserved sector if needed
@@ -129,6 +130,11 @@ void FlashTask::HandleCommand(Command &cm)
         case EVENT_FLASH_TEST:
             RunFlashTests();
             break;
+        case FLASH_DUMP:
+        	dumoflash();
+        	break;
+
+
         default:
             SOAR_PRINT("FlashTask - Received Unsupported Task Command {%d}\n", cm.GetTaskCommand());
             break;
@@ -261,4 +267,8 @@ void FlashTask::TriggerTest()
 {
     Command cm(TASK_SPECIFIC_COMMAND, EVENT_FLASH_TEST);
     qEvtQueue->Send(cm);
+}
+
+void FlashTask::dumoflash() {
+	LoggingService::ProcessFlashDump();
 }

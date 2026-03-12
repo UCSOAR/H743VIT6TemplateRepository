@@ -17,7 +17,10 @@ enum FLASH_TASK_COMMANDS
 {
     FLASH_TASK_COMMAND_NONE = 0,
     EVENT_FLASH_INIT,
-    EVENT_FLASH_TEST
+    EVENT_FLASH_TEST,
+	FLASH_DUMP,
+	STOP_DUMP,
+
 };
 
 /* Class ------------------------------------------------------------------*/
@@ -34,6 +37,8 @@ public:
 
     // Public interface for other tasks to trigger operations
     void TriggerTest();
+
+    void dumoflash();
 
 protected:
     static void RunTask(void *pvParams)

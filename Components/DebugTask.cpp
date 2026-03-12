@@ -10,6 +10,7 @@
 #include "Command.hpp"
 #include "CubeUtils.hpp"
 #include <cstring>
+#include "LoggingService.hpp"
 
 #include "stm32h7xx_hal.h"
 #include "FlashTask.hpp"
@@ -136,6 +137,14 @@ void DebugTask::HandleDebugMessage(const char* msg) {
 	    SOAR_PRINT("Debug: Triggering flash tests\n");
 	    FlashTask::Inst().TriggerTest();
 	  }
+   else if(strcmp(msg, "fash_dump") == 0){
+	   Command cmd(TASK_SPECIFIC_COMMAND, FLASH_DUMP);
+	   FlashTask::Inst().GetEventQueue()->Send(cmd);
+   }
+   else if(strcmp(msg, "stop_dump") == 0){
+	   LoggingService::StopDump();
+   }
+
 
   else {
     // Single character command, or unknown command
