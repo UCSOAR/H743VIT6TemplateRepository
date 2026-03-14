@@ -63,7 +63,6 @@ void run_main() {
     // Should never reach here
     SOAR_ASSERT(false, "osKernelStart() failed");
 
-
     while (1)
     {
         osDelay(100);
