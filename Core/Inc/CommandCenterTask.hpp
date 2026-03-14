@@ -21,8 +21,6 @@
   ************************************/
  #include "Task.hpp"
  #include "SystemDefines.hpp"
- #include "CanAutoNodeMotherboard.hpp"
- #include <vector>
  
  /************************************
   * MACROS AND DEFINES
@@ -31,16 +29,7 @@
  /************************************
   * TYPEDEFS
   ************************************/
- extern FDCAN_HandleTypeDef hfdcan1;
  
- enum CommandCenterTaskCommandType {
-	 RECEIVE_DEBUG_MSG
- };
-
-	const uint8_t START_LOGGING[] = {0};
-	const uint8_t STOP_LOGGING[] = {1};
-	const uint8_t SEND_FILES[] = {2};
-
  /************************************
   * CLASS DEFINITIONS
   ************************************/
@@ -58,21 +47,13 @@
      static void RunTask(void* pvParams) { CommandCenterTask::Inst().Run(pvParams); } // Static Task Interface, passes control to the instance Run();
      void Run(void * pvParams); // Main run code
      void HandleCommand(Command& cm);
-     void ExecuteCommand(const char* msg);
-
-     CanAutoNodeMotherboard* motherboard = nullptr;
-
-     std::vector<CanAutoNode::UniqueBoardID> daughterBoards;
-
-     bool logging = false;
-
-     uint32_t lastLog = 0;
  
  private:
      // Private Functions
      CommandCenterTask();        // Private constructor
      CommandCenterTask(const CommandCenterTask&);                        // Prevent copy-construction
      CommandCenterTask& operator=(const CommandCenterTask&);            // Prevent assignment
+     std::vector<DaughterBoard> activeBoards;                                //list of all active daughterboards
  };
  
  /************************************
