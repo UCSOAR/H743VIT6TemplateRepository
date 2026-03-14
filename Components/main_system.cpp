@@ -38,13 +38,13 @@ void run_main() {
 	DebugTask::Inst().InitTask();
 	FlashTask::Inst().InitTask();
 
-	IMUTask::Inst().InitTask();
+	//IMUTask::Inst().InitTask();
 
-	LSM6DSOTask::Inst().InitTask();
-//    MMC5983MATask::Inst().InitTask();
-    BaroTask07::Inst().InitTask();
-    BaroTask11::Inst().InitTask();
-    LoggingTask::Inst().InitTask();
+	//LSM6DSOTask::Inst().InitTask();
+    MMC5983MATask::Inst().InitTask();
+   // BaroTask07::Inst().InitTask();
+   // BaroTask11::Inst().InitTask();
+   // LoggingTask::Inst().InitTask();
 
 
     // Print System Boot Info : Warning, don't queue more than 10 prints before scheduler starts
