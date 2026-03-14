@@ -1,0 +1,2999 @@
+IMU32G(ID=1) Timestamp=798161 Accel=[0,0,0] Gyro=[-586,-665,236] Temp=30
+IMU16G(ID=0) Timestamp=798202 Accel=[0,0,0] Gyro=[1023,-2528,2318] Temp=27
+BARO07(ID=0) Timestamp=798290 Pressure=90929 Temp=27.29
+BARO11(ID=1) Timestamp=798297 Pressure=90307 Temp=27.62
+IMU32G(ID=1) Timestamp=798504 Accel=[0,0,0] Gyro=[-1137,463,-35] Temp=30
+BARO07(ID=0) Timestamp=798631 Pressure=90944 Temp=27.29
+BARO11(ID=1) Timestamp=798638 Pressure=90305 Temp=27.62
+IMU32G(ID=1) Timestamp=798847 Accel=[0,0,0] Gyro=[1575,997,1128] Temp=30
+IMU16G(ID=0) Timestamp=798868 Accel=[0,0,0] Gyro=[1540,1986,1400] Temp=27
+BARO07(ID=0) Timestamp=798972 Pressure=90929 Temp=27.29
+BARO11(ID=1) Timestamp=798974 Pressure=90306 Temp=27.61
+IMU32G(ID=1) Timestamp=799190 Accel=[0,0,1] Gyro=[420,-4103,612] Temp=30
+IMU16G(ID=0) Timestamp=799201 Accel=[0,0,1] Gyro=[1575,2975,1155] Temp=27
+BARO07(ID=0) Timestamp=799313 Pressure=90950 Temp=27.29
+BARO11(ID=1) Timestamp=799315 Pressure=90288 Temp=27.61
+IMU32G(ID=1) Timestamp=799533 Accel=[0,0,0] Gyro=[1942,901,770] Temp=30
+IMU16G(ID=0) Timestamp=799534 Accel=[0,0,0] Gyro=[-1461,-595,656] Temp=27
+BARO07(ID=0) Timestamp=799654 Pressure=90955 Temp=27.29
+BARO11(ID=1) Timestamp=799656 Pressure=90298 Temp=27.62
+IMU16G(ID=0) Timestamp=799867 Accel=[0,0,0] Gyro=[2038,-2625,-962] Temp=27
+IMU32G(ID=1) Timestamp=799876 Accel=[0,0,0] Gyro=[-1303,-516,192] Temp=30
+BARO07(ID=0) Timestamp=799995 Pressure=90944 Temp=27.29
+BARO11(ID=1) Timestamp=799997 Pressure=90293 Temp=27.62
+IMU16G(ID=0) Timestamp=800200 Accel=[0,0,0] Gyro=[1365,-8,446] Temp=27
+IMU32G(ID=1) Timestamp=800219 Accel=[0,0,0] Gyro=[1592,682,1627] Temp=30
+BARO07(ID=0) Timestamp=800336 Pressure=90923 Temp=27.28
+BARO11(ID=1) Timestamp=800338 Pressure=90282 Temp=27.61
+IMU16G(ID=0) Timestamp=800533 Accel=[0,0,0] Gyro=[2931,-988,-148] Temp=27
+IMU32G(ID=1) Timestamp=800562 Accel=[0,0,0] Gyro=[-1277,3473,-612] Temp=30
+BARO07(ID=0) Timestamp=800677 Pressure=90901 Temp=27.28
+IMU16G(ID=0) Timestamp=800866 Accel=[0,0,0] Gyro=[-1295,910,148] Temp=27
+IMU32G(ID=1) Timestamp=800905 Accel=[0,0,0] Gyro=[-533,883,1548] Temp=30
+BARO07(ID=0) Timestamp=801018 Pressure=90902 Temp=27.28
+BARO11(ID=1) Timestamp=801020 Pressure=90276 Temp=27.61
+IMU16G(ID=0) Timestamp=801199 Accel=[0,0,0] Gyro=[3972,-498,-936] Temp=27
+IMU32G(ID=1) Timestamp=801248 Accel=[0,0,0] Gyro=[-691,997,630] Temp=30
+BARO07(ID=0) Timestamp=801359 Pressure=90897 Temp=27.28
+BARO11(ID=1) Timestamp=801361 Pressure=90279 Temp=27.61
+IMU16G(ID=0) Timestamp=801532 Accel=[0,0,0] Gyro=[-1793,2843,1023] Temp=27
+IMU32G(ID=1) Timestamp=801591 Accel=[0,0,0] Gyro=[-122,-1032,1636] Temp=30
+BARO07(ID=0) Timestamp=801700 Pressure=90907 Temp=27.28
+BARO11(ID=1) Timestamp=801702 Pressure=90282 Temp=27.61
+IMU16G(ID=0) Timestamp=801865 Accel=[0,0,0] Gyro=[-2327,-315,647] Temp=27
+IMU32G(ID=1) Timestamp=801934 Accel=[0,0,0] Gyro=[61,525,-297] Temp=30
+BARO07(ID=0) Timestamp=802041 Pressure=90911 Temp=27.28
+BARO11(ID=1) Timestamp=802043 Pressure=90279 Temp=27.61
+IMU16G(ID=0) Timestamp=802198 Accel=[0,0,0] Gyro=[2205,428,-1811] Temp=27
+IMU32G(ID=1) Timestamp=802277 Accel=[0,0,0] Gyro=[3018,-428,901] Temp=30
+BARO07(ID=0) Timestamp=802382 Pressure=90924 Temp=27.29
+BARO11(ID=1) Timestamp=802384 Pressure=90264 Temp=27.61
+IMU16G(ID=0) Timestamp=802531 Accel=[0,0,0] Gyro=[1925,201,-463] Temp=27
+IMU32G(ID=1) Timestamp=802620 Accel=[0,0,0] Gyro=[901,3141,787] Temp=30
+BARO07(ID=0) Timestamp=802723 Pressure=90917 Temp=27.28
+BARO11(ID=1) Timestamp=802725 Pressure=90261 Temp=27.61
+IMU16G(ID=0) Timestamp=802864 Accel=[0,0,0] Gyro=[192,1662,-315] Temp=27
+BARO07(ID=0) Timestamp=803064 Pressure=90906 Temp=27.28
+BARO11(ID=1) Timestamp=803066 Pressure=90252 Temp=27.61
+IMU16G(ID=0) Timestamp=803197 Accel=[0,0,0] Gyro=[-848,2590,813] Temp=27
+IMU32G(ID=1) Timestamp=803306 Accel=[0,0,0] Gyro=[2231,-1557,875] Temp=30
+BARO07(ID=0) Timestamp=803405 Pressure=90912 Temp=27.28
+BARO11(ID=1) Timestamp=803407 Pressure=90266 Temp=27.61
+IMU16G(ID=0) Timestamp=803530 Accel=[0,0,0] Gyro=[-2310,1671,1522] Temp=27
+IMU32G(ID=1) Timestamp=803649 Accel=[0,0,0] Gyro=[3097,280,1216] Temp=30
+BARO07(ID=0) Timestamp=803746 Pressure=90912 Temp=27.28
+BARO11(ID=1) Timestamp=803748 Pressure=90273 Temp=27.61
+IMU16G(ID=0) Timestamp=803863 Accel=[0,0,0] Gyro=[-700,26,-280] Temp=27
+IMU32G(ID=1) Timestamp=803992 Accel=[0,0,0] Gyro=[-2703,3421,245] Temp=30
+BARO07(ID=0) Timestamp=804087 Pressure=90917 Temp=27.28
+BARO11(ID=1) Timestamp=804089 Pressure=90254 Temp=27.61
+IMU16G(ID=0) Timestamp=804196 Accel=[0,0,0] Gyro=[-3955,1513,1382] Temp=27
+IMU32G(ID=1) Timestamp=804335 Accel=[0,0,0] Gyro=[-630,-1688,542] Temp=30
+BARO07(ID=0) Timestamp=804428 Pressure=90912 Temp=27.28
+BARO11(ID=1) Timestamp=804430 Pressure=90247 Temp=27.60
+IMU16G(ID=0) Timestamp=804529 Accel=[0,0,0] Gyro=[-253,-26,332] Temp=27
+IMU32G(ID=1) Timestamp=804678 Accel=[0,0,0] Gyro=[332,1548,122] Temp=30
+BARO07(ID=0) Timestamp=804769 Pressure=90933 Temp=27.28
+BARO11(ID=1) Timestamp=804771 Pressure=90251 Temp=27.61
+IMU16G(ID=0) Timestamp=804862 Accel=[0,0,0] Gyro=[2590,-4366,-288] Temp=27
+IMU32G(ID=1) Timestamp=805021 Accel=[0,0,0] Gyro=[-1898,1566,-971] Temp=30
+BARO07(ID=0) Timestamp=805110 Pressure=90933 Temp=27.28
+IMU16G(ID=0) Timestamp=805195 Accel=[0,0,0] Gyro=[1837,-691,1828] Temp=27
+IMU32G(ID=1) Timestamp=805364 Accel=[0,0,0] Gyro=[0,1750,227] Temp=30
+BARO07(ID=0) Timestamp=805451 Pressure=90933 Temp=27.28
+BARO11(ID=1) Timestamp=805453 Pressure=90253 Temp=27.62
+IMU16G(ID=0) Timestamp=805528 Accel=[0,0,0] Gyro=[-673,2598,1330] Temp=27
+IMU32G(ID=1) Timestamp=805707 Accel=[0,0,0] Gyro=[-166,3622,516] Temp=30
+BARO07(ID=0) Timestamp=805792 Pressure=90902 Temp=27.28
+BARO11(ID=1) Timestamp=805794 Pressure=90237 Temp=27.61
+IMU16G(ID=0) Timestamp=805861 Accel=[0,0,0] Gyro=[2686,-1050,-717] Temp=27
+IMU32G(ID=1) Timestamp=806050 Accel=[0,0,0] Gyro=[1277,2896,-1496] Temp=30
+BARO07(ID=0) Timestamp=806133 Pressure=90891 Temp=27.28
+BARO11(ID=1) Timestamp=806135 Pressure=90252 Temp=27.61
+IMU16G(ID=0) Timestamp=806194 Accel=[0,0,0] Gyro=[918,5775,743] Temp=27
+IMU32G(ID=1) Timestamp=806393 Accel=[0,0,0] Gyro=[1190,-1251,997] Temp=30
+BARO07(ID=0) Timestamp=806474 Pressure=90876 Temp=27.28
+BARO11(ID=1) Timestamp=806476 Pressure=90238 Temp=27.62
+IMU16G(ID=0) Timestamp=806527 Accel=[0,0,0] Gyro=[-3920,1977,2196] Temp=27
+IMU32G(ID=1) Timestamp=806736 Accel=[0,0,0] Gyro=[-131,-4777,743] Temp=30
+BARO07(ID=0) Timestamp=806815 Pressure=90839 Temp=27.28
+BARO11(ID=1) Timestamp=806817 Pressure=90231 Temp=27.61
+IMU16G(ID=0) Timestamp=806860 Accel=[0,0,0] Gyro=[595,140,717] Temp=27
+IMU32G(ID=1) Timestamp=807079 Accel=[0,0,0] Gyro=[-516,-1032,1478] Temp=30
+BARO07(ID=0) Timestamp=807156 Pressure=90848 Temp=27.27
+BARO11(ID=1) Timestamp=807158 Pressure=90229 Temp=27.62
+IMU16G(ID=0) Timestamp=807193 Accel=[0,0,0] Gyro=[420,-1050,376] Temp=27
+BARO07(ID=0) Timestamp=807497 Pressure=90853 Temp=27.27
+BARO11(ID=1) Timestamp=807499 Pressure=90229 Temp=27.62
+IMU16G(ID=0) Timestamp=807526 Accel=[0,0,0] Gyro=[1470,-805,-157] Temp=27
+IMU32G(ID=1) Timestamp=807765 Accel=[0,0,0] Gyro=[927,2572,-472] Temp=30
+BARO07(ID=0) Timestamp=807838 Pressure=90870 Temp=27.28
+BARO11(ID=1) Timestamp=807840 Pressure=90222 Temp=27.62
+IMU16G(ID=0) Timestamp=807859 Accel=[0,0,0] Gyro=[-332,-472,1365] Temp=27
+IMU32G(ID=1) Timestamp=808108 Accel=[0,0,0] Gyro=[717,183,621] Temp=30
+BARO07(ID=0) Timestamp=808179 Pressure=90869 Temp=27.27
+BARO11(ID=1) Timestamp=808181 Pressure=90217 Temp=27.62
+IMU16G(ID=0) Timestamp=808192 Accel=[0,0,0] Gyro=[-822,2056,1671] Temp=27
+IMU32G(ID=1) Timestamp=808451 Accel=[0,0,0] Gyro=[-5258,1933,1435] Temp=30
+BARO07(ID=0) Timestamp=808520 Pressure=90926 Temp=27.27
+BARO11(ID=1) Timestamp=808522 Pressure=90222 Temp=27.62
+IMU16G(ID=0) Timestamp=808525 Accel=[0,0,1] Gyro=[-1461,1697,288] Temp=27
+IMU32G(ID=1) Timestamp=808794 Accel=[0,0,0] Gyro=[52,4681,17] Temp=30
+IMU16G(ID=0) Timestamp=808858 Accel=[0,0,0] Gyro=[1338,962,-752] Temp=27
+BARO07(ID=0) Timestamp=808861 Pressure=90913 Temp=27.29
+BARO11(ID=1) Timestamp=808863 Pressure=90216 Temp=27.62
+IMU32G(ID=1) Timestamp=809137 Accel=[0,0,0] Gyro=[2178,997,630] Temp=30
+IMU16G(ID=0) Timestamp=809191 Accel=[0,0,1] Gyro=[-1758,3850,787] Temp=27
+BARO07(ID=0) Timestamp=809202 Pressure=90908 Temp=27.29
+BARO11(ID=1) Timestamp=809204 Pressure=90201 Temp=27.62
+IMU32G(ID=1) Timestamp=809480 Accel=[0,0,0] Gyro=[-385,1216,787] Temp=30
+IMU16G(ID=0) Timestamp=809524 Accel=[0,0,0] Gyro=[-1111,17,665] Temp=27
+BARO11(ID=1) Timestamp=809572 Pressure=90210 Temp=27.61
+IMU32G(ID=1) Timestamp=809823 Accel=[0,0,0] Gyro=[297,770,455] Temp=30
+IMU16G(ID=0) Timestamp=809857 Accel=[0,0,0] Gyro=[-428,-1680,568] Temp=27
+BARO07(ID=0) Timestamp=809884 Pressure=90897 Temp=27.28
+BARO11(ID=1) Timestamp=809886 Pressure=90216 Temp=27.61
+IMU32G(ID=1) Timestamp=810166 Accel=[0,0,1] Gyro=[-148,26,1006] Temp=30
+IMU16G(ID=0) Timestamp=810190 Accel=[0,0,1] Gyro=[4366,4865,1321] Temp=27
+BARO07(ID=0) Timestamp=810225 Pressure=90891 Temp=27.28
+BARO11(ID=1) Timestamp=810227 Pressure=90209 Temp=27.61
+IMU32G(ID=1) Timestamp=810509 Accel=[0,0,0] Gyro=[2056,2397,813] Temp=30
+IMU16G(ID=0) Timestamp=810523 Accel=[0,0,0] Gyro=[1242,2695,1417] Temp=27
+BARO07(ID=0) Timestamp=810566 Pressure=90876 Temp=27.29
+BARO11(ID=1) Timestamp=810568 Pressure=90207 Temp=27.61
+IMU32G(ID=1) Timestamp=810852 Accel=[0,0,0] Gyro=[2065,-1260,498] Temp=30
+IMU16G(ID=0) Timestamp=810856 Accel=[0,0,0] Gyro=[-1181,-140,595] Temp=27
+BARO07(ID=0) Timestamp=810907 Pressure=90865 Temp=27.28
+BARO11(ID=1) Timestamp=810909 Pressure=90202 Temp=27.60
+IMU16G(ID=0) Timestamp=811189 Accel=[0,0,0] Gyro=[210,988,-463] Temp=27
+IMU32G(ID=1) Timestamp=811195 Accel=[0,0,0] Gyro=[-175,-551,1347] Temp=30
+BARO07(ID=0) Timestamp=811248 Pressure=90843 Temp=27.28
+BARO11(ID=1) Timestamp=811250 Pressure=90188 Temp=27.59
+IMU16G(ID=0) Timestamp=811522 Accel=[0,0,0] Gyro=[-936,-700,-691] Temp=27
+IMU32G(ID=1) Timestamp=811538 Accel=[0,0,0] Gyro=[-971,1277,-323] Temp=30
+BARO07(ID=0) Timestamp=811589 Pressure=90823 Temp=27.28
+BARO11(ID=1) Timestamp=811591 Pressure=90192 Temp=27.60
+
+--- Dump Complete ---
+---- Sector Complete ----
+IMU32G(ID=1) Timestamp=811901 Accel=[0,0,0] Gyro=[603,-385,1102] Temp=30
+BARO07(ID=0) Timestamp=811930 Pressure=90817 Temp=27.27
+BARO11(ID=1) Timestamp=811937 Pressure=90193 Temp=27.59
+IMU16G(ID=0) Timestamp=812188 Accel=[0,0,0] Gyro=[1163,1321,-35] Temp=27
+IMU32G(ID=1) Timestamp=812224 Accel=[0,0,1] Gyro=[481,-498,2406] Temp=30
+BARO07(ID=0) Timestamp=812271 Pressure=90819 Temp=27.26
+BARO11(ID=1) Timestamp=812278 Pressure=90196 Temp=27.59
+IMU16G(ID=0) Timestamp=812521 Accel=[0,0,0] Gyro=[1513,3106,988] Temp=27
+IMU32G(ID=1) Timestamp=812567 Accel=[0,0,0] Gyro=[-4541,2432,-2310] Temp=30
+BARO07(ID=0) Timestamp=812612 Pressure=90827 Temp=27.27
+BARO11(ID=1) Timestamp=812619 Pressure=90193 Temp=27.59
+IMU16G(ID=0) Timestamp=812854 Accel=[0,0,0] Gyro=[-3316,2353,1540] Temp=27
+IMU32G(ID=1) Timestamp=812910 Accel=[0,0,0] Gyro=[367,3762,-218] Temp=30
+BARO07(ID=0) Timestamp=812953 Pressure=90852 Temp=27.27
+BARO11(ID=1) Timestamp=812960 Pressure=90199 Temp=27.59
+IMU16G(ID=0) Timestamp=813187 Accel=[0,0,0] Gyro=[2301,936,131] Temp=27
+IMU32G(ID=1) Timestamp=813253 Accel=[0,0,0] Gyro=[3316,-3727,1898] Temp=30
+BARO07(ID=0) Timestamp=813294 Pressure=90843 Temp=27.27
+BARO11(ID=1) Timestamp=813301 Pressure=90188 Temp=27.59
+IMU16G(ID=0) Timestamp=813520 Accel=[0,0,0] Gyro=[-875,875,201] Temp=27
+IMU32G(ID=1) Timestamp=813596 Accel=[0,0,0] Gyro=[-665,-682,385] Temp=30
+BARO07(ID=0) Timestamp=813635 Pressure=90874 Temp=27.27
+BARO11(ID=1) Timestamp=813642 Pressure=90196 Temp=27.59
+IMU16G(ID=0) Timestamp=813853 Accel=[0,0,0] Gyro=[3508,-2222,-612] Temp=27
+IMU32G(ID=1) Timestamp=813939 Accel=[0,0,0] Gyro=[-420,-2065,157] Temp=30
+BARO11(ID=1) Timestamp=814037 Pressure=90203 Temp=27.59
+IMU16G(ID=0) Timestamp=814186 Accel=[0,0,0] Gyro=[-2117,5626,551] Temp=27
+IMU32G(ID=1) Timestamp=814282 Accel=[0,0,0] Gyro=[-516,4095,-297] Temp=30
+BARO07(ID=0) Timestamp=814317 Pressure=90858 Temp=27.27
+BARO11(ID=1) Timestamp=814324 Pressure=90190 Temp=27.59
+IMU16G(ID=0) Timestamp=814519 Accel=[0,0,0] Gyro=[-4322,2686,1688] Temp=27
+IMU32G(ID=1) Timestamp=814625 Accel=[0,0,0] Gyro=[3237,-3220,1137] Temp=30
+BARO07(ID=0) Timestamp=814658 Pressure=90848 Temp=27.27
+BARO11(ID=1) Timestamp=814665 Pressure=90191 Temp=27.59
+IMU16G(ID=0) Timestamp=814852 Accel=[0,0,0] Gyro=[-2082,2380,1102] Temp=27
+IMU32G(ID=1) Timestamp=814968 Accel=[0,0,0] Gyro=[3412,341,1233] Temp=30
+BARO07(ID=0) Timestamp=814999 Pressure=90858 Temp=27.27
+BARO11(ID=1) Timestamp=815006 Pressure=90182 Temp=27.59
+IMU16G(ID=0) Timestamp=815185 Accel=[0,0,0] Gyro=[735,927,-35] Temp=27
+IMU32G(ID=1) Timestamp=815311 Accel=[0,0,0] Gyro=[-1233,1452,428] Temp=30
+BARO07(ID=0) Timestamp=815340 Pressure=90864 Temp=27.28
+BARO11(ID=1) Timestamp=815347 Pressure=90192 Temp=27.60
+IMU16G(ID=0) Timestamp=815518 Accel=[0,0,0] Gyro=[2240,5311,463] Temp=27
+IMU32G(ID=1) Timestamp=815654 Accel=[0,0,0] Gyro=[-3027,1128,428] Temp=30
+BARO07(ID=0) Timestamp=815681 Pressure=90880 Temp=27.28
+BARO11(ID=1) Timestamp=815688 Pressure=90183 Temp=27.60
+IMU16G(ID=0) Timestamp=815851 Accel=[0,0,1] Gyro=[1793,-621,271] Temp=27
+IMU32G(ID=1) Timestamp=815997 Accel=[0,0,0] Gyro=[306,-1312,-1181] Temp=30
+BARO07(ID=0) Timestamp=816022 Pressure=90864 Temp=27.27
+BARO11(ID=1) Timestamp=816029 Pressure=90185 Temp=27.61
+IMU32G(ID=1) Timestamp=816340 Accel=[0,0,0] Gyro=[-3832,-3045,376] Temp=30
+BARO07(ID=0) Timestamp=816363 Pressure=90907 Temp=27.28
+BARO11(ID=1) Timestamp=816369 Pressure=90191 Temp=27.61
+IMU16G(ID=0) Timestamp=816517 Accel=[0,0,0] Gyro=[1566,857,796] Temp=27
+IMU32G(ID=1) Timestamp=816683 Accel=[0,0,0] Gyro=[-1365,3228,-393] Temp=30
+BARO07(ID=0) Timestamp=816704 Pressure=90917 Temp=27.28
+BARO11(ID=1) Timestamp=816706 Pressure=90185 Temp=27.61
+IMU16G(ID=0) Timestamp=816850 Accel=[0,0,0] Gyro=[-1155,3937,201] Temp=27
+IMU32G(ID=1) Timestamp=817026 Accel=[0,0,0] Gyro=[-1741,2012,358] Temp=30
+BARO07(ID=0) Timestamp=817045 Pressure=90932 Temp=27.28
+BARO11(ID=1) Timestamp=817047 Pressure=90191 Temp=27.61
+IMU16G(ID=0) Timestamp=817183 Accel=[0,0,0] Gyro=[1198,236,-183] Temp=27
+IMU32G(ID=1) Timestamp=817369 Accel=[0,0,0] Gyro=[-332,4208,192] Temp=30
+BARO07(ID=0) Timestamp=817386 Pressure=90940 Temp=27.29
+BARO11(ID=1) Timestamp=817388 Pressure=90204 Temp=27.62
+IMU16G(ID=0) Timestamp=817516 Accel=[0,0,0] Gyro=[-2231,1785,927] Temp=27
+IMU32G(ID=1) Timestamp=817712 Accel=[0,0,0] Gyro=[-1933,3421,603] Temp=29
+BARO07(ID=0) Timestamp=817727 Pressure=90935 Temp=27.29
+BARO11(ID=1) Timestamp=817729 Pressure=90198 Temp=27.62
+IMU16G(ID=0) Timestamp=817849 Accel=[0,0,0] Gyro=[-411,-3193,-131] Temp=27
+IMU32G(ID=1) Timestamp=818055 Accel=[0,0,0] Gyro=[-2397,4663,-385] Temp=30
+BARO07(ID=0) Timestamp=818068 Pressure=90918 Temp=27.29
+BARO11(ID=1) Timestamp=818070 Pressure=90187 Temp=27.62
+IMU16G(ID=0) Timestamp=818182 Accel=[0,0,0] Gyro=[-446,1015,-131] Temp=27
+IMU32G(ID=1) Timestamp=818398 Accel=[0,0,0] Gyro=[-1137,-131,-192] Temp=29
+BARO11(ID=1) Timestamp=818437 Pressure=90193 Temp=27.62
+IMU16G(ID=0) Timestamp=818515 Accel=[0,0,0] Gyro=[-1321,2948,1478] Temp=27
+IMU32G(ID=1) Timestamp=818741 Accel=[0,0,0] Gyro=[-560,1793,-78] Temp=30
+BARO07(ID=0) Timestamp=818750 Pressure=90913 Temp=27.29
+BARO11(ID=1) Timestamp=818752 Pressure=90205 Temp=27.62
+IMU16G(ID=0) Timestamp=818848 Accel=[0,0,0] Gyro=[3377,-1793,-875] Temp=27
+IMU32G(ID=1) Timestamp=819084 Accel=[0,0,1] Gyro=[-1715,3377,1907] Temp=30
+BARO07(ID=0) Timestamp=819091 Pressure=90935 Temp=27.29
+BARO11(ID=1) Timestamp=819093 Pressure=90194 Temp=27.62
+IMU16G(ID=0) Timestamp=819181 Accel=[0,0,0] Gyro=[2143,708,437] Temp=27
+IMU32G(ID=1) Timestamp=819427 Accel=[0,0,0] Gyro=[-1855,-656,1198] Temp=30
+BARO07(ID=0) Timestamp=819432 Pressure=90914 Temp=27.29
+BARO11(ID=1) Timestamp=819434 Pressure=90213 Temp=27.63
+IMU16G(ID=0) Timestamp=819514 Accel=[0,0,0] Gyro=[192,1636,1172] Temp=27
+IMU32G(ID=1) Timestamp=819770 Accel=[0,0,0] Gyro=[2940,-3456,1050] Temp=30
+BARO07(ID=0) Timestamp=819773 Pressure=90892 Temp=27.29
+BARO11(ID=1) Timestamp=819775 Pressure=90211 Temp=27.62
+IMU16G(ID=0) Timestamp=819847 Accel=[0,0,0] Gyro=[-175,4567,936] Temp=27
+IMU32G(ID=1) Timestamp=820113 Accel=[0,0,0] Gyro=[-2773,-1286,43] Temp=30
+BARO07(ID=0) Timestamp=820114 Pressure=90893 Temp=27.29
+BARO11(ID=1) Timestamp=820116 Pressure=90200 Temp=27.62
+IMU16G(ID=0) Timestamp=820180 Accel=[0,0,0] Gyro=[131,1855,1697] Temp=27
+BARO07(ID=0) Timestamp=820455 Pressure=90897 Temp=27.29
+IMU32G(ID=1) Timestamp=820456 Accel=[0,0,1] Gyro=[-2196,-1566,1076] Temp=30
+BARO11(ID=1) Timestamp=820457 Pressure=90196 Temp=27.62
+BARO07(ID=0) Timestamp=820796 Pressure=90882 Temp=27.29
+BARO11(ID=1) Timestamp=820798 Pressure=90204 Temp=27.63
+IMU32G(ID=1) Timestamp=820799 Accel=[0,0,0] Gyro=[1400,210,1583] Temp=30
+IMU16G(ID=0) Timestamp=820846 Accel=[0,0,0] Gyro=[376,3858,1723] Temp=27
+BARO07(ID=0) Timestamp=821137 Pressure=90882 Temp=27.29
+BARO11(ID=1) Timestamp=821139 Pressure=90200 Temp=27.62
+IMU32G(ID=1) Timestamp=821142 Accel=[0,0,0] Gyro=[183,-3386,1198] Temp=30
+IMU16G(ID=0) Timestamp=821179 Accel=[0,0,0] Gyro=[2196,-568,656] Temp=27
+BARO07(ID=0) Timestamp=821478 Pressure=90876 Temp=27.29
+BARO11(ID=1) Timestamp=821480 Pressure=90201 Temp=27.63
+IMU32G(ID=1) Timestamp=821485 Accel=[0,0,0] Gyro=[-2380,-2318,735] Temp=30
+IMU16G(ID=0) Timestamp=821512 Accel=[0,0,0] Gyro=[210,1391,358] Temp=27
+BARO07(ID=0) Timestamp=821819 Pressure=90902 Temp=27.28
+BARO11(ID=1) Timestamp=821821 Pressure=90191 Temp=27.62
+IMU32G(ID=1) Timestamp=821828 Accel=[0,0,0] Gyro=[656,-1093,1776] Temp=30
+IMU16G(ID=0) Timestamp=821845 Accel=[0,0,0] Gyro=[2598,-2380,1540] Temp=27
+BARO07(ID=0) Timestamp=822160 Pressure=90903 Temp=27.29
+BARO11(ID=1) Timestamp=822162 Pressure=90207 Temp=27.63
+IMU32G(ID=1) Timestamp=822171 Accel=[0,0,0] Gyro=[-2082,-1391,1050] Temp=30
+IMU16G(ID=0) Timestamp=822178 Accel=[0,0,0] Gyro=[-840,-717,2633] Temp=27
+BARO07(ID=0) Timestamp=822501 Pressure=90915 Temp=27.30
+BARO11(ID=1) Timestamp=822503 Pressure=90207 Temp=27.63
+IMU16G(ID=0) Timestamp=822511 Accel=[0,0,0] Gyro=[8,-1872,-1190] Temp=27
+IMU32G(ID=1) Timestamp=822514 Accel=[0,0,0] Gyro=[-481,1723,-927] Temp=30
+BARO07(ID=0) Timestamp=822842 Pressure=90941 Temp=27.30
+BARO11(ID=1) Timestamp=822872 Pressure=90211 Temp=27.62
+IMU32G(ID=1) Timestamp=822873 Accel=[0,0,0] Gyro=[-1023,-1093,1916] Temp=30
+IMU16G(ID=0) Timestamp=823177 Accel=[0,0,0] Gyro=[2117,988,551] Temp=27
+BARO07(ID=0) Timestamp=823183 Pressure=90962 Temp=27.30
+BARO11(ID=1) Timestamp=823185 Pressure=90199 Temp=27.63
+IMU32G(ID=1) Timestamp=823200 Accel=[0,0,0] Gyro=[-3570,2537,35] Temp=30
+IMU16G(ID=0) Timestamp=823510 Accel=[0,0,1] Gyro=[-472,2371,1198] Temp=27
+BARO07(ID=0) Timestamp=823524 Pressure=90948 Temp=27.30
+BARO11(ID=1) Timestamp=823526 Pressure=90194 Temp=27.62
+IMU32G(ID=1) Timestamp=823543 Accel=[0,0,0] Gyro=[682,-236,1268] Temp=30
+IMU16G(ID=0) Timestamp=823843 Accel=[0,0,0] Gyro=[-2966,927,1758] Temp=27
+BARO07(ID=0) Timestamp=823865 Pressure=90930 Temp=27.30
+BARO11(ID=1) Timestamp=823867 Pressure=90198 Temp=27.62
+IMU32G(ID=1) Timestamp=823886 Accel=[0,0,0] Gyro=[4690,-2843,1916] Temp=30
+IMU16G(ID=0) Timestamp=824176 Accel=[0,0,0] Gyro=[-253,35,603] Temp=27
+BARO07(ID=0) Timestamp=824206 Pressure=90921 Temp=27.30
+BARO11(ID=1) Timestamp=824208 Pressure=90193 Temp=27.62
+IMU32G(ID=1) Timestamp=824229 Accel=[0,0,0] Gyro=[1995,586,1015] Temp=30
+IMU16G(ID=0) Timestamp=824509 Accel=[0,0,0] Gyro=[2117,2520,437] Temp=27
+BARO07(ID=0) Timestamp=824547 Pressure=90936 Temp=27.30
+BARO11(ID=1) Timestamp=824549 Pressure=90204 Temp=27.62
+IMU32G(ID=1) Timestamp=824572 Accel=[0,0,0] Gyro=[3386,-1837,1933] Temp=30
+IMU16G(ID=0) Timestamp=824842 Accel=[0,0,0] Gyro=[-3368,1863,2765] Temp=27
+BARO07(ID=0) Timestamp=824888 Pressure=90946 Temp=27.30
+BARO11(ID=1) Timestamp=824890 Pressure=90199 Temp=27.62
+IMU16G(ID=0) Timestamp=825175 Accel=[0,0,0] Gyro=[682,-1426,218] Temp=27
+BARO07(ID=0) Timestamp=825229 Pressure=90957 Temp=27.30
+BARO11(ID=1) Timestamp=825231 Pressure=90187 Temp=27.62
+IMU32G(ID=1) Timestamp=825258 Accel=[0,0,0] Gyro=[2327,-2432,1916] Temp=30
+IMU16G(ID=0) Timestamp=825508 Accel=[0,0,0] Gyro=[1067,-3211,-350] Temp=27
+BARO07(ID=0) Timestamp=825570 Pressure=90953 Temp=27.30
+BARO11(ID=1) Timestamp=825572 Pressure=90193 Temp=27.62
+IMU32G(ID=1) Timestamp=825601 Accel=[0,0,0] Gyro=[1636,-3167,341] Temp=30
+IMU16G(ID=0) Timestamp=825841 Accel=[0,0,0] Gyro=[-4208,7288,1951] Temp=27
+BARO07(ID=0) Timestamp=825911 Pressure=90959 Temp=27.31
+BARO11(ID=1) Timestamp=825913 Pressure=90190 Temp=27.62
+IMU32G(ID=1) Timestamp=825944 Accel=[0,0,0] Gyro=[-1478,2222,61] Temp=30
+IMU16G(ID=0) Timestamp=826174 Accel=[0,0,0] Gyro=[-210,2703,1636] Temp=27
+BARO07(ID=0) Timestamp=826252 Pressure=90954 Temp=27.31
+BARO11(ID=1) Timestamp=826254 Pressure=90185 Temp=27.62
+IMU32G(ID=1) Timestamp=826287 Accel=[0,0,1] Gyro=[-1076,-1163,1461] Temp=30
+IMU16G(ID=0) Timestamp=826507 Accel=[0,0,0] Gyro=[2668,1820,376] Temp=27
+BARO07(ID=0) Timestamp=826593 Pressure=90969 Temp=27.31
+BARO11(ID=1) Timestamp=826595 Pressure=90201 Temp=27.63
+IMU32G(ID=1) Timestamp=826630 Accel=[0,0,0] Gyro=[2266,-5836,2100] Temp=30
+IMU16G(ID=0) Timestamp=826840 Accel=[0,0,0] Gyro=[437,1347,341] Temp=27
+BARO07(ID=0) Timestamp=826934 Pressure=90975 Temp=27.31
+BARO11(ID=1) Timestamp=826936 Pressure=90182 Temp=27.62
+IMU32G(ID=1) Timestamp=826973 Accel=[0,0,0] Gyro=[551,2878,-262] Temp=30
+IMU16G(ID=0) Timestamp=827173 Accel=[0,0,1] Gyro=[3281,1680,96] Temp=27
+BARO11(ID=1) Timestamp=827304 Pressure=90199 Temp=27.63
+IMU32G(ID=1) Timestamp=827316 Accel=[0,0,0] Gyro=[-402,2808,-498] Temp=30
+IMU16G(ID=0) Timestamp=827506 Accel=[0,0,0] Gyro=[2248,-1750,-866] Temp=27
+BARO07(ID=0) Timestamp=827616 Pressure=90981 Temp=27.31
+BARO11(ID=1) Timestamp=827618 Pressure=90201 Temp=27.63
+IMU32G(ID=1) Timestamp=827659 Accel=[0,0,0] Gyro=[770,1452,630] Temp=30
+IMU16G(ID=0) Timestamp=827839 Accel=[0,0,0] Gyro=[2677,-1260,-665] Temp=27
+BARO07(ID=0) Timestamp=827957 Pressure=90965 Temp=27.31
+BARO11(ID=1) Timestamp=827959 Pressure=90189 Temp=27.63
+IMU32G(ID=1) Timestamp=828002 Accel=[0,0,0] Gyro=[-148,2721,-140] Temp=30
+IMU16G(ID=0) Timestamp=828172 Accel=[0,0,0] Gyro=[-647,-1015,612] Temp=27
+BARO07(ID=0) Timestamp=828298 Pressure=90960 Temp=27.32
+BARO11(ID=1) Timestamp=828300 Pressure=90192 Temp=27.63
+IMU32G(ID=1) Timestamp=828345 Accel=[0,0,0] Gyro=[-822,953,122] Temp=30
+IMU16G(ID=0) Timestamp=828505 Accel=[0,0,1] Gyro=[-2388,778,980] Temp=27
+BARO07(ID=0) Timestamp=828639 Pressure=90966 Temp=27.32
+BARO11(ID=1) Timestamp=828641 Pressure=90208 Temp=27.63
+IMU32G(ID=1) Timestamp=828688 Accel=[0,0,0] Gyro=[-1216,-5801,420] Temp=30
+IMU16G(ID=0) Timestamp=828838 Accel=[0,0,0] Gyro=[-4103,1373,2205] Temp=27
+BARO07(ID=0) Timestamp=828980 Pressure=90960 Temp=27.31
+BARO11(ID=1) Timestamp=828982 Pressure=90208 Temp=27.63
+IMU32G(ID=1) Timestamp=829031 Accel=[0,0,0] Gyro=[3858,-3088,1137] Temp=30
+IMU16G(ID=0) Timestamp=829171 Accel=[0,0,1] Gyro=[2975,3351,1715] Temp=27
+BARO07(ID=0) Timestamp=829321 Pressure=90960 Temp=27.32
+BARO11(ID=1) Timestamp=829323 Pressure=90226 Temp=27.63
+
+--- Dump Complete ---
+---- Sector Complete ----
+IMU16G(ID=0) Timestamp=829504 Accel=[0,0,1] Gyro=[901,1067,-26] Temp=27
+BARO07(ID=0) Timestamp=829662 Pressure=90970 Temp=27.31
+BARO11(ID=1) Timestamp=829669 Pressure=90220 Temp=27.63
+IMU32G(ID=1) Timestamp=829717 Accel=[0,0,0] Gyro=[-2800,4698,-1478] Temp=30
+IMU16G(ID=0) Timestamp=829837 Accel=[0,0,0] Gyro=[-1137,568,927] Temp=27
+BARO07(ID=0) Timestamp=830003 Pressure=90996 Temp=27.31
+BARO11(ID=1) Timestamp=830010 Pressure=90224 Temp=27.64
+IMU32G(ID=1) Timestamp=830060 Accel=[0,0,0] Gyro=[1023,-638,481] Temp=30
+IMU16G(ID=0) Timestamp=830170 Accel=[0,0,0] Gyro=[-26,-1391,17] Temp=27
+BARO07(ID=0) Timestamp=830344 Pressure=90987 Temp=27.32
+BARO11(ID=1) Timestamp=830351 Pressure=90226 Temp=27.63
+IMU32G(ID=1) Timestamp=830403 Accel=[0,0,0] Gyro=[1645,-210,560] Temp=30
+IMU16G(ID=0) Timestamp=830503 Accel=[0,0,0] Gyro=[-3631,2651,1207] Temp=27
+BARO07(ID=0) Timestamp=830685 Pressure=90972 Temp=27.32
+BARO11(ID=1) Timestamp=830692 Pressure=90214 Temp=27.64
+IMU32G(ID=1) Timestamp=830746 Accel=[0,0,0] Gyro=[3587,-2170,61] Temp=29
+IMU16G(ID=0) Timestamp=830836 Accel=[0,0,0] Gyro=[945,-306,-113] Temp=27
+BARO07(ID=0) Timestamp=831026 Pressure=90972 Temp=27.32
+BARO11(ID=1) Timestamp=831033 Pressure=90208 Temp=27.64
+IMU32G(ID=1) Timestamp=831089 Accel=[0,0,0] Gyro=[140,-3018,2975] Temp=30
+IMU16G(ID=0) Timestamp=831169 Accel=[0,0,0] Gyro=[-910,227,1575] Temp=27
+BARO07(ID=0) Timestamp=831367 Pressure=90961 Temp=27.32
+BARO11(ID=1) Timestamp=831374 Pressure=90234 Temp=27.64
+IMU32G(ID=1) Timestamp=831432 Accel=[0,0,0] Gyro=[-2266,1373,-385] Temp=30
+IMU16G(ID=0) Timestamp=831502 Accel=[0,0,0] Gyro=[1863,-2808,-402] Temp=27
+BARO11(ID=1) Timestamp=831769 Pressure=90239 Temp=27.64
+IMU32G(ID=1) Timestamp=831775 Accel=[0,0,0] Gyro=[-2283,5512,-253] Temp=30
+IMU16G(ID=0) Timestamp=831835 Accel=[0,0,1] Gyro=[4707,-3228,-166] Temp=27
+BARO07(ID=0) Timestamp=832049 Pressure=90945 Temp=27.32
+BARO11(ID=1) Timestamp=832056 Pressure=90221 Temp=27.64
+IMU32G(ID=1) Timestamp=832118 Accel=[0,0,0] Gyro=[-358,-525,297] Temp=30
+IMU16G(ID=0) Timestamp=832168 Accel=[0,0,1] Gyro=[-1951,2878,997] Temp=27
+BARO07(ID=0) Timestamp=832390 Pressure=90949 Temp=27.31
+BARO11(ID=1) Timestamp=832397 Pressure=90222 Temp=27.64
+IMU32G(ID=1) Timestamp=832461 Accel=[0,0,0] Gyro=[3228,-2966,376] Temp=30
+IMU16G(ID=0) Timestamp=832501 Accel=[0,0,0] Gyro=[2397,1566,752] Temp=27
+BARO07(ID=0) Timestamp=832731 Pressure=90966 Temp=27.32
+BARO11(ID=1) Timestamp=832738 Pressure=90228 Temp=27.64
+IMU32G(ID=1) Timestamp=832804 Accel=[0,0,0] Gyro=[726,-988,140] Temp=30
+IMU16G(ID=0) Timestamp=832834 Accel=[0,0,0] Gyro=[-131,1898,192] Temp=27
+BARO07(ID=0) Timestamp=833072 Pressure=90993 Temp=27.32
+BARO11(ID=1) Timestamp=833079 Pressure=90235 Temp=27.65
+IMU32G(ID=1) Timestamp=833147 Accel=[0,0,0] Gyro=[-1531,-61,2108] Temp=30
+IMU16G(ID=0) Timestamp=833167 Accel=[0,0,0] Gyro=[1645,-1688,1470] Temp=27
+BARO07(ID=0) Timestamp=833413 Pressure=90976 Temp=27.32
+BARO11(ID=1) Timestamp=833420 Pressure=90222 Temp=27.64
+IMU32G(ID=1) Timestamp=833490 Accel=[0,0,0] Gyro=[-971,61,192] Temp=30
+IMU16G(ID=0) Timestamp=833500 Accel=[0,0,0] Gyro=[-1793,-927,962] Temp=27
+BARO07(ID=0) Timestamp=833754 Pressure=90992 Temp=27.32
+BARO11(ID=1) Timestamp=833761 Pressure=90225 Temp=27.64
+IMU32G(ID=1) Timestamp=833867 Accel=[0,0,0] Gyro=[2108,-2135,1627] Temp=30
+BARO07(ID=0) Timestamp=834095 Pressure=90998 Temp=27.32
+BARO11(ID=1) Timestamp=834101 Pressure=90234 Temp=27.64
+IMU16G(ID=0) Timestamp=834166 Accel=[0,0,0] Gyro=[140,3473,560] Temp=27
+IMU32G(ID=1) Timestamp=834176 Accel=[0,0,0] Gyro=[323,-3605,665] Temp=30
+BARO07(ID=0) Timestamp=834436 Pressure=90998 Temp=27.32
+BARO11(ID=1) Timestamp=834438 Pressure=90229 Temp=27.65
+IMU16G(ID=0) Timestamp=834499 Accel=[0,0,0] Gyro=[-866,1408,1006] Temp=27
+IMU32G(ID=1) Timestamp=834519 Accel=[0,0,0] Gyro=[3701,656,332] Temp=30
+BARO07(ID=0) Timestamp=834777 Pressure=90993 Temp=27.32
+BARO11(ID=1) Timestamp=834779 Pressure=90246 Temp=27.64
+IMU16G(ID=0) Timestamp=834832 Accel=[0,0,1] Gyro=[-4646,2537,1767] Temp=27
+IMU32G(ID=1) Timestamp=834862 Accel=[0,0,0] Gyro=[26,-2266,1645] Temp=30
+BARO07(ID=0) Timestamp=835118 Pressure=90999 Temp=27.33
+BARO11(ID=1) Timestamp=835120 Pressure=90239 Temp=27.65
+IMU16G(ID=0) Timestamp=835165 Accel=[0,0,0] Gyro=[288,1793,1715] Temp=27
+IMU32G(ID=1) Timestamp=835205 Accel=[0,0,0] Gyro=[-3360,2388,-402] Temp=30
+BARO07(ID=0) Timestamp=835459 Pressure=90999 Temp=27.33
+BARO11(ID=1) Timestamp=835461 Pressure=90247 Temp=27.65
+IMU16G(ID=0) Timestamp=835498 Accel=[0,0,0] Gyro=[2205,2826,1382] Temp=27
+IMU32G(ID=1) Timestamp=835548 Accel=[0,0,0] Gyro=[-2721,3106,-8] Temp=30
+BARO07(ID=0) Timestamp=835800 Pressure=90993 Temp=27.32
+BARO11(ID=1) Timestamp=835802 Pressure=90242 Temp=27.65
+IMU16G(ID=0) Timestamp=835831 Accel=[0,0,0] Gyro=[3780,-1268,297] Temp=27
+IMU32G(ID=1) Timestamp=835891 Accel=[0,0,0] Gyro=[2668,1006,1347] Temp=30
+BARO11(ID=1) Timestamp=836169 Pressure=90251 Temp=27.65
+IMU16G(ID=0) Timestamp=836170 Accel=[0,0,0] Gyro=[-2397,1995,1540] Temp=27
+IMU32G(ID=1) Timestamp=836234 Accel=[0,0,0] Gyro=[-2642,3955,-927] Temp=30
+BARO07(ID=0) Timestamp=836482 Pressure=91005 Temp=27.33
+BARO11(ID=1) Timestamp=836484 Pressure=90245 Temp=27.65
+IMU16G(ID=0) Timestamp=836497 Accel=[0,0,0] Gyro=[-4077,-2966,735] Temp=27
+IMU32G(ID=1) Timestamp=836577 Accel=[0,0,0] Gyro=[-3815,1592,-2021] Temp=30
+BARO07(ID=0) Timestamp=836823 Pressure=91015 Temp=27.33
+BARO11(ID=1) Timestamp=836825 Pressure=90241 Temp=27.65
+IMU16G(ID=0) Timestamp=836830 Accel=[0,0,0] Gyro=[-210,-183,105] Temp=27
+IMU32G(ID=1) Timestamp=836920 Accel=[0,0,0] Gyro=[-918,-1881,857] Temp=30
+IMU16G(ID=0) Timestamp=837163 Accel=[0,0,0] Gyro=[148,1680,297] Temp=27
+BARO07(ID=0) Timestamp=837164 Pressure=91020 Temp=27.33
+BARO11(ID=1) Timestamp=837166 Pressure=90252 Temp=27.66
+IMU32G(ID=1) Timestamp=837263 Accel=[0,0,0] Gyro=[210,498,866] Temp=30
+IMU16G(ID=0) Timestamp=837496 Accel=[0,0,0] Gyro=[1951,70,-1277] Temp=27
+BARO07(ID=0) Timestamp=837505 Pressure=90978 Temp=27.33
+BARO11(ID=1) Timestamp=837507 Pressure=90235 Temp=27.66
+IMU32G(ID=1) Timestamp=837606 Accel=[0,0,0] Gyro=[805,-813,-253] Temp=30
+IMU16G(ID=0) Timestamp=837829 Accel=[0,0,0] Gyro=[2108,-1618,-1050] Temp=27
+BARO07(ID=0) Timestamp=837846 Pressure=90931 Temp=27.33
+BARO11(ID=1) Timestamp=837848 Pressure=90240 Temp=27.66
+IMU32G(ID=1) Timestamp=837949 Accel=[0,0,0] Gyro=[245,-708,-96] Temp=30
+IMU16G(ID=0) Timestamp=838162 Accel=[0,0,1] Gyro=[-1706,332,568] Temp=27
+BARO07(ID=0) Timestamp=838187 Pressure=90919 Temp=27.32
+IMU32G(ID=1) Timestamp=838292 Accel=[0,0,0] Gyro=[-3578,1767,-805] Temp=30
+IMU16G(ID=0) Timestamp=838495 Accel=[0,0,0] Gyro=[-455,857,805] Temp=27
+BARO07(ID=0) Timestamp=838528 Pressure=90934 Temp=27.32
+BARO11(ID=1) Timestamp=838530 Pressure=90233 Temp=27.65
+IMU32G(ID=1) Timestamp=838635 Accel=[0,0,0] Gyro=[-1260,-1006,-61] Temp=30
+IMU16G(ID=0) Timestamp=838828 Accel=[0,0,1] Gyro=[-35,953,1181] Temp=27
+BARO07(ID=0) Timestamp=838869 Pressure=90951 Temp=27.32
+BARO11(ID=1) Timestamp=838871 Pressure=90249 Temp=27.66
+IMU32G(ID=1) Timestamp=838978 Accel=[0,0,0] Gyro=[52,-778,1146] Temp=30
+IMU16G(ID=0) Timestamp=839161 Accel=[0,0,0] Gyro=[3596,402,420] Temp=27
+BARO07(ID=0) Timestamp=839210 Pressure=90951 Temp=27.32
+BARO11(ID=1) Timestamp=839212 Pressure=90252 Temp=27.66
+IMU32G(ID=1) Timestamp=839321 Accel=[0,0,0] Gyro=[-183,533,131] Temp=30
+IMU16G(ID=0) Timestamp=839494 Accel=[0,0,0] Gyro=[2878,-1365,-271] Temp=27
+BARO07(ID=0) Timestamp=839551 Pressure=90968 Temp=27.33
+BARO11(ID=1) Timestamp=839553 Pressure=90252 Temp=27.66
+IMU32G(ID=1) Timestamp=839664 Accel=[0,0,0] Gyro=[5941,-840,4226] Temp=30
+IMU16G(ID=0) Timestamp=839827 Accel=[0,0,0] Gyro=[2187,-770,393] Temp=27
+BARO07(ID=0) Timestamp=839892 Pressure=90983 Temp=27.33
+BARO11(ID=1) Timestamp=839894 Pressure=90272 Temp=27.66
+IMU32G(ID=1) Timestamp=840007 Accel=[0,0,0] Gyro=[-341,35,-1050] Temp=30
+IMU16G(ID=0) Timestamp=840160 Accel=[0,0,0] Gyro=[-1977,-227,1303] Temp=27
+BARO07(ID=0) Timestamp=840233 Pressure=90962 Temp=27.33
+BARO11(ID=1) Timestamp=840235 Pressure=90265 Temp=27.66
+IMU32G(ID=1) Timestamp=840350 Accel=[0,0,0] Gyro=[2126,1627,796] Temp=30
+BARO07(ID=0) Timestamp=840574 Pressure=90963 Temp=27.33
+BARO11(ID=1) Timestamp=840576 Pressure=90250 Temp=27.66
+IMU32G(ID=1) Timestamp=840693 Accel=[0,0,0] Gyro=[-2178,805,1146] Temp=30
+IMU16G(ID=0) Timestamp=840826 Accel=[0,0,0] Gyro=[551,-2231,-551] Temp=27
+BARO07(ID=0) Timestamp=840915 Pressure=90984 Temp=27.33
+BARO11(ID=1) Timestamp=840917 Pressure=90268 Temp=27.66
+IMU32G(ID=1) Timestamp=841036 Accel=[0,0,1] Gyro=[1120,-682,1627] Temp=30
+IMU16G(ID=0) Timestamp=841159 Accel=[0,0,0] Gyro=[910,-1128,-8] Temp=27
+BARO07(ID=0) Timestamp=841256 Pressure=90978 Temp=27.33
+BARO11(ID=1) Timestamp=841258 Pressure=90248 Temp=27.65
+IMU32G(ID=1) Timestamp=841379 Accel=[0,0,0] Gyro=[-3045,1653,-26] Temp=30
+IMU16G(ID=0) Timestamp=841492 Accel=[0,0,0] Gyro=[-3351,4357,2485] Temp=27
+BARO07(ID=0) Timestamp=841597 Pressure=90988 Temp=27.33
+BARO11(ID=1) Timestamp=841599 Pressure=90263 Temp=27.65
+IMU32G(ID=1) Timestamp=841722 Accel=[0,0,0] Gyro=[-980,2756,831] Temp=30
+IMU16G(ID=0) Timestamp=841825 Accel=[0,0,0] Gyro=[-1697,1347,1251] Temp=27
+BARO07(ID=0) Timestamp=841938 Pressure=90968 Temp=27.33
+BARO11(ID=1) Timestamp=841940 Pressure=90265 Temp=27.64
+IMU32G(ID=1) Timestamp=842065 Accel=[0,0,0] Gyro=[2940,1610,1610] Temp=30
+IMU16G(ID=0) Timestamp=842158 Accel=[0,0,0] Gyro=[-7113,4086,3228] Temp=27
+BARO07(ID=0) Timestamp=842279 Pressure=90951 Temp=27.33
+BARO11(ID=1) Timestamp=842281 Pressure=90266 Temp=27.64
+IMU32G(ID=1) Timestamp=842408 Accel=[0,0,0] Gyro=[-1321,-455,752] Temp=30
+IMU16G(ID=0) Timestamp=842491 Accel=[0,0,0] Gyro=[1128,-376,-446] Temp=27
+BARO07(ID=0) Timestamp=842620 Pressure=90940 Temp=27.32
+IMU32G(ID=1) Timestamp=842751 Accel=[0,0,1] Gyro=[2476,-5696,3535] Temp=30
+IMU16G(ID=0) Timestamp=842824 Accel=[0,0,0] Gyro=[-883,638,603] Temp=27
+BARO07(ID=0) Timestamp=842961 Pressure=90930 Temp=27.32
+BARO11(ID=1) Timestamp=842963 Pressure=90282 Temp=27.63
+IMU32G(ID=1) Timestamp=843094 Accel=[0,0,0] Gyro=[-2030,1496,402] Temp=30
+IMU16G(ID=0) Timestamp=843157 Accel=[0,0,0] Gyro=[-1426,717,525] Temp=27
+BARO07(ID=0) Timestamp=843302 Pressure=90919 Temp=27.32
+BARO11(ID=1) Timestamp=843304 Pressure=90264 Temp=27.63
+IMU32G(ID=1) Timestamp=843437 Accel=[0,0,0] Gyro=[-665,-43,218] Temp=30
+IMU16G(ID=0) Timestamp=843490 Accel=[0,0,0] Gyro=[-4103,-2161,761] Temp=27
+BARO07(ID=0) Timestamp=843643 Pressure=90908 Temp=27.32
+BARO11(ID=1) Timestamp=843645 Pressure=90285 Temp=27.63
+IMU32G(ID=1) Timestamp=843780 Accel=[0,0,0] Gyro=[638,-236,315] Temp=30
+IMU16G(ID=0) Timestamp=843823 Accel=[0,0,0] Gyro=[-4488,4147,1601] Temp=27
+BARO07(ID=0) Timestamp=843984 Pressure=90892 Temp=27.32
+BARO11(ID=1) Timestamp=843986 Pressure=90257 Temp=27.62
+IMU32G(ID=1) Timestamp=844123 Accel=[0,0,0] Gyro=[1540,-761,280] Temp=30
+IMU16G(ID=0) Timestamp=844156 Accel=[0,0,0] Gyro=[-4900,1058,2012] Temp=27
+BARO07(ID=0) Timestamp=844325 Pressure=90897 Temp=27.31
+BARO11(ID=1) Timestamp=844327 Pressure=90254 Temp=27.62
+IMU32G(ID=1) Timestamp=844466 Accel=[0,0,0] Gyro=[-1365,2450,446] Temp=30
+IMU16G(ID=0) Timestamp=844489 Accel=[0,0,0] Gyro=[-3430,1750,1330] Temp=27
+BARO07(ID=0) Timestamp=844666 Pressure=90886 Temp=27.31
+BARO11(ID=1) Timestamp=844668 Pressure=90257 Temp=27.62
+IMU32G(ID=1) Timestamp=844809 Accel=[0,0,1] Gyro=[-3473,192,-35] Temp=30
+BARO07(ID=0) Timestamp=845007 Pressure=90876 Temp=27.31
+BARO11(ID=1) Timestamp=845009 Pressure=90262 Temp=27.62
+IMU32G(ID=1) Timestamp=845152 Accel=[0,0,0] Gyro=[2345,533,1837] Temp=30
+IMU16G(ID=0) Timestamp=845155 Accel=[0,0,0] Gyro=[-2362,1093,1443] Temp=27
+BARO07(ID=0) Timestamp=845348 Pressure=90870 Temp=27.31
+BARO11(ID=1) Timestamp=845350 Pressure=90254 Temp=27.62
+IMU16G(ID=0) Timestamp=845488 Accel=[0,0,0] Gyro=[-2152,2362,2353] Temp=27
+IMU32G(ID=1) Timestamp=845495 Accel=[0,0,0] Gyro=[2257,-3141,507] Temp=30
+BARO07(ID=0) Timestamp=845689 Pressure=90875 Temp=27.31
+BARO11(ID=1) Timestamp=845691 Pressure=90261 Temp=27.61
+IMU16G(ID=0) Timestamp=845821 Accel=[0,0,0] Gyro=[280,1277,70] Temp=27
+IMU32G(ID=1) Timestamp=845838 Accel=[0,0,0] Gyro=[-1505,630,472] Temp=30
+BARO07(ID=0) Timestamp=846030 Pressure=90870 Temp=27.31
+BARO11(ID=1) Timestamp=846032 Pressure=90256 Temp=27.62
+IMU16G(ID=0) Timestamp=846154 Accel=[0,0,0] Gyro=[-1881,3806,113] Temp=27
+IMU32G(ID=1) Timestamp=846181 Accel=[0,0,0] Gyro=[595,35,-201] Temp=30
+BARO07(ID=0) Timestamp=846371 Pressure=90837 Temp=27.30
+BARO11(ID=1) Timestamp=846373 Pressure=90238 Temp=27.60
+IMU16G(ID=0) Timestamp=846487 Accel=[0,0,0] Gyro=[-183,2126,603] Temp=27
+IMU32G(ID=1) Timestamp=846524 Accel=[0,0,0] Gyro=[1260,-105,1295] Temp=30
+BARO07(ID=0) Timestamp=846712 Pressure=90821 Temp=27.30
+BARO11(ID=1) Timestamp=846714 Pressure=90243 Temp=27.60
+IMU16G(ID=0) Timestamp=846820 Accel=[0,0,0] Gyro=[2012,-350,-341] Temp=27
+IMU32G(ID=1) Timestamp=846867 Accel=[0,0,0] Gyro=[-2231,3036,-376] Temp=30
+BARO07(ID=0) Timestamp=847053 Pressure=90841 Temp=27.30
+
+--- Dump Complete ---
+---- Sector Complete ----
+BARO07(ID=0) Timestamp=1023691 Pressure=90996 Temp=27.45
+BARO11(ID=1) Timestamp=1023698 Pressure=90413 Temp=27.78
+IMU32G(ID=1) Timestamp=1023855 Accel=[0,0,0] Gyro=[691,1601,446] Temp=30
+IMU16G(ID=0) Timestamp=1023976 Accel=[0,0,1] Gyro=[4392,-2528,-2170] Temp=27
+BARO07(ID=0) Timestamp=1024032 Pressure=90979 Temp=27.44
+BARO11(ID=1) Timestamp=1024039 Pressure=90404 Temp=27.78
+IMU32G(ID=1) Timestamp=1024198 Accel=[0,0,0] Gyro=[1356,621,1382] Temp=30
+IMU16G(ID=0) Timestamp=1024309 Accel=[0,0,0] Gyro=[323,-61,796] Temp=27
+BARO07(ID=0) Timestamp=1024373 Pressure=90969 Temp=27.45
+BARO11(ID=1) Timestamp=1024380 Pressure=90415 Temp=27.77
+IMU32G(ID=1) Timestamp=1024541 Accel=[0,0,0] Gyro=[542,1260,507] Temp=30
+IMU16G(ID=0) Timestamp=1024642 Accel=[0,0,1] Gyro=[-350,6868,2948] Temp=27
+BARO07(ID=0) Timestamp=1024714 Pressure=90985 Temp=27.45
+BARO11(ID=1) Timestamp=1024721 Pressure=90411 Temp=27.77
+IMU32G(ID=1) Timestamp=1024884 Accel=[0,0,0] Gyro=[96,2546,647] Temp=30
+IMU16G(ID=0) Timestamp=1024975 Accel=[0,0,1] Gyro=[638,-1872,-192] Temp=27
+BARO07(ID=0) Timestamp=1025055 Pressure=91005 Temp=27.44
+BARO11(ID=1) Timestamp=1025062 Pressure=90415 Temp=27.77
+IMU32G(ID=1) Timestamp=1025227 Accel=[0,0,0] Gyro=[2878,2677,1312] Temp=30
+IMU16G(ID=0) Timestamp=1025308 Accel=[0,0,1] Gyro=[-551,2817,-148] Temp=27
+BARO07(ID=0) Timestamp=1025396 Pressure=90996 Temp=27.45
+BARO11(ID=1) Timestamp=1025403 Pressure=90435 Temp=27.77
+IMU32G(ID=1) Timestamp=1025570 Accel=[0,0,0] Gyro=[3675,-1015,1111] Temp=30
+IMU16G(ID=0) Timestamp=1025641 Accel=[0,0,0] Gyro=[-376,1242,-43] Temp=27
+BARO07(ID=0) Timestamp=1025737 Pressure=90995 Temp=27.45
+IMU32G(ID=1) Timestamp=1025913 Accel=[0,0,0] Gyro=[796,-726,551] Temp=30
+IMU16G(ID=0) Timestamp=1025974 Accel=[0,0,0] Gyro=[-17,-218,376] Temp=27
+BARO07(ID=0) Timestamp=1026078 Pressure=91007 Temp=27.46
+BARO11(ID=1) Timestamp=1026085 Pressure=90455 Temp=27.78
+IMU32G(ID=1) Timestamp=1026256 Accel=[0,0,0] Gyro=[-2082,3561,17] Temp=30
+IMU16G(ID=0) Timestamp=1026307 Accel=[0,0,0] Gyro=[1986,2091,-218] Temp=27
+BARO07(ID=0) Timestamp=1026419 Pressure=91000 Temp=27.45
+BARO11(ID=1) Timestamp=1026426 Pressure=90440 Temp=27.78
+IMU32G(ID=1) Timestamp=1026599 Accel=[0,0,0] Gyro=[1295,2870,490] Temp=30
+IMU16G(ID=0) Timestamp=1026640 Accel=[0,0,0] Gyro=[3771,-2712,-1268] Temp=27
+BARO07(ID=0) Timestamp=1026760 Pressure=91000 Temp=27.45
+BARO11(ID=1) Timestamp=1026767 Pressure=90455 Temp=27.78
+IMU32G(ID=1) Timestamp=1026942 Accel=[0,0,0] Gyro=[-1496,-455,-341] Temp=30
+IMU16G(ID=0) Timestamp=1026973 Accel=[0,0,1] Gyro=[927,-70,-1960] Temp=27
+BARO07(ID=0) Timestamp=1027101 Pressure=90985 Temp=27.45
+BARO11(ID=1) Timestamp=1027108 Pressure=90448 Temp=27.77
+IMU32G(ID=1) Timestamp=1027285 Accel=[0,0,1] Gyro=[2336,-2721,2283] Temp=30
+IMU16G(ID=0) Timestamp=1027306 Accel=[0,0,0] Gyro=[420,-2992,1058] Temp=27
+BARO07(ID=0) Timestamp=1027442 Pressure=90974 Temp=27.45
+BARO11(ID=1) Timestamp=1027449 Pressure=90461 Temp=27.78
+IMU32G(ID=1) Timestamp=1027628 Accel=[0,0,0] Gyro=[586,3097,-525] Temp=30
+IMU16G(ID=0) Timestamp=1027644 Accel=[0,0,0] Gyro=[1662,-8443,-1102] Temp=27
+BARO07(ID=0) Timestamp=1027783 Pressure=90947 Temp=27.44
+BARO11(ID=1) Timestamp=1027790 Pressure=90473 Temp=27.78
+IMU32G(ID=1) Timestamp=1027971 Accel=[0,0,0] Gyro=[5845,-2170,210] Temp=30
+BARO07(ID=0) Timestamp=1028124 Pressure=90963 Temp=27.44
+BARO11(ID=1) Timestamp=1028131 Pressure=90456 Temp=27.78
+IMU16G(ID=0) Timestamp=1028305 Accel=[0,0,0] Gyro=[-4147,4760,2038] Temp=27
+IMU32G(ID=1) Timestamp=1028314 Accel=[0,0,0] Gyro=[4663,-6466,1216] Temp=30
+BARO07(ID=0) Timestamp=1028465 Pressure=90957 Temp=27.44
+BARO11(ID=1) Timestamp=1028467 Pressure=90458 Temp=27.78
+IMU16G(ID=0) Timestamp=1028638 Accel=[0,0,0] Gyro=[2152,2091,446] Temp=27
+IMU32G(ID=1) Timestamp=1028657 Accel=[0,0,0] Gyro=[2108,-560,1128] Temp=30
+BARO07(ID=0) Timestamp=1028806 Pressure=90983 Temp=27.44
+BARO11(ID=1) Timestamp=1028808 Pressure=90468 Temp=27.78
+IMU16G(ID=0) Timestamp=1028971 Accel=[0,0,1] Gyro=[-1566,962,2388] Temp=27
+IMU32G(ID=1) Timestamp=1029000 Accel=[0,0,1] Gyro=[-218,393,1408] Temp=30
+BARO07(ID=0) Timestamp=1029147 Pressure=91014 Temp=27.44
+BARO11(ID=1) Timestamp=1029149 Pressure=90483 Temp=27.78
+IMU16G(ID=0) Timestamp=1029304 Accel=[0,0,0] Gyro=[-245,2388,306] Temp=27
+IMU32G(ID=1) Timestamp=1029343 Accel=[0,0,0] Gyro=[-3097,3228,-857] Temp=30
+BARO07(ID=0) Timestamp=1029488 Pressure=91037 Temp=27.45
+BARO11(ID=1) Timestamp=1029490 Pressure=90483 Temp=27.78
+IMU16G(ID=0) Timestamp=1029637 Accel=[0,0,1] Gyro=[1190,586,1365] Temp=27
+IMU32G(ID=1) Timestamp=1029686 Accel=[0,0,0] Gyro=[-3473,4760,3386] Temp=30
+BARO07(ID=0) Timestamp=1029829 Pressure=91037 Temp=27.45
+BARO11(ID=1) Timestamp=1029831 Pressure=90489 Temp=27.78
+IMU16G(ID=0) Timestamp=1029970 Accel=[0,0,0] Gyro=[-778,-1207,936] Temp=27
+IMU32G(ID=1) Timestamp=1030029 Accel=[0,0,0] Gyro=[1487,-1190,280] Temp=30
+BARO07(ID=0) Timestamp=1030170 Pressure=91065 Temp=27.46
+IMU16G(ID=0) Timestamp=1030303 Accel=[0,0,0] Gyro=[1828,-367,-12941] Temp=27
+IMU32G(ID=1) Timestamp=1030372 Accel=[0,0,0] Gyro=[3797,-2948,866] Temp=30
+BARO07(ID=0) Timestamp=1030511 Pressure=91075 Temp=27.46
+BARO11(ID=1) Timestamp=1030513 Pressure=90513 Temp=27.78
+IMU16G(ID=0) Timestamp=1030636 Accel=[0,0,0] Gyro=[-2703,3220,3123] Temp=27
+IMU32G(ID=1) Timestamp=1030715 Accel=[0,0,1] Gyro=[3263,-236,1207] Temp=30
+BARO07(ID=0) Timestamp=1030852 Pressure=91086 Temp=27.46
+BARO11(ID=1) Timestamp=1030854 Pressure=90521 Temp=27.79
+IMU16G(ID=0) Timestamp=1030969 Accel=[0,0,0] Gyro=[-350,245,-245] Temp=27
+IMU32G(ID=1) Timestamp=1031058 Accel=[0,0,1] Gyro=[3753,-3456,1050] Temp=30
+BARO07(ID=0) Timestamp=1031193 Pressure=91081 Temp=27.46
+BARO11(ID=1) Timestamp=1031195 Pressure=90536 Temp=27.79
+IMU16G(ID=0) Timestamp=1031302 Accel=[0,0,0] Gyro=[-2441,332,1391] Temp=27
+IMU32G(ID=1) Timestamp=1031401 Accel=[0,0,1] Gyro=[1330,-402,253] Temp=30
+BARO07(ID=0) Timestamp=1031534 Pressure=91071 Temp=27.46
+BARO11(ID=1) Timestamp=1031536 Pressure=90532 Temp=27.80
+IMU16G(ID=0) Timestamp=1031635 Accel=[0,0,1] Gyro=[-673,-1951,2353] Temp=27
+IMU32G(ID=1) Timestamp=1031744 Accel=[0,0,0] Gyro=[2196,813,1426] Temp=30
+BARO07(ID=0) Timestamp=1031875 Pressure=91065 Temp=27.46
+BARO11(ID=1) Timestamp=1031877 Pressure=90536 Temp=27.79
+IMU16G(ID=0) Timestamp=1031968 Accel=[0,0,0] Gyro=[-4322,2563,1995] Temp=27
+IMU32G(ID=1) Timestamp=1032087 Accel=[0,0,1] Gyro=[-3710,2362,-253] Temp=30
+BARO07(ID=0) Timestamp=1032216 Pressure=91065 Temp=27.46
+BARO11(ID=1) Timestamp=1032218 Pressure=90540 Temp=27.79
+IMU16G(ID=0) Timestamp=1032301 Accel=[0,0,0] Gyro=[-770,-735,-682] Temp=27
+BARO07(ID=0) Timestamp=1032557 Pressure=91091 Temp=27.46
+BARO11(ID=1) Timestamp=1032559 Pressure=90545 Temp=27.80
+IMU16G(ID=0) Timestamp=1032634 Accel=[0,0,1] Gyro=[297,-3552,-26] Temp=27
+IMU32G(ID=1) Timestamp=1032773 Accel=[0,0,0] Gyro=[4698,-1067,-96] Temp=30
+BARO07(ID=0) Timestamp=1032898 Pressure=91085 Temp=27.45
+BARO11(ID=1) Timestamp=1032900 Pressure=90547 Temp=27.80
+IMU16G(ID=0) Timestamp=1032967 Accel=[0,0,0] Gyro=[-787,1925,1015] Temp=27
+IMU32G(ID=1) Timestamp=1033116 Accel=[0,0,0] Gyro=[5757,-2948,1513] Temp=30
+BARO07(ID=0) Timestamp=1033239 Pressure=91097 Temp=27.46
+BARO11(ID=1) Timestamp=1033241 Pressure=90554 Temp=27.81
+IMU16G(ID=0) Timestamp=1033300 Accel=[0,0,0] Gyro=[936,962,17] Temp=27
+IMU32G(ID=1) Timestamp=1033459 Accel=[0,0,0] Gyro=[1680,1356,-5092] Temp=30
+BARO07(ID=0) Timestamp=1033580 Pressure=91075 Temp=27.46
+BARO11(ID=1) Timestamp=1033582 Pressure=90539 Temp=27.81
+IMU16G(ID=0) Timestamp=1033633 Accel=[0,0,0] Gyro=[2782,-3701,-183] Temp=27
+IMU32G(ID=1) Timestamp=1033802 Accel=[0,0,0] Gyro=[2607,113,892] Temp=30
+BARO07(ID=0) Timestamp=1033921 Pressure=91103 Temp=27.46
+BARO11(ID=1) Timestamp=1033923 Pressure=90551 Temp=27.80
+IMU16G(ID=0) Timestamp=1033966 Accel=[0,0,0] Gyro=[-280,-1172,-630] Temp=27
+IMU32G(ID=1) Timestamp=1034145 Accel=[0,0,0] Gyro=[1785,-1382,192] Temp=30
+BARO07(ID=0) Timestamp=1034262 Pressure=91119 Temp=27.46
+BARO11(ID=1) Timestamp=1034264 Pressure=90560 Temp=27.80
+IMU16G(ID=0) Timestamp=1034299 Accel=[0,0,0] Gyro=[-4471,3062,1916] Temp=27
+IMU32G(ID=1) Timestamp=1034488 Accel=[0,0,0] Gyro=[3001,-3823,1470] Temp=30
+BARO07(ID=0) Timestamp=1034603 Pressure=91113 Temp=27.46
+IMU16G(ID=0) Timestamp=1034634 Accel=[0,0,0] Gyro=[175,297,-17] Temp=27
+IMU32G(ID=1) Timestamp=1034831 Accel=[0,0,0] Gyro=[1408,1382,446] Temp=30
+BARO07(ID=0) Timestamp=1034944 Pressure=91134 Temp=27.46
+BARO11(ID=1) Timestamp=1034946 Pressure=90572 Temp=27.80
+IMU16G(ID=0) Timestamp=1034965 Accel=[0,0,0] Gyro=[3377,1942,1575] Temp=27
+IMU32G(ID=1) Timestamp=1035174 Accel=[0,0,0] Gyro=[4340,-2336,1723] Temp=30
+BARO07(ID=0) Timestamp=1035285 Pressure=91146 Temp=27.47
+BARO11(ID=1) Timestamp=1035287 Pressure=90576 Temp=27.81
+IMU16G(ID=0) Timestamp=1035298 Accel=[0,0,0] Gyro=[-2126,-1863,105] Temp=27
+IMU32G(ID=1) Timestamp=1035517 Accel=[0,0,1] Gyro=[-3027,4628,-586] Temp=30
+BARO07(ID=0) Timestamp=1035626 Pressure=91172 Temp=27.47
+BARO11(ID=1) Timestamp=1035628 Pressure=90573 Temp=27.81
+IMU16G(ID=0) Timestamp=1035631 Accel=[0,0,0] Gyro=[3832,-288,-498] Temp=27
+IMU32G(ID=1) Timestamp=1035860 Accel=[0,0,1] Gyro=[-1198,-962,1426] Temp=30
+IMU16G(ID=0) Timestamp=1035964 Accel=[0,0,0] Gyro=[-7577,2572,2082] Temp=27
+BARO07(ID=0) Timestamp=1035967 Pressure=91137 Temp=27.48
+BARO11(ID=1) Timestamp=1035969 Pressure=90558 Temp=27.81
+IMU32G(ID=1) Timestamp=1036203 Accel=[0,0,0] Gyro=[-245,682,603] Temp=30
+IMU16G(ID=0) Timestamp=1036297 Accel=[0,0,0] Gyro=[3578,-1697,-428] Temp=27
+BARO07(ID=0) Timestamp=1036308 Pressure=91163 Temp=27.48
+BARO11(ID=1) Timestamp=1036310 Pressure=90591 Temp=27.81
+IMU32G(ID=1) Timestamp=1036546 Accel=[0,0,0] Gyro=[-892,2231,-2345] Temp=30
+IMU16G(ID=0) Timestamp=1036630 Accel=[0,0,1] Gyro=[3255,-1163,988] Temp=27
+BARO07(ID=0) Timestamp=1036649 Pressure=91168 Temp=27.48
+BARO11(ID=1) Timestamp=1036651 Pressure=90595 Temp=27.81
+IMU16G(ID=0) Timestamp=1036963 Accel=[0,0,0] Gyro=[-1618,-2345,297] Temp=27
+BARO07(ID=0) Timestamp=1036990 Pressure=91173 Temp=27.48
+BARO11(ID=1) Timestamp=1036992 Pressure=90601 Temp=27.81
+IMU32G(ID=1) Timestamp=1037232 Accel=[0,0,1] Gyro=[-96,-752,1067] Temp=30
+IMU16G(ID=0) Timestamp=1037296 Accel=[0,0,0] Gyro=[4296,-3062,-2747] Temp=27
+BARO07(ID=0) Timestamp=1037331 Pressure=91179 Temp=27.48
+BARO11(ID=1) Timestamp=1037333 Pressure=90589 Temp=27.81
+IMU32G(ID=1) Timestamp=1037575 Accel=[0,0,0] Gyro=[166,-1102,1041] Temp=30
+IMU16G(ID=0) Timestamp=1037629 Accel=[0,0,0] Gyro=[2546,-1925,1268] Temp=27
+BARO07(ID=0) Timestamp=1037672 Pressure=91190 Temp=27.48
+BARO11(ID=1) Timestamp=1037674 Pressure=90604 Temp=27.81
+IMU32G(ID=1) Timestamp=1037918 Accel=[0,0,0] Gyro=[-752,-4331,1855] Temp=30
+IMU16G(ID=0) Timestamp=1037962 Accel=[0,0,0] Gyro=[-3316,2450,2397] Temp=27
+BARO07(ID=0) Timestamp=1038013 Pressure=91158 Temp=27.48
+BARO11(ID=1) Timestamp=1038015 Pressure=90596 Temp=27.80
+IMU32G(ID=1) Timestamp=1038261 Accel=[0,0,0] Gyro=[-2065,-980,367] Temp=30
+IMU16G(ID=0) Timestamp=1038295 Accel=[0,0,0] Gyro=[-2091,1330,446] Temp=27
+BARO07(ID=0) Timestamp=1038354 Pressure=91200 Temp=27.48
+BARO11(ID=1) Timestamp=1038356 Pressure=90612 Temp=27.81
+IMU32G(ID=1) Timestamp=1038604 Accel=[0,0,0] Gyro=[2406,1951,-568] Temp=30
+IMU16G(ID=0) Timestamp=1038628 Accel=[0,0,0] Gyro=[-5591,700,2143] Temp=27
+BARO07(ID=0) Timestamp=1038695 Pressure=91185 Temp=27.49
+BARO11(ID=1) Timestamp=1038697 Pressure=90610 Temp=27.81
+IMU32G(ID=1) Timestamp=1038947 Accel=[0,0,0] Gyro=[2345,-385,892] Temp=30
+IMU16G(ID=0) Timestamp=1038961 Accel=[0,0,0] Gyro=[735,-551,-411] Temp=27
+BARO11(ID=1) Timestamp=1039065 Pressure=90613 Temp=27.81
+IMU32G(ID=1) Timestamp=1039290 Accel=[0,0,0] Gyro=[4698,-2318,1461] Temp=30
+IMU16G(ID=0) Timestamp=1039294 Accel=[0,0,0] Gyro=[-1181,4095,1732] Temp=27
+BARO07(ID=0) Timestamp=1039377 Pressure=91196 Temp=27.49
+BARO11(ID=1) Timestamp=1039379 Pressure=90618 Temp=27.81
+IMU16G(ID=0) Timestamp=1039627 Accel=[0,0,0] Gyro=[3587,358,70] Temp=27
+IMU32G(ID=1) Timestamp=1039633 Accel=[0,0,0] Gyro=[-560,-638,-192] Temp=30
+BARO07(ID=0) Timestamp=1039718 Pressure=91185 Temp=27.49
+BARO11(ID=1) Timestamp=1039720 Pressure=90619 Temp=27.81
+IMU16G(ID=0) Timestamp=1039960 Accel=[0,0,1] Gyro=[78,3150,2152] Temp=27
+IMU32G(ID=1) Timestamp=1039976 Accel=[0,0,0] Gyro=[-2362,2152,1233] Temp=30
+BARO07(ID=0) Timestamp=1040059 Pressure=91181 Temp=27.49
+BARO11(ID=1) Timestamp=1040061 Pressure=90619 Temp=27.81
+IMU16G(ID=0) Timestamp=1040293 Accel=[0,0,0] Gyro=[-4322,3316,-1268] Temp=27
+IMU32G(ID=1) Timestamp=1040319 Accel=[0,0,0] Gyro=[8,2178,-245] Temp=30
+BARO07(ID=0) Timestamp=1040400 Pressure=91170 Temp=27.49
+BARO11(ID=1) Timestamp=1040402 Pressure=90624 Temp=27.81
+IMU16G(ID=0) Timestamp=1040626 Accel=[0,0,0] Gyro=[-498,-1793,-1312] Temp=27
+IMU32G(ID=1) Timestamp=1040662 Accel=[0,0,0] Gyro=[-4637,2187,-96] Temp=30
+BARO07(ID=0) Timestamp=1040741 Pressure=91143 Temp=27.49
+BARO11(ID=1) Timestamp=1040743 Pressure=90635 Temp=27.80
+IMU16G(ID=0) Timestamp=1040959 Accel=[0,0,0] Gyro=[-9065,-2432,-945] Temp=27
+IMU32G(ID=1) Timestamp=1041005 Accel=[0,0,0] Gyro=[2633,-490,498] Temp=30
+BARO07(ID=0) Timestamp=1041082 Pressure=91137 Temp=27.48
+BARO11(ID=1) Timestamp=1041084 Pressure=90630 Temp=27.81
+
+--- Dump Complete ---
+---- Sector Complete ----
+IMU32G(ID=1) Timestamp=1041348 Accel=[0,0,0] Gyro=[6028,-813,1715] Temp=30
+BARO07(ID=0) Timestamp=1041423 Pressure=91106 Temp=27.48
+BARO11(ID=1) Timestamp=1041430 Pressure=90646 Temp=27.81
+IMU16G(ID=0) Timestamp=1041625 Accel=[0,0,1] Gyro=[3762,-376,787] Temp=27
+IMU32G(ID=1) Timestamp=1041691 Accel=[0,0,1] Gyro=[-2476,2152,-1015] Temp=30
+BARO07(ID=0) Timestamp=1041764 Pressure=91148 Temp=27.48
+BARO11(ID=1) Timestamp=1041771 Pressure=90644 Temp=27.80
+IMU16G(ID=0) Timestamp=1041958 Accel=[0,0,0] Gyro=[-962,3080,-2012] Temp=27
+IMU32G(ID=1) Timestamp=1042034 Accel=[0,0,0] Gyro=[-5171,2327,-35] Temp=30
+BARO07(ID=0) Timestamp=1042105 Pressure=91143 Temp=27.48
+BARO11(ID=1) Timestamp=1042112 Pressure=90636 Temp=27.81
+IMU16G(ID=0) Timestamp=1042291 Accel=[0,0,0] Gyro=[-2380,1478,297] Temp=27
+IMU32G(ID=1) Timestamp=1042377 Accel=[0,0,0] Gyro=[-2301,857,306] Temp=30
+BARO07(ID=0) Timestamp=1042446 Pressure=91132 Temp=27.48
+BARO11(ID=1) Timestamp=1042453 Pressure=90628 Temp=27.81
+IMU16G(ID=0) Timestamp=1042624 Accel=[0,0,0] Gyro=[332,1671,603] Temp=27
+IMU32G(ID=1) Timestamp=1042720 Accel=[0,0,0] Gyro=[1093,813,-367] Temp=30
+BARO07(ID=0) Timestamp=1042787 Pressure=91148 Temp=27.48
+BARO11(ID=1) Timestamp=1042794 Pressure=90673 Temp=27.81
+IMU16G(ID=0) Timestamp=1042957 Accel=[0,0,0] Gyro=[-1242,1408,612] Temp=27
+IMU32G(ID=1) Timestamp=1043063 Accel=[0,0,1] Gyro=[-1890,-1645,1470] Temp=30
+BARO07(ID=0) Timestamp=1043128 Pressure=91127 Temp=27.48
+BARO11(ID=1) Timestamp=1043135 Pressure=90666 Temp=27.81
+IMU16G(ID=0) Timestamp=1043290 Accel=[0,0,0] Gyro=[2625,393,735] Temp=27
+IMU32G(ID=1) Timestamp=1043406 Accel=[0,0,0] Gyro=[3885,1636,1995] Temp=30
+BARO11(ID=1) Timestamp=1043530 Pressure=90661 Temp=27.81
+IMU16G(ID=0) Timestamp=1043623 Accel=[0,0,0] Gyro=[1356,2082,673] Temp=27
+IMU32G(ID=1) Timestamp=1043749 Accel=[0,0,0] Gyro=[-927,-673,-665] Temp=30
+BARO07(ID=0) Timestamp=1043810 Pressure=91141 Temp=27.47
+BARO11(ID=1) Timestamp=1043817 Pressure=90669 Temp=27.81
+IMU16G(ID=0) Timestamp=1043956 Accel=[0,0,0] Gyro=[-131,-8,1128] Temp=28
+IMU32G(ID=1) Timestamp=1044092 Accel=[0,0,0] Gyro=[1907,1478,350] Temp=30
+BARO07(ID=0) Timestamp=1044151 Pressure=91152 Temp=27.48
+BARO11(ID=1) Timestamp=1044158 Pressure=90671 Temp=27.80
+IMU16G(ID=0) Timestamp=1044289 Accel=[0,0,0] Gyro=[3946,-533,-516] Temp=27
+IMU32G(ID=1) Timestamp=1044435 Accel=[0,0,0] Gyro=[-4191,1356,3141] Temp=30
+BARO07(ID=0) Timestamp=1044492 Pressure=91110 Temp=27.48
+BARO11(ID=1) Timestamp=1044499 Pressure=90669 Temp=27.80
+IMU16G(ID=0) Timestamp=1044622 Accel=[0,0,1] Gyro=[-105,-551,796] Temp=27
+IMU32G(ID=1) Timestamp=1044778 Accel=[0,0,0] Gyro=[-936,166,770] Temp=30
+BARO07(ID=0) Timestamp=1044833 Pressure=91138 Temp=27.49
+BARO11(ID=1) Timestamp=1044840 Pressure=90666 Temp=27.80
+IMU16G(ID=0) Timestamp=1044955 Accel=[0,0,0] Gyro=[3097,0,-1006] Temp=27
+IMU32G(ID=1) Timestamp=1045121 Accel=[0,0,0] Gyro=[3561,-3316,2887] Temp=30
+BARO07(ID=0) Timestamp=1045174 Pressure=91158 Temp=27.48
+BARO11(ID=1) Timestamp=1045181 Pressure=90694 Temp=27.81
+IMU16G(ID=0) Timestamp=1045288 Accel=[0,0,0] Gyro=[568,166,271] Temp=27
+IMU32G(ID=1) Timestamp=1045464 Accel=[0,0,0] Gyro=[-3438,2511,437] Temp=30
+BARO07(ID=0) Timestamp=1045515 Pressure=91179 Temp=27.48
+BARO11(ID=1) Timestamp=1045522 Pressure=90693 Temp=27.80
+IMU32G(ID=1) Timestamp=1045807 Accel=[0,0,0] Gyro=[2415,726,883] Temp=30
+BARO07(ID=0) Timestamp=1045856 Pressure=91179 Temp=27.48
+BARO11(ID=1) Timestamp=1045862 Pressure=90692 Temp=27.80
+IMU16G(ID=0) Timestamp=1045954 Accel=[0,0,0] Gyro=[-1295,-358,673] Temp=27
+IMU32G(ID=1) Timestamp=1046150 Accel=[0,0,0] Gyro=[1592,-6483,280] Temp=30
+BARO07(ID=0) Timestamp=1046197 Pressure=91158 Temp=27.48
+BARO11(ID=1) Timestamp=1046199 Pressure=90699 Temp=27.80
+IMU16G(ID=0) Timestamp=1046287 Accel=[0,0,0] Gyro=[2695,-3123,-1268] Temp=27
+IMU32G(ID=1) Timestamp=1046493 Accel=[0,0,0] Gyro=[-1828,4427,446] Temp=30
+BARO07(ID=0) Timestamp=1046538 Pressure=91179 Temp=27.48
+BARO11(ID=1) Timestamp=1046540 Pressure=90711 Temp=27.80
+IMU16G(ID=0) Timestamp=1046620 Accel=[0,0,0] Gyro=[691,1041,840] Temp=27
+IMU32G(ID=1) Timestamp=1046836 Accel=[0,0,1] Gyro=[1793,2161,1347] Temp=30
+BARO07(ID=0) Timestamp=1046879 Pressure=91206 Temp=27.49
+BARO11(ID=1) Timestamp=1046881 Pressure=90707 Temp=27.80
+IMU16G(ID=0) Timestamp=1046953 Accel=[0,0,0] Gyro=[-577,2021,113] Temp=27
+IMU32G(ID=1) Timestamp=1047179 Accel=[0,0,1] Gyro=[787,1260,1995] Temp=30
+BARO07(ID=0) Timestamp=1047220 Pressure=91227 Temp=27.49
+BARO11(ID=1) Timestamp=1047222 Pressure=90713 Temp=27.81
+IMU16G(ID=0) Timestamp=1047286 Accel=[0,0,0] Gyro=[1645,26,87] Temp=27
+IMU32G(ID=1) Timestamp=1047522 Accel=[0,0,0] Gyro=[3885,1242,-840] Temp=30
+BARO07(ID=0) Timestamp=1047561 Pressure=91233 Temp=27.49
+BARO11(ID=1) Timestamp=1047563 Pressure=90715 Temp=27.81
+IMU16G(ID=0) Timestamp=1047619 Accel=[0,0,0] Gyro=[4445,-1093,-892] Temp=27
+IMU32G(ID=1) Timestamp=1047865 Accel=[0,0,0] Gyro=[4095,262,2038] Temp=30
+BARO11(ID=1) Timestamp=1047930 Pressure=90713 Temp=27.81
+IMU16G(ID=0) Timestamp=1047952 Accel=[0,0,1] Gyro=[10788,-2633,437] Temp=27
+IMU32G(ID=1) Timestamp=1048208 Accel=[0,0,0] Gyro=[1058,6431,341] Temp=30
+BARO07(ID=0) Timestamp=1048243 Pressure=91259 Temp=27.49
+BARO11(ID=1) Timestamp=1048245 Pressure=90728 Temp=27.81
+IMU16G(ID=0) Timestamp=1048285 Accel=[0,0,0] Gyro=[1505,3001,-288] Temp=27
+IMU32G(ID=1) Timestamp=1048551 Accel=[0,0,1] Gyro=[4838,-866,971] Temp=30
+BARO07(ID=0) Timestamp=1048584 Pressure=91261 Temp=27.50
+BARO11(ID=1) Timestamp=1048586 Pressure=90725 Temp=27.81
+IMU16G(ID=0) Timestamp=1048618 Accel=[0,0,1] Gyro=[-367,-542,-656] Temp=27
+IMU32G(ID=1) Timestamp=1048894 Accel=[0,0,1] Gyro=[-2625,3902,-1085] Temp=30
+BARO07(ID=0) Timestamp=1048925 Pressure=91257 Temp=27.50
+BARO11(ID=1) Timestamp=1048927 Pressure=90732 Temp=27.81
+IMU16G(ID=0) Timestamp=1048951 Accel=[0,0,1] Gyro=[883,4191,875] Temp=27
+IMU32G(ID=1) Timestamp=1049237 Accel=[0,0,0] Gyro=[4523,1391,1627] Temp=30
+BARO07(ID=0) Timestamp=1049266 Pressure=91250 Temp=27.50
+BARO11(ID=1) Timestamp=1049268 Pressure=90750 Temp=27.81
+IMU16G(ID=0) Timestamp=1049284 Accel=[0,0,0] Gyro=[-3220,2397,1312] Temp=27
+IMU32G(ID=1) Timestamp=1049580 Accel=[0,0,0] Gyro=[1540,-385,752] Temp=30
+BARO07(ID=0) Timestamp=1049607 Pressure=91234 Temp=27.49
+BARO11(ID=1) Timestamp=1049609 Pressure=90744 Temp=27.82
+IMU16G(ID=0) Timestamp=1049617 Accel=[0,0,0] Gyro=[-3255,2756,1767] Temp=27
+IMU32G(ID=1) Timestamp=1049923 Accel=[0,0,1] Gyro=[-7288,-3508,-665] Temp=30
+BARO07(ID=0) Timestamp=1049948 Pressure=91276 Temp=27.49
+IMU16G(ID=0) Timestamp=1049950 Accel=[0,0,0] Gyro=[9668,-6501,-1076] Temp=27
+IMU32G(ID=1) Timestamp=1050266 Accel=[0,0,1] Gyro=[-3281,6037,-1330] Temp=30
+IMU16G(ID=0) Timestamp=1050283 Accel=[0,0,1] Gyro=[-2458,1015,-2038] Temp=27
+BARO07(ID=0) Timestamp=1050289 Pressure=91260 Temp=27.49
+BARO11(ID=1) Timestamp=1050291 Pressure=90747 Temp=27.81
+IMU32G(ID=1) Timestamp=1050609 Accel=[0,0,0] Gyro=[1697,875,2948] Temp=30
+IMU16G(ID=0) Timestamp=1050616 Accel=[0,0,0] Gyro=[-236,-3167,-61] Temp=27
+BARO07(ID=0) Timestamp=1050630 Pressure=91250 Temp=27.50
+BARO11(ID=1) Timestamp=1050632 Pressure=90734 Temp=27.81
+IMU16G(ID=0) Timestamp=1050949 Accel=[0,0,0] Gyro=[-17,-245,1015] Temp=27
+IMU32G(ID=1) Timestamp=1050952 Accel=[0,0,0] Gyro=[17,166,1986] Temp=30
+BARO07(ID=0) Timestamp=1050971 Pressure=91240 Temp=27.50
+BARO11(ID=1) Timestamp=1050973 Pressure=90739 Temp=27.82
+IMU16G(ID=0) Timestamp=1051282 Accel=[0,0,1] Gyro=[-1951,5416,1837] Temp=27
+IMU32G(ID=1) Timestamp=1051295 Accel=[0,0,0] Gyro=[-673,-533,1365] Temp=30
+BARO07(ID=0) Timestamp=1051312 Pressure=91265 Temp=27.49
+BARO11(ID=1) Timestamp=1051314 Pressure=90741 Temp=27.82
+IMU16G(ID=0) Timestamp=1051615 Accel=[0,0,0] Gyro=[-743,1916,647] Temp=27
+IMU32G(ID=1) Timestamp=1051638 Accel=[0,0,0] Gyro=[-1093,113,-323] Temp=30
+BARO07(ID=0) Timestamp=1051653 Pressure=91267 Temp=27.50
+BARO11(ID=1) Timestamp=1051655 Pressure=90744 Temp=27.81
+IMU16G(ID=0) Timestamp=1051948 Accel=[0,0,0] Gyro=[1225,192,481] Temp=27
+IMU32G(ID=1) Timestamp=1051981 Accel=[0,0,0] Gyro=[1443,1680,542] Temp=30
+BARO07(ID=0) Timestamp=1051994 Pressure=91282 Temp=27.50
+BARO11(ID=1) Timestamp=1051996 Pressure=90746 Temp=27.81
+IMU16G(ID=0) Timestamp=1052281 Accel=[0,0,0] Gyro=[-3123,3298,2283] Temp=27
+BARO07(ID=0) Timestamp=1052353 Pressure=91283 Temp=27.50
+BARO11(ID=1) Timestamp=1052354 Pressure=90738 Temp=27.81
+IMU16G(ID=0) Timestamp=1052614 Accel=[0,0,1] Gyro=[341,-2056,-542] Temp=27
+IMU32G(ID=1) Timestamp=1052667 Accel=[0,0,0] Gyro=[4410,4173,1723] Temp=30
+BARO07(ID=0) Timestamp=1052676 Pressure=91267 Temp=27.50
+BARO11(ID=1) Timestamp=1052678 Pressure=90747 Temp=27.81
+IMU16G(ID=0) Timestamp=1052947 Accel=[0,0,0] Gyro=[122,-2537,1006] Temp=27
+IMU32G(ID=1) Timestamp=1053010 Accel=[0,0,0] Gyro=[-3263,752,586] Temp=30
+BARO07(ID=0) Timestamp=1053017 Pressure=91257 Temp=27.50
+BARO11(ID=1) Timestamp=1053019 Pressure=90748 Temp=27.82
+IMU16G(ID=0) Timestamp=1053280 Accel=[0,0,0] Gyro=[306,-1662,490] Temp=27
+IMU32G(ID=1) Timestamp=1053353 Accel=[0,0,0] Gyro=[446,175,105] Temp=30
+BARO07(ID=0) Timestamp=1053358 Pressure=91252 Temp=27.51
+BARO11(ID=1) Timestamp=1053360 Pressure=90738 Temp=27.82
+IMU16G(ID=0) Timestamp=1053613 Accel=[0,0,0] Gyro=[-2257,1321,376] Temp=28
+IMU32G(ID=1) Timestamp=1053696 Accel=[0,0,0] Gyro=[5285,-2756,1286] Temp=30
+BARO07(ID=0) Timestamp=1053699 Pressure=91230 Temp=27.50
+BARO11(ID=1) Timestamp=1053701 Pressure=90732 Temp=27.82
+IMU16G(ID=0) Timestamp=1053946 Accel=[0,0,0] Gyro=[883,1505,577] Temp=28
+IMU32G(ID=1) Timestamp=1054039 Accel=[0,0,0] Gyro=[-1032,910,17] Temp=30
+BARO07(ID=0) Timestamp=1054040 Pressure=91236 Temp=27.50
+BARO11(ID=1) Timestamp=1054042 Pressure=90735 Temp=27.82
+IMU16G(ID=0) Timestamp=1054279 Accel=[0,0,0] Gyro=[1128,-1277,612] Temp=27
+BARO07(ID=0) Timestamp=1054381 Pressure=91236 Temp=27.50
+IMU32G(ID=1) Timestamp=1054382 Accel=[0,0,1] Gyro=[-1802,2747,-1951] Temp=30
+IMU16G(ID=0) Timestamp=1054612 Accel=[0,0,0] Gyro=[463,26,-463] Temp=27
+BARO07(ID=0) Timestamp=1054722 Pressure=91241 Temp=27.50
+BARO11(ID=1) Timestamp=1054724 Pressure=90737 Temp=27.83
+IMU32G(ID=1) Timestamp=1054725 Accel=[0,0,0] Gyro=[2975,-428,1697] Temp=30
+IMU16G(ID=0) Timestamp=1054945 Accel=[0,0,0] Gyro=[-1487,5180,1163] Temp=28
+BARO07(ID=0) Timestamp=1055063 Pressure=91247 Temp=27.51
+BARO11(ID=1) Timestamp=1055065 Pressure=90744 Temp=27.83
+IMU32G(ID=1) Timestamp=1055068 Accel=[0,0,0] Gyro=[1365,-393,87] Temp=30
+IMU16G(ID=0) Timestamp=1055278 Accel=[0,0,0] Gyro=[743,-1758,498] Temp=28
+BARO07(ID=0) Timestamp=1055404 Pressure=91251 Temp=27.50
+BARO11(ID=1) Timestamp=1055406 Pressure=90734 Temp=27.83
+IMU32G(ID=1) Timestamp=1055411 Accel=[0,0,0] Gyro=[1566,-385,-70] Temp=30
+IMU16G(ID=0) Timestamp=1055611 Accel=[0,0,1] Gyro=[11165,-5066,-2528] Temp=27
+BARO07(ID=0) Timestamp=1055745 Pressure=91252 Temp=27.51
+BARO11(ID=1) Timestamp=1055747 Pressure=90729 Temp=27.83
+IMU32G(ID=1) Timestamp=1055754 Accel=[0,0,0] Gyro=[-1487,-4357,-770] Temp=30
+IMU16G(ID=0) Timestamp=1055944 Accel=[0,0,0] Gyro=[1286,2021,682] Temp=28
+BARO07(ID=0) Timestamp=1056086 Pressure=91226 Temp=27.51
+BARO11(ID=1) Timestamp=1056088 Pressure=90737 Temp=27.83
+IMU32G(ID=1) Timestamp=1056097 Accel=[0,0,1] Gyro=[1898,1076,647] Temp=30
+IMU16G(ID=0) Timestamp=1056277 Accel=[0,0,0] Gyro=[-402,-1855,463] Temp=27
+BARO07(ID=0) Timestamp=1056427 Pressure=91225 Temp=27.50
+BARO11(ID=1) Timestamp=1056429 Pressure=90728 Temp=27.83
+IMU32G(ID=1) Timestamp=1056440 Accel=[0,0,0] Gyro=[1933,-586,253] Temp=30
+IMU16G(ID=0) Timestamp=1056610 Accel=[0,0,1] Gyro=[4270,-2887,-726] Temp=27
+BARO11(ID=1) Timestamp=1056797 Pressure=90729 Temp=27.83
+IMU32G(ID=1) Timestamp=1056798 Accel=[0,0,0] Gyro=[-621,656,-621] Temp=30
+IMU16G(ID=0) Timestamp=1056943 Accel=[0,0,0] Gyro=[-2983,148,1645] Temp=27
+BARO07(ID=0) Timestamp=1057109 Pressure=91226 Temp=27.51
+BARO11(ID=1) Timestamp=1057111 Pressure=90733 Temp=27.82
+IMU32G(ID=1) Timestamp=1057126 Accel=[0,0,0] Gyro=[236,1312,796] Temp=30
+IMU16G(ID=0) Timestamp=1057276 Accel=[0,0,0] Gyro=[1050,35,105] Temp=27
+BARO07(ID=0) Timestamp=1057450 Pressure=91230 Temp=27.50
+BARO11(ID=1) Timestamp=1057452 Pressure=90743 Temp=27.83
+IMU32G(ID=1) Timestamp=1057469 Accel=[0,0,0] Gyro=[166,1400,-455] Temp=30
+IMU16G(ID=0) Timestamp=1057609 Accel=[0,0,0] Gyro=[-971,-105,472] Temp=28
+BARO07(ID=0) Timestamp=1057791 Pressure=91231 Temp=27.51
+BARO11(ID=1) Timestamp=1057793 Pressure=90726 Temp=27.83
+IMU32G(ID=1) Timestamp=1057812 Accel=[0,0,0] Gyro=[3981,358,822] Temp=30
+IMU16G(ID=0) Timestamp=1057942 Accel=[0,0,1] Gyro=[2143,332,761] Temp=27
+BARO07(ID=0) Timestamp=1058132 Pressure=91226 Temp=27.51
+BARO11(ID=1) Timestamp=1058134 Pressure=90736 Temp=27.82
+IMU32G(ID=1) Timestamp=1058155 Accel=[0,0,0] Gyro=[-997,1802,183] Temp=30
+IMU16G(ID=0) Timestamp=1058275 Accel=[0,0,0] Gyro=[-647,-665,997] Temp=27
+BARO07(ID=0) Timestamp=1058473 Pressure=91226 Temp=27.51
+BARO11(ID=1) Timestamp=1058475 Pressure=90735 Temp=27.82
+IMU32G(ID=1) Timestamp=1058498 Accel=[0,0,1] Gyro=[-1890,-997,-113] Temp=30
+IMU16G(ID=0) Timestamp=1058608 Accel=[0,0,0] Gyro=[3421,-2047,-323] Temp=28
+BARO07(ID=0) Timestamp=1058814 Pressure=91236 Temp=27.50
+BARO11(ID=1) Timestamp=1058816 Pressure=90722 Temp=27.83
+
+--- Dump Complete ---
+---- Sector Complete ----
+IMU16G(ID=0) Timestamp=1058941 Accel=[0,0,0] Gyro=[122,4550,315] Temp=27
+BARO07(ID=0) Timestamp=1059155 Pressure=91226 Temp=27.51
+BARO11(ID=1) Timestamp=1059162 Pressure=90721 Temp=27.82
+IMU32G(ID=1) Timestamp=1059184 Accel=[0,0,0] Gyro=[2992,-262,691] Temp=30
+IMU16G(ID=0) Timestamp=1059274 Accel=[0,0,0] Gyro=[-1198,-122,-770] Temp=27
+BARO07(ID=0) Timestamp=1059496 Pressure=91183 Temp=27.50
+BARO11(ID=1) Timestamp=1059503 Pressure=90724 Temp=27.82
+IMU32G(ID=1) Timestamp=1059527 Accel=[0,0,0] Gyro=[3605,1216,463] Temp=30
+IMU16G(ID=0) Timestamp=1059607 Accel=[0,0,1] Gyro=[376,2782,35] Temp=27
+BARO07(ID=0) Timestamp=1059837 Pressure=91161 Temp=27.50
+BARO11(ID=1) Timestamp=1059844 Pressure=90726 Temp=27.81
+IMU32G(ID=1) Timestamp=1059870 Accel=[0,0,0] Gyro=[-2730,-1233,-350] Temp=30
+IMU16G(ID=0) Timestamp=1059940 Accel=[0,0,0] Gyro=[-1120,-3281,1260] Temp=27
+BARO07(ID=0) Timestamp=1060178 Pressure=91178 Temp=27.50
+BARO11(ID=1) Timestamp=1060185 Pressure=90733 Temp=27.82
+IMU32G(ID=1) Timestamp=1060213 Accel=[0,0,1] Gyro=[-1172,-2266,-210] Temp=30
+IMU16G(ID=0) Timestamp=1060273 Accel=[0,0,0] Gyro=[-3482,1312,1732] Temp=27
+BARO07(ID=0) Timestamp=1060519 Pressure=91209 Temp=27.50
+BARO11(ID=1) Timestamp=1060526 Pressure=90741 Temp=27.82
+IMU32G(ID=1) Timestamp=1060556 Accel=[0,0,0] Gyro=[-2502,5845,-87] Temp=30
+IMU16G(ID=0) Timestamp=1060606 Accel=[0,0,0] Gyro=[-2196,6300,778] Temp=28
+BARO07(ID=0) Timestamp=1060860 Pressure=91219 Temp=27.50
+BARO11(ID=1) Timestamp=1060867 Pressure=90739 Temp=27.82
+IMU32G(ID=1) Timestamp=1060899 Accel=[0,0,0] Gyro=[1233,-5320,2380] Temp=30
+IMU16G(ID=0) Timestamp=1060939 Accel=[0,0,0] Gyro=[-1277,1023,656] Temp=28
+BARO11(ID=1) Timestamp=1061261 Pressure=90734 Temp=27.83
+IMU32G(ID=1) Timestamp=1061267 Accel=[0,0,0] Gyro=[-953,-1470,1058] Temp=30
+IMU16G(ID=0) Timestamp=1061279 Accel=[0,0,0] Gyro=[647,-2161,-166] Temp=27
+BARO07(ID=0) Timestamp=1061542 Pressure=91172 Temp=27.50
+BARO11(ID=1) Timestamp=1061549 Pressure=90721 Temp=27.82
+IMU32G(ID=1) Timestamp=1061585 Accel=[0,0,0] Gyro=[2896,-2038,857] Temp=30
+IMU16G(ID=0) Timestamp=1061605 Accel=[0,0,0] Gyro=[2852,-3648,-227] Temp=28
+BARO07(ID=0) Timestamp=1061883 Pressure=91177 Temp=27.50
+BARO11(ID=1) Timestamp=1061890 Pressure=90728 Temp=27.83
+IMU32G(ID=1) Timestamp=1061928 Accel=[0,0,0] Gyro=[-1837,2800,-26] Temp=30
+IMU16G(ID=0) Timestamp=1061938 Accel=[0,0,0] Gyro=[-1373,1461,577] Temp=27
+BARO07(ID=0) Timestamp=1062224 Pressure=91199 Temp=27.50
+BARO11(ID=1) Timestamp=1062231 Pressure=90732 Temp=27.83
+IMU16G(ID=0) Timestamp=1062271 Accel=[0,0,0] Gyro=[1426,-4208,-411] Temp=28
+IMU32G(ID=1) Timestamp=1062278 Accel=[0,0,0] Gyro=[-2003,4471,-218] Temp=30
+BARO07(ID=0) Timestamp=1062565 Pressure=91178 Temp=27.50
+BARO11(ID=1) Timestamp=1062572 Pressure=90750 Temp=27.83
+IMU16G(ID=0) Timestamp=1062604 Accel=[0,0,0] Gyro=[218,-971,-61] Temp=27
+IMU32G(ID=1) Timestamp=1062614 Accel=[0,0,0] Gyro=[2773,-2073,428] Temp=30
+BARO07(ID=0) Timestamp=1062906 Pressure=91157 Temp=27.50
+BARO11(ID=1) Timestamp=1062913 Pressure=90732 Temp=27.82
+IMU16G(ID=0) Timestamp=1062937 Accel=[0,0,0] Gyro=[-463,778,-542] Temp=27
+IMU32G(ID=1) Timestamp=1062957 Accel=[0,0,1] Gyro=[183,-2362,883] Temp=30
+BARO07(ID=0) Timestamp=1063247 Pressure=91167 Temp=27.50
+BARO11(ID=1) Timestamp=1063254 Pressure=90731 Temp=27.83
+IMU32G(ID=1) Timestamp=1063304 Accel=[0,0,1] Gyro=[1032,1303,1627] Temp=30
+BARO07(ID=0) Timestamp=1063588 Pressure=91177 Temp=27.50
+BARO11(ID=1) Timestamp=1063594 Pressure=90729 Temp=27.81
+IMU16G(ID=0) Timestamp=1063603 Accel=[0,0,0] Gyro=[1531,-691,122] Temp=27
+IMU32G(ID=1) Timestamp=1063643 Accel=[0,0,1] Gyro=[1417,-656,525] Temp=30
+BARO07(ID=0) Timestamp=1063929 Pressure=91209 Temp=27.50
+BARO11(ID=1) Timestamp=1063931 Pressure=90742 Temp=27.82
+IMU16G(ID=0) Timestamp=1063936 Accel=[0,0,0] Gyro=[3360,-3395,166] Temp=27
+IMU32G(ID=1) Timestamp=1063986 Accel=[0,0,1] Gyro=[157,-2668,1540] Temp=30
+IMU16G(ID=0) Timestamp=1064269 Accel=[0,0,1] Gyro=[2800,-455,-350] Temp=27
+BARO07(ID=0) Timestamp=1064270 Pressure=91241 Temp=27.50
+BARO11(ID=1) Timestamp=1064272 Pressure=90730 Temp=27.82
+IMU32G(ID=1) Timestamp=1064329 Accel=[0,0,1] Gyro=[-3561,5573,647] Temp=30
+IMU16G(ID=0) Timestamp=1064602 Accel=[0,0,0] Gyro=[-1277,52,848] Temp=27
+BARO07(ID=0) Timestamp=1064611 Pressure=91253 Temp=27.51
+BARO11(ID=1) Timestamp=1064613 Pressure=90739 Temp=27.82
+IMU32G(ID=1) Timestamp=1064672 Accel=[0,0,0] Gyro=[761,3622,-638] Temp=30
+IMU16G(ID=0) Timestamp=1064935 Accel=[0,0,0] Gyro=[1015,-315,-262] Temp=27
+BARO07(ID=0) Timestamp=1064952 Pressure=91263 Temp=27.51
+BARO11(ID=1) Timestamp=1064954 Pressure=90723 Temp=27.83
+IMU32G(ID=1) Timestamp=1065015 Accel=[0,0,0] Gyro=[595,-621,1627] Temp=30
+IMU16G(ID=0) Timestamp=1065268 Accel=[0,0,1] Gyro=[437,1426,883] Temp=27
+BARO07(ID=0) Timestamp=1065293 Pressure=91275 Temp=27.52
+BARO11(ID=1) Timestamp=1065295 Pressure=90732 Temp=27.83
+IMU32G(ID=1) Timestamp=1065358 Accel=[0,0,0] Gyro=[-2213,2721,-341] Temp=30
+BARO07(ID=0) Timestamp=1065634 Pressure=91280 Temp=27.52
+BARO11(ID=1) Timestamp=1065636 Pressure=90737 Temp=27.83
+IMU32G(ID=1) Timestamp=1065701 Accel=[0,0,0] Gyro=[2196,673,-140] Temp=30
+IMU16G(ID=0) Timestamp=1065934 Accel=[0,0,0] Gyro=[-122,2633,280] Temp=28
+BARO07(ID=0) Timestamp=1065975 Pressure=91281 Temp=27.52
+BARO11(ID=1) Timestamp=1065977 Pressure=90736 Temp=27.83
+IMU32G(ID=1) Timestamp=1066044 Accel=[0,0,0] Gyro=[3255,-3596,901] Temp=30
+IMU16G(ID=0) Timestamp=1066267 Accel=[0,0,0] Gyro=[1120,875,-770] Temp=27
+BARO07(ID=0) Timestamp=1066316 Pressure=91281 Temp=27.52
+BARO11(ID=1) Timestamp=1066318 Pressure=90744 Temp=27.83
+IMU32G(ID=1) Timestamp=1066387 Accel=[0,0,0] Gyro=[-1513,1916,262] Temp=30
+IMU16G(ID=0) Timestamp=1066600 Accel=[0,0,0] Gyro=[-393,-2257,-437] Temp=28
+BARO07(ID=0) Timestamp=1066657 Pressure=91254 Temp=27.52
+BARO11(ID=1) Timestamp=1066659 Pressure=90742 Temp=27.83
+IMU32G(ID=1) Timestamp=1066730 Accel=[0,0,0] Gyro=[2756,78,621] Temp=30
+IMU16G(ID=0) Timestamp=1066933 Accel=[0,0,0] Gyro=[2266,446,-455] Temp=28
+BARO07(ID=0) Timestamp=1066998 Pressure=91270 Temp=27.52
+BARO11(ID=1) Timestamp=1067000 Pressure=90739 Temp=27.83
+IMU32G(ID=1) Timestamp=1067073 Accel=[0,0,0] Gyro=[-5215,1251,1610] Temp=30
+IMU16G(ID=0) Timestamp=1067266 Accel=[0,0,0] Gyro=[-2677,2703,1373] Temp=27
+BARO07(ID=0) Timestamp=1067339 Pressure=91269 Temp=27.52
+BARO11(ID=1) Timestamp=1067341 Pressure=90755 Temp=27.84
+IMU32G(ID=1) Timestamp=1067416 Accel=[0,0,0] Gyro=[813,910,0] Temp=30
+IMU16G(ID=0) Timestamp=1067599 Accel=[0,0,0] Gyro=[-105,192,-96] Temp=28
+BARO07(ID=0) Timestamp=1067680 Pressure=91254 Temp=27.52
+IMU32G(ID=1) Timestamp=1067759 Accel=[0,0,0] Gyro=[3631,-2275,1933] Temp=30
+IMU16G(ID=0) Timestamp=1067932 Accel=[0,0,0] Gyro=[-1295,2423,1085] Temp=28
+BARO07(ID=0) Timestamp=1068021 Pressure=91243 Temp=27.52
+BARO11(ID=1) Timestamp=1068023 Pressure=90745 Temp=27.83
+IMU32G(ID=1) Timestamp=1068102 Accel=[0,0,0] Gyro=[-306,-866,-236] Temp=30
+IMU16G(ID=0) Timestamp=1068265 Accel=[0,0,0] Gyro=[3386,-3281,-315] Temp=28
+BARO07(ID=0) Timestamp=1068362 Pressure=91239 Temp=27.52
+BARO11(ID=1) Timestamp=1068364 Pressure=90742 Temp=27.83
+IMU32G(ID=1) Timestamp=1068445 Accel=[0,0,0] Gyro=[-936,1583,-568] Temp=30
+IMU16G(ID=0) Timestamp=1068598 Accel=[0,0,0] Gyro=[1198,-4908,192] Temp=28
+BARO07(ID=0) Timestamp=1068703 Pressure=91239 Temp=27.52
+BARO11(ID=1) Timestamp=1068705 Pressure=90761 Temp=27.84
+IMU32G(ID=1) Timestamp=1068788 Accel=[0,0,1] Gyro=[-8260,-13702,9283] Temp=30
+IMU16G(ID=0) Timestamp=1068931 Accel=[0,0,1] Gyro=[5617,15548,568] Temp=28
+BARO07(ID=0) Timestamp=1069044 Pressure=91213 Temp=27.52
+BARO11(ID=1) Timestamp=1069046 Pressure=90757 Temp=27.83
+IMU32G(ID=1) Timestamp=1069131 Accel=[0,0,0] Gyro=[638,-4331,1916] Temp=30
+IMU16G(ID=0) Timestamp=1069264 Accel=[0,0,0] Gyro=[-2870,1741,446] Temp=27
+BARO07(ID=0) Timestamp=1069385 Pressure=91286 Temp=27.52
+BARO11(ID=1) Timestamp=1069387 Pressure=90748 Temp=27.83
+IMU32G(ID=1) Timestamp=1069474 Accel=[0,0,0] Gyro=[2572,-577,708] Temp=30
+IMU16G(ID=0) Timestamp=1069597 Accel=[0,0,0] Gyro=[-2450,1111,201] Temp=28
+BARO07(ID=0) Timestamp=1069726 Pressure=91292 Temp=27.52
+BARO11(ID=1) Timestamp=1069728 Pressure=90760 Temp=27.83
+IMU32G(ID=1) Timestamp=1069817 Accel=[0,0,1] Gyro=[-4593,1723,306] Temp=30
+BARO07(ID=0) Timestamp=1070067 Pressure=91266 Temp=27.52
+BARO11(ID=1) Timestamp=1070069 Pressure=90749 Temp=27.84
+IMU32G(ID=1) Timestamp=1070160 Accel=[0,0,0] Gyro=[4593,-2555,507] Temp=30
+IMU16G(ID=0) Timestamp=1070263 Accel=[0,0,0] Gyro=[148,-910,953] Temp=28
+BARO07(ID=0) Timestamp=1070408 Pressure=91271 Temp=27.52
+BARO11(ID=1) Timestamp=1070410 Pressure=90758 Temp=27.84
+IMU32G(ID=1) Timestamp=1070503 Accel=[0,0,0] Gyro=[-2800,-1303,-8] Temp=30
+IMU16G(ID=0) Timestamp=1070596 Accel=[0,0,0] Gyro=[647,157,-402] Temp=28
+BARO07(ID=0) Timestamp=1070749 Pressure=91276 Temp=27.52
+BARO11(ID=1) Timestamp=1070751 Pressure=90756 Temp=27.84
+IMU32G(ID=1) Timestamp=1070846 Accel=[0,0,1] Gyro=[131,3613,1426] Temp=30
+IMU16G(ID=0) Timestamp=1070929 Accel=[0,0,0] Gyro=[-7000,1907,2371] Temp=28
+BARO07(ID=0) Timestamp=1071090 Pressure=91282 Temp=27.53
+BARO11(ID=1) Timestamp=1071092 Pressure=90760 Temp=27.83
+IMU32G(ID=1) Timestamp=1071189 Accel=[0,0,0] Gyro=[1785,813,350] Temp=30
+IMU16G(ID=0) Timestamp=1071262 Accel=[0,0,0] Gyro=[-2380,122,542] Temp=27
+BARO07(ID=0) Timestamp=1071431 Pressure=91293 Temp=27.53
+BARO11(ID=1) Timestamp=1071433 Pressure=90753 Temp=27.83
+IMU32G(ID=1) Timestamp=1071532 Accel=[0,0,0] Gyro=[236,-350,1960] Temp=30
+IMU16G(ID=0) Timestamp=1071595 Accel=[0,0,1] Gyro=[1181,3263,1951] Temp=28
+BARO07(ID=0) Timestamp=1071772 Pressure=91287 Temp=27.52
+BARO11(ID=1) Timestamp=1071774 Pressure=90746 Temp=27.83
+IMU32G(ID=1) Timestamp=1071875 Accel=[0,0,0] Gyro=[1426,-980,411] Temp=30
+IMU16G(ID=0) Timestamp=1071928 Accel=[0,0,0] Gyro=[-2467,1190,910] Temp=27
+BARO07(ID=0) Timestamp=1072113 Pressure=91271 Temp=27.52
+IMU32G(ID=1) Timestamp=1072218 Accel=[0,0,0] Gyro=[6667,-2817,717] Temp=30
+IMU16G(ID=0) Timestamp=1072261 Accel=[0,0,0] Gyro=[-1995,-638,533] Temp=28
+BARO07(ID=0) Timestamp=1072454 Pressure=91260 Temp=27.52
+BARO11(ID=1) Timestamp=1072456 Pressure=90776 Temp=27.84
+IMU32G(ID=1) Timestamp=1072561 Accel=[0,0,1] Gyro=[-621,-6527,3403] Temp=30
+IMU16G(ID=0) Timestamp=1072594 Accel=[0,0,1] Gyro=[-3806,2073,-2572] Temp=28
+BARO07(ID=0) Timestamp=1072795 Pressure=91271 Temp=27.52
+BARO11(ID=1) Timestamp=1072797 Pressure=90767 Temp=27.84
+IMU32G(ID=1) Timestamp=1072904 Accel=[0,0,1] Gyro=[647,-2738,201] Temp=30
+IMU16G(ID=0) Timestamp=1072927 Accel=[0,0,0] Gyro=[-656,1723,8] Temp=28
+BARO07(ID=0) Timestamp=1073136 Pressure=91292 Temp=27.52
+BARO11(ID=1) Timestamp=1073138 Pressure=90774 Temp=27.84
+IMU32G(ID=1) Timestamp=1073247 Accel=[0,0,0] Gyro=[-428,2922,1207] Temp=30
+IMU16G(ID=0) Timestamp=1073260 Accel=[0,0,0] Gyro=[-3675,1846,1758] Temp=28
+BARO07(ID=0) Timestamp=1073477 Pressure=91308 Temp=27.53
+BARO11(ID=1) Timestamp=1073479 Pressure=90766 Temp=27.83
+IMU32G(ID=1) Timestamp=1073590 Accel=[0,0,0] Gyro=[1837,1225,1811] Temp=30
+IMU16G(ID=0) Timestamp=1073593 Accel=[0,0,0] Gyro=[-1671,-350,516] Temp=28
+BARO07(ID=0) Timestamp=1073818 Pressure=91303 Temp=27.53
+BARO11(ID=1) Timestamp=1073820 Pressure=90761 Temp=27.84
+IMU16G(ID=0) Timestamp=1073926 Accel=[0,0,0] Gyro=[-2520,770,1190] Temp=28
+IMU32G(ID=1) Timestamp=1073933 Accel=[0,0,0] Gyro=[-17,288,-52] Temp=30
+BARO07(ID=0) Timestamp=1074159 Pressure=91282 Temp=27.53
+BARO11(ID=1) Timestamp=1074161 Pressure=90780 Temp=27.84
+IMU16G(ID=0) Timestamp=1074259 Accel=[0,0,0] Gyro=[-1128,-1400,892] Temp=28
+BARO07(ID=0) Timestamp=1074500 Pressure=91278 Temp=27.53
+BARO11(ID=1) Timestamp=1074502 Pressure=90765 Temp=27.84
+IMU16G(ID=0) Timestamp=1074592 Accel=[0,0,0] Gyro=[-1303,-2983,927] Temp=27
+IMU32G(ID=1) Timestamp=1074619 Accel=[0,0,0] Gyro=[-1050,2537,446] Temp=30
+BARO07(ID=0) Timestamp=1074841 Pressure=91255 Temp=27.52
+BARO11(ID=1) Timestamp=1074843 Pressure=90777 Temp=27.84
+IMU16G(ID=0) Timestamp=1074925 Accel=[0,0,1] Gyro=[5215,-1898,1575] Temp=28
+IMU32G(ID=1) Timestamp=1074962 Accel=[0,0,1] Gyro=[-2056,-3858,2975] Temp=30
+BARO07(ID=0) Timestamp=1075182 Pressure=91251 Temp=27.53
+BARO11(ID=1) Timestamp=1075184 Pressure=90773 Temp=27.84
+IMU16G(ID=0) Timestamp=1075258 Accel=[0,0,1] Gyro=[2091,2843,1093] Temp=27
+IMU32G(ID=1) Timestamp=1075305 Accel=[0,0,0] Gyro=[-1400,3228,1058] Temp=30
+BARO07(ID=0) Timestamp=1075523 Pressure=91255 Temp=27.52
+BARO11(ID=1) Timestamp=1075525 Pressure=90786 Temp=27.84
+IMU16G(ID=0) Timestamp=1075591 Accel=[0,0,0] Gyro=[-647,-1802,78] Temp=27
+IMU32G(ID=1) Timestamp=1075648 Accel=[0,0,1] Gyro=[-3351,-551,875] Temp=30
+BARO07(ID=0) Timestamp=1075864 Pressure=91239 Temp=27.52
+BARO11(ID=1) Timestamp=1075866 Pressure=90758 Temp=27.84
+IMU16G(ID=0) Timestamp=1075924 Accel=[0,0,0] Gyro=[-6011,6492,2213] Temp=27
+IMU32G(ID=1) Timestamp=1075991 Accel=[0,0,0] Gyro=[-4208,2065,-157] Temp=30
+BARO07(ID=0) Timestamp=1076205 Pressure=91225 Temp=27.53
+BARO11(ID=1) Timestamp=1076207 Pressure=90774 Temp=27.85
+IMU16G(ID=0) Timestamp=1076257 Accel=[0,0,0] Gyro=[1128,1233,1662] Temp=28
+IMU32G(ID=1) Timestamp=1076334 Accel=[0,0,0] Gyro=[-1986,997,953] Temp=30
+BARO07(ID=0) Timestamp=1076546 Pressure=91240 Temp=27.53
+
+--- Dump Complete ---
+---- Sector Complete ----
+IMU16G(ID=0) Timestamp=1076594 Accel=[0,0,1] Gyro=[1907,-3981,-498] Temp=28
+IMU32G(ID=1) Timestamp=1076677 Accel=[0,0,0] Gyro=[-3088,-2143,-288] Temp=30
+BARO07(ID=0) Timestamp=1076887 Pressure=91260 Temp=27.52
+BARO11(ID=1) Timestamp=1076894 Pressure=90781 Temp=27.85
+IMU16G(ID=0) Timestamp=1076923 Accel=[0,0,0] Gyro=[35,2065,1575] Temp=28
+IMU32G(ID=1) Timestamp=1077020 Accel=[0,0,0] Gyro=[-78,-551,866] Temp=30
+BARO07(ID=0) Timestamp=1077228 Pressure=91266 Temp=27.53
+BARO11(ID=1) Timestamp=1077235 Pressure=90763 Temp=27.85
+IMU16G(ID=0) Timestamp=1077256 Accel=[0,0,0] Gyro=[927,1636,166] Temp=28
+IMU32G(ID=1) Timestamp=1077363 Accel=[0,0,1] Gyro=[1321,-4112,787] Temp=30
+BARO07(ID=0) Timestamp=1077569 Pressure=91277 Temp=27.53
+BARO11(ID=1) Timestamp=1077576 Pressure=90765 Temp=27.85
+IMU16G(ID=0) Timestamp=1077589 Accel=[0,0,0] Gyro=[2800,-6326,-761] Temp=27
+IMU32G(ID=1) Timestamp=1077706 Accel=[0,0,0] Gyro=[350,638,52] Temp=30
+BARO07(ID=0) Timestamp=1077910 Pressure=91287 Temp=27.52
+BARO11(ID=1) Timestamp=1077917 Pressure=90758 Temp=27.85
+IMU16G(ID=0) Timestamp=1077923 Accel=[0,0,0] Gyro=[-2003,770,1828] Temp=28
+IMU32G(ID=1) Timestamp=1078049 Accel=[0,0,0] Gyro=[2266,1575,700] Temp=30
+BARO07(ID=0) Timestamp=1078251 Pressure=91304 Temp=27.53
+BARO11(ID=1) Timestamp=1078258 Pressure=90773 Temp=27.85
+IMU16G(ID=0) Timestamp=1078264 Accel=[0,0,0] Gyro=[2213,1058,201] Temp=28
+IMU32G(ID=1) Timestamp=1078392 Accel=[0,0,0] Gyro=[770,-157,1251] Temp=30
+IMU16G(ID=0) Timestamp=1078588 Accel=[0,0,0] Gyro=[-1732,2065,1303] Temp=28
+BARO07(ID=0) Timestamp=1078595 Pressure=91316 Temp=27.54
+BARO11(ID=1) Timestamp=1078601 Pressure=90755 Temp=27.85
+IMU16G(ID=0) Timestamp=1078921 Accel=[0,0,0] Gyro=[-2983,-446,1575] Temp=28
+BARO07(ID=0) Timestamp=1078933 Pressure=91327 Temp=27.54
+BARO11(ID=1) Timestamp=1078940 Pressure=90763 Temp=27.85
+IMU32G(ID=1) Timestamp=1079078 Accel=[0,0,0] Gyro=[2607,-1592,1128] Temp=30
+IMU16G(ID=0) Timestamp=1079254 Accel=[0,0,0] Gyro=[-2397,2240,953] Temp=28
+BARO07(ID=0) Timestamp=1079274 Pressure=91316 Temp=27.54
+BARO11(ID=1) Timestamp=1079281 Pressure=90759 Temp=27.86
+IMU32G(ID=1) Timestamp=1079421 Accel=[0,0,0] Gyro=[3272,455,752] Temp=30
+IMU16G(ID=0) Timestamp=1079587 Accel=[0,0,0] Gyro=[-5836,-253,1706] Temp=28
+BARO07(ID=0) Timestamp=1079615 Pressure=91311 Temp=27.54
+BARO11(ID=1) Timestamp=1079622 Pressure=90757 Temp=27.85
+IMU32G(ID=1) Timestamp=1079764 Accel=[0,0,0] Gyro=[-3307,3001,157] Temp=30
+IMU16G(ID=0) Timestamp=1079920 Accel=[0,0,0] Gyro=[210,-866,-358] Temp=28
+BARO07(ID=0) Timestamp=1079956 Pressure=91296 Temp=27.54
+BARO11(ID=1) Timestamp=1079963 Pressure=90762 Temp=27.86
+IMU32G(ID=1) Timestamp=1080107 Accel=[0,0,0] Gyro=[-1181,122,446] Temp=30
+IMU16G(ID=0) Timestamp=1080253 Accel=[0,0,0] Gyro=[-3018,-43,866] Temp=28
+BARO07(ID=0) Timestamp=1080297 Pressure=91296 Temp=27.54
+BARO11(ID=1) Timestamp=1080304 Pressure=90766 Temp=27.85
+IMU32G(ID=1) Timestamp=1080450 Accel=[0,0,1] Gyro=[3185,-918,2108] Temp=30
+IMU16G(ID=0) Timestamp=1080586 Accel=[0,0,1] Gyro=[3246,2493,-236] Temp=28
+BARO07(ID=0) Timestamp=1080638 Pressure=91305 Temp=27.54
+BARO11(ID=1) Timestamp=1080645 Pressure=90772 Temp=27.85
+IMU32G(ID=1) Timestamp=1080793 Accel=[0,0,0] Gyro=[2887,-2686,1207] Temp=30
+IMU16G(ID=0) Timestamp=1080919 Accel=[0,0,1] Gyro=[-1811,8951,1032] Temp=28
+BARO11(ID=1) Timestamp=1081013 Pressure=90768 Temp=27.86
+IMU32G(ID=1) Timestamp=1081136 Accel=[0,0,0] Gyro=[1723,1391,1032] Temp=30
+IMU16G(ID=0) Timestamp=1081252 Accel=[0,0,0] Gyro=[1863,455,402] Temp=28
+BARO07(ID=0) Timestamp=1081320 Pressure=91301 Temp=27.54
+BARO11(ID=1) Timestamp=1081322 Pressure=90750 Temp=27.86
+IMU32G(ID=1) Timestamp=1081479 Accel=[0,0,0] Gyro=[1216,1076,708] Temp=30
+IMU16G(ID=0) Timestamp=1081585 Accel=[0,0,0] Gyro=[1575,3246,245] Temp=28
+BARO07(ID=0) Timestamp=1081661 Pressure=91311 Temp=27.54
+BARO11(ID=1) Timestamp=1081663 Pressure=90742 Temp=27.85
+IMU32G(ID=1) Timestamp=1081822 Accel=[0,0,0] Gyro=[-5171,1811,-1067] Temp=30
+IMU16G(ID=0) Timestamp=1081918 Accel=[0,0,0] Gyro=[2826,1312,-796] Temp=28
+BARO07(ID=0) Timestamp=1082002 Pressure=91332 Temp=27.54
+BARO11(ID=1) Timestamp=1082004 Pressure=90767 Temp=27.87
+IMU32G(ID=1) Timestamp=1082165 Accel=[0,0,0] Gyro=[1592,-201,-735] Temp=30
+IMU16G(ID=0) Timestamp=1082251 Accel=[0,0,0] Gyro=[-647,2598,1006] Temp=28
+BARO07(ID=0) Timestamp=1082343 Pressure=91323 Temp=27.55
+BARO11(ID=1) Timestamp=1082345 Pressure=90756 Temp=27.86
+IMU32G(ID=1) Timestamp=1082508 Accel=[0,0,0] Gyro=[1067,1225,971] Temp=30
+IMU16G(ID=0) Timestamp=1082584 Accel=[0,0,0] Gyro=[2283,288,533] Temp=28
+BARO07(ID=0) Timestamp=1082684 Pressure=91312 Temp=27.55
+BARO11(ID=1) Timestamp=1082686 Pressure=90757 Temp=27.86
+IMU32G(ID=1) Timestamp=1082851 Accel=[0,0,0] Gyro=[1907,-61,2012] Temp=30
+IMU16G(ID=0) Timestamp=1082917 Accel=[0,0,0] Gyro=[5040,1548,1128] Temp=28
+BARO07(ID=0) Timestamp=1083025 Pressure=91297 Temp=27.55
+BARO11(ID=1) Timestamp=1083027 Pressure=90747 Temp=27.86
+IMU16G(ID=0) Timestamp=1083250 Accel=[0,0,0] Gyro=[-201,2423,1251] Temp=28
+BARO07(ID=0) Timestamp=1083366 Pressure=91324 Temp=27.55
+BARO11(ID=1) Timestamp=1083368 Pressure=90758 Temp=27.85
+IMU32G(ID=1) Timestamp=1083537 Accel=[0,0,0] Gyro=[-1583,341,-568] Temp=30
+IMU16G(ID=0) Timestamp=1083583 Accel=[0,0,0] Gyro=[2248,-2196,-70] Temp=28
+BARO07(ID=0) Timestamp=1083707 Pressure=91317 Temp=27.55
+BARO11(ID=1) Timestamp=1083709 Pressure=90749 Temp=27.85
+IMU32G(ID=1) Timestamp=1083880 Accel=[0,0,0] Gyro=[-1653,2257,717] Temp=30
+IMU16G(ID=0) Timestamp=1083916 Accel=[0,0,0] Gyro=[9432,-3053,0] Temp=28
+BARO07(ID=0) Timestamp=1084048 Pressure=91308 Temp=27.55
+BARO11(ID=1) Timestamp=1084050 Pressure=90746 Temp=27.85
+IMU32G(ID=1) Timestamp=1084223 Accel=[0,0,0] Gyro=[3290,-5950,1671] Temp=30
+IMU16G(ID=0) Timestamp=1084249 Accel=[0,0,0] Gyro=[6457,-4532,-980] Temp=28
+BARO07(ID=0) Timestamp=1084389 Pressure=91313 Temp=27.55
+BARO11(ID=1) Timestamp=1084391 Pressure=90778 Temp=27.85
+IMU32G(ID=1) Timestamp=1084566 Accel=[0,0,1] Gyro=[-2651,-936,-183] Temp=30
+IMU16G(ID=0) Timestamp=1084582 Accel=[0,0,0] Gyro=[8,805,-61] Temp=28
+BARO07(ID=0) Timestamp=1084730 Pressure=91330 Temp=27.56
+BARO11(ID=1) Timestamp=1084732 Pressure=90747 Temp=27.86
+IMU32G(ID=1) Timestamp=1084909 Accel=[0,0,0] Gyro=[-4025,4812,-1347] Temp=30
+IMU16G(ID=0) Timestamp=1084915 Accel=[0,0,0] Gyro=[-1767,4051,1715] Temp=28
+BARO07(ID=0) Timestamp=1085071 Pressure=91318 Temp=27.55
+BARO11(ID=1) Timestamp=1085073 Pressure=90744 Temp=27.86
+IMU16G(ID=0) Timestamp=1085248 Accel=[0,0,0] Gyro=[-157,2047,280] Temp=28
+IMU32G(ID=1) Timestamp=1085252 Accel=[0,0,0] Gyro=[2957,-962,1050] Temp=30
+BARO11(ID=1) Timestamp=1085440 Pressure=90744 Temp=27.86
+IMU16G(ID=0) Timestamp=1085581 Accel=[0,0,0] Gyro=[2458,166,-131] Temp=28
+IMU32G(ID=1) Timestamp=1085595 Accel=[0,0,0] Gyro=[857,-612,-17] Temp=30
+BARO07(ID=0) Timestamp=1085753 Pressure=91330 Temp=27.56
+BARO11(ID=1) Timestamp=1085755 Pressure=90753 Temp=27.86
+IMU16G(ID=0) Timestamp=1085914 Accel=[0,0,0] Gyro=[-1295,997,1365] Temp=28
+IMU32G(ID=1) Timestamp=1085938 Accel=[0,0,0] Gyro=[-551,227,848] Temp=30
+BARO07(ID=0) Timestamp=1086094 Pressure=91331 Temp=27.57
+BARO11(ID=1) Timestamp=1086096 Pressure=90751 Temp=27.86
+IMU16G(ID=0) Timestamp=1086247 Accel=[0,0,1] Gyro=[148,5048,910] Temp=28
+IMU32G(ID=1) Timestamp=1086281 Accel=[0,0,1] Gyro=[-3727,-4042,2143] Temp=30
+BARO07(ID=0) Timestamp=1086435 Pressure=91319 Temp=27.56
+BARO11(ID=1) Timestamp=1086437 Pressure=90745 Temp=27.87
+IMU16G(ID=0) Timestamp=1086580 Accel=[0,0,0] Gyro=[-813,-4567,822] Temp=28
+IMU32G(ID=1) Timestamp=1086624 Accel=[0,0,0] Gyro=[1960,-1758,682] Temp=30
+BARO07(ID=0) Timestamp=1086776 Pressure=91330 Temp=27.56
+BARO11(ID=1) Timestamp=1086778 Pressure=90734 Temp=27.87
+IMU16G(ID=0) Timestamp=1086913 Accel=[0,0,0] Gyro=[918,-1986,682] Temp=28
+IMU32G(ID=1) Timestamp=1086967 Accel=[0,0,0] Gyro=[1391,927,787] Temp=30
+BARO07(ID=0) Timestamp=1087117 Pressure=91320 Temp=27.56
+BARO11(ID=1) Timestamp=1087119 Pressure=90734 Temp=27.87
+IMU16G(ID=0) Timestamp=1087246 Accel=[0,0,0] Gyro=[-3018,7122,1120] Temp=28
+IMU32G(ID=1) Timestamp=1087310 Accel=[0,0,0] Gyro=[105,4523,358] Temp=30
+BARO07(ID=0) Timestamp=1087458 Pressure=91331 Temp=27.57
+BARO11(ID=1) Timestamp=1087460 Pressure=90737 Temp=27.87
+IMU32G(ID=1) Timestamp=1087653 Accel=[0,0,0] Gyro=[2878,3657,1548] Temp=30
+BARO07(ID=0) Timestamp=1087799 Pressure=91309 Temp=27.56
+BARO11(ID=1) Timestamp=1087801 Pressure=90746 Temp=27.87
+IMU16G(ID=0) Timestamp=1087912 Accel=[0,0,0] Gyro=[-1636,-2546,770] Temp=28
+IMU32G(ID=1) Timestamp=1087996 Accel=[0,0,0] Gyro=[-210,638,638] Temp=30
+BARO07(ID=0) Timestamp=1088140 Pressure=91325 Temp=27.56
+BARO11(ID=1) Timestamp=1088142 Pressure=90729 Temp=27.87
+IMU16G(ID=0) Timestamp=1088245 Accel=[0,0,0] Gyro=[-2030,1330,1128] Temp=28
+IMU32G(ID=1) Timestamp=1088339 Accel=[0,0,0] Gyro=[402,1820,481] Temp=30
+BARO07(ID=0) Timestamp=1088481 Pressure=91305 Temp=27.57
+BARO11(ID=1) Timestamp=1088483 Pressure=90732 Temp=27.87
+IMU16G(ID=0) Timestamp=1088578 Accel=[0,0,0] Gyro=[2353,-1233,-568] Temp=28
+IMU32G(ID=1) Timestamp=1088682 Accel=[0,0,0] Gyro=[1050,367,551] Temp=30
+BARO07(ID=0) Timestamp=1088822 Pressure=91305 Temp=27.57
+BARO11(ID=1) Timestamp=1088824 Pressure=90747 Temp=27.87
+IMU16G(ID=0) Timestamp=1088911 Accel=[0,0,0] Gyro=[1225,2528,577] Temp=28
+IMU32G(ID=1) Timestamp=1089025 Accel=[0,0,0] Gyro=[892,1190,682] Temp=30
+BARO07(ID=0) Timestamp=1089163 Pressure=91299 Temp=27.56
+BARO11(ID=1) Timestamp=1089165 Pressure=90742 Temp=27.88
+IMU16G(ID=0) Timestamp=1089244 Accel=[0,0,1] Gyro=[-113,4147,1732] Temp=28
+IMU32G(ID=1) Timestamp=1089368 Accel=[0,0,0] Gyro=[-691,-455,131] Temp=30
+BARO07(ID=0) Timestamp=1089504 Pressure=91305 Temp=27.57
+BARO11(ID=1) Timestamp=1089506 Pressure=90724 Temp=27.88
+IMU16G(ID=0) Timestamp=1089577 Accel=[0,0,0] Gyro=[778,148,113] Temp=28
+IMU32G(ID=1) Timestamp=1089711 Accel=[0,0,0] Gyro=[-4051,-7271,3972] Temp=30
+BARO11(ID=1) Timestamp=1089873 Pressure=90720 Temp=27.87
+IMU16G(ID=0) Timestamp=1089910 Accel=[0,0,0] Gyro=[-1820,1601,1566] Temp=28
+IMU32G(ID=1) Timestamp=1090054 Accel=[0,0,0] Gyro=[-4068,-1785,-831] Temp=30
+BARO07(ID=0) Timestamp=1090186 Pressure=91305 Temp=27.57
+BARO11(ID=1) Timestamp=1090188 Pressure=90736 Temp=27.88
+IMU16G(ID=0) Timestamp=1090243 Accel=[0,0,0] Gyro=[-2248,551,1015] Temp=28
+IMU32G(ID=1) Timestamp=1090397 Accel=[0,0,0] Gyro=[-962,350,-227] Temp=30
+BARO07(ID=0) Timestamp=1090527 Pressure=91294 Temp=27.57
+BARO11(ID=1) Timestamp=1090529 Pressure=90725 Temp=27.87
+IMU16G(ID=0) Timestamp=1090576 Accel=[0,0,0] Gyro=[-568,-3263,358] Temp=28
+IMU32G(ID=1) Timestamp=1090740 Accel=[0,0,1] Gyro=[-2415,-1356,-1163] Temp=30
+BARO07(ID=0) Timestamp=1090868 Pressure=91300 Temp=27.57
+BARO11(ID=1) Timestamp=1090870 Pressure=90727 Temp=27.87
+IMU16G(ID=0) Timestamp=1090909 Accel=[0,0,0] Gyro=[-1496,2520,1382] Temp=28
+IMU32G(ID=1) Timestamp=1091083 Accel=[0,0,0] Gyro=[997,1050,673] Temp=30
+BARO07(ID=0) Timestamp=1091209 Pressure=91284 Temp=27.57
+BARO11(ID=1) Timestamp=1091211 Pressure=90713 Temp=27.87
+IMU16G(ID=0) Timestamp=1091242 Accel=[0,0,0] Gyro=[1697,5118,236] Temp=28
+IMU32G(ID=1) Timestamp=1091426 Accel=[0,0,0] Gyro=[2695,3605,-656] Temp=30
+BARO07(ID=0) Timestamp=1091550 Pressure=91279 Temp=27.57
+BARO11(ID=1) Timestamp=1091552 Pressure=90711 Temp=27.87
+IMU16G(ID=0) Timestamp=1091575 Accel=[0,0,0] Gyro=[-2108,-498,533] Temp=28
+IMU32G(ID=1) Timestamp=1091769 Accel=[0,0,0] Gyro=[-2931,3272,-988] Temp=30
+BARO07(ID=0) Timestamp=1091891 Pressure=91268 Temp=27.57
+BARO11(ID=1) Timestamp=1091893 Pressure=90703 Temp=27.87
+IMU32G(ID=1) Timestamp=1092112 Accel=[0,0,0] Gyro=[4287,2441,1338] Temp=30
+BARO07(ID=0) Timestamp=1092232 Pressure=91262 Temp=27.56
+BARO11(ID=1) Timestamp=1092234 Pressure=90716 Temp=27.87
+IMU16G(ID=0) Timestamp=1092241 Accel=[0,0,0] Gyro=[2511,-5976,87] Temp=28
+IMU32G(ID=1) Timestamp=1092455 Accel=[0,0,0] Gyro=[-17,-2817,490] Temp=30
+BARO07(ID=0) Timestamp=1092573 Pressure=91263 Temp=27.57
+IMU16G(ID=0) Timestamp=1092574 Accel=[0,0,0] Gyro=[507,-402,113] Temp=28
+BARO11(ID=1) Timestamp=1092575 Pressure=90719 Temp=27.87
+IMU32G(ID=1) Timestamp=1092798 Accel=[0,0,1] Gyro=[236,2178,-953] Temp=30
+IMU16G(ID=0) Timestamp=1092907 Accel=[0,0,0] Gyro=[2240,-1233,306] Temp=28
+BARO07(ID=0) Timestamp=1092914 Pressure=91268 Temp=27.57
+BARO11(ID=1) Timestamp=1092916 Pressure=90728 Temp=27.87
+IMU32G(ID=1) Timestamp=1093141 Accel=[0,0,0] Gyro=[1233,-1181,280] Temp=30
+IMU16G(ID=0) Timestamp=1093240 Accel=[0,0,0] Gyro=[883,-796,1181] Temp=28
+BARO07(ID=0) Timestamp=1093255 Pressure=91289 Temp=27.57
+BARO11(ID=1) Timestamp=1093257 Pressure=90723 Temp=27.87
+IMU32G(ID=1) Timestamp=1093484 Accel=[0,0,0] Gyro=[770,2738,262] Temp=30
+IMU16G(ID=0) Timestamp=1093573 Accel=[0,0,0] Gyro=[743,-2441,17] Temp=28
+BARO07(ID=0) Timestamp=1093596 Pressure=91294 Temp=27.57
+BARO11(ID=1) Timestamp=1093598 Pressure=90725 Temp=27.87
+IMU32G(ID=1) Timestamp=1093827 Accel=[0,0,0] Gyro=[1023,253,1916] Temp=30
+IMU16G(ID=0) Timestamp=1093906 Accel=[0,0,0] Gyro=[4550,-2581,-787] Temp=28
+BARO07(ID=0) Timestamp=1093937 Pressure=91309 Temp=27.56
+BARO11(ID=1) Timestamp=1093939 Pressure=90729 Temp=27.87
+IMU32G(ID=1) Timestamp=1094170 Accel=[0,0,1] Gyro=[2406,-568,1006] Temp=30
+
+--- Dump Complete ---
+---- Sector Complete ----
+BARO07(ID=0) Timestamp=1094287 Pressure=91306 Temp=27.57
+BARO11(ID=1) Timestamp=1094293 Pressure=90719 Temp=27.87
+IMU32G(ID=1) Timestamp=1094513 Accel=[0,0,0] Gyro=[3062,490,1286] Temp=30
+IMU16G(ID=0) Timestamp=1094572 Accel=[0,0,0] Gyro=[-1111,2546,630] Temp=28
+BARO07(ID=0) Timestamp=1094619 Pressure=91315 Temp=27.57
+BARO11(ID=1) Timestamp=1094626 Pressure=90727 Temp=27.88
+IMU32G(ID=1) Timestamp=1094856 Accel=[0,0,0] Gyro=[1233,2485,1076] Temp=30
+IMU16G(ID=0) Timestamp=1094905 Accel=[0,0,0] Gyro=[-17,1050,341] Temp=28
+BARO07(ID=0) Timestamp=1094960 Pressure=91312 Temp=27.57
+BARO11(ID=1) Timestamp=1094967 Pressure=90713 Temp=27.87
+IMU32G(ID=1) Timestamp=1095199 Accel=[0,0,0] Gyro=[4243,-1750,630] Temp=30
+IMU16G(ID=0) Timestamp=1095238 Accel=[0,0,0] Gyro=[-2607,1855,1006] Temp=28
+BARO07(ID=0) Timestamp=1095301 Pressure=91327 Temp=27.57
+BARO11(ID=1) Timestamp=1095308 Pressure=90721 Temp=27.88
+IMU32G(ID=1) Timestamp=1095542 Accel=[0,0,0] Gyro=[437,-122,516] Temp=30
+IMU16G(ID=0) Timestamp=1095571 Accel=[0,0,0] Gyro=[70,-1750,70] Temp=28
+BARO07(ID=0) Timestamp=1095642 Pressure=91338 Temp=27.57
+BARO11(ID=1) Timestamp=1095649 Pressure=90727 Temp=27.88
+IMU32G(ID=1) Timestamp=1095885 Accel=[0,0,0] Gyro=[-2135,2703,-113] Temp=30
+IMU16G(ID=0) Timestamp=1095904 Accel=[0,0,0] Gyro=[253,1041,288] Temp=28
+BARO07(ID=0) Timestamp=1095983 Pressure=91324 Temp=27.58
+BARO11(ID=1) Timestamp=1095990 Pressure=90727 Temp=27.88
+IMU32G(ID=1) Timestamp=1096228 Accel=[0,0,0] Gyro=[3342,-918,1015] Temp=30
+IMU16G(ID=0) Timestamp=1096237 Accel=[0,0,1] Gyro=[-35,-17,568] Temp=28
+BARO07(ID=0) Timestamp=1096324 Pressure=91328 Temp=27.58
+IMU16G(ID=0) Timestamp=1096570 Accel=[0,0,0] Gyro=[105,1216,1111] Temp=28
+IMU32G(ID=1) Timestamp=1096577 Accel=[0,0,0] Gyro=[665,-2388,813] Temp=30
+BARO07(ID=0) Timestamp=1096665 Pressure=91327 Temp=27.57
+BARO11(ID=1) Timestamp=1096672 Pressure=90728 Temp=27.89
+IMU16G(ID=0) Timestamp=1096903 Accel=[0,0,1] Gyro=[-96,-2117,236] Temp=28
+IMU32G(ID=1) Timestamp=1096914 Accel=[0,0,0] Gyro=[2196,-3150,875] Temp=30
+BARO07(ID=0) Timestamp=1097006 Pressure=91318 Temp=27.58
+BARO11(ID=1) Timestamp=1097013 Pressure=90727 Temp=27.88
+IMU16G(ID=0) Timestamp=1097236 Accel=[0,0,1] Gyro=[1548,-840,-262] Temp=28
+IMU32G(ID=1) Timestamp=1097257 Accel=[0,0,0] Gyro=[3220,-1128,1601] Temp=30
+BARO07(ID=0) Timestamp=1097347 Pressure=91308 Temp=27.58
+BARO11(ID=1) Timestamp=1097354 Pressure=90724 Temp=27.88
+IMU16G(ID=0) Timestamp=1097569 Accel=[0,0,0] Gyro=[-1820,-2362,805] Temp=28
+IMU32G(ID=1) Timestamp=1097600 Accel=[0,0,0] Gyro=[1041,1977,1058] Temp=30
+BARO07(ID=0) Timestamp=1097688 Pressure=91298 Temp=27.59
+BARO11(ID=1) Timestamp=1097695 Pressure=90706 Temp=27.88
+IMU16G(ID=0) Timestamp=1097902 Accel=[0,0,0] Gyro=[-1750,953,1093] Temp=28
+IMU32G(ID=1) Timestamp=1097943 Accel=[0,0,0] Gyro=[1321,1548,1198] Temp=30
+BARO07(ID=0) Timestamp=1098029 Pressure=91286 Temp=27.57
+BARO11(ID=1) Timestamp=1098036 Pressure=90722 Temp=27.89
+IMU16G(ID=0) Timestamp=1098235 Accel=[0,0,1] Gyro=[638,-455,420] Temp=28
+IMU32G(ID=1) Timestamp=1098286 Accel=[0,0,0] Gyro=[3220,621,1181] Temp=30
+BARO07(ID=0) Timestamp=1098370 Pressure=91297 Temp=27.58
+BARO11(ID=1) Timestamp=1098377 Pressure=90718 Temp=27.88
+IMU16G(ID=0) Timestamp=1098568 Accel=[0,0,0] Gyro=[892,-1531,857] Temp=28
+BARO07(ID=0) Timestamp=1098711 Pressure=91280 Temp=27.57
+BARO11(ID=1) Timestamp=1098718 Pressure=90724 Temp=27.88
+IMU16G(ID=0) Timestamp=1098901 Accel=[0,0,0] Gyro=[341,-113,446] Temp=28
+IMU32G(ID=1) Timestamp=1098972 Accel=[0,0,0] Gyro=[2738,-17,761] Temp=30
+BARO07(ID=0) Timestamp=1099052 Pressure=91281 Temp=27.58
+BARO11(ID=1) Timestamp=1099054 Pressure=90724 Temp=27.88
+IMU16G(ID=0) Timestamp=1099234 Accel=[0,0,0] Gyro=[3255,1041,306] Temp=28
+IMU32G(ID=1) Timestamp=1099315 Accel=[0,0,1] Gyro=[8,3972,428] Temp=30
+BARO07(ID=0) Timestamp=1099393 Pressure=91281 Temp=27.58
+BARO11(ID=1) Timestamp=1099395 Pressure=90708 Temp=27.88
+IMU16G(ID=0) Timestamp=1099567 Accel=[0,0,0] Gyro=[1216,-446,-245] Temp=28
+IMU32G(ID=1) Timestamp=1099658 Accel=[0,0,0] Gyro=[-1347,4007,507] Temp=30
+BARO07(ID=0) Timestamp=1099734 Pressure=91292 Temp=27.58
+BARO11(ID=1) Timestamp=1099736 Pressure=90716 Temp=27.89
+IMU16G(ID=0) Timestamp=1099900 Accel=[0,0,0] Gyro=[-1146,-1120,568] Temp=28
+IMU32G(ID=1) Timestamp=1100001 Accel=[0,0,0] Gyro=[-122,1890,603] Temp=30
+BARO07(ID=0) Timestamp=1100075 Pressure=91276 Temp=27.58
+BARO11(ID=1) Timestamp=1100077 Pressure=90701 Temp=27.89
+IMU16G(ID=0) Timestamp=1100233 Accel=[0,0,0] Gyro=[1487,945,-96] Temp=28
+IMU32G(ID=1) Timestamp=1100344 Accel=[0,0,0] Gyro=[682,-4243,980] Temp=30
+BARO07(ID=0) Timestamp=1100416 Pressure=91286 Temp=27.58
+BARO11(ID=1) Timestamp=1100418 Pressure=90713 Temp=27.89
+IMU16G(ID=0) Timestamp=1100566 Accel=[0,0,0] Gyro=[-455,-2896,218] Temp=28
+IMU32G(ID=1) Timestamp=1100687 Accel=[0,0,0] Gyro=[-2913,717,78] Temp=30
+BARO07(ID=0) Timestamp=1100757 Pressure=91297 Temp=27.58
+IMU16G(ID=0) Timestamp=1100899 Accel=[0,0,0] Gyro=[1102,2056,140] Temp=28
+IMU32G(ID=1) Timestamp=1101030 Accel=[0,0,0] Gyro=[183,-463,490] Temp=30
+BARO07(ID=0) Timestamp=1101098 Pressure=91324 Temp=27.58
+BARO11(ID=1) Timestamp=1101100 Pressure=90731 Temp=27.89
+IMU16G(ID=0) Timestamp=1101232 Accel=[0,0,0] Gyro=[910,218,-17] Temp=28
+IMU32G(ID=1) Timestamp=1101373 Accel=[0,0,0] Gyro=[735,-1181,-498] Temp=30
+BARO07(ID=0) Timestamp=1101439 Pressure=91304 Temp=27.59
+BARO11(ID=1) Timestamp=1101441 Pressure=90713 Temp=27.89
+IMU16G(ID=0) Timestamp=1101565 Accel=[0,0,1] Gyro=[-1872,341,1128] Temp=28
+IMU32G(ID=1) Timestamp=1101716 Accel=[0,0,0] Gyro=[2030,-1671,1741] Temp=30
+BARO07(ID=0) Timestamp=1101780 Pressure=91314 Temp=27.59
+BARO11(ID=1) Timestamp=1101782 Pressure=90723 Temp=27.89
+IMU16G(ID=0) Timestamp=1101898 Accel=[0,0,0] Gyro=[498,1960,148] Temp=28
+IMU32G(ID=1) Timestamp=1102059 Accel=[0,0,0] Gyro=[-778,840,-463] Temp=30
+BARO07(ID=0) Timestamp=1102121 Pressure=91313 Temp=27.58
+BARO11(ID=1) Timestamp=1102123 Pressure=90708 Temp=27.89
+IMU16G(ID=0) Timestamp=1102231 Accel=[0,0,1] Gyro=[726,3675,-288] Temp=28
+IMU32G(ID=1) Timestamp=1102402 Accel=[0,0,0] Gyro=[2380,-2450,743] Temp=30
+BARO07(ID=0) Timestamp=1102462 Pressure=91298 Temp=27.59
+BARO11(ID=1) Timestamp=1102464 Pressure=90708 Temp=27.89
+IMU16G(ID=0) Timestamp=1102564 Accel=[0,0,0] Gyro=[848,1767,1041] Temp=28
+IMU32G(ID=1) Timestamp=1102745 Accel=[0,0,0] Gyro=[4200,1032,2012] Temp=30
+BARO07(ID=0) Timestamp=1102803 Pressure=91297 Temp=27.58
+BARO11(ID=1) Timestamp=1102805 Pressure=90698 Temp=27.89
+IMU16G(ID=0) Timestamp=1102897 Accel=[0,0,0] Gyro=[-183,1505,-1303] Temp=28
+BARO07(ID=0) Timestamp=1103144 Pressure=91289 Temp=27.59
+BARO11(ID=1) Timestamp=1103146 Pressure=90701 Temp=27.89
+IMU16G(ID=0) Timestamp=1103230 Accel=[0,0,0] Gyro=[-691,-1566,735] Temp=28
+IMU32G(ID=1) Timestamp=1103431 Accel=[0,0,0] Gyro=[2213,2292,1277] Temp=30
+BARO07(ID=0) Timestamp=1103485 Pressure=91262 Temp=27.59
+BARO11(ID=1) Timestamp=1103487 Pressure=90682 Temp=27.88
+IMU16G(ID=0) Timestamp=1103563 Accel=[0,0,0] Gyro=[3193,-1023,-1531] Temp=28
+IMU32G(ID=1) Timestamp=1103774 Accel=[0,0,1] Gyro=[437,-4821,61] Temp=30
+BARO07(ID=0) Timestamp=1103826 Pressure=91256 Temp=27.58
+BARO11(ID=1) Timestamp=1103828 Pressure=90689 Temp=27.89
+IMU16G(ID=0) Timestamp=1103896 Accel=[0,0,0] Gyro=[822,210,-1321] Temp=28
+IMU32G(ID=1) Timestamp=1104117 Accel=[0,0,0] Gyro=[2292,-2065,420] Temp=30
+BARO07(ID=0) Timestamp=1104167 Pressure=91262 Temp=27.59
+BARO11(ID=1) Timestamp=1104169 Pressure=90680 Temp=27.89
+IMU16G(ID=0) Timestamp=1104229 Accel=[0,0,0] Gyro=[262,2590,-35] Temp=28
+IMU32G(ID=1) Timestamp=1104460 Accel=[0,0,1] Gyro=[52,1776,-262] Temp=30
+BARO07(ID=0) Timestamp=1104508 Pressure=91272 Temp=27.59
+BARO11(ID=1) Timestamp=1104510 Pressure=90683 Temp=27.89
+IMU16G(ID=0) Timestamp=1104562 Accel=[0,0,0] Gyro=[-2126,183,1085] Temp=28
+IMU32G(ID=1) Timestamp=1104803 Accel=[0,0,1] Gyro=[1487,-4252,603] Temp=30
+BARO07(ID=0) Timestamp=1104849 Pressure=91250 Temp=27.58
+BARO11(ID=1) Timestamp=1104851 Pressure=90679 Temp=27.88
+IMU16G(ID=0) Timestamp=1104895 Accel=[0,0,0] Gyro=[-2415,1303,1295] Temp=28
+IMU32G(ID=1) Timestamp=1105146 Accel=[0,0,0] Gyro=[-455,778,227] Temp=30
+BARO07(ID=0) Timestamp=1105190 Pressure=91256 Temp=27.58
+IMU16G(ID=0) Timestamp=1105228 Accel=[0,0,0] Gyro=[2231,778,-1470] Temp=28
+IMU32G(ID=1) Timestamp=1105489 Accel=[0,0,0] Gyro=[-3062,962,-770] Temp=30
+BARO07(ID=0) Timestamp=1105531 Pressure=91209 Temp=27.59
+BARO11(ID=1) Timestamp=1105533 Pressure=90665 Temp=27.87
+IMU16G(ID=0) Timestamp=1105561 Accel=[0,0,0] Gyro=[-1697,122,936] Temp=28
+IMU32G(ID=1) Timestamp=1105832 Accel=[0,0,0] Gyro=[-1198,1233,717] Temp=30
+BARO07(ID=0) Timestamp=1105872 Pressure=91213 Temp=27.58
+BARO11(ID=1) Timestamp=1105874 Pressure=90668 Temp=27.87
+IMU16G(ID=0) Timestamp=1105894 Accel=[0,0,0] Gyro=[-4138,901,918] Temp=28
+IMU32G(ID=1) Timestamp=1106175 Accel=[0,0,0] Gyro=[-5477,6842,341] Temp=30
+BARO07(ID=0) Timestamp=1106213 Pressure=91239 Temp=27.58
+BARO11(ID=1) Timestamp=1106215 Pressure=90680 Temp=27.87
+IMU16G(ID=0) Timestamp=1106227 Accel=[0,0,0] Gyro=[866,393,-245] Temp=28
+IMU32G(ID=1) Timestamp=1106518 Accel=[0,0,0] Gyro=[8688,-2835,-227] Temp=30
+BARO07(ID=0) Timestamp=1106554 Pressure=91246 Temp=27.59
+BARO11(ID=1) Timestamp=1106556 Pressure=90677 Temp=27.87
+IMU16G(ID=0) Timestamp=1106560 Accel=[0,0,0] Gyro=[-7446,4112,2248] Temp=28
+IMU32G(ID=1) Timestamp=1106861 Accel=[0,0,0] Gyro=[-3465,577,-1050] Temp=30
+IMU16G(ID=0) Timestamp=1106894 Accel=[0,0,1] Gyro=[2493,-980,1137] Temp=28
+BARO07(ID=0) Timestamp=1106895 Pressure=91277 Temp=27.58
+BARO11(ID=1) Timestamp=1106897 Pressure=90664 Temp=27.88
+IMU32G(ID=1) Timestamp=1107204 Accel=[0,0,0] Gyro=[3605,-1076,-1111] Temp=30
+IMU16G(ID=0) Timestamp=1107226 Accel=[0,0,0] Gyro=[-3946,2598,-7306] Temp=28
+BARO07(ID=0) Timestamp=1107236 Pressure=91235 Temp=27.58
+BARO11(ID=1) Timestamp=1107238 Pressure=90675 Temp=27.88
+IMU16G(ID=0) Timestamp=1107578 Accel=[0,0,0] Gyro=[-5993,6623,2196] Temp=28
+BARO07(ID=0) Timestamp=1107579 Pressure=91272 Temp=27.59
+BARO11(ID=1) Timestamp=1107580 Pressure=90676 Temp=27.88
+IMU32G(ID=1) Timestamp=1107890 Accel=[0,0,0] Gyro=[-43,-1592,1522] Temp=30
+IMU16G(ID=0) Timestamp=1107892 Accel=[0,0,1] Gyro=[-910,3928,1601] Temp=28
+BARO07(ID=0) Timestamp=1107918 Pressure=91287 Temp=27.58
+BARO11(ID=1) Timestamp=1107920 Pressure=90673 Temp=27.88
+IMU16G(ID=0) Timestamp=1108225 Accel=[0,0,0] Gyro=[6107,1417,-227] Temp=28
+IMU32G(ID=1) Timestamp=1108233 Accel=[0,0,0] Gyro=[-5250,-1907,3316] Temp=30
+BARO07(ID=0) Timestamp=1108259 Pressure=91271 Temp=27.58
+BARO11(ID=1) Timestamp=1108261 Pressure=90663 Temp=27.88
+IMU16G(ID=0) Timestamp=1108558 Accel=[0,0,0] Gyro=[-4935,-752,2100] Temp=28
+IMU32G(ID=1) Timestamp=1108576 Accel=[0,0,0] Gyro=[603,-6501,1321] Temp=30
+BARO07(ID=0) Timestamp=1108600 Pressure=91267 Temp=27.59
+BARO11(ID=1) Timestamp=1108602 Pressure=90663 Temp=27.88
+IMU16G(ID=0) Timestamp=1108891 Accel=[0,0,0] Gyro=[52,-96,253] Temp=28
+IMU32G(ID=1) Timestamp=1108919 Accel=[0,0,0] Gyro=[-1785,883,-17] Temp=30
+BARO07(ID=0) Timestamp=1108941 Pressure=91262 Temp=27.59
+BARO11(ID=1) Timestamp=1108943 Pressure=90655 Temp=27.88
+IMU16G(ID=0) Timestamp=1109224 Accel=[0,0,0] Gyro=[-2642,3535,2091] Temp=28
+IMU32G(ID=1) Timestamp=1109262 Accel=[0,0,0] Gyro=[1417,-1601,1015] Temp=30
+BARO07(ID=0) Timestamp=1109282 Pressure=91225 Temp=27.59
+BARO11(ID=1) Timestamp=1109284 Pressure=90666 Temp=27.88
+IMU16G(ID=0) Timestamp=1109557 Accel=[0,0,0] Gyro=[140,2502,1750] Temp=28
+IMU32G(ID=1) Timestamp=1109605 Accel=[0,0,0] Gyro=[-586,1715,1172] Temp=30
+BARO11(ID=1) Timestamp=1109652 Pressure=90668 Temp=27.87
+IMU16G(ID=0) Timestamp=1109890 Accel=[0,0,0] Gyro=[3176,-4637,-297] Temp=28
+IMU32G(ID=1) Timestamp=1109948 Accel=[0,0,0] Gyro=[4060,-3526,2161] Temp=30
+BARO07(ID=0) Timestamp=1109964 Pressure=91214 Temp=27.58
+BARO11(ID=1) Timestamp=1109966 Pressure=90675 Temp=27.88
+IMU16G(ID=0) Timestamp=1110223 Accel=[0,0,0] Gyro=[332,1443,-52] Temp=28
+IMU32G(ID=1) Timestamp=1110291 Accel=[0,0,0] Gyro=[1303,-446,70] Temp=30
+BARO07(ID=0) Timestamp=1110305 Pressure=91214 Temp=27.58
+BARO11(ID=1) Timestamp=1110307 Pressure=90671 Temp=27.87
+IMU16G(ID=0) Timestamp=1110556 Accel=[0,0,0] Gyro=[-1601,3675,1111] Temp=28
+IMU32G(ID=1) Timestamp=1110634 Accel=[0,0,0] Gyro=[-2712,148,70] Temp=30
+BARO07(ID=0) Timestamp=1110646 Pressure=91209 Temp=27.58
+BARO11(ID=1) Timestamp=1110648 Pressure=90666 Temp=27.88
+IMU16G(ID=0) Timestamp=1110889 Accel=[0,0,0] Gyro=[-5005,-1312,2432] Temp=28
+IMU32G(ID=1) Timestamp=1110977 Accel=[0,0,0] Gyro=[2205,-796,770] Temp=30
+BARO07(ID=0) Timestamp=1110988 Pressure=91213 Temp=27.58
+BARO11(ID=1) Timestamp=1110989 Pressure=90666 Temp=27.88
+IMU16G(ID=0) Timestamp=1111222 Accel=[0,0,1] Gyro=[9467,-1793,-542] Temp=28
+IMU32G(ID=1) Timestamp=1111320 Accel=[0,0,0] Gyro=[288,-2257,-332] Temp=30
+BARO07(ID=0) Timestamp=1111328 Pressure=91246 Temp=27.59
+BARO11(ID=1) Timestamp=1111331 Pressure=90680 Temp=27.87
+IMU16G(ID=0) Timestamp=1111555 Accel=[0,0,0] Gyro=[3876,-6676,-1330] Temp=28
+IMU32G(ID=1) Timestamp=1111663 Accel=[0,0,1] Gyro=[-2126,-5381,-385] Temp=30
+BARO07(ID=0) Timestamp=1111669 Pressure=91250 Temp=27.58
+BARO11(ID=1) Timestamp=1111671 Pressure=90668 Temp=27.87
+
+--- Dump Complete ---
+---- Sector Complete ----
+IMU32G(ID=1) Timestamp=1112006 Accel=[0,0,1] Gyro=[-2992,1478,-481] Temp=30
+BARO07(ID=0) Timestamp=1112013 Pressure=91272 Temp=27.59
+BARO11(ID=1) Timestamp=1112019 Pressure=90676 Temp=27.88
+IMU16G(ID=0) Timestamp=1112221 Accel=[0,0,1] Gyro=[3045,-3377,-901] Temp=28
+IMU32G(ID=1) Timestamp=1112349 Accel=[0,0,0] Gyro=[2485,-2835,910] Temp=30
+BARO07(ID=0) Timestamp=1112356 Pressure=91236 Temp=27.59
+BARO11(ID=1) Timestamp=1112362 Pressure=90673 Temp=27.88
+IMU16G(ID=0) Timestamp=1112554 Accel=[0,0,0] Gyro=[1828,-3797,-1067] Temp=28
+IMU32G(ID=1) Timestamp=1112692 Accel=[0,0,0] Gyro=[5337,-5048,813] Temp=30
+BARO07(ID=0) Timestamp=1112699 Pressure=91246 Temp=27.59
+BARO11(ID=1) Timestamp=1112705 Pressure=90660 Temp=27.88
+IMU16G(ID=0) Timestamp=1112887 Accel=[0,0,1] Gyro=[691,700,1102] Temp=28
+BARO07(ID=0) Timestamp=1113033 Pressure=91230 Temp=27.58
+IMU32G(ID=1) Timestamp=1113040 Accel=[0,0,0] Gyro=[1023,87,367] Temp=30
+BARO11(ID=1) Timestamp=1113046 Pressure=90651 Temp=27.88
+IMU16G(ID=0) Timestamp=1113220 Accel=[0,0,1] Gyro=[1925,822,280] Temp=28
+BARO07(ID=0) Timestamp=1113374 Pressure=91225 Temp=27.59
+BARO11(ID=1) Timestamp=1113381 Pressure=90650 Temp=27.89
+IMU32G(ID=1) Timestamp=1113387 Accel=[0,0,0] Gyro=[-3018,1592,-971] Temp=30
+IMU16G(ID=0) Timestamp=1113553 Accel=[0,0,1] Gyro=[1592,393,350] Temp=28
+BARO07(ID=0) Timestamp=1113715 Pressure=91230 Temp=27.59
+BARO11(ID=1) Timestamp=1113722 Pressure=90658 Temp=27.88
+IMU32G(ID=1) Timestamp=1113728 Accel=[0,0,0] Gyro=[7280,-4051,1242] Temp=30
+IMU16G(ID=0) Timestamp=1113886 Accel=[0,0,0] Gyro=[1776,8,-17] Temp=28
+BARO07(ID=0) Timestamp=1114056 Pressure=91256 Temp=27.59
+IMU32G(ID=1) Timestamp=1114123 Accel=[0,0,0] Gyro=[-9196,-8723,2196] Temp=30
+IMU16G(ID=0) Timestamp=1114219 Accel=[0,0,0] Gyro=[5696,-1032,-411] Temp=28
+BARO07(ID=0) Timestamp=1114397 Pressure=91251 Temp=27.59
+BARO11(ID=1) Timestamp=1114404 Pressure=90650 Temp=27.89
+IMU32G(ID=1) Timestamp=1114410 Accel=[0,0,0] Gyro=[-2555,1085,1225] Temp=30
+IMU16G(ID=0) Timestamp=1114552 Accel=[0,0,1] Gyro=[4427,218,-1855] Temp=28
+BARO07(ID=0) Timestamp=1114738 Pressure=91253 Temp=27.60
+BARO11(ID=1) Timestamp=1114745 Pressure=90648 Temp=27.89
+IMU32G(ID=1) Timestamp=1114751 Accel=[0,0,0] Gyro=[140,-953,315] Temp=30
+IMU16G(ID=0) Timestamp=1114885 Accel=[0,0,0] Gyro=[-3211,3071,1470] Temp=28
+BARO07(ID=0) Timestamp=1115079 Pressure=91242 Temp=27.59
+BARO11(ID=1) Timestamp=1115086 Pressure=90653 Temp=27.89
+IMU32G(ID=1) Timestamp=1115093 Accel=[0,0,0] Gyro=[568,1023,-350] Temp=30
+IMU16G(ID=0) Timestamp=1115218 Accel=[0,0,1] Gyro=[-183,1321,-61] Temp=28
+BARO07(ID=0) Timestamp=1115420 Pressure=91221 Temp=27.60
+BARO11(ID=1) Timestamp=1115427 Pressure=90659 Temp=27.89
+IMU32G(ID=1) Timestamp=1115436 Accel=[0,0,0] Gyro=[-6448,6860,-603] Temp=30
+IMU16G(ID=0) Timestamp=1115551 Accel=[0,0,0] Gyro=[-1531,-1268,1198] Temp=28
+BARO07(ID=0) Timestamp=1115761 Pressure=91152 Temp=27.59
+BARO11(ID=1) Timestamp=1115768 Pressure=90641 Temp=27.87
+IMU32G(ID=1) Timestamp=1115779 Accel=[0,0,0] Gyro=[2406,-18348,-9056] Temp=30
+IMU16G(ID=0) Timestamp=1115884 Accel=[0,0,0] Gyro=[-8890,4410,7726] Temp=28
+BARO07(ID=0) Timestamp=1116102 Pressure=91151 Temp=27.58
+BARO11(ID=1) Timestamp=1116109 Pressure=90638 Temp=27.87
+IMU32G(ID=1) Timestamp=1116122 Accel=[0,0,0] Gyro=[-752,3307,-446] Temp=30
+BARO07(ID=0) Timestamp=1116443 Pressure=91128 Temp=27.57
+BARO11(ID=1) Timestamp=1116449 Pressure=90642 Temp=27.87
+IMU32G(ID=1) Timestamp=1116465 Accel=[0,0,0] Gyro=[306,1330,1513] Temp=30
+IMU16G(ID=0) Timestamp=1116550 Accel=[0,0,0] Gyro=[-315,-6947,192] Temp=28
+BARO07(ID=0) Timestamp=1116784 Pressure=91141 Temp=27.58
+BARO11(ID=1) Timestamp=1116786 Pressure=90637 Temp=27.87
+IMU32G(ID=1) Timestamp=1116808 Accel=[0,0,1] Gyro=[5810,-726,1898] Temp=30
+IMU16G(ID=0) Timestamp=1116883 Accel=[0,0,0] Gyro=[586,-70,638] Temp=28
+BARO07(ID=0) Timestamp=1117125 Pressure=91134 Temp=27.57
+BARO11(ID=1) Timestamp=1117127 Pressure=90637 Temp=27.87
+IMU32G(ID=1) Timestamp=1117151 Accel=[0,0,0] Gyro=[1181,2441,-157] Temp=30
+IMU16G(ID=0) Timestamp=1117216 Accel=[0,0,1] Gyro=[-4287,3263,1802] Temp=28
+BARO07(ID=0) Timestamp=1117466 Pressure=91165 Temp=27.57
+BARO11(ID=1) Timestamp=1117468 Pressure=90641 Temp=27.87
+IMU32G(ID=1) Timestamp=1117494 Accel=[0,0,0] Gyro=[980,-420,148] Temp=30
+IMU16G(ID=0) Timestamp=1117549 Accel=[0,0,1] Gyro=[-61,-1986,708] Temp=28
+BARO07(ID=0) Timestamp=1117807 Pressure=91181 Temp=27.57
+BARO11(ID=1) Timestamp=1117809 Pressure=90634 Temp=27.88
+IMU32G(ID=1) Timestamp=1117837 Accel=[0,0,0] Gyro=[-1146,-376,542] Temp=30
+IMU16G(ID=0) Timestamp=1117882 Accel=[0,0,0] Gyro=[-1190,1260,1548] Temp=28
+BARO07(ID=0) Timestamp=1118148 Pressure=91176 Temp=27.57
+BARO11(ID=1) Timestamp=1118150 Pressure=90635 Temp=27.89
+IMU32G(ID=1) Timestamp=1118180 Accel=[0,0,0] Gyro=[1618,1347,2817] Temp=30
+IMU16G(ID=0) Timestamp=1118215 Accel=[0,0,0] Gyro=[-455,-1785,1120] Temp=28
+BARO07(ID=0) Timestamp=1118489 Pressure=91182 Temp=27.58
+IMU32G(ID=1) Timestamp=1118523 Accel=[0,0,0] Gyro=[-3622,358,-332] Temp=30
+IMU16G(ID=0) Timestamp=1118548 Accel=[0,0,0] Gyro=[-6685,2913,2765] Temp=28
+BARO07(ID=0) Timestamp=1118830 Pressure=91218 Temp=27.58
+BARO11(ID=1) Timestamp=1118832 Pressure=90631 Temp=27.89
+IMU32G(ID=1) Timestamp=1118866 Accel=[0,0,0] Gyro=[-4086,3456,-490] Temp=30
+IMU16G(ID=0) Timestamp=1118881 Accel=[0,0,0] Gyro=[-2800,2660,2782] Temp=28
+BARO07(ID=0) Timestamp=1119171 Pressure=91203 Temp=27.58
+BARO11(ID=1) Timestamp=1119173 Pressure=90627 Temp=27.88
+IMU32G(ID=1) Timestamp=1119209 Accel=[0,0,1] Gyro=[1295,-2668,682] Temp=30
+IMU16G(ID=0) Timestamp=1119214 Accel=[0,0,1] Gyro=[3920,787,-892] Temp=28
+BARO07(ID=0) Timestamp=1119512 Pressure=91198 Temp=27.58
+BARO11(ID=1) Timestamp=1119514 Pressure=90625 Temp=27.88
+IMU16G(ID=0) Timestamp=1119547 Accel=[0,0,0] Gyro=[-3062,-402,-70] Temp=28
+IMU32G(ID=1) Timestamp=1119552 Accel=[0,0,0] Gyro=[-411,2975,1023] Temp=30
+BARO07(ID=0) Timestamp=1119853 Pressure=91155 Temp=27.58
+BARO11(ID=1) Timestamp=1119855 Pressure=90635 Temp=27.89
+IMU16G(ID=0) Timestamp=1119880 Accel=[0,0,0] Gyro=[-595,-586,1277] Temp=28
+IMU32G(ID=1) Timestamp=1119895 Accel=[0,0,0] Gyro=[-962,-166,341] Temp=30
+BARO07(ID=0) Timestamp=1120194 Pressure=91155 Temp=27.57
+BARO11(ID=1) Timestamp=1120196 Pressure=90624 Temp=27.88
+IMU16G(ID=0) Timestamp=1120213 Accel=[0,0,1] Gyro=[-752,-3220,-131] Temp=28
+IMU32G(ID=1) Timestamp=1120238 Accel=[0,0,1] Gyro=[638,-1540,1548] Temp=30
+BARO07(ID=0) Timestamp=1120535 Pressure=91128 Temp=27.57
+BARO11(ID=1) Timestamp=1120537 Pressure=90623 Temp=27.87
+IMU16G(ID=0) Timestamp=1120546 Accel=[0,0,0] Gyro=[-805,1391,-262] Temp=28
+BARO07(ID=0) Timestamp=1120876 Pressure=91139 Temp=27.57
+BARO11(ID=1) Timestamp=1120878 Pressure=90627 Temp=27.88
+IMU16G(ID=0) Timestamp=1120879 Accel=[0,0,0] Gyro=[-481,1758,1295] Temp=28
+IMU32G(ID=1) Timestamp=1120924 Accel=[0,0,0] Gyro=[1338,-61,1478] Temp=30
+IMU16G(ID=0) Timestamp=1121212 Accel=[0,0,0] Gyro=[350,-892,-516] Temp=28
+BARO07(ID=0) Timestamp=1121217 Pressure=91138 Temp=27.57
+BARO11(ID=1) Timestamp=1121219 Pressure=90632 Temp=27.87
+IMU32G(ID=1) Timestamp=1121267 Accel=[0,0,1] Gyro=[-621,630,516] Temp=30
+IMU16G(ID=0) Timestamp=1121545 Accel=[0,0,0] Gyro=[-2493,2703,2091] Temp=28
+BARO07(ID=0) Timestamp=1121558 Pressure=91134 Temp=27.57
+BARO11(ID=1) Timestamp=1121560 Pressure=90626 Temp=27.87
+IMU32G(ID=1) Timestamp=1121610 Accel=[0,0,0] Gyro=[7157,-2196,4016] Temp=30
+IMU16G(ID=0) Timestamp=1121878 Accel=[0,0,0] Gyro=[-3158,-1522,638] Temp=28
+BARO07(ID=0) Timestamp=1121899 Pressure=91140 Temp=27.58
+BARO11(ID=1) Timestamp=1121901 Pressure=90623 Temp=27.87
+IMU32G(ID=1) Timestamp=1121953 Accel=[0,0,0] Gyro=[-2012,-2563,455] Temp=30
+IMU16G(ID=0) Timestamp=1122211 Accel=[0,0,0] Gyro=[-1802,-113,1137] Temp=28
+BARO07(ID=0) Timestamp=1122240 Pressure=91160 Temp=27.57
+BARO11(ID=1) Timestamp=1122242 Pressure=90622 Temp=27.87
+IMU32G(ID=1) Timestamp=1122296 Accel=[0,0,0] Gyro=[1365,-2406,1041] Temp=30
+IMU16G(ID=0) Timestamp=1122544 Accel=[0,0,0] Gyro=[-2843,-2240,140] Temp=28
+BARO07(ID=0) Timestamp=1122581 Pressure=91170 Temp=27.57
+BARO11(ID=1) Timestamp=1122583 Pressure=90626 Temp=27.87
+IMU32G(ID=1) Timestamp=1122639 Accel=[0,0,1] Gyro=[6256,-2353,1277] Temp=30
+IMU16G(ID=0) Timestamp=1122877 Accel=[0,0,0] Gyro=[875,-577,1277] Temp=28
+BARO11(ID=1) Timestamp=1122950 Pressure=90631 Temp=27.88
+IMU32G(ID=1) Timestamp=1122982 Accel=[0,0,0] Gyro=[1732,-1776,-1260] Temp=30
+IMU16G(ID=0) Timestamp=1123210 Accel=[0,0,0] Gyro=[-4751,-2861,-577] Temp=28
+BARO07(ID=0) Timestamp=1123263 Pressure=91166 Temp=27.58
+BARO11(ID=1) Timestamp=1123265 Pressure=90621 Temp=27.88
+IMU32G(ID=1) Timestamp=1123325 Accel=[0,0,0] Gyro=[2397,-7245,2187] Temp=30
+IMU16G(ID=0) Timestamp=1123543 Accel=[0,0,1] Gyro=[-148,-446,87] Temp=28
+BARO07(ID=0) Timestamp=1123604 Pressure=91161 Temp=27.58
+BARO11(ID=1) Timestamp=1123606 Pressure=90627 Temp=27.88
+IMU32G(ID=1) Timestamp=1123668 Accel=[0,0,0] Gyro=[-770,-1321,245] Temp=30
+IMU16G(ID=0) Timestamp=1123876 Accel=[0,0,0] Gyro=[-4637,4611,297] Temp=28
+BARO07(ID=0) Timestamp=1123945 Pressure=91181 Temp=27.57
+BARO11(ID=1) Timestamp=1123947 Pressure=90640 Temp=27.88
+IMU32G(ID=1) Timestamp=1124011 Accel=[0,0,0] Gyro=[717,-1513,236] Temp=30
+IMU16G(ID=0) Timestamp=1124209 Accel=[0,0,0] Gyro=[-6335,3631,1566] Temp=28
+BARO07(ID=0) Timestamp=1124286 Pressure=91160 Temp=27.57
+BARO11(ID=1) Timestamp=1124288 Pressure=90638 Temp=27.87
+IMU32G(ID=1) Timestamp=1124354 Accel=[0,0,0] Gyro=[673,-4716,1776] Temp=30
+IMU16G(ID=0) Timestamp=1124542 Accel=[0,0,0] Gyro=[6702,455,-1435] Temp=28
+BARO07(ID=0) Timestamp=1124627 Pressure=91161 Temp=27.58
+BARO11(ID=1) Timestamp=1124629 Pressure=90647 Temp=27.87
+IMU32G(ID=1) Timestamp=1124697 Accel=[0,0,0] Gyro=[1715,-87,-323] Temp=30
+IMU16G(ID=0) Timestamp=1124875 Accel=[0,0,0] Gyro=[402,-857,1986] Temp=28
+BARO07(ID=0) Timestamp=1124968 Pressure=91170 Temp=27.57
+BARO11(ID=1) Timestamp=1124970 Pressure=90641 Temp=27.87
+IMU16G(ID=0) Timestamp=1125208 Accel=[0,0,0] Gyro=[-1960,472,1330] Temp=28
+BARO07(ID=0) Timestamp=1125309 Pressure=91171 Temp=27.58
+BARO11(ID=1) Timestamp=1125311 Pressure=90642 Temp=27.87
+IMU32G(ID=1) Timestamp=1125383 Accel=[0,0,0] Gyro=[2756,-6676,4147] Temp=30
+IMU16G(ID=0) Timestamp=1125541 Accel=[0,0,0] Gyro=[910,1837,1356] Temp=28
+BARO07(ID=0) Timestamp=1125650 Pressure=91182 Temp=27.58
+BARO11(ID=1) Timestamp=1125652 Pressure=90647 Temp=27.87
+IMU32G(ID=1) Timestamp=1125726 Accel=[0,0,1] Gyro=[-1881,-586,2003] Temp=30
+IMU16G(ID=0) Timestamp=1125874 Accel=[0,0,0] Gyro=[2205,96,131] Temp=28
+BARO07(ID=0) Timestamp=1125991 Pressure=91176 Temp=27.58
+BARO11(ID=1) Timestamp=1125993 Pressure=90664 Temp=27.87
+IMU32G(ID=1) Timestamp=1126069 Accel=[0,0,0] Gyro=[4865,-638,1006] Temp=30
+IMU16G(ID=0) Timestamp=1126207 Accel=[0,0,0] Gyro=[4007,-2371,-1461] Temp=28
+BARO07(ID=0) Timestamp=1126332 Pressure=91170 Temp=27.57
+BARO11(ID=1) Timestamp=1126334 Pressure=90655 Temp=27.87
+IMU32G(ID=1) Timestamp=1126412 Accel=[0,0,0] Gyro=[2598,-1015,525] Temp=30
+IMU16G(ID=0) Timestamp=1126540 Accel=[0,0,1] Gyro=[5328,6081,271] Temp=28
+BARO07(ID=0) Timestamp=1126673 Pressure=91191 Temp=27.57
+BARO11(ID=1) Timestamp=1126675 Pressure=90649 Temp=27.87
+IMU32G(ID=1) Timestamp=1126755 Accel=[0,0,0] Gyro=[761,2406,1382] Temp=30
+IMU16G(ID=0) Timestamp=1126873 Accel=[0,0,1] Gyro=[-708,2791,1015] Temp=28
+BARO07(ID=0) Timestamp=1127014 Pressure=91192 Temp=27.58
+BARO11(ID=1) Timestamp=1127016 Pressure=90655 Temp=27.87
+IMU32G(ID=1) Timestamp=1127098 Accel=[0,0,0] Gyro=[-2931,-717,971] Temp=30
+IMU16G(ID=0) Timestamp=1127206 Accel=[0,0,0] Gyro=[-236,612,-262] Temp=28
+BARO11(ID=1) Timestamp=1127384 Pressure=90658 Temp=27.87
+IMU32G(ID=1) Timestamp=1127441 Accel=[0,0,0] Gyro=[945,4943,-105] Temp=30
+IMU16G(ID=0) Timestamp=1127539 Accel=[0,0,0] Gyro=[2397,-3937,-1373] Temp=28
+BARO07(ID=0) Timestamp=1127696 Pressure=91213 Temp=27.58
+BARO11(ID=1) Timestamp=1127698 Pressure=90649 Temp=27.87
+IMU32G(ID=1) Timestamp=1127784 Accel=[0,0,0] Gyro=[3220,-4908,1820] Temp=30
+IMU16G(ID=0) Timestamp=1127872 Accel=[0,0,0] Gyro=[4970,-5013,980] Temp=28
+BARO07(ID=0) Timestamp=1128037 Pressure=91235 Temp=27.58
+BARO11(ID=1) Timestamp=1128039 Pressure=90652 Temp=27.87
+IMU32G(ID=1) Timestamp=1128127 Accel=[0,0,0] Gyro=[2817,-2537,315] Temp=30
+IMU16G(ID=0) Timestamp=1128205 Accel=[0,0,0] Gyro=[26,533,-140] Temp=28
+BARO07(ID=0) Timestamp=1128378 Pressure=91240 Temp=27.58
+BARO11(ID=1) Timestamp=1128380 Pressure=90657 Temp=27.88
+IMU32G(ID=1) Timestamp=1128470 Accel=[0,0,0] Gyro=[3403,-4042,1548] Temp=30
+IMU16G(ID=0) Timestamp=1128538 Accel=[0,0,0] Gyro=[-2905,1330,437] Temp=28
+BARO07(ID=0) Timestamp=1128719 Pressure=91257 Temp=27.59
+BARO11(ID=1) Timestamp=1128721 Pressure=90653 Temp=27.87
+IMU32G(ID=1) Timestamp=1128813 Accel=[0,0,0] Gyro=[752,-4567,1277] Temp=30
+IMU16G(ID=0) Timestamp=1128871 Accel=[0,0,0] Gyro=[-1557,4322,1268] Temp=28
+BARO07(ID=0) Timestamp=1129060 Pressure=91263 Temp=27.59
+BARO11(ID=1) Timestamp=1129062 Pressure=90657 Temp=27.88
+IMU32G(ID=1) Timestamp=1129156 Accel=[0,0,0] Gyro=[-1356,2091,883] Temp=30
+IMU16G(ID=0) Timestamp=1129204 Accel=[0,0,0] Gyro=[1277,1592,1487] Temp=28
+BARO07(ID=0) Timestamp=1129401 Pressure=91273 Temp=27.59
+BARO11(ID=1) Timestamp=1129403 Pressure=90680 Temp=27.89
+
+--- Dump Complete ---
+---- Sector Complete ----
+IMU16G(ID=0) Timestamp=1129551 Accel=[0,0,0] Gyro=[376,2161,1776] Temp=28
+BARO07(ID=0) Timestamp=1129742 Pressure=91274 Temp=27.60
+BARO11(ID=1) Timestamp=1129749 Pressure=90670 Temp=27.88
+IMU32G(ID=1) Timestamp=1129842 Accel=[0,0,0] Gyro=[560,-3736,1522] Temp=30
+IMU16G(ID=0) Timestamp=1129870 Accel=[0,0,0] Gyro=[-288,166,1242] Temp=28
+BARO07(ID=0) Timestamp=1130083 Pressure=91268 Temp=27.59
+BARO11(ID=1) Timestamp=1130090 Pressure=90670 Temp=27.88
+IMU32G(ID=1) Timestamp=1130185 Accel=[0,0,0] Gyro=[-2030,761,245] Temp=30
+IMU16G(ID=0) Timestamp=1130203 Accel=[0,0,0] Gyro=[-1251,1671,288] Temp=28
+BARO07(ID=0) Timestamp=1130424 Pressure=91280 Temp=27.60
+BARO11(ID=1) Timestamp=1130431 Pressure=90670 Temp=27.88
+IMU32G(ID=1) Timestamp=1130528 Accel=[0,0,0] Gyro=[-1916,-2808,1688] Temp=30
+IMU16G(ID=0) Timestamp=1130536 Accel=[0,0,0] Gyro=[358,1487,918] Temp=28
+BARO07(ID=0) Timestamp=1130765 Pressure=91290 Temp=27.60
+BARO11(ID=1) Timestamp=1130772 Pressure=90671 Temp=27.89
+IMU16G(ID=0) Timestamp=1130869 Accel=[0,0,0] Gyro=[-770,-1347,-2082] Temp=28
+IMU32G(ID=1) Timestamp=1130876 Accel=[0,0,0] Gyro=[796,2616,-1960] Temp=30
+BARO07(ID=0) Timestamp=1131106 Pressure=91290 Temp=27.60
+BARO11(ID=1) Timestamp=1131113 Pressure=90669 Temp=27.89
+IMU16G(ID=0) Timestamp=1131202 Accel=[0,0,0] Gyro=[2695,-4270,813] Temp=28
+IMU32G(ID=1) Timestamp=1131214 Accel=[0,0,0] Gyro=[4865,-1951,630] Temp=30
+BARO07(ID=0) Timestamp=1131447 Pressure=91257 Temp=27.59
+BARO11(ID=1) Timestamp=1131454 Pressure=90661 Temp=27.88
+IMU16G(ID=0) Timestamp=1131535 Accel=[0,0,0] Gyro=[-1373,3185,1811] Temp=28
+IMU32G(ID=1) Timestamp=1131557 Accel=[0,0,0] Gyro=[2091,2493,-61] Temp=30
+BARO11(ID=1) Timestamp=1131849 Pressure=90660 Temp=27.89
+IMU16G(ID=0) Timestamp=1131868 Accel=[0,0,1] Gyro=[-3850,2983,3176] Temp=28
+IMU32G(ID=1) Timestamp=1131900 Accel=[0,0,0] Gyro=[218,1041,621] Temp=30
+BARO07(ID=0) Timestamp=1132129 Pressure=91286 Temp=27.60
+BARO11(ID=1) Timestamp=1132136 Pressure=90677 Temp=27.89
+IMU16G(ID=0) Timestamp=1132201 Accel=[0,0,0] Gyro=[-227,157,1146] Temp=28
+IMU32G(ID=1) Timestamp=1132243 Accel=[0,0,0] Gyro=[-568,-1872,717] Temp=30
+BARO07(ID=0) Timestamp=1132470 Pressure=91275 Temp=27.60
+BARO11(ID=1) Timestamp=1132477 Pressure=90668 Temp=27.89
+IMU16G(ID=0) Timestamp=1132534 Accel=[0,0,1] Gyro=[7866,-8207,-1093] Temp=28
+IMU32G(ID=1) Timestamp=1132586 Accel=[0,0,0] Gyro=[2493,297,1347] Temp=30
+BARO07(ID=0) Timestamp=1132811 Pressure=91248 Temp=27.60
+BARO11(ID=1) Timestamp=1132818 Pressure=90665 Temp=27.89
+IMU16G(ID=0) Timestamp=1132867 Accel=[0,0,0] Gyro=[350,306,332] Temp=28
+IMU32G(ID=1) Timestamp=1132929 Accel=[0,0,0] Gyro=[-446,1828,-1050] Temp=30
+BARO07(ID=0) Timestamp=1133152 Pressure=91242 Temp=27.60
+BARO11(ID=1) Timestamp=1133159 Pressure=90658 Temp=27.88
+IMU16G(ID=0) Timestamp=1133200 Accel=[0,0,0] Gyro=[-113,2126,227] Temp=28
+IMU32G(ID=1) Timestamp=1133272 Accel=[0,0,0] Gyro=[-1715,385,210] Temp=30
+BARO07(ID=0) Timestamp=1133493 Pressure=91248 Temp=27.60
+BARO11(ID=1) Timestamp=1133500 Pressure=90662 Temp=27.89
+IMU16G(ID=0) Timestamp=1133533 Accel=[0,0,0] Gyro=[-708,-1802,26] Temp=28
+IMU32G(ID=1) Timestamp=1133615 Accel=[0,0,0] Gyro=[-840,-525,-166] Temp=30
+BARO07(ID=0) Timestamp=1133834 Pressure=91265 Temp=27.60
+BARO11(ID=1) Timestamp=1133841 Pressure=90677 Temp=27.89
+IMU32G(ID=1) Timestamp=1133958 Accel=[0,0,0] Gyro=[-175,1715,210] Temp=30
+BARO07(ID=0) Timestamp=1134175 Pressure=91254 Temp=27.60
+BARO11(ID=1) Timestamp=1134181 Pressure=90682 Temp=27.89
+IMU16G(ID=0) Timestamp=1134199 Accel=[0,0,0] Gyro=[-577,-218,743] Temp=28
+IMU32G(ID=1) Timestamp=1134301 Accel=[0,0,0] Gyro=[2528,2983,306] Temp=30
+BARO07(ID=0) Timestamp=1134516 Pressure=91280 Temp=27.60
+BARO11(ID=1) Timestamp=1134518 Pressure=90675 Temp=27.89
+IMU16G(ID=0) Timestamp=1134532 Accel=[0,0,0] Gyro=[5337,-9135,-1977] Temp=28
+IMU32G(ID=1) Timestamp=1134644 Accel=[0,0,0] Gyro=[542,3543,-682] Temp=30
+BARO07(ID=0) Timestamp=1134857 Pressure=91264 Temp=27.60
+BARO11(ID=1) Timestamp=1134859 Pressure=90669 Temp=27.89
+IMU16G(ID=0) Timestamp=1134865 Accel=[0,0,0] Gyro=[875,1356,297] Temp=28
+IMU32G(ID=1) Timestamp=1134987 Accel=[0,0,0] Gyro=[525,735,1741] Temp=30
+IMU16G(ID=0) Timestamp=1135198 Accel=[0,0,0] Gyro=[735,2056,840] Temp=28
+BARO07(ID=0) Timestamp=1135199 Pressure=91255 Temp=27.61
+BARO11(ID=1) Timestamp=1135200 Pressure=90662 Temp=27.89
+IMU32G(ID=1) Timestamp=1135330 Accel=[0,0,0] Gyro=[752,-507,1820] Temp=30
+IMU16G(ID=0) Timestamp=1135531 Accel=[0,0,1] Gyro=[2353,2467,-43] Temp=28
+BARO07(ID=0) Timestamp=1135539 Pressure=91227 Temp=27.60
+BARO11(ID=1) Timestamp=1135541 Pressure=90662 Temp=27.89
+IMU32G(ID=1) Timestamp=1135673 Accel=[0,0,0] Gyro=[-577,-6553,1540] Temp=30
+IMU16G(ID=0) Timestamp=1135864 Accel=[0,0,0] Gyro=[2187,-691,-140] Temp=28
+BARO07(ID=0) Timestamp=1135880 Pressure=91215 Temp=27.59
+BARO11(ID=1) Timestamp=1135882 Pressure=90693 Temp=27.89
+IMU32G(ID=1) Timestamp=1136016 Accel=[0,0,0] Gyro=[-3316,-1233,481] Temp=30
+BARO07(ID=0) Timestamp=1136226 Pressure=91211 Temp=27.60
+BARO11(ID=1) Timestamp=1136227 Pressure=90666 Temp=27.88
+IMU32G(ID=1) Timestamp=1136359 Accel=[0,0,0] Gyro=[-857,-805,490] Temp=30
+IMU16G(ID=0) Timestamp=1136530 Accel=[0,0,0] Gyro=[-166,-1802,621] Temp=28
+BARO07(ID=0) Timestamp=1136562 Pressure=91206 Temp=27.60
+BARO11(ID=1) Timestamp=1136564 Pressure=90659 Temp=27.87
+IMU32G(ID=1) Timestamp=1136702 Accel=[0,0,0] Gyro=[997,-6527,595] Temp=30
+IMU16G(ID=0) Timestamp=1136863 Accel=[0,0,0] Gyro=[3263,-2187,-2467] Temp=28
+BARO07(ID=0) Timestamp=1136903 Pressure=91181 Temp=27.60
+BARO11(ID=1) Timestamp=1136905 Pressure=90675 Temp=27.88
+IMU32G(ID=1) Timestamp=1137045 Accel=[0,0,0] Gyro=[3211,1198,1898] Temp=30
+IMU16G(ID=0) Timestamp=1137196 Accel=[0,0,0] Gyro=[3561,551,-315] Temp=28
+BARO07(ID=0) Timestamp=1137244 Pressure=91196 Temp=27.60
+BARO11(ID=1) Timestamp=1137246 Pressure=90671 Temp=27.87
+IMU32G(ID=1) Timestamp=1137388 Accel=[0,0,0] Gyro=[446,805,831] Temp=30
+IMU16G(ID=0) Timestamp=1137529 Accel=[0,0,1] Gyro=[3473,4191,-1225] Temp=28
+BARO07(ID=0) Timestamp=1137585 Pressure=91206 Temp=27.60
+BARO11(ID=1) Timestamp=1137587 Pressure=90660 Temp=27.88
+IMU32G(ID=1) Timestamp=1137731 Accel=[0,0,0] Gyro=[-498,5285,533] Temp=30
+IMU16G(ID=0) Timestamp=1137862 Accel=[0,0,0] Gyro=[-1015,1268,883] Temp=28
+BARO07(ID=0) Timestamp=1137926 Pressure=91184 Temp=27.59
+BARO11(ID=1) Timestamp=1137928 Pressure=90662 Temp=27.89
+IMU32G(ID=1) Timestamp=1138074 Accel=[0,0,0] Gyro=[-1006,-481,-236] Temp=30
+IMU16G(ID=0) Timestamp=1138195 Accel=[0,0,0] Gyro=[-936,-3473,43] Temp=28
+BARO07(ID=0) Timestamp=1138267 Pressure=91180 Temp=27.60
+IMU32G(ID=1) Timestamp=1138417 Accel=[0,0,1] Gyro=[1391,-3298,2826] Temp=30
+IMU16G(ID=0) Timestamp=1138528 Accel=[0,0,0] Gyro=[577,-262,-175] Temp=28
+BARO07(ID=0) Timestamp=1138608 Pressure=91185 Temp=27.60
+BARO11(ID=1) Timestamp=1138610 Pressure=90653 Temp=27.89
+IMU32G(ID=1) Timestamp=1138760 Accel=[0,0,0] Gyro=[1023,-1111,323] Temp=30
+IMU16G(ID=0) Timestamp=1138861 Accel=[0,0,0] Gyro=[-1093,770,61] Temp=28
+BARO07(ID=0) Timestamp=1138949 Pressure=91179 Temp=27.59
+BARO11(ID=1) Timestamp=1138951 Pressure=90668 Temp=27.89
+IMU32G(ID=1) Timestamp=1139103 Accel=[0,0,0] Gyro=[3920,96,927] Temp=30
+IMU16G(ID=0) Timestamp=1139194 Accel=[0,0,0] Gyro=[61,1846,1032] Temp=28
+BARO07(ID=0) Timestamp=1139290 Pressure=91189 Temp=27.59
+BARO11(ID=1) Timestamp=1139292 Pressure=90666 Temp=27.89
+IMU32G(ID=1) Timestamp=1139446 Accel=[0,0,0] Gyro=[3053,-743,761] Temp=30
+IMU16G(ID=0) Timestamp=1139527 Accel=[0,0,0] Gyro=[-1907,805,1312] Temp=28
+BARO07(ID=0) Timestamp=1139631 Pressure=91194 Temp=27.59
+BARO11(ID=1) Timestamp=1139633 Pressure=90678 Temp=27.89
+IMU32G(ID=1) Timestamp=1139789 Accel=[0,0,0] Gyro=[1767,-1321,875] Temp=30
+IMU16G(ID=0) Timestamp=1139860 Accel=[0,0,0] Gyro=[3036,612,682] Temp=28
+BARO07(ID=0) Timestamp=1139972 Pressure=91194 Temp=27.59
+BARO11(ID=1) Timestamp=1139974 Pressure=90666 Temp=27.89
+IMU32G(ID=1) Timestamp=1140132 Accel=[0,0,0] Gyro=[2135,-4033,1023] Temp=30
+IMU16G(ID=0) Timestamp=1140193 Accel=[0,0,0] Gyro=[-3395,910,411] Temp=28
+BARO07(ID=0) Timestamp=1140313 Pressure=91211 Temp=27.60
+BARO11(ID=1) Timestamp=1140315 Pressure=90661 Temp=27.90
+IMU32G(ID=1) Timestamp=1140475 Accel=[0,0,0] Gyro=[-350,1802,411] Temp=30
+BARO07(ID=0) Timestamp=1140654 Pressure=91221 Temp=27.60
+BARO11(ID=1) Timestamp=1140656 Pressure=90645 Temp=27.89
+IMU32G(ID=1) Timestamp=1140818 Accel=[0,0,0] Gyro=[1321,3281,1137] Temp=30
+IMU16G(ID=0) Timestamp=1140859 Accel=[0,0,0] Gyro=[393,-35,1023] Temp=28
+BARO07(ID=0) Timestamp=1140995 Pressure=91217 Temp=27.60
+BARO11(ID=1) Timestamp=1140997 Pressure=90657 Temp=27.89
+IMU32G(ID=1) Timestamp=1141161 Accel=[0,0,0] Gyro=[-17,1583,411] Temp=30
+IMU16G(ID=0) Timestamp=1141192 Accel=[0,0,0] Gyro=[-682,-831,787] Temp=28
+BARO07(ID=0) Timestamp=1141336 Pressure=91210 Temp=27.59
+BARO11(ID=1) Timestamp=1141338 Pressure=90655 Temp=27.90
+IMU32G(ID=1) Timestamp=1141504 Accel=[0,0,0] Gyro=[-568,647,752] Temp=30
+IMU16G(ID=0) Timestamp=1141525 Accel=[0,0,0] Gyro=[-1155,1085,1137] Temp=28
+BARO07(ID=0) Timestamp=1141677 Pressure=91243 Temp=27.60
+BARO11(ID=1) Timestamp=1141679 Pressure=90658 Temp=27.90
+IMU32G(ID=1) Timestamp=1141847 Accel=[0,0,0] Gyro=[-1417,796,-245] Temp=30
+IMU16G(ID=0) Timestamp=1141858 Accel=[0,0,0] Gyro=[-428,1627,-131] Temp=28
+BARO07(ID=0) Timestamp=1142018 Pressure=91243 Temp=27.60
+BARO11(ID=1) Timestamp=1142020 Pressure=90668 Temp=27.90
+IMU32G(ID=1) Timestamp=1142190 Accel=[0,0,0] Gyro=[-1767,2458,87] Temp=30
+IMU16G(ID=0) Timestamp=1142191 Accel=[0,0,0] Gyro=[2887,-1120,96] Temp=28
+BARO07(ID=0) Timestamp=1142359 Pressure=91249 Temp=27.60
+BARO11(ID=1) Timestamp=1142361 Pressure=90647 Temp=27.90
+IMU16G(ID=0) Timestamp=1142524 Accel=[0,0,0] Gyro=[-3360,4068,1662] Temp=28
+IMU32G(ID=1) Timestamp=1142533 Accel=[0,0,0] Gyro=[-393,1706,-481] Temp=30
+BARO07(ID=0) Timestamp=1142700 Pressure=91254 Temp=27.60
+IMU16G(ID=0) Timestamp=1142857 Accel=[0,0,0] Gyro=[-1811,2187,560] Temp=28
+IMU32G(ID=1) Timestamp=1142876 Accel=[0,0,0] Gyro=[1321,2703,-192] Temp=30
+BARO07(ID=0) Timestamp=1143041 Pressure=91244 Temp=27.60
+BARO11(ID=1) Timestamp=1143043 Pressure=90648 Temp=27.91
+IMU16G(ID=0) Timestamp=1143190 Accel=[0,0,0] Gyro=[708,533,-358] Temp=28
+IMU32G(ID=1) Timestamp=1143219 Accel=[0,0,0] Gyro=[2555,1382,-218] Temp=30
+BARO07(ID=0) Timestamp=1143382 Pressure=91228 Temp=27.60
+BARO11(ID=1) Timestamp=1143384 Pressure=90655 Temp=27.91
+IMU16G(ID=0) Timestamp=1143523 Accel=[0,0,0] Gyro=[1312,-2476,-341] Temp=28
+IMU32G(ID=1) Timestamp=1143562 Accel=[0,0,0] Gyro=[1828,-1496,236] Temp=30
+BARO07(ID=0) Timestamp=1143723 Pressure=91233 Temp=27.60
+BARO11(ID=1) Timestamp=1143725 Pressure=90639 Temp=27.91
+IMU16G(ID=0) Timestamp=1143856 Accel=[0,0,0] Gyro=[262,831,1312] Temp=28
+IMU32G(ID=1) Timestamp=1143905 Accel=[0,0,0] Gyro=[1128,1417,595] Temp=30
+BARO07(ID=0) Timestamp=1144064 Pressure=91230 Temp=27.61
+BARO11(ID=1) Timestamp=1144066 Pressure=90644 Temp=27.90
+IMU16G(ID=0) Timestamp=1144189 Accel=[0,0,1] Gyro=[-1645,-2423,1522] Temp=28
+IMU32G(ID=1) Timestamp=1144248 Accel=[0,0,1] Gyro=[-971,-3115,752] Temp=30
+BARO07(ID=0) Timestamp=1144405 Pressure=91228 Temp=27.60
+BARO11(ID=1) Timestamp=1144407 Pressure=90635 Temp=27.90
+IMU16G(ID=0) Timestamp=1144522 Accel=[0,0,1] Gyro=[-595,3920,1522] Temp=28
+IMU32G(ID=1) Timestamp=1144591 Accel=[0,0,1] Gyro=[3561,-1470,3613] Temp=30
+BARO07(ID=0) Timestamp=1144746 Pressure=91186 Temp=27.60
+BARO11(ID=1) Timestamp=1144748 Pressure=90626 Temp=27.90
+IMU16G(ID=0) Timestamp=1144855 Accel=[0,0,0] Gyro=[-1723,726,297] Temp=28
+BARO07(ID=0) Timestamp=1145087 Pressure=91218 Temp=27.60
+BARO11(ID=1) Timestamp=1145089 Pressure=90632 Temp=27.90
+IMU16G(ID=0) Timestamp=1145188 Accel=[0,0,0] Gyro=[87,1960,1181] Temp=28
+IMU32G(ID=1) Timestamp=1145277 Accel=[0,0,0] Gyro=[551,-2450,901] Temp=30
+BARO07(ID=0) Timestamp=1145428 Pressure=91212 Temp=27.60
+BARO11(ID=1) Timestamp=1145430 Pressure=90638 Temp=27.90
+IMU16G(ID=0) Timestamp=1145521 Accel=[0,0,0] Gyro=[1128,1767,253] Temp=28
+IMU32G(ID=1) Timestamp=1145620 Accel=[0,0,0] Gyro=[-1102,-1242,-393] Temp=30
+BARO07(ID=0) Timestamp=1145769 Pressure=91191 Temp=27.60
+BARO11(ID=1) Timestamp=1145771 Pressure=90632 Temp=27.90
+IMU16G(ID=0) Timestamp=1145854 Accel=[0,0,0] Gyro=[-2633,4777,1382] Temp=28
+IMU32G(ID=1) Timestamp=1145963 Accel=[0,0,0] Gyro=[-647,2100,227] Temp=30
+BARO07(ID=0) Timestamp=1146110 Pressure=91196 Temp=27.60
+BARO11(ID=1) Timestamp=1146112 Pressure=90632 Temp=27.90
+IMU16G(ID=0) Timestamp=1146187 Accel=[0,0,0] Gyro=[-26,-1557,647] Temp=28
+IMU32G(ID=1) Timestamp=1146306 Accel=[0,0,0] Gyro=[4418,-560,2135] Temp=30
+BARO07(ID=0) Timestamp=1146451 Pressure=91192 Temp=27.60
+BARO11(ID=1) Timestamp=1146453 Pressure=90629 Temp=27.90
+IMU16G(ID=0) Timestamp=1146520 Accel=[0,0,0] Gyro=[2511,-2380,-1050] Temp=28
+IMU32G(ID=1) Timestamp=1146649 Accel=[0,0,0] Gyro=[-1023,1338,1058] Temp=30
+BARO07(ID=0) Timestamp=1146792 Pressure=91208 Temp=27.61
+BARO11(ID=1) Timestamp=1146794 Pressure=90633 Temp=27.91
+IMU16G(ID=0) Timestamp=1146853 Accel=[0,0,0] Gyro=[-848,2800,1321] Temp=28
+IMU32G(ID=1) Timestamp=1146992 Accel=[0,0,0] Gyro=[796,-1050,796] Temp=30
+BARO07(ID=0) Timestamp=1147133 Pressure=91208 Temp=27.61
+
+--- Dump Complete ---
+---- Sector Complete ----
+IMU16G(ID=0) Timestamp=1147186 Accel=[0,0,1] Gyro=[-183,5372,2152] Temp=28
+IMU32G(ID=1) Timestamp=1147335 Accel=[0,0,0] Gyro=[1006,-848,1225] Temp=30
+BARO07(ID=0) Timestamp=1147474 Pressure=91233 Temp=27.60
+BARO11(ID=1) Timestamp=1147481 Pressure=90611 Temp=27.91
+IMU16G(ID=0) Timestamp=1147519 Accel=[0,0,0] Gyro=[-481,-927,1671] Temp=28
+IMU32G(ID=1) Timestamp=1147678 Accel=[0,0,0] Gyro=[3631,-1032,1627] Temp=30
+BARO07(ID=0) Timestamp=1147815 Pressure=91234 Temp=27.61
+BARO11(ID=1) Timestamp=1147822 Pressure=90622 Temp=27.91
+IMU16G(ID=0) Timestamp=1147852 Accel=[0,0,0] Gyro=[-105,428,-227] Temp=28
+IMU32G(ID=1) Timestamp=1148021 Accel=[0,0,0] Gyro=[3675,-586,1767] Temp=30
+BARO07(ID=0) Timestamp=1148156 Pressure=91261 Temp=27.61
+BARO11(ID=1) Timestamp=1148163 Pressure=90632 Temp=27.92
+IMU16G(ID=0) Timestamp=1148185 Accel=[0,0,0] Gyro=[-2030,5398,2091] Temp=28
+IMU32G(ID=1) Timestamp=1148364 Accel=[0,0,0] Gyro=[2275,341,1443] Temp=30
+BARO07(ID=0) Timestamp=1148497 Pressure=91246 Temp=27.62
+BARO11(ID=1) Timestamp=1148504 Pressure=90609 Temp=27.91
+IMU16G(ID=0) Timestamp=1148518 Accel=[0,0,0] Gyro=[-3902,3806,315] Temp=28
+IMU32G(ID=1) Timestamp=1148707 Accel=[0,0,0] Gyro=[4497,-455,3517] Temp=30
+BARO07(ID=0) Timestamp=1148838 Pressure=91252 Temp=27.62
+BARO11(ID=1) Timestamp=1148845 Pressure=90614 Temp=27.91
+IMU16G(ID=0) Timestamp=1148851 Accel=[0,0,0] Gyro=[-385,-3710,1382] Temp=28
+IMU32G(ID=1) Timestamp=1149050 Accel=[0,0,0] Gyro=[-673,1715,603] Temp=30
+BARO07(ID=0) Timestamp=1149179 Pressure=91231 Temp=27.62
+BARO11(ID=1) Timestamp=1149186 Pressure=90623 Temp=27.90
+IMU16G(ID=0) Timestamp=1149192 Accel=[0,0,0] Gyro=[96,-2003,682] Temp=28
+IMU16G(ID=0) Timestamp=1149517 Accel=[0,0,0] Gyro=[332,-3517,1268] Temp=28
+BARO07(ID=0) Timestamp=1149524 Pressure=91210 Temp=27.62
+BARO11(ID=1) Timestamp=1149530 Pressure=90620 Temp=27.90
+IMU32G(ID=1) Timestamp=1149736 Accel=[0,0,0] Gyro=[3395,-1050,1426] Temp=30
+IMU16G(ID=0) Timestamp=1149850 Accel=[0,0,1] Gyro=[1400,-708,1312] Temp=28
+BARO07(ID=0) Timestamp=1149861 Pressure=91193 Temp=27.61
+BARO11(ID=1) Timestamp=1149868 Pressure=90605 Temp=27.90
+IMU32G(ID=1) Timestamp=1150079 Accel=[0,0,0] Gyro=[-2537,5092,1321] Temp=30
+IMU16G(ID=0) Timestamp=1150183 Accel=[0,0,0] Gyro=[-1347,988,2073] Temp=28
+BARO07(ID=0) Timestamp=1150202 Pressure=91189 Temp=27.62
+BARO11(ID=1) Timestamp=1150209 Pressure=90617 Temp=27.90
+IMU32G(ID=1) Timestamp=1150422 Accel=[0,0,0] Gyro=[-3080,2126,673] Temp=30
+IMU16G(ID=0) Timestamp=1150516 Accel=[0,0,0] Gyro=[-43,1575,1890] Temp=28
+BARO07(ID=0) Timestamp=1150543 Pressure=91198 Temp=27.61
+BARO11(ID=1) Timestamp=1150550 Pressure=90614 Temp=27.91
+IMU32G(ID=1) Timestamp=1150765 Accel=[0,0,0] Gyro=[3806,-3543,2572] Temp=30
+IMU16G(ID=0) Timestamp=1150849 Accel=[0,0,0] Gyro=[1925,306,1627] Temp=28
+BARO07(ID=0) Timestamp=1150884 Pressure=91219 Temp=27.61
+BARO11(ID=1) Timestamp=1150891 Pressure=90617 Temp=27.90
+IMU32G(ID=1) Timestamp=1151108 Accel=[0,0,1] Gyro=[-2196,1890,1837] Temp=30
+IMU16G(ID=0) Timestamp=1151182 Accel=[0,0,0] Gyro=[-5477,1942,2887] Temp=28
+BARO07(ID=0) Timestamp=1151225 Pressure=91246 Temp=27.62
+BARO11(ID=1) Timestamp=1151232 Pressure=90608 Temp=27.90
+IMU32G(ID=1) Timestamp=1151451 Accel=[0,0,0] Gyro=[-2450,3605,910] Temp=30
+IMU16G(ID=0) Timestamp=1151515 Accel=[0,0,0] Gyro=[280,-1303,892] Temp=28
+BARO11(ID=1) Timestamp=1151600 Pressure=90602 Temp=27.91
+IMU32G(ID=1) Timestamp=1151794 Accel=[0,0,0] Gyro=[-96,-1347,2073] Temp=30
+IMU16G(ID=0) Timestamp=1151848 Accel=[0,0,0] Gyro=[560,-2047,1461] Temp=28
+BARO07(ID=0) Timestamp=1151907 Pressure=91210 Temp=27.62
+BARO11(ID=1) Timestamp=1151909 Pressure=90598 Temp=27.90
+IMU32G(ID=1) Timestamp=1152137 Accel=[0,0,1] Gyro=[2283,148,3333] Temp=30
+IMU16G(ID=0) Timestamp=1152181 Accel=[0,0,1] Gyro=[988,-1907,2187] Temp=28
+BARO07(ID=0) Timestamp=1152248 Pressure=91177 Temp=27.61
+BARO11(ID=1) Timestamp=1152250 Pressure=90598 Temp=27.90
+IMU32G(ID=1) Timestamp=1152480 Accel=[0,0,0] Gyro=[-3185,1137,726] Temp=30
+IMU16G(ID=0) Timestamp=1152514 Accel=[0,0,0] Gyro=[-183,-1960,2117] Temp=28
+BARO07(ID=0) Timestamp=1152589 Pressure=91172 Temp=27.61
+BARO11(ID=1) Timestamp=1152591 Pressure=90595 Temp=27.90
+IMU32G(ID=1) Timestamp=1152823 Accel=[0,0,0] Gyro=[-3158,2196,988] Temp=30
+IMU16G(ID=0) Timestamp=1152847 Accel=[0,0,0] Gyro=[2441,-350,988] Temp=28
+BARO07(ID=0) Timestamp=1152930 Pressure=91136 Temp=27.62
+BARO11(ID=1) Timestamp=1152932 Pressure=90567 Temp=27.90
+IMU32G(ID=1) Timestamp=1153166 Accel=[0,0,0] Gyro=[78,472,1855] Temp=30
+IMU16G(ID=0) Timestamp=1153180 Accel=[0,0,0] Gyro=[-2563,2292,2441] Temp=28
+BARO07(ID=0) Timestamp=1153271 Pressure=91123 Temp=27.60
+BARO11(ID=1) Timestamp=1153273 Pressure=90569 Temp=27.89
+IMU32G(ID=1) Timestamp=1153509 Accel=[0,0,0] Gyro=[2747,-4891,673] Temp=30
+IMU16G(ID=0) Timestamp=1153513 Accel=[0,0,0] Gyro=[4523,498,87] Temp=28
+BARO07(ID=0) Timestamp=1153612 Pressure=91086 Temp=27.60
+BARO11(ID=1) Timestamp=1153614 Pressure=90567 Temp=27.89
+IMU32G(ID=1) Timestamp=1153874 Accel=[0,0,1] Gyro=[-2467,131,875] Temp=30
+BARO07(ID=0) Timestamp=1153953 Pressure=91070 Temp=27.60
+BARO11(ID=1) Timestamp=1153955 Pressure=90551 Temp=27.89
+IMU16G(ID=0) Timestamp=1154179 Accel=[0,0,0] Gyro=[-490,2292,1776] Temp=28
+IMU32G(ID=1) Timestamp=1154195 Accel=[0,0,0] Gyro=[-1653,-52,936] Temp=30
+BARO07(ID=0) Timestamp=1154294 Pressure=91064 Temp=27.60
+BARO11(ID=1) Timestamp=1154296 Pressure=90557 Temp=27.89
+IMU16G(ID=0) Timestamp=1154512 Accel=[0,0,1] Gyro=[2493,2835,2406] Temp=28
+IMU32G(ID=1) Timestamp=1154538 Accel=[0,0,0] Gyro=[-428,1321,2362] Temp=30
+BARO07(ID=0) Timestamp=1154635 Pressure=91079 Temp=27.59
+BARO11(ID=1) Timestamp=1154637 Pressure=90560 Temp=27.89
+IMU16G(ID=0) Timestamp=1154845 Accel=[0,0,1] Gyro=[595,2380,3088] Temp=28
+IMU32G(ID=1) Timestamp=1154881 Accel=[0,0,0] Gyro=[-7087,1076,1041] Temp=30
+BARO07(ID=0) Timestamp=1154976 Pressure=91113 Temp=27.60
+BARO11(ID=1) Timestamp=1154978 Pressure=90558 Temp=27.90
+IMU16G(ID=0) Timestamp=1155178 Accel=[0,0,0] Gyro=[612,463,2948] Temp=28
+IMU32G(ID=1) Timestamp=1155224 Accel=[0,0,0] Gyro=[-971,-2117,2065] Temp=30
+BARO07(ID=0) Timestamp=1155317 Pressure=91117 Temp=27.60
+BARO11(ID=1) Timestamp=1155319 Pressure=90557 Temp=27.89
+IMU16G(ID=0) Timestamp=1155511 Accel=[0,0,0] Gyro=[2975,-1400,988] Temp=28
+IMU32G(ID=1) Timestamp=1155567 Accel=[0,0,0] Gyro=[-4865,4077,428] Temp=30
+BARO07(ID=0) Timestamp=1155658 Pressure=91096 Temp=27.60
+BARO11(ID=1) Timestamp=1155660 Pressure=90557 Temp=27.89
+IMU16G(ID=0) Timestamp=1155844 Accel=[0,0,0] Gyro=[122,1680,883] Temp=28
+IMU32G(ID=1) Timestamp=1155910 Accel=[0,0,0] Gyro=[752,-1863,1671] Temp=30
+BARO11(ID=1) Timestamp=1156027 Pressure=90554 Temp=27.89
+IMU16G(ID=0) Timestamp=1156177 Accel=[0,0,0] Gyro=[665,-1155,1058] Temp=28
+IMU32G(ID=1) Timestamp=1156253 Accel=[0,0,0] Gyro=[1863,2091,1137] Temp=30
+BARO07(ID=0) Timestamp=1156340 Pressure=91064 Temp=27.59
+BARO11(ID=1) Timestamp=1156342 Pressure=90545 Temp=27.89
+IMU16G(ID=0) Timestamp=1156510 Accel=[0,0,0] Gyro=[-78,3333,2178] Temp=28
+IMU32G(ID=1) Timestamp=1156596 Accel=[0,0,0] Gyro=[-673,-2371,2327] Temp=30
+BARO07(ID=0) Timestamp=1156681 Pressure=91069 Temp=27.59
+BARO11(ID=1) Timestamp=1156683 Pressure=90545 Temp=27.89
+IMU16G(ID=0) Timestamp=1156843 Accel=[0,0,0] Gyro=[-962,656,2108] Temp=28
+IMU32G(ID=1) Timestamp=1156939 Accel=[0,0,0] Gyro=[26,-4497,1715] Temp=30
+BARO07(ID=0) Timestamp=1157022 Pressure=91074 Temp=27.59
+BARO11(ID=1) Timestamp=1157024 Pressure=90551 Temp=27.89
+IMU16G(ID=0) Timestamp=1157176 Accel=[0,0,0] Gyro=[-805,-2800,1365] Temp=28
+IMU32G(ID=1) Timestamp=1157282 Accel=[0,0,1] Gyro=[-1662,3876,341] Temp=30
+BARO07(ID=0) Timestamp=1157363 Pressure=91058 Temp=27.59
+BARO11(ID=1) Timestamp=1157365 Pressure=90543 Temp=27.88
+IMU16G(ID=0) Timestamp=1157509 Accel=[0,0,0] Gyro=[2318,-1391,1365] Temp=28
+IMU32G(ID=1) Timestamp=1157625 Accel=[0,0,0] Gyro=[-866,-35,1015] Temp=30
+BARO07(ID=0) Timestamp=1157704 Pressure=91047 Temp=27.59
+BARO11(ID=1) Timestamp=1157706 Pressure=90523 Temp=27.89
+IMU16G(ID=0) Timestamp=1157842 Accel=[0,0,1] Gyro=[770,1155,1767] Temp=28
+IMU32G(ID=1) Timestamp=1157968 Accel=[0,0,0] Gyro=[-2082,4742,350] Temp=30
+BARO07(ID=0) Timestamp=1158045 Pressure=91048 Temp=27.59
+BARO11(ID=1) Timestamp=1158047 Pressure=90529 Temp=27.89
+IMU32G(ID=1) Timestamp=1158311 Accel=[0,0,0] Gyro=[1120,472,1863] Temp=30
+BARO07(ID=0) Timestamp=1158386 Pressure=91047 Temp=27.59
+BARO11(ID=1) Timestamp=1158388 Pressure=90531 Temp=27.88
+IMU16G(ID=0) Timestamp=1158508 Accel=[0,0,0] Gyro=[166,-2038,-131] Temp=28
+IMU32G(ID=1) Timestamp=1158654 Accel=[0,0,0] Gyro=[-2712,498,822] Temp=30
+BARO07(ID=0) Timestamp=1158727 Pressure=91031 Temp=27.58
+BARO11(ID=1) Timestamp=1158729 Pressure=90530 Temp=27.88
+IMU16G(ID=0) Timestamp=1158841 Accel=[0,0,0] Gyro=[2528,-2896,1662] Temp=28
+IMU32G(ID=1) Timestamp=1158997 Accel=[0,0,0] Gyro=[-26,1041,1697] Temp=30
+BARO07(ID=0) Timestamp=1159068 Pressure=91031 Temp=27.59
+BARO11(ID=1) Timestamp=1159070 Pressure=90523 Temp=27.87
+IMU16G(ID=0) Timestamp=1159174 Accel=[0,0,1] Gyro=[1058,1067,2555] Temp=28
+IMU32G(ID=1) Timestamp=1159340 Accel=[0,0,0] Gyro=[3088,-787,2467] Temp=30
+BARO07(ID=0) Timestamp=1159409 Pressure=91025 Temp=27.58
+BARO11(ID=1) Timestamp=1159411 Pressure=90521 Temp=27.88
+IMU16G(ID=0) Timestamp=1159507 Accel=[0,0,0] Gyro=[157,1085,1767] Temp=28
+IMU32G(ID=1) Timestamp=1159683 Accel=[0,0,0] Gyro=[-927,4506,831] Temp=30
+BARO07(ID=0) Timestamp=1159750 Pressure=91031 Temp=27.58
+BARO11(ID=1) Timestamp=1159752 Pressure=90523 Temp=27.87
+IMU16G(ID=0) Timestamp=1159840 Accel=[0,0,0] Gyro=[-2432,1653,2038] Temp=28
+IMU32G(ID=1) Timestamp=1160026 Accel=[0,0,0] Gyro=[1163,-840,1706] Temp=30
+BARO07(ID=0) Timestamp=1160091 Pressure=91031 Temp=27.58
+BARO11(ID=1) Timestamp=1160093 Pressure=90520 Temp=27.87
+IMU16G(ID=0) Timestamp=1160173 Accel=[0,0,0] Gyro=[1583,-2458,210] Temp=28
+IMU32G(ID=1) Timestamp=1160369 Accel=[0,0,0] Gyro=[-2493,2791,367] Temp=30
+BARO11(ID=1) Timestamp=1160460 Pressure=90519 Temp=27.88
+IMU16G(ID=0) Timestamp=1160506 Accel=[0,0,0] Gyro=[2975,-4270,-236] Temp=28
+IMU32G(ID=1) Timestamp=1160712 Accel=[0,0,1] Gyro=[4051,-516,3150] Temp=30
+BARO07(ID=0) Timestamp=1160773 Pressure=91003 Temp=27.57
+BARO11(ID=1) Timestamp=1160775 Pressure=90511 Temp=27.87
+IMU16G(ID=0) Timestamp=1160839 Accel=[0,0,0] Gyro=[1190,4970,805] Temp=28
+IMU32G(ID=1) Timestamp=1161055 Accel=[0,0,0] Gyro=[-2441,7297,2485] Temp=30
+BARO07(ID=0) Timestamp=1161114 Pressure=91009 Temp=27.58
+BARO11(ID=1) Timestamp=1161116 Pressure=90514 Temp=27.87
+IMU16G(ID=0) Timestamp=1161172 Accel=[0,0,0] Gyro=[3561,-525,-17] Temp=28
+IMU32G(ID=1) Timestamp=1161398 Accel=[0,0,1] Gyro=[1058,-332,1636] Temp=30
+BARO07(ID=0) Timestamp=1161455 Pressure=91009 Temp=27.58
+BARO11(ID=1) Timestamp=1161457 Pressure=90523 Temp=27.87
+IMU16G(ID=0) Timestamp=1161505 Accel=[0,0,0] Gyro=[-1522,3596,1426] Temp=28
+IMU32G(ID=1) Timestamp=1161741 Accel=[0,0,0] Gyro=[-507,-4086,2563] Temp=30
+BARO07(ID=0) Timestamp=1161796 Pressure=91009 Temp=27.58
+BARO11(ID=1) Timestamp=1161798 Pressure=90519 Temp=27.87
+IMU16G(ID=0) Timestamp=1161838 Accel=[0,0,0] Gyro=[-1426,5005,2896] Temp=28
+IMU32G(ID=1) Timestamp=1162084 Accel=[0,0,0] Gyro=[1356,-4970,2625] Temp=30
+BARO07(ID=0) Timestamp=1162137 Pressure=90983 Temp=27.58
+BARO11(ID=1) Timestamp=1162139 Pressure=90518 Temp=27.87
+IMU16G(ID=0) Timestamp=1162171 Accel=[0,0,0] Gyro=[-1382,1093,1925] Temp=28
+IMU32G(ID=1) Timestamp=1162427 Accel=[0,0,0] Gyro=[1373,577,1312] Temp=30
+BARO07(ID=0) Timestamp=1162478 Pressure=90970 Temp=27.57
+BARO11(ID=1) Timestamp=1162480 Pressure=90517 Temp=27.86
+IMU32G(ID=1) Timestamp=1162770 Accel=[0,0,0] Gyro=[-26,35,726] Temp=30
+BARO07(ID=0) Timestamp=1162819 Pressure=90965 Temp=27.57
+BARO11(ID=1) Timestamp=1162821 Pressure=90517 Temp=27.86
+IMU16G(ID=0) Timestamp=1162837 Accel=[0,0,0] Gyro=[376,1767,1452] Temp=28
+IMU32G(ID=1) Timestamp=1163113 Accel=[0,0,0] Gyro=[717,-1050,1330] Temp=30
+BARO07(ID=0) Timestamp=1163160 Pressure=90996 Temp=27.57
+BARO11(ID=1) Timestamp=1163162 Pressure=90513 Temp=27.85
+IMU16G(ID=0) Timestamp=1163170 Accel=[0,0,0] Gyro=[-26,1172,1085] Temp=28
+IMU32G(ID=1) Timestamp=1163456 Accel=[0,0,0] Gyro=[1793,-533,402] Temp=30
+BARO07(ID=0) Timestamp=1163501 Pressure=91022 Temp=27.57
+IMU16G(ID=0) Timestamp=1163503 Accel=[0,0,0] Gyro=[1540,1828,971] Temp=28
+BARO11(ID=1) Timestamp=1163504 Pressure=90528 Temp=27.87
+IMU32G(ID=1) Timestamp=1163799 Accel=[0,0,0] Gyro=[-1041,4620,857] Temp=30
+IMU16G(ID=0) Timestamp=1163836 Accel=[0,0,0] Gyro=[2091,-6825,901] Temp=28
+BARO07(ID=0) Timestamp=1163842 Pressure=91007 Temp=27.57
+BARO11(ID=1) Timestamp=1163844 Pressure=90508 Temp=27.86
+IMU32G(ID=1) Timestamp=1164142 Accel=[0,0,0] Gyro=[-1995,3045,1435] Temp=30
+IMU16G(ID=0) Timestamp=1164169 Accel=[0,0,0] Gyro=[17,-1977,1793] Temp=28
+BARO07(ID=0) Timestamp=1164183 Pressure=90997 Temp=27.57
+BARO11(ID=1) Timestamp=1164185 Pressure=90509 Temp=27.86
+IMU32G(ID=1) Timestamp=1164485 Accel=[0,0,0] Gyro=[323,-1942,1198] Temp=30
+IMU16G(ID=0) Timestamp=1164502 Accel=[0,0,0] Gyro=[752,-910,306] Temp=28
+BARO07(ID=0) Timestamp=1164524 Pressure=91008 Temp=27.57
+BARO11(ID=1) Timestamp=1164526 Pressure=90505 Temp=27.86
+IMU32G(ID=1) Timestamp=1164828 Accel=[0,0,0] Gyro=[-288,1750,1951] Temp=30
+
+--- Dump Complete ---
+---- Sector Complete ----
+BARO07(ID=0) Timestamp=1164889 Pressure=90991 Temp=27.57
+BARO11(ID=1) Timestamp=1164895 Pressure=90507 Temp=27.85
+IMU16G(ID=0) Timestamp=1165168 Accel=[0,0,0] Gyro=[840,-1741,-52] Temp=28
+IMU32G(ID=1) Timestamp=1165175 Accel=[0,0,0] Gyro=[-761,2415,236] Temp=30
+BARO07(ID=0) Timestamp=1165206 Pressure=90986 Temp=27.57
+BARO11(ID=1) Timestamp=1165213 Pressure=90495 Temp=27.85
+IMU16G(ID=0) Timestamp=1165501 Accel=[0,0,0] Gyro=[2021,761,306] Temp=28
+IMU32G(ID=1) Timestamp=1165514 Accel=[0,0,1] Gyro=[-2371,6116,1662] Temp=30
+BARO07(ID=0) Timestamp=1165547 Pressure=91013 Temp=27.57
+BARO11(ID=1) Timestamp=1165554 Pressure=90508 Temp=27.86
+IMU16G(ID=0) Timestamp=1165834 Accel=[0,0,0] Gyro=[-1067,-682,4532] Temp=28
+IMU32G(ID=1) Timestamp=1165857 Accel=[0,0,0] Gyro=[-831,-2275,2397] Temp=30
+BARO07(ID=0) Timestamp=1165888 Pressure=90986 Temp=27.57
+BARO11(ID=1) Timestamp=1165895 Pressure=90496 Temp=27.86
+IMU16G(ID=0) Timestamp=1166167 Accel=[0,0,0] Gyro=[-4576,5197,2651] Temp=28
+IMU32G(ID=1) Timestamp=1166200 Accel=[0,0,0] Gyro=[1225,358,1505] Temp=30
+BARO07(ID=0) Timestamp=1166229 Pressure=90975 Temp=27.57
+BARO11(ID=1) Timestamp=1166236 Pressure=90493 Temp=27.86
+IMU16G(ID=0) Timestamp=1166500 Accel=[0,0,0] Gyro=[-1373,2485,1846] Temp=28
+IMU32G(ID=1) Timestamp=1166543 Accel=[0,0,0] Gyro=[1881,2616,-271] Temp=30
+BARO07(ID=0) Timestamp=1166570 Pressure=90986 Temp=27.57
+BARO11(ID=1) Timestamp=1166577 Pressure=90506 Temp=27.86
+IMU16G(ID=0) Timestamp=1166833 Accel=[0,0,0] Gyro=[621,691,2126] Temp=28
+IMU32G(ID=1) Timestamp=1166886 Accel=[0,0,0] Gyro=[1522,-1137,2073] Temp=30
+BARO07(ID=0) Timestamp=1166911 Pressure=90995 Temp=27.56
+IMU16G(ID=0) Timestamp=1167166 Accel=[0,0,0] Gyro=[-358,2135,2493] Temp=28
+IMU32G(ID=1) Timestamp=1167229 Accel=[0,0,0] Gyro=[542,-9240,1487] Temp=30
+BARO07(ID=0) Timestamp=1167252 Pressure=91027 Temp=27.57
+BARO11(ID=1) Timestamp=1167259 Pressure=90509 Temp=27.86
+IMU16G(ID=0) Timestamp=1167499 Accel=[0,0,0] Gyro=[2030,-1758,1041] Temp=28
+IMU32G(ID=1) Timestamp=1167572 Accel=[0,0,0] Gyro=[-3193,3150,1618] Temp=30
+BARO07(ID=0) Timestamp=1167593 Pressure=91006 Temp=27.56
+BARO11(ID=1) Timestamp=1167600 Pressure=90498 Temp=27.85
+IMU16G(ID=0) Timestamp=1167832 Accel=[0,0,0] Gyro=[-2598,-700,2782] Temp=28
+IMU32G(ID=1) Timestamp=1167915 Accel=[0,0,0] Gyro=[-253,1347,2073] Temp=30
+BARO07(ID=0) Timestamp=1167934 Pressure=91006 Temp=27.57
+BARO11(ID=1) Timestamp=1167941 Pressure=90499 Temp=27.86
+IMU16G(ID=0) Timestamp=1168165 Accel=[0,0,0] Gyro=[-87,4987,5810] Temp=28
+IMU32G(ID=1) Timestamp=1168258 Accel=[0,0,0] Gyro=[656,577,1575] Temp=30
+BARO07(ID=0) Timestamp=1168275 Pressure=91006 Temp=27.57
+BARO11(ID=1) Timestamp=1168282 Pressure=90494 Temp=27.85
+IMU16G(ID=0) Timestamp=1168498 Accel=[0,0,0] Gyro=[227,726,3246] Temp=28
+IMU32G(ID=1) Timestamp=1168601 Accel=[0,0,0] Gyro=[1855,420,2555] Temp=30
+BARO07(ID=0) Timestamp=1168617 Pressure=90986 Temp=27.57
+BARO11(ID=1) Timestamp=1168623 Pressure=90489 Temp=27.85
+IMU16G(ID=0) Timestamp=1168831 Accel=[0,0,0] Gyro=[262,218,603] Temp=28
+IMU32G(ID=1) Timestamp=1168944 Accel=[0,0,0] Gyro=[-665,-157,385] Temp=30
+BARO07(ID=0) Timestamp=1168960 Pressure=90953 Temp=27.56
+BARO11(ID=1) Timestamp=1168966 Pressure=90489 Temp=27.84
+IMU16G(ID=0) Timestamp=1169164 Accel=[0,0,0] Gyro=[-1260,2520,1277] Temp=28
+BARO07(ID=0) Timestamp=1169327 Pressure=90937 Temp=27.56
+BARO11(ID=1) Timestamp=1169333 Pressure=90492 Temp=27.84
+IMU16G(ID=0) Timestamp=1169497 Accel=[0,0,0] Gyro=[-1015,-1260,1251] Temp=28
+IMU32G(ID=1) Timestamp=1169630 Accel=[0,0,0] Gyro=[-621,980,936] Temp=30
+BARO07(ID=0) Timestamp=1169639 Pressure=90920 Temp=27.55
+BARO11(ID=1) Timestamp=1169641 Pressure=90485 Temp=27.84
+IMU16G(ID=0) Timestamp=1169830 Accel=[0,0,0] Gyro=[-3272,-560,3307] Temp=28
+IMU32G(ID=1) Timestamp=1169973 Accel=[0,0,0] Gyro=[1478,-1785,1400] Temp=30
+BARO07(ID=0) Timestamp=1169980 Pressure=90920 Temp=27.55
+BARO11(ID=1) Timestamp=1169982 Pressure=90492 Temp=27.84
+IMU16G(ID=0) Timestamp=1170163 Accel=[0,0,0] Gyro=[2038,1898,1933] Temp=28
+IMU32G(ID=1) Timestamp=1170316 Accel=[0,0,0] Gyro=[-446,2485,2100] Temp=30
+BARO07(ID=0) Timestamp=1170321 Pressure=90909 Temp=27.55
+BARO11(ID=1) Timestamp=1170323 Pressure=90471 Temp=27.83
+IMU16G(ID=0) Timestamp=1170496 Accel=[0,0,0] Gyro=[-113,288,1793] Temp=28
+IMU32G(ID=1) Timestamp=1170659 Accel=[0,0,0] Gyro=[-673,122,428] Temp=30
+BARO07(ID=0) Timestamp=1170662 Pressure=90919 Temp=27.54
+BARO11(ID=1) Timestamp=1170664 Pressure=90483 Temp=27.83
+IMU16G(ID=0) Timestamp=1170829 Accel=[0,0,0] Gyro=[-1505,3718,1933] Temp=28
+IMU32G(ID=1) Timestamp=1171002 Accel=[0,0,0] Gyro=[-428,2336,971] Temp=30
+BARO07(ID=0) Timestamp=1171003 Pressure=90935 Temp=27.54
+BARO11(ID=1) Timestamp=1171005 Pressure=90483 Temp=27.83
+IMU16G(ID=0) Timestamp=1171162 Accel=[0,0,0] Gyro=[1872,1321,1058] Temp=28
+BARO07(ID=0) Timestamp=1171344 Pressure=90925 Temp=27.55
+IMU32G(ID=1) Timestamp=1171345 Accel=[0,0,0] Gyro=[-3316,96,1172] Temp=30
+IMU16G(ID=0) Timestamp=1171495 Accel=[0,0,0] Gyro=[516,-1303,1233] Temp=28
+BARO07(ID=0) Timestamp=1171685 Pressure=90945 Temp=27.54
+BARO11(ID=1) Timestamp=1171687 Pressure=90472 Temp=27.83
+IMU32G(ID=1) Timestamp=1171688 Accel=[0,0,0] Gyro=[1128,-3211,2502] Temp=30
+IMU16G(ID=0) Timestamp=1171828 Accel=[0,0,0] Gyro=[2651,-5661,-245] Temp=28
+BARO07(ID=0) Timestamp=1172026 Pressure=90983 Temp=27.55
+BARO11(ID=1) Timestamp=1172028 Pressure=90487 Temp=27.83
+IMU32G(ID=1) Timestamp=1172031 Accel=[0,0,0] Gyro=[1505,-4103,1968] Temp=30
+IMU16G(ID=0) Timestamp=1172161 Accel=[0,0,0] Gyro=[595,-3683,1251] Temp=28
+BARO07(ID=0) Timestamp=1172367 Pressure=90976 Temp=27.54
+BARO11(ID=1) Timestamp=1172369 Pressure=90486 Temp=27.83
+IMU32G(ID=1) Timestamp=1172374 Accel=[0,0,0] Gyro=[1093,-157,1750] Temp=30
+IMU16G(ID=0) Timestamp=1172494 Accel=[0,0,0] Gyro=[945,-1102,1128] Temp=28
+BARO07(ID=0) Timestamp=1172708 Pressure=90967 Temp=27.55
+BARO11(ID=1) Timestamp=1172710 Pressure=90487 Temp=27.83
+IMU32G(ID=1) Timestamp=1172717 Accel=[0,0,0] Gyro=[638,-2633,1636] Temp=30
+IMU16G(ID=0) Timestamp=1172827 Accel=[0,0,0] Gyro=[910,3587,1198] Temp=28
+BARO07(ID=0) Timestamp=1173049 Pressure=90953 Temp=27.56
+BARO11(ID=1) Timestamp=1173051 Pressure=90487 Temp=27.83
+IMU32G(ID=1) Timestamp=1173060 Accel=[0,0,0] Gyro=[61,5888,682] Temp=30
+IMU16G(ID=0) Timestamp=1173160 Accel=[0,0,0] Gyro=[-2695,1960,1058] Temp=28
+BARO07(ID=0) Timestamp=1173390 Pressure=90978 Temp=27.55
+BARO11(ID=1) Timestamp=1173392 Pressure=90490 Temp=27.83
+IMU32G(ID=1) Timestamp=1173403 Accel=[0,0,0] Gyro=[1347,-3526,1338] Temp=30
+IMU16G(ID=0) Timestamp=1173493 Accel=[0,0,0] Gyro=[-1610,-883,2065] Temp=28
+BARO11(ID=1) Timestamp=1173759 Pressure=90497 Temp=27.83
+IMU32G(ID=1) Timestamp=1173760 Accel=[0,0,0] Gyro=[1128,2371,1653] Temp=30
+IMU16G(ID=0) Timestamp=1173826 Accel=[0,0,0] Gyro=[218,-1137,2240] Temp=28
+BARO07(ID=0) Timestamp=1174072 Pressure=90999 Temp=27.55
+BARO11(ID=1) Timestamp=1174074 Pressure=90482 Temp=27.83
+IMU32G(ID=1) Timestamp=1174089 Accel=[0,0,0] Gyro=[1496,-612,2642] Temp=30
+IMU16G(ID=0) Timestamp=1174159 Accel=[0,0,0] Gyro=[-647,2817,2528] Temp=28
+BARO07(ID=0) Timestamp=1174413 Pressure=90988 Temp=27.55
+BARO11(ID=1) Timestamp=1174415 Pressure=90476 Temp=27.84
+IMU32G(ID=1) Timestamp=1174432 Accel=[0,0,0] Gyro=[1041,35,1347] Temp=30
+IMU16G(ID=0) Timestamp=1174492 Accel=[0,0,1] Gyro=[1470,5923,2178] Temp=28
+BARO07(ID=0) Timestamp=1174754 Pressure=91014 Temp=27.55
+BARO11(ID=1) Timestamp=1174756 Pressure=90491 Temp=27.83
+IMU32G(ID=1) Timestamp=1174775 Accel=[0,0,0] Gyro=[-1505,-1706,288] Temp=30
+IMU16G(ID=0) Timestamp=1174825 Accel=[0,0,0] Gyro=[-14805,-6273,3001] Temp=28
+BARO07(ID=0) Timestamp=1175095 Pressure=91025 Temp=27.55
+BARO11(ID=1) Timestamp=1175097 Pressure=90482 Temp=27.84
+IMU32G(ID=1) Timestamp=1175118 Accel=[0,0,0] Gyro=[341,-3333,1960] Temp=30
+IMU16G(ID=0) Timestamp=1175158 Accel=[0,0,0] Gyro=[2843,-3036,1015] Temp=28
+BARO07(ID=0) Timestamp=1175436 Pressure=91017 Temp=27.57
+BARO11(ID=1) Timestamp=1175438 Pressure=90471 Temp=27.84
+IMU32G(ID=1) Timestamp=1175461 Accel=[0,0,0] Gyro=[-848,1706,1006] Temp=30
+IMU16G(ID=0) Timestamp=1175491 Accel=[0,0,0] Gyro=[-507,1925,2161] Temp=28
+BARO07(ID=0) Timestamp=1175777 Pressure=91021 Temp=27.56
+BARO11(ID=1) Timestamp=1175779 Pressure=90476 Temp=27.84
+IMU16G(ID=0) Timestamp=1175833 Accel=[0,0,0] Gyro=[393,-2266,2056] Temp=28
+BARO07(ID=0) Timestamp=1176118 Pressure=91010 Temp=27.56
+BARO11(ID=1) Timestamp=1176120 Pressure=90470 Temp=27.84
+IMU32G(ID=1) Timestamp=1176147 Accel=[0,0,0] Gyro=[927,-647,1242] Temp=30
+IMU16G(ID=0) Timestamp=1176157 Accel=[0,0,0] Gyro=[245,568,2021] Temp=28
+BARO07(ID=0) Timestamp=1176459 Pressure=91004 Temp=27.55
+BARO11(ID=1) Timestamp=1176461 Pressure=90470 Temp=27.84
+IMU16G(ID=0) Timestamp=1176490 Accel=[0,0,0] Gyro=[-61,-700,61] Temp=28
+IMU32G(ID=1) Timestamp=1176491 Accel=[0,0,0] Gyro=[358,35,997] Temp=30
+BARO07(ID=0) Timestamp=1176800 Pressure=90999 Temp=27.55
+BARO11(ID=1) Timestamp=1176802 Pressure=90458 Temp=27.84
+IMU16G(ID=0) Timestamp=1176823 Accel=[0,0,0] Gyro=[1225,-253,227] Temp=28
+IMU32G(ID=1) Timestamp=1176833 Accel=[0,0,0] Gyro=[-192,-1391,621] Temp=30
+BARO07(ID=0) Timestamp=1177141 Pressure=90994 Temp=27.56
+BARO11(ID=1) Timestamp=1177143 Pressure=90462 Temp=27.84
+IMU16G(ID=0) Timestamp=1177156 Accel=[0,0,0] Gyro=[2415,-1890,1023] Temp=28
+IMU32G(ID=1) Timestamp=1177176 Accel=[0,0,0] Gyro=[-2738,2598,831] Temp=30
+BARO07(ID=0) Timestamp=1177482 Pressure=90994 Temp=27.56
+BARO11(ID=1) Timestamp=1177484 Pressure=90445 Temp=27.85
+IMU16G(ID=0) Timestamp=1177489 Accel=[0,0,0] Gyro=[1207,-26,1216] Temp=28
+IMU32G(ID=1) Timestamp=1177519 Accel=[0,0,0] Gyro=[-813,-297,726] Temp=30
+IMU16G(ID=0) Timestamp=1177822 Accel=[0,0,0] Gyro=[0,-1487,253] Temp=28
+BARO07(ID=0) Timestamp=1177823 Pressure=90990 Temp=27.56
+BARO11(ID=1) Timestamp=1177825 Pressure=90448 Temp=27.85
+IMU32G(ID=1) Timestamp=1177862 Accel=[0,0,0] Gyro=[1391,-735,717] Temp=30
+BARO07(ID=0) Timestamp=1178183 Pressure=90942 Temp=27.56
+BARO11(ID=1) Timestamp=1178184 Pressure=90449 Temp=27.84
+IMU32G(ID=1) Timestamp=1178205 Accel=[0,0,0] Gyro=[-43,2668,288] Temp=30
+IMU16G(ID=0) Timestamp=1178488 Accel=[0,0,0] Gyro=[175,-140,1548] Temp=28
+BARO07(ID=0) Timestamp=1178505 Pressure=90920 Temp=27.55
+BARO11(ID=1) Timestamp=1178507 Pressure=90455 Temp=27.84
+IMU32G(ID=1) Timestamp=1178548 Accel=[0,0,0] Gyro=[122,-446,1470] Temp=30
+IMU16G(ID=0) Timestamp=1178821 Accel=[0,0,0] Gyro=[2135,-1750,1443] Temp=28
+BARO07(ID=0) Timestamp=1178846 Pressure=90956 Temp=27.55
+BARO11(ID=1) Timestamp=1178848 Pressure=90447 Temp=27.84
+IMU32G(ID=1) Timestamp=1178891 Accel=[0,0,0] Gyro=[-1076,1496,927] Temp=30
+IMU16G(ID=0) Timestamp=1179154 Accel=[0,0,0] Gyro=[2240,-2782,-507] Temp=28
+BARO07(ID=0) Timestamp=1179187 Pressure=90968 Temp=27.55
+BARO11(ID=1) Timestamp=1179189 Pressure=90437 Temp=27.84
+IMU32G(ID=1) Timestamp=1179234 Accel=[0,0,0] Gyro=[2826,-936,1522] Temp=30
+IMU16G(ID=0) Timestamp=1179487 Accel=[0,0,0] Gyro=[-1198,1557,376] Temp=28
+BARO07(ID=0) Timestamp=1179528 Pressure=90988 Temp=27.55
+BARO11(ID=1) Timestamp=1179530 Pressure=90435 Temp=27.84
+IMU32G(ID=1) Timestamp=1179577 Accel=[0,0,0] Gyro=[-3500,1715,-1050] Temp=30
+IMU16G(ID=0) Timestamp=1179820 Accel=[0,0,0] Gyro=[-2861,3482,1006] Temp=28
+BARO07(ID=0) Timestamp=1179869 Pressure=90988 Temp=27.55
+BARO11(ID=1) Timestamp=1179871 Pressure=90438 Temp=27.84
+IMU32G(ID=1) Timestamp=1179920 Accel=[0,0,0] Gyro=[2493,-700,1750] Temp=30
+IMU16G(ID=0) Timestamp=1180153 Accel=[0,0,0] Gyro=[2703,376,306] Temp=28
+BARO07(ID=0) Timestamp=1180210 Pressure=90946 Temp=27.55
+IMU32G(ID=1) Timestamp=1180263 Accel=[0,0,0] Gyro=[-8321,2712,3683] Temp=30
+IMU16G(ID=0) Timestamp=1180486 Accel=[0,0,0] Gyro=[-1251,2126,560] Temp=28
+BARO07(ID=0) Timestamp=1180551 Pressure=90914 Temp=27.55
+BARO11(ID=1) Timestamp=1180553 Pressure=90437 Temp=27.84
+IMU32G(ID=1) Timestamp=1180606 Accel=[0,0,1] Gyro=[-3395,-7183,1356] Temp=30
+IMU16G(ID=0) Timestamp=1180819 Accel=[0,0,1] Gyro=[-87,-2091,472] Temp=28
+BARO07(ID=0) Timestamp=1180892 Pressure=90914 Temp=27.55
+BARO11(ID=1) Timestamp=1180894 Pressure=90427 Temp=27.83
+IMU32G(ID=1) Timestamp=1180949 Accel=[0,0,0] Gyro=[-2012,3368,-210] Temp=30
+IMU16G(ID=0) Timestamp=1181152 Accel=[0,0,0] Gyro=[-752,-3290,1540] Temp=28
+BARO07(ID=0) Timestamp=1181233 Pressure=90925 Temp=27.55
+BARO11(ID=1) Timestamp=1181235 Pressure=90428 Temp=27.84
+IMU32G(ID=1) Timestamp=1181292 Accel=[0,0,0] Gyro=[2178,-1505,-105] Temp=30
+IMU16G(ID=0) Timestamp=1181485 Accel=[0,0,0] Gyro=[-901,1146,-420] Temp=28
+BARO07(ID=0) Timestamp=1181574 Pressure=90952 Temp=27.55
+BARO11(ID=1) Timestamp=1181576 Pressure=90412 Temp=27.83
+IMU32G(ID=1) Timestamp=1181635 Accel=[0,0,0] Gyro=[1478,-2222,700] Temp=30
+IMU16G(ID=0) Timestamp=1181818 Accel=[0,0,0] Gyro=[-6825,-13343,2502] Temp=28
+BARO07(ID=0) Timestamp=1181915 Pressure=90961 Temp=27.54
+BARO11(ID=1) Timestamp=1181917 Pressure=90420 Temp=27.84
+IMU32G(ID=1) Timestamp=1181978 Accel=[0,0,0] Gyro=[2826,-735,1846] Temp=30
+IMU16G(ID=0) Timestamp=1182151 Accel=[0,0,0] Gyro=[148,472,805] Temp=28
+BARO07(ID=0) Timestamp=1182256 Pressure=90973 Temp=27.55
+BARO11(ID=1) Timestamp=1182258 Pressure=90421 Temp=27.83
+IMU32G(ID=1) Timestamp=1182321 Accel=[0,0,0] Gyro=[1855,-2983,-481] Temp=30
+
+--- Dump Complete ---
+---- Sector Complete ----
+BARO07(ID=0) Timestamp=1182597 Pressure=90994 Temp=27.56
+BARO11(ID=1) Timestamp=1182604 Pressure=90417 Temp=27.84
+IMU32G(ID=1) Timestamp=1182664 Accel=[0,0,0] Gyro=[2616,210,1242] Temp=30
+IMU16G(ID=0) Timestamp=1182817 Accel=[0,0,0] Gyro=[-2730,5731,805] Temp=28
+BARO07(ID=0) Timestamp=1182938 Pressure=90989 Temp=27.56
+BARO11(ID=1) Timestamp=1182945 Pressure=90421 Temp=27.85
+IMU32G(ID=1) Timestamp=1183007 Accel=[0,0,0] Gyro=[796,805,-148] Temp=30
+IMU16G(ID=0) Timestamp=1183150 Accel=[0,0,0] Gyro=[-3937,-2301,2082] Temp=28
+BARO07(ID=0) Timestamp=1183279 Pressure=91010 Temp=27.56
+BARO11(ID=1) Timestamp=1183286 Pressure=90411 Temp=27.85
+IMU32G(ID=1) Timestamp=1183350 Accel=[0,0,0] Gyro=[2765,2528,402] Temp=30
+IMU16G(ID=0) Timestamp=1183483 Accel=[0,0,0] Gyro=[1146,2205,1688] Temp=28
+BARO07(ID=0) Timestamp=1183620 Pressure=91022 Temp=27.57
+BARO11(ID=1) Timestamp=1183627 Pressure=90422 Temp=27.85
+IMU32G(ID=1) Timestamp=1183693 Accel=[0,0,0] Gyro=[577,-2012,542] Temp=30
+IMU16G(ID=0) Timestamp=1183816 Accel=[0,0,0] Gyro=[288,-831,-1225] Temp=28
+BARO07(ID=0) Timestamp=1183961 Pressure=91039 Temp=27.57
+BARO11(ID=1) Timestamp=1183968 Pressure=90419 Temp=27.85
+IMU32G(ID=1) Timestamp=1184036 Accel=[0,0,0] Gyro=[997,4340,-8] Temp=30
+IMU16G(ID=0) Timestamp=1184149 Accel=[0,0,0] Gyro=[1452,953,192] Temp=28
+BARO07(ID=0) Timestamp=1184302 Pressure=91034 Temp=27.57
+BARO11(ID=1) Timestamp=1184309 Pressure=90418 Temp=27.86
+IMU32G(ID=1) Timestamp=1184379 Accel=[0,0,0] Gyro=[-2073,-2406,-1487] Temp=30
+IMU16G(ID=0) Timestamp=1184482 Accel=[0,0,0] Gyro=[6098,-3403,-787] Temp=28
+BARO07(ID=0) Timestamp=1184643 Pressure=91039 Temp=27.57
+IMU32G(ID=1) Timestamp=1184722 Accel=[0,0,0] Gyro=[-315,-2651,297] Temp=30
+IMU16G(ID=0) Timestamp=1184815 Accel=[0,0,0] Gyro=[3193,-1338,-35] Temp=28
+BARO07(ID=0) Timestamp=1184984 Pressure=91035 Temp=27.58
+BARO11(ID=1) Timestamp=1184991 Pressure=90410 Temp=27.87
+IMU32G(ID=1) Timestamp=1185065 Accel=[0,0,0] Gyro=[927,-3850,105] Temp=30
+IMU16G(ID=0) Timestamp=1185148 Accel=[0,0,0] Gyro=[743,-2240,227] Temp=28
+BARO07(ID=0) Timestamp=1185325 Pressure=91035 Temp=27.58
+BARO11(ID=1) Timestamp=1185332 Pressure=90419 Temp=27.87
+IMU32G(ID=1) Timestamp=1185408 Accel=[0,0,0] Gyro=[-3377,1443,735] Temp=30
+IMU16G(ID=0) Timestamp=1185481 Accel=[0,0,0] Gyro=[-35,-2423,-1820] Temp=28
+BARO07(ID=0) Timestamp=1185666 Pressure=91028 Temp=27.57
+BARO11(ID=1) Timestamp=1185673 Pressure=90397 Temp=27.86
+IMU32G(ID=1) Timestamp=1185751 Accel=[0,0,1] Gyro=[-3141,1758,-402] Temp=30
+IMU16G(ID=0) Timestamp=1185814 Accel=[0,0,0] Gyro=[-3622,3473,1155] Temp=28
+BARO07(ID=0) Timestamp=1186007 Pressure=91040 Temp=27.58
+BARO11(ID=1) Timestamp=1186014 Pressure=90406 Temp=27.86
+IMU32G(ID=1) Timestamp=1186094 Accel=[0,0,1] Gyro=[4427,-210,3570] Temp=30
+IMU16G(ID=0) Timestamp=1186147 Accel=[0,0,0] Gyro=[-3605,8925,1548] Temp=28
+BARO07(ID=0) Timestamp=1186348 Pressure=91031 Temp=27.58
+BARO11(ID=1) Timestamp=1186355 Pressure=90403 Temp=27.87
+IMU32G(ID=1) Timestamp=1186437 Accel=[0,0,0] Gyro=[1286,2546,420] Temp=30
+IMU16G(ID=0) Timestamp=1186480 Accel=[0,0,0] Gyro=[-1505,638,-516] Temp=28
+BARO07(ID=0) Timestamp=1186689 Pressure=91025 Temp=27.58
+BARO11(ID=1) Timestamp=1186696 Pressure=90403 Temp=27.87
+IMU32G(ID=1) Timestamp=1186780 Accel=[0,0,0] Gyro=[-2922,-166,603] Temp=30
+BARO07(ID=0) Timestamp=1187030 Pressure=91004 Temp=27.58
+BARO11(ID=1) Timestamp=1187037 Pressure=90397 Temp=27.86
+IMU32G(ID=1) Timestamp=1187123 Accel=[0,0,0] Gyro=[-411,2686,-157] Temp=30
+IMU16G(ID=0) Timestamp=1187146 Accel=[0,0,0] Gyro=[-4707,3123,813] Temp=28
+BARO07(ID=0) Timestamp=1187371 Pressure=91004 Temp=27.58
+BARO11(ID=1) Timestamp=1187373 Pressure=90401 Temp=27.87
+IMU32G(ID=1) Timestamp=1187466 Accel=[0,0,0] Gyro=[2100,1365,1592] Temp=30
+IMU16G(ID=0) Timestamp=1187479 Accel=[0,0,0] Gyro=[-525,3430,315] Temp=28
+BARO07(ID=0) Timestamp=1187712 Pressure=91025 Temp=27.58
+BARO11(ID=1) Timestamp=1187714 Pressure=90395 Temp=27.87
+IMU32G(ID=1) Timestamp=1187809 Accel=[0,0,0] Gyro=[568,1872,-568] Temp=30
+IMU16G(ID=0) Timestamp=1187812 Accel=[0,0,0] Gyro=[-831,-761,-148] Temp=28
+BARO07(ID=0) Timestamp=1188053 Pressure=91019 Temp=27.57
+BARO11(ID=1) Timestamp=1188055 Pressure=90418 Temp=27.86
+IMU16G(ID=0) Timestamp=1188145 Accel=[0,0,0] Gyro=[2852,-5162,210] Temp=28
+IMU32G(ID=1) Timestamp=1188152 Accel=[0,0,0] Gyro=[-3202,-411,892] Temp=30
+BARO07(ID=0) Timestamp=1188394 Pressure=90999 Temp=27.58
+BARO11(ID=1) Timestamp=1188396 Pressure=90403 Temp=27.87
+IMU16G(ID=0) Timestamp=1188478 Accel=[0,0,0] Gyro=[-437,4733,997] Temp=28
+IMU32G(ID=1) Timestamp=1188495 Accel=[0,0,0] Gyro=[-2660,4672,61] Temp=30
+BARO07(ID=0) Timestamp=1188735 Pressure=90977 Temp=27.58
+BARO11(ID=1) Timestamp=1188737 Pressure=90412 Temp=27.86
+IMU16G(ID=0) Timestamp=1188811 Accel=[0,0,0] Gyro=[-2441,1435,1601] Temp=28
+IMU32G(ID=1) Timestamp=1188838 Accel=[0,0,0] Gyro=[2003,1846,-43] Temp=30
+BARO07(ID=0) Timestamp=1189076 Pressure=90987 Temp=27.57
+IMU16G(ID=0) Timestamp=1189144 Accel=[0,0,0] Gyro=[682,-297,280] Temp=28
+IMU32G(ID=1) Timestamp=1189181 Accel=[0,0,0] Gyro=[-927,-1146,1163] Temp=30
+BARO07(ID=0) Timestamp=1189417 Pressure=90987 Temp=27.57
+BARO11(ID=1) Timestamp=1189419 Pressure=90412 Temp=27.86
+IMU16G(ID=0) Timestamp=1189477 Accel=[0,0,0] Gyro=[2205,-420,0] Temp=28
+IMU32G(ID=1) Timestamp=1189524 Accel=[0,0,1] Gyro=[-3946,-630,-350] Temp=30
+BARO07(ID=0) Timestamp=1189758 Pressure=90962 Temp=27.58
+BARO11(ID=1) Timestamp=1189760 Pressure=90411 Temp=27.86
+IMU16G(ID=0) Timestamp=1189810 Accel=[0,0,0] Gyro=[-1942,17,1627] Temp=28
+IMU32G(ID=1) Timestamp=1189867 Accel=[0,0,0] Gyro=[-1653,813,-262] Temp=30
+BARO07(ID=0) Timestamp=1190099 Pressure=90977 Temp=27.57
+BARO11(ID=1) Timestamp=1190101 Pressure=90411 Temp=27.86
+IMU16G(ID=0) Timestamp=1190143 Accel=[0,0,0] Gyro=[2677,-1601,-218] Temp=28
+IMU32G(ID=1) Timestamp=1190210 Accel=[0,0,1] Gyro=[-1610,-3928,-271] Temp=30
+BARO07(ID=0) Timestamp=1190440 Pressure=90986 Temp=27.57
+BARO11(ID=1) Timestamp=1190442 Pressure=90421 Temp=27.86
+IMU16G(ID=0) Timestamp=1190476 Accel=[0,0,0] Gyro=[2668,612,-201] Temp=28
+IMU32G(ID=1) Timestamp=1190553 Accel=[0,0,0] Gyro=[2660,1942,892] Temp=30
+BARO07(ID=0) Timestamp=1190781 Pressure=90993 Temp=27.58
+BARO11(ID=1) Timestamp=1190783 Pressure=90433 Temp=27.86
+IMU16G(ID=0) Timestamp=1190809 Accel=[0,0,1] Gyro=[-2502,-1881,1820] Temp=28
+IMU32G(ID=1) Timestamp=1190896 Accel=[0,0,0] Gyro=[-1190,-2642,105] Temp=30
+BARO07(ID=0) Timestamp=1191122 Pressure=90998 Temp=27.57
+BARO11(ID=1) Timestamp=1191124 Pressure=90431 Temp=27.87
+IMU16G(ID=0) Timestamp=1191142 Accel=[0,0,0] Gyro=[-3867,3692,2695] Temp=28
+BARO07(ID=0) Timestamp=1191463 Pressure=91019 Temp=27.57
+BARO11(ID=1) Timestamp=1191465 Pressure=90423 Temp=27.87
+IMU16G(ID=0) Timestamp=1191475 Accel=[0,0,0] Gyro=[-4453,113,498] Temp=28
+IMU32G(ID=1) Timestamp=1191582 Accel=[0,0,0] Gyro=[831,-1645,743] Temp=30
+BARO07(ID=0) Timestamp=1191804 Pressure=91034 Temp=27.57
+BARO11(ID=1) Timestamp=1191806 Pressure=90407 Temp=27.87
+IMU16G(ID=0) Timestamp=1191808 Accel=[0,0,0] Gyro=[2598,2870,-516] Temp=28
+IMU32G(ID=1) Timestamp=1191925 Accel=[0,0,0] Gyro=[-638,1793,997] Temp=30
+IMU16G(ID=0) Timestamp=1192141 Accel=[0,0,0] Gyro=[1338,122,997] Temp=28
+BARO07(ID=0) Timestamp=1192145 Pressure=91030 Temp=27.58
+BARO11(ID=1) Timestamp=1192147 Pressure=90410 Temp=27.87
+IMU32G(ID=1) Timestamp=1192268 Accel=[0,0,0] Gyro=[402,2388,1426] Temp=30
+IMU16G(ID=0) Timestamp=1192474 Accel=[0,0,0] Gyro=[-2327,822,402] Temp=28
+BARO07(ID=0) Timestamp=1192486 Pressure=91031 Temp=27.58
+BARO11(ID=1) Timestamp=1192488 Pressure=90419 Temp=27.87
+IMU32G(ID=1) Timestamp=1192611 Accel=[0,0,0] Gyro=[2047,61,26] Temp=30
+IMU16G(ID=0) Timestamp=1192807 Accel=[0,0,0] Gyro=[-3115,9126,2485] Temp=28
+BARO07(ID=0) Timestamp=1192827 Pressure=91025 Temp=27.58
+BARO11(ID=1) Timestamp=1192829 Pressure=90419 Temp=27.87
+IMU32G(ID=1) Timestamp=1192954 Accel=[0,0,0] Gyro=[673,-2196,612] Temp=30
+IMU16G(ID=0) Timestamp=1193140 Accel=[0,0,0] Gyro=[2056,-2170,262] Temp=28
+BARO07(ID=0) Timestamp=1193168 Pressure=91042 Temp=27.59
+BARO11(ID=1) Timestamp=1193170 Pressure=90422 Temp=27.87
+IMU32G(ID=1) Timestamp=1193297 Accel=[0,0,0] Gyro=[761,5836,1907] Temp=30
+IMU16G(ID=0) Timestamp=1193473 Accel=[0,0,0] Gyro=[-2878,5285,-1513] Temp=28
+BARO11(ID=1) Timestamp=1193537 Pressure=90408 Temp=27.87
+IMU32G(ID=1) Timestamp=1193640 Accel=[0,0,0] Gyro=[3806,1373,1435] Temp=30
+IMU16G(ID=0) Timestamp=1193806 Accel=[0,0,0] Gyro=[-5748,7402,1452] Temp=28
+BARO07(ID=0) Timestamp=1193850 Pressure=91052 Temp=27.59
+BARO11(ID=1) Timestamp=1193852 Pressure=90418 Temp=27.88
+IMU32G(ID=1) Timestamp=1193983 Accel=[0,0,1] Gyro=[6370,-10107,27378] Temp=30
+IMU16G(ID=0) Timestamp=1194139 Accel=[0,0,0] Gyro=[8130,5710,9187] Temp=28
+BARO07(ID=0) Timestamp=1194191 Pressure=91111 Temp=27.59
+BARO11(ID=1) Timestamp=1194193 Pressure=90417 Temp=27.87
+IMU32G(ID=1) Timestamp=1194326 Accel=[0,0,0] Gyro=[31858,18545,-4690] Temp=30
+IMU16G(ID=0) Timestamp=1194472 Accel=[0,0,0] Gyro=[4706,16722,31849] Temp=28
+BARO07(ID=0) Timestamp=1194532 Pressure=91075 Temp=27.60
+BARO11(ID=1) Timestamp=1194534 Pressure=90416 Temp=27.88
+IMU32G(ID=1) Timestamp=1194669 Accel=[0,0,0] Gyro=[31211,-13301,-31185] Temp=30
+IMU16G(ID=0) Timestamp=1194805 Accel=[0,0,0] Gyro=[5258,-14376,2870] Temp=28
+BARO07(ID=0) Timestamp=1194873 Pressure=91060 Temp=27.60
+BARO11(ID=1) Timestamp=1194875 Pressure=90416 Temp=27.88
+IMU32G(ID=1) Timestamp=1195012 Accel=[0,0,0] Gyro=[23563,-2679,-28787] Temp=30
+IMU16G(ID=0) Timestamp=1195138 Accel=[0,0,0] Gyro=[19573,-11296,18147] Temp=28
+BARO07(ID=0) Timestamp=1195214 Pressure=91042 Temp=27.59
+BARO11(ID=1) Timestamp=1195216 Pressure=90421 Temp=27.88
+IMU32G(ID=1) Timestamp=1195355 Accel=[0,0,0] Gyro=[29408,-25033,17500] Temp=30
+IMU16G(ID=0) Timestamp=1195471 Accel=[0,0,0] Gyro=[-2747,-21533,20141] Temp=28
+BARO07(ID=0) Timestamp=1195555 Pressure=91017 Temp=27.60
+BARO11(ID=1) Timestamp=1195557 Pressure=90420 Temp=27.87
+IMU16G(ID=0) Timestamp=1195804 Accel=[0,0,0] Gyro=[22671,3666,-24201] Temp=28
+BARO07(ID=0) Timestamp=1195896 Pressure=90946 Temp=27.58
+BARO11(ID=1) Timestamp=1195898 Pressure=90416 Temp=27.87
+IMU32G(ID=1) Timestamp=1196041 Accel=[0,0,0] Gyro=[-29521,23414,-12652] Temp=30
+IMU16G(ID=0) Timestamp=1196137 Accel=[0,0,0] Gyro=[-9782,-4978,14901] Temp=28
+BARO07(ID=0) Timestamp=1196237 Pressure=90924 Temp=27.57
+BARO11(ID=1) Timestamp=1196239 Pressure=90403 Temp=27.87
+IMU32G(ID=1) Timestamp=1196384 Accel=[0,0,0] Gyro=[17990,8548,-29671] Temp=30
+IMU16G(ID=0) Timestamp=1196470 Accel=[0,0,0] Gyro=[-13098,-10630,-11480] Temp=28
+BARO07(ID=0) Timestamp=1196578 Pressure=90924 Temp=27.57
+BARO11(ID=1) Timestamp=1196580 Pressure=90403 Temp=27.87
+IMU32G(ID=1) Timestamp=1196727 Accel=[0,0,0] Gyro=[-1645,-21043,20973] Temp=30
+IMU16G(ID=0) Timestamp=1196803 Accel=[0,0,0] Gyro=[-10710,21071,-24893] Temp=28
+BARO07(ID=0) Timestamp=1196919 Pressure=90948 Temp=27.56
+BARO11(ID=1) Timestamp=1196921 Pressure=90416 Temp=27.87
+IMU32G(ID=1) Timestamp=1197070 Accel=[0,0,0] Gyro=[3710,-31867,463] Temp=30
+IMU16G(ID=0) Timestamp=1197136 Accel=[0,0,0] Gyro=[-11663,-4960,1601] Temp=28
+BARO07(ID=0) Timestamp=1197260 Pressure=90966 Temp=27.57
+BARO11(ID=1) Timestamp=1197262 Pressure=90423 Temp=27.87
+IMU32G(ID=1) Timestamp=1197413 Accel=[0,0,0] Gyro=[18016,-22382,-22102] Temp=30
+IMU16G(ID=0) Timestamp=1197469 Accel=[0,0,0] Gyro=[1435,-21130,-848] Temp=28
+BARO07(ID=0) Timestamp=1197601 Pressure=90982 Temp=27.57
+BARO11(ID=1) Timestamp=1197603 Pressure=90417 Temp=27.87
+IMU32G(ID=1) Timestamp=1197756 Accel=[0,0,0] Gyro=[-31140,20605,14340] Temp=30
+IMU16G(ID=0) Timestamp=1197802 Accel=[0,0,0] Gyro=[14857,-8994,-9380] Temp=28
+BARO11(ID=1) Timestamp=1197971 Pressure=90407 Temp=27.87
+IMU32G(ID=1) Timestamp=1198099 Accel=[0,0,0] Gyro=[9668,24639,19477] Temp=30
+IMU16G(ID=0) Timestamp=1198135 Accel=[0,0,0] Gyro=[-18165,26092,18322] Temp=28
+BARO07(ID=0) Timestamp=1198283 Pressure=90956 Temp=27.58
+BARO11(ID=1) Timestamp=1198285 Pressure=90413 Temp=27.88
+IMU32G(ID=1) Timestamp=1198442 Accel=[0,0,0] Gyro=[-7848,-4087,-25366] Temp=30
+IMU16G(ID=0) Timestamp=1198468 Accel=[0,0,0] Gyro=[-25760,-21218,-14770] Temp=28
+BARO07(ID=0) Timestamp=1198624 Pressure=90966 Temp=27.57
+BARO11(ID=1) Timestamp=1198626 Pressure=90382 Temp=27.88
+IMU32G(ID=1) Timestamp=1198785 Accel=[0,0,0] Gyro=[-17167,-4820,11322] Temp=30
+IMU16G(ID=0) Timestamp=1198801 Accel=[0,0,0] Gyro=[17972,-17991,15128] Temp=28
+BARO07(ID=0) Timestamp=1198965 Pressure=90936 Temp=27.58
+BARO11(ID=1) Timestamp=1198967 Pressure=90364 Temp=27.88
+IMU32G(ID=1) Timestamp=1199128 Accel=[0,0,0] Gyro=[-16364,27405,2766] Temp=30
+IMU16G(ID=0) Timestamp=1199134 Accel=[0,0,1] Gyro=[5444,-13002,-7156] Temp=28
+BARO07(ID=0) Timestamp=1199306 Pressure=91014 Temp=27.58
+BARO11(ID=1) Timestamp=1199308 Pressure=90405 Temp=27.89
+IMU16G(ID=0) Timestamp=1199467 Accel=[0,0,1] Gyro=[-2082,603,2887] Temp=28
+IMU32G(ID=1) Timestamp=1199471 Accel=[0,0,0] Gyro=[4086,2327,2485] Temp=30
+BARO07(ID=0) Timestamp=1199647 Pressure=91016 Temp=27.59
+BARO11(ID=1) Timestamp=1199649 Pressure=90393 Temp=27.89
+IMU16G(ID=0) Timestamp=1199800 Accel=[0,0,1] Gyro=[7078,-5783,-1260] Temp=28
+IMU32G(ID=1) Timestamp=1199814 Accel=[0,0,1] Gyro=[-9073,2170,-1732] Temp=30
+BARO07(ID=0) Timestamp=1199988 Pressure=91016 Temp=27.59
+BARO11(ID=1) Timestamp=1199990 Pressure=90390 Temp=27.89
+
+--- Dump Complete ---
+---- Sector Complete ----
+IMU32G(ID=1) Timestamp=1200179 Accel=[0,0,1] Gyro=[-14332,5722,-280] Temp=30
+BARO07(ID=0) Timestamp=1200329 Pressure=91037 Temp=27.59
+BARO11(ID=1) Timestamp=1200336 Pressure=90409 Temp=27.89
+IMU16G(ID=0) Timestamp=1200466 Accel=[0,0,0] Gyro=[-9747,3692,-525] Temp=28
+IMU32G(ID=1) Timestamp=1200500 Accel=[0,0,0] Gyro=[-1575,1216,122] Temp=30
+BARO07(ID=0) Timestamp=1200670 Pressure=91033 Temp=27.60
+BARO11(ID=1) Timestamp=1200677 Pressure=90393 Temp=27.89
+IMU16G(ID=0) Timestamp=1200799 Accel=[0,0,0] Gyro=[673,1461,-393] Temp=28
+IMU32G(ID=1) Timestamp=1200843 Accel=[0,0,0] Gyro=[6510,-1312,910] Temp=30
+BARO07(ID=0) Timestamp=1201011 Pressure=91054 Temp=27.60
+BARO11(ID=1) Timestamp=1201018 Pressure=90379 Temp=27.89
+IMU16G(ID=0) Timestamp=1201132 Accel=[0,0,0] Gyro=[-2030,1006,-166] Temp=28
+IMU32G(ID=1) Timestamp=1201186 Accel=[0,0,1] Gyro=[-7262,4401,2878] Temp=30
+BARO07(ID=0) Timestamp=1201352 Pressure=91038 Temp=27.60
+BARO11(ID=1) Timestamp=1201359 Pressure=90383 Temp=27.90
+IMU16G(ID=0) Timestamp=1201465 Accel=[0,0,0] Gyro=[1198,2528,595] Temp=28
+IMU32G(ID=1) Timestamp=1201529 Accel=[0,0,1] Gyro=[-1286,-6160,1373] Temp=30
+BARO07(ID=0) Timestamp=1201693 Pressure=91049 Temp=27.60
+BARO11(ID=1) Timestamp=1201700 Pressure=90389 Temp=27.90
+IMU16G(ID=0) Timestamp=1201798 Accel=[0,0,0] Gyro=[2388,-61,945] Temp=28
+IMU32G(ID=1) Timestamp=1201872 Accel=[0,0,0] Gyro=[3333,271,2493] Temp=30
+BARO07(ID=0) Timestamp=1202034 Pressure=91043 Temp=27.60
+BARO11(ID=1) Timestamp=1202041 Pressure=90384 Temp=27.91
+IMU16G(ID=0) Timestamp=1202131 Accel=[0,0,0] Gyro=[10535,-7035,227] Temp=28
+IMU32G(ID=1) Timestamp=1202215 Accel=[0,0,0] Gyro=[-5748,1627,1776] Temp=30
+BARO11(ID=1) Timestamp=1202435 Pressure=90381 Temp=27.91
+IMU16G(ID=0) Timestamp=1202464 Accel=[0,0,0] Gyro=[1242,-2721,1706] Temp=28
+IMU32G(ID=1) Timestamp=1202558 Accel=[0,0,0] Gyro=[-4173,5801,-2852] Temp=30
+BARO07(ID=0) Timestamp=1202716 Pressure=91051 Temp=27.61
+BARO11(ID=1) Timestamp=1202723 Pressure=90384 Temp=27.91
+IMU16G(ID=0) Timestamp=1202797 Accel=[0,0,0] Gyro=[1067,4803,1872] Temp=28
+IMU32G(ID=1) Timestamp=1202901 Accel=[0,0,0] Gyro=[13676,-3517,1505] Temp=30
+BARO07(ID=0) Timestamp=1203057 Pressure=91061 Temp=27.61
+BARO11(ID=1) Timestamp=1203064 Pressure=90385 Temp=27.91
+IMU16G(ID=0) Timestamp=1203130 Accel=[0,0,0] Gyro=[-3526,2318,1697] Temp=28
+IMU32G(ID=1) Timestamp=1203244 Accel=[0,0,0] Gyro=[-3788,3228,-113] Temp=30
+BARO07(ID=0) Timestamp=1203398 Pressure=91076 Temp=27.60
+BARO11(ID=1) Timestamp=1203405 Pressure=90385 Temp=27.91
+IMU16G(ID=0) Timestamp=1203463 Accel=[0,0,0] Gyro=[-11165,2485,2178] Temp=28
+IMU32G(ID=1) Timestamp=1203587 Accel=[0,0,0] Gyro=[-5915,5153,-350] Temp=30
+BARO07(ID=0) Timestamp=1203739 Pressure=91073 Temp=27.61
+BARO11(ID=1) Timestamp=1203746 Pressure=90386 Temp=27.91
+IMU16G(ID=0) Timestamp=1203796 Accel=[0,0,0] Gyro=[-8662,8312,4760] Temp=28
+IMU32G(ID=1) Timestamp=1203930 Accel=[0,0,0] Gyro=[-5075,6956,-1225] Temp=30
+BARO07(ID=0) Timestamp=1204080 Pressure=91078 Temp=27.61
+BARO11(ID=1) Timestamp=1204087 Pressure=90381 Temp=27.92
+IMU16G(ID=0) Timestamp=1204129 Accel=[0,0,0] Gyro=[-8618,5241,2380] Temp=28
+IMU32G(ID=1) Timestamp=1204273 Accel=[0,0,0] Gyro=[-17473,12678,6676] Temp=30
+BARO07(ID=0) Timestamp=1204421 Pressure=91090 Temp=27.62
+BARO11(ID=1) Timestamp=1204428 Pressure=90389 Temp=27.91
+IMU32G(ID=1) Timestamp=1204616 Accel=[0,0,0] Gyro=[3666,-1828,-227] Temp=30
+BARO07(ID=0) Timestamp=1204762 Pressure=91088 Temp=27.61
+BARO11(ID=1) Timestamp=1204768 Pressure=90406 Temp=27.92
+IMU16G(ID=0) Timestamp=1204795 Accel=[0,0,0] Gyro=[1356,665,1338] Temp=28
+IMU32G(ID=1) Timestamp=1204959 Accel=[0,0,1] Gyro=[-10386,2082,280] Temp=30
+BARO07(ID=0) Timestamp=1205103 Pressure=91100 Temp=27.62
+BARO11(ID=1) Timestamp=1205105 Pressure=90392 Temp=27.91
+IMU16G(ID=0) Timestamp=1205128 Accel=[0,0,0] Gyro=[-8776,9012,7288] Temp=28
+IMU32G(ID=1) Timestamp=1205302 Accel=[0,0,1] Gyro=[-8837,6361,-358] Temp=30
+BARO07(ID=0) Timestamp=1205444 Pressure=91097 Temp=27.63
+BARO11(ID=1) Timestamp=1205446 Pressure=90399 Temp=27.92
+IMU16G(ID=0) Timestamp=1205461 Accel=[0,0,0] Gyro=[192,2108,1093] Temp=28
+IMU32G(ID=1) Timestamp=1205645 Accel=[0,0,0] Gyro=[-4235,3360,-280] Temp=30
+BARO07(ID=0) Timestamp=1205785 Pressure=91079 Temp=27.62
+BARO11(ID=1) Timestamp=1205787 Pressure=90405 Temp=27.92
+IMU16G(ID=0) Timestamp=1205794 Accel=[0,0,1] Gyro=[1767,1225,323] Temp=28
+IMU32G(ID=1) Timestamp=1205988 Accel=[0,0,0] Gyro=[12958,-7315,4121] Temp=30
+BARO07(ID=0) Timestamp=1206126 Pressure=91079 Temp=27.62
+IMU16G(ID=0) Timestamp=1206127 Accel=[0,0,0] Gyro=[4611,-5136,-1321] Temp=28
+BARO11(ID=1) Timestamp=1206128 Pressure=90406 Temp=27.92
+IMU32G(ID=1) Timestamp=1206331 Accel=[0,0,0] Gyro=[4646,-2205,490] Temp=30
+IMU16G(ID=0) Timestamp=1206460 Accel=[0,0,1] Gyro=[7647,-3438,455] Temp=28
+BARO07(ID=0) Timestamp=1206467 Pressure=91059 Temp=27.62
+BARO11(ID=1) Timestamp=1206469 Pressure=90397 Temp=27.92
+IMU32G(ID=1) Timestamp=1206674 Accel=[0,0,0] Gyro=[6807,-6256,673] Temp=30
+BARO07(ID=0) Timestamp=1206822 Pressure=91052 Temp=27.61
+BARO11(ID=1) Timestamp=1206823 Pressure=90405 Temp=27.92
+IMU32G(ID=1) Timestamp=1207017 Accel=[0,0,0] Gyro=[1417,918,-2502] Temp=30
+IMU16G(ID=0) Timestamp=1207126 Accel=[0,0,1] Gyro=[7822,-3745,245] Temp=28
+BARO07(ID=0) Timestamp=1207149 Pressure=91059 Temp=27.62
+BARO11(ID=1) Timestamp=1207151 Pressure=90412 Temp=27.92
+IMU32G(ID=1) Timestamp=1207360 Accel=[0,0,0] Gyro=[1435,-3456,-2082] Temp=30
+IMU16G(ID=0) Timestamp=1207459 Accel=[0,0,1] Gyro=[5057,-507,1435] Temp=28
+BARO07(ID=0) Timestamp=1207490 Pressure=91037 Temp=27.62
+BARO11(ID=1) Timestamp=1207492 Pressure=90402 Temp=27.92
+IMU32G(ID=1) Timestamp=1207703 Accel=[0,0,0] Gyro=[-2782,3316,-175] Temp=30
+IMU16G(ID=0) Timestamp=1207792 Accel=[0,0,1] Gyro=[14481,-8575,-2240] Temp=28
+BARO07(ID=0) Timestamp=1207831 Pressure=91026 Temp=27.62
+BARO11(ID=1) Timestamp=1207833 Pressure=90392 Temp=27.91
+IMU32G(ID=1) Timestamp=1208046 Accel=[0,0,1] Gyro=[-3272,-3316,2458] Temp=30
+IMU16G(ID=0) Timestamp=1208125 Accel=[0,0,0] Gyro=[-2432,-262,472] Temp=28
+BARO07(ID=0) Timestamp=1208172 Pressure=91000 Temp=27.62
+BARO11(ID=1) Timestamp=1208174 Pressure=90410 Temp=27.91
+IMU32G(ID=1) Timestamp=1208389 Accel=[0,0,1] Gyro=[2362,-3701,4243] Temp=30
+IMU16G(ID=0) Timestamp=1208458 Accel=[0,0,1] Gyro=[3683,-542,3141] Temp=28
+BARO07(ID=0) Timestamp=1208513 Pressure=90994 Temp=27.61
+BARO11(ID=1) Timestamp=1208515 Pressure=90414 Temp=27.90
+IMU32G(ID=1) Timestamp=1208732 Accel=[0,0,0] Gyro=[-6833,3797,-1207] Temp=30
+IMU16G(ID=0) Timestamp=1208791 Accel=[0,0,1] Gyro=[-5381,8522,2152] Temp=28
+BARO07(ID=0) Timestamp=1208854 Pressure=90999 Temp=27.61
+IMU32G(ID=1) Timestamp=1209075 Accel=[0,0,0] Gyro=[1548,805,1286] Temp=30
+IMU16G(ID=0) Timestamp=1209124 Accel=[0,0,0] Gyro=[-3963,5661,-1216] Temp=28
+BARO07(ID=0) Timestamp=1209195 Pressure=90988 Temp=27.61
+BARO11(ID=1) Timestamp=1209197 Pressure=90414 Temp=27.90
+IMU32G(ID=1) Timestamp=1209418 Accel=[0,0,0] Gyro=[3368,-2730,656] Temp=30
+IMU16G(ID=0) Timestamp=1209457 Accel=[0,0,1] Gyro=[-201,1172,3937] Temp=28
+BARO07(ID=0) Timestamp=1209536 Pressure=91004 Temp=27.61
+BARO11(ID=1) Timestamp=1209538 Pressure=90414 Temp=27.90
+IMU32G(ID=1) Timestamp=1209761 Accel=[0,0,0] Gyro=[6020,288,-761] Temp=30
+IMU16G(ID=0) Timestamp=1209790 Accel=[0,0,0] Gyro=[4786,-5582,2213] Temp=28
+BARO07(ID=0) Timestamp=1209877 Pressure=90993 Temp=27.61
+BARO11(ID=1) Timestamp=1209879 Pressure=90406 Temp=27.91
+IMU32G(ID=1) Timestamp=1210104 Accel=[0,0,0] Gyro=[3561,-61,1286] Temp=30
+IMU16G(ID=0) Timestamp=1210123 Accel=[0,0,0] Gyro=[3710,-656,-131] Temp=28
+BARO07(ID=0) Timestamp=1210218 Pressure=91026 Temp=27.61
+BARO11(ID=1) Timestamp=1210220 Pressure=90410 Temp=27.91
+IMU32G(ID=1) Timestamp=1210447 Accel=[0,0,0] Gyro=[4716,-2485,2703] Temp=30
+IMU16G(ID=0) Timestamp=1210456 Accel=[0,0,0] Gyro=[-490,393,0] Temp=28
+BARO07(ID=0) Timestamp=1210559 Pressure=91036 Temp=27.61
+BARO11(ID=1) Timestamp=1210561 Pressure=90432 Temp=27.91
+IMU16G(ID=0) Timestamp=1210789 Accel=[0,0,0] Gyro=[-3255,4340,1890] Temp=28
+IMU32G(ID=1) Timestamp=1210790 Accel=[0,0,1] Gyro=[3736,-3246,1487] Temp=30
+BARO07(ID=0) Timestamp=1210900 Pressure=91052 Temp=27.61
+BARO11(ID=1) Timestamp=1210902 Pressure=90425 Temp=27.91
+IMU16G(ID=0) Timestamp=1211122 Accel=[0,0,1] Gyro=[-3850,2266,1750] Temp=28
+BARO07(ID=0) Timestamp=1211241 Pressure=91079 Temp=27.62
+BARO11(ID=1) Timestamp=1211243 Pressure=90444 Temp=27.92
+IMU16G(ID=0) Timestamp=1211455 Accel=[0,0,0] Gyro=[-2248,-1023,-52] Temp=28
+IMU32G(ID=1) Timestamp=1211476 Accel=[0,0,0] Gyro=[-1601,2310,-665] Temp=30
+BARO07(ID=0) Timestamp=1211582 Pressure=91073 Temp=27.61
+BARO11(ID=1) Timestamp=1211584 Pressure=90432 Temp=27.92
+IMU16G(ID=0) Timestamp=1211788 Accel=[0,0,0] Gyro=[-4025,4007,901] Temp=28
+IMU32G(ID=1) Timestamp=1211819 Accel=[0,0,0] Gyro=[-1163,1505,-2730] Temp=30
+BARO07(ID=0) Timestamp=1211923 Pressure=91079 Temp=27.62
+BARO11(ID=1) Timestamp=1211925 Pressure=90435 Temp=27.92
+IMU16G(ID=0) Timestamp=1212121 Accel=[0,0,0] Gyro=[4077,-5565,350] Temp=28
+IMU32G(ID=1) Timestamp=1212162 Accel=[0,0,0] Gyro=[-2143,5915,1058] Temp=30
+BARO07(ID=0) Timestamp=1212264 Pressure=91037 Temp=27.62
+BARO11(ID=1) Timestamp=1212266 Pressure=90440 Temp=27.93
+IMU16G(ID=0) Timestamp=1212454 Accel=[0,0,0] Gyro=[-2476,-1408,-647] Temp=28
+IMU32G(ID=1) Timestamp=1212505 Accel=[0,0,0] Gyro=[-1793,962,1443] Temp=30
+BARO07(ID=0) Timestamp=1212605 Pressure=91042 Temp=27.62
+BARO11(ID=1) Timestamp=1212607 Pressure=90447 Temp=27.92
+IMU16G(ID=0) Timestamp=1212787 Accel=[0,0,0] Gyro=[-1916,1172,1461] Temp=28
+IMU32G(ID=1) Timestamp=1212848 Accel=[0,0,0] Gyro=[-2537,3298,-761] Temp=30
+BARO07(ID=0) Timestamp=1212946 Pressure=91005 Temp=27.62
+BARO11(ID=1) Timestamp=1212948 Pressure=90433 Temp=27.92
+IMU16G(ID=0) Timestamp=1213120 Accel=[0,0,0] Gyro=[-26,-140,358] Temp=28
+IMU32G(ID=1) Timestamp=1213191 Accel=[0,0,0] Gyro=[-892,2327,1146] Temp=30
+BARO07(ID=0) Timestamp=1213287 Pressure=91010 Temp=27.61
+IMU16G(ID=0) Timestamp=1213453 Accel=[0,0,0] Gyro=[288,761,568] Temp=28
+IMU32G(ID=1) Timestamp=1213534 Accel=[0,0,0] Gyro=[26,-1102,472] Temp=30
+BARO07(ID=0) Timestamp=1213628 Pressure=91015 Temp=27.61
+BARO11(ID=1) Timestamp=1213630 Pressure=90440 Temp=27.91
+IMU16G(ID=0) Timestamp=1213786 Accel=[0,0,1] Gyro=[-577,1461,1487] Temp=28
+IMU32G(ID=1) Timestamp=1213877 Accel=[0,0,0] Gyro=[6090,2222,1303] Temp=30
+BARO07(ID=0) Timestamp=1213969 Pressure=91026 Temp=27.61
+BARO11(ID=1) Timestamp=1213971 Pressure=90436 Temp=27.91
+IMU16G(ID=0) Timestamp=1214119 Accel=[0,0,0] Gyro=[-2756,-1128,796] Temp=28
+IMU32G(ID=1) Timestamp=1214220 Accel=[0,0,0] Gyro=[743,-980,-673] Temp=30
+BARO07(ID=0) Timestamp=1214310 Pressure=91035 Temp=27.61
+BARO11(ID=1) Timestamp=1214312 Pressure=90448 Temp=27.91
+IMU16G(ID=0) Timestamp=1214452 Accel=[0,0,0] Gyro=[3150,-4908,-603] Temp=28
+IMU32G(ID=1) Timestamp=1214563 Accel=[0,0,0] Gyro=[-4882,-2590,1802] Temp=30
+BARO07(ID=0) Timestamp=1214651 Pressure=91031 Temp=27.61
+BARO11(ID=1) Timestamp=1214653 Pressure=90436 Temp=27.91
+IMU16G(ID=0) Timestamp=1214785 Accel=[0,0,0] Gyro=[-5398,5311,1338] Temp=28
+IMU32G(ID=1) Timestamp=1214906 Accel=[0,0,0] Gyro=[-166,1382,393] Temp=30
+BARO07(ID=0) Timestamp=1214992 Pressure=91042 Temp=27.62
+BARO11(ID=1) Timestamp=1214994 Pressure=90445 Temp=27.91
+IMU16G(ID=0) Timestamp=1215118 Accel=[0,0,0] Gyro=[393,2887,1680] Temp=28
+IMU32G(ID=1) Timestamp=1215249 Accel=[0,0,0] Gyro=[-1697,3788,411] Temp=30
+BARO07(ID=0) Timestamp=1215333 Pressure=91027 Temp=27.62
+BARO11(ID=1) Timestamp=1215335 Pressure=90428 Temp=27.91
+IMU16G(ID=0) Timestamp=1215451 Accel=[0,0,0] Gyro=[-481,4331,1680] Temp=28
+BARO07(ID=0) Timestamp=1215674 Pressure=91063 Temp=27.62
+BARO11(ID=1) Timestamp=1215676 Pressure=90451 Temp=27.91
+IMU16G(ID=0) Timestamp=1215784 Accel=[0,0,1] Gyro=[3657,-280,253] Temp=28
+IMU32G(ID=1) Timestamp=1215935 Accel=[0,0,0] Gyro=[-1872,-1058,-603] Temp=30
+BARO07(ID=0) Timestamp=1216015 Pressure=91074 Temp=27.62
+BARO11(ID=1) Timestamp=1216017 Pressure=90447 Temp=27.91
+IMU16G(ID=0) Timestamp=1216117 Accel=[0,0,0] Gyro=[4847,-2082,-140] Temp=28
+IMU32G(ID=1) Timestamp=1216278 Accel=[0,0,0] Gyro=[-3255,2327,157] Temp=30
+BARO07(ID=0) Timestamp=1216356 Pressure=91089 Temp=27.62
+BARO11(ID=1) Timestamp=1216358 Pressure=90443 Temp=27.91
+IMU16G(ID=0) Timestamp=1216450 Accel=[0,0,0] Gyro=[1076,3508,770] Temp=28
+IMU32G(ID=1) Timestamp=1216621 Accel=[0,0,0] Gyro=[560,-288,708] Temp=30
+BARO07(ID=0) Timestamp=1216697 Pressure=91101 Temp=27.62
+BARO11(ID=1) Timestamp=1216699 Pressure=90437 Temp=27.91
+IMU16G(ID=0) Timestamp=1216783 Accel=[0,0,0] Gyro=[-2205,1207,2126] Temp=28
+IMU32G(ID=1) Timestamp=1216964 Accel=[0,0,1] Gyro=[3727,-2887,2528] Temp=30
+BARO07(ID=0) Timestamp=1217038 Pressure=91112 Temp=27.62
+BARO11(ID=1) Timestamp=1217040 Pressure=90434 Temp=27.91
+IMU16G(ID=0) Timestamp=1217116 Accel=[0,0,0] Gyro=[-7140,5486,437] Temp=28
+IMU32G(ID=1) Timestamp=1217307 Accel=[0,0,0] Gyro=[-8120,1023,11795] Temp=30
+BARO07(ID=0) Timestamp=1217379 Pressure=91118 Temp=27.63
+BARO11(ID=1) Timestamp=1217381 Pressure=90444 Temp=27.91
+IMU16G(ID=0) Timestamp=1217449 Accel=[0,0,0] Gyro=[1338,-1312,1426] Temp=28
+IMU32G(ID=1) Timestamp=1217650 Accel=[0,0,0] Gyro=[2213,288,770] Temp=30
+BARO07(ID=0) Timestamp=1217720 Pressure=91133 Temp=27.63
+
+--- Dump Complete ---
+---- Sector Complete ----
+IMU16G(ID=0) Timestamp=1217782 Accel=[0,0,0] Gyro=[3718,-1286,936] Temp=28
+IMU32G(ID=1) Timestamp=1217993 Accel=[0,0,0] Gyro=[2913,-2318,376] Temp=30
+BARO07(ID=0) Timestamp=1218061 Pressure=91133 Temp=27.63
+BARO11(ID=1) Timestamp=1218068 Pressure=90480 Temp=27.91
+IMU16G(ID=0) Timestamp=1218115 Accel=[0,0,0] Gyro=[2590,-1995,-1741] Temp=28
+IMU32G(ID=1) Timestamp=1218336 Accel=[0,0,1] Gyro=[-6930,-1347,-4077] Temp=30
+BARO07(ID=0) Timestamp=1218402 Pressure=91102 Temp=27.63
+BARO11(ID=1) Timestamp=1218409 Pressure=90479 Temp=27.91
+IMU16G(ID=0) Timestamp=1218448 Accel=[0,0,0] Gyro=[11681,-10806,5827] Temp=28
+IMU32G(ID=1) Timestamp=1218679 Accel=[0,0,1] Gyro=[918,4322,35] Temp=30
+BARO07(ID=0) Timestamp=1218743 Pressure=91076 Temp=27.63
+BARO11(ID=1) Timestamp=1218750 Pressure=90475 Temp=27.91
+IMU16G(ID=0) Timestamp=1218781 Accel=[0,0,0] Gyro=[-455,3762,962] Temp=28
+IMU32G(ID=1) Timestamp=1219022 Accel=[0,0,0] Gyro=[262,3815,787] Temp=30
+BARO07(ID=0) Timestamp=1219084 Pressure=91033 Temp=27.62
+BARO11(ID=1) Timestamp=1219091 Pressure=90450 Temp=27.90
+IMU16G(ID=0) Timestamp=1219114 Accel=[0,0,0] Gyro=[-6440,7122,-6483] Temp=28
+IMU32G(ID=1) Timestamp=1219365 Accel=[0,0,0] Gyro=[4777,-3640,3482] Temp=30
+BARO07(ID=0) Timestamp=1219425 Pressure=90980 Temp=27.62
+BARO11(ID=1) Timestamp=1219432 Pressure=90458 Temp=27.90
+IMU16G(ID=0) Timestamp=1219447 Accel=[0,0,0] Gyro=[1443,3823,12110] Temp=28
+IMU32G(ID=1) Timestamp=1219708 Accel=[0,0,1] Gyro=[-612,2721,568] Temp=30
+BARO07(ID=0) Timestamp=1219766 Pressure=91021 Temp=27.62
+BARO11(ID=1) Timestamp=1219773 Pressure=90465 Temp=27.90
+IMU16G(ID=0) Timestamp=1219780 Accel=[0,0,1] Gyro=[-805,-5696,1916] Temp=28
+BARO07(ID=0) Timestamp=1220120 Pressure=91031 Temp=27.61
+BARO11(ID=1) Timestamp=1220126 Pressure=90458 Temp=27.89
+IMU16G(ID=0) Timestamp=1220132 Accel=[0,0,0] Gyro=[3771,-8093,4042] Temp=28
+IMU32G(ID=1) Timestamp=1220394 Accel=[0,0,0] Gyro=[6973,-11760,-918] Temp=30
+IMU16G(ID=0) Timestamp=1220447 Accel=[0,0,0] Gyro=[6536,-1785,-4208] Temp=28
+BARO07(ID=0) Timestamp=1220453 Pressure=91015 Temp=27.61
+BARO11(ID=1) Timestamp=1220459 Pressure=90459 Temp=27.90
+IMU32G(ID=1) Timestamp=1220737 Accel=[0,0,1] Gyro=[-3885,770,-1557] Temp=30
+IMU16G(ID=0) Timestamp=1220779 Accel=[0,0,0] Gyro=[-1566,-2773,665] Temp=28
+BARO07(ID=0) Timestamp=1220789 Pressure=91020 Temp=27.61
+BARO11(ID=1) Timestamp=1220796 Pressure=90471 Temp=27.90
+IMU32G(ID=1) Timestamp=1221080 Accel=[0,0,0] Gyro=[-1146,-140,-1846] Temp=30
+IMU16G(ID=0) Timestamp=1221112 Accel=[0,0,0] Gyro=[1575,-1050,1610] Temp=28
+BARO07(ID=0) Timestamp=1221130 Pressure=91000 Temp=27.62
+BARO11(ID=1) Timestamp=1221137 Pressure=90459 Temp=27.90
+IMU32G(ID=1) Timestamp=1221423 Accel=[0,0,0] Gyro=[-962,927,-3412] Temp=30
+IMU16G(ID=0) Timestamp=1221445 Accel=[0,0,0] Gyro=[-2712,4042,-428] Temp=28
+BARO07(ID=0) Timestamp=1221471 Pressure=91011 Temp=27.62
+BARO11(ID=1) Timestamp=1221478 Pressure=90485 Temp=27.89
+IMU32G(ID=1) Timestamp=1221766 Accel=[0,0,0] Gyro=[-1137,-778,910] Temp=30
+IMU16G(ID=0) Timestamp=1221782 Accel=[0,0,0] Gyro=[-1933,3220,866] Temp=28
+BARO07(ID=0) Timestamp=1221812 Pressure=91020 Temp=27.61
+BARO11(ID=1) Timestamp=1221819 Pressure=90477 Temp=27.90
+IMU32G(ID=1) Timestamp=1222109 Accel=[0,0,0] Gyro=[-1146,376,-560] Temp=30
+IMU16G(ID=0) Timestamp=1222116 Accel=[0,0,0] Gyro=[-691,892,1295] Temp=28
+BARO11(ID=1) Timestamp=1222187 Pressure=90484 Temp=27.90
+IMU16G(ID=0) Timestamp=1222444 Accel=[0,0,1] Gyro=[6046,-5302,-2607] Temp=28
+IMU32G(ID=1) Timestamp=1222452 Accel=[0,0,1] Gyro=[-4663,5311,-1076] Temp=30
+BARO07(ID=0) Timestamp=1222494 Pressure=91073 Temp=27.62
+BARO11(ID=1) Timestamp=1222496 Pressure=90487 Temp=27.90
+IMU16G(ID=0) Timestamp=1222777 Accel=[0,0,1] Gyro=[-2563,-1907,2660] Temp=28
+IMU32G(ID=1) Timestamp=1222795 Accel=[0,0,0] Gyro=[3762,2038,4497] Temp=30
+BARO07(ID=0) Timestamp=1222835 Pressure=91068 Temp=27.62
+BARO11(ID=1) Timestamp=1222837 Pressure=90487 Temp=27.90
+IMU16G(ID=0) Timestamp=1223110 Accel=[0,0,0] Gyro=[3272,-1610,-280] Temp=28
+IMU32G(ID=1) Timestamp=1223138 Accel=[0,0,1] Gyro=[2100,1531,-227] Temp=30
+BARO07(ID=0) Timestamp=1223176 Pressure=91075 Temp=27.62
+BARO11(ID=1) Timestamp=1223178 Pressure=90487 Temp=27.91
+IMU16G(ID=0) Timestamp=1223443 Accel=[0,0,1] Gyro=[2423,-1085,2205] Temp=28
+IMU32G(ID=1) Timestamp=1223481 Accel=[0,0,0] Gyro=[5853,-2738,3158] Temp=30
+BARO07(ID=0) Timestamp=1223517 Pressure=91064 Temp=27.62
+BARO11(ID=1) Timestamp=1223519 Pressure=90483 Temp=27.91
+IMU16G(ID=0) Timestamp=1223776 Accel=[0,0,0] Gyro=[2695,3753,1452] Temp=28
+IMU32G(ID=1) Timestamp=1223824 Accel=[0,0,0] Gyro=[4357,2590,-3745] Temp=30
+BARO07(ID=0) Timestamp=1223858 Pressure=91065 Temp=27.62
+BARO11(ID=1) Timestamp=1223860 Pressure=90474 Temp=27.91
+IMU16G(ID=0) Timestamp=1224109 Accel=[0,0,1] Gyro=[12993,-8050,875] Temp=28
+IMU32G(ID=1) Timestamp=1224167 Accel=[0,0,1] Gyro=[3001,4620,-1435] Temp=30
+BARO07(ID=0) Timestamp=1224199 Pressure=91079 Temp=27.62
+BARO11(ID=1) Timestamp=1224201 Pressure=90471 Temp=27.91
+IMU32G(ID=1) Timestamp=1224510 Accel=[0,0,0] Gyro=[-11270,3736,-6020] Temp=30
+BARO07(ID=0) Timestamp=1224540 Pressure=91049 Temp=27.62
+BARO11(ID=1) Timestamp=1224542 Pressure=90468 Temp=27.91
+IMU16G(ID=0) Timestamp=1224775 Accel=[0,0,1] Gyro=[3902,-1723,1513] Temp=28
+IMU32G(ID=1) Timestamp=1224853 Accel=[0,0,0] Gyro=[-1452,-463,988] Temp=30
+BARO07(ID=0) Timestamp=1224881 Pressure=91011 Temp=27.62
+BARO11(ID=1) Timestamp=1224883 Pressure=90473 Temp=27.91
+IMU16G(ID=0) Timestamp=1225108 Accel=[0,0,0] Gyro=[-2922,-5757,-1233] Temp=28
+IMU32G(ID=1) Timestamp=1225196 Accel=[0,0,0] Gyro=[-1557,-6580,9730] Temp=30
+BARO07(ID=0) Timestamp=1225222 Pressure=90994 Temp=27.61
+BARO11(ID=1) Timestamp=1225224 Pressure=90470 Temp=27.91
+IMU16G(ID=0) Timestamp=1225441 Accel=[0,0,0] Gyro=[-1023,1408,332] Temp=28
+IMU32G(ID=1) Timestamp=1225539 Accel=[0,0,0] Gyro=[-192,936,1041] Temp=30
+BARO07(ID=0) Timestamp=1225563 Pressure=90978 Temp=27.61
+BARO11(ID=1) Timestamp=1225565 Pressure=90461 Temp=27.91
+IMU16G(ID=0) Timestamp=1225774 Accel=[0,0,0] Gyro=[2555,-306,-533] Temp=28
+IMU32G(ID=1) Timestamp=1225882 Accel=[0,0,0] Gyro=[1916,857,3220] Temp=30
+BARO07(ID=0) Timestamp=1225904 Pressure=91009 Temp=27.61
+BARO11(ID=1) Timestamp=1225906 Pressure=90459 Temp=27.91
+IMU16G(ID=0) Timestamp=1226107 Accel=[0,0,0] Gyro=[805,8,192] Temp=28
+IMU32G(ID=1) Timestamp=1226225 Accel=[0,0,0] Gyro=[-6422,8190,-2222] Temp=30
+BARO07(ID=0) Timestamp=1226245 Pressure=91026 Temp=27.62
+BARO11(ID=1) Timestamp=1226247 Pressure=90492 Temp=27.91
+IMU16G(ID=0) Timestamp=1226440 Accel=[0,0,0] Gyro=[-5888,5372,2502] Temp=28
+IMU32G(ID=1) Timestamp=1226568 Accel=[0,0,1] Gyro=[1268,-2003,-743] Temp=30
+BARO11(ID=1) Timestamp=1226614 Pressure=90472 Temp=27.92
+IMU16G(ID=0) Timestamp=1226773 Accel=[0,0,1] Gyro=[-1058,-3552,5320] Temp=28
+IMU32G(ID=1) Timestamp=1226911 Accel=[0,0,0] Gyro=[271,-5276,-4401] Temp=30
+BARO07(ID=0) Timestamp=1226927 Pressure=91053 Temp=27.62
+BARO11(ID=1) Timestamp=1226929 Pressure=90497 Temp=27.92
+IMU16G(ID=0) Timestamp=1227106 Accel=[0,0,0] Gyro=[-1190,201,-1067] Temp=28
+IMU32G(ID=1) Timestamp=1227254 Accel=[0,0,0] Gyro=[-201,2371,-822] Temp=30
+BARO07(ID=0) Timestamp=1227268 Pressure=91070 Temp=27.62
+BARO11(ID=1) Timestamp=1227270 Pressure=90493 Temp=27.92
+IMU16G(ID=0) Timestamp=1227439 Accel=[0,0,0] Gyro=[-3885,1067,1172] Temp=28
+IMU32G(ID=1) Timestamp=1227597 Accel=[0,0,0] Gyro=[2590,1750,1155] Temp=30
+BARO07(ID=0) Timestamp=1227609 Pressure=91059 Temp=27.62
+BARO11(ID=1) Timestamp=1227611 Pressure=90484 Temp=27.92
+IMU16G(ID=0) Timestamp=1227772 Accel=[0,0,0] Gyro=[3290,2388,-708] Temp=28
+IMU32G(ID=1) Timestamp=1227940 Accel=[0,0,0] Gyro=[2380,-1356,1715] Temp=30
+BARO07(ID=0) Timestamp=1227951 Pressure=91032 Temp=27.62
+BARO11(ID=1) Timestamp=1227952 Pressure=90479 Temp=27.92
+IMU16G(ID=0) Timestamp=1228105 Accel=[0,0,0] Gyro=[2948,673,393] Temp=28
+IMU32G(ID=1) Timestamp=1228283 Accel=[0,0,0] Gyro=[-236,-2415,0] Temp=30
+BARO07(ID=0) Timestamp=1228291 Pressure=91032 Temp=27.62
+BARO11(ID=1) Timestamp=1228294 Pressure=90476 Temp=27.92
+IMU16G(ID=0) Timestamp=1228438 Accel=[0,0,0] Gyro=[1461,-1268,-831] Temp=28
+IMU32G(ID=1) Timestamp=1228626 Accel=[0,0,0] Gyro=[2817,-4025,4830] Temp=30
+BARO07(ID=0) Timestamp=1228632 Pressure=91026 Temp=27.62
+BARO11(ID=1) Timestamp=1228634 Pressure=90493 Temp=27.92
+IMU32G(ID=1) Timestamp=1228969 Accel=[0,0,0] Gyro=[-883,6903,-131] Temp=30
+BARO07(ID=0) Timestamp=1228973 Pressure=91011 Temp=27.62
+BARO11(ID=1) Timestamp=1228975 Pressure=90484 Temp=27.92
+IMU16G(ID=0) Timestamp=1229104 Accel=[0,0,0] Gyro=[1478,148,1820] Temp=28
+IMU32G(ID=1) Timestamp=1229312 Accel=[0,0,1] Gyro=[-560,-2021,1373] Temp=30
+BARO07(ID=0) Timestamp=1229314 Pressure=91021 Temp=27.62
+BARO11(ID=1) Timestamp=1229316 Pressure=90484 Temp=27.92
+IMU16G(ID=0) Timestamp=1229437 Accel=[0,0,0] Gyro=[4226,402,-3622] Temp=28
+IMU32G(ID=1) Timestamp=1229655 Accel=[0,0,1] Gyro=[-3045,-2170,1303] Temp=30
+BARO07(ID=0) Timestamp=1229656 Pressure=91037 Temp=27.62
+BARO11(ID=1) Timestamp=1229657 Pressure=90486 Temp=27.91
+IMU16G(ID=0) Timestamp=1229770 Accel=[0,0,1] Gyro=[-1006,332,1391] Temp=28
+BARO07(ID=0) Timestamp=1229996 Pressure=91032 Temp=27.62
+IMU32G(ID=1) Timestamp=1229998 Accel=[0,0,0] Gyro=[3307,2143,2651] Temp=30
+BARO11(ID=1) Timestamp=1229999 Pressure=90487 Temp=27.92
+IMU16G(ID=0) Timestamp=1230103 Accel=[0,0,0] Gyro=[-358,87,-1487] Temp=28
+BARO07(ID=0) Timestamp=1230337 Pressure=91058 Temp=27.62
+BARO11(ID=1) Timestamp=1230339 Pressure=90497 Temp=27.92
+IMU32G(ID=1) Timestamp=1230341 Accel=[0,0,0] Gyro=[-43,971,350] Temp=30
+IMU16G(ID=0) Timestamp=1230436 Accel=[0,0,0] Gyro=[-1566,1618,-1907] Temp=28
+BARO07(ID=0) Timestamp=1230678 Pressure=91073 Temp=27.62
+BARO11(ID=1) Timestamp=1230680 Pressure=90505 Temp=27.92
+IMU32G(ID=1) Timestamp=1230684 Accel=[0,0,1] Gyro=[-4077,-2380,-113] Temp=30
+IMU16G(ID=0) Timestamp=1230769 Accel=[0,0,0] Gyro=[-962,-971,2318] Temp=28
+BARO07(ID=0) Timestamp=1231019 Pressure=91086 Temp=27.62
+IMU32G(ID=1) Timestamp=1231049 Accel=[0,0,0] Gyro=[-2135,-892,-761] Temp=30
+IMU16G(ID=0) Timestamp=1231102 Accel=[0,0,0] Gyro=[3465,-542,420] Temp=28
+BARO07(ID=0) Timestamp=1231360 Pressure=91091 Temp=27.62
+BARO11(ID=1) Timestamp=1231362 Pressure=90494 Temp=27.92
+IMU32G(ID=1) Timestamp=1231370 Accel=[0,0,0] Gyro=[-1907,0,936] Temp=30
+IMU16G(ID=0) Timestamp=1231435 Accel=[0,0,0] Gyro=[2248,262,-691] Temp=28
+BARO07(ID=0) Timestamp=1231701 Pressure=91102 Temp=27.63
+BARO11(ID=1) Timestamp=1231703 Pressure=90485 Temp=27.92
+IMU32G(ID=1) Timestamp=1231713 Accel=[0,0,0] Gyro=[4025,-3841,1356] Temp=30
+IMU16G(ID=0) Timestamp=1231768 Accel=[0,0,0] Gyro=[-3220,656,717] Temp=28
+BARO07(ID=0) Timestamp=1232042 Pressure=91092 Temp=27.63
+BARO11(ID=1) Timestamp=1232044 Pressure=90498 Temp=27.93
+IMU32G(ID=1) Timestamp=1232056 Accel=[0,0,0] Gyro=[3316,-113,560] Temp=30
+IMU16G(ID=0) Timestamp=1232101 Accel=[0,0,0] Gyro=[-2983,-87,2388] Temp=28
+BARO07(ID=0) Timestamp=1232383 Pressure=91097 Temp=27.63
+BARO11(ID=1) Timestamp=1232385 Pressure=90498 Temp=27.93
+IMU32G(ID=1) Timestamp=1232399 Accel=[0,0,0] Gyro=[2091,-953,586] Temp=30
+IMU16G(ID=0) Timestamp=1232434 Accel=[0,0,1] Gyro=[-3141,1365,3202] Temp=28
+BARO07(ID=0) Timestamp=1232724 Pressure=91101 Temp=27.62
+BARO11(ID=1) Timestamp=1232726 Pressure=90504 Temp=27.93
+IMU32G(ID=1) Timestamp=1232742 Accel=[0,0,0] Gyro=[-1820,-157,1680] Temp=30
+IMU16G(ID=0) Timestamp=1232767 Accel=[0,0,0] Gyro=[-122,-1548,-236] Temp=28
+BARO07(ID=0) Timestamp=1233065 Pressure=91081 Temp=27.63
+BARO11(ID=1) Timestamp=1233067 Pressure=90510 Temp=27.93
+IMU32G(ID=1) Timestamp=1233085 Accel=[0,0,1] Gyro=[-1811,1750,507] Temp=30
+BARO07(ID=0) Timestamp=1233406 Pressure=91092 Temp=27.63
+BARO11(ID=1) Timestamp=1233408 Pressure=90504 Temp=27.93
+IMU32G(ID=1) Timestamp=1233428 Accel=[0,0,1] Gyro=[-3115,-2467,-1102] Temp=30
+IMU16G(ID=0) Timestamp=1233433 Accel=[0,0,1] Gyro=[2520,1155,-218] Temp=28
+BARO07(ID=0) Timestamp=1233747 Pressure=91077 Temp=27.63
+BARO11(ID=1) Timestamp=1233749 Pressure=90504 Temp=27.93
+IMU16G(ID=0) Timestamp=1233766 Accel=[0,0,0] Gyro=[-1470,-647,-656] Temp=28
+IMU32G(ID=1) Timestamp=1233771 Accel=[0,0,0] Gyro=[271,1505,-586] Temp=30
+BARO07(ID=0) Timestamp=1234088 Pressure=91082 Temp=27.63
+BARO11(ID=1) Timestamp=1234090 Pressure=90495 Temp=27.93
+IMU16G(ID=0) Timestamp=1234099 Accel=[0,0,0] Gyro=[-2345,-3141,131] Temp=28
+IMU32G(ID=1) Timestamp=1234114 Accel=[0,0,0] Gyro=[-1688,2266,1557] Temp=30
+BARO07(ID=0) Timestamp=1234429 Pressure=91082 Temp=27.63
+BARO11(ID=1) Timestamp=1234431 Pressure=90498 Temp=27.93
+IMU16G(ID=0) Timestamp=1234432 Accel=[0,0,0] Gyro=[52,-4690,-1067] Temp=28
+IMU32G(ID=1) Timestamp=1234457 Accel=[0,0,0] Gyro=[4322,3622,1968] Temp=30
+IMU16G(ID=0) Timestamp=1234765 Accel=[0,0,0] Gyro=[1058,-3447,-446] Temp=28
+BARO07(ID=0) Timestamp=1234770 Pressure=91098 Temp=27.63
+BARO11(ID=1) Timestamp=1234772 Pressure=90496 Temp=27.94
+IMU32G(ID=1) Timestamp=1234800 Accel=[0,0,0] Gyro=[-1758,787,131] Temp=30
+IMU16G(ID=0) Timestamp=1235098 Accel=[0,0,1] Gyro=[1295,-192,1006] Temp=28
+BARO07(ID=0) Timestamp=1235111 Pressure=91086 Temp=27.63
+BARO11(ID=1) Timestamp=1235113 Pressure=90507 Temp=27.93
+IMU32G(ID=1) Timestamp=1235143 Accel=[0,0,0] Gyro=[-10368,6020,-3710] Temp=30
+IMU16G(ID=0) Timestamp=1235431 Accel=[0,0,1] Gyro=[533,3237,-490] Temp=28
+
+--- Dump Complete ---

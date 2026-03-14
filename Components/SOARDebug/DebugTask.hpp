@@ -10,12 +10,21 @@
 #include "Task.hpp"
 #include "SystemDefines.hpp"
 #include "UARTDriver.hpp"
+#include "DataBroker.hpp"
+#include "IMUTask.hpp"
+#include "LSM6DSOTask.hpp"
+#include "mmc5983Task.hpp"
+#include "BaroTask07.hpp"
+#include "BaroTask11.hpp"
+
 
 /* Enums ------------------------------------------------------------------*/
 enum DEBUG_TASK_COMMANDS {
   DEBUG_TASK_COMMAND_NONE = 0,
   EVENT_DEBUG_RX_COMPLETE
 };
+
+
 
 /* Macros ------------------------------------------------------------------*/
 constexpr uint16_t DEBUG_RX_BUFFER_SZ_BYTES = 16;
@@ -32,6 +41,9 @@ class DebugTask : public Task, public UARTReceiverBase {
 
   // Interrupt receive callback
   void InterruptRxData(uint8_t errors);
+
+//  bool debugEnabled = false;
+  static bool debugEnabled;
 
  protected:
   static void RunTask(void* pvParams) {
@@ -63,5 +75,8 @@ class DebugTask : public Task, public UARTReceiverBase {
   DebugTask(const DebugTask&);             // Prevent copy-construction
   DebugTask& operator=(const DebugTask&);  // Prevent assignment
 };
+
+// In DebugTask.hpp - add this static method
+
 
 #endif  // CUBE_SYSTEM_DEBUG_TASK_HPP_
