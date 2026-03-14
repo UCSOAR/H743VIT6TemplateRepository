@@ -101,9 +101,6 @@ void LoggingTask::Run(void * pvParams){
 
         	HandleCommand(cm);
         }
-        cm.Reset();
-
-
     }
 
 }
@@ -127,6 +124,7 @@ void LoggingTask::HandleCommand(Command& cm){
 
 		// Only log IDs 0 or 1
 		if (data.id != 0 && data.id != 1) {
+			cm.Reset();
 		    return;
 		}
 
@@ -179,10 +177,23 @@ void LoggingTask::HandleCommand(Command& cm){
 	{
 		MagData data = DataBroker::ExtractData<MagData>(cm);
 
+		uint32_t timestamp = xTaskGetTickCount() * portTICK_PERIOD_MS;
+		memset(buf, 0, 20);
 
 		buf[0] = static_cast<uint8_t>(LoggingData::MAG);
-		memcpy(buf + 1, &data, sizeof(MagData));
-		LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::MAG, buf, sizeof(MagData), LoggingPriority::SECOND);
+
+		//add timestamp 4 bytes
+		memcpy(buf + 1, &timestamp, sizeof(timestamp));
+
+		//add mag XYZ 12 bytes
+		memcpy(buf + 5, &data.magX, sizeof(data.magX));
+		memcpy(buf + 9, &data.magY, sizeof(data.magY));
+		memcpy(buf + 13, &data.magZ, sizeof(data.magZ));
+
+		memset(buf + 17, 0, 20 - 1 - 16); // pad rest with zero
+
+
+		LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::MAG, buf, 20, LoggingPriority::SECOND);
 		err = log.LogData();
 
 		break;
@@ -217,50 +228,10 @@ void LoggingTask::HandleCommand(Command& cm){
 
 		// Convert pressure to altitude in centimeters (integer)
 		// Compute altitude in meters, rounded to integer
-		uint32_t altitude_m = static_cast<uint32_t>(
-		    44330.0f * (1.0f - powf(static_cast<float>(data.pressure) / 101325.0f, 1.0f / 5.255f))
-		);
+//		uint32_t altitude_m = static_cast<uint32_t>(
+//		    44330.0f * (1.0f - powf(static_cast<float>(data.pressure) / 101325.0f, 1.0f / 5.255f))
+//		);
 
-//		// Capture initial altitude once
-//		if (!firstAltCaptured)
-//		{
-//			firstAlt = altitude_m;
-//			firstAltCaptured = true;
-//			SOAR_PRINT("firstcapture: %u\n", altitude_m);
-//		}
-//
-//		// Launch detection: climbed more than 300m from initial altitude
-//		if (!launched && (altitude_m - firstAlt > 0.5f))
-//		{
-//			launched = true;
-////			SOAR_PRINT("000\n");
-//		}
-//
-//
-//		// Landing detection:
-//		if (launched && !landed)
-//		{
-//		    if (fabsf(altitude_m - firstAlt) <= 0.9f)
-//		    {
-//		        landed = true;
-//		        SOAR_PRINT("Landed - starting flash dump\n");
-//
-//		        // Send sysinfo command to DebugTask to trigger the flash dump
-//		        Command dumpCmd(DATA_COMMAND, EVENT_DEBUG_RX_COMPLETE);
-//		        DebugTask::Inst().GetEventQueue()->Send(dumpCmd);
-//		    }
-//		}
-
-		// Print all raw values + timestamp + altitude as integer meters
-//		if(DebugTask::debugEnabled){
-//			SOAR_PRINT("Baro ID: %d | Timestamp: %lu ms | Temp: %d C | Pressure: %lu Pa | Altitude: %lu m\n",
-//					   data.id,
-//					   timestamp,
-//					   data.temp / 100,   // if your temp is in milli-degrees, convert to degC
-//					   data.pressure,
-//					   altitude_m);
-//		}
-		// Prepare buffer for flash logging
 		// Determine BARO type
 		buf[0] = static_cast<uint8_t>(data.id == 0 ? LoggingData::BARO07 : LoggingData::BARO11);
 
@@ -292,24 +263,26 @@ void LoggingTask::HandleCommand(Command& cm){
 	}
 	case DataBrokerMessageTypes :: INVALID:
 	{
+		cm.Reset();
 		return;
 	}
 
 	}
 
 	if(err == LoggingStatus::LOGGING_ERR){
+		cm.Reset();
 		SOAR_PRINT("Log was unsuccessful\n");
 		return;
 	}
 	else if(err == LoggingStatus::LOG_FLASH_NOT_READY || err == LoggingStatus::LOG_FLASH_READY){
+		cm.Reset();
 		return;
 	}
 
-	// SOAR_PRINT("Log was successful\n");
-	return;
-
 	cm.Reset();
 
+	// SOAR_PRINT("Log was successful\n");
+	return;
 
 }
 
