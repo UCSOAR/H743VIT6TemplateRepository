@@ -145,24 +145,24 @@ const char* SensorTypeName(LoggingData type)
 
 void LoggingService::ProcessFlashDump()
 {
-	done = true;
+	 done = true;
 	doneDump = false;
-	while(dumpSector < NUM_SECTORS && !doneDump){
-		for(uint32_t i = dumpIndex; i < RAM_LOG_SIZE ; i += 20)  // step by full sample
-		{
-			if(i == 0){
-				MX66xxQSPI_ReadSector(sectorBuf, dumpSector, dumpOffset, RAM_LOG_SIZE);
-			}
 
+	constexpr uint32_t RECORD_SIZE = 20;
+	constexpr uint32_t CHUNK_SIZE  = 500;
+
+	while (dumpSector < NUM_SECTORS && !doneDump) {
+
+		memset(sectorBuf, 0, sizeof(sectorBuf));
+		MX66xxQSPI_ReadSector(sectorBuf, dumpSector, dumpOffset, CHUNK_SIZE);
+
+		for (uint32_t i = 0; i + RECORD_SIZE <= CHUNK_SIZE; i += RECORD_SIZE)
+		{
 			LoggingData type = static_cast<LoggingData>(sectorBuf[i]);
 			uint32_t timestamp;
-			uint8_t id;
 			memcpy(&timestamp, sectorBuf + i + 1, sizeof(timestamp));
-			id = sectorBuf[i + 19];
+			uint8_t id = sectorBuf[i + 19];
 
-
-
-			// Only IMU for now
 			if(type == LoggingData::IMU16G || type == LoggingData::IMU32G)
 			{
 				int16_t accel[3], gyro[3], temp;
@@ -190,26 +190,38 @@ void LoggingService::ProcessFlashDump()
 				SOAR_PRINT("%s(ID=%u) Timestamp=%lu Pressure=%ld Temp=%d.%02d\n",
 				SensorTypeName(type), id, timestamp, pressure, temp_c, temp_frac);
 			}
+			else if (type == LoggingData::MAG){
 
+				int32_t magX, magY, magZ;
+
+				memcpy(&magX, sectorBuf + i + 5,  sizeof(int32_t));
+				memcpy(&magY, sectorBuf + i + 9,  sizeof(int32_t));
+				memcpy(&magZ, sectorBuf + i + 13, sizeof(int32_t));
+
+				SOAR_PRINT("%s Timestamp=%lu Mag=[%ld,%ld,%ld]\n",
+					SensorTypeName(type), timestamp,
+					(long)magX, (long)magY, (long)magZ);
+
+			}
 
 
 
 		}
-		if(dumpOffset == 3500){
+
+		if (dumpOffset == 3500) {
 			dumpOffset = 0;
 			dumpSector++;
+		} else {
+			dumpOffset += 500;
 		}
-		else{
-			dumpOffset+=500;
-		}
-
-
-
 	}
-
 
 	SOAR_PRINT("------FLASH DUMP COMPLETE------");
 }
+
+
+
+
 
 void LoggingService::StopDump(){
 	doneDump = true;
