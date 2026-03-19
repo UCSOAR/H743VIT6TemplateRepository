@@ -93,13 +93,13 @@ LoggingStatus LoggingService::LogToMX66(){
 				bufferPerSector++;
 				if(bufferPerSector == 8){
 
-					SOAR_PRINT("---- Sector Complete ----\n");
+					//SOAR_PRINT("---- Sector Complete ----\n");
 
 					const uint32_t sectorElapsedMs = HAL_GetTick() - sectorStartTickMs;
-					SOAR_PRINT("Flash sector %u write time: %u ms (%u bytes)\n",
-							   (unsigned int)sectorAddress,
-							   (unsigned int)sectorElapsedMs,
-							   (unsigned int)(RAM_LOG_SIZE * 8));
+//					SOAR_PRINT("Flash sector %u write time: %u ms (%u bytes)\n",
+//							   (unsigned int)sectorAddress,
+//							   (unsigned int)sectorElapsedMs,
+//							   (unsigned int)(RAM_LOG_SIZE * 8));
 
 
 					sectorAddress++;
