@@ -54,14 +54,13 @@ LoggingStatus LoggingService::LogData(){
 
 	case LoggingDest::FILE_SYSTEM:
 		//TODO FS write api
-		SOAR_PRINT("Log to file system\n");
+
 		err = LoggingStatus::LOGGING_ERR;
 		break;
 
 	case LoggingDest::DMA:
 
 		//TODO DMA write api
-		SOAR_PRINT("Transfer to DMA\n");
 		err = LoggingStatus::LOGGING_ERR;
 		break;
 	}
@@ -72,52 +71,46 @@ LoggingStatus LoggingService::LogData(){
 
 LoggingStatus LoggingService::LogToMX66(){
 
+	//appends data to buffer and returns flag determining if buffer is full (full => write data)
 	LoggingStatus status = MemAppend(&loggingData);
+	//stops logging, triggered by flash dump, or flashchip is full
 	if(!done){
+		//checks if 500 byte chunck is full (writes when it is full)
 		if(status == LoggingStatus::LOG_FLASH_READY){
 			if(bufferPerSector == 0){
-				sectorStartTickMs = HAL_GetTick();
-				SOAR_PRINT("Starting flash sector %u\n", (unsigned int)sectorAddress);
+				//if a new sector is reached erase before writing
 				MX66xxQSPI_EraseSector(sectorAddress);
 			}
-			memcpy(txBuf, ramLog, RAM_LOG_SIZE);
 
+			//Write data to bufferPerSector * 500 this calculates the offset at which the buffer will be written
+			memcpy(txBuf, ramLog, RAM_LOG_SIZE);
 
 			MX66xxQSPI_WriteSector(txBuf, sectorAddress, (bufferPerSector * 500),  RAM_LOG_SIZE);
 
-
 			MX66xxQSPI_ReadSector(rxBuf, sectorAddress,(bufferPerSector * 500),  RAM_LOG_SIZE);
 
+			//check if the bytes written equal the bytes read
 			if(BytesEqual(rxBuf, txBuf, RAM_LOG_SIZE)){
 
+				/* Each buffer is 500 bytes, 8 can fit in 4000 bytes
+				 * bufferPerSector increases each successful buffer write which
+				 * is used to keep trak of when a sector is full, if it is full
+				 * (bufferPerSector == 8) then go to the next sector.
+				 */
 				bufferPerSector++;
 				if(bufferPerSector == 8){
-
-					//SOAR_PRINT("---- Sector Complete ----\n");
-
-					const uint32_t sectorElapsedMs = HAL_GetTick() - sectorStartTickMs;
-//					SOAR_PRINT("Flash sector %u write time: %u ms (%u bytes)\n",
-//							   (unsigned int)sectorAddress,
-//							   (unsigned int)sectorElapsedMs,
-//							   (unsigned int)(RAM_LOG_SIZE * 8));
-
-
 					sectorAddress++;
 					bufferPerSector = 0;
+					//finish logging if the sectorAddress reaches address that does not exist
 					if(sectorAddress > NUM_SECTORS){
 						done = true;
 					}
 				}
 
-
-				// SOAR_PRINT("FLASHED DATA");
 				return LoggingStatus::LOGGING_SUCCESS;
 			}
 
-			SOAR_PRINT("Flash verify failed: sector=%u chunk=%u offset=%u\n",
-					   (unsigned int)sectorAddress,
-					   (unsigned int)bufferPerSector,
-					   (unsigned int)(bufferPerSector * RAM_LOG_SIZE));
+
 			return status;
 
 		}
@@ -151,17 +144,19 @@ void LoggingService::ProcessFlashDump()
 	constexpr uint32_t RECORD_SIZE = 20;
 	constexpr uint32_t CHUNK_SIZE  = 500;
 
-	while (dumpSector < NUM_SECTORS && !doneDump) {
+	while (dumpSector < NUM_SECTORS && !doneDump) { //go untill all sectors have been read or doneDump flag is triggered
 
 		memset(sectorBuf, 0, sizeof(sectorBuf));
 		MX66xxQSPI_ReadSector(sectorBuf, dumpSector, dumpOffset, CHUNK_SIZE);
 
-		for (uint32_t i = 0; i + RECORD_SIZE <= CHUNK_SIZE; i += RECORD_SIZE)
+		for (uint32_t i = 0; i + RECORD_SIZE <= CHUNK_SIZE; i += RECORD_SIZE) //each record is 20 bytes, Chunck size is 500 to prevent hardfault
 		{
-			LoggingData type = static_cast<LoggingData>(sectorBuf[i]);
+			LoggingData type = static_cast<LoggingData>(sectorBuf[i]); //get type byte first
 			uint32_t timestamp;
 			memcpy(&timestamp, sectorBuf + i + 1, sizeof(timestamp));
 			uint8_t id = sectorBuf[i + 19];
+
+			//parse the data back into structs
 
 			if(type == LoggingData::IMU16G || type == LoggingData::IMU32G)
 			{
@@ -172,10 +167,10 @@ void LoggingService::ProcessFlashDump()
 				memcpy(&temp, sectorBuf + i + 17, sizeof(temp));
 
 				SOAR_PRINT("%s(ID=%u) Timestamp=%lu Accel=[%d,%d,%d] Gyro=[%d,%d,%d] Temp=%d\n",
-					SensorTypeName(type), id, timestamp,
-					accel[0], accel[1], accel[2],
-					gyro[0], gyro[1], gyro[2],
-					temp);
+									SensorTypeName(type), id, timestamp,
+									accel[0], accel[1], accel[2],
+									gyro[0], gyro[1], gyro[2],
+									temp);
 			}
 			else if(type == LoggingData::BARO07 || type == LoggingData::BARO11)
 			{
@@ -187,8 +182,10 @@ void LoggingService::ProcessFlashDump()
 				int16_t temp_c = temperature / 100;          // integer part
 				int16_t temp_frac = temperature % 100;       // fractional part
 				if (temp_frac < 0) temp_frac = -temp_frac;   // handle negative temperatures
+
 				SOAR_PRINT("%s(ID=%u) Timestamp=%lu Pressure=%ld Temp=%d.%02d\n",
-				SensorTypeName(type), id, timestamp, pressure, temp_c, temp_frac);
+							SensorTypeName(type), id, timestamp, pressure, temp_c, temp_frac);
+
 			}
 			else if (type == LoggingData::MAG){
 
@@ -204,11 +201,12 @@ void LoggingService::ProcessFlashDump()
 
 			}
 
-
-
 		}
-
-		if (dumpOffset == 3500) {
+		/*the dump offset at this point should be 3500, this means sector is full
+		 * (writtern up to 4000 bytes, if this is true set the offset back to 0 and
+		 * move to the next sector, otherwise increment dumpoffset to the next chunk
+		 */
+		if (dumpOffset == SECTOR_READ - CHUNK_SIZE) {
 			dumpOffset = 0;
 			dumpSector++;
 		} else {
@@ -263,7 +261,7 @@ LoggingStatus LoggingService::MemAppend(const LoggingPacket *data){
 
 	if(ramHead + MAX_LOG_SIZE > RAM_LOG_SIZE){ //check if word will fit in buffer
 		ramHead = 0;
-		// SOAR_PRINT("LOGGING READY");
+
 		return LoggingStatus::LOG_FLASH_READY;
 	}
 
