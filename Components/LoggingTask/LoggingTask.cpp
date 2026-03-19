@@ -178,6 +178,8 @@ void LoggingTask::HandleCommand(Command& cm){
 		MagData data = DataBroker::ExtractData<MagData>(cm);
 
 		uint32_t timestamp = xTaskGetTickCount() * portTICK_PERIOD_MS;
+
+		//SOAR_PRINT("Mag data (%d, %d, %d)\n", data.magX, data.magY, data.magZ);
 		memset(buf, 0, 20);
 
 		buf[0] = static_cast<uint8_t>(LoggingData::MAG);
