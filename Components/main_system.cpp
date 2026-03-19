@@ -41,7 +41,7 @@ void run_main() {
 	IMUTask::Inst().InitTask();
 
 	LSM6DSOTask::Inst().InitTask();
-//    MMC5983MATask::Inst().InitTask();
+    MMC5983MATask::Inst().InitTask();
     BaroTask07::Inst().InitTask();
     BaroTask11::Inst().InitTask();
     LoggingTask::Inst().InitTask();

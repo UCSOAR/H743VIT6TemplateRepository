@@ -137,7 +137,7 @@ void DebugTask::HandleDebugMessage(const char* msg) {
 	    SOAR_PRINT("Debug: Triggering flash tests\n");
 	    FlashTask::Inst().TriggerTest();
 	  }
-   else if(strcmp(msg, "fash_dump") == 0){
+   else if(strcmp(msg, "flash_dump") == 0){
 	   Command cmd(TASK_SPECIFIC_COMMAND, FLASH_DUMP);
 	   FlashTask::Inst().GetEventQueue()->Send(cmd);
    }
