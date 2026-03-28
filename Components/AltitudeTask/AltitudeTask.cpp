@@ -62,7 +62,7 @@ void AltitudeTask::InitTask() {
 void AltitudeTask::Run(void *pvParams) {
 
 	DataBroker::Publish(&filterData);
-	currentTime = TICKS_TO_MS(xTaskGetTickCount()) /1.0f;
+	currentTime = TICKS_TO_MS(xTaskGetTickCount()) / 1000.0f;
 
 	// launch will be in 10 mins from startup.
 	float launchTime = currentTime + 0.2 * 60.0f;
@@ -79,7 +79,6 @@ void AltitudeTask::Run(void *pvParams) {
 
 
 		// how will we handle both IMUs? Could just make these queues of length 2.
-		// rather than Receive, we could just check each queue repeatedly.
 
 		Command IMUData_cm;
 		bool IMUData_res = IMUData_Queue.Receive(IMUData_cm, 0);
@@ -100,7 +99,7 @@ void AltitudeTask::Run(void *pvParams) {
 		}
 
 		Command MagData_cm;
-		bool MagData_res = IMUData_Queue.Receive(MagData_cm, 0);
+		bool MagData_res = magData_Queue.Receive(MagData_cm, 0);
 		if (MagData_res) {
 			HandleCommand(MagData_cm);
 		}
@@ -333,6 +332,7 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 
 
 		SOAR_PRINT("\n BARO DATA : \n");
+		SOAR_PRINT("  Baro ID -> %d \n", baro_data.id);
 		SOAR_PRINT("  Baro -> %f \n", baro_data.pressure/1.0f);
 		SOAR_PRINT("--DATA_END--\n\n");
 

@@ -46,7 +46,7 @@ protected:
 	// GPS merely returns altitude.
 	int gps;
 
-	// Queues of length 0 to receive data.
+	// Queues of length 1 to receive data.
 	Queue IMUData_Queue = Queue(1);
 
 	Queue baroData_Queue = Queue(1);
