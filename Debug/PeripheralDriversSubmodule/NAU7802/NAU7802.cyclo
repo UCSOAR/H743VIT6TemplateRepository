@@ -1,0 +1,11 @@
+../PeripheralDriversSubmodule/NAU7802/NAU7802.cpp:14:1:NAU7802::NAU7802(I2C_Wrapper*, uint8_t)	1
+../PeripheralDriversSubmodule/NAU7802/NAU7802.cpp:18:11:NauStatus NAU7802::begin(uint8_t)	5
+../PeripheralDriversSubmodule/NAU7802/NAU7802.cpp:46:6:bool NAU7802::isReady()	2
+../PeripheralDriversSubmodule/NAU7802/NAU7802.cpp:54:11:NauStatus NAU7802::readSensor(NAU7802_OUT*)	3
+../PeripheralDriversSubmodule/NAU7802/NAU7802.cpp:76:11:NauStatus NAU7802::reset()	1
+../PeripheralDriversSubmodule/NAU7802/NAU7802.cpp:86:11:NauStatus NAU7802::setGain(uint8_t)	6
+../PeripheralDriversSubmodule/NAU7802/NAU7802.cpp:122:11:NauStatus NAU7802::writeRegister(uint8_t, uint8_t)	2
+../PeripheralDriversSubmodule/NAU7802/NAU7802.cpp:129:11:NauStatus NAU7802::readRegister(uint8_t, uint8_t*)	2
+../PeripheralDriversSubmodule/NAU7802/NAU7802.cpp:136:11:NauStatus NAU7802::readRegisters(uint8_t, uint8_t*, uint8_t)	2
+../PeripheralDriversSubmodule/NAU7802/NAU7802.cpp:143:11:NauStatus NAU7802::modifyRegisterBit(uint8_t, uint8_t, bool)	3
+../PeripheralDriversSubmodule/NAU7802/NAU7802.cpp:163:11:NauStatus NAU7802::calibrate()	1

@@ -1,0 +1,16 @@
+../PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma.cpp:26:5:{anonymous}::SPI2BusGuard::SPI2BusGuard()	16	static
+../PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma.cpp:27:5:{anonymous}::SPI2BusGuard::~SPI2BusGuard()	16	static
+../PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma.cpp:33:10:bool {anonymous}::SPI2BusGuard::Locked() const	16	static
+../PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma.cpp:42:1:MMC5983MA::MMC5983MA()	16	static
+../PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma.cpp:47:18:MMC5983MA_Status MMC5983MA::Init(SPI_HandleTypeDef*, GPIO_TypeDef*, uint16_t)	32	static
+../PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma.cpp:69:9:uint8_t MMC5983MA::getProductID()	16	static
+../PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma.cpp:75:18:MMC5983MA_Status MMC5983MA::triggerMeasurement()	16	static
+../PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma.cpp:80:18:MMC5983MA_Status MMC5983MA::performSet()	16	static
+../PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma.cpp:86:18:MMC5983MA_Status MMC5983MA::performReset()	16	static
+../PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma.cpp:91:18:MMC5983MA_Status MMC5983MA::setOffsets(float, float, float)	24	static
+../PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma.cpp:98:18:MMC5983MA_Status MMC5983MA::calibrateOffset()	80	static
+../PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma.cpp:150:18:MMC5983MA_Status MMC5983MA::readTemperature(float&)	24	static
+../PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma.cpp:170:18:MMC5983MA_Status MMC5983MA::readData(MagDriverData&)	24	static
+../PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma.cpp:209:6:void MMC5983MA::writeRegister(uint8_t, uint8_t)	24	static
+../PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma.cpp:227:9:uint8_t MMC5983MA::readRegister(uint8_t)	48	static
+../PeripheralDriversSubmodule/MMC5983MA_SPI/mmc5983ma.cpp:249:6:void MMC5983MA::readRegisters(uint8_t, uint8_t*, uint8_t)	96	dynamic
