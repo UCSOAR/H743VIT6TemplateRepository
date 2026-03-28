@@ -1,4 +1,0 @@
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp:66:17:uint8_t* cube_malloc(uint32_t)	24	static
-C:/Users/harry/Desktop/soar2/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp:90:14:void* operator new(size_t)	16	static
-../SoarOS/Core/Task.cpp:12:1:Task::Task()	24	static
-../SoarOS/Core/Task.cpp:22:1:Task::Task(uint16_t)	24	static

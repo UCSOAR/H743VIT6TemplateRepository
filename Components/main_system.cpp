@@ -50,7 +50,7 @@ void run_main() {
     LoggingTask::Inst().InitTask();
 	//SensorPublisherTask::Inst().InitTask();
     AltitudeTask::Inst().InitTask();
-    //GPSTask::Inst().InitTask();
+    GPSTask::Inst().InitTask();
 
 
     // Print System Boot Info : Warning, don't queue more than 10 prints before scheduler starts

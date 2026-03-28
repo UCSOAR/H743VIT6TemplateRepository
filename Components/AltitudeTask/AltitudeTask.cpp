@@ -49,10 +49,10 @@ void AltitudeTask::InitTask() {
 	SOAR_ASSERT(rtValue == pdPASS,
 			"AltitudeTask::InitTask - xTaskCreate() failed");
 
-	DataBroker::Subscribe<IMUData>(this);
-	DataBroker::Subscribe<GpsData>(this);
-	DataBroker::Subscribe<BaroData>(this);
-	DataBroker::Subscribe<MagData>(this);
+	DataBroker::Subscribe<IMUData>(this, &IMUData_Queue);
+	DataBroker::Subscribe<GpsData>(this, &gpsData_Queue);
+	DataBroker::Subscribe<BaroData>(this, &baroData_Queue);
+	DataBroker::Subscribe<MagData>(this, &magData_Queue);
 }
 
 // TODO: Only run thread when appropriate GPIO pin pulled HIGH (or by define)
@@ -78,10 +78,31 @@ void AltitudeTask::Run(void *pvParams) {
 		currentTime = TICKS_TO_MS(xTaskGetTickCount()) /1.0f;
 
 
-		Command cm;
-		bool res = qEvtQueue->Receive(cm, 0);
-		if (res) {
-			HandleCommand(cm);
+		// how will we handle both IMUs? Could just make these queues of length 2.
+		// rather than Receive, we could just check each queue repeatedly.
+
+		Command IMUData_cm;
+		bool IMUData_res = IMUData_Queue.Receive(IMUData_cm, 0);
+		if (IMUData_res) {
+			HandleCommand(IMUData_cm);
+		}
+
+		Command GpsData_cm;
+		bool GpsData_res = gpsData_Queue.Receive(GpsData_cm, 0);
+		if (GpsData_res) {
+			HandleCommand(GpsData_cm);
+		}
+
+		Command BaroData_cm;
+		bool BaroData_res = baroData_Queue.Receive(BaroData_cm, 0);
+		if (BaroData_res) {
+			HandleCommand(BaroData_cm);
+		}
+
+		Command MagData_cm;
+		bool MagData_res = IMUData_Queue.Receive(MagData_cm, 0);
+		if (MagData_res) {
+			HandleCommand(MagData_cm);
 		}
 
 		// main wrapper for all the Prediction filter tasks. We might want to ensure data is within the same time window.

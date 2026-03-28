@@ -46,6 +46,14 @@ protected:
 	// GPS merely returns altitude.
 	int gps;
 
+	// Queues of length 0 to receive data.
+	Queue IMUData_Queue = Queue(1);
+
+	Queue baroData_Queue = Queue(1);
+
+	Queue magData_Queue = Queue(1);
+
+	Queue gpsData_Queue = Queue(1);
 
 	// Time since filter start in seconds. Currently the filter starts as soon as the task is instantiated.
 	float currentTime = 0;
