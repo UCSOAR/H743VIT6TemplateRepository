@@ -69,7 +69,7 @@ void LoggingTask::InitTask()
                 SOAR_ASSERT(rtValue == pdPASS, "LoggingTask::InitTask() - xTaskCreate() failed");
 
 	DataBroker::Subscribe<IMUData>(this);
-	DataBroker::Subscribe<GPSData>(this);
+	DataBroker::Subscribe<GpsData>(this);
 	DataBroker::Subscribe<BaroData>(this);
 	DataBroker::Subscribe<MagData>(this);
 	DataBroker::Subscribe<FilterData>(this);
@@ -123,11 +123,11 @@ void LoggingTask::HandleCommand(Command& cm){
 	}
 	case DataBrokerMessageTypes::GPS_DATA:
 	{
-		GPSData data = DataBroker::ExtractData<GPSData>(cm);
+		GpsData data = DataBroker::ExtractData<GpsData>(cm);
 
 		buf[0] = static_cast<uint8_t>(LoggingData::GPS);
-		memcpy(buf + 1, &data, sizeof(GPSData));
-		LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::GPS, buf, sizeof(GPSData), LoggingPriority::SECOND);
+		memcpy(buf + 1, &data, sizeof(GpsData));
+		LoggingService log = LoggingService(LoggingDest::FLASH_EXTERN, LoggingData::GPS, buf, sizeof(GpsData), LoggingPriority::SECOND);
 		err = log.LogData();
 
 		break;

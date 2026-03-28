@@ -50,7 +50,7 @@ void AltitudeTask::InitTask() {
 			"AltitudeTask::InitTask - xTaskCreate() failed");
 
 	DataBroker::Subscribe<IMUData>(this);
-	DataBroker::Subscribe<GPSData>(this);
+	DataBroker::Subscribe<GpsData>(this);
 	DataBroker::Subscribe<BaroData>(this);
 	DataBroker::Subscribe<MagData>(this);
 }
@@ -62,10 +62,10 @@ void AltitudeTask::InitTask() {
 void AltitudeTask::Run(void *pvParams) {
 
 	DataBroker::Publish(&filterData);
-	currentTime = TICKS_TO_MS(xTaskGetTickCount()) / 1000.0f;
+	currentTime = TICKS_TO_MS(xTaskGetTickCount()) /1.0f;
 
 	// launch will be in 10 mins from startup.
-	float launchTime = currentTime + 0 * 60.0f;
+	float launchTime = currentTime + 0.2 * 60.0f;
 
 	// skip the first iteration. The first deltatime will be enormous.
 	bool firstIteration = true;
@@ -75,7 +75,7 @@ void AltitudeTask::Run(void *pvParams) {
 
 	while (1) {
 		// Time in seconds given by ticks since program execution, divided by 1000.0f for seconds.
-		currentTime = TICKS_TO_MS(xTaskGetTickCount()) / 1000.0f;
+		currentTime = TICKS_TO_MS(xTaskGetTickCount()) /1.0f;
 
 
 		Command cm;
@@ -196,12 +196,12 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 
 		SOAR_PRINT("\n IMU DATA : \n");
 		SOAR_PRINT("IMU id=%d\n", imu_data.id);
-		SOAR_PRINT("  gyroX -> %d \n", imu_data.gyro.x);
-		SOAR_PRINT("  gyroY -> %d \n", imu_data.gyro.y);
-		SOAR_PRINT("  gyroZ -> %d \n", imu_data.gyro.z);
-		SOAR_PRINT("  accelX -> %d \n", imu_data.accel.x);
-		SOAR_PRINT("  accelY -> %d \n", imu_data.accel.y);
-		SOAR_PRINT("  accelZ -> %d \n", imu_data.accel.z);
+		SOAR_PRINT("  gyroX -> %f \n", imu_data.gyro.x /1.0f);
+		SOAR_PRINT("  gyroY -> %f \n", imu_data.gyro.y /1.0f);
+		SOAR_PRINT("  gyroZ -> %f \n", imu_data.gyro.z /1.0f);
+		SOAR_PRINT("  accelX -> %f \n", imu_data.accel.x /1.0f);
+		SOAR_PRINT("  accelY -> %f \n", imu_data.accel.y /1.0f);
+		SOAR_PRINT("  accelZ -> %f \n", imu_data.accel.z /1.0f);
 
 
 
@@ -213,18 +213,18 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 
 		if (imu_data.id == 0) {
 
-			IMUData1 = IMUData_Everest(currentTime, imu_data.gyro.x, imu_data.gyro.y,
-					imu_data.gyro.z, imu_data.accel.x, imu_data.accel.y,
-					imu_data.accel.z, IMUData1.magX, IMUData1.magY, IMUData1.magZ, 0);
+			IMUData1 = IMUData_Everest(currentTime, imu_data.gyro.x /1.0f, imu_data.gyro.y /1.0f,
+					imu_data.gyro.z /1.0f, imu_data.accel.x /1.0f, imu_data.accel.y /1.0f,
+					imu_data.accel.z /1.0f, IMUData1.magX, IMUData1.magY, IMUData1.magZ, 0);
 			everest.IMU1_Measurements(IMUData1);
 
 			SOAR_PRINT("  magX -> %f \n", IMUData1.magX);
 			SOAR_PRINT("  magY -> %f \n", IMUData1.magY);
 			SOAR_PRINT("  magZ -> %f \n", IMUData1.magZ);
 		} else {
-			IMUData2 = IMUData_Everest(currentTime, imu_data.gyro.x, imu_data.gyro.y,
-				imu_data.gyro.z, imu_data.accel.x, imu_data.accel.y,
-				imu_data.accel.z, IMUData1.magX, IMUData1.magY, IMUData1.magZ, 0);
+			IMUData2 = IMUData_Everest(currentTime, imu_data.gyro.x /1.0f, imu_data.gyro.y /1.0f,
+								imu_data.gyro.z /1.0f, imu_data.accel.x /1.0f, imu_data.accel.y /1.0f,
+								imu_data.accel.z /1.0f, IMUData2.magX, IMUData2.magY, IMUData2.magZ, 0);
 			everest.IMU2_Measurements(IMUData2);
 
 			SOAR_PRINT("  magX -> %f \n", IMUData2.magX);
@@ -237,19 +237,39 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 	}
 
 	case DataBrokerMessageTypes::GPS_DATA: {
-		GPSData gps_data = DataBroker::ExtractData<GPSData>(cm);
+		GpsData gps_data = DataBroker::ExtractData<GpsData>(cm);
 
+		SOAR_PRINT("\nGPS DATA :\n");
 
-		SOAR_PRINT("\n GPS DATA : \n");
-		SOAR_PRINT("  Alt -> %d \n", gps_data.gps);
+		// Raw NMEA buffer
+		SOAR_PRINT("  Buffer        : %s\n", gps_data.buffer_);
+
+		// Timestamp
+		SOAR_PRINT("  Time          : %lu\n", gps_data.time_);
+
+		// Latitude
+		SOAR_PRINT("  Latitude      : %d\n", gps_data.latitude_.degrees_); // or however LatLongType stores it
+
+		// Longitude
+		SOAR_PRINT("  Longitude     : %d\n", gps_data.longitude_.minutes_);
+
+		// Antenna Altitude
+		SOAR_PRINT("  Antenna Alt   : %d %c\n", gps_data.antennaAltitude_.altitude_, gps_data.antennaAltitude_.unit_);
+
+		// Geoid Altitude
+		SOAR_PRINT("  Geoid Alt     : %d %c\n", gps_data.geoidAltitude_.altitude_, gps_data.geoidAltitude_.unit_);
+
+		// Total Altitude
+		SOAR_PRINT("  Total Alt     : %d %c\n", gps_data.totalAltitude_.altitude_, gps_data.totalAltitude_.unit_);
+
 		SOAR_PRINT("--DATA_END--\n\n");
 
-
-		if (gps_data.gps == 0.0f) {
-			return;
+		if (gps_data.totalAltitude_.altitude_ > 999999) {
+			everest.GPS_Measurements(gps);
+			everest.halo.gpsAvailable = 0;
 		}
 
-		gps = gps_data.gps;
+		gps = gps_data.totalAltitude_.altitude_;
 		everest.GPS_Measurements(gps);
 
 		break;
@@ -260,9 +280,9 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 
 
 		SOAR_PRINT("\n MAG DATA : \n");
-		SOAR_PRINT("  X -> %d \n", mag_data.rawX);
-		SOAR_PRINT("  Y -> %d \n", mag_data.rawY);
-		SOAR_PRINT("  Z -> %d \n", mag_data.rawZ);
+		SOAR_PRINT("  X -> %f \n", mag_data.rawX /1.0f);
+		SOAR_PRINT("  Y -> %f \n", mag_data.rawY /1.0f);
+		SOAR_PRINT("  Z -> %f \n", mag_data.rawZ /1.0f);
 		SOAR_PRINT("--DATA_END--\n\n");
 
 
@@ -273,13 +293,13 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 		//update IMU data with new mag measurements
 		IMUData1 = IMUData_Everest(currentTime, IMUData1.gyroX, IMUData1.gyroY,
 				IMUData1.gyroZ, IMUData1.accelX, IMUData1.accelY,
-				IMUData1.accelZ, mag_data.rawX, mag_data.rawY, mag_data.rawZ, 0);
+				IMUData1.accelZ, mag_data.rawX /1.0f, mag_data.rawY /1.0f, mag_data.rawZ /1.0f, 0);
 		everest.IMU1_Measurements(IMUData1);
 
 		// imudata2 is reduplicated for now...
 		IMUData2 = IMUData_Everest(currentTime, IMUData2.gyroX, IMUData2.gyroY,
 				IMUData2.gyroZ, IMUData2.accelX, IMUData2.accelY,
-				IMUData2.accelZ, mag_data.rawX, mag_data.rawY, mag_data.rawZ, 0);
+				IMUData2.accelZ, mag_data.rawX /1.0f, mag_data.rawY /1.0f, mag_data.rawZ /1.0f, 0);
 		everest.IMU2_Measurements(IMUData2);
 
 
@@ -292,7 +312,7 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 
 
 		SOAR_PRINT("\n BARO DATA : \n");
-		SOAR_PRINT("  Baro -> %d \n", baro_data.pressure);
+		SOAR_PRINT("  Baro -> %f \n", baro_data.pressure/1.0f);
 		SOAR_PRINT("--DATA_END--\n\n");
 
 
@@ -302,11 +322,11 @@ void AltitudeTask::HandleDataBrokerCommand(const Command &cm) {
 
 		// BaroTask07
 		if (baro_data.id == 0) {
-			baro1 = {currentTime, baro_data.pressure, 0, 0};
+			baro1 = {currentTime, baro_data.pressure/1.0f, 0, 0};
 			everest.Baro1_Measurements(baro1);
 		} else {
 			// BaroTask11
-			baro2 = {currentTime, baro_data.pressure, 0, 0};
+			baro2 = {currentTime, baro_data.pressure/1.0f, 0, 0};
 			everest.Baro2_Measurements(baro2);
 		}
 

@@ -22,6 +22,7 @@
 #include "AltitudeTask.hpp"
 #include "FlashTask.hpp"
 #include "GPSTask.hpp"
+#include "SensorPublisherTask.hpp"
 
 /* Drivers ------------------------------------------------------------------*/
 namespace Driver {
@@ -47,8 +48,9 @@ void run_main() {
     BaroTask07::Inst().InitTask();
     BaroTask11::Inst().InitTask();
     LoggingTask::Inst().InitTask();
+	//SensorPublisherTask::Inst().InitTask();
     AltitudeTask::Inst().InitTask();
-    GPSTask::Inst().InitTask();
+    //GPSTask::Inst().InitTask();
 
 
     // Print System Boot Info : Warning, don't queue more than 10 prints before scheduler starts

@@ -44,7 +44,7 @@ protected:
 	FilterData filterData{};
 
 	// GPS merely returns altitude.
-	float gps;
+	int gps;
 
 
 	// Time since filter start in seconds. Currently the filter starts as soon as the task is instantiated.
