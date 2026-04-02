@@ -11,8 +11,6 @@
 #include <cstdint>
 #include <cstddef>
 
-
-
 enum class LoggingStatus
 {
 	LOGGING_SUCCESS,
@@ -41,7 +39,8 @@ enum class LoggingData
 	BARO07,
 	BARO11,
 	GPS,
-	FILTER
+	FILTER,
+	TEXT_LOG // Variable-length text records with length prefix
 
 };
 
@@ -54,15 +53,14 @@ enum class LoggingPriority
 	FIRST = 4,
 };
 
-struct LoggingPacket{
+struct LoggingPacket
+{
 
 	LoggingDest dest;
 	LoggingData dataType;
-	const uint8_t* data;
+	const uint8_t *data;
 	uint32_t dataSize;
 	LoggingPriority priority;
-
 };
-
 
 #endif /* LOGGINGMODULE_INC_LOG_HPP_ */

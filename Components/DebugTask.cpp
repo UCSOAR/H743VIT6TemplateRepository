@@ -183,6 +183,11 @@ void DebugTask::HandleDebugMessage(const char *msg)
   {
     LoggingService::StopDump();
   }
+  else if (strcmp(msg, "text_flush") == 0)
+  {
+    SOAR_PRINT("Debug: Flushing text log buffer\n");
+    LoggingService::FlushTextBuffer();
+  }
 
   else
   {
