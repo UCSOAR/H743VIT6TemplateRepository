@@ -188,6 +188,19 @@ void DebugTask::HandleDebugMessage(const char *msg)
     SOAR_PRINT("Debug: Flushing text log buffer\n");
     LoggingService::FlushTextBuffer();
   }
+  else if (strcmp(msg, "text_dump") == 0)
+  {
+    SOAR_PRINT("Debug: Dumping text log region\n");
+    LoggingService::FlushTextBuffer();
+    LoggingService::DumpTextLog();
+  }
+  else if (strcmp(msg, "log_test") == 0)
+  {
+    uint32_t tickMs = xTaskGetTickCount() * portTICK_PERIOD_MS;
+    SOAR_LOG("SOAR_LOG self-test tick=%lu", tickMs);
+    LoggingService::FlushTextBuffer();
+    LoggingService::DumpTextLog();
+  }
 
   else
   {

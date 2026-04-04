@@ -418,6 +418,72 @@ LoggingStatus LoggingService::FlushTextBuffer()
 
 	// Update tracking
 	textBufferPerSector++;
+	textLogHead = 0;
+	memset(textLogBuffer, 0, sizeof(textLogBuffer));
 
 	return LoggingStatus::LOGGING_SUCCESS;
+}
+
+void LoggingService::DumpTextLog()
+{
+	SOAR_PRINT("------TEXT LOG DUMP START------\n");
+
+	constexpr uint32_t CHUNK_SIZE = 500;
+	uint8_t readBuf[CHUNK_SIZE] = {};
+	uint16_t sector = 256;
+	uint32_t entryCount = 0;
+	bool foundAnyData = false;
+
+	while (sector < textSectorAddress || (sector == textSectorAddress && textBufferPerSector > 0))
+	{
+		uint8_t chunksInSector = 8;
+		if (sector == textSectorAddress)
+		{
+			chunksInSector = textBufferPerSector;
+		}
+
+		for (uint8_t chunk = 0; chunk < chunksInSector; ++chunk)
+		{
+			MX66xxQSPI_ReadSector(readBuf, sector, chunk * CHUNK_SIZE, CHUNK_SIZE);
+
+			uint32_t index = 0;
+			while (index + 2 <= CHUNK_SIZE)
+			{
+				uint16_t length = static_cast<uint16_t>((static_cast<uint16_t>(readBuf[index]) << 8) |
+														static_cast<uint16_t>(readBuf[index + 1]));
+				if (length == 0)
+				{
+					break;
+				}
+
+				if (index + 2 + length > CHUNK_SIZE)
+				{
+					break;
+				}
+
+				char text[DEBUG_PRINT_MAX_SIZE] = {};
+				uint32_t copyLength = length;
+				if (copyLength >= sizeof(text))
+				{
+					copyLength = sizeof(text) - 1;
+				}
+
+				memcpy(text, &readBuf[index + 2], copyLength);
+				text[copyLength] = '\0';
+
+				SOAR_PRINT("[TEXT %lu] %s\n", entryCount++, text);
+				foundAnyData = true;
+				index += 2 + length;
+			}
+		}
+
+		++sector;
+	}
+
+	if (!foundAnyData)
+	{
+		SOAR_PRINT("[TEXT] No text log entries found\n");
+	}
+
+	SOAR_PRINT("------TEXT LOG DUMP END------\n");
 }

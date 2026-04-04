@@ -37,6 +37,12 @@ public:
 	 */
 	static LoggingStatus LogText(const uint8_t *data, uint32_t size);
 
+	/**
+	 * @brief Dump the text log region back to the debug console.
+	 *        Useful for verifying SOAR_LOG writes reached flash.
+	 */
+	static void DumpTextLog();
+
 	// Explicit flush hook for debug commands or controlled checkpoints.
 	static LoggingStatus FlushTextBuffer();
 
