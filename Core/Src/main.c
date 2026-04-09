@@ -130,7 +130,7 @@ int main(void)
   MX_SPI5_Init();
   MX_SPI6_Init();
   MX_FDCAN1_Init();
-  //MX_USB_OTG_FS_PCD_Init();
+//  MX_USB_OTG_FS_PCD_Init();
   MX_CRC_Init();
   MX_UART8_Init();
   MX_RTC_Init();
