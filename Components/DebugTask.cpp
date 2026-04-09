@@ -166,7 +166,7 @@ void DebugTask::HandleDebugMessage(const char *msg)
   else if (strcmp(msg, "mag") == 0)
   {
     SOAR_PRINT("Debug mag read");
-    Command cmd(DATA_COMMAND, MMC5983MATask::MMC_CMD_ENABLE_LOG);
+    Command cmd(DATA_COMMAND, MMC5983MATask::MMC_CMD_START_READ);
     MMC5983MATask::Inst().GetEventQueue()->Send(cmd);
   }
   else if (strcmp(msg, "flash_test") == 0)
