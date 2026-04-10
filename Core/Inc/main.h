@@ -73,6 +73,8 @@ void Error_Handler(void);
 #define BARO07_CS_GPIO_Port GPIOD
 #define BARO11_CS_Pin GPIO_PIN_9
 #define BARO11_CS_GPIO_Port GPIOG
+#define SPI_FLASH_CS_Pin GPIO_PIN_6
+#define SPI_FLASH_CS_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
