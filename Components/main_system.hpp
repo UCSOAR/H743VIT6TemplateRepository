@@ -38,7 +38,7 @@ namespace Driver {
 }
 namespace UART {
     constexpr UARTDriver* GPS = &Driver::uart7;
-    constexpr UARTDriver* Debug = &Driver::usart8;
+    constexpr UARTDriver* Debug = &Driver::usart1;
 }
 
 
