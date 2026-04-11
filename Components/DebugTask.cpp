@@ -11,8 +11,10 @@
 #include "CubeUtils.hpp"
 #include <cstring>
 #include "ProfilerTask.hpp"
+#include "LoggingService.hpp"
 
 #include "stm32h7xx_hal.h"
+#include "FlashTask.hpp"
 
 // External Tasks (to send debug commands to)
 
@@ -33,7 +35,8 @@ extern I2C_HandleTypeDef hi2c2;
  * @brief Constructor, sets all member variables
  */
 DebugTask::DebugTask()
-    : Task(TASK_DEBUG_QUEUE_DEPTH_OBJS), kUart_(UART::Debug) {
+    : Task(TASK_DEBUG_QUEUE_DEPTH_OBJS), kUart_(DEFAULT_DEBUG_UART_DRIVER)
+{
   memset(debugBuffer, 0, sizeof(debugBuffer));
   debugMsgIdx = 0;
   isDebugMsgReady = false;
@@ -42,15 +45,16 @@ DebugTask::DebugTask()
 /**
  * @brief Init task for RTOS
  */
-void DebugTask::InitTask() {
+void DebugTask::InitTask()
+{
   // Make sure the task is not already initialized
   SOAR_ASSERT(rtTaskHandle == nullptr, "Cannot initialize Debug task twice");
 
   // Start the task
   BaseType_t rtValue = xTaskCreate(
-      (TaskFunction_t)DebugTask::RunTask, (const char*)"DebugTask",
-      (uint16_t)TASK_DEBUG_STACK_DEPTH_WORDS, (void*)this,
-      (UBaseType_t)TASK_DEBUG_PRIORITY, (TaskHandle_t*)&rtTaskHandle);
+      (TaskFunction_t)DebugTask::RunTask, (const char *)"DebugTask",
+      (uint16_t)TASK_DEBUG_STACK_DEPTH_WORDS, (void *)this,
+      (UBaseType_t)TASK_DEBUG_PRIORITY, (TaskHandle_t *)&rtTaskHandle);
 
   // Ensure creation succeded
   SOAR_ASSERT(rtValue == pdPASS, "DebugTask::InitTask - xTaskCreate() failed");
@@ -60,11 +64,13 @@ void DebugTask::InitTask() {
 /**
  *    @brief Runcode for the DebugTask
  */
-void DebugTask::Run(void* pvParams) {
+void DebugTask::Run(void *pvParams)
+{
   // Arm the interrupt
   ReceiveData();
 
-  while (1) {
+  while (1)
+  {
     Command cm;
 
     // Wait forever for a command
@@ -72,8 +78,9 @@ void DebugTask::Run(void* pvParams) {
 
     // Process the command
     if (cm.GetCommand() == DATA_COMMAND &&
-        cm.GetTaskCommand() == EVENT_DEBUG_RX_COMPLETE) {
-      HandleDebugMessage((const char*)debugBuffer);
+        cm.GetTaskCommand() == EVENT_DEBUG_RX_COMPLETE)
+    {
+      HandleDebugMessage((const char *)debugBuffer);
     }
 
     cm.Reset();
@@ -84,12 +91,16 @@ void DebugTask::Run(void* pvParams) {
  * @brief Handles debug messages, assumes msg is null terminated
  * @param msg Message to read, must be null termianted
  */
-void DebugTask::HandleDebugMessage(const char* msg) {
+void DebugTask::HandleDebugMessage(const char *msg)
+{
   //-- SYSTEM / CHAR COMMANDS -- (Must be last)
-  if (strcmp(msg, "sysreset") == 0) {
+  if (strcmp(msg, "sysreset") == 0)
+  {
     // Reset the system
-	SOAR_ASSERT(false, "System reset requested");
-  } else if (strcmp(msg, "sysinfo") == 0) {
+    SOAR_ASSERT(false, "System reset requested");
+  }
+  else if (strcmp(msg, "sysinfo") == 0)
+  {
     // Print message
     SOAR_PRINT("\n\n-- CUBE SYSTEM --\n");
     SOAR_PRINT("Current System Free Heap: %d Bytes\n", xPortGetFreeHeapSize());
@@ -107,11 +118,91 @@ void DebugTask::HandleDebugMessage(const char* msg) {
   #endif
 
     else {
+  }
+  else if (strcmp(msg, "imu1") == 0)
+  {
+
+    SOAR_PRINT("Debug Imu 32G single sample");
+    Command cmd(DATA_COMMAND, IMUTask::IMU_SAMPLE_AND_LOG);
+    IMUTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "imu1loop") == 0)
+  {
+
+    SOAR_PRINT("Debug Imu 32G continuous read start");
+    Command cmd(DATA_COMMAND, IMUTask::IMU_START_CONTINUOUS_PRINT);
+    IMUTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "imu1stop") == 0)
+  {
+
+    SOAR_PRINT("Debug Imu 32G continuous read stop");
+    Command cmd(DATA_COMMAND, IMUTask::IMU_STOP_CONTINUOUS_PRINT);
+    IMUTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "imu2") == 0)
+  {
+
+    SOAR_PRINT("Debug Imu 16G single sample");
+    Command cmd(DATA_COMMAND, LSM6DSOTask::IMU_SAMPLE_AND_LOG);
+    LSM6DSOTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "imu2loop") == 0)
+  {
+
+    SOAR_PRINT("Debug Imu 16G continuous read start");
+    Command cmd(DATA_COMMAND, LSM6DSOTask::IMU_START_CONTINUOUS_PRINT);
+    LSM6DSOTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "imu2stop") == 0)
+  {
+
+    SOAR_PRINT("Debug Imu 16G continuous read stop");
+    Command cmd(DATA_COMMAND, LSM6DSOTask::IMU_STOP_CONTINUOUS_PRINT);
+    LSM6DSOTask::Inst().GetEventQueue()->Send(cmd);
+  }
+
+  else if (strcmp(msg, "baro1") == 0)
+  {
+    SOAR_PRINT("Debug Baro07 read");
+    Command cmd(DATA_COMMAND, BARO07_SAMPLE_AND_LOG);
+    BaroTask07::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "baro2") == 0)
+  {
+    SOAR_PRINT("Debug Baro11 read");
+    Command cmd(DATA_COMMAND, BARO11_SAMPLE_AND_LOG);
+    BaroTask11::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "mag") == 0)
+  {
+    SOAR_PRINT("Debug mag read");
+    Command cmd(DATA_COMMAND, MMC5983MATask::MMC_CMD_ENABLE_LOG);
+    MMC5983MATask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "flash_test") == 0)
+  {
+    SOAR_PRINT("Debug: Triggering flash tests\n");
+    FlashTask::Inst().TriggerTest();
+  }
+  else if (strcmp(msg, "flash_dump") == 0)
+  {
+    Command cmd(TASK_SPECIFIC_COMMAND, FLASH_DUMP);
+    FlashTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "stop_dump") == 0)
+  {
+    LoggingService::StopDump();
+  }
+
+  else
+  {
     // Single character command, or unknown command
-    switch (msg[0]) {
-      default:
-    	  SOAR_PRINT("Debug, unknown command: %s\n", msg);
-        break;
+    switch (msg[0])
+    {
+    default:
+      SOAR_PRINT("Debug, unknown command: %s\n", msg);
+      break;
     }
   }
 
@@ -129,12 +220,15 @@ bool DebugTask::ReceiveData() { return kUart_->ReceiveIT(&debugRxChar, this); }
  * @brief Receive data to the buffer
  * @return Whether the debugBuffer is ready or not
  */
-void DebugTask::InterruptRxData(uint8_t errors) {
+void DebugTask::InterruptRxData(uint8_t errors)
+{
   // If we already have an unprocessed debug message, ignore this byte
-  if (!isDebugMsgReady) {
+  if (!isDebugMsgReady)
+  {
     // Check byte for end of message - note if using termite you must turn on
     // append CR
-    if (debugRxChar == '\r' || debugMsgIdx == DEBUG_RX_BUFFER_SZ_BYTES) {
+    if (debugRxChar == '\r' || debugMsgIdx == DEBUG_RX_BUFFER_SZ_BYTES)
+    {
       // Null terminate and process
       debugBuffer[debugMsgIdx++] = '\0';
       isDebugMsgReady = true;
@@ -145,11 +239,14 @@ void DebugTask::InterruptRxData(uint8_t errors) {
 
       // If we failed to send the event, we should reset the buffer, that way
       // DebugTask doesn't stall
-      if (res == false) {
+      if (res == false)
+      {
         debugMsgIdx = 0;
         isDebugMsgReady = false;
       }
-    } else {
+    }
+    else
+    {
       debugBuffer[debugMsgIdx++] = debugRxChar;
     }
   }
@@ -168,18 +265,21 @@ void DebugTask::InterruptRxData(uint8_t errors) {
  * space) is 4
  * @return ERRVAL on failure, otherwise the extracted value
  */
-int32_t DebugTask::ExtractIntParameter(const char* msg,
-                                       uint16_t identifierLen) {
+int32_t DebugTask::ExtractIntParameter(const char *msg,
+                                       uint16_t identifierLen)
+{
   // Handle a command with an int parameter at the end
-  if (static_cast<uint16_t>(strlen(msg)) < identifierLen + 1) {
-	 SOAR_PRINT("Int parameter command insufficient length\r\n");
+  if (static_cast<uint16_t>(strlen(msg)) < identifierLen + 1)
+  {
+    SOAR_PRINT("Int parameter command insufficient length\r\n");
     return ERRVAL;
   }
 
   // Extract the value and attempt conversion to integer
   const int32_t val = Utils::StringToLong(&msg[identifierLen]);
-  if (val == ERRVAL) {
-	 SOAR_PRINT("Int parameter command invalid value\r\n");
+  if (val == ERRVAL)
+  {
+    SOAR_PRINT("Int parameter command invalid value\r\n");
   }
 
   return val;
