@@ -13,7 +13,6 @@
 #include "UARTTask.hpp"
 #include "CubeTask.hpp"
 #include "DebugTask.hpp"
-#include "ProfilerTask.hpp"
 #include "IMUTask.hpp"
 #include "LSM6DSOTask.hpp"
 #include "mmc5983Task.hpp"
