@@ -1,10 +1,14 @@
 [submodule "SoarOS"]
 	path = SoarOS
 	url = https://github.com/UCSOAR/SoarOperatingSystem.git
-	branch = master
+	branch = Jad/LoggingIntegration
 [submodule "AvionicsSoftware"]
 	path = AvionicsSoftware
 	url = https://github.com/StudentOrganisationForAerospaceResearch/AvionicsSoftware.git
 [submodule "PeripheralDriversSubmodule"]
 	path = PeripheralDriversSubmodule
 	url = https://github.com/UCSOAR/PeripheralDriversSubmodule.git
+
+[submodule "AltitudePredictionFilter"]
+	path = AltitudePredictionFilter
+	url = https://github.com/UCSOAR/AltitudePredictionFilter.git

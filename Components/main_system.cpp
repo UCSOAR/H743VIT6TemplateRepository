@@ -19,7 +19,10 @@
 #include "BaroTask07.hpp"
 #include "BaroTask11.hpp"
 #include "LoggingTask.hpp"
+#include "AltitudeTask.hpp"
 #include "FlashTask.hpp"
+#include "GPSTask.hpp"
+#include "SensorPublisherTask.hpp"
 
 /* Drivers ------------------------------------------------------------------*/
 namespace Driver {
@@ -38,13 +41,16 @@ void run_main() {
 	DebugTask::Inst().InitTask();
 	//FlashTask::Inst().InitTask();
 
-	IMUTask::Inst().InitTask();
+	//IMUTask::Inst().InitTask();
 
-	LSM6DSOTask::Inst().InitTask();
-    MMC5983MATask::Inst().InitTask();
-    BaroTask07::Inst().InitTask();
-    BaroTask11::Inst().InitTask();
+	//LSM6DSOTask::Inst().InitTask();
+    //MMC5983MATask::Inst().InitTask();
+    //BaroTask07::Inst().InitTask();
+    //BaroTask11::Inst().InitTask();
     LoggingTask::Inst().InitTask();
+	//SensorPublisherTask::Inst().InitTask();
+    AltitudeTask::Inst().InitTask();
+    //GPSTask::Inst().InitTask();
 
 
     // Print System Boot Info : Warning, don't queue more than 10 prints before scheduler starts
