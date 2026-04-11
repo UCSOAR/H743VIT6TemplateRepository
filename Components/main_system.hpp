@@ -35,6 +35,8 @@ class UARTDriver;
 namespace Driver {
     extern UARTDriver usart8;
     extern UARTDriver uart7;
+    extern UARTDriver usart1;
+
 }
 namespace UART {
     constexpr UARTDriver* GPS = &Driver::uart7;
