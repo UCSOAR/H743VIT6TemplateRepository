@@ -13,8 +13,8 @@
 #include "UARTTask.hpp"
 #include "CubeTask.hpp"
 #include "DebugTask.hpp"
-#include "IMUTask.hpp"
-#include "LSM6DSOTask.hpp"
+//#include "IMUTask.hpp"
+//#include "LSM6DSOTask.hpp"
 #include "mmc5983Task.hpp"
 #include "BaroTask07.hpp"
 #include "BaroTask11.hpp"
@@ -23,7 +23,7 @@
 
 /* Drivers ------------------------------------------------------------------*/
 namespace Driver {
-    UARTDriver usart8(UART8);
+    UARTDriver uart8(UART8);
     UARTDriver uart7(UART7);
     UARTDriver usart1(USART1);
 

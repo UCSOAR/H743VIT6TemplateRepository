@@ -33,7 +33,7 @@ void run_StartDefaultTask();
 // UART Driver
 class UARTDriver;
 namespace Driver {
-    extern UARTDriver usart8;
+    extern UARTDriver uart8;
     extern UARTDriver uart7;
     extern UARTDriver usart1;
 
