@@ -11,9 +11,14 @@
 #include "SystemDefines.hpp"
 #include "everestTaskHPP.hpp"
 #include "SensorDataTypes.hpp"
+#include "FilterState.hpp"
 
 class AltitudeTask: public Task {
 public:
+
+	void HandleLaunchCommand(uint8_t filterState);
+
+
 	static AltitudeTask& Inst() {
 		static AltitudeTask inst;
 		return inst;
@@ -47,13 +52,13 @@ protected:
 	int GPS;
 
 	// Queues of length 1 to receive data.
-	Queue IMUData_Queue = Queue(1);
+	Queue IMUData_Queue;
 
-	Queue baroData_Queue = Queue(1);
+	Queue baroData_Queue;
 
-	Queue magData_Queue = Queue(1);
+	Queue magData_Queue;
 
-	Queue GPSData_Queue = Queue(1);
+	Queue GPSData_Queue;
 
 	// Time since filter start in seconds. Currently the filter starts as soon as the task is instantiated.
 	float currentTime = 0;

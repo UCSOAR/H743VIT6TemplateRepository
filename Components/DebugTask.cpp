@@ -11,7 +11,7 @@
 #include "CubeUtils.hpp"
 #include <cstring>
 #include "LoggingService.hpp"
-
+#include "AltitudeTask.hpp"
 #include "stm32h7xx_hal.h"
 #include "FlashTask.hpp"
 
@@ -182,6 +182,15 @@ void DebugTask::HandleDebugMessage(const char *msg)
   else if (strcmp(msg, "stop_dump") == 0)
   {
     LoggingService::StopDump();
+  }
+  else if (strcmp(msg, "filter_start") == 0)
+  {
+    AltitudeTask::Inst().HandleLaunchCommand(1); // STARTED
+  }
+
+  else if (strcmp(msg, "filter_launch") == 0)
+  {
+    AltitudeTask::Inst().HandleLaunchCommand(4); // LAUNCHED
   }
 
   else
