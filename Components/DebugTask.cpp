@@ -10,6 +10,7 @@
 #include "Command.hpp"
 #include "CubeUtils.hpp"
 #include <cstring>
+#include "ProfilerTask.hpp"
 #include "LoggingService.hpp"
 #include "ProfilerTask.hpp"
 
@@ -108,6 +109,16 @@ void DebugTask::HandleDebugMessage(const char *msg)
                xPortGetMinimumEverFreeHeapSize());
     SOAR_PRINT("Debug Task Runtime  \t: %d ms\n\n",
                TICKS_TO_MS(xTaskGetTickCount()));
+  } 
+  #if (configGENERATE_RUN_TIME_STATS == 1)  // enable profiling commands if profiling enabled
+  else if (strcmp(msg, "top") == 0) {
+    profileSystem = true;
+  } else if (strcmp(msg, "stoptop") == 0) {
+    profileSystem = false;
+  } 
+  #endif
+
+    else {
   }
   else if (strcmp(msg, "imu1") == 0)
   {
