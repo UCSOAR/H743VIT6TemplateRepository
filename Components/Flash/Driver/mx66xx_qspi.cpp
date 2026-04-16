@@ -308,13 +308,13 @@ void MX66xxQSPI_EQIO(void)
 
 void MX66xxQSPI_EQIO_1LINE(void)
 {
-    (void)MX66xxQSPI_CommandOnlyInstructionType(MX66XX_CMD_EQIO,QSPI_INSTRUCTION_1_LINE);
+    (void)MX66xxQSPI_CommandOnlyInstructionType(MX66XX_CMD_EQIO,QSPI_INSTRUCTION_4_LINES);
     MX66xxQSPI_Delay(1);
 }
 void MX66xxQSPI_EN4B(void)
 {
     if (MX66xxQSPI_CommandOnly(MX66XX_CMD_EN4B) ||
-        MX66xxQSPI_CommandOnlyInstructionType(MX66XX_CMD_EN4B, QSPI_INSTRUCTION_1_LINE))
+        MX66xxQSPI_CommandOnlyInstructionType(MX66XX_CMD_EN4B, QSPI_INSTRUCTION_4_LINES))
     {
         MX66xxQSPI_Delay(1);
         mx66xx_qspi.Addr4Byte = 1;
@@ -324,7 +324,7 @@ void MX66xxQSPI_EN4B(void)
 void MX66xxQSPI_EX4B(void)
 {
     if (MX66xxQSPI_CommandOnly(MX66XX_CMD_EX4B) ||
-        MX66xxQSPI_CommandOnlyInstructionType(MX66XX_CMD_EX4B, QSPI_INSTRUCTION_1_LINE))
+        MX66xxQSPI_CommandOnlyInstructionType(MX66XX_CMD_EX4B, QSPI_INSTRUCTION_4_LINES))
     {
         MX66xxQSPI_Delay(1);
         mx66xx_qspi.Addr4Byte = 0;
@@ -450,8 +450,8 @@ bool MX66xxQSPI_Init(void)
     mx66xx_qspi.SectorCount = FS_TOTAL_SIZE / FS_SECTOR_SIZE;
     mx66xx_qspi.PageCount = FS_TOTAL_SIZE / FS_PAGE_SIZE;
 
-    MX66xxQSPI_ReadUniqID();
-    MX66xxQSPI_ReadStatusRegister();
+    //MX66xxQSPI_ReadUniqID();
+    //MX66xxQSPI_ReadStatusRegister();
 
     mx66xx_qspi.Lock = 0;
     return mx66xx_qspi.Addr4Byte == 1;

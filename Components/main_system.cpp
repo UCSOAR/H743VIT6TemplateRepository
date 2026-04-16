@@ -21,6 +21,7 @@
 #include "LoggingTask.hpp"
 #include "FlashTask.hpp"
 #include "PollingTask.hpp"
+#include "main.h"
 
 /* Drivers ------------------------------------------------------------------*/
 namespace Driver {
@@ -34,6 +35,7 @@ namespace Driver {
 */
 void run_main() {
     // Init Tasks
+	HAL_GPIO_WritePin(ResetPin_GPIO_Port ,ResetPin_Pin, GPIO_PIN_SET);
 	UARTTask::Inst().InitTask();
 	CubeTask::Inst().InitTask();
 	DebugTask::Inst().InitTask();
