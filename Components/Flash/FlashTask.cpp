@@ -155,13 +155,6 @@ void FlashTask::InitializeFlash()
 {
     SOAR_PRINT("FlashTask::InitializeFlash() - Initializing MX66 flash\n");
 
-    MX66xxQSPI_ReleaseFromDeepPowerDown();
-    MX66xxQSPI_RSTEN();
-    MX66xxQSPI_RST();
-    MX66xxQSPI_EQIO_1LINE();
-    MX66xxQSPI_EN4B();
-
-
     if (!MX66xxQSPI_Init())
     {
         SOAR_PRINT("FlashTask::InitializeFlash() - MX66 init failed\n");
