@@ -35,7 +35,11 @@ namespace Driver {
 */
 void run_main() {
     // Init Tasks
-	HAL_GPIO_WritePin(ResetPin_GPIO_Port ,ResetPin_Pin, GPIO_PIN_SET);
+    // Force a real reset/power-cycle pulse on external device before task bring-up.
+    HAL_GPIO_WritePin(ResetPin_GPIO_Port, ResetPin_Pin, GPIO_PIN_RESET);
+  
+    HAL_GPIO_WritePin(ResetPin_GPIO_Port, ResetPin_Pin, GPIO_PIN_SET);
+    
 	UARTTask::Inst().InitTask();
 	CubeTask::Inst().InitTask();
 	DebugTask::Inst().InitTask();
@@ -47,7 +51,7 @@ void run_main() {
 //		MMC5983MATask::Inst().InitTask();
 //		BaroTask07::Inst().InitTask();
 //		BaroTask11::Inst().InitTask();
-//		LoggingTask::Inst().InitTask();
+	LoggingTask::Inst().InitTask();
 
 
     // Print System Boot Info : Warning, don't queue more than 10 prints before scheduler starts

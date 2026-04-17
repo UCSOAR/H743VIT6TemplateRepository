@@ -8,6 +8,7 @@
 #include "PollingTask.hpp"
 #include "FreeRTOS.h"
 #include "timers.h"
+#include "DataBroker.hpp"
 
 namespace {
 constexpr uint32_t kLaunchPollMs = 20;
@@ -212,5 +213,13 @@ void PollingTask::LogData(){
 			(long)magData.magX,
 			(long)magData.magY,
 			(long)magData.magZ);
+
+	DataBroker::Publish<IMUData>(&imu16Data);
+	DataBroker::Publish<IMUData>(&imu32Data);
+	DataBroker::Publish<BaroData>(&baro07Data);
+	DataBroker::Publish<BaroData>(&baro11Data);
+	DataBroker::Publish<MagData>(&magData);
+
+
 
 }
