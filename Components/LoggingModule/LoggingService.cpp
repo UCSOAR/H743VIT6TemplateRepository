@@ -6,14 +6,15 @@
  */
 #include "LoggingService.hpp"
 #include "stm32h7xx_hal.h"
+#include "cmsis_os.h"
 
 uint8_t  LoggingService::ramLog[RAM_LOG_SIZE] = {0};
 uint32_t LoggingService::ramHead = 0;
 uint16_t LoggingService::sectorAddress = 0;
 uint8_t LoggingService::bufferPerSector = 0;
 uint8_t LoggingService::sectorCount = 0;
-uint8_t LoggingService::done = 0;
-uint8_t LoggingService::doneDump =0;
+volatile uint8_t LoggingService::done = 0;
+volatile uint8_t LoggingService::doneDump =0;
 
 
 static uint32_t dumpIndex = 0;
@@ -138,13 +139,30 @@ const char* SensorTypeName(LoggingData type)
 
 void LoggingService::ProcessFlashDump()
 {
-	 done = true;
+	done = true;
 	doneDump = false;
+	dumpSector = 0;
+	dumpOffset = 0;
 
 	constexpr uint32_t RECORD_SIZE = 20;
 	constexpr uint32_t CHUNK_SIZE  = 500;
 
-	while (dumpSector < NUM_SECTORS && !doneDump) { //go untill all sectors have been read or doneDump flag is triggered
+	// Snapshot the logged extent so we don't walk the entire flash device.
+	uint32_t maxSector = sectorAddress;
+	uint16_t maxOffset = static_cast<uint16_t>(bufferPerSector * RAM_LOG_SIZE);
+
+	if (maxOffset == 0)
+	{
+		if (maxSector == 0)
+		{
+			SOAR_PRINT("------FLASH DUMP EMPTY------\n");
+			return;
+		}
+		maxSector -= 1;
+		maxOffset = SECTOR_READ;
+	}
+
+	while ((dumpSector < maxSector || (dumpSector == maxSector && dumpOffset < maxOffset)) && !doneDump) {
 
 		memset(sectorBuf, 0, sizeof(sectorBuf));
 		MX66xxQSPI_ReadSector(sectorBuf, dumpSector, dumpOffset, CHUNK_SIZE);
@@ -212,13 +230,20 @@ void LoggingService::ProcessFlashDump()
 		} else {
 			dumpOffset += 500;
 		}
+
+		// Let lower-priority UART/debug tasks run while the dump is in progress.
+		osDelay(1);
 	}
 
-	SOAR_PRINT("------FLASH DUMP COMPLETE------");
+	if (doneDump)
+	{
+		SOAR_PRINT("------FLASH DUMP STOPPED------\n");
+	}
+	else
+	{
+		SOAR_PRINT("------FLASH DUMP COMPLETE------\n");
+	}
 }
-
-
-
 
 
 void LoggingService::StopDump(){

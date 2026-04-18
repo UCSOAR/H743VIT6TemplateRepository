@@ -45,8 +45,8 @@ class LoggingService{
 		static uint16_t sectorAddress;
 		static uint8_t bufferPerSector;
 		static uint8_t sectorCount;
-		static uint8_t done;
-		static uint8_t doneDump;
+		static volatile uint8_t done;
+		static volatile uint8_t doneDump;
 
 
 };

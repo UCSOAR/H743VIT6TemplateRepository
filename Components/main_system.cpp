@@ -13,13 +13,13 @@
 #include "UARTTask.hpp"
 #include "CubeTask.hpp"
 #include "DebugTask.hpp"
-#include "IMUTask.hpp"
-#include "LSM6DSOTask.hpp"
 #include "mmc5983Task.hpp"
 #include "BaroTask07.hpp"
 #include "BaroTask11.hpp"
 #include "LoggingTask.hpp"
 #include "FlashTask.hpp"
+#include "PollingTask.hpp"
+#include "main.h"
 
 /* Drivers ------------------------------------------------------------------*/
 namespace Driver {
@@ -33,18 +33,23 @@ namespace Driver {
 */
 void run_main() {
     // Init Tasks
+    // Force a real reset/power-cycle pulse on external device before task bring-up.
+    HAL_GPIO_WritePin(ResetPin_GPIO_Port, ResetPin_Pin, GPIO_PIN_RESET);
+  
+    HAL_GPIO_WritePin(ResetPin_GPIO_Port, ResetPin_Pin, GPIO_PIN_SET);
+    
 	UARTTask::Inst().InitTask();
 	CubeTask::Inst().InitTask();
 	DebugTask::Inst().InitTask();
-	//FlashTask::Inst().InitTask();
+	FlashTask::Inst().InitTask();
+	PollingTask::Inst().InitTask();
 
-	IMUTask::Inst().InitTask();
-
-	LSM6DSOTask::Inst().InitTask();
-    MMC5983MATask::Inst().InitTask();
-    BaroTask07::Inst().InitTask();
-    BaroTask11::Inst().InitTask();
-    LoggingTask::Inst().InitTask();
+//		LSM6DSOTask::Inst().InitTask();
+//		IMUTask::Inst().InitTask();
+//		MMC5983MATask::Inst().InitTask();
+//		BaroTask07::Inst().InitTask();
+//		BaroTask11::Inst().InitTask();
+	LoggingTask::Inst().InitTask();
 
 
     // Print System Boot Info : Warning, don't queue more than 10 prints before scheduler starts

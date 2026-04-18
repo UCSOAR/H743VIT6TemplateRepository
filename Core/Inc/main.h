@@ -29,19 +29,6 @@ extern "C" {
 /* Includes ------------------------------------------------------------------*/
 #include "stm32h7xx_hal.h"
 
-#include "stm32h7xx_ll_usart.h"
-#include "stm32h7xx_ll_rcc.h"
-#include "stm32h7xx_ll_bus.h"
-#include "stm32h7xx_ll_cortex.h"
-#include "stm32h7xx_ll_system.h"
-#include "stm32h7xx_ll_utils.h"
-#include "stm32h7xx_ll_pwr.h"
-#include "stm32h7xx_ll_gpio.h"
-#include "stm32h7xx_ll_dma.h"
-#include "stm32h7xx_ll_hsem.h"
-
-#include "stm32h7xx_ll_exti.h"
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -70,24 +57,24 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define BARO07_CS_Pin GPIO_PIN_13
-#define BARO07_CS_GPIO_Port GPIOC
-#define BARO11_CS_Pin GPIO_PIN_0
-#define BARO11_CS_GPIO_Port GPIOA
-#define MAG_CS_Pin GPIO_PIN_2
-#define MAG_CS_GPIO_Port GPIOA
-#define MAG_INT_Pin GPIO_PIN_3
-#define MAG_INT_GPIO_Port GPIOA
-#define IMU32_INT_Pin GPIO_PIN_4
-#define IMU32_INT_GPIO_Port GPIOA
-#define IMU32_CS_Pin GPIO_PIN_5
-#define IMU32_CS_GPIO_Port GPIOC
-#define SPI_FLASH_CS_Pin GPIO_PIN_2
-#define SPI_FLASH_CS_GPIO_Port GPIOB
-#define IMU16_INT_Pin GPIO_PIN_15
+#define MAG_CS_Pin GPIO_PIN_4
+#define MAG_CS_GPIO_Port GPIOE
+#define IMU32A_CS_Pin GPIO_PIN_0
+#define IMU32A_CS_GPIO_Port GPIOA
+#define IMU32_CS_Pin GPIO_PIN_3
+#define IMU32_CS_GPIO_Port GPIOA
+#define IMU16_INT_Pin GPIO_PIN_4
 #define IMU16_INT_GPIO_Port GPIOA
-#define IMU16_CS_Pin GPIO_PIN_0
-#define IMU16_CS_GPIO_Port GPIOD
+#define IMU16_CS_Pin GPIO_PIN_4
+#define IMU16_CS_GPIO_Port GPIOC
+#define GPS_CS_Pin GPIO_PIN_11
+#define GPS_CS_GPIO_Port GPIOB
+#define BARO07_CS_Pin GPIO_PIN_4
+#define BARO07_CS_GPIO_Port GPIOD
+#define BARO11_CS_Pin GPIO_PIN_9
+#define BARO11_CS_GPIO_Port GPIOG
+#define ResetPin_Pin GPIO_PIN_9
+#define ResetPin_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

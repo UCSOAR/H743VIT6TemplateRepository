@@ -108,48 +108,6 @@ void DebugTask::HandleDebugMessage(const char *msg)
     SOAR_PRINT("Debug Task Runtime  \t: %d ms\n\n",
                TICKS_TO_MS(xTaskGetTickCount()));
   }
-  else if (strcmp(msg, "imu1") == 0)
-  {
-
-    SOAR_PRINT("Debug Imu 32G single sample");
-    Command cmd(DATA_COMMAND, IMUTask::IMU_SAMPLE_AND_LOG);
-    IMUTask::Inst().GetEventQueue()->Send(cmd);
-  }
-  else if (strcmp(msg, "imu1loop") == 0)
-  {
-
-    SOAR_PRINT("Debug Imu 32G continuous read start");
-    Command cmd(DATA_COMMAND, IMUTask::IMU_START_CONTINUOUS_PRINT);
-    IMUTask::Inst().GetEventQueue()->Send(cmd);
-  }
-  else if (strcmp(msg, "imu1stop") == 0)
-  {
-
-    SOAR_PRINT("Debug Imu 32G continuous read stop");
-    Command cmd(DATA_COMMAND, IMUTask::IMU_STOP_CONTINUOUS_PRINT);
-    IMUTask::Inst().GetEventQueue()->Send(cmd);
-  }
-  else if (strcmp(msg, "imu2") == 0)
-  {
-
-    SOAR_PRINT("Debug Imu 16G single sample");
-    Command cmd(DATA_COMMAND, LSM6DSOTask::IMU_SAMPLE_AND_LOG);
-    LSM6DSOTask::Inst().GetEventQueue()->Send(cmd);
-  }
-  else if (strcmp(msg, "imu2loop") == 0)
-  {
-
-    SOAR_PRINT("Debug Imu 16G continuous read start");
-    Command cmd(DATA_COMMAND, LSM6DSOTask::IMU_START_CONTINUOUS_PRINT);
-    LSM6DSOTask::Inst().GetEventQueue()->Send(cmd);
-  }
-  else if (strcmp(msg, "imu2stop") == 0)
-  {
-
-    SOAR_PRINT("Debug Imu 16G continuous read stop");
-    Command cmd(DATA_COMMAND, LSM6DSOTask::IMU_STOP_CONTINUOUS_PRINT);
-    LSM6DSOTask::Inst().GetEventQueue()->Send(cmd);
-  }
 
   else if (strcmp(msg, "baro1") == 0)
   {
@@ -166,7 +124,7 @@ void DebugTask::HandleDebugMessage(const char *msg)
   else if (strcmp(msg, "mag") == 0)
   {
     SOAR_PRINT("Debug mag read");
-    Command cmd(DATA_COMMAND, MMC5983MATask::MMC_CMD_ENABLE_LOG);
+    Command cmd(DATA_COMMAND, MMC5983MATask::MMC_CMD_START_READ);
     MMC5983MATask::Inst().GetEventQueue()->Send(cmd);
   }
   else if (strcmp(msg, "flash_test") == 0)
@@ -174,6 +132,22 @@ void DebugTask::HandleDebugMessage(const char *msg)
     SOAR_PRINT("Debug: Triggering flash tests\n");
     FlashTask::Inst().TriggerTest();
   }
+  else if(strcmp(msg, "land") == 0){
+	  SOAR_PRINT("Rocket landed");
+	  PollingTask::Inst().SetFlightState(PollingTask::FlightState::Grounded);
+  }
+  else if(strcmp(msg, "launch") == 0){
+	  SOAR_PRINT("Rocket launched");
+	  PollingTask::Inst().SetFlightState(PollingTask::FlightState::Launch);
+  }
+  else if(strcmp(msg, "coast") == 0){
+  	  SOAR_PRINT("Rocket coasting");
+  	  PollingTask::Inst().SetFlightState(PollingTask::FlightState::Coast);
+   }
+  else if(strcmp(msg, "recovery") == 0){
+  	  SOAR_PRINT("Rocket recovery");
+  	  PollingTask::Inst().SetFlightState(PollingTask::FlightState::Recovery);
+    }
   else if (strcmp(msg, "flash_dump") == 0)
   {
     Command cmd(TASK_SPECIFIC_COMMAND, FLASH_DUMP);

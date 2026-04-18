@@ -23,6 +23,7 @@
 #define MX66XX_QSPI_WRITE_POLL_TIMEOUT_MS 10000
 
 #define MX66XX_CMD_QPIID 0xAF
+#define MX66XX_CMD_RDID 0x9F
 #define MX66XX_CMD_RUID 0x4B
 #define MX66XX_CMD_EQIO 0x35
 #define MX66XX_CMD_EN4B 0xB7
@@ -50,6 +51,26 @@
 
 mx66xx_t mx66xx_qspi;
 extern QSPI_HandleTypeDef _MX66XX_SPI;
+static bool mx66xx_qspi_mode = false;
+
+static uint32_t MX66xxQSPI_CurrentInstructionMode(void)
+{
+    return mx66xx_qspi_mode ? QSPI_INSTRUCTION_4_LINES : QSPI_INSTRUCTION_1_LINE;
+}
+
+static uint32_t MX66xxQSPI_AdjustAddressMode(uint32_t requested)
+{
+    if ((!mx66xx_qspi_mode) && (requested == QSPI_ADDRESS_4_LINES))
+        return QSPI_ADDRESS_1_LINE;
+    return requested;
+}
+
+static uint32_t MX66xxQSPI_AdjustDataMode(uint32_t requested)
+{
+    if ((!mx66xx_qspi_mode) && (requested == QSPI_DATA_4_LINES))
+        return QSPI_DATA_1_LINE;
+    return requested;
+}
 
 static void MX66xxQSPI_BuildCommand(QSPI_CommandTypeDef *cmd,
                                     uint8_t instruction,
@@ -88,7 +109,7 @@ static void MX66xxQSPI_BuildCommand(QSPI_CommandTypeDef *cmd,
 static bool MX66xxQSPI_CommandOnly(uint8_t instruction)
 {
     QSPI_CommandTypeDef cmd = {};
-    MX66xxQSPI_BuildCommand(&cmd, instruction, QSPI_INSTRUCTION_4_LINES, 0, QSPI_ADDRESS_NONE, QSPI_DATA_NONE, 0, 0);
+    MX66xxQSPI_BuildCommand(&cmd, instruction, MX66xxQSPI_CurrentInstructionMode(), 0, QSPI_ADDRESS_NONE, QSPI_DATA_NONE, 0, 0);
     return (HAL_QSPI_Command(&_MX66XX_SPI, &cmd, 1000) == HAL_OK);
 }
 
@@ -117,7 +138,14 @@ static bool MX66xxQSPI_CommandAddressOnly(uint8_t instruction,
     }
 
     QSPI_CommandTypeDef cmd = {};
-    MX66xxQSPI_BuildCommand(&cmd, instruction, QSPI_INSTRUCTION_4_LINES, address, addressMode, QSPI_DATA_NONE, 0, 0);
+    MX66xxQSPI_BuildCommand(&cmd,
+                            instruction,
+                            MX66xxQSPI_CurrentInstructionMode(),
+                            address,
+                            MX66xxQSPI_AdjustAddressMode(addressMode),
+                            QSPI_DATA_NONE,
+                            0,
+                            0);
     const HAL_StatusTypeDef status = HAL_QSPI_Command(&_MX66XX_SPI, &cmd, 1000);
     if (status != HAL_OK)
     {
@@ -154,7 +182,14 @@ static bool MX66xxQSPI_CommandReceive(uint8_t instruction,
         return false;
 
     QSPI_CommandTypeDef cmd = {};
-    MX66xxQSPI_BuildCommand(&cmd, instruction, QSPI_INSTRUCTION_4_LINES, address, addressMode, dataMode, length, dummyCycles);
+    MX66xxQSPI_BuildCommand(&cmd,
+                            instruction,
+                            MX66xxQSPI_CurrentInstructionMode(),
+                            address,
+                            MX66xxQSPI_AdjustAddressMode(addressMode),
+                            MX66xxQSPI_AdjustDataMode(dataMode),
+                            length,
+                            dummyCycles);
 
     if (HAL_QSPI_Command(&_MX66XX_SPI, &cmd, 1000) != HAL_OK)
     {
@@ -201,7 +236,14 @@ static bool MX66xxQSPI_CommandTransmit(uint8_t instruction,
         return false;
 
     QSPI_CommandTypeDef cmd = {};
-    MX66xxQSPI_BuildCommand(&cmd, instruction, QSPI_INSTRUCTION_4_LINES, address, addressMode, dataMode, length, dummyCycles);
+    MX66xxQSPI_BuildCommand(&cmd,
+                            instruction,
+                            MX66xxQSPI_CurrentInstructionMode(),
+                            address,
+                            MX66xxQSPI_AdjustAddressMode(addressMode),
+                            MX66xxQSPI_AdjustDataMode(dataMode),
+                            length,
+                            dummyCycles);
 
     if (HAL_QSPI_Command(&_MX66XX_SPI, &cmd, 1000) != HAL_OK)
     {
@@ -288,6 +330,22 @@ uint32_t MX66xxQSPI_QPIReadID(void)
     return (((uint32_t)rData[0] << 16) | ((uint32_t)rData[1] << 8) | (uint32_t)rData[2]);
 }
 
+static uint32_t MX66xxQSPI_SPIReadID(void)
+{
+    uint8_t rData[3] = {0};
+    QSPI_CommandTypeDef cmd = {};
+
+    MX66xxQSPI_BuildCommand(&cmd, MX66XX_CMD_RDID, QSPI_INSTRUCTION_1_LINE, 0, QSPI_ADDRESS_NONE, QSPI_DATA_1_LINE, sizeof(rData), 0);
+
+    if (HAL_QSPI_Command(&_MX66XX_SPI, &cmd, 1000) != HAL_OK)
+        return 0;
+
+    if (HAL_QSPI_Receive(&_MX66XX_SPI, rData, 1000) != HAL_OK)
+        return 0;
+
+    return (((uint32_t)rData[0] << 16) | ((uint32_t)rData[1] << 8) | (uint32_t)rData[2]);
+}
+
 void MX66xxQSPI_ReadUniqID(void)
 {
     (void)MX66xxQSPI_CommandReceive(MX66XX_CMD_RUID,
@@ -301,20 +359,26 @@ void MX66xxQSPI_ReadUniqID(void)
 
 void MX66xxQSPI_EQIO(void)
 {
-    (void)MX66xxQSPI_CommandOnly(MX66XX_CMD_EQIO);
+    if (MX66xxQSPI_CommandOnlyInstructionType(MX66XX_CMD_EQIO, QSPI_INSTRUCTION_1_LINE))
+    {
+        mx66xx_qspi_mode = true;
+    }
     MX66xxQSPI_Delay(1);
 }
 
 
 void MX66xxQSPI_EQIO_1LINE(void)
 {
-    (void)MX66xxQSPI_CommandOnlyInstructionType(MX66XX_CMD_EQIO,QSPI_INSTRUCTION_1_LINE);
+    if (MX66xxQSPI_CommandOnlyInstructionType(MX66XX_CMD_EQIO, QSPI_INSTRUCTION_1_LINE))
+    {
+        mx66xx_qspi_mode = true;
+    }
     MX66xxQSPI_Delay(1);
 }
 void MX66xxQSPI_EN4B(void)
 {
     if (MX66xxQSPI_CommandOnly(MX66XX_CMD_EN4B) ||
-        MX66xxQSPI_CommandOnlyInstructionType(MX66XX_CMD_EN4B, QSPI_INSTRUCTION_1_LINE))
+        MX66xxQSPI_CommandOnlyInstructionType(MX66XX_CMD_EN4B, QSPI_INSTRUCTION_4_LINES))
     {
         MX66xxQSPI_Delay(1);
         mx66xx_qspi.Addr4Byte = 1;
@@ -324,7 +388,7 @@ void MX66xxQSPI_EN4B(void)
 void MX66xxQSPI_EX4B(void)
 {
     if (MX66xxQSPI_CommandOnly(MX66XX_CMD_EX4B) ||
-        MX66xxQSPI_CommandOnlyInstructionType(MX66XX_CMD_EX4B, QSPI_INSTRUCTION_1_LINE))
+        MX66xxQSPI_CommandOnlyInstructionType(MX66XX_CMD_EX4B, QSPI_INSTRUCTION_4_LINES))
     {
         MX66xxQSPI_Delay(1);
         mx66xx_qspi.Addr4Byte = 0;
@@ -334,6 +398,7 @@ void MX66xxQSPI_EX4B(void)
 void MX66xxQSPI_RSTQIO(void)
 {
     (void)MX66xxQSPI_CommandOnly(MX66XX_CMD_RSTQIO);
+    mx66xx_qspi_mode = false;
     MX66xxQSPI_Delay(1);
 }
 
@@ -346,6 +411,7 @@ void MX66xxQSPI_RSTEN(void)
 void MX66xxQSPI_RST(void)
 {
     (void)MX66xxQSPI_CommandOnly(MX66XX_CMD_RST);
+    mx66xx_qspi_mode = false;
     MX66xxQSPI_Delay(1);
 }
 
@@ -429,18 +495,38 @@ void MX66xxQSPI_WaitForWriteEnd(void)
 bool MX66xxQSPI_Init(void)
 {
     mx66xx_qspi.Lock = 1;
+    mx66xx_qspi_mode = false;
+    mx66xx_qspi.Addr4Byte = 0;
 
     while (HAL_GetTick() < 15)
         HAL_Delay(1);
 
     HAL_Delay(15);
 
-    mx66xx_qspi.JedecId = MX66xxQSPI_QPIReadID();
+    MX66xxQSPI_ReleaseFromDeepPowerDown();
+    MX66xxQSPI_RSTEN();
+    MX66xxQSPI_RST();
+
+    mx66xx_qspi.JedecId = MX66xxQSPI_SPIReadID();
     if ((mx66xx_qspi.JedecId == 0) || (mx66xx_qspi.JedecId == 0xFFFFFF))
     {
         mx66xx_qspi.Lock = 0;
         return false;
     }
+
+    MX66xxQSPI_EQIO_1LINE();
+    if (!mx66xx_qspi_mode)
+    {
+        mx66xx_qspi.Lock = 0;
+        return false;
+    }
+
+    if (!MX66xxQSPI_CommandOnly(MX66XX_CMD_EN4B))
+    {
+        mx66xx_qspi.Lock = 0;
+        return false;
+    }
+    mx66xx_qspi.Addr4Byte = 1;
 
     mx66xx_qspi.PageSize = FS_PAGE_SIZE;
     mx66xx_qspi.SectorSize = FS_SECTOR_SIZE;
@@ -450,11 +536,11 @@ bool MX66xxQSPI_Init(void)
     mx66xx_qspi.SectorCount = FS_TOTAL_SIZE / FS_SECTOR_SIZE;
     mx66xx_qspi.PageCount = FS_TOTAL_SIZE / FS_PAGE_SIZE;
 
-    MX66xxQSPI_ReadUniqID();
-    MX66xxQSPI_ReadStatusRegister();
+    //MX66xxQSPI_ReadUniqID();
+    //MX66xxQSPI_ReadStatusRegister();
 
     mx66xx_qspi.Lock = 0;
-    return mx66xx_qspi.Addr4Byte == 1;
+    return true;
 }
 
 void MX66xxQSPI_EraseChip(void)
