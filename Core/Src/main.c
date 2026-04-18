@@ -756,7 +756,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOE, MAG_CS_Pin|GPIO_PIN_13, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, IMU32_CS_Pin|GPIO_PIN_3, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, IMU32A_CS_Pin|IMU32_CS_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(IMU16_CS_GPIO_Port, IMU16_CS_Pin, GPIO_PIN_RESET);
@@ -789,8 +789,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : IMU32_CS_Pin PA3 */
-  GPIO_InitStruct.Pin = IMU32_CS_Pin|GPIO_PIN_3;
+  /*Configure GPIO pins : IMU32A_CS_Pin IMU32_CS_Pin */
+  GPIO_InitStruct.Pin = IMU32A_CS_Pin|IMU32_CS_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

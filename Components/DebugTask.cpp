@@ -108,48 +108,6 @@ void DebugTask::HandleDebugMessage(const char *msg)
     SOAR_PRINT("Debug Task Runtime  \t: %d ms\n\n",
                TICKS_TO_MS(xTaskGetTickCount()));
   }
-  else if (strcmp(msg, "imu1") == 0)
-  {
-
-    SOAR_PRINT("Debug Imu 32G single sample");
-    Command cmd(DATA_COMMAND, IMUTask::IMU_SAMPLE_AND_LOG);
-    IMUTask::Inst().GetEventQueue()->Send(cmd);
-  }
-  else if (strcmp(msg, "imu1loop") == 0)
-  {
-
-    SOAR_PRINT("Debug Imu 32G continuous read start");
-    Command cmd(DATA_COMMAND, IMUTask::IMU_START_CONTINUOUS_PRINT);
-    IMUTask::Inst().GetEventQueue()->Send(cmd);
-  }
-  else if (strcmp(msg, "imu1stop") == 0)
-  {
-
-    SOAR_PRINT("Debug Imu 32G continuous read stop");
-    Command cmd(DATA_COMMAND, IMUTask::IMU_STOP_CONTINUOUS_PRINT);
-    IMUTask::Inst().GetEventQueue()->Send(cmd);
-  }
-  else if (strcmp(msg, "imu2") == 0)
-  {
-
-    SOAR_PRINT("Debug Imu 16G single sample");
-    Command cmd(DATA_COMMAND, LSM6DSOTask::IMU_SAMPLE_AND_LOG);
-    LSM6DSOTask::Inst().GetEventQueue()->Send(cmd);
-  }
-  else if (strcmp(msg, "imu2loop") == 0)
-  {
-
-    SOAR_PRINT("Debug Imu 16G continuous read start");
-    Command cmd(DATA_COMMAND, LSM6DSOTask::IMU_START_CONTINUOUS_PRINT);
-    LSM6DSOTask::Inst().GetEventQueue()->Send(cmd);
-  }
-  else if (strcmp(msg, "imu2stop") == 0)
-  {
-
-    SOAR_PRINT("Debug Imu 16G continuous read stop");
-    Command cmd(DATA_COMMAND, LSM6DSOTask::IMU_STOP_CONTINUOUS_PRINT);
-    LSM6DSOTask::Inst().GetEventQueue()->Send(cmd);
-  }
 
   else if (strcmp(msg, "baro1") == 0)
   {

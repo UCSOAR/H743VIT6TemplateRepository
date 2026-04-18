@@ -246,9 +246,6 @@ void LoggingService::ProcessFlashDump()
 }
 
 
-
-
-
 void LoggingService::StopDump(){
 	doneDump = true;
 }

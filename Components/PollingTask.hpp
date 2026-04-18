@@ -9,7 +9,7 @@
 #include "MS5607Driver.hpp"
 #include "MS5611Driver.hpp"
 #include "lsm6dso.hpp"
-#include "IMUTask.hpp"
+#include <LSM6DO32Driver.h>
 #include "mmc5983ma.hpp"
 
 #include "SensorDataTypes.hpp"

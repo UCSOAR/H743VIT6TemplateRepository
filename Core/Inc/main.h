@@ -59,7 +59,9 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define MAG_CS_Pin GPIO_PIN_4
 #define MAG_CS_GPIO_Port GPIOE
-#define IMU32_CS_Pin GPIO_PIN_0
+#define IMU32A_CS_Pin GPIO_PIN_0
+#define IMU32A_CS_GPIO_Port GPIOA
+#define IMU32_CS_Pin GPIO_PIN_3
 #define IMU32_CS_GPIO_Port GPIOA
 #define IMU16_INT_Pin GPIO_PIN_4
 #define IMU16_INT_GPIO_Port GPIOA
