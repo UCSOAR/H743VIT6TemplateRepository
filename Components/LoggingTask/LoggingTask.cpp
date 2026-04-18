@@ -85,6 +85,7 @@ void LoggingTask::InitTask()
 	DataBroker::Subscribe<IMUData>(this);
 	DataBroker::Subscribe<BaroData>(this);
 	DataBroker::Subscribe<MagData>(this);
+	DataBroker::Subscribe<GPSData>(this);
 
 }
 
@@ -212,6 +213,56 @@ void LoggingTask::HandleCommand(Command& cm){
 		);
 
 		err = log.LogData();
+
+		break;
+	}
+	case DataBrokerMessageTypes:: GPS_DATA:
+	{
+		GPSData data = DataBroker::ExtractData<GPSData>(cm);
+		const uint32_t timestamp = xTaskGetTickCount() * portTICK_PERIOD_MS;
+
+		uint32_t sentenceLen = 0;
+		while ((sentenceLen < sizeof(data.buffer_)) && (data.buffer_[sentenceLen] != '\0'))
+		{
+			sentenceLen++;
+		}
+
+		if (sentenceLen == 0)
+		{
+			break;
+		}
+
+		constexpr uint8_t kGpsPayloadBytes = 12;
+		const uint8_t chunkCount = static_cast<uint8_t>((sentenceLen + kGpsPayloadBytes - 1U) / kGpsPayloadBytes);
+
+		for (uint8_t chunkIdx = 0; chunkIdx < chunkCount; chunkIdx++)
+		{
+			memset(buf, 0, sizeof(buf));
+
+			const uint32_t offset = static_cast<uint32_t>(chunkIdx) * kGpsPayloadBytes;
+			const uint8_t payloadLen = static_cast<uint8_t>(((sentenceLen - offset) > kGpsPayloadBytes) ? kGpsPayloadBytes : (sentenceLen - offset));
+
+			buf[0] = static_cast<uint8_t>(LoggingData::GPS);
+			memcpy(buf + 1, &timestamp, sizeof(timestamp));
+			buf[5] = chunkIdx;
+			buf[6] = chunkCount;
+			buf[7] = payloadLen;
+			memcpy(buf + 8, data.buffer_ + offset, payloadLen);
+
+			LoggingService log(
+			    LoggingDest::FLASH_EXTERN,
+			    LoggingData::GPS,
+			    buf,
+			    20,
+			    LoggingPriority::SECOND
+			);
+
+			err = log.LogData();
+			if (err == LoggingStatus::LOGGING_ERR)
+			{
+				break;
+			}
+		}
 
 		break;
 	}

@@ -146,6 +146,10 @@ void LoggingService::ProcessFlashDump()
 
 	constexpr uint32_t RECORD_SIZE = 20;
 	constexpr uint32_t CHUNK_SIZE  = 500;
+	char gpsSentence[256] = {0};
+	uint16_t gpsSentenceLen = 0;
+	uint8_t gpsExpectedChunks = 0;
+	uint32_t gpsTimestamp = 0;
 
 	// Snapshot the logged extent so we don't walk the entire flash device.
 	uint32_t maxSector = sectorAddress;
@@ -217,6 +221,40 @@ void LoggingService::ProcessFlashDump()
 					SensorTypeName(type), timestamp,
 					(long)magX, (long)magY, (long)magZ);
 
+			}
+			else if (type == LoggingData::GPS)
+			{
+				uint8_t chunkIdx = sectorBuf[i + 5];
+				uint8_t chunkCount = sectorBuf[i + 6];
+				uint8_t payloadLen = sectorBuf[i + 7];
+
+				if (payloadLen > 12)
+				{
+					payloadLen = 12;
+				}
+
+				if (chunkIdx == 0)
+				{
+					memset(gpsSentence, 0, sizeof(gpsSentence));
+					gpsSentenceLen = 0;
+					gpsExpectedChunks = chunkCount;
+					gpsTimestamp = timestamp;
+				}
+
+				if ((payloadLen > 0U) && (gpsSentenceLen + payloadLen < sizeof(gpsSentence)))
+				{
+					memcpy(gpsSentence + gpsSentenceLen, sectorBuf + i + 8, payloadLen);
+					gpsSentenceLen = static_cast<uint16_t>(gpsSentenceLen + payloadLen);
+					gpsSentence[gpsSentenceLen] = '\0';
+				}
+
+				if ((chunkCount > 0U) && (chunkIdx + 1U >= chunkCount))
+				{
+					SOAR_PRINT("GPS Timestamp=%lu Chunks=%u Sentence=%s\n",
+							   (unsigned long)gpsTimestamp,
+							   (unsigned int)gpsExpectedChunks,
+							   gpsSentence);
+				}
 			}
 
 		}
