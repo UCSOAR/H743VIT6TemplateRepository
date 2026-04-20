@@ -27,7 +27,7 @@ class LoggingService{
 		LoggingService(LoggingDest dest, LoggingData dataType, uint8_t* data, uint32_t dataSize, LoggingPriority priority);
 		LoggingStatus LogData();
 		static void ProcessFlashDump();
-
+		void FlashClear();
 		static void StopDump();
 	private:
 		LoggingStatus LogToMX66();

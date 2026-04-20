@@ -161,7 +161,6 @@ void DebugTask::HandleDebugMessage(const char *msg)
 	  Command cmd(DATA_COMMAND, PollingTask::GPS_TEST);
 	  PollingTask::Inst().GetEventQueue()->Send(cmd);
   }
-
   else
   {
     // Single character command, or unknown command

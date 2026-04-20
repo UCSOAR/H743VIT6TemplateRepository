@@ -146,6 +146,8 @@ void LoggingService::ProcessFlashDump()
 
 	constexpr uint32_t RECORD_SIZE = 20;
 	constexpr uint32_t CHUNK_SIZE  = 500;
+
+	//variables for gps read back
 	char gpsSentence[256] = {0};
 	uint16_t gpsSentenceLen = 0;
 	uint8_t gpsExpectedChunks = 0;
@@ -224,15 +226,19 @@ void LoggingService::ProcessFlashDump()
 			}
 			else if (type == LoggingData::GPS)
 			{
+				//get the chunk index, count, and payload length
 				uint8_t chunkIdx = sectorBuf[i + 5];
 				uint8_t chunkCount = sectorBuf[i + 6];
 				uint8_t payloadLen = sectorBuf[i + 7];
 
+				//clamp payload length at 12
 				if (payloadLen > 12)
 				{
 					payloadLen = 12;
 				}
 
+				//if the chunk index is 0 set the sentence buffer to 0,
+				//set the length to 0, set the chunks and time stamp tp read back values
 				if (chunkIdx == 0)
 				{
 					memset(gpsSentence, 0, sizeof(gpsSentence));
@@ -241,6 +247,8 @@ void LoggingService::ProcessFlashDump()
 					gpsTimestamp = timestamp;
 				}
 
+				//if payload length is greater than 0, and the sentence length plus the payload length is less than the
+				//size of the sentence then the appropriate bytes from the sector buffer get added into the sentence
 				if ((payloadLen > 0U) && (gpsSentenceLen + payloadLen < sizeof(gpsSentence)))
 				{
 					memcpy(gpsSentence + gpsSentenceLen, sectorBuf + i + 8, payloadLen);
@@ -248,6 +256,7 @@ void LoggingService::ProcessFlashDump()
 					gpsSentence[gpsSentenceLen] = '\0';
 				}
 
+				//If the last chunk is detected the sentence can br printed to the serial terminal
 				if ((chunkCount > 0U) && (chunkIdx + 1U >= chunkCount))
 				{
 					SOAR_PRINT("GPS Timestamp=%lu Chunks=%u Sentence=%s\n",
@@ -341,7 +350,14 @@ LoggingStatus LoggingService::MemAppend(const LoggingPacket *data){
 
 	return LoggingStatus::LOG_FLASH_NOT_READY;
 
+}
 
+void LoggingService::FlashClear(){
+
+	MX66xxQSPI_EraseChip();
+	sectorAddress = 0;
+	bufferPerSector = 0;
+	sectorCount = 0;
 
 }
 
