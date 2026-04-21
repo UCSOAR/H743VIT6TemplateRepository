@@ -13,7 +13,7 @@ uint32_t LoggingService::ramHead = 0;
 uint16_t LoggingService::sectorAddress = 0;
 uint8_t LoggingService::bufferPerSector = 0;
 uint8_t LoggingService::sectorCount = 0;
-volatile uint8_t LoggingService::done = 0;
+volatile uint8_t LoggingService::done = true;
 volatile uint8_t LoggingService::doneDump =0;
 
 
@@ -24,6 +24,104 @@ static uint16_t dumpOffset = 0;
 static uint32_t sectorStartTickMs = 0;
 static uint8_t txBuf[RAM_LOG_SIZE];
 static uint8_t rxBuf[RAM_LOG_SIZE];
+
+namespace
+{
+	constexpr uint16_t FLASH_STATE_SECTOR = NUM_SECTORS - 1;
+	constexpr uint16_t FLASH_DATA_LIMIT_SECTOR = NUM_SECTORS - 1;
+	constexpr uint32_t FLASH_STATE_MAGIC = 0x4C4F4731;
+
+	struct FlashStateRecord
+	{
+		uint32_t magic;
+		uint32_t sector;
+		uint32_t bufferPerSector;
+		uint32_t checksum;
+	};
+
+	static uint32_t FlashStateChecksum(const FlashStateRecord &record)
+	{
+		return record.magic ^ record.sector ^ record.bufferPerSector ^ 0xA5A55A5A;
+	}
+
+	static bool ReadFlashState(FlashStateRecord &record)
+	{
+		uint8_t raw[sizeof(FlashStateRecord)] = {0};
+		MX66xxQSPI_ReadSector(raw, FLASH_STATE_SECTOR, 0, sizeof(raw));
+		memcpy(&record, raw, sizeof(record));
+		return (record.magic == FLASH_STATE_MAGIC) && (record.checksum == FlashStateChecksum(record));
+	}
+}
+
+bool LoggingService::flashStateLoaded = false;
+
+void LoggingService::SaveFlashState()
+{
+	FlashStateRecord record{};
+	record.magic = FLASH_STATE_MAGIC;
+	record.sector = sectorAddress;
+	record.bufferPerSector = bufferPerSector;
+	record.checksum = FlashStateChecksum(record);
+
+	uint8_t raw[sizeof(record)] = {0};
+	memcpy(raw, &record, sizeof(record));
+
+	MX66xxQSPI_EraseSector(FLASH_STATE_SECTOR);
+	MX66xxQSPI_WriteSector(raw, FLASH_STATE_SECTOR, 0, sizeof(raw));
+}
+
+void LoggingService::LoadFlashStateFromStorage()
+{
+	if (flashStateLoaded)
+	{
+		return;
+	}
+
+	FlashStateRecord record{};
+	if (ReadFlashState(record) && record.sector <= FLASH_DATA_LIMIT_SECTOR && record.bufferPerSector <= 8U)
+	{
+		sectorAddress = static_cast<uint16_t>(record.sector);
+		bufferPerSector = static_cast<uint8_t>(record.bufferPerSector);
+		done = (sectorAddress == FLASH_STATE_SECTOR) ? 1U : 0U;
+		flashStateLoaded = true;
+		return;
+	}
+
+	for (uint16_t sector = 0; sector < FLASH_DATA_LIMIT_SECTOR; ++sector)
+	{
+		for (uint8_t chunk = 0; chunk < 8U; ++chunk)
+		{
+			memset(sectorBuf, 0xFF, sizeof(sectorBuf));
+			MX66xxQSPI_ReadSector(sectorBuf, sector, static_cast<uint32_t>(chunk) * RAM_LOG_SIZE, RAM_LOG_SIZE);
+
+			bool empty = true;
+			for (uint32_t i = 0; i < RAM_LOG_SIZE; ++i)
+			{
+				if (sectorBuf[i] != 0xFF)
+				{
+					empty = false;
+					break;
+				}
+			}
+
+			if (empty)
+			{
+				sectorAddress = sector;
+				bufferPerSector = chunk;
+				done = 0;
+				flashStateLoaded = true;
+				SaveFlashState();
+				return;
+			}
+		}
+	}
+
+	sectorAddress = FLASH_STATE_SECTOR;
+	bufferPerSector = 0;
+	done = 1;
+	flashStateLoaded = true;
+	SaveFlashState();
+}
 
 
 LoggingService::LoggingService(LoggingDest dest, LoggingData dataType, uint8_t* ldata, uint32_t dataSize, LoggingPriority priority)
@@ -72,12 +170,19 @@ LoggingStatus LoggingService::LogData(){
 
 LoggingStatus LoggingService::LogToMX66(){
 
+	LoadFlashStateFromStorage();
+
 	//appends data to buffer and returns flag determining if buffer is full (full => write data)
 	LoggingStatus status = MemAppend(&loggingData);
 	//stops logging, triggered by flash dump, or flashchip is full
 	if(!done){
 		//checks if 500 byte chunck is full (writes when it is full)
 		if(status == LoggingStatus::LOG_FLASH_READY){
+			if(sectorAddress >= FLASH_DATA_LIMIT_SECTOR){
+				done = true;
+				return LoggingStatus::FLASH_FULL;
+			}
+
 			if(bufferPerSector == 0){
 				//if a new sector is reached erase before writing
 				MX66xxQSPI_EraseSector(sectorAddress);
@@ -103,10 +208,12 @@ LoggingStatus LoggingService::LogToMX66(){
 					sectorAddress++;
 					bufferPerSector = 0;
 					//finish logging if the sectorAddress reaches address that does not exist
-					if(sectorAddress > NUM_SECTORS){
+					if(sectorAddress >= FLASH_STATE_SECTOR){
+						sectorAddress = FLASH_STATE_SECTOR;
 						done = true;
 					}
 				}
+
 
 				return LoggingStatus::LOGGING_SUCCESS;
 			}
@@ -117,6 +224,7 @@ LoggingStatus LoggingService::LogToMX66(){
 		}
 		return LoggingStatus::LOG_FLASH_NOT_READY;
 	}
+	
 	return LoggingStatus::FLASH_FULL;
 
 
@@ -139,6 +247,8 @@ const char* SensorTypeName(LoggingData type)
 
 void LoggingService::ProcessFlashDump()
 {
+	LoadFlashStateFromStorage();
+
 	const uint8_t wasDone = done;
 	done = true;
 	doneDump = false;
@@ -157,6 +267,11 @@ void LoggingService::ProcessFlashDump()
 	// Snapshot the logged extent so we don't walk the entire flash device.
 	uint32_t maxSector = sectorAddress;
 	uint16_t maxOffset = static_cast<uint16_t>(bufferPerSector * RAM_LOG_SIZE);
+	if (sectorAddress == FLASH_STATE_SECTOR)
+	{
+		maxSector = FLASH_DATA_LIMIT_SECTOR - 1;
+		maxOffset = SECTOR_READ;
+	}
 
 	if (maxOffset == 0)
 	{
@@ -300,6 +415,13 @@ void LoggingService::ProcessFlashDump()
 void LoggingService::StopDump(){
 	doneDump = true;
 }
+void LoggingService::StartLogging(){
+	done = false;
+}
+void LoggingService::StopLogging(){
+	done = true;
+	SaveFlashState();
+}
 
 
 LoggingStatus LoggingService::LogToInternalMemory(){
@@ -357,11 +479,22 @@ LoggingStatus LoggingService::MemAppend(const LoggingPacket *data){
 }
 
 void LoggingService::FlashClear(){
+	LoadFlashStateFromStorage();
 
-	MX66xxQSPI_EraseChip();
+	// Keep clear bounded: full-chip erase can block long enough to trip watchdogs.
+	MX66xxQSPI_EraseSector(0);
+	MX66xxQSPI_EraseSector(FLASH_STATE_SECTOR);
+
+	ramHead = 0;
 	sectorAddress = 0;
 	bufferPerSector = 0;
 	sectorCount = 0;
+	flashStateLoaded = true;
+	done = 0;
+	doneDump = 0;
+
+	SaveFlashState();
+	SOAR_PRINT("Flash clear: logging cursor reset\n");
 
 }
 

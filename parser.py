@@ -125,6 +125,16 @@ with open(INPUT_FILE, "r", encoding="utf-8", errors="ignore") as f:
 
         print(f"Unparsed line: {line}")
 
+
+def sort_rows_by_timestamp(rows, timestamp_index):
+    return sorted(rows, key=lambda row: row[timestamp_index])
+
+
+imu_rows = sort_rows_by_timestamp(imu_rows, 3)
+baro_rows = sort_rows_by_timestamp(baro_rows, 3)
+mag_rows = sort_rows_by_timestamp(mag_rows, 0)
+gps_rows = sort_rows_by_timestamp(gps_rows, 0)
+
 # ----------------------------
 # Write CSV files
 # ----------------------------

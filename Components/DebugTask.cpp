@@ -157,6 +157,10 @@ void DebugTask::HandleDebugMessage(const char *msg)
   {
     LoggingService::StopDump();
   }
+  else if(strcmp(msg, "flash_clear") == 0){
+	  Command cmd(TASK_SPECIFIC_COMMAND, FLASH_CLEAR);
+	  FlashTask::Inst().GetEventQueue()->Send(cmd);
+  }
   else if(strcmp(msg, "gps") == 0){
 	  Command cmd(DATA_COMMAND, PollingTask::GPS_TEST);
 	  PollingTask::Inst().GetEventQueue()->Send(cmd);
