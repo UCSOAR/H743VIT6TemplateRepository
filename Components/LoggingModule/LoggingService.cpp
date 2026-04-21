@@ -139,6 +139,7 @@ const char* SensorTypeName(LoggingData type)
 
 void LoggingService::ProcessFlashDump()
 {
+	const uint8_t wasDone = done;
 	done = true;
 	doneDump = false;
 	dumpSector = 0;
@@ -162,6 +163,7 @@ void LoggingService::ProcessFlashDump()
 		if (maxSector == 0)
 		{
 			SOAR_PRINT("------FLASH DUMP EMPTY------\n");
+			done = wasDone;
 			return;
 		}
 		maxSector -= 1;
@@ -290,6 +292,8 @@ void LoggingService::ProcessFlashDump()
 	{
 		SOAR_PRINT("------FLASH DUMP COMPLETE------\n");
 	}
+
+	done = wasDone;
 }
 
 

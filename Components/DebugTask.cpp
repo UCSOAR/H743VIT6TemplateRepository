@@ -133,19 +133,19 @@ void DebugTask::HandleDebugMessage(const char *msg)
     FlashTask::Inst().TriggerTest();
   }
   else if(strcmp(msg, "land") == 0){
-	  SOAR_PRINT("Rocket landed");
+    SOAR_PRINT("Rocket landed\n");
 	  PollingTask::Inst().SetFlightState(PollingTask::FlightState::Grounded);
   }
   else if(strcmp(msg, "launch") == 0){
-	  SOAR_PRINT("Rocket launched");
+    SOAR_PRINT("Rocket launched\n");
 	  PollingTask::Inst().SetFlightState(PollingTask::FlightState::Launch);
   }
   else if(strcmp(msg, "coast") == 0){
-  	  SOAR_PRINT("Rocket coasting");
+    SOAR_PRINT("Rocket coasting\n");
   	  PollingTask::Inst().SetFlightState(PollingTask::FlightState::Coast);
    }
   else if(strcmp(msg, "recovery") == 0){
-  	  SOAR_PRINT("Rocket recovery");
+    SOAR_PRINT("Rocket recovery\n");
   	  PollingTask::Inst().SetFlightState(PollingTask::FlightState::Recovery);
     }
   else if (strcmp(msg, "flash_dump") == 0)

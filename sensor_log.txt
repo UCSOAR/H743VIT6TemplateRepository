@@ -1,0 +1,3037 @@
+Rocket launchedPollingTask Timing | elapsed=0 ms dt=0 ms rate=0 Hz
+Log data polledPollingTask Timing | elapsed=17 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=34 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=51 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=68 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=85 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=102 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=119 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=136 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=153 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=170 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=187 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=204 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=221 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=238 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=255 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=272 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=289 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=306 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=323 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=340 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=357 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=374 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=391 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=408 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=425 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=442 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=459 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=476 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=493 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=510 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=527 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=544 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=561 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=578 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=595 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=612 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=629 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=646 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=663 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=680 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=697 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=714 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=731 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=748 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=765 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=782 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=799 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=816 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=833 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=850 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=867 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=884 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=901 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=918 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=935 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=952 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=969 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=986 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1003 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1020 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1037 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1054 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1071 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1088 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1105 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1122 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1139 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1156 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1173 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1190 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1207 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1224 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1241 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1258 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1275 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1292 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1309 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1326 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1343 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1360 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1377 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1394 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1411 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1428 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1445 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1462 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1479 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1496 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1513 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1530 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1547 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1564 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1581 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1598 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1615 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1632 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1649 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1666 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1683 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1700 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1717 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1734 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1751 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1768 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1785 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1802 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1819 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1836 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1853 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1870 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1887 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1904 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1921 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1938 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1955 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1972 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1989 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2006 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2023 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2040 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2057 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2074 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2091 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2108 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2125 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2142 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2159 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2176 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2193 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2210 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2227 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2244 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2261 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2278 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2295 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2312 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2329 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2346 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2363 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2380 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2397 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2414 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2431 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2448 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2465 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2482 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2499 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2516 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2533 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2550 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2567 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2584 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2601 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2618 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2635 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2652 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2669 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2686 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2703 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2720 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2737 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2754 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2771 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2788 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2805 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2822 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2839 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2856 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2873 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2890 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2907 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2924 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2941 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2958 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2975 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2992 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3009 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3026 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3043 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3060 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3077 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3094 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3111 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3128 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3145 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3162 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3179 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3196 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3213 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3230 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3247 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3264 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3281 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3298 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3315 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3332 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3349 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3366 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3383 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3400 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3417 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3434 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3451 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3468 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3485 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3502 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3519 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3536 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3553 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3570 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3587 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3604 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3621 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3638 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3655 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3672 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3689 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3706 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3723 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3740 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3757 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3774 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3791 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3808 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3825 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3842 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3859 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3876 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3893 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3910 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3927 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3944 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3961 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3978 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=3995 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4012 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4029 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4046 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4063 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4080 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4097 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4114 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4131 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4148 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4165 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4182 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4199 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4216 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4233 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4250 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4267 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4284 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4301 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4318 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4335 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4352 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4369 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4386 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4403 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4420 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4437 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4454 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4471 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4488 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4505 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4522 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4539 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4556 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4573 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4590 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4607 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4624 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4641 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4658 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4675 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4692 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4709 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4726 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4743 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4760 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4777 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4794 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4811 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4828 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4845 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4862 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4879 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4896 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4913 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4930 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4947 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4964 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4981 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=4998 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5015 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5032 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5049 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5066 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5083 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5100 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5117 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5134 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5151 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5168 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5185 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5202 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5219 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5236 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5253 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5270 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5287 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5304 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5321 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5338 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5355 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5372 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5389 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5406 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5423 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5440 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5457 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5474 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5491 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5508 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5525 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5542 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5559 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5576 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5593 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5610 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5627 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5644 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5661 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5678 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5695 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5712 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5729 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5746 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5763 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5780 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5797 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5814 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5831 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5848 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5865 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5882 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5899 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5916 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5933 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5950 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5967 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=5984 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6001 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6018 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6035 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6052 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6069 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6086 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6103 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6120 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6137 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6154 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6171 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6188 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6205 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6222 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6239 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6256 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6273 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6290 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6307 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6324 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6341 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6358 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6375 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6392 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6409 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6426 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6443 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6460 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6477 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6494 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6511 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6528 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6545 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6562 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6579 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6596 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6613 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6630 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6647 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6664 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6681 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6698 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6715 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6732 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6749 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6766 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6783 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6800 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6817 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6834 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6851 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6868 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6885 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6902 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6919 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6936 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6953 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6970 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=6987 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7004 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7021 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7038 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7055 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7072 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7089 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7106 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7123 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7140 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7157 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7174 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7191 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7208 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7225 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7242 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7259 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7276 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7293 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7310 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7327 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7344 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7361 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7378 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7395 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7412 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7429 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7446 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7463 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7480 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7497 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7514 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7531 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7548 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7565 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7582 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7599 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7616 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7633 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7650 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7667 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7684 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7701 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7718 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7735 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7752 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7769 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7786 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7803 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7820 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7837 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7854 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7871 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7888 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7905 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7922 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7939 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7956 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7973 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=7990 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8007 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8024 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8041 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8058 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8075 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8092 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8109 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8126 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8143 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8160 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8177 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8194 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8211 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8228 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8245 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8262 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8279 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8296 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8313 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8330 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8347 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8364 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8381 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8398 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8415 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8432 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8449 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8466 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8483 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8500 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8517 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8534 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8551 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8568 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8585 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8602 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8619 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8636 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8653 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8670 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8687 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8704 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8721 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8738 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8755 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8772 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8789 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8806 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8823 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8840 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8857 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8874 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8891 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8908 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8925 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8942 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8959 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8976 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=8993 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9010 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9027 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9044 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9061 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9078 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9095 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9112 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9129 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9146 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9163 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9180 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9197 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9214 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9231 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9248 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9265 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9282 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9299 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9316 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9333 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9350 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9367 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9384 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9401 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9418 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9435 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9452 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9469 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9486 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9503 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9520 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9537 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9554 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9571 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9588 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9605 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9622 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9639 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9656 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9673 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9690 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9707 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9724 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9741 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9758 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9775 ms dt=17 ms rate=58 Hz
+Log data polledDebug, unknown command: land\land
+PollingTask Timing | elapsed=9792 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9809 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9826 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9843 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9860 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9877 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9894 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9911 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9928 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9945 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9962 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9979 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=9996 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10013 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10030 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10047 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10064 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10081 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10098 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10115 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10132 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10149 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10166 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10183 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10200 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10217 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10234 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10251 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10268 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10285 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10302 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10319 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10336 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10353 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10370 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10387 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10404 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10421 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10438 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10455 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10472 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10489 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10506 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10523 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10540 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10557 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10574 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10591 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10608 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10625 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10642 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10659 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10676 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10693 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10710 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10727 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10744 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10761 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10778 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10795 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10812 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10829 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10846 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10863 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10880 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10897 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10914 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10931 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10948 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10965 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10982 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=10999 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11016 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11033 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11050 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11067 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11084 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11101 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11118 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11135 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11152 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11169 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11186 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11203 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11220 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11237 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11254 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11271 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11288 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11305 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11322 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11339 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11356 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11373 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11390 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11407 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11424 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11441 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11458 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11475 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11492 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11509 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11526 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11543 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11560 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11577 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11594 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11611 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11628 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11645 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11662 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11679 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11696 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11713 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11730 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11747 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11764 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11781 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11798 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11815 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11832 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11849 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11866 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11883 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11900 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11917 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11934 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11951 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11968 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=11985 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12002 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12019 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12036 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12053 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12070 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12087 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12104 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12121 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12138 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12155 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12172 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12189 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12206 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12223 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12240 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12257 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12274 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12291 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12308 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12325 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12342 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12359 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12376 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12393 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12410 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12427 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12444 ms dt=17 ms rate=58 Hz
+Log data polledRocket landedPollingTask Timing | elapsed=12461 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12478 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12495 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12512 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12529 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12546 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12563 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12580 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12597 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12614 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12631 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=12648 ms dt=17 ms rate=58 Hz
+Log data polled------FLASH DUMP EMPTY------
+WHO_AM_I 108
+
+-- CUBE SYSTEM --
+System Reset Reason: [TODO]
+Current System Free Heap: 46936 Bytes
+Lowest Ever Free Heap: 46888 Bytes
+
+FlashTask::Run() - Starting task
+FlashTask::InitializeFlash() - Initializing MX66 flash
+FlashTask::InitializeFlash() - Status1: 0x40
+FlashTask::InitializeFlash() - MX66 ReadID: 0xc2201b
+WHO_AM_I 108
+
+-- CUBE SYSTEM --
+System Reset Reason: [TODO]
+Current System Free Heap: 46936 Bytes
+Lowest Ever Free Heap: 46888 Bytes
+
+FlashTask::Run() - Starting task
+FlashTask::InitializeFlash() - Initializing MX66 flash
+FlashTask::InitializeFlash() - Status1: 0x40
+FlashTask::InitializeFlash() - MX66 ReadID: 0xc2201b
+------FLASH DUMP EMPTY------
+Debug, unknown command: 
+Debug, unknown command: laumc
+Rocket launchedPollingTask Timing | elapsed=0 ms dt=0 ms rate=0 Hz
+Log data polledPollingTask Timing | elapsed=17 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=34 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=51 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=68 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=85 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=102 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=119 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=136 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=153 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=170 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=187 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=204 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=221 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=238 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=255 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=272 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=289 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=306 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=323 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=340 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=357 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=374 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=391 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=408 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=425 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=442 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=459 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=476 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=493 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=510 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=527 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=544 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=561 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=578 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=595 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=612 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=629 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=646 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=663 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=680 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=697 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=714 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=731 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=748 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=765 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=782 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=799 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=816 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=833 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=850 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=867 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=884 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=901 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=918 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=935 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=952 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=969 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=986 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1003 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1020 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1037 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1054 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1071 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1088 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1105 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1122 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1139 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1156 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1173 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1190 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1207 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1224 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1241 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1258 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1275 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1292 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1309 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1326 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1343 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1360 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1377 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1394 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1411 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1428 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1445 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1462 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1479 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1496 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1513 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1530 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1547 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1564 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1581 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1598 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1615 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1632 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1649 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1666 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1683 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1700 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1717 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1734 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1751 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1768 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1785 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1802 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1819 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1836 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1853 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1870 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1887 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1904 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1921 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1938 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1955 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1972 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=1989 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2006 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2023 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2040 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2057 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2074 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2091 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2108 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2125 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2142 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2159 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2176 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2193 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2210 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2227 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2244 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2261 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2278 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2295 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2312 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2329 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2346 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2363 ms dt=17 ms rate=58 Hz
+Log data polledRocket landedPollingTask Timing | elapsed=2380 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2397 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2414 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2431 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2448 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2465 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2482 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2499 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2516 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2533 ms dt=17 ms rate=58 Hz
+Log data polledPollingTask Timing | elapsed=2550 ms dt=17 ms rate=58 Hz
+Log data polled------FLASH DUMP EMPTY------
+IMU16G(ID=0) Timestamp=6539 Accel=[7,-13,1033] Gyro=[130,97,-11] Temp=24
+IMU32G(ID=1) Timestamp=6539 Accel=[49,-28,1018] Gyro=[-45,105,-39] Temp=26
+BARO07(ID=0) Timestamp=6539 Pressure=88303 Temp=22.19
+BARO11(ID=1) Timestamp=6539 Pressure=88366 Temp=22.77
+MAG Timestamp=6540 Mag=[0,0,0]
+GPS Timestamp=6540 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6556 Accel=[-16,-23,1013] Gyro=[-237,-227,-81] Temp=24
+IMU32G(ID=1) Timestamp=6556 Accel=[51,-43,1038] Gyro=[-89,140,-39] Temp=26
+BARO07(ID=0) Timestamp=6556 Pressure=88310 Temp=22.20
+BARO11(ID=1) Timestamp=6556 Pressure=88356 Temp=22.81
+MAG Timestamp=6557 Mag=[0,0,0]
+GPS Timestamp=6557 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6573 Accel=[-28,-32,1011] Gyro=[-27,-104,24] Temp=24
+IMU32G(ID=1) Timestamp=6573 Accel=[68,-55,999] Gyro=[209,-26,-4] Temp=26
+BARO07(ID=0) Timestamp=6573 Pressure=88277 Temp=22.21
+MAG Timestamp=6635 Mag=[0,0,0]
+GPS Timestamp=6635 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6636 Accel=[-10,-26,1014] Gyro=[-71,-78,77] Temp=24
+IMU32G(ID=1) Timestamp=6636 Accel=[61,-42,1016] Gyro=[7,-70,-30] Temp=26
+BARO07(ID=0) Timestamp=6636 Pressure=88301 Temp=22.22
+BARO11(ID=1) Timestamp=6636 Pressure=88352 Temp=22.82
+MAG Timestamp=6636 Mag=[0,0,0]
+GPS Timestamp=6636 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6637 Accel=[0,-21,1024] Gyro=[43,1,50] Temp=24
+IMU32G(ID=1) Timestamp=6637 Accel=[55,-30,1021] Gyro=[331,289,-21] Temp=26
+BARO11(ID=1) Timestamp=6637 Pressure=88359 Temp=22.82
+MAG Timestamp=6637 Mag=[0,0,0]
+GPS Timestamp=6637 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E5.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6674 Accel=[-18,-29,1024] Gyro=[-36,-43,-11] Temp=24
+IMU32G(ID=1) Timestamp=6674 Accel=[66,-54,1013] Gyro=[-185,53,-4] Temp=26
+BARO07(ID=0) Timestamp=6674 Pressure=88305 Temp=22.19
+BARO11(ID=1) Timestamp=6674 Pressure=88350 Temp=22.81
+MAG Timestamp=6674 Mag=[0,0,0]
+GPS Timestamp=6674 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6674 Accel=[-3,-25,1030] Gyro=[60,-8,33] Temp=24
+IMU32G(ID=1) Timestamp=6674 Accel=[62,-35,1018] Gyro=[51,70,31] Temp=26
+BARO07(ID=0) Timestamp=6674 Pressure=88305 Temp=22.22
+BARO11(ID=1) Timestamp=6674 Pressure=88364 Temp=22.84
+MAG Timestamp=6675 Mag=[0,0,0]
+GPS Timestamp=6675 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6692 Accel=[0,-19,1023] Gyro=[34,-17,7] Temp=24
+BARO07(ID=0) Timestamp=6728 Pressure=88290 Temp=22.21
+BARO11(ID=1) Timestamp=6728 Pressure=88355 Temp=22.81
+MAG Timestamp=6728 Mag=[0,0,0]
+GPS Timestamp=6728 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6729 Accel=[-15,-20,1025] Gyro=[60,53,50] Temp=24
+IMU32G(ID=1) Timestamp=6729 Accel=[54,-45,1012] Gyro=[130,35,-74] Temp=26
+BARO07(ID=0) Timestamp=6729 Pressure=88316 Temp=22.23
+BARO11(ID=1) Timestamp=6729 Pressure=88366 Temp=22.84
+MAG Timestamp=6729 Mag=[0,0,0]
+GPS Timestamp=6730 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6730 Accel=[-20,-27,1024] Gyro=[60,44,7] Temp=24
+IMU32G(ID=1) Timestamp=6730 Accel=[59,-50,1015] Gyro=[235,97,-100] Temp=26
+BARO07(ID=0) Timestamp=6730 Pressure=88276 Temp=22.23
+BARO11(ID=1) Timestamp=6730 Pressure=88357 Temp=22.83
+MAG Timestamp=6730 Mag=[0,0,0]
+GPS Timestamp=6730 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+9,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6767 Accel=[-7,-30,1028] Gyro=[52,18,15] Temp=24
+IMU32G(ID=1) Timestamp=6767 Accel=[61,-38,1016] Gyro=[182,97,-21] Temp=26
+BARO07(ID=0) Timestamp=6767 Pressure=88318 Temp=22.24
+BARO11(ID=1) Timestamp=6767 Pressure=88365 Temp=22.85
+MAG Timestamp=6767 Mag=[0,0,0]
+GPS Timestamp=6767 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6767 Accel=[-3,-20,1025] Gyro=[52,18,24] Temp=24
+IMU32G(ID=1) Timestamp=6767 Accel=[55,-31,1017] Gyro=[112,105,-30] Temp=26
+BARO07(ID=0) Timestamp=6768 Pressure=88286 Temp=22.24
+BARO11(ID=1) Timestamp=6768 Pressure=88352 Temp=22.83
+MAG Timestamp=6768 Mag=[0,0,0]
+GPS Timestamp=6768 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,54,,*59
+
+IMU16G(ID=0) Timestamp=6805 Accel=[-12,-19,1023] Gyro=[25,36,24] Temp=24
+IMU32G(ID=1) Timestamp=6805 Accel=[52,-44,1013] Gyro=[-54,-26,-48] Temp=26
+BARO07(ID=0) Timestamp=6805 Pressure=88320 Temp=22.23
+BARO11(ID=1) Timestamp=6805 Pressure=88356 Temp=22.87
+MAG Timestamp=6805 Mag=[0,0,0]
+GPS Timestamp=6805 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6805 Accel=[-19,-26,1027] Gyro=[130,27,50] Temp=25
+IMU32G(ID=1) Timestamp=6805 Accel=[64,-47,1017] Gyro=[139,9,-30] Temp=26
+BARO07(ID=0) Timestamp=6806 Pressure=88304 Temp=22.24
+BARO11(ID=1) Timestamp=6806 Pressure=88359 Temp=22.84
+MAG Timestamp=6806 Mag=[0,0,0]
+GPS Timestamp=6806 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6823 Accel=[-5,-29,1025] Gyro=[8,18,68] Temp=24
+IMU32G(ID=1) Timestamp=6823 Accel=[64,-40,1017] Gyro=[130,62,-39] Temp=26
+BARO11(ID=1) Timestamp=6859 Pressure=88360 Temp=22.84
+MAG Timestamp=6859 Mag=[0,0,0]
+GPS Timestamp=6859 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6860 Accel=[-5,-22,1026] Gyro=[-36,-43,33] Temp=24
+IMU32G(ID=1) Timestamp=6860 Accel=[58,-38,1014] Gyro=[42,70,-30] Temp=26
+BARO07(ID=0) Timestamp=6860 Pressure=88290 Temp=22.25
+BARO11(ID=1) Timestamp=6860 Pressure=88353 Temp=22.82
+MAG Timestamp=6860 Mag=[0,0,0]
+GPS Timestamp=6860 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6861 Accel=[-10,-19,1027] Gyro=[-27,18,-46] Temp=24
+IMU32G(ID=1) Timestamp=6861 Accel=[56,-41,1018] Gyro=[104,97,-56] Temp=26
+BARO07(ID=0) Timestamp=6861 Pressure=88296 Temp=22.24
+BARO11(ID=1) Timestamp=6861 Pressure=88366 Temp=22.84
+MAG Timestamp=6861 Mag=[0,0,0]
+GPS Timestamp=6861 Chunks=6 Sentence=$GNGGA,12351,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6897 Accel=[-15,-23,1025] Gyro=[-53,-43,24] Temp=24
+IMU32G(ID=1) Timestamp=6897 Accel=[60,-47,1015] Gyro=[7,0,-39] Temp=26
+BARO07(ID=0) Timestamp=6897 Pressure=88303 Temp=22.25
+BARO11(ID=1) Timestamp=6897 Pressure=88359 Temp=22.85
+MAG Timestamp=6897 Mag=[0,0,0]
+GPS Timestamp=6897 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6908 Accel=[-7,-24,1028] Gyro=[-71,-34,-37] Temp=24
+IMU32G(ID=1) Timestamp=6908 Accel=[63,-38,1017] Gyro=[95,70,40] Temp=26
+BARO07(ID=0) Timestamp=6908 Pressure=88298 Temp=22.25
+BARO11(ID=1) Timestamp=6908 Pressure=88362 Temp=22.85
+MAG Timestamp=6908 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=6944 Accel=[-8,-20,1026] Gyro=[-36,9,15] Temp=24
+IMU32G(ID=1) Timestamp=6944 Accel=[55,-41,1015] Gyro=[-211,-35,14] Temp=26
+BARO07(ID=0) Timestamp=6944 Pressure=88287 Temp=22.27
+BARO11(ID=1) Timestamp=6944 Pressure=88353 Temp=22.87
+MAG Timestamp=6944 Mag=[0,0,0]
+GPS Timestamp=6945 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6952 Accel=[-14,-21,1025] Gyro=[52,88,33] Temp=24
+IMU32G(ID=1) Timestamp=6952 Accel=[56,-49,1016] Gyro=[-36,-61,5] Temp=26
+BARO07(ID=0) Timestamp=6952 Pressure=88283 Temp=22.27
+BARO11(ID=1) Timestamp=6952 Pressure=88365 Temp=22.85
+MAG Timestamp=6952 Mag=[0,0,0]
+GPS Timestamp=6952 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=6968 Accel=[-10,-26,1025] Gyro=[-1,36,68] Temp=24
+IMU32G(ID=1) Timestamp=6968 Accel=[61,-41,1018] Gyro=[112,62,-83] Temp=26
+BARO07(ID=0) Timestamp=6968 Pressure=88301 Temp=22.27
+MAG Timestamp=7032 Mag=[0,0,0]
+GPS Timestamp=7032 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7033 Accel=[-5,-26,1025] Gyro=[-71,-87,33] Temp=24
+IMU32G(ID=1) Timestamp=7033 Accel=[62,-38,1014] Gyro=[-106,-26,-21] Temp=26
+BARO07(ID=0) Timestamp=7033 Pressure=88286 Temp=22.24
+BARO11(ID=1) Timestamp=7033 Pressure=88360 Temp=22.84
+MAG Timestamp=7033 Mag=[0,0,0]
+GPS Timestamp=7033 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7034 Accel=[-11,-22,1025] Gyro=[87,44,50] Temp=24
+IMU32G(ID=1) Timestamp=7034 Accel=[56,-42,1018] Gyro=[95,53,-13] Temp=26
+MAG Timestamp=7034 Mag=[0,0,0]
+GPS Timestamp=7034 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,54,,*59
+
+IMU16G(ID=0) Timestamp=7070 Accel=[-10,-27,1026] Gyro=[78,97,68] Temp=24
+IMU32G(ID=1) Timestamp=7070 Accel=[61,-38,1017] Gyro=[104,44,-100] Temp=26
+BARO07(ID=0) Timestamp=7070 Pressure=88315 Temp=22.27
+BARO11(ID=1) Timestamp=7070 Pressure=88360 Temp=22.87
+MAG Timestamp=7070 Mag=[0,0,0]
+GPS Timestamp=7070 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7070 Accel=[-9,-24,1027] Gyro=[52,36,42] Temp=24
+IMU32G(ID=1) Timestamp=7070 Accel=[60,-40,1016] Gyro=[-168,-114,-30] Temp=26
+BARO07(ID=0) Timestamp=7071 Pressure=88302 Temp=22.25
+BARO11(ID=1) Timestamp=7071 Pressure=88350 Temp=22.87
+MAG Timestamp=7071 Mag=[0,0,0]
+GPS Timestamp=7071 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7088 Accel=[-14,-20,1028] Gyro=[8,1,42] Temp=24
+IMU32G(ID=1) Timestamp=7088 Accel=[58,-45,1016] Gyro=[-45,-87,-13] Temp=26
+BARO11(ID=1) Timestamp=7124 Pressure=88368 Temp=22.86
+MAG Timestamp=7124 Mag=[0,0,0]
+GPS Timestamp=7124 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7125 Accel=[-9,-22,1024] Gyro=[-62,-34,-20] Temp=24
+IMU32G(ID=1) Timestamp=7125 Accel=[62,-41,1015] Gyro=[139,79,-91] Temp=26
+BARO07(ID=0) Timestamp=7125 Pressure=88318 Temp=22.26
+BARO11(ID=1) Timestamp=7125 Pressure=88366 Temp=22.86
+MAG Timestamp=7125 Mag=[0,0,0]
+GPS Timestamp=7125 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7126 Accel=[-7,-28,1025] Gyro=[-27,1,33] Temp=24
+IMU32G(ID=1) Timestamp=7126 Accel=[67,-42,1015] Gyro=[-115,-87,-65] Temp=26
+BARO07(ID=0) Timestamp=7126 Pressure=88299 Temp=22.23
+BARO11(ID=1) Timestamp=7126 Pressure=88353 Temp=22.86
+MAG Timestamp=7126 Mag=[0,0,0]
+GPS Timestamp=7126 Chunks=6 Sentence=$GNGGA,12351,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7162 Accel=[-8,-25,1025] Gyro=[78,18,68] Temp=24
+IMU32G(ID=1) Timestamp=7162 Accel=[57,-40,1016] Gyro=[86,132,-100] Temp=26
+BARO07(ID=0) Timestamp=7162 Pressure=88308 Temp=22.24
+BARO11(ID=1) Timestamp=7162 Pressure=88361 Temp=22.85
+MAG Timestamp=7163 Mag=[0,0,0]
+GPS Timestamp=7163 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7164 Accel=[-12,-21,1026] Gyro=[-18,1,-20] Temp=24
+IMU32G(ID=1) Timestamp=7164 Accel=[56,-44,1014] Gyro=[25,0,5] Temp=26
+BARO07(ID=0) Timestamp=7164 Pressure=88289 Temp=22.25
+BARO11(ID=1) Timestamp=7164 Pressure=88365 Temp=22.87
+MAG Timestamp=7165 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=7200 Accel=[-12,-25,1025] Gyro=[-71,-78,15] Temp=24
+IMU32G(ID=1) Timestamp=7200 Accel=[58,-44,1017] Gyro=[-71,-87,-13] Temp=26
+BARO07(ID=0) Timestamp=7200 Pressure=88301 Temp=22.27
+BARO11(ID=1) Timestamp=7200 Pressure=88363 Temp=22.86
+MAG Timestamp=7200 Mag=[0,0,0]
+GPS Timestamp=7200 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7215 Accel=[-9,-25,1026] Gyro=[69,53,33] Temp=24
+IMU32G(ID=1) Timestamp=7215 Accel=[59,-42,1016] Gyro=[-98,-35,-21] Temp=26
+BARO07(ID=0) Timestamp=7215 Pressure=88310 Temp=22.27
+BARO11(ID=1) Timestamp=7215 Pressure=88365 Temp=22.86
+MAG Timestamp=7215 Mag=[0,0,0]
+GPS Timestamp=7216 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7232 Accel=[-13,-23,1027] Gyro=[87,27,59] Temp=24
+IMU32G(ID=1) Timestamp=7232 Accel=[58,-41,1016] Gyro=[95,97,-13] Temp=26
+BARO07(ID=0) Timestamp=7232 Pressure=88289 Temp=22.25
+MAG Timestamp=7268 Mag=[0,0,0]
+GPS Timestamp=7268 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7269 Accel=[-11,-20,1025] Gyro=[43,27,42] Temp=24
+IMU32G(ID=1) Timestamp=7269 Accel=[55,-42,1012] Gyro=[-185,-70,66] Temp=26
+BARO07(ID=0) Timestamp=7269 Pressure=88296 Temp=22.24
+BARO11(ID=1) Timestamp=7269 Pressure=88350 Temp=22.85
+MAG Timestamp=7269 Mag=[0,0,0]
+GPS Timestamp=7269 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7270 Accel=[-11,-24,1025] Gyro=[-27,-52,-28] Temp=24
+IMU32G(ID=1) Timestamp=7270 Accel=[61,-40,1017] Gyro=[147,105,-4] Temp=26
+BARO07(ID=0) Timestamp=7270 Pressure=88302 Temp=22.25
+BARO11(ID=1) Timestamp=7270 Pressure=88344 Temp=22.86
+MAG Timestamp=7270 Mag=[0,0,0]
+GPS Timestamp=7270 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7306 Accel=[-11,-22,1024] Gyro=[-36,-17,-63] Temp=24
+IMU32G(ID=1) Timestamp=7306 Accel=[61,-39,1012] Gyro=[7,-17,-30] Temp=26
+BARO07(ID=0) Timestamp=7306 Pressure=88305 Temp=22.27
+BARO11(ID=1) Timestamp=7306 Pressure=88350 Temp=22.86
+MAG Timestamp=7307 Mag=[0,0,0]
+GPS Timestamp=7307 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7311 Accel=[-10,-24,1024] Gyro=[-36,-52,-20] Temp=24
+IMU32G(ID=1) Timestamp=7311 Accel=[60,-40,1017] Gyro=[16,35,-56] Temp=26
+BARO07(ID=0) Timestamp=7311 Pressure=88315 Temp=22.27
+BARO11(ID=1) Timestamp=7312 Pressure=88363 Temp=22.86
+MAG Timestamp=7312 Mag=[0,0,0]
+GPS Timestamp=7312 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU32G(ID=1) Timestamp=7363 Accel=[56,-41,1018] Gyro=[16,-52,-30] Temp=26
+BARO07(ID=0) Timestamp=7363 Pressure=88295 Temp=22.26
+BARO11(ID=1) Timestamp=7363 Pressure=88360 Temp=22.86
+MAG Timestamp=7364 Mag=[0,0,0]
+GPS Timestamp=7364 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7364 Accel=[-7,-24,1025] Gyro=[-45,18,15] Temp=24
+IMU32G(ID=1) Timestamp=7364 Accel=[58,-40,1014] Gyro=[86,-8,-4] Temp=26
+BARO07(ID=0) Timestamp=7364 Pressure=88309 Temp=22.26
+BARO11(ID=1) Timestamp=7364 Pressure=88347 Temp=22.88
+MAG Timestamp=7364 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=7378 Accel=[-9,-26,1024] Gyro=[25,44,-37] Temp=24
+IMU32G(ID=1) Timestamp=7378 Accel=[59,-42,1015] Gyro=[226,149,-21] Temp=26
+BARO07(ID=0) Timestamp=7378 Pressure=88302 Temp=22.27
+BARO11(ID=1) Timestamp=7378 Pressure=88346 Temp=22.85
+MAG Timestamp=7378 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=7439 Accel=[-14,-21,1025] Gyro=[-53,-43,-11] Temp=24
+IMU32G(ID=1) Timestamp=7439 Accel=[57,-42,1015] Gyro=[69,-43,40] Temp=26
+BARO07(ID=0) Timestamp=7439 Pressure=88312 Temp=22.26
+BARO11(ID=1) Timestamp=7439 Pressure=88370 Temp=22.86
+MAG Timestamp=7440 Mag=[0,0,0]
+GPS Timestamp=7440 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7440 Accel=[-10,-23,1026] Gyro=[87,18,7] Temp=24
+IMU32G(ID=1) Timestamp=7440 Accel=[59,-41,1017] Gyro=[-211,-96,-48] Temp=26
+BARO07(ID=0) Timestamp=7440 Pressure=88304 Temp=22.26
+BARO11(ID=1) Timestamp=7440 Pressure=88353 Temp=22.87
+GPS Timestamp=7440 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7457 Accel=[-10,-22,1027] Gyro=[34,-17,-55] Temp=24
+IMU32G(ID=1) Timestamp=7457 Accel=[60,-39,1018] Gyro=[-45,-61,5] Temp=26
+BARO07(ID=0) Timestamp=7457 Pressure=88290 Temp=22.28
+BARO11(ID=1) Timestamp=7457 Pressure=88350 Temp=22.86
+GPS Timestamp=7493 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7494 Accel=[-10,-22,1025] Gyro=[-1,27,94] Temp=24
+IMU32G(ID=1) Timestamp=7494 Accel=[56,-43,1016] Gyro=[366,228,-100] Temp=26
+BARO07(ID=0) Timestamp=7494 Pressure=88297 Temp=22.24
+BARO11(ID=1) Timestamp=7494 Pressure=88365 Temp=22.87
+MAG Timestamp=7494 Mag=[0,0,0]
+GPS Timestamp=7494 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7495 Accel=[-11,-21,1026] Gyro=[34,71,33] Temp=24
+IMU32G(ID=1) Timestamp=7495 Accel=[61,-40,1016] Gyro=[60,-8,-21] Temp=26
+BARO07(ID=0) Timestamp=7495 Pressure=88298 Temp=22.25
+BARO11(ID=1) Timestamp=7495 Pressure=88354 Temp=22.84
+MAG Timestamp=7495 Mag=[0,0,0]
+GPS Timestamp=7495 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E5.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7533 Accel=[-10,-25,1027] Gyro=[-10,-26,-20] Temp=24
+IMU32G(ID=1) Timestamp=7533 Accel=[60,-43,1015] Gyro=[-168,-70,-21] Temp=26
+BARO07(ID=0) Timestamp=7533 Pressure=88316 Temp=22.25
+BARO11(ID=1) Timestamp=7533 Pressure=88369 Temp=22.87
+MAG Timestamp=7533 Mag=[0,0,0]
+GPS Timestamp=7533 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7533 Accel=[-10,-24,1026] Gyro=[-18,27,7] Temp=24
+IMU32G(ID=1) Timestamp=7533 Accel=[61,-44,1014] Gyro=[-98,-52,14] Temp=26
+BARO07(ID=0) Timestamp=7533 Pressure=88311 Temp=22.27
+BARO11(ID=1) Timestamp=7534 Pressure=88355 Temp=22.86
+MAG Timestamp=7534 Mag=[0,0,0]
+GPS Timestamp=7534 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7551 Accel=[-8,-23,1029] Gyro=[-45,-78,15] Temp=24
+BARO07(ID=0) Timestamp=7587 Pressure=88302 Temp=22.25
+BARO11(ID=1) Timestamp=7587 Pressure=88351 Temp=22.86
+MAG Timestamp=7587 Mag=[0,0,0]
+GPS Timestamp=7587 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7588 Accel=[-8,-23,1027] Gyro=[34,18,-28] Temp=24
+IMU32G(ID=1) Timestamp=7588 Accel=[61,-42,1015] Gyro=[-54,-26,-48] Temp=26
+BARO07(ID=0) Timestamp=7588 Pressure=88305 Temp=22.27
+BARO11(ID=1) Timestamp=7588 Pressure=88369 Temp=22.84
+MAG Timestamp=7588 Mag=[0,0,0]
+GPS Timestamp=7589 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7589 Accel=[-9,-21,1025] Gyro=[60,62,42] Temp=24
+IMU32G(ID=1) Timestamp=7589 Accel=[56,-43,1016] Gyro=[147,88,-21] Temp=26
+BARO07(ID=0) Timestamp=7589 Pressure=88292 Temp=22.24
+BARO11(ID=1) Timestamp=7589 Pressure=88356 Temp=22.85
+MAG Timestamp=7589 Mag=[0,0,0]
+GPS Timestamp=7589 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+9,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7626 Accel=[-10,-24,1024] Gyro=[-18,18,-46] Temp=24
+IMU32G(ID=1) Timestamp=7626 Accel=[61,-41,1015] Gyro=[95,62,-13] Temp=26
+BARO07(ID=0) Timestamp=7626 Pressure=88304 Temp=22.26
+BARO11(ID=1) Timestamp=7626 Pressure=88367 Temp=22.88
+MAG Timestamp=7626 Mag=[0,0,0]
+GPS Timestamp=7626 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7626 Accel=[-11,-22,1023] Gyro=[8,62,129] Temp=24
+IMU32G(ID=1) Timestamp=7626 Accel=[61,-43,1017] Gyro=[95,44,-13] Temp=26
+BARO07(ID=0) Timestamp=7627 Pressure=88331 Temp=22.29
+BARO11(ID=1) Timestamp=7627 Pressure=88362 Temp=22.88
+MAG Timestamp=7627 Mag=[0,0,0]
+GPS Timestamp=7627 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,54,,*59
+
+IMU16G(ID=0) Timestamp=7662 Accel=[-9,-24,1025] Gyro=[52,88,68] Temp=24
+IMU32G(ID=1) Timestamp=7662 Accel=[56,-37,1016] Gyro=[-80,-52,-39] Temp=26
+BARO07(ID=0) Timestamp=7662 Pressure=88312 Temp=22.26
+BARO11(ID=1) Timestamp=7663 Pressure=88360 Temp=22.84
+MAG Timestamp=7663 Mag=[0,0,0]
+GPS Timestamp=7663 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7676 Accel=[-9,-27,1026] Gyro=[43,62,42] Temp=24
+IMU32G(ID=1) Timestamp=7676 Accel=[61,-41,1015] Gyro=[139,105,-30] Temp=26
+BARO07(ID=0) Timestamp=7676 Pressure=88314 Temp=22.27
+BARO11(ID=1) Timestamp=7676 Pressure=88361 Temp=22.85
+MAG Timestamp=7676 Mag=[0,0,0]
+GPS Timestamp=7677 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7693 Accel=[-10,-25,1026] Gyro=[43,53,7] Temp=24
+IMU32G(ID=1) Timestamp=7693 Accel=[57,-43,1015] Gyro=[51,62,-83] Temp=26
+BARO11(ID=1) Timestamp=7729 Pressure=88353 Temp=22.86
+MAG Timestamp=7729 Mag=[0,0,0]
+GPS Timestamp=7729 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7730 Accel=[-9,-22,1026] Gyro=[34,-26,7] Temp=24
+IMU32G(ID=1) Timestamp=7730 Accel=[60,-45,1015] Gyro=[25,27,-30] Temp=26
+BARO07(ID=0) Timestamp=7730 Pressure=88290 Temp=22.28
+BARO11(ID=1) Timestamp=7730 Pressure=88365 Temp=22.87
+MAG Timestamp=7730 Mag=[0,0,0]
+GPS Timestamp=7730 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7731 Accel=[-10,-22,1025] Gyro=[34,-17,59] Temp=24
+IMU32G(ID=1) Timestamp=7731 Accel=[58,-42,1017] Gyro=[95,62,-13] Temp=26
+BARO07(ID=0) Timestamp=7731 Pressure=88272 Temp=22.25
+BARO11(ID=1) Timestamp=7731 Pressure=88361 Temp=22.84
+MAG Timestamp=7731 Mag=[0,0,0]
+GPS Timestamp=7731 Chunks=6 Sentence=$GNGGA,12351,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7767 Accel=[-9,-24,1025] Gyro=[43,9,59] Temp=24
+IMU32G(ID=1) Timestamp=7767 Accel=[58,-41,1017] Gyro=[-211,-105,22] Temp=26
+BARO07(ID=0) Timestamp=7767 Pressure=88289 Temp=22.25
+BARO11(ID=1) Timestamp=7767 Pressure=88359 Temp=22.87
+MAG Timestamp=7767 Mag=[0,0,0]
+GPS Timestamp=7767 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7774 Accel=[-11,-25,1026] Gyro=[-27,-34,-20] Temp=24
+IMU32G(ID=1) Timestamp=7775 Accel=[63,-41,1017] Gyro=[147,123,-30] Temp=26
+BARO07(ID=0) Timestamp=7775 Pressure=88317 Temp=22.26
+BARO11(ID=1) Timestamp=7775 Pressure=88361 Temp=22.86
+MAG Timestamp=7775 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=7833 Accel=[-11,-21,1026] Gyro=[122,71,77] Temp=24
+IMU32G(ID=1) Timestamp=7833 Accel=[59,-41,1018] Gyro=[51,70,-56] Temp=26
+BARO07(ID=0) Timestamp=7833 Pressure=88299 Temp=22.26
+BARO11(ID=1) Timestamp=7833 Pressure=88360 Temp=22.87
+MAG Timestamp=7834 Mag=[0,0,0]
+GPS Timestamp=7834 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7834 Accel=[-12,-23,1026] Gyro=[-1,-8,24] Temp=24
+IMU32G(ID=1) Timestamp=7834 Accel=[58,-40,1014] Gyro=[69,44,-39] Temp=26
+BARO07(ID=0) Timestamp=7834 Pressure=88314 Temp=22.29
+BARO11(ID=1) Timestamp=7834 Pressure=88362 Temp=22.87
+GPS Timestamp=7834 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7851 Accel=[-7,-27,1027] Gyro=[78,53,42] Temp=24
+IMU32G(ID=1) Timestamp=7851 Accel=[65,-40,1013] Gyro=[-203,-122,31] Temp=26
+BARO07(ID=0) Timestamp=7851 Pressure=88308 Temp=22.26
+BARO11(ID=1) Timestamp=7851 Pressure=88370 Temp=22.85
+GPS Timestamp=7887 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7888 Accel=[-4,-29,1028] Gyro=[-10,-17,94] Temp=24
+IMU32G(ID=1) Timestamp=7888 Accel=[65,-36,1015] Gyro=[51,44,49] Temp=26
+BARO07(ID=0) Timestamp=7888 Pressure=88316 Temp=22.27
+BARO11(ID=1) Timestamp=7888 Pressure=88359 Temp=22.85
+MAG Timestamp=7888 Mag=[0,0,0]
+GPS Timestamp=7888 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7889 Accel=[-10,-26,1025] Gyro=[104,79,147] Temp=24
+IMU32G(ID=1) Timestamp=7889 Accel=[61,-43,1016] Gyro=[-45,123,75] Temp=26
+BARO07(ID=0) Timestamp=7889 Pressure=88291 Temp=22.26
+BARO11(ID=1) Timestamp=7889 Pressure=88362 Temp=22.84
+MAG Timestamp=7889 Mag=[0,0,0]
+GPS Timestamp=7889 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E5.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7927 Accel=[-12,-19,1026] Gyro=[174,62,164] Temp=24
+IMU32G(ID=1) Timestamp=7927 Accel=[53,-43,1015] Gyro=[16,149,119] Temp=26
+BARO07(ID=0) Timestamp=7927 Pressure=88305 Temp=22.27
+BARO11(ID=1) Timestamp=7927 Pressure=88352 Temp=22.86
+MAG Timestamp=7927 Mag=[0,0,0]
+GPS Timestamp=7927 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7927 Accel=[-14,-20,1024] Gyro=[-18,9,50] Temp=24
+IMU32G(ID=1) Timestamp=7927 Accel=[52,-47,1017] Gyro=[-80,-17,93] Temp=26
+BARO07(ID=0) Timestamp=7927 Pressure=88288 Temp=22.24
+BARO11(ID=1) Timestamp=7928 Pressure=88360 Temp=22.84
+MAG Timestamp=7928 Mag=[0,0,0]
+GPS Timestamp=7928 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7945 Accel=[-10,-21,1026] Gyro=[-1,27,15] Temp=24
+BARO07(ID=0) Timestamp=7981 Pressure=88300 Temp=22.26
+BARO11(ID=1) Timestamp=7981 Pressure=88363 Temp=22.86
+MAG Timestamp=7981 Mag=[0,0,0]
+GPS Timestamp=7981 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7982 Accel=[-14,-21,1026] Gyro=[-10,-34,-72] Temp=24
+IMU32G(ID=1) Timestamp=7982 Accel=[56,-45,1017] Gyro=[-255,-122,-39] Temp=26
+BARO07(ID=0) Timestamp=7982 Pressure=88319 Temp=22.27
+BARO11(ID=1) Timestamp=7982 Pressure=88365 Temp=22.88
+MAG Timestamp=7982 Mag=[0,0,0]
+GPS Timestamp=7982 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=7985 Accel=[-10,-23,1026] Gyro=[-53,-34,15] Temp=24
+IMU32G(ID=1) Timestamp=7985 Accel=[59,-40,1017] Gyro=[-45,-26,-56] Temp=26
+BARO07(ID=0) Timestamp=7985 Pressure=88296 Temp=22.26
+BARO11(ID=1) Timestamp=7985 Pressure=88360 Temp=22.86
+MAG Timestamp=7985 Mag=[0,0,0]
+GPS Timestamp=7982 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+9,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8021 Accel=[-11,-25,1025] Gyro=[-45,-34,33] Temp=24
+IMU32G(ID=1) Timestamp=8021 Accel=[61,-38,1018] Gyro=[-124,-87,-13] Temp=26
+BARO07(ID=0) Timestamp=8021 Pressure=88300 Temp=22.24
+BARO11(ID=1) Timestamp=8021 Pressure=88370 Temp=22.85
+MAG Timestamp=8021 Mag=[0,0,0]
+GPS Timestamp=8021 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8035 Accel=[-11,-22,1026] Gyro=[-45,-34,24] Temp=24
+IMU32G(ID=1) Timestamp=8035 Accel=[58,-43,1013] Gyro=[-80,-52,31] Temp=26
+BARO07(ID=0) Timestamp=8035 Pressure=88301 Temp=22.24
+BARO11(ID=1) Timestamp=8035 Pressure=88363 Temp=22.86
+MAG Timestamp=8035 Mag=[0,0,0]
+GPS Timestamp=8036 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,54,,*59
+
+IMU16G(ID=0) Timestamp=8071 Accel=[-11,-24,1025] Gyro=[-62,-26,-28] Temp=24
+IMU32G(ID=1) Timestamp=8071 Accel=[56,-41,1015] Gyro=[-10,18,-21] Temp=26
+BARO07(ID=0) Timestamp=8071 Pressure=88281 Temp=22.26
+BARO11(ID=1) Timestamp=8071 Pressure=88360 Temp=22.86
+MAG Timestamp=8071 Mag=[0,0,0]
+GPS Timestamp=8072 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8073 Accel=[-10,-22,1026] Gyro=[-53,-34,15] Temp=24
+IMU32G(ID=1) Timestamp=8073 Accel=[60,-44,1017] Gyro=[-71,27,-65] Temp=26
+BARO07(ID=0) Timestamp=8073 Pressure=88278 Temp=22.29
+BARO11(ID=1) Timestamp=8073 Pressure=88361 Temp=22.86
+MAG Timestamp=8073 Mag=[0,0,0]
+GPS Timestamp=8073 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8090 Accel=[-12,-24,1025] Gyro=[-62,53,7] Temp=24
+IMU32G(ID=1) Timestamp=8090 Accel=[61,-41,1014] Gyro=[42,27,22] Temp=26
+BARO11(ID=1) Timestamp=8126 Pressure=88348 Temp=22.86
+MAG Timestamp=8126 Mag=[0,0,0]
+GPS Timestamp=8126 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8127 Accel=[-10,-22,1026] Gyro=[-1,-8,24] Temp=24
+IMU32G(ID=1) Timestamp=8127 Accel=[61,-39,1015] Gyro=[445,219,-74] Temp=26
+BARO07(ID=0) Timestamp=8127 Pressure=88291 Temp=22.26
+BARO11(ID=1) Timestamp=8127 Pressure=88365 Temp=22.87
+MAG Timestamp=8127 Mag=[0,0,0]
+GPS Timestamp=8127 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8132 Accel=[-11,-24,1022] Gyro=[52,1,7] Temp=24
+IMU32G(ID=1) Timestamp=8132 Accel=[60,-41,1015] Gyro=[-45,-43,-30] Temp=26
+BARO07(ID=0) Timestamp=8133 Pressure=88312 Temp=22.28
+BARO11(ID=1) Timestamp=8133 Pressure=88369 Temp=22.87
+MAG Timestamp=8133 Mag=[0,0,0]
+GPS Timestamp=8133 Chunks=6 Sentence=$GNGGA,12351,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8168 Accel=[-10,-25,1022] Gyro=[43,36,24] Temp=24
+IMU32G(ID=1) Timestamp=8168 Accel=[57,-42,1015] Gyro=[200,123,-74] Temp=26
+BARO07(ID=0) Timestamp=8168 Pressure=88327 Temp=22.26
+BARO11(ID=1) Timestamp=8168 Pressure=88356 Temp=22.85
+MAG Timestamp=8168 Mag=[0,0,0]
+GPS Timestamp=8168 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8182 Accel=[-9,-24,1026] Gyro=[34,-8,33] Temp=24
+IMU32G(ID=1) Timestamp=8182 Accel=[61,-41,1015] Gyro=[-63,0,-30] Temp=26
+BARO07(ID=0) Timestamp=8182 Pressure=88313 Temp=22.26
+BARO11(ID=1) Timestamp=8182 Pressure=88363 Temp=22.87
+MAG Timestamp=8182 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=8245 Accel=[-10,-28,1025] Gyro=[17,-17,15] Temp=24
+IMU32G(ID=1) Timestamp=8245 Accel=[59,-42,1015] Gyro=[-133,-52,-30] Temp=26
+BARO07(ID=0) Timestamp=8245 Pressure=88308 Temp=22.26
+BARO11(ID=1) Timestamp=8245 Pressure=88357 Temp=22.86
+MAG Timestamp=8246 Mag=[0,0,0]
+GPS Timestamp=8246 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8246 Accel=[-10,-25,1025] Gyro=[25,44,59] Temp=24
+IMU32G(ID=1) Timestamp=8246 Accel=[56,-41,1013] Gyro=[77,9,22] Temp=26
+BARO07(ID=0) Timestamp=8246 Pressure=88313 Temp=22.26
+BARO11(ID=1) Timestamp=8246 Pressure=88357 Temp=22.86
+GPS Timestamp=8246 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8263 Accel=[-11,-23,1027] Gyro=[52,9,68] Temp=24
+IMU32G(ID=1) Timestamp=8263 Accel=[58,-41,1017] Gyro=[-71,-43,5] Temp=26
+BARO07(ID=0) Timestamp=8263 Pressure=88304 Temp=22.24
+BARO11(ID=1) Timestamp=8263 Pressure=88360 Temp=22.83
+GPS Timestamp=8299 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8300 Accel=[-9,-21,1024] Gyro=[34,27,24] Temp=24
+IMU32G(ID=1) Timestamp=8300 Accel=[57,-43,1018] Gyro=[-378,-227,40] Temp=26
+BARO07(ID=0) Timestamp=8300 Pressure=88309 Temp=22.26
+BARO11(ID=1) Timestamp=8300 Pressure=88366 Temp=22.86
+MAG Timestamp=8300 Mag=[0,0,0]
+GPS Timestamp=8300 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8301 Accel=[-11,-22,1026] Gyro=[43,-17,-11] Temp=24
+IMU32G(ID=1) Timestamp=8301 Accel=[57,-44,1015] Gyro=[156,114,-39] Temp=26
+BARO07(ID=0) Timestamp=8301 Pressure=88308 Temp=22.26
+BARO11(ID=1) Timestamp=8301 Pressure=88349 Temp=22.85
+MAG Timestamp=8301 Mag=[0,0,0]
+GPS Timestamp=8301 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E5.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8339 Accel=[-11,-24,1024] Gyro=[-80,-96,-11] Temp=24
+IMU32G(ID=1) Timestamp=8339 Accel=[60,-43,1016] Gyro=[-10,18,-48] Temp=26
+BARO07(ID=0) Timestamp=8339 Pressure=88298 Temp=22.25
+BARO11(ID=1) Timestamp=8339 Pressure=88366 Temp=22.86
+MAG Timestamp=8339 Mag=[0,0,0]
+GPS Timestamp=8339 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8339 Accel=[-8,-25,1027] Gyro=[60,97,24] Temp=24
+IMU32G(ID=1) Timestamp=8339 Accel=[61,-45,1016] Gyro=[-124,-105,-4] Temp=26
+BARO07(ID=0) Timestamp=8339 Pressure=88328 Temp=22.27
+BARO11(ID=1) Timestamp=8340 Pressure=88364 Temp=22.86
+MAG Timestamp=8340 Mag=[0,0,0]
+GPS Timestamp=8340 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8357 Accel=[-9,-25,1024] Gyro=[-10,-17,-28] Temp=24
+BARO07(ID=0) Timestamp=8393 Pressure=88298 Temp=22.25
+BARO11(ID=1) Timestamp=8393 Pressure=88356 Temp=22.87
+MAG Timestamp=8393 Mag=[0,0,0]
+GPS Timestamp=8393 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8394 Accel=[-9,-27,1026] Gyro=[-1,18,-2] Temp=24
+IMU32G(ID=1) Timestamp=8394 Accel=[62,-41,1015] Gyro=[-308,-114,40] Temp=26
+BARO07(ID=0) Timestamp=8394 Pressure=88299 Temp=22.26
+BARO11(ID=1) Timestamp=8394 Pressure=88353 Temp=22.85
+MAG Timestamp=8394 Mag=[0,0,0]
+GPS Timestamp=8395 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8395 Accel=[-11,-26,1024] Gyro=[-53,18,42] Temp=24
+IMU32G(ID=1) Timestamp=8395 Accel=[58,-43,1016] Gyro=[165,70,40] Temp=26
+BARO07(ID=0) Timestamp=8395 Pressure=88306 Temp=22.25
+BARO11(ID=1) Timestamp=8395 Pressure=88378 Temp=22.87
+MAG Timestamp=8395 Mag=[0,0,0]
+GPS Timestamp=8395 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+9,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8431 Accel=[-13,-23,1025] Gyro=[-18,44,59] Temp=24
+IMU32G(ID=1) Timestamp=8431 Accel=[61,-44,1017] Gyro=[95,97,49] Temp=26
+BARO07(ID=0) Timestamp=8431 Pressure=88315 Temp=22.24
+BARO11(ID=1) Timestamp=8432 Pressure=88355 Temp=22.82
+MAG Timestamp=8432 Mag=[0,0,0]
+GPS Timestamp=8432 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8434 Accel=[-10,-21,1025] Gyro=[104,88,85] Temp=24
+IMU32G(ID=1) Timestamp=8434 Accel=[56,-43,1015] Gyro=[-220,-105,57] Temp=26
+BARO07(ID=0) Timestamp=8434 Pressure=88302 Temp=22.27
+BARO11(ID=1) Timestamp=8434 Pressure=88368 Temp=22.86
+MAG Timestamp=8434 Mag=[0,0,0]
+GPS Timestamp=8434 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,54,,*59
+
+IMU16G(ID=0) Timestamp=8470 Accel=[-11,-22,1026] Gyro=[-18,-26,7] Temp=24
+IMU32G(ID=1) Timestamp=8470 Accel=[57,-41,1012] Gyro=[174,79,-4] Temp=26
+BARO07(ID=0) Timestamp=8470 Pressure=88304 Temp=22.26
+BARO11(ID=1) Timestamp=8470 Pressure=88366 Temp=22.86
+MAG Timestamp=8470 Mag=[0,0,0]
+GPS Timestamp=8470 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8484 Accel=[-12,-24,1026] Gyro=[8,36,-20] Temp=24
+IMU32G(ID=1) Timestamp=8484 Accel=[60,-43,1018] Gyro=[77,79,5] Temp=26
+BARO07(ID=0) Timestamp=8484 Pressure=88273 Temp=22.24
+BARO11(ID=1) Timestamp=8484 Pressure=88366 Temp=22.86
+MAG Timestamp=8484 Mag=[0,0,0]
+GPS Timestamp=8485 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8501 Accel=[-9,-23,1023] Gyro=[34,44,103] Temp=24
+IMU32G(ID=1) Timestamp=8501 Accel=[56,-39,1016] Gyro=[25,0,-56] Temp=26
+BARO11(ID=1) Timestamp=8537 Pressure=88351 Temp=22.86
+MAG Timestamp=8537 Mag=[0,0,0]
+GPS Timestamp=8537 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8538 Accel=[-7,-25,1026] Gyro=[-106,-26,-90] Temp=24
+IMU32G(ID=1) Timestamp=8538 Accel=[55,-41,1016] Gyro=[-36,-70,14] Temp=26
+BARO07(ID=0) Timestamp=8538 Pressure=88308 Temp=22.24
+BARO11(ID=1) Timestamp=8538 Pressure=88361 Temp=22.85
+MAG Timestamp=8538 Mag=[0,0,0]
+GPS Timestamp=8538 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8539 Accel=[-7,-25,1024] Gyro=[-141,-34,-46] Temp=24
+IMU32G(ID=1) Timestamp=8539 Accel=[63,-39,1016] Gyro=[-36,-61,-65] Temp=26
+BARO07(ID=0) Timestamp=8539 Pressure=88295 Temp=22.26
+BARO11(ID=1) Timestamp=8539 Pressure=88366 Temp=22.86
+MAG Timestamp=8539 Mag=[0,0,0]
+GPS Timestamp=8539 Chunks=6 Sentence=$GNGGA,12351,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8575 Accel=[-12,-21,1026] Gyro=[43,-17,68] Temp=24
+IMU32G(ID=1) Timestamp=8575 Accel=[60,-42,1015] Gyro=[-10,70,-74] Temp=26
+BARO07(ID=0) Timestamp=8575 Pressure=88311 Temp=22.27
+BARO11(ID=1) Timestamp=8575 Pressure=88371 Temp=22.86
+MAG Timestamp=8576 Mag=[0,0,0]
+GPS Timestamp=8576 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8581 Accel=[-10,-23,1023] Gyro=[-132,18,-28] Temp=24
+IMU32G(ID=1) Timestamp=8581 Accel=[55,-43,1017] Gyro=[322,123,22] Temp=26
+BARO07(ID=0) Timestamp=8581 Pressure=88300 Temp=22.26
+BARO11(ID=1) Timestamp=8581 Pressure=88346 Temp=22.86
+MAG Timestamp=8581 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=8643 Accel=[-9,-24,1026] Gyro=[-36,36,-11] Temp=24
+IMU32G(ID=1) Timestamp=8643 Accel=[62,-42,1018] Gyro=[-89,-26,-83] Temp=26
+BARO07(ID=0) Timestamp=8643 Pressure=88300 Temp=22.26
+BARO11(ID=1) Timestamp=8643 Pressure=88367 Temp=22.85
+MAG Timestamp=8644 Mag=[0,0,0]
+GPS Timestamp=8644 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8644 Accel=[-9,-22,1026] Gyro=[60,18,50] Temp=24
+IMU32G(ID=1) Timestamp=8644 Accel=[59,-44,1015] Gyro=[60,70,-65] Temp=26
+BARO07(ID=0) Timestamp=8644 Pressure=88296 Temp=22.27
+BARO11(ID=1) Timestamp=8644 Pressure=88355 Temp=22.86
+GPS Timestamp=8644 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8661 Accel=[-10,-25,1027] Gyro=[60,1,42] Temp=24
+IMU32G(ID=1) Timestamp=8661 Accel=[62,-42,1016] Gyro=[-19,-26,-21] Temp=26
+BARO07(ID=0) Timestamp=8661 Pressure=88318 Temp=22.24
+BARO11(ID=1) Timestamp=8661 Pressure=88359 Temp=22.84
+GPS Timestamp=8697 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8698 Accel=[-11,-24,1025] Gyro=[-27,27,42] Temp=24
+IMU32G(ID=1) Timestamp=8698 Accel=[62,-41,1015] Gyro=[-203,-96,75] Temp=26
+BARO07(ID=0) Timestamp=8698 Pressure=88304 Temp=22.26
+BARO11(ID=1) Timestamp=8698 Pressure=88355 Temp=22.85
+MAG Timestamp=8698 Mag=[0,0,0]
+GPS Timestamp=8698 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8699 Accel=[-9,-21,1028] Gyro=[-10,-8,33] Temp=24
+IMU32G(ID=1) Timestamp=8699 Accel=[59,-42,1013] Gyro=[-115,27,-56] Temp=26
+BARO07(ID=0) Timestamp=8699 Pressure=88283 Temp=22.27
+BARO11(ID=1) Timestamp=8699 Pressure=88363 Temp=22.86
+MAG Timestamp=8699 Mag=[0,0,0]
+GPS Timestamp=8699 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E5.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8737 Accel=[-11,-23,1027] Gyro=[43,-8,33] Temp=24
+IMU32G(ID=1) Timestamp=8737 Accel=[58,-40,1016] Gyro=[104,70,-4] Temp=26
+BARO07(ID=0) Timestamp=8737 Pressure=88275 Temp=22.25
+BARO11(ID=1) Timestamp=8737 Pressure=88354 Temp=22.84
+MAG Timestamp=8737 Mag=[0,0,0]
+GPS Timestamp=8737 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8737 Accel=[-11,-24,1025] Gyro=[113,79,33] Temp=24
+IMU32G(ID=1) Timestamp=8737 Accel=[59,-42,1015] Gyro=[139,105,40] Temp=26
+BARO07(ID=0) Timestamp=8737 Pressure=88278 Temp=22.24
+BARO11(ID=1) Timestamp=8738 Pressure=88356 Temp=22.82
+MAG Timestamp=8738 Mag=[0,0,0]
+GPS Timestamp=8738 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8755 Accel=[-9,-24,1021] Gyro=[-88,-34,-98] Temp=24
+BARO07(ID=0) Timestamp=8791 Pressure=88304 Temp=22.26
+BARO11(ID=1) Timestamp=8791 Pressure=88358 Temp=22.86
+MAG Timestamp=8791 Mag=[0,0,0]
+GPS Timestamp=8791 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8792 Accel=[-11,-24,1025] Gyro=[60,-8,50] Temp=24
+IMU32G(ID=1) Timestamp=8792 Accel=[59,-45,1017] Gyro=[-63,-8,22] Temp=26
+BARO07(ID=0) Timestamp=8792 Pressure=88310 Temp=22.27
+BARO11(ID=1) Timestamp=8792 Pressure=88365 Temp=22.86
+MAG Timestamp=8792 Mag=[0,0,0]
+GPS Timestamp=8793 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8793 Accel=[-8,-21,1026] Gyro=[8,27,7] Temp=24
+IMU32G(ID=1) Timestamp=8793 Accel=[57,-41,1016] Gyro=[-10,-70,-13] Temp=26
+BARO07(ID=0) Timestamp=8793 Pressure=88293 Temp=22.25
+BARO11(ID=1) Timestamp=8793 Pressure=88371 Temp=22.87
+MAG Timestamp=8793 Mag=[0,0,0]
+GPS Timestamp=8793 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+9,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8828 Accel=[-8,-26,1023] Gyro=[-18,-78,24] Temp=24
+IMU32G(ID=1) Timestamp=8828 Accel=[62,-43,1015] Gyro=[-281,-157,40] Temp=26
+BARO07(ID=0) Timestamp=8829 Pressure=88308 Temp=22.28
+BARO11(ID=1) Timestamp=8829 Pressure=88352 Temp=22.85
+MAG Timestamp=8829 Mag=[0,0,0]
+GPS Timestamp=8830 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8842 Accel=[-8,-24,1025] Gyro=[95,9,120] Temp=24
+IMU32G(ID=1) Timestamp=8842 Accel=[62,-43,1016] Gyro=[130,44,31] Temp=26
+BARO07(ID=0) Timestamp=8842 Pressure=88295 Temp=22.26
+BARO11(ID=1) Timestamp=8842 Pressure=88359 Temp=22.84
+MAG Timestamp=8842 Mag=[0,0,0]
+GPS Timestamp=8843 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,54,,*59
+
+IMU16G(ID=0) Timestamp=8878 Accel=[-11,-26,1026] Gyro=[-27,62,42] Temp=24
+IMU32G(ID=1) Timestamp=8878 Accel=[60,-38,1014] Gyro=[-63,-26,57] Temp=26
+BARO07(ID=0) Timestamp=8878 Pressure=88306 Temp=22.24
+BARO11(ID=1) Timestamp=8878 Pressure=88357 Temp=22.84
+MAG Timestamp=8878 Mag=[0,0,0]
+GPS Timestamp=8878 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8886 Accel=[-8,-24,1027] Gyro=[69,62,155] Temp=24
+IMU32G(ID=1) Timestamp=8886 Accel=[61,-41,1013] Gyro=[-28,53,22] Temp=26
+BARO07(ID=0) Timestamp=8886 Pressure=88299 Temp=22.26
+BARO11(ID=1) Timestamp=8886 Pressure=88361 Temp=22.86
+MAG Timestamp=8886 Mag=[0,0,0]
+GPS Timestamp=8886 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8903 Accel=[-10,-24,1024] Gyro=[60,-26,50] Temp=24
+IMU32G(ID=1) Timestamp=8903 Accel=[64,-39,1016] Gyro=[60,88,22] Temp=26
+BARO11(ID=1) Timestamp=8939 Pressure=88356 Temp=22.87
+MAG Timestamp=8939 Mag=[0,0,0]
+GPS Timestamp=8939 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8940 Accel=[-9,-26,1026] Gyro=[157,114,138] Temp=24
+IMU32G(ID=1) Timestamp=8940 Accel=[62,-40,1017] Gyro=[-1,88,84] Temp=26
+BARO07(ID=0) Timestamp=8940 Pressure=88307 Temp=22.25
+BARO11(ID=1) Timestamp=8940 Pressure=88369 Temp=22.84
+MAG Timestamp=8940 Mag=[0,0,0]
+GPS Timestamp=8940 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8941 Accel=[-13,-23,1025] Gyro=[69,79,129] Temp=24
+IMU32G(ID=1) Timestamp=8941 Accel=[58,-42,1015] Gyro=[51,132,84] Temp=26
+BARO07(ID=0) Timestamp=8941 Pressure=88315 Temp=22.27
+BARO11(ID=1) Timestamp=8941 Pressure=88350 Temp=22.85
+MAG Timestamp=8942 Mag=[0,0,0]
+GPS Timestamp=8942 Chunks=6 Sentence=$GNGGA,12351,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8977 Accel=[-16,-14,1027] Gyro=[113,88,112] Temp=24
+IMU32G(ID=1) Timestamp=8977 Accel=[51,-46,1015] Gyro=[-54,62,22] Temp=26
+BARO07(ID=0) Timestamp=8977 Pressure=88321 Temp=22.25
+BARO11(ID=1) Timestamp=8977 Pressure=88365 Temp=22.87
+MAG Timestamp=8977 Mag=[0,0,0]
+GPS Timestamp=8977 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=8991 Accel=[-8,-22,1025] Gyro=[78,44,7] Temp=24
+IMU32G(ID=1) Timestamp=8991 Accel=[56,-41,1016] Gyro=[-124,-79,-48] Temp=26
+BARO07(ID=0) Timestamp=8991 Pressure=88294 Temp=22.27
+BARO11(ID=1) Timestamp=8991 Pressure=88363 Temp=22.84
+MAG Timestamp=8991 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=9053 Accel=[-12,-23,1027] Gyro=[-62,-26,-55] Temp=24
+IMU32G(ID=1) Timestamp=9053 Accel=[58,-40,1016] Gyro=[-45,-43,-48] Temp=26
+BARO07(ID=0) Timestamp=9053 Pressure=88312 Temp=22.25
+BARO11(ID=1) Timestamp=9053 Pressure=88363 Temp=22.84
+MAG Timestamp=9054 Mag=[0,0,0]
+GPS Timestamp=9054 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9054 Accel=[-10,-22,1026] Gyro=[17,-17,-107] Temp=24
+IMU32G(ID=1) Timestamp=9054 Accel=[57,-41,1014] Gyro=[-168,-96,-74] Temp=26
+BARO07(ID=0) Timestamp=9054 Pressure=88309 Temp=22.24
+BARO11(ID=1) Timestamp=9054 Pressure=88350 Temp=22.85
+GPS Timestamp=9054 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9071 Accel=[-7,-26,1026] Gyro=[8,1,103] Temp=25
+IMU32G(ID=1) Timestamp=9071 Accel=[60,-39,1016] Gyro=[314,237,66] Temp=26
+BARO07(ID=0) Timestamp=9071 Pressure=88293 Temp=22.25
+BARO11(ID=1) Timestamp=9071 Pressure=88356 Temp=22.85
+GPS Timestamp=9107 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9108 Accel=[-9,-23,1026] Gyro=[34,9,112] Temp=25
+IMU32G(ID=1) Timestamp=9108 Accel=[61,-40,1013] Gyro=[209,167,57] Temp=26
+BARO07(ID=0) Timestamp=9108 Pressure=88283 Temp=22.24
+BARO11(ID=1) Timestamp=9108 Pressure=88346 Temp=22.86
+MAG Timestamp=9108 Mag=[0,0,0]
+GPS Timestamp=9108 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9109 Accel=[-11,-23,1026] Gyro=[78,18,85] Temp=24
+IMU32G(ID=1) Timestamp=9109 Accel=[59,-42,1017] Gyro=[130,149,75] Temp=26
+BARO07(ID=0) Timestamp=9109 Pressure=88299 Temp=22.26
+BARO11(ID=1) Timestamp=9109 Pressure=88362 Temp=22.85
+MAG Timestamp=9109 Mag=[0,0,0]
+GPS Timestamp=9109 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E5.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9147 Accel=[-10,-24,1025] Gyro=[34,9,85] Temp=24
+IMU32G(ID=1) Timestamp=9147 Accel=[61,-44,1017] Gyro=[7,62,145] Temp=26
+BARO07(ID=0) Timestamp=9147 Pressure=88302 Temp=22.25
+BARO11(ID=1) Timestamp=9147 Pressure=88356 Temp=22.87
+MAG Timestamp=9147 Mag=[0,0,0]
+GPS Timestamp=9147 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9147 Accel=[-9,-22,1025] Gyro=[52,-43,33] Temp=24
+IMU32G(ID=1) Timestamp=9147 Accel=[54,-43,1017] Gyro=[-63,0,49] Temp=26
+BARO07(ID=0) Timestamp=9148 Pressure=88285 Temp=22.25
+BARO11(ID=1) Timestamp=9148 Pressure=88355 Temp=22.86
+MAG Timestamp=9148 Mag=[0,0,0]
+GPS Timestamp=9148 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9165 Accel=[-10,-19,1025] Gyro=[52,18,50] Temp=24
+BARO07(ID=0) Timestamp=9201 Pressure=88307 Temp=22.25
+BARO11(ID=1) Timestamp=9201 Pressure=88361 Temp=22.85
+MAG Timestamp=9201 Mag=[0,0,0]
+GPS Timestamp=9201 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9202 Accel=[-12,-20,1026] Gyro=[87,62,42] Temp=24
+IMU32G(ID=1) Timestamp=9202 Accel=[55,-41,1017] Gyro=[-98,-61,-4] Temp=26
+BARO07(ID=0) Timestamp=9202 Pressure=88292 Temp=22.24
+BARO11(ID=1) Timestamp=9202 Pressure=88350 Temp=22.85
+MAG Timestamp=9202 Mag=[0,0,0]
+GPS Timestamp=9203 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9203 Accel=[-9,-23,1026] Gyro=[69,53,-46] Temp=24
+IMU32G(ID=1) Timestamp=9203 Accel=[59,-42,1015] Gyro=[314,167,-91] Temp=26
+BARO07(ID=0) Timestamp=9203 Pressure=88299 Temp=22.26
+BARO11(ID=1) Timestamp=9203 Pressure=88363 Temp=22.86
+MAG Timestamp=9203 Mag=[0,0,0]
+GPS Timestamp=9203 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+9,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9239 Accel=[-8,-23,1026] Gyro=[43,53,15] Temp=24
+IMU32G(ID=1) Timestamp=9239 Accel=[59,-43,1014] Gyro=[16,-26,-56] Temp=26
+BARO07(ID=0) Timestamp=9239 Pressure=88310 Temp=22.24
+BARO11(ID=1) Timestamp=9240 Pressure=88363 Temp=22.86
+MAG Timestamp=9240 Mag=[0,0,0]
+GPS Timestamp=9240 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9243 Accel=[-11,-23,1024] Gyro=[-62,18,-28] Temp=24
+IMU32G(ID=1) Timestamp=9243 Accel=[58,-41,1015] Gyro=[-98,-70,-91] Temp=26
+BARO07(ID=0) Timestamp=9243 Pressure=88275 Temp=22.25
+BARO11(ID=1) Timestamp=9243 Pressure=88371 Temp=22.84
+MAG Timestamp=9243 Mag=[0,0,0]
+GPS Timestamp=9243 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,54,,*59
+
+IMU16G(ID=0) Timestamp=9279 Accel=[-10,-26,1025] Gyro=[-45,36,-37] Temp=24
+IMU32G(ID=1) Timestamp=9279 Accel=[60,-40,1015] Gyro=[-54,-61,-39] Temp=26
+BARO07(ID=0) Timestamp=9279 Pressure=88287 Temp=22.27
+BARO11(ID=1) Timestamp=9279 Pressure=88365 Temp=22.86
+MAG Timestamp=9279 Mag=[0,0,0]
+GPS Timestamp=9279 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9293 Accel=[-11,-23,1026] Gyro=[17,-8,85] Temp=24
+IMU32G(ID=1) Timestamp=9293 Accel=[61,-45,1016] Gyro=[261,132,-39] Temp=26
+BARO07(ID=0) Timestamp=9293 Pressure=88312 Temp=22.25
+BARO11(ID=1) Timestamp=9293 Pressure=88367 Temp=22.85
+MAG Timestamp=9293 Mag=[0,0,0]
+GPS Timestamp=9294 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9310 Accel=[-9,-21,1026] Gyro=[34,18,7] Temp=24
+IMU32G(ID=1) Timestamp=9310 Accel=[62,-42,1017] Gyro=[25,9,-48] Temp=26
+BARO11(ID=1) Timestamp=9346 Pressure=88353 Temp=22.85
+MAG Timestamp=9346 Mag=[0,0,0]
+GPS Timestamp=9346 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9347 Accel=[-9,-22,1024] Gyro=[8,18,-37] Temp=24
+IMU32G(ID=1) Timestamp=9347 Accel=[58,-41,1016] Gyro=[217,132,-100] Temp=26
+BARO07(ID=0) Timestamp=9347 Pressure=88296 Temp=22.26
+BARO11(ID=1) Timestamp=9347 Pressure=88348 Temp=22.86
+MAG Timestamp=9347 Mag=[0,0,0]
+GPS Timestamp=9347 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9348 Accel=[-13,-24,1026] Gyro=[78,44,59] Temp=24
+IMU32G(ID=1) Timestamp=9348 Accel=[63,-44,1016] Gyro=[-316,-184,5] Temp=26
+BARO07(ID=0) Timestamp=9348 Pressure=88301 Temp=22.27
+BARO11(ID=1) Timestamp=9348 Pressure=88362 Temp=22.87
+MAG Timestamp=9348 Mag=[0,0,0]
+GPS Timestamp=9348 Chunks=6 Sentence=$GNGGA,12351,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9384 Accel=[-12,-23,1024] Gyro=[8,-26,-63] Temp=24
+IMU32G(ID=1) Timestamp=9384 Accel=[60,-44,1014] Gyro=[392,193,-91] Temp=26
+BARO07(ID=0) Timestamp=9384 Pressure=88311 Temp=22.27
+BARO11(ID=1) Timestamp=9384 Pressure=88361 Temp=22.85
+MAG Timestamp=9385 Mag=[0,0,0]
+GPS Timestamp=9385 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9390 Accel=[-11,-21,1023] Gyro=[-36,-43,-11] Temp=24
+IMU32G(ID=1) Timestamp=9390 Accel=[56,-41,1016] Gyro=[-36,35,-39] Temp=26
+BARO07(ID=0) Timestamp=9390 Pressure=88287 Temp=22.27
+BARO11(ID=1) Timestamp=9390 Pressure=88373 Temp=22.86
+MAG Timestamp=9390 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=9445 Accel=[-13,-23,1026] Gyro=[-106,-78,-46] Temp=24
+IMU32G(ID=1) Timestamp=9445 Accel=[57,-42,1015] Gyro=[-115,-114,-4] Temp=26
+BARO07(ID=0) Timestamp=9445 Pressure=88314 Temp=22.27
+BARO11(ID=1) Timestamp=9445 Pressure=88355 Temp=22.86
+MAG Timestamp=9446 Mag=[0,0,0]
+GPS Timestamp=9446 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9446 Accel=[-10,-25,1022] Gyro=[8,71,103] Temp=24
+IMU32G(ID=1) Timestamp=9446 Accel=[62,-42,1015] Gyro=[322,175,-100] Temp=26
+BARO07(ID=0) Timestamp=9446 Pressure=88290 Temp=22.25
+BARO11(ID=1) Timestamp=9446 Pressure=88341 Temp=22.85
+GPS Timestamp=9446 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9463 Accel=[-8,-25,1026] Gyro=[17,-26,103] Temp=25
+IMU32G(ID=1) Timestamp=9463 Accel=[60,-41,1014] Gyro=[-159,-79,49] Temp=26
+BARO07(ID=0) Timestamp=9463 Pressure=88304 Temp=22.26
+BARO11(ID=1) Timestamp=9463 Pressure=88357 Temp=22.84
+GPS Timestamp=9499 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9500 Accel=[-9,-25,1025] Gyro=[8,18,24] Temp=24
+IMU32G(ID=1) Timestamp=9500 Accel=[58,-44,1017] Gyro=[130,79,5] Temp=26
+BARO07(ID=0) Timestamp=9500 Pressure=88294 Temp=22.27
+BARO11(ID=1) Timestamp=9500 Pressure=88360 Temp=22.83
+MAG Timestamp=9500 Mag=[0,0,0]
+GPS Timestamp=9500 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9501 Accel=[-9,-25,1025] Gyro=[-115,-43,-81] Temp=24
+IMU32G(ID=1) Timestamp=9501 Accel=[62,-40,1016] Gyro=[16,9,40] Temp=26
+BARO07(ID=0) Timestamp=9501 Pressure=88310 Temp=22.27
+BARO11(ID=1) Timestamp=9501 Pressure=88356 Temp=22.85
+MAG Timestamp=9501 Mag=[0,0,0]
+GPS Timestamp=9501 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E5.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9538 Accel=[-9,-23,1026] Gyro=[-88,-43,-28] Temp=24
+IMU32G(ID=1) Timestamp=9538 Accel=[61,-41,1013] Gyro=[-194,-157,40] Temp=26
+BARO07(ID=0) Timestamp=9538 Pressure=88299 Temp=22.26
+BARO11(ID=1) Timestamp=9539 Pressure=88344 Temp=22.86
+MAG Timestamp=9539 Mag=[0,0,0]
+GPS Timestamp=9539 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9542 Accel=[-10,-23,1026] Gyro=[-62,-87,-11] Temp=24
+IMU32G(ID=1) Timestamp=9542 Accel=[58,-40,1015] Gyro=[147,88,-21] Temp=26
+BARO07(ID=0) Timestamp=9542 Pressure=88301 Temp=22.27
+BARO11(ID=1) Timestamp=9542 Pressure=88377 Temp=22.87
+MAG Timestamp=9542 Mag=[0,0,0]
+GPS Timestamp=9542 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9559 Accel=[-11,-24,1027] Gyro=[8,1,15] Temp=24
+BARO07(ID=0) Timestamp=9595 Pressure=88312 Temp=22.26
+BARO11(ID=1) Timestamp=9595 Pressure=88350 Temp=22.85
+MAG Timestamp=9595 Mag=[0,0,0]
+GPS Timestamp=9595 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9596 Accel=[-10,-23,1023] Gyro=[-45,-8,24] Temp=24
+IMU32G(ID=1) Timestamp=9596 Accel=[61,-39,1017] Gyro=[-264,-149,22] Temp=26
+BARO07(ID=0) Timestamp=9596 Pressure=88301 Temp=22.27
+BARO11(ID=1) Timestamp=9596 Pressure=88360 Temp=22.86
+MAG Timestamp=9596 Mag=[0,0,0]
+GPS Timestamp=9596 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9600 Accel=[-7,-22,1024] Gyro=[8,1,15] Temp=24
+IMU32G(ID=1) Timestamp=9600 Accel=[56,-41,1016] Gyro=[25,44,-4] Temp=26
+BARO07(ID=0) Timestamp=9600 Pressure=88298 Temp=22.27
+BARO11(ID=1) Timestamp=9600 Pressure=88353 Temp=22.85
+MAG Timestamp=9600 Mag=[0,0,0]
+GPS Timestamp=9596 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+9,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9635 Accel=[-9,-23,1024] Gyro=[25,-26,33] Temp=24
+IMU32G(ID=1) Timestamp=9635 Accel=[59,-42,1018] Gyro=[-98,18,-13] Temp=26
+BARO07(ID=0) Timestamp=9635 Pressure=88288 Temp=22.27
+BARO11(ID=1) Timestamp=9635 Pressure=88370 Temp=22.85
+MAG Timestamp=9635 Mag=[0,0,0]
+GPS Timestamp=9635 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9650 Accel=[-11,-21,1026] Gyro=[-27,-8,-28] Temp=24
+IMU32G(ID=1) Timestamp=9650 Accel=[56,-44,1016] Gyro=[174,79,14] Temp=26
+BARO07(ID=0) Timestamp=9650 Pressure=88302 Temp=22.25
+BARO11(ID=1) Timestamp=9650 Pressure=88358 Temp=22.85
+MAG Timestamp=9650 Mag=[0,0,0]
+GPS Timestamp=9651 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,54,,*59
+
+IMU16G(ID=0) Timestamp=9686 Accel=[-11,-22,1028] Gyro=[-27,-34,-11] Temp=24
+IMU32G(ID=1) Timestamp=9686 Accel=[56,-43,1019] Gyro=[-63,-8,-13] Temp=26
+BARO07(ID=0) Timestamp=9686 Pressure=88316 Temp=22.27
+BARO11(ID=1) Timestamp=9686 Pressure=88348 Temp=22.84
+MAG Timestamp=9686 Mag=[0,0,0]
+GPS Timestamp=9687 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9688 Accel=[-10,-23,1026] Gyro=[52,36,-28] Temp=24
+IMU32G(ID=1) Timestamp=9688 Accel=[58,-43,1013] Gyro=[-80,0,-13] Temp=26
+BARO07(ID=0) Timestamp=9688 Pressure=88322 Temp=22.26
+BARO11(ID=1) Timestamp=9688 Pressure=88364 Temp=22.85
+MAG Timestamp=9688 Mag=[0,0,0]
+GPS Timestamp=9688 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9705 Accel=[-10,-25,1025] Gyro=[-1,27,15] Temp=24
+IMU32G(ID=1) Timestamp=9705 Accel=[63,-42,1017] Gyro=[165,114,-21] Temp=26
+BARO11(ID=1) Timestamp=9741 Pressure=88343 Temp=22.84
+MAG Timestamp=9741 Mag=[0,0,0]
+GPS Timestamp=9741 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9742 Accel=[-9,-24,1027] Gyro=[60,-34,-37] Temp=24
+IMU32G(ID=1) Timestamp=9742 Accel=[59,-41,1015] Gyro=[-124,-26,-48] Temp=26
+BARO07(ID=0) Timestamp=9742 Pressure=88310 Temp=22.29
+BARO11(ID=1) Timestamp=9742 Pressure=88360 Temp=22.84
+MAG Timestamp=9742 Mag=[0,0,0]
+GPS Timestamp=9742 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9747 Accel=[-8,-24,1026] Gyro=[-18,18,-11] Temp=24
+IMU32G(ID=1) Timestamp=9747 Accel=[58,-42,1015] Gyro=[156,132,-65] Temp=26
+BARO07(ID=0) Timestamp=9748 Pressure=88296 Temp=22.27
+BARO11(ID=1) Timestamp=9748 Pressure=88354 Temp=22.86
+MAG Timestamp=9748 Mag=[0,0,0]
+GPS Timestamp=9748 Chunks=6 Sentence=$GNGGA,12351,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9783 Accel=[-10,-25,1023] Gyro=[-1,36,7] Temp=24
+IMU32G(ID=1) Timestamp=9783 Accel=[58,-39,1017] Gyro=[-141,-114,-13] Temp=26
+BARO07(ID=0) Timestamp=9783 Pressure=88309 Temp=22.26
+BARO11(ID=1) Timestamp=9783 Pressure=88352 Temp=22.86
+MAG Timestamp=9783 Mag=[0,0,0]
+GPS Timestamp=9783 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9797 Accel=[-11,-24,1024] Gyro=[-71,1,-11] Temp=24
+IMU32G(ID=1) Timestamp=9797 Accel=[57,-45,1015] Gyro=[16,27,-39] Temp=26
+BARO07(ID=0) Timestamp=9797 Pressure=88309 Temp=22.26
+BARO11(ID=1) Timestamp=9797 Pressure=88365 Temp=22.86
+MAG Timestamp=9797 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=9858 Accel=[-10,-23,1025] Gyro=[-1,53,24] Temp=24
+IMU32G(ID=1) Timestamp=9858 Accel=[60,-42,1015] Gyro=[86,62,14] Temp=26
+BARO07(ID=0) Timestamp=9858 Pressure=88292 Temp=22.24
+BARO11(ID=1) Timestamp=9858 Pressure=88354 Temp=22.84
+MAG Timestamp=9859 Mag=[0,0,0]
+GPS Timestamp=9859 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9859 Accel=[-8,-22,1024] Gyro=[-36,27,42] Temp=24
+IMU32G(ID=1) Timestamp=9859 Accel=[59,-40,1015] Gyro=[121,97,-100] Temp=26
+BARO07(ID=0) Timestamp=9859 Pressure=88305 Temp=22.27
+BARO11(ID=1) Timestamp=9859 Pressure=88360 Temp=22.84
+GPS Timestamp=9859 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9876 Accel=[-7,-22,1026] Gyro=[-18,-52,-46] Temp=24
+IMU32G(ID=1) Timestamp=9876 Accel=[59,-42,1016] Gyro=[-133,-70,5] Temp=26
+BARO07(ID=0) Timestamp=9876 Pressure=88297 Temp=22.24
+BARO11(ID=1) Timestamp=9876 Pressure=88346 Temp=22.85
+GPS Timestamp=9912 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9913 Accel=[-9,-23,1025] Gyro=[-1,-17,-63] Temp=25
+IMU32G(ID=1) Timestamp=9913 Accel=[56,-41,1014] Gyro=[69,-35,-56] Temp=26
+BARO07(ID=0) Timestamp=9913 Pressure=88307 Temp=22.25
+BARO11(ID=1) Timestamp=9913 Pressure=88361 Temp=22.85
+MAG Timestamp=9913 Mag=[0,0,0]
+GPS Timestamp=9913 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9914 Accel=[-9,-22,1028] Gyro=[-80,1,-46] Temp=24
+IMU32G(ID=1) Timestamp=9914 Accel=[58,-42,1016] Gyro=[-141,-105,-56] Temp=26
+BARO07(ID=0) Timestamp=9914 Pressure=88272 Temp=22.25
+BARO11(ID=1) Timestamp=9914 Pressure=88350 Temp=22.84
+MAG Timestamp=9914 Mag=[0,0,0]
+GPS Timestamp=9914 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E5.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9952 Accel=[-8,-26,1027] Gyro=[8,-26,24] Temp=24
+IMU32G(ID=1) Timestamp=9952 Accel=[60,-42,1015] Gyro=[-80,-26,-56] Temp=26
+BARO07(ID=0) Timestamp=9952 Pressure=88295 Temp=22.24
+BARO11(ID=1) Timestamp=9952 Pressure=88345 Temp=22.84
+MAG Timestamp=9952 Mag=[0,0,0]
+GPS Timestamp=9952 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9952 Accel=[-11,-25,1026] Gyro=[8,-8,59] Temp=24
+IMU32G(ID=1) Timestamp=9952 Accel=[59,-40,1013] Gyro=[-150,0,49] Temp=26
+BARO07(ID=0) Timestamp=9953 Pressure=88286 Temp=22.26
+BARO11(ID=1) Timestamp=9953 Pressure=88365 Temp=22.84
+MAG Timestamp=9953 Mag=[0,0,0]
+GPS Timestamp=9953 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=9970 Accel=[-11,-22,1026] Gyro=[8,27,-2] Temp=24
+BARO07(ID=0) Timestamp=10006 Pressure=88306 Temp=22.27
+BARO11(ID=1) Timestamp=10006 Pressure=88367 Temp=22.88
+MAG Timestamp=10006 Mag=[0,0,0]
+GPS Timestamp=10006 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10007 Accel=[-9,-24,1024] Gyro=[69,1,85] Temp=24
+IMU32G(ID=1) Timestamp=10007 Accel=[58,-39,1015] Gyro=[7,35,31] Temp=26
+BARO07(ID=0) Timestamp=10007 Pressure=88325 Temp=22.27
+BARO11(ID=1) Timestamp=10007 Pressure=88361 Temp=22.85
+MAG Timestamp=10007 Mag=[0,0,0]
+GPS Timestamp=10008 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10008 Accel=[-12,-22,1023] Gyro=[43,36,-20] Temp=25
+IMU32G(ID=1) Timestamp=10008 Accel=[57,-45,1015] Gyro=[69,9,40] Temp=26
+BARO07(ID=0) Timestamp=10008 Pressure=88281 Temp=22.25
+BARO11(ID=1) Timestamp=10008 Pressure=88359 Temp=22.85
+MAG Timestamp=10008 Mag=[0,0,0]
+GPS Timestamp=10008 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+9,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10044 Accel=[-12,-22,1026] Gyro=[-27,79,42] Temp=24
+IMU32G(ID=1) Timestamp=10044 Accel=[59,-43,1016] Gyro=[16,62,22] Temp=26
+BARO07(ID=0) Timestamp=10044 Pressure=88291 Temp=22.29
+BARO11(ID=1) Timestamp=10045 Pressure=88376 Temp=22.86
+MAG Timestamp=10045 Mag=[0,0,0]
+GPS Timestamp=10045 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10049 Accel=[-9,-23,1024] Gyro=[43,18,-11] Temp=24
+IMU32G(ID=1) Timestamp=10049 Accel=[59,-43,1014] Gyro=[-115,-17,40] Temp=26
+BARO07(ID=0) Timestamp=10049 Pressure=88273 Temp=22.26
+BARO11(ID=1) Timestamp=10049 Pressure=88362 Temp=22.85
+MAG Timestamp=10049 Mag=[0,0,0]
+GPS Timestamp=10049 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,54,,*59
+
+IMU16G(ID=0) Timestamp=10084 Accel=[-12,-25,1024] Gyro=[-27,62,-2] Temp=24
+IMU32G(ID=1) Timestamp=10084 Accel=[61,-41,1017] Gyro=[42,53,-4] Temp=26
+BARO07(ID=0) Timestamp=10084 Pressure=88270 Temp=22.24
+BARO11(ID=1) Timestamp=10084 Pressure=88335 Temp=22.85
+MAG Timestamp=10084 Mag=[0,0,0]
+GPS Timestamp=10084 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10099 Accel=[-11,-23,1025] Gyro=[8,18,42] Temp=24
+IMU32G(ID=1) Timestamp=10099 Accel=[61,-41,1017] Gyro=[-106,-70,5] Temp=26
+BARO07(ID=0) Timestamp=10099 Pressure=88305 Temp=22.27
+BARO11(ID=1) Timestamp=10099 Pressure=88371 Temp=22.86
+MAG Timestamp=10099 Mag=[0,0,0]
+GPS Timestamp=10100 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10116 Accel=[-8,-25,1025] Gyro=[8,44,33] Temp=24
+IMU32G(ID=1) Timestamp=10116 Accel=[60,-43,1017] Gyro=[-36,9,-13] Temp=26
+BARO11(ID=1) Timestamp=10152 Pressure=88362 Temp=22.84
+MAG Timestamp=10152 Mag=[0,0,0]
+GPS Timestamp=10152 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10153 Accel=[-9,-23,1025] Gyro=[-18,36,59] Temp=24
+IMU32G(ID=1) Timestamp=10153 Accel=[61,-41,1014] Gyro=[34,35,-4] Temp=26
+BARO07(ID=0) Timestamp=10153 Pressure=88298 Temp=22.27
+BARO11(ID=1) Timestamp=10153 Pressure=88356 Temp=22.84
+MAG Timestamp=10153 Mag=[0,0,0]
+GPS Timestamp=10153 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10154 Accel=[-10,-24,1026] Gyro=[-53,1,-2] Temp=24
+IMU32G(ID=1) Timestamp=10154 Accel=[58,-44,1016] Gyro=[-54,-61,-13] Temp=26
+BARO07(ID=0) Timestamp=10154 Pressure=88283 Temp=22.24
+BARO11(ID=1) Timestamp=10154 Pressure=88362 Temp=22.87
+MAG Timestamp=10154 Mag=[0,0,0]
+GPS Timestamp=10154 Chunks=6 Sentence=$GNGGA,12351,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10190 Accel=[-11,-23,1026] Gyro=[-45,9,77] Temp=24
+IMU32G(ID=1) Timestamp=10190 Accel=[60,-45,1016] Gyro=[-1,-8,14] Temp=26
+BARO07(ID=0) Timestamp=10190 Pressure=88285 Temp=22.25
+BARO11(ID=1) Timestamp=10190 Pressure=88357 Temp=22.86
+MAG Timestamp=10191 Mag=[0,0,0]
+GPS Timestamp=10191 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10195 Accel=[-11,-24,1025] Gyro=[34,9,68] Temp=24
+IMU32G(ID=1) Timestamp=10196 Accel=[60,-40,1017] Gyro=[77,0,40] Temp=26
+BARO07(ID=0) Timestamp=10196 Pressure=88284 Temp=22.27
+BARO11(ID=1) Timestamp=10196 Pressure=88368 Temp=22.85
+MAG Timestamp=10196 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=10256 Accel=[-11,-24,1024] Gyro=[-71,1,15] Temp=24
+IMU32G(ID=1) Timestamp=10256 Accel=[59,-42,1014] Gyro=[77,44,-13] Temp=26
+BARO07(ID=0) Timestamp=10256 Pressure=88311 Temp=22.25
+BARO11(ID=1) Timestamp=10256 Pressure=88336 Temp=22.83
+MAG Timestamp=10257 Mag=[0,0,0]
+GPS Timestamp=10257 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10257 Accel=[-11,-20,1023] Gyro=[25,9,24] Temp=25
+IMU32G(ID=1) Timestamp=10257 Accel=[57,-41,1016] Gyro=[-10,35,-65] Temp=26
+BARO07(ID=0) Timestamp=10257 Pressure=88285 Temp=22.27
+BARO11(ID=1) Timestamp=10257 Pressure=88352 Temp=22.85
+GPS Timestamp=10257 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10274 Accel=[-12,-22,1030] Gyro=[-27,-17,33] Temp=24
+IMU32G(ID=1) Timestamp=10274 Accel=[61,-41,1017] Gyro=[-36,-26,-48] Temp=26
+BARO07(ID=0) Timestamp=10274 Pressure=88300 Temp=22.24
+BARO11(ID=1) Timestamp=10274 Pressure=88372 Temp=22.87
+GPS Timestamp=10310 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10311 Accel=[-9,-22,1026] Gyro=[104,44,42] Temp=24
+IMU32G(ID=1) Timestamp=10311 Accel=[54,-41,1013] Gyro=[-45,-17,-39] Temp=26
+BARO07(ID=0) Timestamp=10311 Pressure=88309 Temp=22.26
+BARO11(ID=1) Timestamp=10311 Pressure=88370 Temp=22.86
+MAG Timestamp=10311 Mag=[0,0,0]
+GPS Timestamp=10311 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10312 Accel=[-10,-23,1026] Gyro=[-36,-43,15] Temp=24
+IMU32G(ID=1) Timestamp=10312 Accel=[61,-42,1014] Gyro=[7,-17,-13] Temp=26
+BARO07(ID=0) Timestamp=10312 Pressure=88295 Temp=22.26
+BARO11(ID=1) Timestamp=10312 Pressure=88362 Temp=22.85
+MAG Timestamp=10312 Mag=[0,0,0]
+GPS Timestamp=10312 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E5.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10350 Accel=[-11,-24,1025] Gyro=[95,-34,42] Temp=24
+IMU32G(ID=1) Timestamp=10350 Accel=[61,-39,1016] Gyro=[-80,-8,-74] Temp=26
+BARO07(ID=0) Timestamp=10350 Pressure=88330 Temp=22.26
+BARO11(ID=1) Timestamp=10350 Pressure=88370 Temp=22.85
+MAG Timestamp=10350 Mag=[0,0,0]
+GPS Timestamp=10350 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10350 Accel=[-10,-22,1024] Gyro=[-18,1,-11] Temp=24
+IMU32G(ID=1) Timestamp=10350 Accel=[58,-42,1016] Gyro=[60,18,-91] Temp=26
+BARO07(ID=0) Timestamp=10351 Pressure=88315 Temp=22.24
+BARO11(ID=1) Timestamp=10351 Pressure=88349 Temp=22.86
+MAG Timestamp=10351 Mag=[0,0,0]
+GPS Timestamp=10351 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10368 Accel=[-12,-22,1025] Gyro=[17,1,-2] Temp=24
+BARO07(ID=0) Timestamp=10404 Pressure=88294 Temp=22.27
+BARO11(ID=1) Timestamp=10404 Pressure=88369 Temp=22.86
+MAG Timestamp=10404 Mag=[0,0,0]
+GPS Timestamp=10404 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10405 Accel=[-8,-22,1027] Gyro=[17,-26,42] Temp=24
+IMU32G(ID=1) Timestamp=10405 Accel=[61,-42,1016] Gyro=[25,-70,-91] Temp=26
+BARO07(ID=0) Timestamp=10405 Pressure=88289 Temp=22.27
+BARO11(ID=1) Timestamp=10405 Pressure=88365 Temp=22.87
+MAG Timestamp=10405 Mag=[0,0,0]
+GPS Timestamp=10405 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10406 Accel=[-12,-26,1025] Gyro=[-97,44,-72] Temp=24
+IMU32G(ID=1) Timestamp=10406 Accel=[61,-43,1016] Gyro=[-1,-17,5] Temp=26
+BARO07(ID=0) Timestamp=10406 Pressure=88335 Temp=22.28
+BARO11(ID=1) Timestamp=10406 Pressure=88370 Temp=22.86
+MAG Timestamp=10406 Mag=[0,0,0]
+GPS Timestamp=10405 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+9,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10442 Accel=[-11,-23,1025] Gyro=[-18,-43,-11] Temp=24
+IMU32G(ID=1) Timestamp=10442 Accel=[56,-41,1013] Gyro=[86,70,-109] Temp=26
+BARO07(ID=0) Timestamp=10442 Pressure=88306 Temp=22.25
+BARO11(ID=1) Timestamp=10442 Pressure=88368 Temp=22.84
+MAG Timestamp=10442 Mag=[0,0,0]
+GPS Timestamp=10442 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10456 Accel=[-7,-24,1026] Gyro=[34,62,-81] Temp=25
+IMU32G(ID=1) Timestamp=10456 Accel=[59,-42,1018] Gyro=[34,-35,-48] Temp=26
+BARO07(ID=0) Timestamp=10456 Pressure=88285 Temp=22.27
+BARO11(ID=1) Timestamp=10456 Pressure=88351 Temp=22.84
+MAG Timestamp=10457 Mag=[0,0,0]
+GPS Timestamp=10457 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,54,,*59
+
+IMU16G(ID=0) Timestamp=10492 Accel=[-9,-24,1026] Gyro=[8,27,-28] Temp=25
+IMU32G(ID=1) Timestamp=10492 Accel=[61,-41,1014] Gyro=[7,53,-83] Temp=26
+BARO07(ID=0) Timestamp=10492 Pressure=88302 Temp=22.27
+BARO11(ID=1) Timestamp=10492 Pressure=88354 Temp=22.84
+MAG Timestamp=10492 Mag=[0,0,0]
+GPS Timestamp=10493 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10494 Accel=[-12,-25,1027] Gyro=[-10,1,7] Temp=24
+IMU32G(ID=1) Timestamp=10494 Accel=[60,-42,1016] Gyro=[-1,9,-74] Temp=26
+BARO07(ID=0) Timestamp=10494 Pressure=88321 Temp=22.25
+BARO11(ID=1) Timestamp=10494 Pressure=88361 Temp=22.86
+MAG Timestamp=10494 Mag=[0,0,0]
+GPS Timestamp=10494 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10511 Accel=[-11,-22,1024] Gyro=[34,-17,-2] Temp=24
+IMU32G(ID=1) Timestamp=10511 Accel=[58,-42,1014] Gyro=[-54,0,-13] Temp=26
+BARO11(ID=1) Timestamp=10547 Pressure=88363 Temp=22.84
+MAG Timestamp=10547 Mag=[0,0,0]
+GPS Timestamp=10547 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10548 Accel=[-9,-23,1024] Gyro=[43,-52,-46] Temp=24
+IMU32G(ID=1) Timestamp=10548 Accel=[57,-41,1016] Gyro=[-150,-17,-4] Temp=26
+BARO07(ID=0) Timestamp=10548 Pressure=88289 Temp=22.27
+BARO11(ID=1) Timestamp=10548 Pressure=88357 Temp=22.87
+MAG Timestamp=10548 Mag=[0,0,0]
+GPS Timestamp=10548 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10553 Accel=[-12,-22,1025] Gyro=[25,27,42] Temp=24
+IMU32G(ID=1) Timestamp=10553 Accel=[58,-44,1015] Gyro=[-106,-61,-4] Temp=26
+BARO07(ID=0) Timestamp=10554 Pressure=88294 Temp=22.25
+BARO11(ID=1) Timestamp=10554 Pressure=88359 Temp=22.85
+MAG Timestamp=10554 Mag=[0,0,0]
+GPS Timestamp=10554 Chunks=6 Sentence=$GNGGA,12351,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10589 Accel=[-12,-25,1026] Gyro=[-1,18,24] Temp=24
+IMU32G(ID=1) Timestamp=10589 Accel=[59,-45,1017] Gyro=[-36,-70,-21] Temp=26
+BARO07(ID=0) Timestamp=10589 Pressure=88293 Temp=22.27
+BARO11(ID=1) Timestamp=10589 Pressure=88356 Temp=22.85
+MAG Timestamp=10589 Mag=[0,0,0]
+GPS Timestamp=10589 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10603 Accel=[-8,-25,1025] Gyro=[-10,9,-2] Temp=24
+IMU32G(ID=1) Timestamp=10603 Accel=[58,-39,1014] Gyro=[-10,0,-4] Temp=26
+BARO07(ID=0) Timestamp=10603 Pressure=88303 Temp=22.23
+BARO11(ID=1) Timestamp=10603 Pressure=88348 Temp=22.84
+MAG Timestamp=10603 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=10664 Accel=[-9,-23,1026] Gyro=[43,-8,33] Temp=24
+IMU32G(ID=1) Timestamp=10664 Accel=[59,-41,1015] Gyro=[112,35,-56] Temp=26
+BARO07(ID=0) Timestamp=10664 Pressure=88280 Temp=22.25
+BARO11(ID=1) Timestamp=10664 Pressure=88366 Temp=22.86
+MAG Timestamp=10665 Mag=[0,0,0]
+GPS Timestamp=10665 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10665 Accel=[-11,-24,1025] Gyro=[-36,1,59] Temp=24
+IMU32G(ID=1) Timestamp=10665 Accel=[57,-43,1016] Gyro=[51,44,-39] Temp=26
+BARO07(ID=0) Timestamp=10665 Pressure=88308 Temp=22.24
+BARO11(ID=1) Timestamp=10665 Pressure=88370 Temp=22.86
+GPS Timestamp=10665 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10682 Accel=[-10,-25,1027] Gyro=[25,1,33] Temp=24
+IMU32G(ID=1) Timestamp=10682 Accel=[61,-41,1014] Gyro=[-98,-87,-13] Temp=26
+BARO07(ID=0) Timestamp=10682 Pressure=88314 Temp=22.24
+BARO11(ID=1) Timestamp=10682 Pressure=88358 Temp=22.86
+GPS Timestamp=10718 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10719 Accel=[-11,-24,1025] Gyro=[43,27,50] Temp=24
+IMU32G(ID=1) Timestamp=10719 Accel=[61,-42,1013] Gyro=[-28,0,5] Temp=26
+BARO07(ID=0) Timestamp=10719 Pressure=88301 Temp=22.27
+BARO11(ID=1) Timestamp=10719 Pressure=88364 Temp=22.85
+MAG Timestamp=10719 Mag=[0,0,0]
+GPS Timestamp=10719 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10720 Accel=[-14,-24,1026] Gyro=[78,27,-2] Temp=24
+IMU32G(ID=1) Timestamp=10720 Accel=[58,-42,1015] Gyro=[16,35,14] Temp=26
+BARO07(ID=0) Timestamp=10720 Pressure=88293 Temp=22.27
+BARO11(ID=1) Timestamp=10720 Pressure=88358 Temp=22.85
+MAG Timestamp=10720 Mag=[0,0,0]
+GPS Timestamp=10720 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E5.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10757 Accel=[-9,-23,1024] Gyro=[-36,9,-2] Temp=24
+IMU32G(ID=1) Timestamp=10757 Accel=[62,-41,1013] Gyro=[-133,-96,14] Temp=26
+BARO07(ID=0) Timestamp=10757 Pressure=88301 Temp=22.24
+BARO11(ID=1) Timestamp=10757 Pressure=88368 Temp=22.86
+MAG Timestamp=10757 Mag=[0,0,0]
+GPS Timestamp=10757 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10757 Accel=[-9,-23,1025] Gyro=[-62,-34,59] Temp=24
+IMU32G(ID=1) Timestamp=10757 Accel=[56,-40,1015] Gyro=[-36,62,-4] Temp=26
+BARO07(ID=0) Timestamp=10757 Pressure=88300 Temp=22.24
+BARO11(ID=1) Timestamp=10758 Pressure=88366 Temp=22.84
+MAG Timestamp=10758 Mag=[0,0,0]
+GPS Timestamp=10758 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10775 Accel=[-9,-23,1024] Gyro=[8,44,42] Temp=24
+BARO07(ID=0) Timestamp=10811 Pressure=88282 Temp=22.28
+BARO11(ID=1) Timestamp=10811 Pressure=88361 Temp=22.85
+MAG Timestamp=10811 Mag=[0,0,0]
+GPS Timestamp=10811 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10812 Accel=[-11,-24,1025] Gyro=[69,1,-2] Temp=25
+IMU32G(ID=1) Timestamp=10812 Accel=[58,-41,1017] Gyro=[-1,44,22] Temp=26
+BARO07(ID=0) Timestamp=10812 Pressure=88304 Temp=22.26
+BARO11(ID=1) Timestamp=10812 Pressure=88366 Temp=22.86
+MAG Timestamp=10812 Mag=[0,0,0]
+GPS Timestamp=10813 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10813 Accel=[-10,-23,1022] Gyro=[87,44,50] Temp=24
+IMU32G(ID=1) Timestamp=10813 Accel=[59,-42,1015] Gyro=[86,44,-13] Temp=26
+BARO07(ID=0) Timestamp=10813 Pressure=88318 Temp=22.24
+BARO11(ID=1) Timestamp=10813 Pressure=88355 Temp=22.86
+MAG Timestamp=10813 Mag=[0,0,0]
+GPS Timestamp=10813 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+9,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10850 Accel=[-8,-21,1026] Gyro=[-27,36,77] Temp=24
+IMU32G(ID=1) Timestamp=10850 Accel=[56,-42,1017] Gyro=[42,0,-4] Temp=26
+BARO07(ID=0) Timestamp=10850 Pressure=88288 Temp=22.24
+BARO11(ID=1) Timestamp=10850 Pressure=88357 Temp=22.86
+MAG Timestamp=10851 Mag=[0,0,0]
+GPS Timestamp=10851 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10855 Accel=[-9,-25,1026] Gyro=[52,44,-28] Temp=25
+IMU32G(ID=1) Timestamp=10855 Accel=[59,-39,1014] Gyro=[-19,-17,-4] Temp=26
+BARO07(ID=0) Timestamp=10855 Pressure=88291 Temp=22.26
+BARO11(ID=1) Timestamp=10855 Pressure=88370 Temp=22.86
+MAG Timestamp=10855 Mag=[0,0,0]
+GPS Timestamp=10855 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,54,,*59
+
+IMU16G(ID=0) Timestamp=10891 Accel=[-11,-25,1026] Gyro=[34,27,-72] Temp=24
+IMU32G(ID=1) Timestamp=10891 Accel=[61,-44,1015] Gyro=[16,62,31] Temp=26
+BARO07(ID=0) Timestamp=10891 Pressure=88300 Temp=22.26
+BARO11(ID=1) Timestamp=10891 Pressure=88363 Temp=22.86
+MAG Timestamp=10891 Mag=[0,0,0]
+GPS Timestamp=10891 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10905 Accel=[-10,-26,1026] Gyro=[-62,1,-28] Temp=24
+IMU32G(ID=1) Timestamp=10905 Accel=[58,-41,1013] Gyro=[69,18,31] Temp=26
+BARO07(ID=0) Timestamp=10905 Pressure=88309 Temp=22.24
+BARO11(ID=1) Timestamp=10905 Pressure=88369 Temp=22.84
+MAG Timestamp=10905 Mag=[0,0,0]
+GPS Timestamp=10906 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10922 Accel=[-9,-21,1028] Gyro=[-1,-52,15] Temp=24
+IMU32G(ID=1) Timestamp=10922 Accel=[55,-42,1012] Gyro=[7,27,93] Temp=26
+BARO11(ID=1) Timestamp=10958 Pressure=88357 Temp=22.84
+MAG Timestamp=10958 Mag=[0,0,0]
+GPS Timestamp=10958 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10959 Accel=[-13,-22,1025] Gyro=[17,36,50] Temp=25
+IMU32G(ID=1) Timestamp=10959 Accel=[59,-41,1015] Gyro=[16,35,-21] Temp=26
+BARO07(ID=0) Timestamp=10959 Pressure=88340 Temp=22.29
+BARO11(ID=1) Timestamp=10959 Pressure=88374 Temp=22.88
+MAG Timestamp=10959 Mag=[0,0,0]
+GPS Timestamp=10959 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10960 Accel=[-12,-24,1025] Gyro=[87,-34,24] Temp=24
+IMU32G(ID=1) Timestamp=10960 Accel=[60,-42,1016] Gyro=[-1,27,14] Temp=26
+BARO07(ID=0) Timestamp=10960 Pressure=88284 Temp=22.27
+BARO11(ID=1) Timestamp=10960 Pressure=88356 Temp=22.85
+MAG Timestamp=10960 Mag=[0,0,0]
+GPS Timestamp=10960 Chunks=6 Sentence=$GNGGA,12351,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=10996 Accel=[-7,-19,1025] Gyro=[-27,27,-46] Temp=24
+IMU32G(ID=1) Timestamp=10996 Accel=[52,-41,1016] Gyro=[-63,-52,-30] Temp=26
+BARO07(ID=0) Timestamp=10996 Pressure=88283 Temp=22.27
+BARO11(ID=1) Timestamp=10996 Pressure=88360 Temp=22.83
+MAG Timestamp=10997 Mag=[0,0,0]
+GPS Timestamp=10997 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11001 Accel=[-9,-24,1025] Gyro=[-36,36,-11] Temp=24
+IMU32G(ID=1) Timestamp=11002 Accel=[58,-41,1014] Gyro=[-106,-87,-65] Temp=26
+BARO07(ID=0) Timestamp=11002 Pressure=88296 Temp=22.26
+BARO11(ID=1) Timestamp=11002 Pressure=88365 Temp=22.84
+MAG Timestamp=11002 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=11058 Accel=[-13,-25,1027] Gyro=[17,44,33] Temp=24
+IMU32G(ID=1) Timestamp=11058 Accel=[60,-41,1016] Gyro=[51,18,-56] Temp=26
+BARO07(ID=0) Timestamp=11058 Pressure=88313 Temp=22.24
+BARO11(ID=1) Timestamp=11058 Pressure=88340 Temp=22.83
+MAG Timestamp=11059 Mag=[0,0,0]
+GPS Timestamp=11059 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11059 Accel=[-11,-22,1025] Gyro=[8,18,-37] Temp=24
+IMU32G(ID=1) Timestamp=11059 Accel=[55,-43,1014] Gyro=[-10,-61,-65] Temp=26
+BARO07(ID=0) Timestamp=11059 Pressure=88294 Temp=22.25
+BARO11(ID=1) Timestamp=11059 Pressure=88341 Temp=22.85
+GPS Timestamp=11059 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11076 Accel=[-8,-24,1024] Gyro=[52,88,-2] Temp=24
+IMU32G(ID=1) Timestamp=11076 Accel=[61,-43,1016] Gyro=[69,0,-21] Temp=26
+BARO07(ID=0) Timestamp=11076 Pressure=88303 Temp=22.28
+BARO11(ID=1) Timestamp=11076 Pressure=88357 Temp=22.86
+GPS Timestamp=11112 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11113 Accel=[-10,-23,1026] Gyro=[-45,-26,-55] Temp=24
+IMU32G(ID=1) Timestamp=11113 Accel=[57,-40,1016] Gyro=[-10,0,-39] Temp=26
+BARO07(ID=0) Timestamp=11113 Pressure=88302 Temp=22.25
+BARO11(ID=1) Timestamp=11113 Pressure=88356 Temp=22.85
+MAG Timestamp=11113 Mag=[0,0,0]
+GPS Timestamp=11113 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11114 Accel=[-14,-22,1025] Gyro=[-36,18,-11] Temp=24
+IMU32G(ID=1) Timestamp=11114 Accel=[55,-42,1015] Gyro=[69,35,-21] Temp=26
+BARO07(ID=0) Timestamp=11114 Pressure=88312 Temp=22.26
+BARO11(ID=1) Timestamp=11114 Pressure=88359 Temp=22.84
+MAG Timestamp=11114 Mag=[0,0,0]
+GPS Timestamp=11114 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E5.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11151 Accel=[-10,-23,1023] Gyro=[-18,62,-11] Temp=24
+IMU32G(ID=1) Timestamp=11151 Accel=[60,-39,1016] Gyro=[42,35,-21] Temp=26
+BARO07(ID=0) Timestamp=11151 Pressure=88276 Temp=22.25
+BARO11(ID=1) Timestamp=11152 Pressure=88349 Temp=22.86
+MAG Timestamp=11152 Mag=[0,0,0]
+GPS Timestamp=11152 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11153 Accel=[-10,-24,1023] Gyro=[25,-26,7] Temp=24
+IMU32G(ID=1) Timestamp=11153 Accel=[59,-41,1014] Gyro=[77,44,-48] Temp=26
+BARO07(ID=0) Timestamp=11153 Pressure=88300 Temp=22.26
+BARO11(ID=1) Timestamp=11153 Pressure=88359 Temp=22.88
+MAG Timestamp=11153 Mag=[0,0,0]
+GPS Timestamp=11154 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11170 Accel=[-13,-21,1023] Gyro=[25,-26,-2] Temp=24
+BARO07(ID=0) Timestamp=11206 Pressure=88300 Temp=22.26
+BARO11(ID=1) Timestamp=11206 Pressure=88355 Temp=22.85
+MAG Timestamp=11206 Mag=[0,0,0]
+GPS Timestamp=11206 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11207 Accel=[-9,-26,1026] Gyro=[-18,1,59] Temp=24
+IMU32G(ID=1) Timestamp=11207 Accel=[59,-38,1017] Gyro=[16,27,5] Temp=26
+BARO07(ID=0) Timestamp=11207 Pressure=88286 Temp=22.28
+BARO11(ID=1) Timestamp=11207 Pressure=88355 Temp=22.88
+MAG Timestamp=11207 Mag=[0,0,0]
+GPS Timestamp=11207 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11211 Accel=[-10,-25,1023] Gyro=[95,27,120] Temp=24
+IMU32G(ID=1) Timestamp=11211 Accel=[61,-36,1014] Gyro=[-238,-140,66] Temp=26
+BARO07(ID=0) Timestamp=11211 Pressure=88302 Temp=22.27
+BARO11(ID=1) Timestamp=11211 Pressure=88362 Temp=22.85
+MAG Timestamp=11211 Mag=[0,0,0]
+GPS Timestamp=11207 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+9,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11247 Accel=[-10,-24,1024] Gyro=[-10,62,15] Temp=24
+IMU32G(ID=1) Timestamp=11247 Accel=[57,-41,1018] Gyro=[-63,18,14] Temp=26
+BARO07(ID=0) Timestamp=11247 Pressure=88304 Temp=22.26
+BARO11(ID=1) Timestamp=11247 Pressure=88346 Temp=22.85
+MAG Timestamp=11247 Mag=[0,0,0]
+GPS Timestamp=11247 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11261 Accel=[-8,-23,1028] Gyro=[-18,-26,33] Temp=24
+IMU32G(ID=1) Timestamp=11261 Accel=[57,-41,1016] Gyro=[7,27,22] Temp=26
+BARO07(ID=0) Timestamp=11261 Pressure=88327 Temp=22.26
+BARO11(ID=1) Timestamp=11261 Pressure=88361 Temp=22.84
+MAG Timestamp=11261 Mag=[0,0,0]
+GPS Timestamp=11262 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,54,,*59
+
+IMU16G(ID=0) Timestamp=11297 Accel=[-9,-25,1028] Gyro=[-18,88,68] Temp=25
+IMU32G(ID=1) Timestamp=11297 Accel=[61,-41,1017] Gyro=[-133,-43,5] Temp=26
+BARO07(ID=0) Timestamp=11297 Pressure=88305 Temp=22.29
+BARO11(ID=1) Timestamp=11297 Pressure=88362 Temp=22.85
+MAG Timestamp=11297 Mag=[0,0,0]
+GPS Timestamp=11298 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11299 Accel=[-12,-23,1026] Gyro=[-27,27,24] Temp=24
+IMU32G(ID=1) Timestamp=11299 Accel=[58,-45,1017] Gyro=[-194,-87,5] Temp=26
+BARO07(ID=0) Timestamp=11299 Pressure=88302 Temp=22.27
+BARO11(ID=1) Timestamp=11299 Pressure=88352 Temp=22.86
+MAG Timestamp=11299 Mag=[0,0,0]
+GPS Timestamp=11299 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11316 Accel=[-10,-22,1025] Gyro=[-71,9,-20] Temp=24
+IMU32G(ID=1) Timestamp=11316 Accel=[55,-44,1014] Gyro=[16,27,31] Temp=26
+BARO11(ID=1) Timestamp=11352 Pressure=88373 Temp=22.86
+MAG Timestamp=11352 Mag=[0,0,0]
+GPS Timestamp=11352 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11353 Accel=[-10,-24,1025] Gyro=[-10,-26,-11] Temp=24
+IMU32G(ID=1) Timestamp=11353 Accel=[56,-39,1017] Gyro=[226,149,-4] Temp=26
+BARO07(ID=0) Timestamp=11353 Pressure=88314 Temp=22.29
+BARO11(ID=1) Timestamp=11353 Pressure=88361 Temp=22.85
+MAG Timestamp=11353 Mag=[0,0,0]
+GPS Timestamp=11353 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11358 Accel=[-12,-22,1025] Gyro=[52,53,7] Temp=24
+IMU32G(ID=1) Timestamp=11358 Accel=[57,-44,1015] Gyro=[-194,-87,-21] Temp=26
+BARO07(ID=0) Timestamp=11359 Pressure=88304 Temp=22.26
+BARO11(ID=1) Timestamp=11359 Pressure=88364 Temp=22.85
+MAG Timestamp=11359 Mag=[0,0,0]
+GPS Timestamp=11359 Chunks=6 Sentence=$GNGGA,12351,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11394 Accel=[-9,-25,1026] Gyro=[-18,18,-28] Temp=24
+IMU32G(ID=1) Timestamp=11394 Accel=[57,-43,1016] Gyro=[-19,0,-39] Temp=26
+BARO07(ID=0) Timestamp=11394 Pressure=88302 Temp=22.27
+BARO11(ID=1) Timestamp=11394 Pressure=88376 Temp=22.86
+MAG Timestamp=11394 Mag=[0,0,0]
+GPS Timestamp=11394 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11408 Accel=[-10,-22,1027] Gyro=[-1,-8,-11] Temp=24
+IMU32G(ID=1) Timestamp=11408 Accel=[58,-44,1014] Gyro=[-19,-35,5] Temp=26
+BARO07(ID=0) Timestamp=11408 Pressure=88294 Temp=22.27
+BARO11(ID=1) Timestamp=11408 Pressure=88366 Temp=22.86
+MAG Timestamp=11408 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=11470 Accel=[-9,-25,1023] Gyro=[52,18,85] Temp=24
+IMU32G(ID=1) Timestamp=11470 Accel=[54,-41,1018] Gyro=[-220,-114,14] Temp=26
+BARO07(ID=0) Timestamp=11470 Pressure=88290 Temp=22.25
+BARO11(ID=1) Timestamp=11470 Pressure=88353 Temp=22.86
+MAG Timestamp=11471 Mag=[0,0,0]
+GPS Timestamp=11471 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11471 Accel=[-12,-22,1025] Gyro=[95,88,24] Temp=24
+IMU32G(ID=1) Timestamp=11471 Accel=[57,-42,1017] Gyro=[42,27,-21] Temp=26
+BARO07(ID=0) Timestamp=11471 Pressure=88297 Temp=22.27
+BARO11(ID=1) Timestamp=11471 Pressure=88356 Temp=22.85
+GPS Timestamp=11471 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11488 Accel=[-9,-22,1025] Gyro=[-88,-8,-55] Temp=24
+IMU32G(ID=1) Timestamp=11488 Accel=[57,-39,1017] Gyro=[156,27,-30] Temp=26
+BARO07(ID=0) Timestamp=11488 Pressure=88307 Temp=22.25
+BARO11(ID=1) Timestamp=11488 Pressure=88368 Temp=22.87
+GPS Timestamp=11524 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11525 Accel=[-12,-24,1027] Gyro=[69,-17,-72] Temp=24
+IMU32G(ID=1) Timestamp=11525 Accel=[61,-42,1017] Gyro=[-36,9,-83] Temp=26
+BARO07(ID=0) Timestamp=11525 Pressure=88279 Temp=22.27
+BARO11(ID=1) Timestamp=11525 Pressure=88355 Temp=22.86
+MAG Timestamp=11525 Mag=[0,0,0]
+GPS Timestamp=11525 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11526 Accel=[-8,-23,1024] Gyro=[-18,-17,-55] Temp=24
+IMU32G(ID=1) Timestamp=11526 Accel=[55,-41,1015] Gyro=[-36,-26,-39] Temp=26
+BARO07(ID=0) Timestamp=11526 Pressure=88305 Temp=22.27
+BARO11(ID=1) Timestamp=11526 Pressure=88356 Temp=22.85
+MAG Timestamp=11526 Mag=[0,0,0]
+GPS Timestamp=11526 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E5.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11564 Accel=[-13,-24,1023] Gyro=[-71,-43,68] Temp=24
+IMU32G(ID=1) Timestamp=11564 Accel=[64,-42,1016] Gyro=[-36,-35,-30] Temp=26
+BARO07(ID=0) Timestamp=11564 Pressure=88295 Temp=22.26
+BARO11(ID=1) Timestamp=11564 Pressure=88370 Temp=22.88
+MAG Timestamp=11564 Mag=[0,0,0]
+GPS Timestamp=11564 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11564 Accel=[-10,-25,1028] Gyro=[-53,1,-46] Temp=24
+IMU32G(ID=1) Timestamp=11564 Accel=[59,-42,1016] Gyro=[-1,-43,-48] Temp=26
+BARO07(ID=0) Timestamp=11565 Pressure=88296 Temp=22.26
+BARO11(ID=1) Timestamp=11565 Pressure=88374 Temp=22.86
+MAG Timestamp=11565 Mag=[0,0,0]
+GPS Timestamp=11565 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11582 Accel=[-7,-20,1024] Gyro=[17,1,-2] Temp=25
+BARO07(ID=0) Timestamp=11618 Pressure=88319 Temp=22.27
+BARO11(ID=1) Timestamp=11618 Pressure=88371 Temp=22.87
+MAG Timestamp=11618 Mag=[0,0,0]
+GPS Timestamp=11618 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11619 Accel=[-9,-24,1024] Gyro=[-36,53,24] Temp=24
+IMU32G(ID=1) Timestamp=11619 Accel=[56,-42,1014] Gyro=[165,88,-74] Temp=26
+BARO07(ID=0) Timestamp=11619 Pressure=88275 Temp=22.25
+BARO11(ID=1) Timestamp=11619 Pressure=88342 Temp=22.86
+MAG Timestamp=11619 Mag=[0,0,0]
+GPS Timestamp=11620 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11620 Accel=[-12,-27,1028] Gyro=[8,71,59] Temp=24
+IMU32G(ID=1) Timestamp=11620 Accel=[61,-44,1018] Gyro=[-54,-43,14] Temp=26
+BARO07(ID=0) Timestamp=11620 Pressure=88297 Temp=22.27
+BARO11(ID=1) Timestamp=11620 Pressure=88370 Temp=22.88
+MAG Timestamp=11620 Mag=[0,0,0]
+GPS Timestamp=11620 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+9,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11656 Accel=[-7,-22,1024] Gyro=[-1,36,50] Temp=24
+IMU32G(ID=1) Timestamp=11656 Accel=[58,-42,1016] Gyro=[-54,44,22] Temp=26
+BARO07(ID=0) Timestamp=11656 Pressure=88294 Temp=22.27
+BARO11(ID=1) Timestamp=11657 Pressure=88359 Temp=22.87
+MAG Timestamp=11657 Mag=[0,0,0]
+GPS Timestamp=11657 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11660 Accel=[-7,-22,1026] Gyro=[87,36,24] Temp=24
+IMU32G(ID=1) Timestamp=11660 Accel=[59,-41,1017] Gyro=[-54,-26,31] Temp=26
+BARO07(ID=0) Timestamp=11660 Pressure=88310 Temp=22.27
+BARO11(ID=1) Timestamp=11660 Pressure=88358 Temp=22.85
+MAG Timestamp=11660 Mag=[0,0,0]
+GPS Timestamp=11660 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,54,,*59
+
+IMU16G(ID=0) Timestamp=11696 Accel=[-9,-24,1024] Gyro=[43,9,-11] Temp=24
+IMU32G(ID=1) Timestamp=11696 Accel=[58,-43,1015] Gyro=[95,53,57] Temp=26
+BARO07(ID=0) Timestamp=11696 Pressure=88318 Temp=22.26
+BARO11(ID=1) Timestamp=11696 Pressure=88353 Temp=22.85
+MAG Timestamp=11696 Mag=[0,0,0]
+GPS Timestamp=11696 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11710 Accel=[-10,-22,1027] Gyro=[52,18,7] Temp=24
+IMU32G(ID=1) Timestamp=11710 Accel=[58,-43,1013] Gyro=[-115,9,-30] Temp=26
+BARO07(ID=0) Timestamp=11710 Pressure=88282 Temp=22.28
+BARO11(ID=1) Timestamp=11710 Pressure=88349 Temp=22.86
+MAG Timestamp=11710 Mag=[0,0,0]
+GPS Timestamp=11711 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11727 Accel=[-5,-22,1025] Gyro=[-10,36,-2] Temp=24
+IMU32G(ID=1) Timestamp=11727 Accel=[59,-42,1015] Gyro=[147,27,-39] Temp=26
+BARO11(ID=1) Timestamp=11763 Pressure=88360 Temp=22.86
+MAG Timestamp=11763 Mag=[0,0,0]
+GPS Timestamp=11763 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11764 Accel=[-10,-25,1027] Gyro=[-36,9,33] Temp=24
+IMU32G(ID=1) Timestamp=11764 Accel=[62,-45,1015] Gyro=[165,97,-100] Temp=26
+BARO07(ID=0) Timestamp=11764 Pressure=88261 Temp=22.27
+BARO11(ID=1) Timestamp=11764 Pressure=88354 Temp=22.86
+MAG Timestamp=11764 Mag=[0,0,0]
+GPS Timestamp=11764 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11765 Accel=[-8,-24,1023] Gyro=[-45,1,-2] Temp=24
+IMU32G(ID=1) Timestamp=11765 Accel=[58,-41,1017] Gyro=[139,97,-56] Temp=26
+BARO07(ID=0) Timestamp=11765 Pressure=88316 Temp=22.28
+BARO11(ID=1) Timestamp=11765 Pressure=88366 Temp=22.87
+MAG Timestamp=11765 Mag=[0,0,0]
+GPS Timestamp=11765 Chunks=6 Sentence=$GNGGA,12351,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11801 Accel=[-9,-25,1027] Gyro=[-18,-34,-11] Temp=25
+IMU32G(ID=1) Timestamp=11801 Accel=[60,-41,1016] Gyro=[-45,-52,5] Temp=26
+BARO07(ID=0) Timestamp=11801 Pressure=88298 Temp=22.25
+BARO11(ID=1) Timestamp=11801 Pressure=88356 Temp=22.87
+MAG Timestamp=11802 Mag=[0,0,0]
+GPS Timestamp=11802 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11807 Accel=[-9,-23,1024] Gyro=[43,18,77] Temp=25
+IMU32G(ID=1) Timestamp=11807 Accel=[59,-41,1017] Gyro=[51,44,22] Temp=26
+BARO07(ID=0) Timestamp=11807 Pressure=88310 Temp=22.27
+BARO11(ID=1) Timestamp=11807 Pressure=88357 Temp=22.84
+MAG Timestamp=11807 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=11871 Accel=[-9,-21,1025] Gyro=[78,36,24] Temp=24
+IMU32G(ID=1) Timestamp=11871 Accel=[59,-43,1014] Gyro=[7,9,-21] Temp=26
+BARO07(ID=0) Timestamp=11871 Pressure=88294 Temp=22.27
+BARO11(ID=1) Timestamp=11872 Pressure=88348 Temp=22.87
+MAG Timestamp=11872 Mag=[0,0,0]
+GPS Timestamp=11872 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11872 Accel=[-9,-21,1025] Gyro=[25,53,42] Temp=24
+IMU32G(ID=1) Timestamp=11872 Accel=[59,-42,1018] Gyro=[-290,-131,5] Temp=26
+BARO07(ID=0) Timestamp=11872 Pressure=88285 Temp=22.28
+BARO11(ID=1) Timestamp=11872 Pressure=88353 Temp=22.87
+IMU16G(ID=0) Timestamp=11888 Accel=[-9,-23,1025] Gyro=[-45,-78,-20] Temp=24
+IMU32G(ID=1) Timestamp=11888 Accel=[60,-40,1017] Gyro=[-54,-26,40] Temp=26
+BARO07(ID=0) Timestamp=11888 Pressure=88314 Temp=22.29
+BARO11(ID=1) Timestamp=11888 Pressure=88362 Temp=22.85
+MAG Timestamp=11889 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=11924 Accel=[-9,-20,1027] Gyro=[-71,18,-46] Temp=25
+IMU32G(ID=1) Timestamp=11925 Accel=[58,-42,1015] Gyro=[-124,-43,-30] Temp=26
+BARO07(ID=0) Timestamp=11925 Pressure=88310 Temp=22.27
+BARO11(ID=1) Timestamp=11925 Pressure=88350 Temp=22.88
+MAG Timestamp=11925 Mag=[0,0,0]
+GPS Timestamp=11925 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11925 Accel=[-9,-22,1024] Gyro=[69,18,24] Temp=25
+IMU32G(ID=1) Timestamp=11925 Accel=[58,-40,1016] Gyro=[-10,18,-74] Temp=26
+BARO07(ID=0) Timestamp=11926 Pressure=88306 Temp=22.24
+BARO11(ID=1) Timestamp=11926 Pressure=88360 Temp=22.86
+MAG Timestamp=11926 Mag=[0,0,0]
+GPS Timestamp=11926 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11943 Accel=[-9,-22,1025] Gyro=[-1,44,-20] Temp=24
+IMU32G(ID=1) Timestamp=11943 Accel=[61,-41,1017] Gyro=[51,35,-74] Temp=26
+BARO07(ID=0) Timestamp=11943 Pressure=88288 Temp=22.27
+MAG Timestamp=11979 Mag=[0,0,0]
+GPS Timestamp=11979 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11980 Accel=[-10,-23,1025] Gyro=[-18,-17,-63] Temp=24
+IMU32G(ID=1) Timestamp=11980 Accel=[58,-41,1016] Gyro=[-80,-26,-118] Temp=26
+BARO07(ID=0) Timestamp=11980 Pressure=88281 Temp=22.28
+BARO11(ID=1) Timestamp=11980 Pressure=88360 Temp=22.86
+MAG Timestamp=11980 Mag=[0,0,0]
+GPS Timestamp=11980 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=11981 Accel=[-11,-22,1023] Gyro=[60,36,-63] Temp=24
+IMU32G(ID=1) Timestamp=11981 Accel=[56,-45,1015] Gyro=[-36,-8,-100] Temp=26
+BARO07(ID=0) Timestamp=11981 Pressure=88305 Temp=22.31
+BARO11(ID=1) Timestamp=11981 Pressure=88342 Temp=22.87
+MAG Timestamp=11981 Mag=[0,0,0]
+GPS Timestamp=11981 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12017 Accel=[-11,-25,1024] Gyro=[34,9,-98] Temp=25
+IMU32G(ID=1) Timestamp=12017 Accel=[60,-43,1017] Gyro=[-36,-52,-153] Temp=26
+BARO07(ID=0) Timestamp=12017 Pressure=88310 Temp=22.27
+BARO11(ID=1) Timestamp=12017 Pressure=88364 Temp=22.88
+MAG Timestamp=12018 Mag=[0,0,0]
+GPS Timestamp=12018 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12020 Accel=[-10,-25,1023] Gyro=[-88,-17,-81] Temp=24
+IMU32G(ID=1) Timestamp=12020 Accel=[59,-43,1017] Gyro=[-238,-184,-100] Temp=26
+BARO07(ID=0) Timestamp=12020 Pressure=88273 Temp=22.26
+BARO11(ID=1) Timestamp=12020 Pressure=88360 Temp=22.87
+MAG Timestamp=12020 Mag=[0,0,0]
+GPS Timestamp=12020 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU32G(ID=1) Timestamp=12072 Accel=[62,-40,1015] Gyro=[7,35,-91] Temp=26
+BARO07(ID=0) Timestamp=12072 Pressure=88282 Temp=22.26
+BARO11(ID=1) Timestamp=12072 Pressure=88359 Temp=22.87
+MAG Timestamp=12073 Mag=[0,0,0]
+GPS Timestamp=12073 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12073 Accel=[-8,-23,1025] Gyro=[-71,-34,-81] Temp=24
+IMU32G(ID=1) Timestamp=12073 Accel=[59,-41,1018] Gyro=[104,44,-48] Temp=26
+BARO07(ID=0) Timestamp=12073 Pressure=88301 Temp=22.27
+BARO11(ID=1) Timestamp=12073 Pressure=88344 Temp=22.86
+MAG Timestamp=12073 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=12087 Accel=[-10,-25,1024] Gyro=[-106,-78,-46] Temp=24
+IMU32G(ID=1) Timestamp=12087 Accel=[61,-43,1014] Gyro=[139,114,-109] Temp=26
+BARO07(ID=0) Timestamp=12087 Pressure=88296 Temp=22.27
+BARO11(ID=1) Timestamp=12087 Pressure=88343 Temp=22.85
+MAG Timestamp=12088 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=12123 Accel=[-11,-23,1024] Gyro=[17,36,33] Temp=24
+IMU32G(ID=1) Timestamp=12123 Accel=[61,-41,1014] Gyro=[-45,-26,-21] Temp=26
+BARO07(ID=0) Timestamp=12123 Pressure=88301 Temp=22.27
+BARO11(ID=1) Timestamp=12123 Pressure=88352 Temp=22.86
+MAG Timestamp=12123 Mag=[0,0,0]
+GPS Timestamp=12124 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12125 Accel=[-11,-24,1028] Gyro=[-1,44,59] Temp=24
+IMU32G(ID=1) Timestamp=12125 Accel=[60,-43,1013] Gyro=[7,-17,-30] Temp=26
+BARO07(ID=0) Timestamp=12125 Pressure=88318 Temp=22.26
+BARO11(ID=1) Timestamp=12125 Pressure=88362 Temp=22.85
+MAG Timestamp=12125 Mag=[0,0,0]
+GPS Timestamp=12125 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12141 Accel=[-7,-21,1024] Gyro=[-80,27,24] Temp=24
+IMU32G(ID=1) Timestamp=12141 Accel=[56,-41,1015] Gyro=[-54,-70,-21] Temp=26
+BARO07(ID=0) Timestamp=12141 Pressure=88296 Temp=22.26
+MAG Timestamp=12177 Mag=[0,0,0]
+GPS Timestamp=12177 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12178 Accel=[-11,-24,1023] Gyro=[-71,-8,24] Temp=24
+IMU32G(ID=1) Timestamp=12178 Accel=[57,-41,1015] Gyro=[7,-8,-48] Temp=26
+BARO07(ID=0) Timestamp=12178 Pressure=88294 Temp=22.28
+BARO11(ID=1) Timestamp=12178 Pressure=88366 Temp=22.86
+MAG Timestamp=12178 Mag=[0,0,0]
+GPS Timestamp=12178 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12182 Accel=[-10,-24,1024] Gyro=[52,9,33] Temp=24
+IMU32G(ID=1) Timestamp=12182 Accel=[58,-41,1017] Gyro=[51,27,-74] Temp=26
+BARO07(ID=0) Timestamp=12182 Pressure=88311 Temp=22.27
+BARO11(ID=1) Timestamp=12182 Pressure=88348 Temp=22.87
+MAG Timestamp=12182 Mag=[0,0,0]
+GPS Timestamp=12182 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12218 Accel=[-10,-25,1025] Gyro=[-18,18,15] Temp=25
+IMU32G(ID=1) Timestamp=12218 Accel=[59,-41,1015] Gyro=[174,44,-21] Temp=26
+BARO07(ID=0) Timestamp=12218 Pressure=88306 Temp=22.29
+BARO11(ID=1) Timestamp=12218 Pressure=88366 Temp=22.89
+MAG Timestamp=12218 Mag=[0,0,0]
+GPS Timestamp=12218 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12232 Accel=[-10,-23,1022] Gyro=[-45,1,7] Temp=24
+IMU32G(ID=1) Timestamp=12232 Accel=[60,-46,1017] Gyro=[16,0,-65] Temp=26
+BARO07(ID=0) Timestamp=12232 Pressure=88309 Temp=22.26
+BARO11(ID=1) Timestamp=12232 Pressure=88368 Temp=22.86
+MAG Timestamp=12233 Mag=[0,0,0]
+GPS Timestamp=12233 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU32G(ID=1) Timestamp=12309 Accel=[58,-43,1015] Gyro=[104,53,14] Temp=26
+BARO07(ID=0) Timestamp=12309 Pressure=88298 Temp=22.25
+BARO11(ID=1) Timestamp=12309 Pressure=88357 Temp=22.87
+MAG Timestamp=12309 Mag=[0,0,0]
+GPS Timestamp=12310 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12310 Accel=[-10,-23,1026] Gyro=[60,27,-63] Temp=24
+IMU32G(ID=1) Timestamp=12310 Accel=[57,-41,1015] Gyro=[77,35,-83] Temp=26
+BARO07(ID=0) Timestamp=12310 Pressure=88329 Temp=22.29
+BARO11(ID=1) Timestamp=12310 Pressure=88356 Temp=22.85
+MAG Timestamp=12311 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=12311 Accel=[-7,-27,1025] Gyro=[-27,1,33] Temp=24
+IMU32G(ID=1) Timestamp=12311 Accel=[60,-42,1013] Gyro=[77,62,-56] Temp=26
+BARO07(ID=0) Timestamp=12311 Pressure=88307 Temp=22.27
+BARO11(ID=1) Timestamp=12311 Pressure=88350 Temp=22.85
+MAG Timestamp=12311 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=12347 Accel=[-10,-23,1028] Gyro=[-10,79,-11] Temp=25
+IMU32G(ID=1) Timestamp=12348 Accel=[58,-42,1015] Gyro=[42,9,5] Temp=26
+BARO07(ID=0) Timestamp=12348 Pressure=88287 Temp=22.26
+BARO11(ID=1) Timestamp=12348 Pressure=88371 Temp=22.86
+MAG Timestamp=12348 Mag=[0,0,0]
+GPS Timestamp=12348 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12348 Accel=[-12,-23,1026] Gyro=[17,36,-11] Temp=24
+IMU32G(ID=1) Timestamp=12348 Accel=[59,-40,1015] Gyro=[-45,-43,31] Temp=26
+BARO07(ID=0) Timestamp=12349 Pressure=88306 Temp=22.24
+BARO11(ID=1) Timestamp=12349 Pressure=88362 Temp=22.88
+MAG Timestamp=12349 Mag=[0,0,0]
+GPS Timestamp=12349 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12366 Accel=[-8,-24,1025] Gyro=[8,-43,15] Temp=24
+IMU32G(ID=1) Timestamp=12366 Accel=[61,-40,1016] Gyro=[-124,-52,-48] Temp=26
+BARO07(ID=0) Timestamp=12366 Pressure=88311 Temp=22.23
+MAG Timestamp=12402 Mag=[0,0,0]
+GPS Timestamp=12402 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12403 Accel=[-12,-20,1025] Gyro=[87,9,94] Temp=24
+IMU32G(ID=1) Timestamp=12403 Accel=[59,-45,1017] Gyro=[16,27,14] Temp=26
+BARO07(ID=0) Timestamp=12403 Pressure=88319 Temp=22.27
+BARO11(ID=1) Timestamp=12403 Pressure=88351 Temp=22.84
+MAG Timestamp=12403 Mag=[0,0,0]
+GPS Timestamp=12403 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12404 Accel=[-11,-22,1025] Gyro=[8,-17,15] Temp=24
+IMU32G(ID=1) Timestamp=12404 Accel=[57,-42,1016] Gyro=[147,44,-56] Temp=26
+BARO07(ID=0) Timestamp=12404 Pressure=88303 Temp=22.32
+BARO11(ID=1) Timestamp=12404 Pressure=88365 Temp=22.88
+MAG Timestamp=12404 Mag=[0,0,0]
+GPS Timestamp=12404 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12441 Accel=[-10,-24,1026] Gyro=[-1,-17,-20] Temp=24
+IMU32G(ID=1) Timestamp=12441 Accel=[60,-41,1017] Gyro=[-80,-17,-30] Temp=26
+BARO07(ID=0) Timestamp=12441 Pressure=88319 Temp=22.29
+BARO11(ID=1) Timestamp=12441 Pressure=88350 Temp=22.87
+MAG Timestamp=12441 Mag=[0,0,0]
+GPS Timestamp=12441 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12441 Accel=[-8,-24,1025] Gyro=[-53,18,7] Temp=24
+IMU32G(ID=1) Timestamp=12441 Accel=[62,-41,1016] Gyro=[95,18,-30] Temp=26
+BARO07(ID=0) Timestamp=12441 Pressure=88295 Temp=22.24
+BARO11(ID=1) Timestamp=12442 Pressure=88349 Temp=22.88
+MAG Timestamp=12442 Mag=[0,0,0]
+GPS Timestamp=12442 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU32G(ID=1) Timestamp=12494 Accel=[59,-41,1014] Gyro=[-133,-87,31] Temp=26
+BARO07(ID=0) Timestamp=12494 Pressure=88300 Temp=22.28
+BARO11(ID=1) Timestamp=12494 Pressure=88357 Temp=22.87
+MAG Timestamp=12495 Mag=[0,0,0]
+GPS Timestamp=12495 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12495 Accel=[-10,-24,1024] Gyro=[60,27,24] Temp=25
+IMU32G(ID=1) Timestamp=12495 Accel=[56,-45,1017] Gyro=[-71,-26,22] Temp=26
+BARO07(ID=0) Timestamp=12495 Pressure=88323 Temp=22.29
+BARO11(ID=1) Timestamp=12495 Pressure=88353 Temp=22.87
+MAG Timestamp=12495 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=12509 Accel=[-10,-25,1025] Gyro=[-53,9,-20] Temp=24
+IMU32G(ID=1) Timestamp=12509 Accel=[59,-43,1014] Gyro=[104,-8,-39] Temp=26
+BARO07(ID=0) Timestamp=12509 Pressure=88295 Temp=22.28
+BARO11(ID=1) Timestamp=12509 Pressure=88365 Temp=22.87
+MAG Timestamp=12509 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=12545 Accel=[-14,-24,1024] Gyro=[-106,-43,-46] Temp=24
+IMU32G(ID=1) Timestamp=12546 Accel=[60,-41,1016] Gyro=[34,53,14] Temp=26
+BARO07(ID=0) Timestamp=12546 Pressure=88279 Temp=22.24
+BARO11(ID=1) Timestamp=12546 Pressure=88370 Temp=22.86
+MAG Timestamp=12546 Mag=[0,0,0]
+GPS Timestamp=12546 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12546 Accel=[-12,-21,1023] Gyro=[-1,27,7] Temp=24
+IMU32G(ID=1) Timestamp=12546 Accel=[58,-42,1014] Gyro=[86,35,-39] Temp=26
+BARO07(ID=0) Timestamp=12547 Pressure=88297 Temp=22.27
+BARO11(ID=1) Timestamp=12547 Pressure=88365 Temp=22.87
+MAG Timestamp=12547 Mag=[0,0,0]
+GPS Timestamp=12547 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12564 Accel=[-11,-25,1023] Gyro=[-80,-52,-11] Temp=24
+IMU32G(ID=1) Timestamp=12564 Accel=[59,-42,1016] Gyro=[165,123,-30] Temp=26
+BARO07(ID=0) Timestamp=12564 Pressure=88294 Temp=22.30
+MAG Timestamp=12600 Mag=[0,0,0]
+GPS Timestamp=12600 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12601 Accel=[-8,-24,1024] Gyro=[-88,-131,15] Temp=24
+IMU32G(ID=1) Timestamp=12601 Accel=[61,-41,1016] Gyro=[-10,-8,-30] Temp=26
+BARO07(ID=0) Timestamp=12601 Pressure=88331 Temp=22.29
+BARO11(ID=1) Timestamp=12601 Pressure=88353 Temp=22.87
+MAG Timestamp=12601 Mag=[0,0,0]
+GPS Timestamp=12601 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12602 Accel=[-8,-22,1014] Gyro=[-115,-78,-37] Temp=24
+IMU32G(ID=1) Timestamp=12602 Accel=[59,-40,1008] Gyro=[7,0,-4] Temp=26
+BARO07(ID=0) Timestamp=12602 Pressure=88293 Temp=22.27
+BARO11(ID=1) Timestamp=12602 Pressure=88380 Temp=22.87
+MAG Timestamp=12602 Mag=[0,0,0]
+GPS Timestamp=12602 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12638 Accel=[-9,-25,991] Gyro=[-368,-367,59] Temp=24
+IMU32G(ID=1) Timestamp=12638 Accel=[61,-40,977] Gyro=[462,-367,-21] Temp=26
+BARO07(ID=0) Timestamp=12638 Pressure=88307 Temp=22.27
+BARO11(ID=1) Timestamp=12638 Pressure=88358 Temp=22.86
+MAG Timestamp=12639 Mag=[0,0,0]
+GPS Timestamp=12639 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12643 Accel=[-10,-19,1011] Gyro=[-176,-52,-20] Temp=25
+IMU32G(ID=1) Timestamp=12643 Accel=[55,-41,1012] Gyro=[-141,-192,-21] Temp=26
+BARO07(ID=0) Timestamp=12643 Pressure=88327 Temp=22.29
+BARO11(ID=1) Timestamp=12643 Pressure=88350 Temp=22.86
+MAG Timestamp=12643 Mag=[0,0,0]
+GPS Timestamp=12643 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU32G(ID=1) Timestamp=12717 Accel=[64,-41,1028] Gyro=[16,-79,-21] Temp=26
+BARO07(ID=0) Timestamp=12717 Pressure=88309 Temp=22.24
+BARO11(ID=1) Timestamp=12717 Pressure=88354 Temp=22.86
+MAG Timestamp=12717 Mag=[0,0,0]
+GPS Timestamp=12718 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12718 Accel=[-13,-28,1029] Gyro=[122,88,-2] Temp=24
+IMU32G(ID=1) Timestamp=12718 Accel=[68,-45,1004] Gyro=[349,97,-21] Temp=26
+BARO07(ID=0) Timestamp=12718 Pressure=88291 Temp=22.28
+BARO11(ID=1) Timestamp=12718 Pressure=88366 Temp=22.87
+MAG Timestamp=12719 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=12719 Accel=[-8,-20,1038] Gyro=[104,114,-2] Temp=24
+IMU32G(ID=1) Timestamp=12719 Accel=[55,-41,1027] Gyro=[-176,-26,-4] Temp=26
+BARO07(ID=0) Timestamp=12719 Pressure=88279 Temp=22.27
+BARO11(ID=1) Timestamp=12719 Pressure=88352 Temp=22.86
+MAG Timestamp=12719 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=12755 Accel=[-11,-25,1042] Gyro=[183,158,-55] Temp=24
+IMU32G(ID=1) Timestamp=12756 Accel=[59,-40,1017] Gyro=[-106,-43,-56] Temp=26
+BARO07(ID=0) Timestamp=12756 Pressure=88304 Temp=22.28
+BARO11(ID=1) Timestamp=12756 Pressure=88339 Temp=22.86
+MAG Timestamp=12756 Mag=[0,0,0]
+GPS Timestamp=12756 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12756 Accel=[-13,-27,1019] Gyro=[-97,-131,-28] Temp=24
+IMU32G(ID=1) Timestamp=12756 Accel=[67,-44,1005] Gyro=[244,-61,-4] Temp=26
+BARO07(ID=0) Timestamp=12757 Pressure=88281 Temp=22.25
+BARO11(ID=1) Timestamp=12757 Pressure=88346 Temp=22.86
+MAG Timestamp=12757 Mag=[0,0,0]
+GPS Timestamp=12757 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12774 Accel=[-7,-25,1014] Gyro=[-115,-104,42] Temp=24
+IMU32G(ID=1) Timestamp=12774 Accel=[60,-43,1010] Gyro=[77,-96,-56] Temp=26
+BARO07(ID=0) Timestamp=12774 Pressure=88293 Temp=22.29
+MAG Timestamp=12810 Mag=[0,0,0]
+GPS Timestamp=12810 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12811 Accel=[-8,-17,1037] Gyro=[157,132,94] Temp=24
+IMU32G(ID=1) Timestamp=12811 Accel=[56,-37,1019] Gyro=[-194,-114,14] Temp=26
+BARO07(ID=0) Timestamp=12811 Pressure=88277 Temp=22.26
+BARO11(ID=1) Timestamp=12811 Pressure=88351 Temp=22.86
+MAG Timestamp=12811 Mag=[0,0,0]
+GPS Timestamp=12811 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12812 Accel=[-10,-24,1028] Gyro=[60,132,42] Temp=24
+IMU32G(ID=1) Timestamp=12812 Accel=[57,-42,1014] Gyro=[25,-43,-30] Temp=26
+BARO07(ID=0) Timestamp=12812 Pressure=88300 Temp=22.24
+BARO11(ID=1) Timestamp=12812 Pressure=88366 Temp=22.87
+MAG Timestamp=12812 Mag=[0,0,0]
+GPS Timestamp=12812 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12848 Accel=[-14,-24,1016] Gyro=[-71,-43,-28] Temp=24
+IMU32G(ID=1) Timestamp=12848 Accel=[61,-44,1011] Gyro=[77,-35,22] Temp=26
+BARO07(ID=0) Timestamp=12848 Pressure=88296 Temp=22.29
+BARO11(ID=1) Timestamp=12848 Pressure=88342 Temp=22.87
+MAG Timestamp=12849 Mag=[0,0,0]
+GPS Timestamp=12849 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12850 Accel=[-9,-22,1019] Gyro=[-71,-96,-20] Temp=24
+IMU32G(ID=1) Timestamp=12850 Accel=[58,-42,1013] Gyro=[261,79,-4] Temp=26
+BARO07(ID=0) Timestamp=12850 Pressure=88305 Temp=22.27
+BARO11(ID=1) Timestamp=12850 Pressure=88352 Temp=22.88
+MAG Timestamp=12850 Mag=[0,0,0]
+GPS Timestamp=12850 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU32G(ID=1) Timestamp=12902 Accel=[54,-39,1018] Gyro=[69,9,14] Temp=26
+BARO07(ID=0) Timestamp=12902 Pressure=88319 Temp=22.27
+BARO11(ID=1) Timestamp=12902 Pressure=88365 Temp=22.86
+MAG Timestamp=12903 Mag=[0,0,0]
+GPS Timestamp=12903 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12903 Accel=[-11,-25,1126] Gyro=[-158,-236,-20] Temp=25
+IMU32G(ID=1) Timestamp=12903 Accel=[66,-40,1101] Gyro=[-911,394,66] Temp=26
+BARO07(ID=0) Timestamp=12903 Pressure=88281 Temp=22.28
+BARO11(ID=1) Timestamp=12903 Pressure=88360 Temp=22.87
+MAG Timestamp=12903 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=12917 Accel=[-21,-25,1018] Gyro=[437,464,33] Temp=24
+IMU32G(ID=1) Timestamp=12917 Accel=[61,-52,1012] Gyro=[-413,263,14] Temp=26
+BARO07(ID=0) Timestamp=12917 Pressure=88299 Temp=22.30
+BARO11(ID=1) Timestamp=12917 Pressure=88364 Temp=22.86
+MAG Timestamp=12917 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=12953 Accel=[-2,-20,1062] Gyro=[78,79,94] Temp=24
+IMU32G(ID=1) Timestamp=12953 Accel=[60,-35,1048] Gyro=[-10,27,49] Temp=26
+BARO07(ID=0) Timestamp=12953 Pressure=88296 Temp=22.27
+BARO11(ID=1) Timestamp=12953 Pressure=88365 Temp=22.86
+MAG Timestamp=12953 Mag=[0,0,0]
+GPS Timestamp=12954 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12955 Accel=[1,-22,996] Gyro=[-220,-209,-37] Temp=24
+IMU32G(ID=1) Timestamp=12955 Accel=[59,-31,998] Gyro=[200,-157,14] Temp=26
+BARO07(ID=0) Timestamp=12955 Pressure=88320 Temp=22.30
+BARO11(ID=1) Timestamp=12955 Pressure=88362 Temp=22.85
+MAG Timestamp=12955 Mag=[0,0,0]
+GPS Timestamp=12955 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=12971 Accel=[-17,-22,1020] Gyro=[-150,-78,-28] Temp=24
+IMU32G(ID=1) Timestamp=12971 Accel=[51,-42,1035] Gyro=[-369,140,-13] Temp=26
+BARO07(ID=0) Timestamp=12971 Pressure=88295 Temp=22.26
+MAG Timestamp=13007 Mag=[0,0,0]
+GPS Timestamp=13007 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=13008 Accel=[-21,-26,1035] Gyro=[17,-17,-11] Temp=24
+IMU32G(ID=1) Timestamp=13008 Accel=[65,-55,1036] Gyro=[-168,88,14] Temp=26
+BARO07(ID=0) Timestamp=13008 Pressure=88272 Temp=22.28
+BARO11(ID=1) Timestamp=13008 Pressure=88363 Temp=22.86
+MAG Timestamp=13008 Mag=[0,0,0]
+GPS Timestamp=13008 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=13012 Accel=[-8,-25,1007] Gyro=[-141,-148,24] Temp=24
+IMU32G(ID=1) Timestamp=13012 Accel=[57,-37,999] Gyro=[139,-157,-39] Temp=26
+BARO07(ID=0) Timestamp=13012 Pressure=88316 Temp=22.30
+BARO11(ID=1) Timestamp=13012 Pressure=88371 Temp=22.87
+MAG Timestamp=13012 Mag=[0,0,0]
+GPS Timestamp=13012 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=13048 Accel=[-3,-23,1008] Gyro=[17,79,15] Temp=24
+IMU32G(ID=1) Timestamp=13048 Accel=[59,-31,999] Gyro=[340,-96,22] Temp=26
+BARO07(ID=0) Timestamp=13048 Pressure=88302 Temp=22.27
+BARO11(ID=1) Timestamp=13048 Pressure=88366 Temp=22.87
+MAG Timestamp=13048 Mag=[0,0,0]
+GPS Timestamp=13048 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=13062 Accel=[-18,-20,1032] Gyro=[122,123,-20] Temp=24
+IMU32G(ID=1) Timestamp=13062 Accel=[56,-46,1008] Gyro=[-168,-43,-48] Temp=26
+BARO07(ID=0) Timestamp=13062 Pressure=88335 Temp=22.33
+BARO11(ID=1) Timestamp=13062 Pressure=88363 Temp=22.87
+MAG Timestamp=13062 Mag=[0,0,0]
+GPS Timestamp=13063 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU32G(ID=1) Timestamp=13139 Accel=[63,-41,1011] Gyro=[-54,27,40] Temp=26
+BARO07(ID=0) Timestamp=13139 Pressure=88295 Temp=22.28
+BARO11(ID=1) Timestamp=13139 Pressure=88366 Temp=22.87
+MAG Timestamp=13139 Mag=[0,0,0]
+GPS Timestamp=13140 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=13140 Accel=[-3,-28,1031] Gyro=[60,1,-55] Temp=24
+IMU32G(ID=1) Timestamp=13140 Accel=[63,-36,1017] Gyro=[-343,-140,-4] Temp=26
+BARO07(ID=0) Timestamp=13140 Pressure=88286 Temp=22.26
+BARO11(ID=1) Timestamp=13140 Pressure=88364 Temp=22.88
+MAG Timestamp=13141 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=13141 Accel=[-15,-20,1032] Gyro=[95,123,77] Temp=24
+IMU32G(ID=1) Timestamp=13141 Accel=[57,-48,1027] Gyro=[-159,18,-21] Temp=26
+BARO07(ID=0) Timestamp=13141 Pressure=88292 Temp=22.27
+BARO11(ID=1) Timestamp=13141 Pressure=88359 Temp=22.87
+MAG Timestamp=13141 Mag=[0,0,0]
+IMU16G(ID=0) Timestamp=13177 Accel=[-10,-24,1029] Gyro=[-45,-8,-28] Temp=24
+IMU32G(ID=1) Timestamp=13178 Accel=[58,-40,1018] Gyro=[25,44,-48] Temp=26
+BARO07(ID=0) Timestamp=13178 Pressure=88290 Temp=22.23
+BARO11(ID=1) Timestamp=13178 Pressure=88346 Temp=22.85
+MAG Timestamp=13178 Mag=[0,0,0]
+GPS Timestamp=13178 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=13178 Accel=[-6,-26,1033] Gyro=[104,44,77] Temp=24
+IMU32G(ID=1) Timestamp=13178 Accel=[60,-40,1019] Gyro=[-133,27,-4] Temp=26
+BARO07(ID=0) Timestamp=13179 Pressure=88296 Temp=22.29
+BARO11(ID=1) Timestamp=13179 Pressure=88355 Temp=22.86
+MAG Timestamp=13179 Mag=[0,0,0]
+GPS Timestamp=13179 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=13196 Accel=[-3,-21,1061] Gyro=[157,97,-72] Temp=25
+IMU32G(ID=1) Timestamp=13196 Accel=[58,-47,1066] Gyro=[-386,132,-21] Temp=26
+BARO07(ID=0) Timestamp=13196 Pressure=88312 Temp=22.30
+MAG Timestamp=13232 Mag=[0,0,0]
+GPS Timestamp=13232 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=13233 Accel=[3,-20,1061] Gyro=[113,141,94] Temp=24
+IMU32G(ID=1) Timestamp=13233 Accel=[59,-31,1045] Gyro=[-150,228,14] Temp=26
+BARO07(ID=0) Timestamp=13233 Pressure=88291 Temp=22.31
+BARO11(ID=1) Timestamp=13233 Pressure=88369 Temp=22.86
+MAG Timestamp=13233 Mag=[0,0,0]
+GPS Timestamp=13233 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*59
+
+IMU16G(ID=0) Timestamp=13234 Accel=[-2,-24,1001] Gyro=[17,-26,-37] Temp=24
+IMU32G(ID=1) Timestamp=13234 Accel=[55,-34,993] Gyro=[42,105,-48] Temp=26
+BARO07(ID=0) Timestamp=13234 Pressure=88294 Temp=22.27
+BARO11(ID=1) Timestamp=13234 Pressure=88361 Temp=22.88
+MAG Timestamp=13234 Mag=[0,0,0]
+GPS Timestamp=13234 Chunks=6 Sentence=$GNGGA,123519,4807.038,N,1,08,0.9,545.4,M,46.9,M,,*59
+
+IM
