@@ -1,0 +1,24 @@
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp:48:21:GLOBAL_COMMANDS Command::GetCommand() const	16	static
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp:49:14:uint16_t Command::GetTaskCommand() const	16	static
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/PeripheralDriversSubmodule/MS5611Driver/Inc/BaroTask11.hpp:38:22:static BaroTask11& BaroTask11::Inst()	8	static
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/PeripheralDriversSubmodule/MS5611Driver/Inc/BaroTask11.hpp:48:15:static void BaroTask11::RunTask(void*)	16	static
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Components/DataBroker/Inc/Subscriber.hpp:46:22:const Task* Subscriber::getSubscriberTaskHandle() const	16	static
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Components/DataBroker/Inc/Subscriber.hpp:48:17:Queue* Subscriber::getSubscriberQueueHandle() const	16	static
+C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344\tools\arm-none-eabi\include\c++\13.3.1\arm-none-eabi\thumb\v7e-m+dp\hard\bits\gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+../PeripheralDriversSubmodule/MS5611Driver/BaroTask11.cpp:40:1:BaroTask11::BaroTask11()	16	static
+../PeripheralDriversSubmodule/MS5611Driver/BaroTask11.cpp:49:6:virtual void BaroTask11::InitTask()	32	static
+../PeripheralDriversSubmodule/MS5611Driver/BaroTask11.cpp:65:6:void BaroTask11::Run(void*)	56	static
+../PeripheralDriversSubmodule/MS5611Driver/BaroTask11.cpp:83:6:void BaroTask11::HandleCommand(Command&)	16	static
+../PeripheralDriversSubmodule/MS5611Driver/BaroTask11.cpp:96:6:void BaroTask11::HandleRequestCommand(uint16_t)	40	static
+../PeripheralDriversSubmodule/MS5611Driver/BaroTask11.cpp:110:6:void BaroTask11::LogData()	16	static
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Components/DataBroker/Inc/Publisher.hpp:38:3:Publisher<T, MaxSubscribers>::Publisher(DataBrokerMessageTypes) [with T = IMUData; unsigned char MaxSubscribers = 5]	16	static
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Components/DataBroker/Inc/Publisher.hpp:38:3:Publisher<T, MaxSubscribers>::Publisher(DataBrokerMessageTypes) [with T = MagData; unsigned char MaxSubscribers = 5]	16	static
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Components/DataBroker/Inc/Publisher.hpp:38:3:Publisher<T, MaxSubscribers>::Publisher(DataBrokerMessageTypes) [with T = BaroData; unsigned char MaxSubscribers = 5]	16	static
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Components/DataBroker/Inc/Publisher.hpp:38:3:Publisher<T, MaxSubscribers>::Publisher(DataBrokerMessageTypes) [with T = FilterData; unsigned char MaxSubscribers = 5]	16	static
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Components/DataBroker/Inc/Publisher.hpp:38:3:Publisher<T, MaxSubscribers>::Publisher(DataBrokerMessageTypes) [with T = GPSData; unsigned char MaxSubscribers = 5]	16	static
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Components/DataBroker/Inc/DataBroker.hpp:45:15:static void DataBroker::Publish(T*) [with T = BaroData]	24	static
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Components/DataBroker/Inc/Publisher.hpp:75:8:void Publisher<T, MaxSubscribers>::Publish(T*) [with T = BaroData; unsigned char MaxSubscribers = 5]	56	static
+../PeripheralDriversSubmodule/MS5611Driver/BaroTask11.cpp:120:1:void __static_initialization_and_destruction_0()	8	static
+../PeripheralDriversSubmodule/MS5611Driver/BaroTask11.cpp:120:1:void __static_initialization_and_destruction_1()	8	static
+../PeripheralDriversSubmodule/MS5611Driver/BaroTask11.cpp:120:1:cpp)	8	static
+../PeripheralDriversSubmodule/MS5611Driver/BaroTask11.cpp:120:1:cpp)	8	static

@@ -1,0 +1,4 @@
+../PeripheralDriversSubmodule/NAU7802/i2c_wrapper.cpp:6:1:I2C_Wrapper::I2C_Wrapper(I2C_HandleTypeDef*)	16	static
+../PeripheralDriversSubmodule/NAU7802/i2c_wrapper.cpp:9:6:bool I2C_Wrapper::writeByte(uint8_t, uint8_t, uint8_t)	32	static
+../PeripheralDriversSubmodule/NAU7802/i2c_wrapper.cpp:14:6:bool I2C_Wrapper::readByte(uint8_t, uint8_t, uint8_t*)	40	static
+../PeripheralDriversSubmodule/NAU7802/i2c_wrapper.cpp:18:6:bool I2C_Wrapper::readBytes(uint8_t, uint8_t, uint8_t*, uint8_t)	48	static

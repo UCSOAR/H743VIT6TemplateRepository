@@ -13,4 +13,4 @@
 ../SoarOS/Drivers/UARTDriver.cpp:44:6:bool UARTDriver::ReceiveIT(uint8_t*, UARTReceiverBase*)	2
 ../SoarOS/Drivers/UARTDriver.cpp:67:6:bool UARTDriver::HandleAndClearRxError()	6
 ../SoarOS/Drivers/UARTDriver.cpp:94:6:bool UARTDriver::GetRxErrors()	5
-../SoarOS/Drivers/UARTDriver.cpp:118:6:void UARTDriver::HandleIRQ_UART()	4
+../SoarOS/Drivers/UARTDriver.cpp:118:6:void UARTDriver::HandleIRQ_UART()	5

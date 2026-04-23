@@ -1,0 +1,9 @@
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp:48:21:GLOBAL_COMMANDS Command::GetCommand() const	16	static
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp:49:14:uint16_t Command::GetTaskCommand() const	16	static
+../Core/Inc/CommandCenterTask.hpp:42:32:static CommandCenterTask& CommandCenterTask::Inst()	8	static
+../Core/Inc/CommandCenterTask.hpp:50:18:static void CommandCenterTask::RunTask(void*)	16	static
+../Components/CommandCenterTask.cpp:47:1:CommandCenterTask::CommandCenterTask()	16	static
+../Components/CommandCenterTask.cpp:56:6:virtual void CommandCenterTask::InitTask()	32	static
+../Components/CommandCenterTask.cpp:78:6:void CommandCenterTask::Run(void*)	32	static
+../Components/CommandCenterTask.cpp:95:6:void CommandCenterTask::HandleCommand(Command&)	24	static
+../Components/CommandCenterTask.cpp:120:9:void CommandCenterTask::ExecuteCommand(const char*)	16	static

@@ -1,6 +1,6 @@
 Components/RunInterface.o: ../Components/RunInterface.cpp \
  ../Components/main_system.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp \
+ C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp \
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../Core/Inc/FreeRTOSConfig.h \
@@ -46,6 +46,7 @@ Components/RunInterface.o: ../Components/RunInterface.cpp \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h \
+ ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_iwdg.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
@@ -53,13 +54,13 @@ Components/RunInterface.o: ../Components/RunInterface.cpp \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usart.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/SystemDefines.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/main_system.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp \
- C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp
+ C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp \
+ C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/Components/SystemDefines.hpp \
+ C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/Components/main_system.hpp \
+ C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp \
+ C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp
 ../Components/main_system.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp:
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hpp:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:
@@ -105,6 +106,7 @@ C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hp
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_iwdg.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h:
@@ -112,8 +114,8 @@ C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/Mutex.hp
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usart.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/SystemDefines.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/Components/main_system.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp:
-C:/Users/Andrey/STM32CubeIDE/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp:
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTDriver.hpp:
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/Components/SystemDefines.hpp:
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/Components/main_system.hpp:
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/CubeDefines.hpp:
+C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp:

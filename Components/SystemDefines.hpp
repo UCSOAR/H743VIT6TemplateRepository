@@ -22,8 +22,12 @@
 
 /* System Wide Includes
  * ------------------------------------------------------------------*/
-#include "main_avionics.hpp"  // C++ Main File Header
+#include "main_system.hpp"  // C++ Main File Header
 #include "UARTDriver.hpp"
+
+#define TASK_PROFILER_QUEUE_DEPTH_OBJS 10
+#define TASK_PROFILER_STACK_DEPTH_WORDS 256
+#define TASK_PROFILER_PRIORITY 2
 
 /* Cube++ Required Configuration
  * ------------------------------------------------------------------*/

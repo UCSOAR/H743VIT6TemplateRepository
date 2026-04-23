@@ -21,6 +21,9 @@
   ************************************/
  #include "Task.hpp"
  #include "SystemDefines.hpp"
+#include <vector>
+
+
  
  /************************************
   * MACROS AND DEFINES
@@ -53,11 +56,12 @@
      CommandCenterTask();        // Private constructor
      CommandCenterTask(const CommandCenterTask&);                        // Prevent copy-construction
      CommandCenterTask& operator=(const CommandCenterTask&);            // Prevent assignment
-     std::vector<DaughterBoard> activeBoards;                                //list of all active daughterboards
+     void ExecuteCommand(const char* msg);
+//     std::vector<DaughterBoard> activeBoards;                          //list of all active daughterboards
  };
  
  /************************************
   * FUNCTION DECLARATIONS
   ************************************/
  
- #endif /* ${include_guard_symbol} */
+ #endif

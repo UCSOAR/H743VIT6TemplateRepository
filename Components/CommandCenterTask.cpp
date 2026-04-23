@@ -18,6 +18,11 @@
  ************************************/
 #include "CommandCenterTask.hpp"
 #include "SystemDefines.hpp"
+#include "DebugTask.hpp"
+#include <string>
+#include <algorithm>
+#include <vector>
+
 
 /************************************
  * PRIVATE MACROS AND DEFINES
@@ -39,11 +44,11 @@
 /**
  * @brief Constructor for CommandCenterTask
  */
-CommandCenterTask::CommandCenterTask() : Task(constexpr uint8_t TASK_COMMANDCENTER_QUEUE_DEPTH_OBJS =)
+CommandCenterTask::CommandCenterTask()
+    : Task(TASK_COMMANDCENTER_QUEUE_DEPTH_OBJS)
 {
-   activeBoards = BoardManager::DiscoverActiveBoards();
+//    activeBoards = BoardManager::DiscoverActiveBoards();
 }
-
 /**
  * @brief Initialize the CommandCenterTask
  *        Do not modify this function aside from adding the task name
@@ -54,12 +59,14 @@ void CommandCenterTask::InitTask()
     SOAR_ASSERT(rtTaskHandle == nullptr, "Cannot initialize watchdog task twice");
 
     BaseType_t rtValue =
-        xTaskCreate((TaskFunction_t)CommandCenterTask::RunTask,
-            (const char*)"CommandCenterTask",
-            (uint16_t)constexpr uint16_t TASK_COMMANDCENTER_STACK_DEPTH_WORDS =,
-            (void*)this,
-            (UBaseType_t)constexpr uint8_t TASK_COMMANDCENTER_PRIORITY = 2;,
-            (TaskHandle_t*)&rtTaskHandle);
+		xTaskCreate(
+			(TaskFunction_t)CommandCenterTask::RunTask,
+			"CommandCenterTask",
+			(uint16_t)TASK_COMMANDCENTER_STACK_DEPTH_WORDS,
+			(void*)this,
+			(UBaseType_t)TASK_COMMANDCENTER_PRIORITY,
+			(TaskHandle_t*)&rtTaskHandle
+    );
 
                 SOAR_ASSERT(rtValue == pdPASS, "CommandCenterTask::InitTask() - xTaskCreate() failed");
 }
@@ -88,12 +95,18 @@ void CommandCenterTask::Run(void * pvParams)
 void CommandCenterTask::HandleCommand(Command& cm)
 {
     switch (cm.GetCommand()) {
-       case DATA_COMMAND
+       case DATA_COMMAND:
        // Process the command
        if (cm.GetTaskCommand() == EVENT_DEBUG_RX_COMPLETE)
         {
-     ExecuteCommand((const char*)commandBuffer);
+    	   SOAR_PRINT("Command received!\n");
+
+    	   const char* msg = "ping";
+           ExecuteCommand(msg);
+
+//     ExecuteCommand((const char*)commandBuffer);
    }
+       break;
 
     default:
         SOAR_PRINT("CommandCenterTask - Received Unsupported Command {%d}\n", cm.GetCommand());
@@ -104,110 +117,111 @@ void CommandCenterTask::HandleCommand(Command& cm)
     cm.Reset();
 }
 
-void CommandCenterTask::ExecuteCommand(const char* msg)
+   void CommandCenterTask::ExecuteCommand(const char* msg)
+   {
 
-   //discover daughterboards while the task is running
-   activeBoards = BoardManager::DiscoverActiveBoards();
+       //discover daughterboards while the task is running
+//       activeBoards = BoardManager::DiscoverActiveBoards();
 
-   //parse string to check if there is a start or an end
-   std::string command(msg);
-
-   if (command.find("start") == 0) {
-   //find which daughterboards are chosen
-       std::vector<int> daughterBoards;
-
-       //if all appears all boards get put through commands
-       if (command.find("all") != std::string::npos) {
-           for (auto& board : activeBoards) {
-               daughterBoards.push_back(board.GetID());
-           }
-       } else {
-           //if d2, d3 etc gets typed in the commands get sent for those boards
-           for (size_t i = 0; i < activeBoards.size(); i++) {
-               std::string boardName = "d" + std::to_string(i + 1);
-               if (command.find(boardName) != std::string::npos) {
-                   daughterBoards.push_back(activeBoards[i].GetID());
-               }
-           }
-       }
-       //if not d1, d2, d3 etc it goes to error
-       if (daughterBoards.empty()) {
-           SOAR_PRINT("Error: enter all boards, d1, d2, etc\n");
-           return;
-       }
-
-       //Loop through boards
-       for (auto& board : activeBoards) {
-           if (std::find(daughterBoards.begin(), daughterBoards.end(), board.GetID())) != daughterBoards.end() {
-               board.SendCommand(START_LOGGING);   //sends a can message
-               if (!board.waitForAck()) {
-                   SOAR_PRINT("Board %d did not respond\n", board.GetID());
-               }
-           }
-       }
-       
-       //checking state of daughter boards and looping back
-       bool ContinueLogging = true;
-       while (ContinueLogging) {
-           for (auto& board : activeBoards) {
-               if (std::find(daughterBoards.begin(), daughterBoards.end(), board.GetID()) != daughterBoards.end()) {
-                   board.SendCommand(START_LOGGING);
-                   if (!board.waitForAck()) {
-                       SOAR_PRINT("Board %d did not respind to state check\n", board.GetID());
-                   } else {
-
-               }
-           }
-       }
-           vTaskDelay(pdMS_TO_TICKS(1000)); //wait 1 second between the next check
-       }
-       
-       else if (strcmp(msg, "end") == 0) {
-           std::vector<int> daughterBoards;
-
-       if (command.find("all") != std::string::npos) {
-           for (auto& board : activeBoards) {
-               daughterBoards.push_back(board.GetID());
-           }
-       } else {
-           //
-           for (size_t i = 0; i < activeBoards.size(); i++) {
-               std::string boardName = "d" + std::to_string(i + 1);
-               if (command.find(boardName) != std::string::npos) {
-                   daughterBoards.push_back(activeBoards[i].GetID())
-               }
-           }
-       }
-
-       //if not d1, d2, d3 etc it goes to error
-       if (daughterBoards.empty()) {
-           SOAR_PRINT("Error: enter all boards, d1, d2, etc\n");
-           return;
-           }
-       }
-
-
-       //stops logging and sends files
-       for (auto& board : activeBoards) {
-           if (std::find(daughterBoards.begin(), daughterBoards.end(), board.GetID()) != daughterBoards.end()) {
-               board.SendCommand(STOP_LOGGING);
-               if (!board.waitForAck()) {
-                   SOAR_PRINT("Board %d did not respond to STOP_Logging\n", board.GetID());
-               }
-           }
-       }
-
-
-
-       //recives files
-       for (auto& board : activeBoards) {
-           if (std::find(daughterBoards.begin(), daughterBoards.end(), board.GetID()) != daughterBoards.end()) {
-               board.SendCommand(SEND_FILES);
-               if (!board.waitForAck()) {
-                   SOAR_PRINT("Board %d failed to send files\n", board.GetID());
-               } else {
-                   FileSystem::ReceiveFilesFromBoard(board.GetID()); //pulls the files from the board into system
-                   }
-               }
-           }
-       }
+       //parse string to check if there is a start or an end
+//       std::string command(msg);
+//
+//       //find which daughterboards are chosen
+//       std::vector<int> daughterBoards;
+//
+//       // start command
+//       if (command.find("start") == 0) {
+//
+//           //if all appears all boards get put through commands
+//           if (command.find("all") != std::string::npos) {
+//               for (auto& board : activeBoards) {
+//                   daughterBoards.push_back(board.GetID());
+//               }
+//           } else {
+//               //if d2, d3 etc gets typed in the commands get sent for those boards
+//               for (size_t i = 0; i < activeBoards.size(); i++) {
+//                   std::string boardName = "d" + std::to_string(i + 1);
+//                   if (command.find(boardName) != std::string::npos) {
+//                       daughterBoards.push_back(activeBoards[i].GetID());
+//                   }
+//               }
+//           }
+//
+//           //if not d1, d2, d3 etc it goes to error
+//           if (daughterBoards.empty()) {
+//               SOAR_PRINT("Error: enter all boards, d1, d2, etc\n");
+//               return;
+//           }
+//
+//           //Loop through boards
+//           for (auto& board : activeBoards) {
+//               if (std::find(daughterBoards.begin(), daughterBoards.end(), board.GetID()) != daughterBoards.end()) {
+//                   board.SendCommand(START_LOGGING);   //sends a can message
+//                   if (!board.waitForAck()) {
+//                       SOAR_PRINT("Board %d did not respond\n", board.GetID());
+//                   }
+//               }
+//           }
+//
+//           //checking state of daughter boards and looping back
+//           bool ContinueLogging = true;
+//           while (ContinueLogging) {
+//               for (auto& board : activeBoards) {
+//                   if (std::find(daughterBoards.begin(), daughterBoards.end(), board.GetID()) != daughterBoards.end()) {
+//                       board.SendCommand(START_LOGGING);
+//                       if (!board.waitForAck()) {
+//                           SOAR_PRINT("Board %d did not respind to state check\n", board.GetID());
+//                       }
+//                   }
+//               }
+//
+//               vTaskDelay(pdMS_TO_TICKS(1000)); //wait 1 second between the next check
+//           }
+//       }
+//
+////       end command
+//       else if (command.find("end") == 0) {
+//
+//           //if all appears all boards get put through commands
+//           if (command.find("all") != std::string::npos) {
+//               for (auto& board : activeBoards) {
+//                   daughterBoards.push_back(board.GetID());
+//               }
+//           } else {
+//               //if d2, d3 etc gets typed in the commands get sent for those boards
+//               for (size_t i = 0; i < activeBoards.size(); i++) {
+//                   std::string boardName = "d" + std::to_string(i + 1);
+//                   if (command.find(boardName) != std::string::npos) {
+//                       daughterBoards.push_back(activeBoards[i].GetID());
+//                   }
+//               }
+//           }
+//
+//           //if not d1, d2, d3 etc it goes to error
+//           if (daughterBoards.empty()) {
+//               SOAR_PRINT("Error: enter all boards, d1, d2, etc\n");
+//               return;
+//           }
+//
+//           //stops logging and sends files
+//           for (auto& board : activeBoards) {
+//               if (std::find(daughterBoards.begin(), daughterBoards.end(), board.GetID()) != daughterBoards.end()) {
+//                   board.SendCommand(STOP_LOGGING);
+//                   if (!board.waitForAck()) {
+//                       SOAR_PRINT("Board %d did not respond to STOP_Logging\n", board.GetID());                  }
+//               }
+//           }
+//
+//           //recieves files
+//           for (auto& board : activeBoards) {
+//               if (std::find(daughterBoards.begin(), daughterBoards.end(), board.GetID()) != daughterBoards.end()) {
+//                   board.SendCommand(SEND_FILES);
+//                   if (!board.waitForAck()) {
+//                       SOAR_PRINT("Board %d failed to send files\n", board.GetID());
+//                   } else {
+//                       FileSystem::ReceiveFilesFromBoard(board.GetID()); //pulls the files from the board into system
+//                   }
+//               }
+//           }
+//       }
+   	   }

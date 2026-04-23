@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (11.3.rel1)
+# Toolchain: GNU Tools for STM32 (13.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -9,6 +9,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include SoarOS/Profiler/subdir.mk
 -include SoarOS/Drivers/subdir.mk
 -include SoarOS/Core/subdir.mk
 -include SoarOS/subdir.mk
@@ -29,6 +30,9 @@ endif
 ifneq ($(strip $(C++_DEPS)),)
 -include $(C++_DEPS)
 endif
+ifneq ($(strip $(CCM_DEPS)),)
+-include $(CCM_DEPS)
+endif
 ifneq ($(strip $(C_UPPER_DEPS)),)
 -include $(C_UPPER_DEPS)
 endif
@@ -40,6 +44,12 @@ ifneq ($(strip $(S_DEPS)),)
 endif
 ifneq ($(strip $(S_UPPER_DEPS)),)
 -include $(S_UPPER_DEPS)
+endif
+ifneq ($(strip $(CXXM_DEPS)),)
+-include $(CXXM_DEPS)
+endif
+ifneq ($(strip $(C++M_DEPS)),)
+-include $(C++M_DEPS)
 endif
 ifneq ($(strip $(C_DEPS)),)
 -include $(C_DEPS)
@@ -83,8 +93,8 @@ all: main-build
 main-build: H743VIT6TemplateRepository.elf secondary-outputs
 
 # Tool invocations
-H743VIT6TemplateRepository.elf H743VIT6TemplateRepository.map: $(OBJS) $(USER_OBJS) C:\Users\Andrey\STM32CubeIDE\H743VIT6TemplateRepository\STM32H743VITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "H743VIT6TemplateRepository.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\Andrey\STM32CubeIDE\H743VIT6TemplateRepository\STM32H743VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="H743VIT6TemplateRepository.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+H743VIT6TemplateRepository.elf H743VIT6TemplateRepository.map: $(OBJS) $(USER_OBJS) C:\Users\Owner\Desktop\SOAR\H743VIT6TemplateRepository\STM32H743VITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "H743VIT6TemplateRepository.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\Owner\Desktop\SOAR\H743VIT6TemplateRepository\STM32H743VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="H743VIT6TemplateRepository.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -1,3 +1,4 @@
+"./Components/CommandCenterTask.o"
 "./Components/DebugTask.o"
 "./Components/RunInterface.o"
 "./Components/main_system.o"
@@ -23,6 +24,7 @@
 "./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.o"
 "./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.o"
 "./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.o"
+"./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_iwdg.o"
 "./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.o"
 "./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.o"
 "./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.o"
@@ -55,3 +57,5 @@
 "./SoarOS/CubeDefines.o"
 "./SoarOS/CubeTask.o"
 "./SoarOS/Drivers/UARTDriver.o"
+"./SoarOS/Drivers/UARTTask.o"
+"./SoarOS/Profiler/ProfilerTask.o"
