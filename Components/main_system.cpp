@@ -33,9 +33,7 @@ namespace Driver {
 */
 void run_main() {
     // Init Tasks
-    // Force a real reset/power-cycle pulse on external device before task bring-up.
-    HAL_GPIO_WritePin(ResetPin_GPIO_Port, ResetPin_Pin, GPIO_PIN_RESET);
-  
+    // Keep shared reset line deasserted before task bring-up.
     HAL_GPIO_WritePin(ResetPin_GPIO_Port, ResetPin_Pin, GPIO_PIN_SET);
     
 	UARTTask::Inst().InitTask();
