@@ -26,7 +26,7 @@ namespace Driver {
     UARTDriver uart8(UART8);
     UARTDriver uart7(UART7);
     UARTDriver usart1(USART1);
-
+    UARTDriver uart5(UART5);
 }
 
 /* Interface Functions ------------------------------------------------------------*/
