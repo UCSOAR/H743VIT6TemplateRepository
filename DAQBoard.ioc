@@ -2,13 +2,15 @@
 CAD.formats=
 CAD.pinconfig=
 CAD.provider=
+FDCAN1.AutoRetransmission=ENABLE
 FDCAN1.CalculateBaudRateNominal=500000
 FDCAN1.CalculateTimeBitNominal=2000
 FDCAN1.CalculateTimeQuantumNominal=31.25
 FDCAN1.DataSyncJumpWidth=2
 FDCAN1.DataTimeSeg1=16
 FDCAN1.DataTimeSeg2=15
-FDCAN1.IPParameters=CalculateTimeQuantumNominal,CalculateTimeBitNominal,CalculateBaudRateNominal,NominalSyncJumpWidth,DataSyncJumpWidth,NominalTimeSeg1,NominalPrescaler,NominalTimeSeg2,DataTimeSeg1,DataTimeSeg2
+FDCAN1.FrameFormat=FDCAN_FRAME_FD_BRS
+FDCAN1.IPParameters=CalculateTimeQuantumNominal,CalculateTimeBitNominal,CalculateBaudRateNominal,NominalSyncJumpWidth,DataSyncJumpWidth,NominalTimeSeg1,NominalPrescaler,NominalTimeSeg2,DataTimeSeg1,DataTimeSeg2,FrameFormat,AutoRetransmission
 FDCAN1.NominalPrescaler=1
 FDCAN1.NominalSyncJumpWidth=15
 FDCAN1.NominalTimeSeg1=61
