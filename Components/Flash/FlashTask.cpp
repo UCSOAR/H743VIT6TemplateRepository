@@ -15,7 +15,7 @@
 #include "LoggingService.hpp"
 
 /* Constants ------------------------------------------------------------------*/
-constexpr uint16_t FLASH_TEST_SECTOR = 32;          // TODO: Move to a reserved sector if needed
+constexpr uint16_t FLASH_TEST_SECTOR = NUM_SECTORS - 2; // Reserved above the logging data area
 constexpr uint32_t FLASH_TEST_SIZE_BYTES = 512;    // Two pages
 constexpr uint32_t FLASH_ERASE_VERIFY_BYTES = 256; // One page
 

@@ -28,7 +28,8 @@ static uint8_t rxBuf[RAM_LOG_SIZE];
 namespace
 {
 	constexpr uint16_t FLASH_STATE_SECTOR = NUM_SECTORS - 1;
-	constexpr uint16_t FLASH_DATA_LIMIT_SECTOR = NUM_SECTORS - 1;
+	constexpr uint16_t FLASH_TEST_SECTOR = NUM_SECTORS - 2;
+	constexpr uint16_t FLASH_DATA_LIMIT_SECTOR = FLASH_TEST_SECTOR;
 	constexpr uint32_t FLASH_STATE_MAGIC = 0x4C4F4731;
 
 	struct FlashStateRecord
@@ -50,6 +51,46 @@ namespace
 		MX66xxQSPI_ReadSector(raw, FLASH_STATE_SECTOR, 0, sizeof(raw));
 		memcpy(&record, raw, sizeof(record));
 		return (record.magic == FLASH_STATE_MAGIC) && (record.checksum == FlashStateChecksum(record));
+	}
+
+	static bool IsLogChunkEmpty(uint16_t sector, uint8_t chunk)
+	{
+		if ((sector >= FLASH_DATA_LIMIT_SECTOR) || (chunk >= 8U))
+		{
+			return false;
+		}
+
+		memset(sectorBuf, 0xFF, sizeof(sectorBuf));
+		MX66xxQSPI_ReadSector(sectorBuf, sector, static_cast<uint32_t>(chunk) * RAM_LOG_SIZE, RAM_LOG_SIZE);
+
+		for (uint32_t i = 0; i < RAM_LOG_SIZE; ++i)
+		{
+			if (sectorBuf[i] != 0xFF)
+			{
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+	static bool FindNextWritableSlot(uint16_t startSector, uint8_t startChunk, uint16_t &sector, uint8_t &chunk)
+	{
+		for (uint16_t s = startSector; s < FLASH_DATA_LIMIT_SECTOR; ++s)
+		{
+			const uint8_t firstChunk = (s == startSector) ? startChunk : 0U;
+			for (uint8_t c = firstChunk; c < 8U; ++c)
+			{
+				if ((c == 0U) || IsLogChunkEmpty(s, c))
+				{
+					sector = s;
+					chunk = c;
+					return true;
+				}
+			}
+		}
+
+		return false;
 	}
 }
 
@@ -78,11 +119,27 @@ void LoggingService::LoadFlashStateFromStorage()
 	}
 
 	FlashStateRecord record{};
-	if (ReadFlashState(record) && record.sector <= FLASH_DATA_LIMIT_SECTOR && record.bufferPerSector <= 8U)
+	if (ReadFlashState(record) && record.sector < FLASH_DATA_LIMIT_SECTOR && record.bufferPerSector < 8U)
 	{
 		sectorAddress = static_cast<uint16_t>(record.sector);
 		bufferPerSector = static_cast<uint8_t>(record.bufferPerSector);
-		done = (sectorAddress == FLASH_STATE_SECTOR) ? 1U : 0U;
+		if ((bufferPerSector > 0U) && !IsLogChunkEmpty(sectorAddress, bufferPerSector))
+		{
+			SOAR_PRINT("LoggingService: saved flash cursor sector=%u slot=%u is occupied, scanning forward\n",
+					   (unsigned int)sectorAddress,
+					   (unsigned int)bufferPerSector);
+			if (!FindNextWritableSlot(sectorAddress, bufferPerSector, sectorAddress, bufferPerSector))
+			{
+				sectorAddress = FLASH_STATE_SECTOR;
+				bufferPerSector = 0;
+				done = 1;
+				flashStateLoaded = true;
+				SaveFlashState();
+				return;
+			}
+			SaveFlashState();
+		}
+		done = 0;
 		flashStateLoaded = true;
 		return;
 	}
@@ -187,6 +244,24 @@ LoggingStatus LoggingService::LogToMX66(){
 				//if a new sector is reached erase before writing
 				MX66xxQSPI_EraseSector(sectorAddress);
 			}
+			else if (!IsLogChunkEmpty(sectorAddress, bufferPerSector))
+			{
+				SOAR_PRINT("LoggingService: sector=%u slot=%u is occupied, moving to next writable slot\n",
+						   (unsigned int)sectorAddress,
+						   (unsigned int)bufferPerSector);
+				if (!FindNextWritableSlot(sectorAddress, bufferPerSector, sectorAddress, bufferPerSector))
+				{
+					sectorAddress = FLASH_STATE_SECTOR;
+					bufferPerSector = 0;
+					done = true;
+					SaveFlashState();
+					return LoggingStatus::FLASH_FULL;
+				}
+
+				if(bufferPerSector == 0){
+					MX66xxQSPI_EraseSector(sectorAddress);
+				}
+			}
 
 			//Write data to bufferPerSector * 500 this calculates the offset at which the buffer will be written
 			memcpy(txBuf, ramLog, RAM_LOG_SIZE);
@@ -208,18 +283,17 @@ LoggingStatus LoggingService::LogToMX66(){
 					sectorAddress++;
 					bufferPerSector = 0;
 					//finish logging if the sectorAddress reaches address that does not exist
-					if(sectorAddress >= FLASH_STATE_SECTOR){
+					if(sectorAddress >= FLASH_DATA_LIMIT_SECTOR){
 						sectorAddress = FLASH_STATE_SECTOR;
 						done = true;
 					}
 				}
 
-
 				return LoggingStatus::LOGGING_SUCCESS;
 			}
 
 
-			return status;
+			return LoggingStatus::LOGGING_ERR;
 
 		}
 		return LoggingStatus::LOG_FLASH_NOT_READY;
@@ -497,5 +571,3 @@ void LoggingService::FlashClear(){
 	SOAR_PRINT("Flash clear: logging cursor reset\n");
 
 }
-
-
