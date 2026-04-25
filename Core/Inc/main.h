@@ -70,6 +70,24 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define BARO07_CS_Pin GPIO_PIN_13
+#define BARO07_CS_GPIO_Port GPIOC
+#define BARO11_CS_Pin GPIO_PIN_0
+#define BARO11_CS_GPIO_Port GPIOA
+#define MAG_CS_Pin GPIO_PIN_2
+#define MAG_CS_GPIO_Port GPIOA
+#define MAG_INT_Pin GPIO_PIN_3
+#define MAG_INT_GPIO_Port GPIOA
+#define IMU32_INT_Pin GPIO_PIN_4
+#define IMU32_INT_GPIO_Port GPIOA
+#define IMU32_CS_Pin GPIO_PIN_5
+#define IMU32_CS_GPIO_Port GPIOC
+#define SPI_FLASH_CS_Pin GPIO_PIN_2
+#define SPI_FLASH_CS_GPIO_Port GPIOB
+#define IMU16_INT_Pin GPIO_PIN_15
+#define IMU16_INT_GPIO_Port GPIOA
+#define IMU16_CS_Pin GPIO_PIN_0
+#define IMU16_CS_GPIO_Port GPIOD
 
 /* USER CODE BEGIN Private defines */
 

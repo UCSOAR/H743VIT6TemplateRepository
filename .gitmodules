@@ -1,9 +1,9 @@
 [submodule "SoarOS"]
 	path = SoarOS
 	url = https://github.com/UCSOAR/SoarOperatingSystem.git
-[submodule "AvionicsSoftware"]
-	path = AvionicsSoftware
-	url = https://github.com/StudentOrganisationForAerospaceResearch/AvionicsSoftware.git
+	branch = master
 [submodule "PeripheralDriversSubmodule"]
 	path = PeripheralDriversSubmodule
-	url = https://github.com/UCSOAR/PeripheralDriversSubmodule
+	url = https://github.com/UCSOAR/PeripheralDriversSubmodule.git
+	branch = master
+
