@@ -13,6 +13,7 @@
 #include "UARTTask.hpp"
 #include "CubeTask.hpp"
 #include "DebugTask.hpp"
+#include "Radio/RadioTask.hpp"
 //#include "IMUTask.hpp"
 //#include "LSM6DSOTask.hpp"
 #include "mmc5983Task.hpp"
@@ -38,6 +39,7 @@ void run_main() {
 	UARTTask::Inst().InitTask();
 	CubeTask::Inst().InitTask();
 	DebugTask::Inst().InitTask();
+	RadioTask::Inst().InitTask();
 	FlashTask::Inst().InitTask();
 
 	//IMUTask::Inst().InitTask();

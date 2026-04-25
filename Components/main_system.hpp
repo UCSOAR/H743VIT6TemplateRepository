@@ -40,8 +40,8 @@ namespace Driver {
 
 }
 namespace UART {
-    constexpr UARTDriver* RADIO = &Driver::uart5;
-    constexpr UARTDriver* Debug = &Driver::usart1;
+    constexpr UARTDriver* RADIO = &Driver::uart7;
+    constexpr UARTDriver* Debug = &Driver::uart5;
     constexpr UARTDriver* GPS = &Driver::uart7;
 
 }
