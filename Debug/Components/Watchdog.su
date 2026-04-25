@@ -1,3 +1,0 @@
-../Components/Watchdog.cpp:14:13:const char* GetLastTaskToPetWatchdog()	4	static
-../Components/Watchdog.cpp:19:6:void InitWatchdog()	8	static
-../Components/Watchdog.cpp:31:6:void PetWatchdog()	16	static

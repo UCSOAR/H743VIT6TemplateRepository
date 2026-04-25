@@ -22,6 +22,16 @@
  #include "Task.hpp"
  #include "SystemDefines.hpp"
 #include <vector>
+#include "CanAutoNodeMotherboard.hpp"
+
+// TODO: Implement this into the new global canbus log index file in another submodule
+#define COMMAND_CENTER_LOGGING_COMMAND_LOG_INDEX 0
+
+enum CommandCenterCommands {
+	START_LOGGING,
+	STOP_LOGGING,
+	SEND_FILES
+};
 
 
  
@@ -57,7 +67,8 @@
      CommandCenterTask(const CommandCenterTask&);                        // Prevent copy-construction
      CommandCenterTask& operator=(const CommandCenterTask&);            // Prevent assignment
      void ExecuteCommand(const char* msg);
-//     std::vector<DaughterBoard> activeBoards;                          //list of all active daughterboards
+     std::vector<CanAutoNode::UniqueBoardID> activeBoards;                          //list of all active daughterboards
+     CanAutoNodeMotherboard* motherboard = nullptr;
  };
  
  /************************************

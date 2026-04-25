@@ -1,3 +1,0 @@
-../Components/Watchdog.cpp:14:13:const char* GetLastTaskToPetWatchdog()	1
-../Components/Watchdog.cpp:19:6:void InitWatchdog()	2
-../Components/Watchdog.cpp:31:6:void PetWatchdog()	2

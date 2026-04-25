@@ -1,5 +1,0 @@
-../FATFS/Target/user_diskio.c:80:9:USER_initialize	2
-../FATFS/Target/user_diskio.c:105:9:USER_status	2
-../FATFS/Target/user_diskio.c:127:9:USER_read	5
-../FATFS/Target/user_diskio.c:171:9:USER_write	7
-../FATFS/Target/user_diskio.c:245:9:USER_ioctl	7

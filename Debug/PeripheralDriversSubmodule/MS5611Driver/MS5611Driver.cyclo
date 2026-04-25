@@ -1,9 +1,0 @@
-../PeripheralDriversSubmodule/MS5611Driver/MS5611Driver.cpp:32:2:{anonymous}::SPI2BusGuard::SPI2BusGuard()	1
-../PeripheralDriversSubmodule/MS5611Driver/MS5611Driver.cpp:33:2:{anonymous}::SPI2BusGuard::~SPI2BusGuard()	2
-../PeripheralDriversSubmodule/MS5611Driver/MS5611Driver.cpp:39:7:bool {anonymous}::SPI2BusGuard::Locked() const	1
-../PeripheralDriversSubmodule/MS5611Driver/MS5611Driver.cpp:46:1:MS5611_Driver::MS5611_Driver(SPI_HandleTypeDef*, GPIO_TypeDef*, uint16_t)	1
-../PeripheralDriversSubmodule/MS5611Driver/MS5611Driver.cpp:57:10:BaroData MS5611_Driver::getSample()	3
-../PeripheralDriversSubmodule/MS5611Driver/MS5611Driver.cpp:159:10:uint16_t MS5611_Driver::readCalibrationCoefficients(uint8_t)	2
-../PeripheralDriversSubmodule/MS5611Driver/MS5611Driver.cpp:187:10:uint32_t MS5611_Driver::getTemperatureReading()	2
-../PeripheralDriversSubmodule/MS5611Driver/MS5611Driver.cpp:228:10:uint32_t MS5611_Driver::getPressureReading()	2
-../PeripheralDriversSubmodule/MS5611Driver/MS5611Driver.cpp:269:6:void MS5611_Driver::resetBarometer()	2

@@ -1,9 +1,0 @@
-../PeripheralDriversSubmodule/LSM6DSODriver/lsm6dso.cpp:15:1:LSM6DSO_Driver::LSM6DSO_Driver()	1
-../PeripheralDriversSubmodule/LSM6DSODriver/lsm6dso.cpp:19:6:void LSM6DSO_Driver::Init(SPI_HandleTypeDef*, uint8_t, GPIO_TypeDef*)	2
-../PeripheralDriversSubmodule/LSM6DSODriver/lsm6dso.cpp:46:6:void LSM6DSO_Driver::setRegister(LSM6DSO_REGISTER_t, uint8_t)	2
-../PeripheralDriversSubmodule/LSM6DSODriver/lsm6dso.cpp:62:9:uint8_t LSM6DSO_Driver::getRegister(LSM6DSO_REGISTER_t)	2
-../PeripheralDriversSubmodule/LSM6DSODriver/lsm6dso.cpp:75:6:void LSM6DSO_Driver::readRegisters(uint8_t, uint8_t*, uint16_t)	3
-../PeripheralDriversSubmodule/LSM6DSODriver/lsm6dso.cpp:95:9:IMUData LSM6DSO_Driver::bytesToStruct(const uint8_t*, bool, bool, bool)	4
-../PeripheralDriversSubmodule/LSM6DSODriver/lsm6dso.cpp:132:6:void LSM6DSO_Driver::readSensors(uint8_t*)	1
-../PeripheralDriversSubmodule/LSM6DSODriver/lsm6dso.cpp:138:6:void LSM6DSO_Driver::CSHigh()	1
-../PeripheralDriversSubmodule/LSM6DSODriver/lsm6dso.cpp:144:6:void LSM6DSO_Driver::CSLow()	1
