@@ -11,6 +11,7 @@
 #include "CubeUtils.hpp"
 #include <cstring>
 #include "LoggingService.hpp"
+#include "ProfilerTask.hpp"
 
 #include "stm32h7xx_hal.h"
 #include "FlashTask.hpp"
@@ -107,7 +108,8 @@ void DebugTask::HandleDebugMessage(const char *msg)
                xPortGetMinimumEverFreeHeapSize());
     SOAR_PRINT("Debug Task Runtime  \t: %d ms\n\n",
                TICKS_TO_MS(xTaskGetTickCount()));
-  }
+  } 
+  
   else if (strcmp(msg, "imu1") == 0)
   {
 
@@ -184,8 +186,14 @@ void DebugTask::HandleDebugMessage(const char *msg)
     LoggingService::StopDump();
   }
 
-  else
-  {
+#if (configGENERATE_RUN_TIME_STATS == 1)  // enable profiling commands if profiling enabled
+  else if (strcmp(msg, "profile") == 0) {
+    profileSystem = true;
+  } else if (strcmp(msg, "stop profiling") == 0) {
+    profileSystem = false;
+  }
+#endif
+    else {
     // Single character command, or unknown command
     switch (msg[0])
     {
