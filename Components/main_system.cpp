@@ -6,6 +6,7 @@
  ******************************************************************************
 */
 /* Includes -----------------------------------------------------------------*/
+#include <WatchdogTask.hpp>
 #include "SystemDefines.hpp"
 #include "UARTDriver.hpp"
 
@@ -13,13 +14,15 @@
 #include "UARTTask.hpp"
 #include "CubeTask.hpp"
 #include "DebugTask.hpp"
-#include "IMUTask.hpp"
+//#include "IMUTask.hpp"
 #include "LSM6DSOTask.hpp"
 #include "mmc5983Task.hpp"
 #include "BaroTask07.hpp"
 #include "BaroTask11.hpp"
 #include "LoggingTask.hpp"
 #include "FlashTask.hpp"
+#include "cmsis_os.h"
+//#include "WatchdogTestTask.hpp"
 
 /* Drivers ------------------------------------------------------------------*/
 namespace Driver {
@@ -38,14 +41,18 @@ void run_main() {
 	DebugTask::Inst().InitTask();
 	//FlashTask::Inst().InitTask();
 
-	IMUTask::Inst().InitTask();
+//	IMUTask::Inst().InitTask();
 
 	LSM6DSOTask::Inst().InitTask();
     MMC5983MATask::Inst().InitTask();
     BaroTask07::Inst().InitTask();
     BaroTask11::Inst().InitTask();
     LoggingTask::Inst().InitTask();
+//    WatchdogTask::Inst().InitTask();
+//    WatchdogTaskTest::Inst().InitTask();
 
+
+//    WatchdogTest::Init();
 
     // Print System Boot Info : Warning, don't queue more than 10 prints before scheduler starts
     SOAR_PRINT("\n-- CUBE SYSTEM --\n");
@@ -59,6 +66,7 @@ void run_main() {
 
 
     osKernelStart();
+
 
     // Should never reach here
     SOAR_ASSERT(false, "osKernelStart() failed");

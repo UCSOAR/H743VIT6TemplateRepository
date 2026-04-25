@@ -104,8 +104,8 @@ void DebugTask::HandleDebugMessage(const char* msg) {
   else if(strcmp(msg, "imu1") == 0){
 
 	  SOAR_PRINT("Debug Imu 32G read");
-	  Command cmd(DATA_COMMAND, IMUTask::IMU_SAMPLE_AND_LOG);
-	  IMUTask::Inst().GetEventQueue()->Send(cmd);
+//	  Command cmd(DATA_COMMAND, IMUTask::IMU_SAMPLE_AND_LOG);
+//	  IMUTask::Inst().GetEventQueue()->Send(cmd);
 
   }
   else if(strcmp(msg, "imu2")== 0){
