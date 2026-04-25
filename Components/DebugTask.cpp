@@ -146,8 +146,12 @@ void DebugTask::HandleDebugMessage(const char *msg)
    }
   else if(strcmp(msg, "recovery") == 0){
     SOAR_PRINT("Rocket recovery\n");
-	  	  PollingTask::Inst().SetRocketState(RocketState::RS_RECOVERY);
-    }
+	PollingTask::Inst().SetRocketState(RocketState::RS_RECOVERY);
+  }
+  else if(strcmp(msg, "abort") == 0){
+	  SOAR_PRINT("Abort");
+	  PollingTask::Inst().SetRocketState(RocketState::RS_ABORT);
+  }
   else if (strcmp(msg, "flash_dump") == 0)
   {
     Command cmd(TASK_SPECIFIC_COMMAND, FLASH_DUMP);
