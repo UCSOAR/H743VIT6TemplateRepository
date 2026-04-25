@@ -4,6 +4,6 @@
 [submodule "AvionicsSoftware"]
 	path = AvionicsSoftware
 	url = https://github.com/StudentOrganisationForAerospaceResearch/AvionicsSoftware.git
-[submodule "SoarDrivers"]
-	path = SoarDrivers
+[submodule "PeripheralDriversSubmodule"]
+	path = PeripheralDriversSubmodule
 	url = https://github.com/UCSOAR/PeripheralDriversSubmodule
