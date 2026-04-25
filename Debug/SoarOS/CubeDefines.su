@@ -1,5 +1,5 @@
-C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Core/Inc/Task.hpp:27:12:Queue* Task::GetEventQueue() const	16	static
-../SoarOS/CubeTask.hpp:32:22:static CubeTask& CubeTask::Inst()	8	static
+C:/Users/Local user/Desktop/soar stuff/pee/H743VIT6TemplateRepository/SoarOS/Core/Inc/Task.hpp:27:12:Queue* Task::GetEventQueue() const	16	static
+../SoarOS/CubeTask.hpp:32:22:static CubeTask& CubeTask::Inst()	8	static,ignoring_inline_asm
 ../SoarOS/CubeTask.hpp:47:5:CubeTask::CubeTask()	16	static
 ../SoarOS/CubeDefines.cpp:26:6:)	224	static
 ../SoarOS/CubeDefines.cpp:69:6:)	364	static

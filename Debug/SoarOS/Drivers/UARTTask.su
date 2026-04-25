@@ -1,9 +1,0 @@
-C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp:48:21:GLOBAL_COMMANDS Command::GetCommand() const	16	static
-C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Core/Inc/Command.hpp:49:14:uint16_t Command::GetTaskCommand() const	16	static
-C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTTask.hpp:40:22:static UARTTask& UARTTask::Inst()	8	static
-C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTTask.hpp:48:17:static void UARTTask::RunTask(void*)	16	static
-C:/Users/Owner/Desktop/SOAR/H743VIT6TemplateRepository/SoarOS/Drivers/Inc/UARTTask.hpp:56:5:UARTTask::UARTTask()	16	static
-../SoarOS/Drivers/UARTTask.cpp:22:6:void UARTTask::ConfigureUART()	16	static
-../SoarOS/Drivers/UARTTask.cpp:30:6:virtual void UARTTask::InitTask()	32	static
-../SoarOS/Drivers/UARTTask.cpp:55:6:void UARTTask::Run(void*)	32	static
-../SoarOS/Drivers/UARTTask.cpp:75:6:void UARTTask::HandleCommand(Command&)	16	static
