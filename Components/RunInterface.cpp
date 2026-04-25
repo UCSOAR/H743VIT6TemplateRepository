@@ -14,13 +14,13 @@ extern "C" {
         run_main();
     }
 
-    void cpp_UART8_IRQHandler()
-    {
-        Driver::uart8.HandleIRQ_UART();
-    }
-    void cpp_UART7_IRQHandler(){
-    	Driver::uart7.HandleIRQ_UART();
-    }
+//    void cpp_UART8_IRQHandler()
+//    {
+//        Driver::uart8.HandleIRQ_UART();
+//    }
+//    void cpp_UART7_IRQHandler(){
+//    	Driver::uart7.HandleIRQ_UART();
+//    }
     void cpp_USART1_IRQHandler(){
     	Driver::usart1.HandleIRQ_UART();
     }
