@@ -29,18 +29,9 @@
 /* USER CODE BEGIN 0 */
 
 /* Includes ------------------------------------------------------------------*/
-#include "mx66xx.hpp"
-#include "mx66xx_qspi.hpp"
-#include "mx66xxConf.hpp"
-
- /* Exported types ------------------------------------------------------------*/
+/* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
-#define SECTOR_SIZE 4096     // FatFS sector size, matches flash erase granularity
-#define SECTOR_COUNT 8192    // 32MB usable (4096 * 8192 = 33,554,432 bytes)
-#define FLASH_START_ADDR 0x0 // Start address on flash
-
-
- /* Exported functions ------------------------------------------------------- */
+/* Exported functions ------------------------------------------------------- */
 extern Diskio_drvTypeDef  USER_Driver;
 
 /* USER CODE END 0 */

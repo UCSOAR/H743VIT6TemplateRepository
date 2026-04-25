@@ -22,6 +22,7 @@
  #include "Task.hpp"
  #include "SystemDefines.hpp"
 #include <vector>
+#include "CubeDefines.hpp"
 #include "CanAutoNodeMotherboard.hpp"
 
 // TODO: Implement this into the new global canbus log index file in another submodule

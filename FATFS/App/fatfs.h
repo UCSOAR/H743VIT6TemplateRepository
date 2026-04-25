@@ -28,9 +28,7 @@
 #include "user_diskio.h" /* defines USER_Driver as external */
 
 /* USER CODE BEGIN Includes */
-#define APP_OK 0
-#define APP_ERROR -1
-#define APP_SD_UNPLUGGED -2
+
 /* USER CODE END Includes */
 
 extern uint8_t retUSER; /* Return value for USER */

@@ -35,8 +35,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include <string.h>
 #include "ff_gen_drv.h"
-#include "mx66xx.hpp"
-#include "user_diskio.h"
+
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 
@@ -82,18 +81,8 @@ DSTATUS USER_initialize (
 )
 {
   /* USER CODE BEGIN INIT */
-	  if (pdrv != 0)
-	  {
-	    return STA_NOINIT;
-	  }
-
-	  // Initialize flash memory
-	  // Flash is ready to use - no special initialization needed
-	  // The MX66 driver handles SPI configuration
-
-	  // Mark disk as initialized and ready
-	  Stat = 0; // No errors, disk is ready
-	  return Stat;
+    Stat = STA_NOINIT;
+    return Stat;
   /* USER CODE END INIT */
 }
 
@@ -107,12 +96,8 @@ DSTATUS USER_status (
 )
 {
   /* USER CODE BEGIN STATUS */
-	  if (pdrv != 0)
-	  {
-	    return STA_NOINIT;
-	  }
-
-	  return Stat;
+    Stat = STA_NOINIT;
+    return Stat;
   /* USER CODE END STATUS */
 }
 
@@ -132,30 +117,7 @@ DRESULT USER_read (
 )
 {
   /* USER CODE BEGIN READ */
-	  if (pdrv != 0 || !buff)
-	  {
-	    return RES_PARERR;
-	  }
-
-	  if (Stat & STA_NOINIT)
-	  {
-	    return RES_NOTRDY;
-	  }
-
-	  // Check sector boundaries
-	  if ((sector + count) > SECTOR_COUNT)
-	  {
-	    return RES_PARERR;
-	  }
-
-	  // Calculate flash address and read data
-	  uint32_t flash_addr = FLASH_START_ADDR + (sector * SECTOR_SIZE);
-	  uint32_t total_size = count * SECTOR_SIZE;
-
-	  // Read directly from flash
-	  MX66xx_FastReadBytes(buff, flash_addr, total_size);
-
-	  return RES_OK;
+    return RES_OK;
   /* USER CODE END READ */
 }
 
@@ -177,59 +139,7 @@ DRESULT USER_write (
 {
   /* USER CODE BEGIN WRITE */
   /* USER CODE HERE */
-	  if (pdrv != 0 || !buff)
-	  {
-	    return RES_PARERR;
-	  }
-
-	  if (Stat & STA_NOINIT)
-	  {
-	    return RES_NOTRDY;
-	  }
-
-	  // Check sector boundaries
-	  if ((sector + count) > SECTOR_COUNT)
-	  {
-	    return RES_PARERR;
-	  }
-
-	  // Calculate flash address
-	  uint32_t flash_addr = FLASH_START_ADDR + (sector * SECTOR_SIZE);
-	  uint32_t total_size = count * SECTOR_SIZE;
-	  uint32_t flash_sector = flash_addr / FS_SECTOR_SIZE;  // Which 4KB sector
-	  uint16_t sector_offset = flash_addr % FS_SECTOR_SIZE; // Offset within sector
-
-	  //  // Erase all affected 4KB sectors first
-	  //  uint32_t end_flash_addr = flash_addr + total_size;
-	  //  uint32_t end_flash_sector = (end_flash_addr - 1) / FS_SECTOR_SIZE;
-	  //  for (uint32_t s = flash_sector; s <= end_flash_sector; s++)
-	  //  {
-	  //    MX66xx_EraseSector(s);
-	  //  }
-
-	  // Write data to flash (page-based so addresses are explicit and can cross sectors)
-	  uint32_t write_addr = flash_addr;
-	  uint32_t bytes_left = total_size;
-	  uint32_t buffer_index = 0;
-
-	  while (bytes_left > 0)
-	  {
-	    uint32_t page = write_addr / FS_PAGE_SIZE;
-	    uint32_t offset_in_page = write_addr % FS_PAGE_SIZE;
-	    uint32_t chunk = FS_PAGE_SIZE - offset_in_page;
-	    if (chunk > bytes_left)
-	    {
-	      chunk = bytes_left;
-	    }
-
-	    MX66xx_WritePage((uint8_t *)&buff[buffer_index], page, offset_in_page, chunk);
-
-	    write_addr += chunk;
-	    buffer_index += chunk;
-	    bytes_left -= chunk;
-	  }
-
-	  return RES_OK;
+    return RES_OK;
   /* USER CODE END WRITE */
 }
 #endif /* _USE_WRITE == 1 */
@@ -249,47 +159,8 @@ DRESULT USER_ioctl (
 )
 {
   /* USER CODE BEGIN IOCTL */
-	DRESULT res = RES_ERROR;
-
-	  if (pdrv != 0)
-	  {
-	    return RES_PARERR;
-	  }
-
-	  if (Stat & STA_NOINIT)
-	  {
-	    return RES_NOTRDY;
-	  }
-
-	  switch (cmd)
-	  {
-	  case CTRL_SYNC:
-	    // For flash, sync is instant (write operations complete immediately)
-	    res = RES_OK;
-	    break;
-
-	  case GET_SECTOR_COUNT:
-	    *(DWORD *)buff = SECTOR_COUNT;
-	    res = RES_OK;
-	    break;
-
-	  case GET_SECTOR_SIZE:
-	    *(WORD *)buff = SECTOR_SIZE;
-	    res = RES_OK;
-	    break;
-
-	  case GET_BLOCK_SIZE:
-	    // Return the flash erase block size in sectors (4KB sector / 512-byte sector = 8 sectors)
-	    *(DWORD *)buff = (FS_SECTOR_SIZE / SECTOR_SIZE);
-	    res = RES_OK;
-	    break;
-
-	  default:
-	    res = RES_PARERR;
-	    break;
-	  }
-
-	  return res;
+    DRESULT res = RES_ERROR;
+    return res;
   /* USER CODE END IOCTL */
 }
 #endif /* _USE_IOCTL == 1 */
