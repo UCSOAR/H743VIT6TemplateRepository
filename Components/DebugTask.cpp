@@ -142,7 +142,7 @@ void DebugTask::HandleDebugMessage(const char *msg)
   }
   else if(strcmp(msg, "coast") == 0){
     SOAR_PRINT("Rocket coasting\n");
-	  	  PollingTask::Inst().SetRocketState(RocketState::RS_COAST);
+	PollingTask::Inst().SetRocketState(RocketState::RS_COAST);
    }
   else if(strcmp(msg, "recovery") == 0){
     SOAR_PRINT("Rocket recovery\n");
@@ -154,6 +154,7 @@ void DebugTask::HandleDebugMessage(const char *msg)
   }
   else if (strcmp(msg, "flash_dump") == 0)
   {
+	PollingTask::Inst().SetRocketState(RocketState::RS_ABORT);
     Command cmd(TASK_SPECIFIC_COMMAND, FLASH_DUMP);
     FlashTask::Inst().GetEventQueue()->Send(cmd);
   }
