@@ -6,7 +6,6 @@
  ******************************************************************************
 */
 /* Includes -----------------------------------------------------------------*/
-#include <WatchdogTask.hpp>
 #include "SystemDefines.hpp"
 #include "UARTDriver.hpp"
 
@@ -22,7 +21,8 @@
 #include "LoggingTask.hpp"
 #include "FlashTask.hpp"
 #include "cmsis_os.h"
-//#include "WatchdogTestTask.hpp"
+#include "WatchdogTaskTest.hpp"
+#include "WatchdogTask.hpp"
 
 /* Drivers ------------------------------------------------------------------*/
 namespace Driver {
@@ -48,11 +48,11 @@ void run_main() {
     BaroTask07::Inst().InitTask();
     BaroTask11::Inst().InitTask();
     LoggingTask::Inst().InitTask();
-//    WatchdogTask::Inst().InitTask();
-//    WatchdogTaskTest::Inst().InitTask();
+    WatchdogTask::Inst().InitTask();
+    WatchdogTaskTest::Inst().InitTask();
 
 
-//    WatchdogTest::Init();
+
 
     // Print System Boot Info : Warning, don't queue more than 10 prints before scheduler starts
     SOAR_PRINT("\n-- CUBE SYSTEM --\n");

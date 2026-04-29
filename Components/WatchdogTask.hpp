@@ -1,13 +1,18 @@
 #ifndef WATCHDOGTASK_HPP
 #define WATCHDOGTASK_HPP
 
-// Initialize the independent watchdog (IWDG)
-void InitWatchdog();
+class WatchdogTask
+{
+public:
+    static WatchdogTask& Inst();
 
-// Refresh/pet the watchdog. Call from tasks regularly
-void PetWatchdog();
+    void InitTask();
+    void Pet();
 
-// Returns the name of the last task that petted the watchdog
-const char* GetLastTaskToPetWatchdog();
+    const char* GetLastTaskToPet();
+
+private:
+    WatchdogTask() = default;
+};
 
 #endif
