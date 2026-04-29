@@ -5,5 +5,5 @@
 [submodule "PeripheralDriversSubmodule"]
 	path = PeripheralDriversSubmodule
 	url = https://github.com/UCSOAR/PeripheralDriversSubmodule.git
-	branch = Jad/DAQ
+	branch = master
 
