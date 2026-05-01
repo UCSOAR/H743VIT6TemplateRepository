@@ -10,8 +10,8 @@ enum WatchdogTestMode
     TEST_FREEZE_TASK  = 1
 };
 
-// Change this to switch test modes
-static WatchdogTestMode testMode = TEST_STOP_PETTING;
+// Change this to switch tests
+static WatchdogTestMode testMode = TEST_FREEZE_TASK;
 
 static void TaskEntry(void* argument)
 {
@@ -36,7 +36,7 @@ static void TaskEntry(void* argument)
                 {
                     // Stop petting — watchdog should reset the board
                     SOAR_PRINT("Test1: STOPPED petting, board should reset soon...\n");
-               
+
                 }
                 break;
             }
