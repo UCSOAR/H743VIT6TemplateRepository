@@ -3,6 +3,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include <cstring>
+#include "SystemDefines.hpp"
 
 
 
@@ -19,15 +20,32 @@ WatchdogTask& WatchdogTask::Inst()
 
 void WatchdogTask::InitTask()
 {
-    hiwdg.Instance = IWDG1;
-    hiwdg.Init.Prescaler = IWDG_PRESCALER_32;
-    hiwdg.Init.Reload = 3999;
 
+    xTaskCreate(TaskEntry, "Watchdog", 256, NULL, tskIDLE_PRIORITY + 3, NULL);
+}
+
+void WatchdogTask::TaskEntry(void* argument)
+{
+    hiwdg.Instance = IWDG1;
+    hiwdg.Init.Prescaler = IWDG_PRESCALER_64;
+    hiwdg.Init.Reload = 1000;
+    hiwdg.Init.Window = IWDG_WINDOW_DISABLE;
     if (HAL_IWDG_Init(&hiwdg) != HAL_OK)
     {
+        SOAR_PRINT("IWDG Init Failed!\n");
         while (1);
     }
+
+    SOAR_PRINT("Watchdog initialized\n");
+
+
+    while (1)
+    {
+        vTaskDelay(pdMS_TO_TICKS(100));
+
+    }
 }
+
 
 void WatchdogTask::Pet()
 {
@@ -39,6 +57,8 @@ void WatchdogTask::Pet()
         strncpy(lastTaskToPet, taskName, sizeof(lastTaskToPet));
         lastTaskToPet[sizeof(lastTaskToPet) - 1] = '\0';
     }
+    SOAR_PRINT("WATCHDOG PET by: %s\n", pcTaskGetName(NULL));
+
 
     HAL_IWDG_Refresh(&hiwdg);
 }
