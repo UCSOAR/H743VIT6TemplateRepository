@@ -20,6 +20,7 @@
 #include "FlashTask.hpp"
 #include "PollingTask.hpp"
 #include "main.h"
+#include "WatchdogTask.hpp"
 
 /* Drivers ------------------------------------------------------------------*/
 namespace Driver {
@@ -48,6 +49,7 @@ void run_main() {
 //		BaroTask07::Inst().InitTask();
 //		BaroTask11::Inst().InitTask();
 	LoggingTask::Inst().InitTask();
+	WatchdogTask::Inst().InitTask();
 
 
     // Print System Boot Info : Warning, don't queue more than 10 prints before scheduler starts
