@@ -26,6 +26,7 @@
 #include "DataBroker.hpp"
 #include "Task.hpp"
 #include "DebugTask.hpp"
+#include "WatchdogTask.hpp"
 
 /************************************
  * PRIVATE MACROS AND DEFINES
@@ -94,6 +95,8 @@ void LoggingTask::Run(void * pvParams){
 
 
     while (1) {
+
+//    	WatchdogTask::Inst().Pet(); //pet
         /* Process commands in blocking mode */
         Command cm;
         bool res = qEvtQueue->ReceiveWait(cm);

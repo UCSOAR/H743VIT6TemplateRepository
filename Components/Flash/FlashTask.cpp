@@ -13,6 +13,7 @@
 #include <cstring>
 #include "stm32h7xx_hal.h"
 #include "LoggingService.hpp"
+#include "WatchdogTask.hpp"
 
 /* Constants ------------------------------------------------------------------*/
 constexpr uint16_t FLASH_TEST_SECTOR = NUM_SECTORS - 2; // Reserved above the logging data area
@@ -105,6 +106,7 @@ void FlashTask::Run(void *pvParams)
 
     while (1)
     {
+//    	WatchdogTask::Inst().Pet(); //pet
         Command cm;
         bool res = qEvtQueue->ReceiveWait(cm);
         if (res)
