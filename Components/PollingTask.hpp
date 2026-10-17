@@ -34,7 +34,12 @@ class PollingTask: public Task
 		enum PollingTaskCommands : uint16_t {
 			POLL_SENSORS_AND_LOG = 1,
 			GPS_TEST,
-			IMU32_A_TEST
+			IMU32_A_TEST,
+			IMU32_B_TEST,
+			IMU16_TEST,
+			BARO07_TEST,
+			BARO11_TEST,
+			MAG_TEST
 		};
 
 		static PollingTask& Inst() {

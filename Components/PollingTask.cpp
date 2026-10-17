@@ -129,6 +129,71 @@ void PollingTask::HandleRequestCommand(uint16_t taskCommand){
 				   (int)imu32DataA.temp);
 		break;
 	}
+	case IMU32_B_TEST: {
+		uint8_t data[14] = {0};
+		imu32b.ReadSensors(data);
+		imu32DataB = imu32b.ConvertRawMeasurementToStruct(data);
+		imu32DataB.id = 1;
+
+		SOAR_PRINT("IMU32B | id=%u accel=(%d,%d,%d) gyro=(%d,%d,%d) temp=%d\n",
+				   (unsigned int)imu32DataB.id,
+				   (int)imu32DataB.accel.x,
+				   (int)imu32DataB.accel.y,
+				   (int)imu32DataB.accel.z,
+				   (int)imu32DataB.gyro.x,
+				   (int)imu32DataB.gyro.y,
+				   (int)imu32DataB.gyro.z,
+				   (int)imu32DataB.temp);
+		break;
+	}
+	case IMU16_TEST: {
+		uint8_t data[14] = {0};
+		imu16.readSensors(data);
+		imu16Data = imu16.bytesToStruct(data, true, true, true);
+		imu16Data.id = 0;
+
+		SOAR_PRINT("IMU16 | id=%u accel=(%d,%d,%d) gyro=(%d,%d,%d) temp=%d\n",
+				   (unsigned int)imu16Data.id,
+				   (int)imu16Data.accel.x,
+				   (int)imu16Data.accel.y,
+				   (int)imu16Data.accel.z,
+				   (int)imu16Data.gyro.x,
+				   (int)imu16Data.gyro.y,
+				   (int)imu16Data.gyro.z,
+				   (int)imu16Data.temp);
+		break;
+	}
+	case BARO07_TEST:
+		baro07Data = barometer07.getSample();
+		baro07Data.id = 0;
+
+		SOAR_PRINT("BARO07 | id=%u pressure=%d temp=%d\n",
+				(unsigned int)baro07Data.id,
+				(int)baro07Data.pressure,
+				(int)baro07Data.temp);
+		break;
+	case BARO11_TEST:
+		baro11Data = barometer11.getSample();
+		baro11Data.id = 0;
+
+		SOAR_PRINT("BARO11 | id=%u pressure=%d temp=%d\n",
+				(unsigned int)baro11Data.id,
+				(int)baro11Data.pressure,
+				(int)baro11Data.temp);
+		break;
+	case MAG_TEST:
+		magnetometer.triggerMeasurement();
+		magnetometer.readData(driverData);
+
+		magData.magX = driverData.scaledX;
+		magData.magY = driverData.scaledY;
+		magData.magZ = driverData.scaledZ;
+
+		SOAR_PRINT("MAG | id%u magX%d magY%d madZ%d\n",
+				(int)magData.magX,
+				(int)magData.magY,
+				(int)magData.magZ
+		);
 	default:
 		break;
 	}

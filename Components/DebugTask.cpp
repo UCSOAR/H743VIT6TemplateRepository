@@ -126,6 +126,26 @@ void DebugTask::HandleDebugMessage(const char *msg)
 	  Command cmd(DATA_COMMAND, PollingTask::IMU32_A_TEST);
 	  PollingTask::Inst().GetEventQueue()->Send(cmd);
   }
+  else if (strcmp(msg, "imu32b") == 0){
+  	  Command cmd(DATA_COMMAND, PollingTask::IMU32_B_TEST);
+  	  PollingTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "imu16") == 0){
+    	  Command cmd(DATA_COMMAND, PollingTask::IMU16_TEST);
+    	  PollingTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "baro07") == 0){
+  	  Command cmd(DATA_COMMAND, PollingTask::BARO07_TEST);
+  	  PollingTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "baro11") == 0){
+  	  Command cmd(DATA_COMMAND, PollingTask::BARO11_TEST);
+  	  PollingTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "mag") == 0){
+  	  Command cmd(DATA_COMMAND, PollingTask::MAG_TEST);
+  	  PollingTask::Inst().GetEventQueue()->Send(cmd);
+  }
 
 #if (configGENERATE_RUN_TIME_STATS == 1)  // enable profiling commands if profiling enabled
   else if (strcmp(msg, "profile") == 0) {
