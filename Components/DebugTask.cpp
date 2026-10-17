@@ -13,6 +13,7 @@
 #include "LoggingService.hpp"
 #include "stm32h7xx_hal.h"
 #include "FlashTask.hpp"
+#include "PollingTask.hpp"
 
 // External Tasks (to send debug commands to)
 
@@ -120,6 +121,10 @@ void DebugTask::HandleDebugMessage(const char *msg)
   else if (strcmp(msg, "stop_dump") == 0)
   {
     LoggingService::StopDump();
+  }
+  else if (strcmp(msg, "imu32a") == 0){
+	  Command cmd(DATA_COMMAND, PollingTask::IMU32_A_TEST);
+	  PollingTask::Inst().GetEventQueue()->Send(cmd);
   }
 
 #if (configGENERATE_RUN_TIME_STATS == 1)  // enable profiling commands if profiling enabled
