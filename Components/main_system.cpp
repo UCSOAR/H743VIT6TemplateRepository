@@ -13,14 +13,18 @@
 #include "UARTTask.hpp"
 #include "CubeTask.hpp"
 #include "DebugTask.hpp"
+#include "IMUTask.hpp"
+#include "LSM6DSOTask.hpp"
+#include "mmc5983Task.hpp"
+#include "BaroTask07.hpp"
+#include "BaroTask11.hpp"
 #include "LoggingTask.hpp"
 #include "FlashTask.hpp"
-#include "PollingTask.hpp"
-
+#include "ProfilerTask.hpp"
 
 /* Drivers ------------------------------------------------------------------*/
 namespace Driver {
-    UARTDriver usart1(USART1);
+    UARTDriver usart8(UART8);
     UARTDriver uart7(UART7);
 }
 
@@ -33,10 +37,15 @@ void run_main() {
 	UARTTask::Inst().InitTask();
 	CubeTask::Inst().InitTask();
 	DebugTask::Inst().InitTask();
-    LoggingTask::Inst().InitTask();
-    PollingTask::Inst().InitTask();
-    FlashTask::Inst().InitTask();
+	//FlashTask::Inst().InitTask();
 
+	IMUTask::Inst().InitTask();
+
+	LSM6DSOTask::Inst().InitTask();
+    MMC5983MATask::Inst().InitTask();
+    BaroTask07::Inst().InitTask();
+    BaroTask11::Inst().InitTask();
+    LoggingTask::Inst().InitTask();
 
 
     // start profiling task if run_time_stats enabled
