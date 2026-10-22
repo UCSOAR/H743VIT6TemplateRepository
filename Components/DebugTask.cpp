@@ -11,10 +11,9 @@
 #include "CubeUtils.hpp"
 #include <cstring>
 #include "LoggingService.hpp"
-#include "ProfilerTask.hpp"
-
 #include "stm32h7xx_hal.h"
 #include "FlashTask.hpp"
+#include "PollingTask.hpp"
 
 // External Tasks (to send debug commands to)
 
@@ -109,68 +108,6 @@ void DebugTask::HandleDebugMessage(const char *msg)
     SOAR_PRINT("Debug Task Runtime  \t: %d ms\n\n",
                TICKS_TO_MS(xTaskGetTickCount()));
   } 
-  
-  else if (strcmp(msg, "imu1") == 0)
-  {
-
-    SOAR_PRINT("Debug Imu 32G single sample");
-    Command cmd(DATA_COMMAND, IMUTask::IMU_SAMPLE_AND_LOG);
-    IMUTask::Inst().GetEventQueue()->Send(cmd);
-  }
-  else if (strcmp(msg, "imu1loop") == 0)
-  {
-
-    SOAR_PRINT("Debug Imu 32G continuous read start");
-    Command cmd(DATA_COMMAND, IMUTask::IMU_START_CONTINUOUS_PRINT);
-    IMUTask::Inst().GetEventQueue()->Send(cmd);
-  }
-  else if (strcmp(msg, "imu1stop") == 0)
-  {
-
-    SOAR_PRINT("Debug Imu 32G continuous read stop");
-    Command cmd(DATA_COMMAND, IMUTask::IMU_STOP_CONTINUOUS_PRINT);
-    IMUTask::Inst().GetEventQueue()->Send(cmd);
-  }
-  else if (strcmp(msg, "imu2") == 0)
-  {
-
-    SOAR_PRINT("Debug Imu 16G single sample");
-    Command cmd(DATA_COMMAND, LSM6DSOTask::IMU_SAMPLE_AND_LOG);
-    LSM6DSOTask::Inst().GetEventQueue()->Send(cmd);
-  }
-  else if (strcmp(msg, "imu2loop") == 0)
-  {
-
-    SOAR_PRINT("Debug Imu 16G continuous read start");
-    Command cmd(DATA_COMMAND, LSM6DSOTask::IMU_START_CONTINUOUS_PRINT);
-    LSM6DSOTask::Inst().GetEventQueue()->Send(cmd);
-  }
-  else if (strcmp(msg, "imu2stop") == 0)
-  {
-
-    SOAR_PRINT("Debug Imu 16G continuous read stop");
-    Command cmd(DATA_COMMAND, LSM6DSOTask::IMU_STOP_CONTINUOUS_PRINT);
-    LSM6DSOTask::Inst().GetEventQueue()->Send(cmd);
-  }
-
-  else if (strcmp(msg, "baro1") == 0)
-  {
-    SOAR_PRINT("Debug Baro07 read");
-    Command cmd(DATA_COMMAND, BARO07_SAMPLE_AND_LOG);
-    BaroTask07::Inst().GetEventQueue()->Send(cmd);
-  }
-  else if (strcmp(msg, "baro2") == 0)
-  {
-    SOAR_PRINT("Debug Baro11 read");
-    Command cmd(DATA_COMMAND, BARO11_SAMPLE_AND_LOG);
-    BaroTask11::Inst().GetEventQueue()->Send(cmd);
-  }
-  else if (strcmp(msg, "mag") == 0)
-  {
-    SOAR_PRINT("Debug mag read");
-    Command cmd(DATA_COMMAND, MMC5983MATask::MMC_CMD_ENABLE_LOG);
-    MMC5983MATask::Inst().GetEventQueue()->Send(cmd);
-  }
   else if (strcmp(msg, "flash_test") == 0)
   {
     SOAR_PRINT("Debug: Triggering flash tests\n");
@@ -184,6 +121,38 @@ void DebugTask::HandleDebugMessage(const char *msg)
   else if (strcmp(msg, "stop_dump") == 0)
   {
     LoggingService::StopDump();
+  }
+  else if (strcmp(msg, "imu32a") == 0){
+	  Command cmd(DATA_COMMAND, PollingTask::IMU32_A_TEST);
+	  PollingTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "imu32b") == 0){
+  	  Command cmd(DATA_COMMAND, PollingTask::IMU32_B_TEST);
+  	  PollingTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "imu16") == 0){
+    	  Command cmd(DATA_COMMAND, PollingTask::IMU16_TEST);
+    	  PollingTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "baro07") == 0){
+  	  Command cmd(DATA_COMMAND, PollingTask::BARO07_TEST);
+  	  PollingTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "baro11") == 0){
+  	  Command cmd(DATA_COMMAND, PollingTask::BARO11_TEST);
+  	  PollingTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "mag") == 0){
+  	  Command cmd(DATA_COMMAND, PollingTask::MAG_TEST);
+  	  PollingTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "gps") == 0){
+  	  Command cmd(DATA_COMMAND, PollingTask::GPS_TEST);
+  	  PollingTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "poll") == 0){
+  	  Command cmd(DATA_COMMAND, PollingTask::START_POLLING);
+  	  PollingTask::Inst().GetEventQueue()->Send(cmd);
   }
 
 #if (configGENERATE_RUN_TIME_STATS == 1)  // enable profiling commands if profiling enabled
