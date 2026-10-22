@@ -48,8 +48,7 @@ void PollingTask::InitTask()
 	pollTimerHandle = xTimerCreate("PollTimer", pdMS_TO_TICKS(pollPeriodMs), pdTRUE, (void*)this, PollingTask::PollTimerCallback);
 	SOAR_ASSERT(pollTimerHandle != nullptr, "PollingTask::InitTask() - xTimerCreate() failed");
 
-	BaseType_t timerStartRes = xTimerStart(pollTimerHandle, 0);
-	SOAR_ASSERT(timerStartRes == pdPASS, "PollingTask::InitTask() - xTimerStart() failed");
+	// Timer is started later by the START_POLLING command (debug "poll")
 }
 
 
@@ -87,29 +86,45 @@ void PollingTask::HandleRequestCommand(uint16_t taskCommand){
 		PollSensors();
 		LogData();
 		break;
+	case START_POLLING:
+		if (xTimerIsTimerActive(pollTimerHandle) != pdFALSE) {
+			SOAR_PRINT("PollingTask - Already polling\n");
+			break;
+		}
+		pollingTimerStarted = false;
+		if (xTimerStart(pollTimerHandle, 0) == pdPASS) {
+			SOAR_PRINT("PollingTask - Polling started (%d ms period)\n", pollPeriodMs);
+		} else {
+			SOAR_PRINT("PollingTask - Failed to start poll timer\n");
+		}
+		break;
 	case GPS_TEST:
-		if (gpsInitialized)
+		if (!gpsInitialized)
 		{
-			if (gps.getGGALine(gpsData.buffer_))
-			{
-				SOAR_PRINT("GPS RAW | %s\n", gpsData.buffer_);
-				GPSData rawGps = gpsData;
-				DataBroker::Publish<GPSData>(&rawGps);
-				gps.ParseGpsData(&gpsData);
-				SOAR_PRINT("GPS GGA | time=%d lat_deg=%d lat_min=%d lon_deg=%d lon_min=%d antAlt=%d antUnit=%d geoidAlt=%d geoidUnit=%d totalAlt=%d totalUnit=%d\n",
-						   (int32_t)gpsData.time_,
-						   (int32_t)gpsData.latitude_.degrees_,
-						   (int32_t)gpsData.latitude_.minutes_,
-						   (int32_t)gpsData.longitude_.degrees_,
-						   (int32_t)gpsData.longitude_.minutes_,
-						   (int32_t)gpsData.antennaAltitude_.altitude_,
-						   (int32_t)gpsData.antennaAltitude_.unit_,
-						   (int32_t)gpsData.geoidAltitude_.altitude_,
-						   (int32_t)gpsData.geoidAltitude_.unit_,
-						   (int32_t)gpsData.totalAltitude_.altitude_,
-						   (int32_t)gpsData.totalAltitude_.unit_);
-			}
-
+			SOAR_PRINT("GPS TEST | GPS not initialized\n");
+		}
+		else if (!gps.getGGALine(gpsData.buffer_))
+		{
+			SOAR_PRINT("GPS TEST | Timed out waiting for GGA sentence\n");
+		}
+		else
+		{
+			SOAR_PRINT("GPS RAW | %s\n", gpsData.buffer_);
+			GPSData rawGps = gpsData;
+			DataBroker::Publish<GPSData>(&rawGps);
+			gps.ParseGpsData(&gpsData);
+			SOAR_PRINT("GPS GGA | time=%d lat_deg=%d lat_min=%d lon_deg=%d lon_min=%d antAlt=%d antUnit=%d geoidAlt=%d geoidUnit=%d totalAlt=%d totalUnit=%d\n",
+					   (int32_t)gpsData.time_,
+					   (int32_t)gpsData.latitude_.degrees_,
+					   (int32_t)gpsData.latitude_.minutes_,
+					   (int32_t)gpsData.longitude_.degrees_,
+					   (int32_t)gpsData.longitude_.minutes_,
+					   (int32_t)gpsData.antennaAltitude_.altitude_,
+					   (int32_t)gpsData.antennaAltitude_.unit_,
+					   (int32_t)gpsData.geoidAltitude_.altitude_,
+					   (int32_t)gpsData.geoidAltitude_.unit_,
+					   (int32_t)gpsData.totalAltitude_.altitude_,
+					   (int32_t)gpsData.totalAltitude_.unit_);
 		}
 		break;
 	case IMU32_A_TEST: {

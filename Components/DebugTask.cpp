@@ -146,6 +146,14 @@ void DebugTask::HandleDebugMessage(const char *msg)
   	  Command cmd(DATA_COMMAND, PollingTask::MAG_TEST);
   	  PollingTask::Inst().GetEventQueue()->Send(cmd);
   }
+  else if (strcmp(msg, "gps") == 0){
+  	  Command cmd(DATA_COMMAND, PollingTask::GPS_TEST);
+  	  PollingTask::Inst().GetEventQueue()->Send(cmd);
+  }
+  else if (strcmp(msg, "poll") == 0){
+  	  Command cmd(DATA_COMMAND, PollingTask::START_POLLING);
+  	  PollingTask::Inst().GetEventQueue()->Send(cmd);
+  }
 
 #if (configGENERATE_RUN_TIME_STATS == 1)  // enable profiling commands if profiling enabled
   else if (strcmp(msg, "profile") == 0) {

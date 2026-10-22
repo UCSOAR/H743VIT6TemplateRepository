@@ -39,7 +39,8 @@ class PollingTask: public Task
 			IMU16_TEST,
 			BARO07_TEST,
 			BARO11_TEST,
-			MAG_TEST
+			MAG_TEST,
+			START_POLLING
 		};
 
 		static PollingTask& Inst() {
